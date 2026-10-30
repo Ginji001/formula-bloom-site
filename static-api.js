@@ -51,18 +51,18 @@ export async function staticGetJSON(path,{signal}={}){
  if(u.pathname.endsWith('/api/official')){
   const target=u.searchParams.get('url')||'';
   let parsed;try{parsed=new URL(target);}catch{throw Error('登録商品ページのURLを確認してください。');}
-  if(parsed.protocol!=='https:'||parsed.username||parsed.password||parsed.port||parsed.search||parsed.hash)
+  if(parsed.protocol!=='https:'||parsed.username||parsed.password||parsed.port||parsed.hash)
    throw Error('登録済みの国内公式商品URLのみ対応しています。');
   const matchingProducts=registeredProducts.filter(p=>p.url===parsed.href||p.url+'/'===parsed.href||p.url===parsed.href+'/');
-  if(!matchingProducts.length)throw Error('登録済みの19製品以外は自動読み込みできません。日本語の全成分を手入力・写真OCRから追加できます。');
+  if(!matchingProducts.length)throw Error('日本語の全成分保存版がない商品です。手入力・写真OCRから追加できます。');
   const archived=await staticGetJSON('/formula-records.json',{signal});
   const matching=archived.records.filter(r=>matchingProducts.some(p=>p.id===r.productId)&&r.sourceUrl===parsed.href);
   if(!matching.length)throw Error('この商品は全成分保存版が未確認です。原文・実物表示を確認し、手入力してください。');
   return {
-   name:matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
+   name:matching.length>1?'国内公式の複数処方掲載ページ':matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
    sourceType:'archive',japanMarketConfirmed:true,ingredientPages:[],rows:[],archiveVerifiedAt:matching[0].verifiedAt,
    variants:matching.map(r=>({label:'全成分：'+r.productName+(r.variant&&!r.productName.includes(r.variant)?' '+r.variant:''),ingredients:r.ingredients,
-    order:r.order+'。2026年10月30日の掲載確認保存版。最新処方・実物との一致は未確認。',ingredientCount:r.ingredientCount})),
+    order:r.order+'。'+r.verifiedAt.slice(0,10)+'の掲載確認保存版。最新処方・実物との一致は未確認。',ingredientCount:r.ingredientCount})),
    fetchedAt:'',officialVerified:false
   };
  }

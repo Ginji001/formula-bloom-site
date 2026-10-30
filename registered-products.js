@@ -1,6 +1,14 @@
 // 公式の国内向け商品ページで日本語成分表を実際に確認できた製品だけを登録。
 // ブランドの登録と製品の登録は区別する。これらは日本での販売継続や薬機法適合の保証ではない。
 export const registeredProducts=Object.freeze([
+ {id:'orbis-aquanist-lm',brand:'オルビス',name:'アクアニスト ローション LM（さっぱり高保湿タイプ）',
+  aliases:['オルビス アクアニスト ローション LM','オルビス アクアニスト さっぱり'],url:'https://www.orbis.co.jp/small/11010852/',variant:'LM（さっぱり高保湿タイプ）',ingredientsExpected:19,sku:'9041',volume:'180mL'},
+ {id:'orbis-aquanist-rm',brand:'オルビス',name:'アクアニスト ローション RM（しっとり高保湿タイプ）',
+  aliases:['オルビス アクアニスト ローション RM','オルビス アクアニスト しっとり'],url:'https://www.orbis.co.jp/small/11010852/',variant:'RM（しっとり高保湿タイプ）',ingredientsExpected:27,sku:'9043',volume:'180mL'},
+ {id:'orbis-encore-lotion',brand:'オルビス',name:'オルビスユー アンコール ローション',
+  aliases:['オルビス アンコール ローション'],url:'https://www.orbis.co.jp/small/11010502/',variant:null,ingredientsExpected:15,sku:'9340',volume:'180mL'},
+ {id:'fancl-bc-lotion',brand:'ファンケル',name:'BC 化粧液',
+  aliases:['ファンケル BC 化粧液'],url:'https://www.fancl.co.jp/item/Seibun?category=01&item_id=3792-11',variant:null,ingredientsExpected:29,sku:'3792-11'},
  {id:'tvert-ga-moist',brand:'トゥヴェール',name:'バランシングGAローション モイスト',
   aliases:['トゥヴェール モイスト','バランシングGAローション モイスト','TOUT VERT バランシングGAローション モイスト'],
   url:'https://www.tvert.jp/shop/products/tvt002-2508tv0384',variant:'モイスト',ingredientsExpected:50},

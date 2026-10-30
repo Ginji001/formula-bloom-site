@@ -49,7 +49,7 @@ function useStoredFormula(record){
  $('japanConfirmed').checked=true;
  $('sourceInfo').replaceChildren();
  const msg=document.createElement('p');msg.className='muted';
- msg.textContent='公式掲載の保存版（'+record.verifiedAt.slice(0,10)+'確認）。最新処方・現物との一致は未確認です。';
+ msg.textContent='公式掲載の保存版（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sku?'／商品番号 '+record.sku:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
  $('sourceInfo').append(msg);
  sourceLink($('sourceInfo'),record.sourceUrl,'保存元の公式ページ');
  run();
@@ -240,7 +240,7 @@ function offerJapaneseIngredients(){
 function presentRegisteredProducts(products,heading='日本向け公式商品'){
   $('searchResults').replaceChildren();
   const notice=document.createElement('p');notice.className='muted';
-  notice.textContent=heading+'：登録済み '+products.length+'製品。19製品は保存済みの全成分から花を生成します。未登録の製品は容器表示から入力してください。';
+  notice.textContent=heading+'：登録済み '+products.length+'製品。23処方は国内公式の全成分保存版から花を生成します。未収録の製品は容器表示から入力してください。';
   $('searchResults').append(notice);
   for(const item of products){
     const b=document.createElement('button');b.className='product-option';b.type='button';
@@ -539,13 +539,14 @@ $('ocr').onclick=async()=>{if(!photoFile)return;$('ocr').disabled=true;const tar
 // SVGは説明用の画像として扱い、キーボード操作は画面下の実際のボタンに集約。
 for(const [id] of groups){const node=$('visual'+id[0].toUpperCase()+id.slice(1));node.style.cursor='pointer';node.onclick=()=>part(id);}
 
-let brandCatalog=null,brandLoading=false;
+let brandCatalog=null,brandLoading=false,verifiedBrandCounts=new Map(),coverageLoaded=false;
 function showBrands(){
   if(!brandCatalog)return;
   const query=$('brandFilter').value.trim();
   const matches=brandCatalog.brands.filter(b=>!query||brandQueryMatches(b,query));
   $('brandList').replaceChildren();
-  const visible=[...matches].sort((a,b)=>productsForBrand(b.name).length-productsForBrand(a.name).length||Number(b.japanSiteVerified)-Number(a.japanSiteVerified)||a.name.localeCompare(b.name,'ja'));
+  const visible=[...matches].sort((a,b)=>(verifiedBrandCounts.get(b.name)||0)-(verifiedBrandCounts.get(a.name)||0)||
+ Number(b.japanSiteVerified)-Number(a.japanSiteVerified)||a.name.localeCompare(b.name,'ja'));
   for(const brand of visible){
     const cell=document.createElement('div');cell.className='brand-entry';
     const select=document.createElement('button');select.type='button';select.className='brand-choice';
@@ -557,20 +558,33 @@ function showBrands(){
       $('query').focus();
     };
     const meta=document.createElement('small');
-    meta.textContent=productsForBrand(brand.name).length?'全成分確認済み '+productsForBrand(brand.name).length+'製品':brand.japanSiteVerified?'日本公式サイトあり':'外部サイトから検索';
+    const savedCount=verifiedBrandCounts.get(brand.name)||0;
+    meta.textContent=savedCount?'日本公式の全成分保存版 '+savedCount+'処方':
+      '日本語全成分：未収録（ブランド登録のみ）';
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);
   }
   const stats=brandCatalog.stats;
-  $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 全成分確認済み '+registeredProducts.length+'製品';
+  const verifiedBrands=[...verifiedBrandCounts].filter(([,count])=>count>0).length;
+  const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
+  $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 国内公式の成分保存版 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方。ブランド内の全商品を網羅した意味ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。メーカー公式のURLからも調べられます。';
 }
 $('brandFilter').oninput=showBrands;
 $('brandDirectory').ontoggle=async()=>{
   if(!$('brandDirectory').open||brandCatalog||brandLoading)return;
   brandLoading=true;
-  try{brandCatalog=await getJSON('/api/brands');showBrands();}
+  try{
+   const [catalog,archive]=await Promise.all([getJSON('/api/brands'),formulaArchive()]);
+   brandCatalog=catalog;
+   verifiedBrandCounts=new Map();
+   for(const record of archive?.records||[]){
+     verifiedBrandCounts.set(record.brand,(verifiedBrandCounts.get(record.brand)||0)+1);
+   }
+   coverageLoaded=!!archive;
+   showBrands();
+  }
   catch(e){$('brandCounts').textContent='ブランド一覧を表示できませんでした。検索・直接入力は引き続き利用できます。';}
   finally{brandLoading=false;}
 };
