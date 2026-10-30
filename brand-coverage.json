@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T19:48:01.608Z",
+  "generatedAt": "2026-10-30T19:52:48.731Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 15,
   "brandsWithoutSavedFormulas": 132,
-  "savedFormulaCount": 91,
-  "registeredCandidateCount": 91,
+  "savedFormulaCount": 166,
+  "registeredCandidateCount": 166,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -1163,8 +1163,8 @@
       "brand": "セザンヌ",
       "maker": "セザンヌ化粧品",
       "country": "JP",
-      "savedFormulaCount": 56,
-      "registeredCandidateCount": 56,
+      "savedFormulaCount": 131,
+      "registeredCandidateCount": 131,
       "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
@@ -1728,6 +1728,756 @@
           "verifiedAt": "2026-10-31T04:26:10+09:00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "ingredientCount": 41
+        },
+        {
+          "productId": "cezanne-4939553041047-2c620517c",
+          "productName": "アイブロウマスカラ（01）",
+          "variant": "01",
+          "sourcePageId": "4939553041047",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "cezanne-4939553042136-60433442f",
+          "productName": "耐久カールマスカラ（02）",
+          "variant": "02",
+          "sourcePageId": "4939553042136",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553042136-d06117f6a",
+          "productName": "耐久カールマスカラ（04）",
+          "variant": "04",
+          "sourcePageId": "4939553042136",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553040453-d2174e204",
+          "productName": "ジェルアイライナー（00）",
+          "variant": "00",
+          "sourcePageId": "4939553040453",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553043034-5e77e6d3c",
+          "productName": "アイジェニックカラーライナー（00）",
+          "variant": "00",
+          "sourcePageId": "4939553043034",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "cezanne-4939553040149-720e99750",
+          "productName": "トーンアップアイシャドウ（08）",
+          "variant": "08",
+          "sourcePageId": "4939553040149",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553043331-38ecbf97f",
+          "productName": "シングルシャイニーアイシャドウ（01）",
+          "variant": "01",
+          "sourcePageId": "4939553043331",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "cezanne-4939553043331-a02aa76df",
+          "productName": "シングルシャイニーアイシャドウ（02）",
+          "variant": "02",
+          "sourcePageId": "4939553043331",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "cezanne-4939553043331-62cb75b64",
+          "productName": "シングルシャイニーアイシャドウ（SP1）",
+          "variant": "SP1",
+          "sourcePageId": "4939553043331",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "cezanne-4939553041238-5831ea8e4",
+          "productName": "シングルカラーアイシャドウ（01）",
+          "variant": "01",
+          "sourcePageId": "4939553041238",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553041238-94635a726",
+          "productName": "シングルカラーアイシャドウ（04）",
+          "variant": "04",
+          "sourcePageId": "4939553041238",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553530251-c412b6bf9",
+          "productName": "フェイスアイパレット（03）",
+          "variant": "03",
+          "sourcePageId": "4939553530251",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553043294-9375b8eff",
+          "productName": "ペールトーンアイシャドウ（03）",
+          "variant": "03",
+          "sourcePageId": "4939553043294",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 33
+        },
+        {
+          "productId": "cezanne-4939553042334-a6a96a8c5",
+          "productName": "ベージュトーンアイシャドウ（04）",
+          "variant": "04",
+          "sourcePageId": "4939553042334",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 34
+        },
+        {
+          "productId": "cezanne-4939553042334-9cd10066d",
+          "productName": "ベージュトーンアイシャドウ（06）",
+          "variant": "06",
+          "sourcePageId": "4939553042334",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "cezanne-4939553042921-6b503f928",
+          "productName": "ビタートーンアイシャドウ（03　ビスケットブラウン）",
+          "variant": "03　ビスケットブラウン",
+          "sourcePageId": "4939553042921",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 33
+        },
+        {
+          "productId": "cezanne-4939553530152-a99a7d29f",
+          "productName": "ライティングアップアイシャドウ（03）",
+          "variant": "03",
+          "sourcePageId": "4939553530152",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553530152-e009be780",
+          "productName": "ライティングアップアイシャドウ（04）",
+          "variant": "04",
+          "sourcePageId": "4939553530152",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "cezanne-4939553530350-c01e2bf5d",
+          "productName": "ラスティングステイリップカラー（04）",
+          "variant": "04",
+          "sourcePageId": "4939553530350",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553530497-745d418ed",
+          "productName": "ラスティンググロスリップN（101）",
+          "variant": "101",
+          "sourcePageId": "4939553530497",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "cezanne-4939553530497-71ebc8275",
+          "productName": "ラスティンググロスリップN（201）",
+          "variant": "201",
+          "sourcePageId": "4939553530497",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "cezanne-4939553530497-25fcdf010",
+          "productName": "ラスティンググロスリップN（301）",
+          "variant": "301",
+          "sourcePageId": "4939553530497",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "cezanne-4939553043317-7f32f45a4",
+          "productName": "3Dジェリーリップ（01）",
+          "variant": "01",
+          "sourcePageId": "4939553043317",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "cezanne-4939553043317-90abe36d4",
+          "productName": "3Dジェリーリップ（02）",
+          "variant": "02",
+          "sourcePageId": "4939553043317",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "cezanne-4939553042013-fec437147",
+          "productName": "ウォータリーティントリップ（09）",
+          "variant": "09",
+          "sourcePageId": "4939553042013",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 52
+        },
+        {
+          "productId": "cezanne-4939553042013-2be121eed",
+          "productName": "ウォータリーティントリップ（10）",
+          "variant": "10",
+          "sourcePageId": "4939553042013",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 51
+        },
+        {
+          "productId": "cezanne-4939553042013-e3d7091eb",
+          "productName": "ウォータリーティントリップ（P1）",
+          "variant": "P1",
+          "sourcePageId": "4939553042013",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 47
+        },
+        {
+          "productId": "cezanne-4939553042709-91eb7e882",
+          "productName": "リップカラーシールド（03）",
+          "variant": "03",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042709-3b01bc4d1",
+          "productName": "リップカラーシールド（04）",
+          "variant": "04",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042709-7d0d0978f",
+          "productName": "リップカラーシールド（05）",
+          "variant": "05",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042709-ad098dc97",
+          "productName": "リップカラーシールド（06）",
+          "variant": "06",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042709-e147bbd0a",
+          "productName": "リップカラーシールド（07）",
+          "variant": "07",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042709-15b416a1e",
+          "productName": "リップカラーシールド（08）",
+          "variant": "08",
+          "sourcePageId": "4939553042709",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553530299-fd2c80f4a",
+          "productName": "トーンフィルターハイライト（01）",
+          "variant": "01",
+          "sourcePageId": "4939553530299",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553530299-3a1a44d8c",
+          "productName": "トーンフィルターハイライト（02）",
+          "variant": "02",
+          "sourcePageId": "4939553530299",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "cezanne-4939553530305-0e930919b",
+          "productName": "ブレンドカラーシェーディング（03）",
+          "variant": "03",
+          "sourcePageId": "4939553530305",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 17
+        },
+        {
+          "productId": "cezanne-4939553530046-febee6fcd",
+          "productName": "シェーディングペンシル（01）",
+          "variant": "01",
+          "sourcePageId": "4939553530046",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "cezanne-4939553530046-b5e7322ae",
+          "productName": "シェーディングペンシル（02）",
+          "variant": "02",
+          "sourcePageId": "4939553530046",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "cezanne-4939553530886-eefcd3e90",
+          "productName": "ハイライトペンシル（01）",
+          "variant": "01",
+          "sourcePageId": "4939553530886",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "cezanne-4939553530886-deddabd3c",
+          "productName": "ハイライトペンシル（02）",
+          "variant": "02",
+          "sourcePageId": "4939553530886",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "cezanne-4939553042457-55b77a128",
+          "productName": "フェイスグロウカラー（SP1）",
+          "variant": "SP1",
+          "sourcePageId": "4939553042457",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 32
+        },
+        {
+          "productId": "cezanne-4939553530817-979b60831",
+          "productName": "パールグロウハイライトN（03）",
+          "variant": "03",
+          "sourcePageId": "4939553530817",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "cezanne-4939553530817-9d3d03183",
+          "productName": "パールグロウハイライトN（05）",
+          "variant": "05",
+          "sourcePageId": "4939553530817",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553041122-ef2e91c57",
+          "productName": "パールグロウハイライト（01）",
+          "variant": "01",
+          "sourcePageId": "4939553041122",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "cezanne-4939553041122-e98c411b9",
+          "productName": "パールグロウハイライト（04）",
+          "variant": "04",
+          "sourcePageId": "4939553041122",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "cezanne-4939553041122-b4bf87759",
+          "productName": "パールグロウハイライト（SP3）",
+          "variant": "SP3",
+          "sourcePageId": "4939553041122",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553042686-e72112bbb",
+          "productName": "パールグロウニュアンサー（N1）",
+          "variant": "N1",
+          "sourcePageId": "4939553042686",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "cezanne-4939553042686-8b7faeb56",
+          "productName": "パールグロウニュアンサー（N2）",
+          "variant": "N2",
+          "sourcePageId": "4939553042686",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "cezanne-4939553002918-39a111e2f",
+          "productName": "ナチュラル チークN（05）",
+          "variant": "05",
+          "sourcePageId": "4939553002918",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "cezanne-4939553530091-f2853e554",
+          "productName": "ブレンドカラーチーク（01）",
+          "variant": "01",
+          "sourcePageId": "4939553530091",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "cezanne-4939553530091-047949274",
+          "productName": "ブレンドカラーチーク（02）",
+          "variant": "02",
+          "sourcePageId": "4939553530091",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553530091-ff57322c0",
+          "productName": "ブレンドカラーチーク（03）",
+          "variant": "03",
+          "sourcePageId": "4939553530091",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553530091-7e2ef2682",
+          "productName": "ブレンドカラーチーク（H1）",
+          "variant": "H1",
+          "sourcePageId": "4939553530091",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "cezanne-4939553042877-2a737b920",
+          "productName": "チークブラッシュ（06）",
+          "variant": "06",
+          "sourcePageId": "4939553042877",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "cezanne-4939553530725-275effdf2",
+          "productName": "セラムクッションファンデーション（N20）",
+          "variant": "N20",
+          "sourcePageId": "4939553530725",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 44
+        },
+        {
+          "productId": "cezanne-4939553009795-10668a763",
+          "productName": "BBクリーム（01）",
+          "variant": "01",
+          "sourcePageId": "4939553009795",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "cezanne-4939553009795-118051a84",
+          "productName": "BBクリーム（02）",
+          "variant": "02",
+          "sourcePageId": "4939553009795",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "cezanne-4939553009795-6e862b1da",
+          "productName": "BBクリーム（03）",
+          "variant": "03",
+          "sourcePageId": "4939553009795",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "cezanne-4939553040811-5e7f593b0",
+          "productName": "うるふわ仕上げパウダー（03）",
+          "variant": "03",
+          "sourcePageId": "4939553040811",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 17
+        },
+        {
+          "productId": "cezanne-4939553040057-60f7a6968",
+          "productName": "皮脂テカリ防止下地（ピュアラベンダー）",
+          "variant": "ピュアラベンダー",
+          "sourcePageId": "4939553040057",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 38
+        },
+        {
+          "productId": "cezanne-4939553042723-390641c64",
+          "productName": "パレットコンシーラー ハイカバー（10）",
+          "variant": "10",
+          "sourcePageId": "4939553042723",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553042723-435fa6163",
+          "productName": "パレットコンシーラー ハイカバー（00）",
+          "variant": "00",
+          "sourcePageId": "4939553042723",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "cezanne-4939553041603-442ddca45",
+          "productName": "毛穴レスコンシーラー（カバーベージュ）",
+          "variant": "カバーベージュ",
+          "sourcePageId": "4939553041603",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553530084-491bb9798",
+          "productName": "ブライトカラーシーラー（00）",
+          "variant": "00",
+          "sourcePageId": "4939553530084",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 43
+        },
+        {
+          "productId": "cezanne-4939553530084-1c0f30f70",
+          "productName": "ブライトカラーシーラー（20）",
+          "variant": "20",
+          "sourcePageId": "4939553530084",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 48
+        },
+        {
+          "productId": "cezanne-4939553041757-479118e3b",
+          "productName": "UVウルトラフィットベースEX（01）",
+          "variant": "01",
+          "sourcePageId": "4939553041757",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 45
+        },
+        {
+          "productId": "cezanne-4939553530619-0364c05b3",
+          "productName": "毛穴レスフィックスパウダー（CL クリア）",
+          "variant": "CL クリア",
+          "sourcePageId": "4939553530619",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 45
+        },
+        {
+          "productId": "cezanne-4939553530619-06095bff1",
+          "productName": "毛穴レスフィックスパウダー（SL シアーラベンダー）",
+          "variant": "SL シアーラベンダー",
+          "sourcePageId": "4939553530619",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 46
+        },
+        {
+          "productId": "cezanne-4939553043423-16a640738",
+          "productName": "影色リップメイカー（01）",
+          "variant": "01",
+          "sourcePageId": "4939553043423",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "cezanne-4939553043423-a46d31ea0",
+          "productName": "影色リップメイカー（02）",
+          "variant": "02",
+          "sourcePageId": "4939553043423",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "cezanne-4939553043423-3e73261ad",
+          "productName": "影色リップメイカー（03）",
+          "variant": "03",
+          "sourcePageId": "4939553043423",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "cezanne-4939553042891-ba1fb564a",
+          "productName": "描くアイゾーンコンシーラー（01なじみベージュ）",
+          "variant": "01なじみベージュ",
+          "sourcePageId": "4939553042891",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "cezanne-4939553042891-32030862e",
+          "productName": "描くアイゾーンコンシーラー（02なじみピンク）",
+          "variant": "02なじみピンク",
+          "sourcePageId": "4939553042891",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "cezanne-4939553042969-65e2f80ae",
+          "productName": "ヘアメイクパウダー（01 なじみブラウン）",
+          "variant": "01 なじみブラウン",
+          "sourcePageId": "4939553042969",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "cezanne-4939553042969-e50082593",
+          "productName": "ヘアメイクパウダー（02 明るめブラウン）",
+          "variant": "02 明るめブラウン",
+          "sourcePageId": "4939553042969",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:51:27+09:00",
+          "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
+          "ingredientCount": 30
         }
       ]
     },
