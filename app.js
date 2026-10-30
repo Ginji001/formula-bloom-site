@@ -11,7 +11,7 @@ import {provenance,provenanceText} from './provenance.js';
 import {checkProductIdentity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord} from './formula-archive.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
-import {prepareSharedFormula} from './shared-source.js';
+import {prepareSharedFormula,extractIngredientCandidates,sharedSource} from './shared-source.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
@@ -163,6 +163,30 @@ $('searchSite').oninput=()=>{$('searchSiteConfirmed').checked=false;};
 $('officialUrl').oninput=()=>{$('officialConfirmed').checked=false;invalidate();remoteProduct=null;official=false;};
 $('fetchOfficial').onclick=()=>fetchProduct($('officialUrl').value.trim());
 for(const id of ['sharedUrl','sharedName','sharedIngredients'])$(id).oninput=()=>{$('sharedConfirmed').checked=false;};
+$('sharedPageText').oninput=()=>{$('sharedConfirmed').checked=false;};
+$('sharedExtractBtn').onclick=()=>{
+ const choices=extractIngredientCandidates($('sharedPageText').value);
+ const area=$('sharedExtractChoices');area.replaceChildren();
+ $('sharedConfirmed').checked=false;
+ if(!choices.length){
+  $('sharedExtractStatus').textContent='全成分欄を特定できませんでした。成分表を直接貼り付けるか、容器の写真を読み取ってください。';
+  return;
+ }
+ $('sharedExtractStatus').textContent='全成分候補 '+choices.length+'件。原文で商品・タイプ・成分を確認して選んでください。';
+ choices.forEach((candidate,index)=>{
+  const btn=document.createElement('button');btn.type='button';btn.className='secondary';
+  const n=candidate.split('、').length;
+  btn.textContent='候補 '+(index+1)+'（約'+n+'成分）を入力欄へ';
+  btn.onclick=()=>{
+   $('sharedIngredients').value=candidate;
+   $('sharedConfirmed').checked=false;
+   $('sharedExtractStatus').textContent='入力欄へ転記しました。商品・タイプ・全成分が合うか原文を確認してから解析してください。';
+   $('sharedIngredients').focus();
+  };
+  area.append(btn);
+ });
+};
+
 $('sharedKind').onchange=()=>{$('sharedConfirmed').checked=false;};
 $('sharedImportBtn').onclick=()=>{
  invalidate();remoteProduct=null;official=false;ocrRequired=false;
@@ -236,6 +260,17 @@ function appendRetailLinks(container,data){
     div.append(a);
   }
   container.append(div);
+}
+function openSourceInput(url,name=''){
+ $('shareImport').open=true;
+ $('sharedUrl').value=url;
+ if(name)$('sharedName').value=name;
+ $('sharedConfirmed').checked=false;
+ $('sharedImportStatus').textContent='掲載元で日本語全成分を確認してください。ページの文章をコピーした場合は候補抽出も使えます。';
+ $('officialStatus').replaceChildren();
+ sourceLink($('officialStatus'),url,'成分表の掲載ページを開く');
+ $('officialStatus').append(' 全成分を入力・確認すると花を生成できます。');
+ $('shareImport').scrollIntoView({block:'start',behavior:'smooth'});
 }
 function offerJapaneseIngredients(){
   const action=document.createElement('button');
@@ -385,7 +420,15 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   presentRegisteredProducts(matches.map(x=>x.product));
   return;
 }
-busy(true);$('searchResults').textContent='候補を探しています…';$('officialStatus').textContent='';try{if(/^https:\/\//.test(q)){if(!instant){if(/^https:\/\/(?:www\.)?(?:amazon\.co\.jp|item\.rakuten\.co\.jp|store\.shopping\.yahoo\.co\.jp|qoo10\.jp|cosme\.net|lipscosme\.com)\//i.test(q))await fetchRetailProduct(q,ctx);else await fetchProduct(q,false,true,0,ctx);}$('searchResults').textContent='';return;}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='公式の商品候補が見つからないため、まだ花は生成していません。日本で販売されている製品の日本語の全成分表から花にできます。';if(data.brand?.japanSiteVerified&&data.brand.site)sourceLink($('searchResults'),data.brand.site,data.brand.name+'の日本向け公式サイトを開く');offerJapaneseIngredients();return;}const automatic=pickAutomaticProduct(data.results,q);if(!instant&&automatic){$('searchResults').textContent=automatic.name;await fetchProduct(automatic.url,false,true,0,ctx,null,automatic);return;}const lead=document.createElement('p');lead.className='muted';lead.textContent='候補から実際の商品を選んでください。日本語の全成分が確認できると、自動で花になります。';$('searchResults').append(lead);for(const item of (instant?data.results.slice(0,5):data.results)){const b=document.createElement('button');b.className='product-option';const title=document.createElement('strong');const aid=productJapaneseAid(item.name);title.textContent=aid||item.name;const meta=document.createElement('small');meta.textContent=(aid?'日本語補助表記（非公式）／公式名：'+item.name+' ／ ':'')+(item.officialVerified?'公式サイトから解析 ↗':'公式サイトか確認する ↗');b.append(title,meta);b.onclick=()=>{if(!item.officialVerified){$('moreInput').open=true;$('officialConfirmed').checked=false;$('officialUrl').value=item.url;$('officialStatus').replaceChildren();sourceLink($('officialStatus'),item.url,'候補ページ');$('officialStatus').append(' 公式ページか確認し、URLを読み込んでください。');return;}$('searchResults').textContent='選択：'+item.name;fetchProduct(item.url,false,true,0,null,null,item);};$('searchResults').append(b);}}catch(e){if(e.name==='AbortError'||ctx.version!==lookupVersion)return;$('searchResults').textContent='商品候補を確認できませんでした。';const b=document.createElement('button');b.className='secondary';b.textContent='公式URLで調べる';b.onclick=()=>{$('moreInput').open=true;$('officialUrl').focus();};$('searchResults').append(b);offerJapaneseIngredients();}finally{if(ctx.version===lookupVersion)busy(false);}}
+busy(true);$('searchResults').textContent='候補を探しています…';$('officialStatus').textContent='';try{if(/^https:\/\//.test(q)){
+ if(!instant){
+  const known=registeredProducts.some(p=>p.url===q);
+  if(known)await fetchProduct(q,false,true,0,ctx);
+  else if(sharedSource(q))openSourceInput(q);
+  else $('officialStatus').textContent='安全なHTTPSの掲載元URLを確認してください。';
+ }
+ $('searchResults').textContent='';return;
+}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='登録商品が見つかりませんでした。国内で販売されている商品の日本語全成分を、メーカー・販売店などの掲載元から確認して解析できます。';if(data.brand?.japanSiteVerified&&data.brand.site)sourceLink($('searchResults'),data.brand.site,data.brand.name+'の日本向け公式サイトを開く');offerJapaneseIngredients();return;}const automatic=pickAutomaticProduct(data.results,q);if(!instant&&automatic){$('searchResults').textContent=automatic.name;await fetchProduct(automatic.url,false,true,0,ctx,null,automatic);return;}const lead=document.createElement('p');lead.className='muted';lead.textContent='候補から実際の商品を選んでください。日本語の全成分が確認できると、自動で花になります。';$('searchResults').append(lead);for(const item of (instant?data.results.slice(0,5):data.results)){const b=document.createElement('button');b.className='product-option';const title=document.createElement('strong');const aid=productJapaneseAid(item.name);title.textContent=aid||item.name;const meta=document.createElement('small');meta.textContent=(aid?'日本語補助表記（非公式）／公式名：'+item.name+' ／ ':'')+(item.officialVerified?'公式サイトから解析 ↗':'公式サイトか確認する ↗');b.append(title,meta);b.onclick=()=>{if(!item.officialVerified){$('moreInput').open=true;$('officialConfirmed').checked=false;$('officialUrl').value=item.url;$('officialStatus').replaceChildren();sourceLink($('officialStatus'),item.url,'候補ページ');$('officialStatus').append(' 公式ページか確認し、URLを読み込んでください。');return;}$('searchResults').textContent='選択：'+item.name;fetchProduct(item.url,false,true,0,null,null,item);};$('searchResults').append(b);}}catch(e){if(e.name==='AbortError'||ctx.version!==lookupVersion)return;$('searchResults').textContent='商品候補を確認できませんでした。日本語全成分の入力から解析できます。';const b=document.createElement('button');b.className='secondary';b.textContent='公式URLで調べる';b.onclick=()=>{$('moreInput').open=true;$('officialUrl').focus();};$('searchResults').append(b);offerJapaneseIngredients();}finally{if(ctx.version===lookupVersion)busy(false);}}
 $('searchBtn').onclick=()=>search();$('query').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();search();}};
 $('query').onpaste=e=>{
   const pasted=e.clipboardData?.getData('text');
