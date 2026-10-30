@@ -14,6 +14,7 @@ import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-revi
 import {prepareSharedFormula} from './shared-source.js';
 import {makeSnapshot} from './formula-compare.js';
 import {setupCompareTools} from './compare-ui.js';
+import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
 import {createPoster,shareCaption,savePoster,sharePoster} from './share.js';
 let lookupVersion=0,lookupAbort=null,typingTimer=null;
 function beginLookup(){lookupAbort?.abort();lookupAbort=new AbortController();return {version:++lookupVersion,signal:lookupAbort.signal};}
@@ -239,12 +240,12 @@ function offerJapaneseIngredients(){
 function presentRegisteredProducts(products,heading='日本向け公式商品'){
   $('searchResults').replaceChildren();
   const notice=document.createElement('p');notice.className='muted';
-  notice.textContent=heading+'：登録済み '+products.length+'製品。商品ページのURLを案内します。全成分は容器表示から入力してください。';
+  notice.textContent=heading+'：登録済み '+products.length+'製品。19製品は保存済みの全成分から花を生成します。未登録の製品は容器表示から入力してください。';
   $('searchResults').append(notice);
   for(const item of products){
     const b=document.createElement('button');b.className='product-option';b.type='button';
     const title=document.createElement('strong');title.textContent=item.brand+' '+item.name;
-    const hint=document.createElement('small');hint.textContent='掲載元の製品ページを開いて全成分を確認する';
+    const hint=document.createElement('small');hint.textContent='保存版の日本語全成分で花にする（要照合）';
     b.append(title,hint);
     b.onclick=()=>{
       $('query').value=item.brand+' '+item.name;
@@ -282,7 +283,7 @@ function showBrandProducts(data){
       const b=document.createElement('button');b.className='product-option';b.type='button';
       const strong=document.createElement('strong');strong.textContent=item.name;
       const small=document.createElement('small');
-      small.textContent=item.registered?'日本向けの商品名登録（成分自動照会なし）':item.sourceType==='shop'||item.sourceType==='beauty'?({amazon:'Amazon',rakuten:'楽天',yahoo:'Yahoo!',qoo10:'Qoo10',cosme:'@cosme',lips:'LIPS'}[item.retailer]||'外部サイト')+'・成分未確認':'公式商品・成分未確認';
+      small.textContent=item.registered?'国内公式の全成分保存版（最新処方未確認）':item.sourceType==='shop'||item.sourceType==='beauty'?({amazon:'Amazon',rakuten:'楽天',yahoo:'Yahoo!',qoo10:'Qoo10',cosme:'@cosme',lips:'LIPS'}[item.retailer]||'外部サイト')+'・成分未確認':'公式商品・成分未確認';
       b.append(strong,small);
       b.onclick=()=>{
         $('query').value=item.name;
@@ -334,7 +335,16 @@ function quickRegisteredBrands(){
 }
 quickRegisteredBrands();
 
-async function search({instant=false,forceOfficial=false}={}){clearTimeout(typingTimer);const raw=$('query').value.trim();const q=instant?raw:cleanPastedProductName(raw);if(!instant&&raw!==q)$('query').value=q;if(q.length<2)return;const ctx=beginLookup();
+async function search({instant=false,forceOfficial=false}={}){clearTimeout(typingTimer);const raw=$('query').value.trim();const q=instant?raw:cleanPastedProductName(raw);if(!instant&&raw!==q)$('query').value=q;if(q.length<2)return;
+if(!forceOfficial&&!/^https:\/\//.test(q)){
+ const mine=searchMyFormulas(myFormulaStore(),q);
+ if(mine.length){
+  const exact=!instant?exactMyFormula(myFormulaStore(),q):null;
+  if(exact){useMyFormula(exact);return;}
+  presentMyFormulas(mine);return;
+ }
+}
+const ctx=beginLookup();
 if(!forceOfficial&&!/^https:\/\//.test(q)){
   try{
     const brandData=await getJSON('/api/brand-products?q='+encodeURIComponent(q)+(instant?'&retail=0':''),ctx.signal);
@@ -407,6 +417,68 @@ const compareTools=setupCompareTools(()=>makeSnapshot({
  ingredients:$('ingredients').value,kind:$('kind').value,
  source:remoteProduct?.url||(official?SOURCE:'利用者入力・出典未確認')
 }));
+function myFormulaStore(){try{return localStorage;}catch{return null;}}
+function useMyFormula(entry){
+ invalidate();official=false;ocrRequired=false;
+ remoteProduct={name:(entry.brand?entry.brand+' ':'')+entry.name,sourceType:'user-saved',region:'jp',
+  kind:entry.kind,ingredients:entry.ingredients,url:entry.sourceUrl||'',rows:[],
+  japanMarketConfirmed:true,order:'利用者が国内向け成分表から保存した処方（製品同一性・現物未検証）',
+  label:'端末保存の全成分（'+entry.savedAt.slice(0,10)+'登録）'};
+ $('query').value=remoteProduct.name;$('ingredients').value=entry.ingredients;
+ $('origin').textContent=remoteProduct.order;$('kind').value=entry.kind;
+ $('japanConfirmed').checked=true;$('sourceInfo').replaceChildren();
+ const note=document.createElement('p');note.className='muted';
+ note.textContent='この端末に保存した成分表です。実物と最新処方を確認してください。';
+ $('sourceInfo').append(note);
+ if(entry.sourceUrl)sourceLink($('sourceInfo'),entry.sourceUrl,'確認元のページ');
+ run();
+}
+function presentMyFormulas(items){
+ $('searchResults').replaceChildren();
+ const lead=document.createElement('p');lead.className='muted';
+ lead.textContent='端末に保存した処方 '+items.length+'件。選ぶと全成分から花にします。';
+ $('searchResults').append(lead);
+ for(const entry of items){
+  const button=document.createElement('button');button.className='product-option';button.type='button';
+  button.textContent=(entry.brand?entry.brand+' ':'')+entry.name+'（端末保存 '+entry.savedAt.slice(0,10)+'）';
+  button.onclick=()=>useMyFormula(entry);$('searchResults').append(button);
+ }
+}
+function renderMyFormulaList(){
+ const root=$('myFormulaList');root.replaceChildren();
+ const items=readMyFormulas(myFormulaStore());
+ if(!items.length){root.textContent='保存した商品はありません。';return;}
+ for(const entry of items){
+  const div=document.createElement('div');div.className='history-entry';
+  const name=document.createElement('strong');
+  name.textContent=(entry.brand?entry.brand+' ':'')+entry.name+'（'+entry.savedAt.slice(0,10)+'）';
+  const select=document.createElement('button');select.type='button';select.className='secondary';
+  select.textContent='この処方で花にする';select.onclick=()=>useMyFormula(entry);
+  const del=document.createElement('button');del.type='button';del.className='secondary';
+  del.textContent='削除';let armed=false;
+  del.onclick=()=>{
+   if(!armed){armed=true;del.textContent='もう一度押して削除';return;}
+   const ok=deleteMyFormula(myFormulaStore(),entry.id);
+   $('myFormulaStatus').textContent=ok?'端末から削除しました。':'削除できませんでした。';
+   renderMyFormulaList();
+  };
+  div.append(name,select,del);root.append(div);
+ }
+}
+$('myFormulas').ontoggle=()=>{if($('myFormulas').open)renderMyFormulaList();};
+for(const id of ['myName','myBrand','mySource'])$(id).oninput=()=>{$('myConfirmed').checked=false;};
+$('saveMyFormula').onclick=()=>{
+ try{
+  const result=saveMyFormula(myFormulaStore(),{
+   name:$('myName').value,brand:$('myBrand').value,sourceUrl:$('mySource').value,
+   ingredients:$('ingredients').value,kind:$('kind').value,
+   confirmed:$('myConfirmed').checked&&$('japanConfirmed').checked
+  },{id:crypto.randomUUID(),savedAt:new Date().toISOString()});
+  $('myFormulaStatus').textContent=result.saved?'この端末に登録しました。商品名で検索できます。':'同じ全成分の登録が既にあります。';
+  $('myConfirmed').checked=false;renderMyFormulaList();
+ }catch(e){$('myFormulaStatus').textContent=e.message;}
+};
+
 $('analyze').onclick=run;buttons();resetFlower($('flower'));$('flowerCaptionName').textContent='野の花';$('flowerCaptionNote').textContent='全成分から花を選びます。';
 $('download').onclick=()=>{const a=document.createElement('a'),url=URL.createObjectURL(new Blob([report],{type:'text/plain;charset=utf-8'}));a.href=url;a.download='処方の花-解析.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 let photoURL,photoFile;

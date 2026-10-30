@@ -3,6 +3,7 @@
 import {brands,identifyBrand,brandStats} from './brand-directory.js';
 import {registeredProducts,findRegisteredProducts,productsForBrand} from './registered-products.js';
 import {isJapaneseMarketURL} from './japan-market-policy.js';
+import {factProductIds} from './facts-index.js';
 
 const fold=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\s\p{P}\p{S}]+/gu,'');
 const searchProviders=[
@@ -18,7 +19,7 @@ const staticProducts=q=>{
  const s=fold(q);if(!s)return [];
  return registeredProducts.filter(x=>[x.brand+' '+x.name,x.name,...x.aliases].some(value=>fold(value).includes(s)||s.includes(fold(value)))).slice(0,30);
 };
-const mapped=p=>({...p,registered:true,officialVerified:false,sourceType:'registered',kind:'cosmetic'});
+const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:'cosmetic'});
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
  const u=new URL(path,location.href),q=(u.searchParams.get('q')||'').trim();
@@ -28,7 +29,7 @@ export async function staticGetJSON(path,{signal}={}){
   return response.json();
  }
  if(u.pathname.endsWith('/api/brands')){
-  return {brands:brands.map(({id,country,maker,name,aliases,site,strategy})=>({id,country,maker,name,aliases,site:isJapaneseMarketURL(site||'')?site:'',strategy,japanSiteVerified:!!site&&isJapaneseMarketURL(site)})),stats:{...brandStats(),japanMarketBrands:brands.length,japanMarketSites:brands.filter(b=>b.site&&isJapaneseMarketURL(b.site)).length,verifiedProducts:0}};
+  return {brands:brands.map(({id,country,maker,name,aliases,site,strategy})=>({id,country,maker,name,aliases,site:isJapaneseMarketURL(site||'')?site:'',strategy,japanSiteVerified:!!site&&isJapaneseMarketURL(site)})),stats:{...brandStats(),japanMarketBrands:brands.length,japanMarketSites:brands.filter(b=>b.site&&isJapaneseMarketURL(b.site)).length,verifiedProducts:factProductIds.size}};
  }
  if(u.pathname.endsWith('/api/catalog')){
   const filtered=u.searchParams.get('brand')?productsForBrand(u.searchParams.get('brand')):q?staticProducts(q):registeredProducts;
@@ -47,7 +48,24 @@ export async function staticGetJSON(path,{signal}={}){
   return {results:[],brand:brand?{name:brand.name,site:brand.site&&isJapaneseMarketURL(brand.site)?brand.site:'',japanSiteVerified:!!brand.site&&isJapaneseMarketURL(brand.site)}:null,
    note:'GitHub Pages版では外部の公式商品ページをサーバーから読み取れません。全成分を貼り付けるか写真OCRを使ってください。'};
  }
- if(u.pathname.endsWith('/api/official'))throw Error('GitHub Pages版は公式サイトへの自動照会に対応していません。掲載元を確認し、日本語の全成分を入力してください。');
+ if(u.pathname.endsWith('/api/official')){
+  const target=u.searchParams.get('url')||'';
+  let parsed;try{parsed=new URL(target);}catch{throw Error('登録商品ページのURLを確認してください。');}
+  if(parsed.protocol!=='https:'||parsed.username||parsed.password||parsed.port||parsed.search||parsed.hash)
+   throw Error('登録済みの国内公式商品URLのみ対応しています。');
+  const matchingProducts=registeredProducts.filter(p=>p.url===parsed.href||p.url+'/'===parsed.href||p.url===parsed.href+'/');
+  if(!matchingProducts.length)throw Error('登録済みの19製品以外は自動読み込みできません。日本語の全成分を手入力・写真OCRから追加できます。');
+  const archived=await staticGetJSON('/formula-records.json',{signal});
+  const matching=archived.records.filter(r=>matchingProducts.some(p=>p.id===r.productId)&&r.sourceUrl===parsed.href);
+  if(!matching.length)throw Error('この商品は全成分保存版が未確認です。原文・実物表示を確認し、手入力してください。');
+  return {
+   name:matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
+   sourceType:'archive',japanMarketConfirmed:true,ingredientPages:[],rows:[],archiveVerifiedAt:matching[0].verifiedAt,
+   variants:matching.map(r=>({label:'全成分：'+r.productName+(r.variant?' '+r.variant:''),ingredients:r.ingredients,
+    order:r.order+'。2026年10月30日の掲載確認保存版。最新処方・実物との一致は未確認。',ingredientCount:r.ingredientCount})),
+   fetchedAt:'',officialVerified:false
+  };
+ }
  if(u.pathname.endsWith('/api/retail'))throw Error('外部サイトからの自動読み込みは停止しています。掲載元の利用条件に従い、日本語の全成分を入力してください。');
  throw Error('このデータはGitHub Pages版では利用できません。');
 }
