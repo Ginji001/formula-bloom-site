@@ -39,7 +39,7 @@ function useStoredFormula(record){
  invalidate();official=false;ocrRequired=false;
  remoteProduct={
   name:record.productName+'（保存版）',url:record.sourceUrl,region:'jp',sourceType:'archive',
-  kind:record.kind,rows:[],ingredients:record.ingredients,order:record.order,
+  kind:record.kind,rows:[],ingredients:record.ingredients,order:record.order,activeIngredients:record.activeIngredients,otherIngredients:record.otherIngredients,
   label:record.variant||'単一処方',fetchedAt:record.verifiedAt,
   archiveVerifiedAt:record.verifiedAt,japanMarketConfirmed:true
  };
@@ -52,6 +52,7 @@ function useStoredFormula(record){
  msg.textContent='公式掲載の保存版（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sku?'／商品番号 '+record.sku:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
  $('sourceInfo').append(msg);
  sourceLink($('sourceInfo'),record.sourceUrl,'保存元の公式ページ');
+ showMedicatedCategories(remoteProduct);
  run();
  $('officialStatus').textContent=$('error').textContent?'保存版を解析できませんでした。':'保存版から花を生成しました（最新処方は未確認）。';
 }
@@ -126,20 +127,32 @@ function identityGate(expected,p,v,accept){
   }
   accept(check);
 }
+function showMedicatedCategories(item){
+ if(item.kind!=='quasi')return;
+ const note=document.createElement('p');note.className='muted';
+ if(item.activeIngredients&&item.otherIngredients){
+  note.textContent='医薬部外品の表示区分：有効成分＝'+item.activeIngredients+
+   ' ／ その他の成分＝'+item.otherIngredients+
+   '。成分の並びから濃度や配合順を推定しません。';
+ }else{
+  note.textContent='医薬部外品の成分です。公式掲載の有効成分・その他の成分の内訳は、この保存版では未確認です。';
+ }
+ $('sourceInfo').append(note);
+}
 function showIdentityNote(check){
   const note=document.createElement('p');
   note.className='muted';
   note.textContent='商品確認：'+(check.status==='unverified'?'未照合':check.status==='review'?'利用者確認': '一致項目あり')+' ／ '+check.text;
   $('sourceInfo').append(note);
 }
-async function fetchProduct(url,confirmed=false,auto=false,depth=0,ctx=null,preferredVariant=null,expected=null){ctx=ctx||beginLookup();if(depth===0){invalidate();remoteProduct=null;official=false;}busy(true);$('officialStatus').textContent='公式ページの全成分を確認しています…';$('fetchOfficial').disabled=true;try{const p=await getJSON('/api/official?url='+encodeURIComponent(url)+(confirmed||$('officialConfirmed').checked?'&confirmed=1':''),ctx.signal);if(ctx.version!==lookupVersion)return;$('officialStatus').replaceChildren();sourceLink($('officialStatus'),p.url,p.name);if(auto&&p.variants.length===0&&p.ingredientPages?.length===1&&depth<2){await fetchProduct(p.ingredientPages[0].url,confirmed,true,depth+1,ctx,preferredVariant,expected);return;}const hint=document.createElement('p');hint.textContent='商品と処方を確認して、全成分表を選んでください。';$('officialStatus').append(hint);for(const link of p.ingredientPages||[]){const b=document.createElement('button');b.className='secondary';b.textContent=link.name+'の成分表を開く';b.onclick=()=>fetchProduct(link.url,confirmed,auto,depth+1,ctx);$('officialStatus').append(b);}const selectedVariant=auto?pickIngredientVariant(p.variants,$('query').value):null;const registeredVariant=preferredVariant?p.variants.find(v=>preferredVariant==='通常版'?!v.label.includes('モイスト'):v.label.includes(preferredVariant)):null;for(const v of p.variants){const b=document.createElement('button');b.className='secondary';b.textContent=v.label+'を取り込む';b.onclick=()=>identityGate(expected,p,v,check=>reviewStoredFormula(expected,p,v,()=>{
+async function fetchProduct(url,confirmed=false,auto=false,depth=0,ctx=null,preferredVariant=null,expected=null){ctx=ctx||beginLookup();if(depth===0){invalidate();remoteProduct=null;official=false;}busy(true);$('officialStatus').textContent='公式ページの全成分を確認しています…';$('fetchOfficial').disabled=true;try{const p=await getJSON('/api/official?url='+encodeURIComponent(url)+(confirmed||$('officialConfirmed').checked?'&confirmed=1':''),ctx.signal);if(ctx.version!==lookupVersion)return;$('officialStatus').replaceChildren();sourceLink($('officialStatus'),p.url,p.name);if(auto&&p.variants.length===0&&p.ingredientPages?.length===1&&depth<2){await fetchProduct(p.ingredientPages[0].url,confirmed,true,depth+1,ctx,preferredVariant,expected);return;}const hint=document.createElement('p');hint.textContent='商品と処方を確認して、全成分表を選んでください。';$('officialStatus').append(hint);for(const link of p.ingredientPages||[]){const b=document.createElement('button');b.className='secondary';b.textContent=link.name+'の成分表を開く';b.onclick=()=>fetchProduct(link.url,confirmed,auto,depth+1,ctx);$('officialStatus').append(b);}const selectedVariant=auto?pickIngredientVariant(p.variants,$('query').value):null;const registeredVariant=expected?.id?p.variants.find(v=>v.productId===expected.id):preferredVariant?p.variants.find(v=>preferredVariant==='通常版'?!v.label.includes('モイスト'):v.label.includes(preferredVariant)):null;for(const v of p.variants){const b=document.createElement('button');b.className='secondary';b.textContent=v.label+'を取り込む';b.onclick=()=>identityGate(expected,p,v,check=>reviewStoredFormula(expected,p,v,()=>{
   invalidate();official=false;ocrRequired=false;remoteProduct={...p,...v,identityCheck:check};
   $('ingredients').value=v.ingredients;$('origin').textContent=v.order;$('kind').value=p.kind;
   $('sourceInfo').replaceChildren();sourceLink($('sourceInfo'),p.url,p.name);
   $('japanConfirmed').checked=true;
   const info=document.createElement('p');info.className='muted';
   info.textContent=(v.label||'全成分')+' / '+v.order+'。販売地域や処方の違いをご確認ください。';
-  $('sourceInfo').append(info);showIdentityNote(check);
+  $('sourceInfo').append(info);showMedicatedCategories(remoteProduct);showIdentityNote(check);
   $('officialStatus').textContent='全成分を取り込みました。';
   run();
   if(!$('error').textContent)$('officialStatus').textContent='全成分から花を自動生成しました。';
@@ -240,7 +253,7 @@ function offerJapaneseIngredients(){
 function presentRegisteredProducts(products,heading='日本向け公式商品'){
   $('searchResults').replaceChildren();
   const notice=document.createElement('p');notice.className='muted';
-  notice.textContent=heading+'：登録済み '+products.length+'製品。23処方は国内公式の全成分保存版から花を生成します。未収録の製品は容器表示から入力してください。';
+  notice.textContent=heading+'：登録された商品候補 '+products.length+'件。国内公式の成分保存版がある場合は花を生成できます。未確認品は成分表の入力が必要です。';
   $('searchResults').append(notice);
   for(const item of products){
     const b=document.createElement('button');b.className='product-option';b.type='button';
@@ -283,7 +296,7 @@ function showBrandProducts(data){
       const b=document.createElement('button');b.className='product-option';b.type='button';
       const strong=document.createElement('strong');strong.textContent=item.name;
       const small=document.createElement('small');
-      small.textContent=item.registered?'国内公式の全成分保存版（最新処方未確認）':item.sourceType==='shop'||item.sourceType==='beauty'?'外部サイト・成分未確認':'公式商品・成分未確認';
+      small.textContent=item.registered?'国内公式の成分保存版（現物未確認）':item.sourceType==='shop'||item.sourceType==='beauty'?'外部サイト・成分未確認':'公式商品・成分未確認';
       b.append(strong,small);
       b.onclick=()=>{
         $('query').value=item.name;

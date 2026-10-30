@@ -20,6 +20,15 @@ export function validateFormulaRecords(catalog){
   if(r.sourceType!=='official'||r.region!=='jp'||!/^https:\/\//.test(r.sourceUrl||''))throw Error('国内公式の出典を確認できません。');
   if(!safeDate(r.verifiedAt)||r.formulaUpdatedAt!==null)throw Error('保存確認日時と改良日の扱いが不正です。');
   if(!isJapaneseIngredientsList(r.ingredients)||tokens(r.ingredients).length!==r.ingredientCount)throw Error('保存成分の日本語表示または数が不正です。');
+  if(r.kind==='quasi'&&(r.activeIngredients||r.otherIngredients)){
+   if(!r.activeIngredients||!r.otherIngredients||
+      !isJapaneseIngredientsList(r.activeIngredients)||!isJapaneseIngredientsList(r.otherIngredients)||
+      tokens(r.activeIngredients).length+tokens(r.otherIngredients).length!==r.ingredientCount||
+      [...tokens(r.activeIngredients),...tokens(r.otherIngredients)].join('|')!==tokens(r.ingredients).join('|'))
+     throw Error('医薬部外品の有効成分・その他の成分の区分が不正です。');
+   if(!String(r.order).includes('配合順'))throw Error('医薬部外品の表示区分と配合順の注意が不足しています。');
+  }
+
   if(!Array.isArray(r.history))throw Error('処方変更履歴の形式が不正です。');
  }
  return catalog;

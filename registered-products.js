@@ -1,6 +1,16 @@
 // 公式の国内向け商品ページで日本語成分表を実際に確認できた製品だけを登録。
 // ブランドの登録と製品の登録は区別する。これらは日本での販売継続や薬機法適合の保証ではない。
 export const registeredProducts=Object.freeze([
+ {id:"ihada-moist-lotion",brand:'イハダ',name:"薬用うるおいローション（しっとり）",
+  aliases:["イハダ うるおいローション しっとり", "IHADA 薬用うるおいローション しっとり"],url:"https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",variant:"しっとり",kind:'quasi',volume:"180mL",ingredientsExpected:23},
+ {id:"ihada-rich-lotion",brand:'イハダ',name:"薬用うるおいローション（とてもしっとり）",
+  aliases:["イハダ うるおいローション とてもしっとり", "IHADA 薬用うるおいローション とてもしっとり"],url:"https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",variant:"とてもしっとり",kind:'quasi',volume:"180mL",ingredientsExpected:26},
+ {id:"ihada-moist-emulsion",brand:'イハダ',name:"薬用うるおいエマルジョン",
+  aliases:["イハダ 薬用うるおい乳液"],url:"https://www.shiseido.co.jp/ihada/products/skincare-emulsion.html",variant:null,kind:'quasi',volume:"135mL",ingredientsExpected:27},
+ {id:"ihada-clear-lotion",brand:'イハダ',name:"薬用クリアローション",
+  aliases:["イハダ クリアローション"],url:"https://www.shiseido.co.jp/ihada/products/skincare-clear-lotion.html",variant:null,kind:'quasi',volume:"180mL",ingredientsExpected:26},
+ {id:"ihada-clear-emulsion",brand:'イハダ',name:"薬用クリアエマルジョン",
+  aliases:["イハダ クリアエマルジョン"],url:"https://www.shiseido.co.jp/ihada/products/skincare-clear-emulsion.html",variant:null,kind:'quasi',volume:"135mL",ingredientsExpected:27},
  {id:'orbis-aquanist-lm',brand:'オルビス',name:'アクアニスト ローション LM（さっぱり高保湿タイプ）',
   aliases:['オルビス アクアニスト ローション LM','オルビス アクアニスト さっぱり'],url:'https://www.orbis.co.jp/small/11010852/',variant:'LM（さっぱり高保湿タイプ）',ingredientsExpected:19,sku:'9041',volume:'180mL'},
  {id:'orbis-aquanist-rm',brand:'オルビス',name:'アクアニスト ローション RM（しっとり高保湿タイプ）',
@@ -55,7 +65,28 @@ export const registeredProducts=Object.freeze([
   aliases:['キュレル 乳液'],url:'https://www.kao-kirei.com/ja/item/kbb/curel/4901301236173/',variant:null},
  {id:'curel-facecream',brand:'キュレル',name:'潤浸保湿 フェイスクリーム',
   aliases:['キュレル フェイスクリーム'],
-  url:'https://www.kao-kirei.com/ja/item/kbb/curel/4901301236210/',variant:null}
+  url:'https://www.kao-kirei.com/ja/item/kbb/curel/4901301236210/',variant:null},
+ {id:'cezanne-skin-conditioner',brand:'セザンヌ',name:'スキンコンディショナー',
+  aliases:['セザンヌ スキンコンディショナー'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'スキンコンディショナー',
+  ingredientsExpected:59,sourcePageId:'4939553013501'},
+ {id:'cezanne-skin-conditioner-high-moisture',brand:'セザンヌ',name:'スキンコンディショナー高保湿',
+  aliases:['セザンヌ スキンコンディショナー高保湿'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'スキンコンディショナー高保湿',
+  ingredientsExpected:41,sourcePageId:'4939553040019'},
+ {id:'cezanne-rich-skin-conditioner-milk',brand:'セザンヌ',name:'濃密スキンコンディショナー ミルク',
+  aliases:['セザンヌ 濃密スキンコンディショナー ミルク'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'濃密スキンコンディショナー ミルク',
+  ingredientsExpected:56,sourcePageId:'4939553042198'},
+ {id:'cezanne-makeup-fix-mist',brand:'セザンヌ',name:'メイクフィックスミスト',
+  aliases:['セザンヌ メイクフィックスミスト'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'メイクフィックスミスト',
+  ingredientsExpected:17,sourcePageId:'4939553042044'},
+ {id:'cezanne-natural-lotion',brand:'セザンヌ',name:'ナチュラルローション',
+  aliases:['セザンヌ ナチュラルローション'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'ナチュラルローション',
+  ingredientsExpected:39,sourcePageId:'4939553042587'},
+ {id:'cezanne-cleansing-balm',brand:'セザンヌ',name:'うるオフクレンジングバーム',
+  aliases:['セザンヌ うるオフクレンジングバーム'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'うるオフクレンジングバーム',
+  ingredientsExpected:32,sourcePageId:'4939553043416'},
+ {id:'cezanne-rich-hydro-mask',brand:'セザンヌ',name:'濃密ハイドロマスク',
+  aliases:['セザンヌ 濃密ハイドロマスク'],url:'https://www.cezanne.co.jp/lineup/seibun/',variant:'濃密ハイドロマスク',
+  ingredientsExpected:36,sourcePageId:'4939553530213'},
 ].map(x=>Object.freeze({...x,aliases:Object.freeze(x.aliases)})));
 
 export const registeredBrands=Object.freeze([...new Set(registeredProducts.map(x=>x.brand))]);

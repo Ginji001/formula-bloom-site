@@ -19,7 +19,7 @@ const staticProducts=q=>{
  const s=fold(q);if(!s)return [];
  return registeredProducts.filter(x=>[x.brand+' '+x.name,x.name,...x.aliases].some(value=>fold(value).includes(s)||s.includes(fold(value)))).slice(0,30);
 };
-const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:'cosmetic'});
+const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:p.kind||'cosmetic'});
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
  const u=new URL(path,location.href),q=(u.searchParams.get('q')||'').trim();
@@ -61,7 +61,7 @@ export async function staticGetJSON(path,{signal}={}){
   return {
    name:matching.length>1?'国内公式の複数処方掲載ページ':matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
    sourceType:'archive',japanMarketConfirmed:true,ingredientPages:[],rows:[],archiveVerifiedAt:matching[0].verifiedAt,
-   variants:matching.map(r=>({label:'全成分：'+r.productName+(r.variant&&!r.productName.includes(r.variant)?' '+r.variant:''),ingredients:r.ingredients,
+   variants:matching.map(r=>({productId:r.productId,label:'全成分：'+r.productName+(r.variant&&!r.productName.includes(r.variant)?' '+r.variant:''),ingredients:r.ingredients,activeIngredients:r.activeIngredients||null,otherIngredients:r.otherIngredients||null,
     order:r.order+'。'+r.verifiedAt.slice(0,10)+'の掲載確認保存版。最新処方・実物との一致は未確認。',ingredientCount:r.ingredientCount})),
    fetchedAt:'',officialVerified:false
   };
