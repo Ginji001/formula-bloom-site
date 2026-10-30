@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T19:33:45.740Z",
+  "generatedAt": "2026-10-30T19:48:01.608Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 14,
-  "brandsWithoutSavedFormulas": 133,
-  "savedFormulaCount": 85,
-  "registeredCandidateCount": 85,
+  "brandsWithSavedFormulas": 15,
+  "brandsWithoutSavedFormulas": 132,
+  "savedFormulaCount": 91,
+  "registeredCandidateCount": 91,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -1736,12 +1736,73 @@
       "brand": "キャンメイク",
       "maker": "井田ラボラトリーズ",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 6,
+      "registeredCandidateCount": 6,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "canmake-muchi-puru-tint-sheer-balm-s01",
+          "productName": "むちぷるティント～シアーバーム～ [S01]アプリコットソルベ",
+          "variant": "[S01]アプリコットソルベ",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/muchi-puru-tint-sheer-balm/",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "canmake-mellow-dew-lip-mask-01",
+          "productName": "メロウデューリップマスク [01]クリアピンク",
+          "variant": "[01]クリアピンク",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/mellow-dew-lip-mask/",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "canmake-airy-extension-liner-01",
+          "productName": "エアリーエクステンションライナー [01]メイプルパンケーキ",
+          "variant": "[01]メイプルパンケーキ",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/airy-extension-liner/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "canmake-cream-cheek-05",
+          "productName": "クリームチーク [05]スウィートアプリコット",
+          "variant": "[05]スウィートアプリコット",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/cream-cheek/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "canmake-marshmallow-finish-powder-abloom-01",
+          "productName": "マシュマロフィニッシュパウダー ～Abloom～ [01]ディアレストブーケ",
+          "variant": "[01]ディアレストブーケ",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/marshmallow-finish-powder-abloom/",
+          "ingredientCount": 53
+        },
+        {
+          "productId": "canmake-clear-veil-setting-powder-01",
+          "productName": "クリアヴェールセッティングパウダー [01]ミスティッククリア",
+          "variant": "[01]ミスティッククリア",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T04:42:58+09:00",
+          "sourceUrl": "https://www.canmake.com/item/detail/clear-veil-setting-powder/",
+          "ingredientCount": 22
+        }
+      ]
     },
     {
       "brandId": 80,

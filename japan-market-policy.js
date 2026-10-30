@@ -4,7 +4,7 @@ const domesticOfficialHosts=[
  'chifure.co.jp','shiseido.co.jp','orbis.co.jp','fancl.co.jp','dhc.co.jp',
  'rohto.co.jp','shop.rohto.co.jp','tvert.jp','kobayashi.co.jp',
  'kose.co.jp','pola.co.jp','daiichisankyo-hc.co.jp','kracie.co.jp',
- 'mandom.co.jp','manyo-japanese.com','anuashop.jp','torriden.jp','mediheal.jp','jp.laneige.com','jp.hera.com'
+ 'mandom.co.jp','canmake.com','manyo-japanese.com','anuashop.jp','torriden.jp','mediheal.jp','jp.laneige.com','jp.hera.com'
 ];
 const matchesHost=(host,expected)=>host===expected||host.endsWith('.'+expected);
 export function isJapaneseMarketURL(input){
@@ -21,7 +21,7 @@ export function isJapaneseMarketURL(input){
 export function isJapaneseMarketBrand(brand){
  return Boolean(brand&&brand.country==='JP')||isJapaneseMarketURL(brand?.site);
 }
-export const recognizedJapaneseCodes=/^(?:BG|DPG|PG|PCA|PVP|PCA-Na|DNA-Na|RNA-Na|EDTA-2Na|EDTA-4Na|PEG-?\d+|PPG-?\d+|CI\s*\d{5})$/i;
+export const recognizedJapaneseCodes=/^(?:BG|DPG|PG|BHT|PCA|PVP|PCA-Na|DNA-Na|RNA-Na|EDTA-2Na|EDTA-4Na|PEG-?\d+|PPG-?\d+|CI\s*\d{5})$/i;
 export const isJapaneseIngredientText=name=>{
  const s=String(name||'').normalize('NFKC').trim();
  return Boolean(s)&&(/[ぁ-んァ-ヶ一-龥々]/.test(s)||recognizedJapaneseCodes.test(s.replace(/^PCA[ー－−]Na$/i,'PCA-Na')));
