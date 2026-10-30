@@ -59,9 +59,9 @@ export async function staticGetJSON(path,{signal}={}){
   const matching=archived.records.filter(r=>matchingProducts.some(p=>p.id===r.productId)&&r.sourceUrl===parsed.href);
   if(!matching.length)throw Error('この商品は全成分保存版が未確認です。原文・実物表示を確認し、手入力してください。');
   return {
-   name:matching.length>1?'国内公式の複数処方掲載ページ':matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
+   name:matching.length>1?'色・タイプ別の複数処方掲載ページ':matching[0].productName,url:matching[0].sourceUrl,region:'jp',kind:matching[0].kind,
    sourceType:'archive',japanMarketConfirmed:true,ingredientPages:[],rows:[],archiveVerifiedAt:matching[0].verifiedAt,
-   variants:matching.map(r=>({productId:r.productId,sourcePageId:r.sourcePageId||null,sku:r.sku||null,volume:r.volume||null,label:'全成分：'+r.productName+(r.variant&&!r.productName.includes(r.variant)?' '+r.variant:''),ingredients:r.ingredients,activeIngredients:r.activeIngredients||null,otherIngredients:r.otherIngredients||null,
+   variants:matching.map(r=>({productId:r.productId,sourceOrigin:r.sourceType,formulaStatus:r.formulaStatus||'listed',sourcePageId:r.sourcePageId||null,sku:r.sku||null,volume:r.volume||null,label:'全成分：'+r.productName+(r.variant&&!r.productName.includes(r.variant)?' '+r.variant:''),ingredients:r.ingredients,activeIngredients:r.activeIngredients||null,otherIngredients:r.otherIngredients||null,
     order:r.order+'。'+r.verifiedAt.slice(0,10)+'の掲載確認保存版。最新処方・実物との一致は未確認。',ingredientCount:r.ingredientCount})),
    fetchedAt:'',officialVerified:false
   };

@@ -4,7 +4,8 @@ import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanes
 import {japaneseIngredientLabel} from './japan-market.js';
 import {isJapaneseIngredientsList} from './japan-market-policy.js';
 import {cleanPastedProductName} from './product-query.js';
-import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,chooseExactRegisteredProduct} from './registered-products.js';
+import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,chooseExactRegisteredProduct,productFold} from './registered-products.js';
+import {productFamilies,chooseFamilyFormula} from './product-families.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
 import {provenance,provenanceText} from './provenance.js';
@@ -38,7 +39,7 @@ async function storedFormulaFor(expected){return recordForProduct(await formulaA
 function useStoredFormula(record){
  invalidate();official=false;ocrRequired=false;
  remoteProduct={
-  name:record.productName+'（保存版）',url:record.sourceUrl,region:'jp',sourceType:'archive',
+  name:record.productName+(record.formulaStatus==='historical-reference'?'（旧処方・参考）':'（掲載時点）'),url:record.sourceUrl,region:'jp',sourceType:'archive',sourceOrigin:record.sourceType,formulaStatus:record.formulaStatus||'listed',
   kind:record.kind,rows:[],ingredients:record.ingredients,order:record.order,activeIngredients:record.activeIngredients,otherIngredients:record.otherIngredients,
   label:record.variant||'単一処方',fetchedAt:record.verifiedAt,
   archiveVerifiedAt:record.verifiedAt,japanMarketConfirmed:true
@@ -49,9 +50,9 @@ function useStoredFormula(record){
  $('japanConfirmed').checked=true;
  $('sourceInfo').replaceChildren();
  const msg=document.createElement('p');msg.className='muted';
- msg.textContent='公式掲載の保存版（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sku?'／商品コード '+record.sku:'')+(record.sourcePageId?'／一覧ID '+record.sourcePageId:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
+ msg.textContent=(record.formulaStatus==='historical-reference'?'旧処方の参考情報':record.sourceType==='official'?'メーカー掲載の全成分':'国内販売店・美容情報サイトの全成分')+'（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sku?'／商品コード '+record.sku:'')+(record.sourcePageId?'／一覧ID '+record.sourcePageId:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
  $('sourceInfo').append(msg);
- sourceLink($('sourceInfo'),record.sourceUrl+(record.sourcePageId?'#'+record.sourcePageId:''),'保存元の公式ページ');
+ sourceLink($('sourceInfo'),record.sourceUrl+(record.sourcePageId?'#'+record.sourcePageId:''),'全成分の掲載元');
  showMedicatedCategories(remoteProduct);
  run();
  $('officialStatus').textContent=$('error').textContent?'保存版を解析できませんでした。':'保存版から花を生成しました（最新処方は未確認）。';
@@ -59,7 +60,7 @@ function useStoredFormula(record){
 function offerStoredFormula(record){
  if(!record)return;
  const b=document.createElement('button');b.className='secondary';b.type='button';
- b.textContent='保存版で花にする（'+record.verifiedAt.slice(0,10)+'）';
+ b.textContent=(record.formulaStatus==='historical-reference'?'旧処方を参考表示':'掲載全成分で花にする')+'（'+record.verifiedAt.slice(0,10)+'）';
  b.onclick=()=>useStoredFormula(record);
  $('officialStatus').append(b);
 }
@@ -93,7 +94,7 @@ $('savedFormulas').ontoggle=async()=>{
  for(const record of archive.records){
   const b=document.createElement('button');
   b.className='product-option';b.type='button';
-  b.textContent=record.brand+' '+record.productName+' ／ '+record.verifiedAt.slice(0,10);
+  b.textContent=record.brand+' '+record.productName+(record.formulaStatus==='historical-reference'?' ／ 旧処方・参考':'')+' ／ '+record.verifiedAt.slice(0,10);
   b.onclick=()=>useStoredFormula(record);
   container.append(b);
  }
@@ -188,13 +189,14 @@ $('sharedExtractBtn').onclick=()=>{
 };
 
 $('sharedKind').onchange=()=>{$('sharedConfirmed').checked=false;};
+$('sharedHistorical').onchange=()=>{$('sharedConfirmed').checked=false;};
 $('sharedImportBtn').onclick=()=>{
  invalidate();remoteProduct=null;official=false;ocrRequired=false;
  $('sharedImportStatus').textContent='';
  try{
   const entry=prepareSharedFormula({
    url:$('sharedUrl').value,name:$('sharedName').value,
-   ingredients:$('sharedIngredients').value,kind:$('sharedKind').value,confirmed:$('sharedConfirmed').checked
+   ingredients:$('sharedIngredients').value,kind:$('sharedKind').value,confirmed:$('sharedConfirmed').checked,historical:$('sharedHistorical').checked
   });
   remoteProduct=entry;
   $('ingredients').value=entry.ingredients;$('kind').value=entry.kind;
@@ -285,26 +287,57 @@ function offerJapaneseIngredients(){
   };
   $('searchResults').append(action);
 }
-function presentRegisteredProducts(products,heading='日本向け公式商品'){
-  $('searchResults').replaceChildren();
-  const notice=document.createElement('p');notice.className='muted';
-  notice.textContent=heading+'：登録された商品候補 '+products.length+'件。国内公式の成分保存版がある場合は花を生成できます。未確認品は成分表の入力が必要です。';
-  $('searchResults').append(notice);
-  for(const item of products){
-    const b=document.createElement('button');b.className='product-option';b.type='button';
-    const title=document.createElement('strong');title.textContent=item.brand+' '+item.name;
-    const hint=document.createElement('small');hint.textContent='保存版の日本語全成分で花にする（要照合）';
-    b.append(title,hint);
-    b.onclick=()=>{
-      $('query').value=item.brand+' '+item.name;
-      $('searchResults').textContent='日本公式の成分表を確認しています：'+item.brand+' '+item.name;
-      fetchProduct(item.url,false,true,0,null,item.variant,item);
-    };
-    $('searchResults').append(b);
+function selectRegisteredFormula(item,context=''){
+  $('query').value=item.brand+' '+item.name;
+  $('searchResults').textContent='日本語全成分を確認しています：'+item.brand+' '+item.name;
+  fetchProduct(item.url,false,true,0,null,item.variant,item);
+}
+function addProductFamily(container,family,query=''){
+  const first=chooseFamilyFormula(family,query);
+  const selectedIsExact=[first.brand+' '+first.name,first.name,...first.aliases]
+    .some(x=>productFold(x)===productFold(query));
+  const button=document.createElement('button');button.className='product-option';button.type='button';
+  const title=document.createElement('strong');title.textContent=family.brand+' '+family.name;
+  const hint=document.createElement('small');
+  hint.textContent=family.products.length===1?'日本語全成分で花を生成':
+    '同じ商品として表示（掲載色 '+family.products.length+'件）。'+
+    (selectedIsExact?'指定色で解析':'代表色 '+(first.variant||first.name)+'で解析');
+  button.append(title,hint);
+  button.onclick=()=>selectRegisteredFormula(first);
+  container.append(button);
+  if(family.products.length>1){
+   const variants=document.createElement('details');variants.className='formula-family-variants';
+   const summary=document.createElement('summary');summary.textContent='色・掲載処方 '+family.products.length+'件（成分が異なる場合あり）';
+   variants.append(summary);
+   const warning=document.createElement('p');warning.className='muted';
+   warning.textContent='商品は同じグループです。花には選択した色の掲載全成分を使用します。別色や過去の処方が同じ成分とは限りません。';
+   variants.append(warning);
+   for(const option of family.products){
+    const choice=document.createElement('button');choice.type='button';choice.className='secondary';
+    choice.textContent=option.variant||option.name;
+    choice.onclick=()=>selectRegisteredFormula(option);
+    variants.append(choice);
+   }
+   container.append(variants);
   }
-  const more=document.createElement('button');more.type='button';more.className='secondary';more.textContent='登録済み以外の日本向け製品を探す';more.onclick=()=>search({forceOfficial:true});$('searchResults').append(more);
+}
+function presentRegisteredProducts(products,heading='日本向け商品'){
+  $('searchResults').replaceChildren();
+  const families=productFamilies(products);
+  const lead=document.createElement('p');lead.className='muted';
+  lead.textContent=heading+'：'+families.length+'商品（全成分の掲載記録 '+products.length+'件）。容量違い・色違いは同じ商品として表示。旧処方は参考情報として区別します。';
+  $('searchResults').append(lead);
+  for(const family of families)addProductFamily($('searchResults'),family,$('query').value);
+  const more=document.createElement('button');more.type='button';more.className='secondary';
+  more.textContent='未登録の国内販売商品を探す';
+  more.onclick=()=>search({forceOfficial:true});
+  $('searchResults').append(more);
 }
 function showBrandProducts(data){
+  if(data.products?.length&&data.products.every(item=>item.registered&&item.id)){
+   presentRegisteredProducts(data.products,data.brand?.name||'ブランド');
+   return;
+  }
   const holder=$('searchResults');
   holder.replaceChildren();
   const brand=data.brand?.name||'ブランド';
@@ -376,7 +409,7 @@ function quickRegisteredBrands(){
   zone.replaceChildren();
   for(const brand of registeredBrands){
     const b=document.createElement('button');b.className='registered-chip';b.type='button';
-    b.textContent=brand+'（'+productsForBrand(brand).length+'）';
+    b.textContent=brand+'（'+productFamilies(productsForBrand(brand)).length+'商品）';
     b.onclick=()=>{tab('search');$('query').value=brand;invalidate();openBrandProducts(brand);};
     zone.append(b);
   }
@@ -615,7 +648,7 @@ function showBrands(){
     };
     const meta=document.createElement('small');
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
-    meta.textContent=savedCount?'日本公式の全成分保存版 '+savedCount+'処方':
+    meta.textContent=savedCount?'全成分の掲載記録 '+savedCount+'処方（同商品に色違いを含む）':
       '日本語全成分：未収録（ブランド登録のみ）';
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
@@ -624,7 +657,7 @@ function showBrands(){
   const stats=brandCatalog.stats;
   const verifiedBrands=[...verifiedBrandCounts].filter(([,count])=>count>0).length;
   const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
-  $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 国内公式の成分保存版 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方。ブランド内の全商品を網羅した意味ではありません。';
+  $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 全成分の掲載記録 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方。容量・色違いは商品単位でまとめ、別色の成分差は保持します。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。メーカー公式のURLからも調べられます。';
 }
 $('brandFilter').oninput=showBrands;

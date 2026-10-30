@@ -1,4 +1,4 @@
-// 国内向け公式サイトの日本語全成分を保存したスナップショットの照合。
+// 国内向けに掲載された日本語全成分の出典・版・製品照合。
 // 公開日・取得日は処方の改良日ではない。自動更新・推測・利用者データの保存はしない。
 import {splitIngredients} from './engine.js';
 import {isJapaneseIngredientsList} from './japan-market-policy.js';
@@ -17,7 +17,18 @@ export function validateFormulaRecords(catalog){
  for(const r of catalog.records){
   if(!r.productId||ids.has(r.productId))throw Error('保存成分に重複や商品IDの欠落があります。');
   ids.add(r.productId);
-  if(r.sourceType!=='official'||r.region!=='jp'||!/^https:\/\//.test(r.sourceUrl||''))throw Error('国内公式の出典を確認できません。');
+  if(!['official','shop','beauty'].includes(r.sourceType)||r.region!=='jp'||!/^https:\/\//.test(r.sourceUrl||''))
+   throw Error('国内向けの出典を確認できません。');
+  // A publicly offered product does not prove that any web listing matches its label.
+  // Non-manufacturer sources are eligible after explicit item/ingredients verification.
+  if(r.sourceType!=='official'&&(
+   r.sourceReview?.jpMarketConfirmed!==true||
+   r.sourceReview?.productNameMatched!==true||
+   r.sourceReview?.fullIngredientsChecked!==true||
+   !r.sourceTitle))
+   throw Error('販売店・美容サイトの成分表は国内版・商品同一性・全成分を確認してください。');
+  if(r.formulaStatus!==undefined&&!['listed','historical-reference'].includes(r.formulaStatus))
+   throw Error('旧処方の位置づけが不正です。');
   if(!safeDate(r.verifiedAt)||r.formulaUpdatedAt!==null)throw Error('保存確認日時と改良日の扱いが不正です。');
   if(!isJapaneseIngredientsList(r.ingredients)||tokens(r.ingredients).length!==r.ingredientCount)throw Error('保存成分の日本語表示または数が不正です。');
   if(r.kind==='quasi'&&(r.activeIngredients||r.otherIngredients)){

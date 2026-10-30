@@ -45,12 +45,25 @@ export function checkProductIdentity(expected,observed={}){
   return {status:'unverified',errors,reviews,checked,unknown:['商品名・容量・JANは未照合'],text:'商品名・容量・JANは未照合'};
  }
  const eName=String(expected.name),oName=String(observed.name||'');
+ const identityBase=x=>fold(x).replace(/\d+(?:\.\d+)?(?:ml|g|枚|本|個|包)(?:入り)?$/i,'');
+ const eBase=identityBase(eName),oBase=identityBase(oName);
+ const sameFamily=!!eBase&&!!oBase&&(eBase===oBase||eBase.length>=5&&oBase.includes(eBase)||oBase.length>=5&&eBase.includes(oBase));
  const eJan=productJAN(expected),oJan=productJAN(observed);
- if(eJan&&oJan){if(eJan!==oJan)errors.push('JANが異なります');else checked.push('JAN一致');}
- else unknown.push('JAN未確認');
  const eSize=productCapacity(expected),oSize=productCapacity(observed);
- if(eSize&&oSize){if(eSize!==oSize)errors.push('容量・数量が異なります');else checked.push('容量一致');}
- else unknown.push('容量未確認');
+ // Capacity and its packaging JAN may differ for the same formula family.
+ // Keep them as unresolved evidence, not proof of identical ingredients.
+ if(eJan&&oJan){
+  if(eJan!==oJan){
+   if(sameFamily&&eSize&&oSize&&eSize!==oSize)reviews.push('容量違いのJAN：配合の同一性を確認してください');
+   else errors.push('JANが異なります');
+  }else checked.push('JAN一致');
+ }else unknown.push('JAN未確認');
+ if(eSize&&oSize){
+  if(eSize!==oSize){
+   if(sameFamily)reviews.push('容量違い：成分表の一致を確認してください');
+   else errors.push('容量・数量が異なります');
+  }else checked.push('容量一致');
+ }else unknown.push('容量未確認');
  const eVariant=productVariant(expected.variant||'')||productVariant(eName);
  const oVariant=observedVariant(observed);
  if(eVariant&&oVariant){

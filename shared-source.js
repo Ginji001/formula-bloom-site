@@ -33,7 +33,7 @@ export function sharedSource(url){
  if(Object.keys(specs).some(known=>host.includes(known+'.')))return null;
  return {id:'external',label:'外部サイト（'+u.hostname+'）',type:'external',url:u.href,hostname:u.hostname};
 }
-export function prepareSharedFormula({url,name,ingredients,kind='cosmetic',confirmed=false}={}){
+export function prepareSharedFormula({url,name,ingredients,kind='cosmetic',confirmed=false,historical=false}={}){
  const site=sharedSource(url);
  if(!site)throw Error('成分表を確認したHTTPSの掲載元URLを入力してください。');
  if(!confirmed)throw Error('商品ページと日本語全成分を確認してください。');
@@ -46,8 +46,8 @@ export function prepareSharedFormula({url,name,ingredients,kind='cosmetic',confi
   throw Error('広告文ではなく、全成分が揃っているか確認してください。');
  return {
   name:title,url:site.url,sourceType:'user-shared',siteName:site.label,retailer:site.id,region:'jp',
-  japanMarketConfirmed:true,kind,ingredients:input,rows:[],label:'利用者が商品ページから転記',
-  order:'入力順。販売者・メーカーの原文および現物表示は未確認',
+  japanMarketConfirmed:true,kind,ingredients:input,rows:[],label:historical?'旧処方の参考成分（利用者が転記）':'利用者が商品ページから転記',formulaStatus:historical?'historical-reference':'listed',
+  order:(historical?'過去の処方として参考。':'')+'入力順。販売者・メーカーの原文および現物表示は未確認',
   fetchedAt:'',origin:'shared'
  };
 }
@@ -59,7 +59,7 @@ export function extractIngredientCandidates(text){
  const raw=String(text||'');
  if(raw.length<20||raw.length>40000)return [];
  const lines=raw.replace(/\r/g,'').split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean);
- const heading=/^(?:【|\[)?(?:全成分(?:表示|一覧)?|配合全成分|配合成分一覧)(?:】|\])?\s*[:：]?\s*(.*)$/;
+ const heading=/^(?:【|\[)?(?:全成分(?:表示|一覧)?|配合全成分|配合成分(?:表示|一覧)?|成分表示|成分表)(?:】|\])?\s*[:：]?\s*(.*)$/;
  const stop=/^(?:使用方法|使い方|おすすめ|特徴|注意事項|ご使用|内容量|商品情報|販売価格|レビュー|クチコミ|関連記事|口コミ|配送|送料|香り|主な成分|主要成分|注目成分)/;
  const found=[];
  for(let i=0;i<lines.length;i++){

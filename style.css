@@ -71,4 +71,8 @@ button,input,select,textarea{touch-action:manipulation}
 .history-entry strong{display:block;word-break:break-word}
 .history-entry button{margin:6px 6px 0 0}
 
+.formula-family-variants{padding:6px 10px 12px;margin:0 0 8px;border:1px solid #e6dfe0;border-radius:12px}
+.formula-family-variants summary{cursor:pointer;font-size:.87rem;padding:8px 0}
+.formula-family-variants button{margin:4px 6px 4px 0;max-width:100%;white-space:normal;text-align:left;min-height:44px}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}
