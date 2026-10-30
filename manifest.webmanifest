@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "処方の花｜Formula Bloom",
+  "short_name": "処方の花",
+  "description": "日本語の全成分を花で読み解く。保存版の検索と花生成はオフラインでも利用できます。",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8f5",
+  "theme_color": "#9b6d77",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
