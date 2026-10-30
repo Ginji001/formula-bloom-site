@@ -1,12 +1,16 @@
 // Generated cache name and asset list are tied to the complete Pages build.
-const CACHE='formula-bloom:'+new URL('./',self.location.href).pathname+':40c2da19151f1036', ASSETS=["app.js","assets/flowers/camellia.jpg","assets/flowers/chamomile.jpg","assets/flowers/hydrangea.jpg","assets/flowers/lavender.jpg","assets/flowers/lily.jpg","assets/flowers/orchid.jpg","assets/flowers/rose.jpg","assets/flowers/sunflower.jpg","assets/flowers/wildflower.jpg","assets/icons/apple-touch-icon.png","assets/icons/icon-192.png","assets/icons/icon-512.png","assets/icons/icon-maskable-512.png","assets/realistic-flower.png","brand-directory.js","engine.js","facts-index.js","flower-photos.js","flower-types.js","formula-archive.js","formula-intent.js","formula-records.json","history-ui.js","history.js","index.html","japan-market-policy.js","japan-market.js","japanese.js","manifest.webmanifest","my-formulas.js","ocr-review.js","photo-credits.html","privacy.html","product-identity.js","product-query.js","provenance.js","pwa.js","registered-products.js","share.js","shared-source.js","static-api.js","style.css","terms.html","theme-elegant.css"];
+const CACHE='formula-bloom:'+new URL('./',self.location.href).pathname+':42046cb4c27d4ba9', ASSETS=["app.js","assets/flowers/camellia.jpg","assets/flowers/chamomile.jpg","assets/flowers/hydrangea.jpg","assets/flowers/lavender.jpg","assets/flowers/lily.jpg","assets/flowers/orchid.jpg","assets/flowers/rose.jpg","assets/flowers/sunflower.jpg","assets/flowers/wildflower.jpg","assets/icons/apple-touch-icon.png","assets/icons/icon-192.png","assets/icons/icon-512.png","assets/icons/icon-maskable-512.png","assets/realistic-flower.png","brand-directory.js","engine.js","facts-index.js","flower-photos.js","flower-types.js","formula-archive.js","formula-intent.js","formula-records.json","history-ui.js","history.js","index.html","japan-market-policy.js","japan-market.js","japanese.js","manifest.webmanifest","my-formulas.js","ocr-review.js","photo-credits.html","privacy.html","product-identity.js","product-query.js","provenance.js","pwa.js","registered-products.js","share.js","shared-source.js","static-api.js","style.css","terms.html","theme-elegant.css"];
 const BASE=new URL('./',self.location.href);
 const PREFIX='formula-bloom:'+BASE.pathname+':';
 const urls=ASSETS.map(path=>new URL(path,BASE).href);
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
- try{await cache.addAll(urls.map(url=>new Request(url,{cache:'reload'})));}
- catch(error){await caches.delete(CACHE);throw error;}
+ try{
+  await cache.addAll(urls.map(url=>new Request(url,{cache:'reload'})));
+  // Switch only after the complete new snapshot is available. Do not reload open
+  // pages or touch localStorage; they keep their current in-progress input.
+  await self.skipWaiting();
+ }catch(error){await caches.delete(CACHE);throw error;}
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
  for(const key of await caches.keys())if(key.startsWith(PREFIX)&&key!==CACHE)await caches.delete(key);

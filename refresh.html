@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#9b6d77"><title>処方の花｜最新版に切り替える</title>
+<style>
+*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;color:#4f4c49;background:#faf8f5;margin:0;min-height:100dvh;display:grid;place-items:center;padding:20px}main{max-width:440px;width:100%;padding:28px 24px;background:#fff;border:1px solid #e6d4d9;border-radius:19px;box-shadow:0 14px 35px #44313a10}h1{font-size:21px;margin:0 0 16px}p{font-size:14px;line-height:1.8}a{display:inline-block;color:#6b3e51;padding:10px 0;font-weight:600}button{border:0;border-radius:12px;color:white;background:#80576a;padding:13px 20px;cursor:pointer;font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #986b82;outline-offset:3px}
+</style></head><body><main><h1>処方の花を最新版に更新</h1>
+<p id="status" role="status" aria-live="polite">公開サイトの最新版を確認しています…</p>
+<p>端末内の登録商品・解析履歴は削除しません。</p>
+<button type="button" id="retry" hidden>更新を再試行</button>
+<p><a href="./">アプリに戻る</a></p></main>
+<script>
+(async()=>{
+ const status=document.getElementById('status');
+ const retry=document.getElementById('retry');
+ retry.onclick=()=>location.reload();
+ if(!navigator.onLine){status.textContent='通信に接続してから再試行してください。';retry.hidden=false;return;}
+ if(!('serviceWorker' in navigator)){status.textContent='このブラウザにはPWA更新機能がありません。通常のWebサイトへ戻ってください。';return;}
+ let finished=false,applied=false;
+ const home=()=>{if(finished)return;finished=true;location.replace('./');};
+ navigator.serviceWorker.addEventListener('controllerchange',()=>{status.textContent='最新版に切り替えました。アプリを開きます…';home();});
+ const timeout=setTimeout(()=>{if(!finished){status.textContent='更新に時間がかかっています。通信を確認して再試行してください。';retry.hidden=false;}},20000);
+ try{
+  const url=new URL('./sw.js',location.href),scope=new URL('./',location.href).pathname;
+  const reg=await navigator.serviceWorker.register(url.href,{scope,updateViaCache:'none'});
+  const activate=()=>{
+   if(reg.waiting&&!applied){applied=true;status.textContent='最新版を適用しています…';reg.waiting.postMessage({type:'APPLY_UPDATE'});return true;}
+   return false;
+  };
+  const installed=new Promise(resolve=>{
+   const watch=()=>{
+    const installing=reg.installing;
+    if(!installing)return;
+    const changed=()=>{if(installing.state==='installed'){activate();resolve(true);}else if(installing.state==='redundant')resolve(false);};
+    installing.addEventListener('statechange',changed);changed();
+   };
+   reg.addEventListener('updatefound',watch);
+   watch();
+   if(reg.waiting){activate();resolve(true);}
+  });
+  await reg.update();activate();
+  if(applied){
+   await Promise.race([new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true})),new Promise(r=>setTimeout(r,15000))]);
+   if(navigator.serviceWorker.controller===reg.active)home();
+   else {status.textContent='更新を確認できませんでした。もう一度お試しください。';retry.hidden=false;}
+  }else{
+   if(reg.installing)await Promise.race([installed,new Promise(r=>setTimeout(r,14000))]);
+   else await Promise.race([installed,new Promise(r=>setTimeout(r,1500))]);
+   if(!applied)home();
+  }
+ }catch(error){status.textContent='更新を確認できませんでした。接続状態を確認し、再試行してください。';retry.hidden=false;}
+ finally{clearTimeout(timeout);}
+})();
+</script></body></html>
