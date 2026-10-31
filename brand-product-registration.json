@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T03:11:19.331Z",
+  "generatedAt": "2026-10-31T03:16:24.233Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 96,
-  "brandsWithPendingProductNames": 51,
-  "productNameRecords": 258,
+  "brandsWithRegisteredProductNames": 101,
+  "brandsWithPendingProductNames": 46,
+  "productNameRecords": 263,
   "ingredientRecords": 188,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -4168,13 +4168,25 @@
       "maker": "COSRX",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.cosrx.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc39-cosrx",
+          "productName": "ザ・６ペプチドスキンブースターセラム",
+          "variant": null,
+          "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/8800311121805",
+          "kind": null,
+          "volume": "150mL",
+          "sku": null,
+          "jan": "8800311121805",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 101,
@@ -4342,13 +4354,25 @@
       "maker": "Dr.Jart+",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc39-drjart",
+          "productName": "シカペア インテンシブ S リペア クリーム",
+          "variant": null,
+          "sourceUrl": "https://drjartjp.com/",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 110,
@@ -4594,13 +4618,25 @@
       "maker": "CLIO",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc39-clio",
+          "productName": "キル カバー ファンウェア クッション ザ オリジナル",
+          "variant": null,
+          "sourceUrl": "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/",
+          "kind": null,
+          "volume": "15g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 122,
@@ -4636,13 +4672,25 @@
       "maker": "rom&nd",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc39-romand",
+          "productName": "ザジューシーラスティングティント",
+          "variant": "01 ポメロスキン",
+          "sourceUrl": "https://ainz-tulpe.jp/products/4570128220322",
+          "kind": null,
+          "volume": "3.5g",
+          "sku": null,
+          "jan": "4570128220322",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 125,
@@ -4650,13 +4698,25 @@
       "maker": "3CE",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc39-3ce",
+          "productName": "マルチアイカラーパレット TA テイクオーバー",
+          "variant": "TA テイクオーバー",
+          "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": "6902395984375",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 126,
