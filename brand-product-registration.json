@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T12:17:06.128Z",
+  "generatedAt": "2026-10-31T12:21:03.093Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 103,
-  "brandsWithPendingProductNames": 44,
-  "productNameRecords": 276,
+  "brandsWithRegisteredProductNames": 104,
+  "brandsWithPendingProductNames": 43,
+  "productNameRecords": 278,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -4996,13 +4996,40 @@
       "maker": "Dr.G",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc51-dr-g-clear-soothing-50",
+          "productName": "R.E.D BLEMISH クリアスージングクリーム",
+          "series": null,
+          "productType": null,
+          "variant": "クリアスージング",
+          "sourceUrl": "https://www.seims.co.jp/shop/g/g8809838652489/",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": "8809838652489",
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc51-dr-g-clear-moisture-50",
+          "productName": "R.E.D BLEMISH クリアモイスチャークリーム",
+          "series": null,
+          "productType": null,
+          "variant": "クリアモイスチャー",
+          "sourceUrl": "https://www.seims.co.jp/shop/g/g8809963504646/",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": "8809963504646",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 109,

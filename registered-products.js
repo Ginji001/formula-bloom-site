@@ -327,6 +327,14 @@ export const registeredProducts=Object.freeze([
  {"id":"rc48-kate-tears-remover","brand":"KATE","name":"ルイシンノイチゲキリムーバー","aliases":["ケイト ルイシンノイチゲキリムーバー"],"url":"https://www.kao-kirei.com/ja/item/kbb/kate/4973167049969/","variant":null,"volume":"7.8mL","kind":"cosmetic","jan":"4973167049969","sku":null,"ingredientsExpected":13,"registrationStatus":"formula-verified","identityVerifiedAt":"2026-10-31"},
  {"id":"rc48-lunasol-polishing-gel","brand":"LUNASOL","name":"ポリッシングクリア ジェルウォッシュ","aliases":["ルナソル ポリッシングクリア ジェルウォッシュ"],"url":"https://www.kao-kirei.com/ja/item/kbb/lunasol/4973167029114/","variant":null,"volume":"150g","kind":"cosmetic","jan":"4973167029114","sku":null,"ingredientsExpected":25,"registrationStatus":"formula-verified","identityVerifiedAt":"2026-10-31"},
  {"id":"rc48-primavista-hydration-sheer-beige","brand":"Primavista","name":"角層保水プライマー シアーベージュ","aliases":["プリマヴィスタ 角層保水プライマー シアーベージュ"],"url":"https://www.kao-kirei.com/ja/item/kbb/primavista/4901301463920/","variant":"シアーベージュ","volume":"25g","kind":"cosmetic","jan":"4901301463920","sku":null,"ingredientsExpected":40,"registrationStatus":"formula-verified","identityVerifiedAt":"2026-10-31"},
+ {id:'rc51-dr-g-clear-soothing-50',brand:'Dr.G',name:'R.E.D BLEMISH クリアスージングクリーム',
+  aliases:['ドクタージー レッドブレミッシュ クリアスージングクリーム 50mL','Dr.G レッドブレミッシュ クリアスージングクリーム'],
+  url:'https://www.seims.co.jp/shop/g/g8809838652489/',volume:'50mL',variant:'クリアスージング',kind:'cosmetic',
+  jan:'8809838652489',registrationStatus:'name-only',rightsStatus:'reference-link-only',identityVerifiedAt:'2026-10-31'},
+ {id:'rc51-dr-g-clear-moisture-50',brand:'Dr.G',name:'R.E.D BLEMISH クリアモイスチャークリーム',
+  aliases:['ドクタージー レッドブレミッシュ クリアモイスチャークリーム 50mL','Dr.G レッドブレミッシュ クリアモイスチャークリーム'],
+  url:'https://www.seims.co.jp/shop/g/g8809963504646/',volume:'50mL',variant:'クリアモイスチャー',kind:'cosmetic',
+  jan:'8809963504646',registrationStatus:'name-only',rightsStatus:'reference-link-only',identityVerifiedAt:'2026-10-31'},
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
