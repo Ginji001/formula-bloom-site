@@ -20,6 +20,8 @@ const domesticComPaths=new Map([
  ['jp.sulwhasoo.com',/^\/products\//],
  ['drjartjp.com',/^\/$/],
  ['www.matsukiyococokara-online.com',/^\/store\/catalog\/product\/view\/id\/\d{13}\/?$/],
+ // Link-only Japanese product identity. Never authorizes external scraping or formula republication.
+ ['www.cosme.net',/^\/products\/\d+\/?$/],
  ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/]
 ]);
 const matchesHost=(host,expected)=>host===expected||host.endsWith('.'+expected);

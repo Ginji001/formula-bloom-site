@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T13:37:10.407Z",
+  "generatedAt": "2026-10-31T13:47:10.144Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 104,
-  "brandsWithPendingProductNames": 43,
-  "productNameRecords": 283,
+  "brandsWithRegisteredProductNames": 108,
+  "brandsWithPendingProductNames": 39,
+  "productNameRecords": 287,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -4868,13 +4868,27 @@
       "maker": "Beauty of Joseon",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://beautyofjoseon.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc53-beautyofjoseon-rice-sunscreen-50",
+          "productName": "ライス サンクリーム アクアフレッシュ",
+          "series": null,
+          "productType": null,
+          "variant": "Aqua-fresh",
+          "sourceUrl": "https://zozo.jp/shop/tirtir/goods-sale/105140897/",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": "8809968130277",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 102,
@@ -4882,13 +4896,27 @@
       "maker": "SKIN1004",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.skin1004.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc53-skin1004-teca-ampoule-50",
+          "productName": "センテラ TECA アンプル",
+          "series": null,
+          "productType": null,
+          "variant": "TECA",
+          "sourceUrl": "https://zozo.jp/shop/fcbox/goods/108843847/",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 103,
@@ -4924,13 +4952,27 @@
       "maker": "mixsoon",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://mixsoon.us/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc53-mixsoon-bean-essence-30",
+          "productName": "ビーンエッセンス",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://ainz-tulpe.jp/products/8809732914300",
+          "kind": "cosmetic",
+          "volume": "30mL",
+          "sku": null,
+          "jan": "8809732914300",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 105,
@@ -5437,13 +5479,27 @@
       "maker": "CLIO",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc53-goodal-green-tangerine-40",
+          "productName": "グリーンタンジェリン ビタC ダークスポットケアセラム",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.cosme.net/products/10193953/",
+          "kind": "cosmetic",
+          "volume": "40mL",
+          "sku": null,
+          "jan": "4582356617249",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 124,
