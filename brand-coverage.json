@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T22:10:28.154Z",
+  "generatedAt": "2026-10-31T22:17:07.644Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
   "brandsWithKnownIngredientsOnly": 39,
   "brandsWithNoIngredientEvidence": 36,
   "knownIngredientExcerptCount": 39,
-  "englishInciReferenceCount": 6,
-  "brandsWithEnglishReferences": 6,
-  "brandsWithNoEvidenceInAnyLanguage": 30,
+  "englishInciReferenceCount": 11,
+  "brandsWithEnglishReferences": 11,
+  "brandsWithNoEvidenceInAnyLanguage": 25,
   "savedFormulaCount": 234,
   "registeredCandidateCount": 469,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
@@ -4163,8 +4163,18 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc51-belif-aqua-bomb-50g",
+          "sourceUrl": "https://lgbeauty.com/products/the-true-cream-aqua-bomb",
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -4498,8 +4508,18 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc38-numbuzin",
+          "sourceUrl": "https://us.numbuzin.com/products/no-5-vitamin-concentrated-serum",
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -4577,8 +4597,18 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc38-medicube",
+          "sourceUrl": "https://medicube.us/products/rose-pdrn-pink-peptide-serum",
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5002,8 +5032,18 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc61-catalog-093",
+          "sourceUrl": "https://doctoraltheaglobal.com/products/345-relief-cream",
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5135,8 +5175,18 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc64-heimish-clean-balm",
+          "sourceUrl": "https://heimish.us/products/all-clean-balm-120ml",
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",

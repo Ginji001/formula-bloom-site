@@ -958,7 +958,7 @@ function showBrands(){
   const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
   const partialOnly=[...partialBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)).length;
   const englishOnly=[...englishInciBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)&&!partialBrandCounts.get(brand)).length;
-  $('brandCounts').textContent='登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド ／ 英語INCI参考 '+englishOnly+'ブランド（国内未収録に含む）。全商品の網羅ではありません。';
+  $('brandCounts').textContent='登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド ／ 英語INCI参考 '+englishOnly+'ブランド（国内未収録に含む） ／ 言語を問わず成分記録なし '+(registeredBrandCount-verifiedBrands-partialOnly-englishOnly)+'ブランド。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。国内販売店の掲載元でも商品名を調べられます。';
 }
 const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧（245件・一部未登録）</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
