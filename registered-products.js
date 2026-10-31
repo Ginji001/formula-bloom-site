@@ -569,6 +569,9 @@ export function catalogIdentifiers(p){
 export function registeredSearchNames(p){
  const base=p.brand+' '+p.name;
  const names=[base,p.name,...p.aliases];
+ // A verified variation belongs in the searchable product identity. It must
+ // never be used to merge ingredients across shades, pack sizes or reformulations.
+ if(p.variant){names.push(base+' '+p.variant,p.name+' '+p.variant);}
  if(p.volume){
   names.push(base+' '+p.volume,p.name+' '+p.volume);
   if(p.packageType==='bottle')names.push(base+' 本体 '+p.volume);

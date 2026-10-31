@@ -28,7 +28,7 @@ const domesticComPaths=new Map([
  ['jp.abib.com',/^\/product\//],
  ['www.cosme.com',/^\/products\/detail\.php$/],
  ['www.apgroup.com',/^\/jp\/ja\/news\/1361676_29900\.html$/],
- ['medicaraise-healthcare.jp',/^\/products\/cosme\/faceshop\/$/],
+ ['medicaraise-healthcare.jp',/^\/products\/cosme\/faceshop\/(?:sheetdx\.html)?$/],
  // Link-only Japanese product identity. Never authorizes external scraping or formula republication.
  ['www.cosme.net',/^\/products\/\d+\/?$/],
  ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/],
