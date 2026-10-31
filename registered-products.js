@@ -314,7 +314,26 @@ export const registeredProducts=Object.freeze([
  {"id":"rc39-3ce","brand":"3CE","name":"マルチアイカラーパレット TA テイクオーバー","volume":null,"variant":"TA テイクオーバー","kind":null,"sku":null,"jan":"6902395984375","aliases":["スリーシーイー マルチアイカラーパレット テイクオーバー"],"url":"https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375","registrationStatus":"name-only","identityVerifiedAt":"2026-10-31"},
  {"id":"rc39-romand","brand":"rom&nd","name":"ザジューシーラスティングティント","volume":"3.5g","variant":"01 ポメロスキン","kind":null,"sku":null,"jan":"4570128220322","aliases":["ロムアンド ザジューシーラスティングティント 01 ポメロスキン"],"url":"https://ainz-tulpe.jp/products/4570128220322","registrationStatus":"name-only","identityVerifiedAt":"2026-10-31"},
  {"id":"rc39-drjart","brand":"Dr.Jart+","name":"シカペア インテンシブ S リペア クリーム","volume":null,"variant":null,"kind":null,"sku":null,"jan":null,"aliases":["ドクタージャルト シカペア インテンシブ S リペア クリーム"],"url":"https://drjartjp.com/","registrationStatus":"name-only","identityVerifiedAt":"2026-10-31"},
- ].map(x=>Object.freeze({...x,aliases:Object.freeze(x.aliases)})));
+ ].map(x=>{
+  // Only a series name visibly contained in the reviewed Japanese product title.
+  // A word absent from the title is never inferred from marketing conventions.
+  const titleSeries={
+   'オルビス':['アクアニスト','オルビスユー'],
+   'キュレル':['潤浸保湿'],
+   'エリクシール':['リフトモイスト'],
+   'ミノン':['アミノモイスト'],
+   'Torriden':['ダイブイン'],
+   'プレディア':['スパ・エ・メール'],
+   '肌ラボ':['極潤'],
+   'アヌア':['ドクダミ'],
+   'dプログラム':['モイストケア','バイタライジング＆クリア'],
+   'オバジ':['アクティブベース'],
+   'イニスフリー':['グリーンティー'],
+   'ルナメア':['AC ']
+  };
+  const derived=titleSeries[x.brand]?.find(prefix=>x.name.startsWith(prefix))||null;
+  return Object.freeze({...x,series:x.series||derived,aliases:Object.freeze(x.aliases)});
+}));
 
 export const registeredBrands=Object.freeze([...new Set(registeredProducts.map(x=>x.brand))]);
 

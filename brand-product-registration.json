@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T03:35:08.876Z",
+  "generatedAt": "2026-10-31T04:12:56.606Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 101,
@@ -26,6 +26,8 @@
         {
           "productId": "shiseido-vp-bright-lotion",
           "productName": "SHISEIDO バイタルパーフェクション ブライトリバイタル ローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H09901.html",
           "kind": "quasi",
@@ -52,6 +54,8 @@
         {
           "productId": "elixir-liftmoist-lotion-fresh-ba",
           "productName": "リフトモイスト ローション みずみずしいタイプ ba",
+          "series": "リフトモイスト",
+          "productType": null,
           "variant": "みずみずしいタイプ",
           "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
           "kind": "quasi",
@@ -63,6 +67,8 @@
         {
           "productId": "elixir-liftmoist-lotion-rich-ba",
           "productName": "リフトモイスト ローション しっとりタイプ ba",
+          "series": "リフトモイスト",
+          "productType": null,
           "variant": "しっとりタイプ",
           "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
           "kind": "quasi",
@@ -74,6 +80,8 @@
         {
           "productId": "elixir-liftmoist-emulsion-fresh-ba",
           "productName": "リフトモイスト エマルジョン みずみずしいタイプ ba",
+          "series": "リフトモイスト",
+          "productType": null,
           "variant": "みずみずしいタイプ",
           "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
           "kind": "quasi",
@@ -85,6 +93,8 @@
         {
           "productId": "elixir-liftmoist-emulsion-rich-ba",
           "productName": "リフトモイスト エマルジョン しっとりタイプ ba",
+          "series": "リフトモイスト",
+          "productType": null,
           "variant": "しっとりタイプ",
           "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
           "kind": "quasi",
@@ -96,6 +106,8 @@
         {
           "productId": "jp-shiseido-j10502-0",
           "productName": "リフトモイスト ローション マスク級高保湿 ca",
+          "series": "リフトモイスト",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J10502.html",
           "kind": "quasi",
@@ -122,6 +134,8 @@
         {
           "productId": "jp-shiseido-h16501-0",
           "productName": "パーフェクトUV スキンケアミルク NA",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H16501.html",
           "kind": "cosmetic",
@@ -148,6 +162,8 @@
         {
           "productId": "jp-shiseido-h80802-0",
           "productName": "モイストケア ローション EX",
+          "series": "モイストケア",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H80802.html",
           "kind": "quasi",
@@ -159,6 +175,8 @@
         {
           "productId": "jp-shiseido-h81102-0",
           "productName": "バイタライジング＆クリア ローション EX",
+          "series": "バイタライジング＆クリア",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H81102.html",
           "kind": "quasi",
@@ -185,6 +203,8 @@
         {
           "productId": "ihada-moist-lotion",
           "productName": "薬用うるおいローション（しっとり）",
+          "series": null,
+          "productType": null,
           "variant": "しっとり",
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",
           "kind": "quasi",
@@ -196,6 +216,8 @@
         {
           "productId": "ihada-rich-lotion",
           "productName": "薬用うるおいローション（とてもしっとり）",
+          "series": null,
+          "productType": null,
           "variant": "とてもしっとり",
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",
           "kind": "quasi",
@@ -207,6 +229,8 @@
         {
           "productId": "ihada-moist-emulsion",
           "productName": "薬用うるおいエマルジョン",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-emulsion.html",
           "kind": "quasi",
@@ -218,6 +242,8 @@
         {
           "productId": "ihada-clear-lotion",
           "productName": "薬用クリアローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-clear-lotion.html",
           "kind": "quasi",
@@ -229,6 +255,8 @@
         {
           "productId": "ihada-clear-emulsion",
           "productName": "薬用クリアエマルジョン",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-clear-emulsion.html",
           "kind": "quasi",
@@ -255,6 +283,8 @@
         {
           "productId": "jp-shiseido-h15901-0",
           "productName": "トリートメントローション（オイルイン） しっとり",
+          "series": null,
+          "productType": null,
           "variant": "しっとり",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H15901.html",
           "kind": "cosmetic",
@@ -266,6 +296,8 @@
         {
           "productId": "jp-shiseido-h15901-1",
           "productName": "トリートメントローション（オイルイン） とてもしっとり",
+          "series": null,
+          "productType": null,
           "variant": "とてもしっとり",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H15901.html",
           "kind": "cosmetic",
@@ -292,6 +324,8 @@
         {
           "productId": "jp-shiseido-h59402-0",
           "productName": "メラノフォーカス IV",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H59402.html",
           "kind": "quasi",
@@ -318,6 +352,8 @@
         {
           "productId": "maquillage-essence-rouge-pk301",
           "productName": "ドラマティックエッセンスルージュ PK301 未来予想",
+          "series": null,
+          "productType": null,
           "variant": "PK301 未来予想",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G98601.html",
           "kind": "cosmetic",
@@ -344,6 +380,8 @@
         {
           "productId": "rc37-integrate",
           "productName": "すっぴんメイカー トーンアップUV",
+          "series": null,
+          "productType": null,
           "variant": "ピュアカラー",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G68501.html",
           "kind": null,
@@ -370,6 +408,8 @@
         {
           "productId": "majolica-magical-base",
           "productName": "マジカルカラーベース",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G81501.html",
           "kind": "cosmetic",
@@ -396,6 +436,8 @@
         {
           "productId": "rc37-cpb",
           "productName": "ローションエサンシエルA",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cledepeau-beaute.com/jp/products/skincare/lotions/H725.html",
           "kind": null,
@@ -422,6 +464,8 @@
         {
           "productId": "rc37-benefique",
           "productName": "リセットクリア N",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/benefique/product/benefique/reset_clear_n/",
           "kind": null,
@@ -448,6 +492,8 @@
         {
           "productId": "jp-shiseido-f16802-0",
           "productName": "薬用 高保湿化粧水（さらっとしっとり）",
+          "series": null,
+          "productType": null,
           "variant": "さらっとしっとり",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
           "kind": "quasi",
@@ -459,6 +505,8 @@
         {
           "productId": "jp-shiseido-f16802-1",
           "productName": "薬用 高保湿化粧水（しっとり）",
+          "series": null,
+          "productType": null,
           "variant": "しっとり",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
           "kind": "quasi",
@@ -470,6 +518,8 @@
         {
           "productId": "jp-shiseido-f16802-2",
           "productName": "薬用 高保湿化粧水（とてもしっとり）",
+          "series": null,
+          "productType": null,
           "variant": "とてもしっとり",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
           "kind": "quasi",
@@ -496,6 +546,8 @@
         {
           "productId": "rc37-revital",
           "productName": "スキンハイドレーター",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/revital/products/skin_hydrator/",
           "kind": "quasi",
@@ -522,6 +574,8 @@
         {
           "productId": "rc37-inoui",
           "productName": "フィックスプライマー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shiseido.co.jp/inoui/products/fix_primer/index.html",
           "kind": null,
@@ -548,6 +602,8 @@
         {
           "productId": "baum-hydro-lotion-n-refill",
           "productName": "ハイドロ エッセンスローション n（つけかえ用）",
+          "series": null,
+          "productType": null,
           "variant": "つけかえ用",
           "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H21301.html",
           "kind": "cosmetic",
@@ -574,6 +630,8 @@
         {
           "productId": "rc37-ipsa",
           "productName": "ザ・タイムR アクア e",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ipsa.co.jp/products/bestseller/43828.html",
           "kind": "quasi",
@@ -614,6 +672,8 @@
         {
           "productId": "curel-lotion-i",
           "productName": "潤浸保湿 化粧水 Ⅰ ややしっとり",
+          "series": "潤浸保湿",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236043/",
           "kind": null,
@@ -625,6 +685,8 @@
         {
           "productId": "curel-lotion-ii",
           "productName": "潤浸保湿 化粧水 Ⅱ しっとり",
+          "series": "潤浸保湿",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236197/",
           "kind": null,
@@ -636,6 +698,8 @@
         {
           "productId": "curel-lotion-iii",
           "productName": "潤浸保湿 化粧水 Ⅲ とてもしっとり",
+          "series": "潤浸保湿",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/",
           "kind": null,
@@ -647,6 +711,8 @@
         {
           "productId": "curel-emulsion",
           "productName": "潤浸保湿 乳液",
+          "series": "潤浸保湿",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236173/",
           "kind": null,
@@ -658,6 +724,8 @@
         {
           "productId": "curel-facecream",
           "productName": "潤浸保湿 フェイスクリーム",
+          "series": "潤浸保湿",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236210/",
           "kind": null,
@@ -684,6 +752,8 @@
         {
           "productId": "biore-home-esthe-clear-180",
           "productName": "おうちdeエステ ジェル洗顔 肌なめらかクリア",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301463890/",
           "kind": "cosmetic",
@@ -710,6 +780,8 @@
         {
           "productId": "sofina-ip-base-serum",
           "productName": "ベースケア セラム（土台美容液）",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-ip/products/basecareserum/",
           "kind": "cosmetic",
@@ -736,6 +808,8 @@
         {
           "productId": "rc37-est",
           "productName": "ザ ローション EX K レフィル",
+          "series": null,
+          "productType": null,
           "variant": "レフィル",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301459596/",
           "kind": null,
@@ -762,6 +836,8 @@
         {
           "productId": "kanebo-scrubbing-mud-wash",
           "productName": "スクラビング マッド ウォッシュ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167640234/",
           "kind": "cosmetic",
@@ -788,6 +864,8 @@
         {
           "productId": "suisai-powder-wash-n-32",
           "productName": "ビューティクリア パウダーウォッシュN",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167823859/",
           "kind": "cosmetic",
@@ -814,6 +892,8 @@
         {
           "productId": "rc37-dew",
           "productName": "ローション さっぱり",
+          "series": null,
+          "productType": null,
           "variant": "さっぱり",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251645/",
           "kind": null,
@@ -840,6 +920,8 @@
         {
           "productId": "rc37-alblanc",
           "productName": "ザ ローション I",
+          "series": null,
+          "productType": null,
           "variant": "I",
           "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-alblanc/products/skincare/the-lotion/",
           "kind": "quasi",
@@ -866,6 +948,8 @@
         {
           "productId": "rc37-kate",
           "productName": "リップモンスター",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.nomorerules.net/pickup/lip_monster/",
           "kind": null,
@@ -892,6 +976,8 @@
         {
           "productId": "rc37-allie",
           "productName": "クロノビューティ ジェルUV EX",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kanebo-cosmetics.jp/allie/product/item/item01/",
           "kind": null,
@@ -918,6 +1004,8 @@
         {
           "productId": "rc37-lunasol",
           "productName": "アイカラーレーションN",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.lunasol-official.com/categories/pointmake/eye-shadow/p/4973167063187",
           "kind": null,
@@ -944,6 +1032,8 @@
         {
           "productId": "rc37-freeplus",
           "productName": "マイルドソープa",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/freeplus/4973167070604/",
           "kind": null,
@@ -970,6 +1060,8 @@
         {
           "productId": "rc37-primavista",
           "productName": "スキンプロテクトベース 皮脂くずれ防止 UV50 EX",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-primavista/products/base_spf50/",
           "kind": null,
@@ -996,6 +1088,8 @@
         {
           "productId": "rc37-twany",
           "productName": "ローションN I",
+          "series": null,
+          "productType": null,
           "variant": "I",
           "sourceUrl": "https://www.kanebo-cosmetics.jp/twany/lineup/twany_skin/lotion_n/",
           "kind": "quasi",
@@ -1022,6 +1116,8 @@
         {
           "productId": "rc37-lissage",
           "productName": "スキンメインテナイザー（S）",
+          "series": null,
+          "productType": null,
           "variant": "S",
           "sourceUrl": "https://www.lissage.jp/products/detail/781/",
           "kind": "quasi",
@@ -1062,6 +1158,8 @@
         {
           "productId": "rc37-sekkisei",
           "productName": "薬用雪肌精 ブライトニング エッセンス ローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://sekkisei.jp/site/p/brightening_essence_lotion.aspx",
           "kind": "quasi",
@@ -1088,6 +1186,8 @@
         {
           "productId": "rc37-decorte",
           "productName": "リポソーム アドバンスト リペアセラム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.decorte.com/site/g/gJVAG/",
           "kind": null,
@@ -1114,6 +1214,8 @@
         {
           "productId": "rc37-onebykose",
           "productName": "セラムヴェール ディープリペア",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://maison.kose.co.jp/site/p/serumveildeeprepair.aspx",
           "kind": "quasi",
@@ -1140,6 +1242,8 @@
         {
           "productId": "rc37-visee-item",
           "productName": "ネンマクフェイク ルージュ BE351",
+          "series": null,
+          "productType": null,
           "variant": "BE351 桃のはにかみ",
           "sourceUrl": "https://maison.kose.co.jp/site/visee/g/gYNRF351",
           "kind": null,
@@ -1166,6 +1270,8 @@
         {
           "productId": "rc37-esprique",
           "productName": "トリプル ラスティング プライマー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://maison.kose.co.jp/site/esprique/g/gMLRG/",
           "kind": null,
@@ -1192,6 +1298,8 @@
         {
           "productId": "rc37-addiction",
           "productName": "ザ アイシャドウ パール 029P ドロップアウト",
+          "series": null,
+          "productType": null,
           "variant": "029P Drop Out ドロップアウト",
           "sourceUrl": "https://www.addiction-beauty.com/site/g/gMAKB029/",
           "kind": null,
@@ -1218,6 +1326,8 @@
         {
           "productId": "rc37-jillstuart",
           "productName": "リップブロッサム グロウ 07",
+          "series": null,
+          "productType": null,
           "variant": "07 ranunculus nocturne",
           "sourceUrl": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/",
           "kind": null,
@@ -1244,6 +1354,8 @@
         {
           "productId": "rc37-predia",
           "productName": "スパ・エ・メール ファンゴ W クレンズ",
+          "series": "スパ・エ・メール",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://maison.kose.co.jp/site/predia/g/gQLCW/",
           "kind": null,
@@ -1298,6 +1410,8 @@
         {
           "productId": "source-jp-e5d5333ea71c2b92",
           "productName": "極潤UVホワイトゲル",
+          "series": "極潤",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/hadalabo/rich-gokujun-uv/145676.html",
           "kind": "cosmetic",
@@ -1324,6 +1438,8 @@
         {
           "productId": "jp-rohto-198900",
           "productName": "薬用しみ対策 美白化粧水",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198900.html",
           "kind": "quasi",
@@ -1335,6 +1451,8 @@
         {
           "productId": "jp-rohto-198924",
           "productName": "薬用しみ対策 美白化粧水しっとりタイプ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198924.html",
           "kind": "quasi",
@@ -1361,6 +1479,8 @@
         {
           "productId": "source-jp-6e3c6c1396004c5d",
           "productName": "APフェイス＆ボディ乳液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/155620.html?cgid=care",
           "kind": "cosmetic",
@@ -1387,6 +1507,8 @@
         {
           "productId": "source-jp-c7409fa67699b5c6",
           "productName": "アクティブベース クリアローション",
+          "series": "アクティブベース",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/144730.html?cgid=care",
           "kind": "cosmetic",
@@ -1413,6 +1535,8 @@
         {
           "productId": "source-jp-36d45e055926ed89",
           "productName": "スーパーモイスチャーUVライトアップエッセンス",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/skin-aqua/193899.html",
           "kind": "cosmetic",
@@ -1439,6 +1563,8 @@
         {
           "productId": "jp-rohto-193943",
           "productName": "スカルプケアシャンプー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193943.html",
           "kind": "cosmetic",
@@ -1450,6 +1576,8 @@
         {
           "productId": "jp-rohto-193967",
           "productName": "スカルプケアコンディショナー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193967.html",
           "kind": "cosmetic",
@@ -1476,6 +1604,8 @@
         {
           "productId": "jp-rohto-132973",
           "productName": "コラーゲン養潤液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/132973.html",
           "kind": "cosmetic",
@@ -1487,6 +1617,8 @@
         {
           "productId": "jp-rohto-133192",
           "productName": "コラーゲン養潤クリーム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/133192.html",
           "kind": "cosmetic",
@@ -1513,6 +1645,8 @@
         {
           "productId": "chifure-moist-deep",
           "productName": "保湿化粧水 とてもしっとりタイプ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2871",
           "kind": null,
@@ -1524,6 +1658,8 @@
         {
           "productId": "chifure-lotion-light",
           "productName": "保湿化粧水 さっぱりタイプ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2875",
           "kind": null,
@@ -1535,6 +1671,8 @@
         {
           "productId": "chifure-lotion-rich",
           "productName": "保湿化粧水 しっとりタイプ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2873",
           "kind": null,
@@ -1546,6 +1684,8 @@
         {
           "productId": "chifure-lotion-base",
           "productName": "保湿化粧水",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2920",
           "kind": null,
@@ -1557,6 +1697,8 @@
         {
           "productId": "chifure-milk-rich",
           "productName": "濃厚 乳液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/milkylotion/2630",
           "kind": null,
@@ -1568,6 +1710,8 @@
         {
           "productId": "chifure-milk-base",
           "productName": "保湿乳液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.chifure.co.jp/products/milkylotion/2877",
           "kind": null,
@@ -1594,6 +1738,8 @@
         {
           "productId": "rc37-ayaka",
           "productName": "潤肌実 化粧水",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_lotion/",
           "kind": null,
@@ -1620,6 +1766,8 @@
         {
           "productId": "rc37-hikarimirai",
           "productName": "バランシング ローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/lotion_n.html",
           "kind": null,
@@ -1646,6 +1794,8 @@
         {
           "productId": "orbis-aquanist-lm",
           "productName": "アクアニスト ローション LM（さっぱり高保湿タイプ）",
+          "series": "アクアニスト",
+          "productType": null,
           "variant": "LM（さっぱり高保湿タイプ）",
           "sourceUrl": "https://www.orbis.co.jp/small/11010852/",
           "kind": null,
@@ -1657,6 +1807,8 @@
         {
           "productId": "orbis-aquanist-rm",
           "productName": "アクアニスト ローション RM（しっとり高保湿タイプ）",
+          "series": "アクアニスト",
+          "productType": null,
           "variant": "RM（しっとり高保湿タイプ）",
           "sourceUrl": "https://www.orbis.co.jp/small/11010852/",
           "kind": null,
@@ -1668,6 +1820,8 @@
         {
           "productId": "orbis-encore-lotion",
           "productName": "オルビスユー アンコール ローション",
+          "series": "オルビスユー",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.orbis.co.jp/small/11010502/",
           "kind": null,
@@ -1694,6 +1848,8 @@
         {
           "productId": "fancl-bc-lotion",
           "productName": "BC 化粧液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.fancl.co.jp/item/Seibun?category=01&item_id=3792-11",
           "kind": null,
@@ -1720,6 +1876,8 @@
         {
           "productId": "rc38-pola",
           "productName": "アロマエッセゴールド シャンプー N",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.pola.co.jp/ec/products/g-V419/",
           "kind": null,
@@ -1746,6 +1904,8 @@
         {
           "productId": "rc37-ba",
           "productName": "ローション 7",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.pola.co.jp/ec/products/g-1234/",
           "kind": null,
@@ -1772,6 +1932,8 @@
         {
           "productId": "wrinkleshot-medical-serum-n",
           "productName": "メディカル セラム N",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.pola.co.jp/ec/products/g-0850/",
           "kind": "quasi",
@@ -1798,6 +1960,8 @@
         {
           "productId": "rc37-attenir",
           "productName": "スキンクリア クレンズ オイル",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.attenir.co.jp/special/cleanse/index.html",
           "kind": null,
@@ -1824,6 +1988,8 @@
         {
           "productId": "rc37-dhc",
           "productName": "薬用ディープクレンジングオイル リニューブライト",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.dhc.co.jp/goods/23476.html",
           "kind": "quasi",
@@ -1850,6 +2016,8 @@
         {
           "productId": "muji-sensitive-lotion-rich",
           "productName": "敏感肌用化粧水 高保湿",
+          "series": null,
+          "productType": null,
           "variant": "高保湿",
           "sourceUrl": "https://www.muji.com/jp/ja/store/cmdty/detail/4550583434991",
           "kind": "cosmetic",
@@ -1876,6 +2044,8 @@
         {
           "productId": "tvert-ga-moist",
           "productName": "バランシングGAローション モイスト",
+          "series": null,
+          "productType": null,
           "variant": "モイスト",
           "sourceUrl": "https://www.tvert.jp/shop/products/tvt002-2508tv0384",
           "kind": null,
@@ -1887,6 +2057,8 @@
         {
           "productId": "tvert-ga-normal",
           "productName": "バランシングGAローション",
+          "series": null,
+          "productType": null,
           "variant": "通常版",
           "sourceUrl": "https://www.tvert.jp/shop/products/tvt002-2508tv0384",
           "kind": null,
@@ -1913,6 +2085,8 @@
         {
           "productId": "rc37-astalift",
           "productName": "メン モイストローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://ls-jp.fujifilm.com/astaliftmen/products/moist-lotion/",
           "kind": null,
@@ -1939,6 +2113,8 @@
         {
           "productId": "rc37-lunamer",
           "productName": "AC スキンコンディショナー しっとりタイプ",
+          "series": "AC ",
+          "productType": null,
           "variant": "しっとりタイプ",
           "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121004000000.html",
           "kind": "quasi",
@@ -1965,6 +2141,8 @@
         {
           "productId": "minon-moist-charge-milk",
           "productName": "アミノモイスト モイストチャージ ミルク",
+          "series": "アミノモイスト",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.daiichisankyo-hc.co.jp/products/details/minon-aminomoist_milk/",
           "kind": "cosmetic",
@@ -1991,6 +2169,8 @@
         {
           "productId": "rc37-transino",
           "productName": "薬用ブライトニングクリアローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.daiichisankyo-hc.co.jp/products/details/transino_b-lotion/",
           "kind": "quasi",
@@ -2017,6 +2197,8 @@
         {
           "productId": "nov-iii-lotion-r",
           "productName": "Ⅲ フェイスローション R（しっとりタイプ）",
+          "series": null,
+          "productType": null,
           "variant": "しっとりタイプ",
           "sourceUrl": "https://noevirgroup.jp/nov/g/g51541/",
           "kind": "quasi",
@@ -2057,6 +2239,8 @@
         {
           "productId": "rc37-nameraka-jp",
           "productName": "水クレンジング",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/sana/g/g41619/",
           "kind": null,
@@ -2083,6 +2267,8 @@
         {
           "productId": "rc37-excel",
           "productName": "スキニーリッチシャドウ N SK08 カシミヤブラウン",
+          "series": null,
+          "productType": null,
           "variant": "SK08 カシミヤブラウン",
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78310/",
           "kind": null,
@@ -2109,6 +2295,8 @@
         {
           "productId": "rc37-hadabisei",
           "productName": "CHOI薬用マスク 肌・毛穴ケア",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kracie.co.jp/products/khp/10190426_21121.html",
           "kind": "quasi",
@@ -2135,6 +2323,8 @@
         {
           "productId": "rc37-naive",
           "productName": "ボディソープ（桃の葉エキス配合）",
+          "series": null,
+          "productType": null,
           "variant": "ポンプ",
           "sourceUrl": "https://www.kracie.co.jp/products/khp/10101193_21121.html",
           "kind": null,
@@ -2161,6 +2351,8 @@
         {
           "productId": "rc37-ichikami",
           "productName": "なめらかスムースケア シャンプー",
+          "series": null,
+          "productType": null,
           "variant": "ポンプ",
           "sourceUrl": "https://www.kracie.co.jp/products/khp/10193007_21121.html",
           "kind": null,
@@ -2187,6 +2379,8 @@
         {
           "productId": "rc37-gatsby",
           "productName": "フェイシャルペーパー アイスタイプ 徳用タイプ",
+          "series": null,
+          "productType": null,
           "variant": "徳用タイプ",
           "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=011243",
           "kind": null,
@@ -2213,6 +2407,8 @@
         {
           "productId": "rc37-lucido",
           "productName": "薬用トータルケア化粧水",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.lucido.jp/products/facecare/m_sc_water/",
           "kind": "quasi",
@@ -2239,6 +2435,8 @@
         {
           "productId": "rc37-bifesta",
           "productName": "ミセラークレンジングウォーター ブライトアップ",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=013121",
           "kind": null,
@@ -2265,6 +2463,8 @@
         {
           "productId": "cezanne-skin-conditioner",
           "productName": "スキンコンディショナー",
+          "series": null,
+          "productType": null,
           "variant": "スキンコンディショナー",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2276,6 +2476,8 @@
         {
           "productId": "cezanne-skin-conditioner-high-moisture",
           "productName": "スキンコンディショナー高保湿",
+          "series": null,
+          "productType": null,
           "variant": "スキンコンディショナー高保湿",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2287,6 +2489,8 @@
         {
           "productId": "cezanne-rich-skin-conditioner-milk",
           "productName": "濃密スキンコンディショナー ミルク",
+          "series": null,
+          "productType": null,
           "variant": "濃密スキンコンディショナー ミルク",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2298,6 +2502,8 @@
         {
           "productId": "cezanne-makeup-fix-mist",
           "productName": "メイクフィックスミスト",
+          "series": null,
+          "productType": null,
           "variant": "メイクフィックスミスト",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2309,6 +2515,8 @@
         {
           "productId": "cezanne-natural-lotion",
           "productName": "ナチュラルローション",
+          "series": null,
+          "productType": null,
           "variant": "ナチュラルローション",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2320,6 +2528,8 @@
         {
           "productId": "cezanne-cleansing-balm",
           "productName": "うるオフクレンジングバーム",
+          "series": null,
+          "productType": null,
           "variant": "うるオフクレンジングバーム",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2331,6 +2541,8 @@
         {
           "productId": "cezanne-rich-hydro-mask",
           "productName": "濃密ハイドロマスク",
+          "series": null,
+          "productType": null,
           "variant": "濃密ハイドロマスク",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
@@ -2342,6 +2554,8 @@
         {
           "productId": "cezanne-4939553041580-9e557e50c",
           "productName": "アイブロウコートEX（クリア）",
+          "series": null,
+          "productType": null,
           "variant": "クリア",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2353,6 +2567,8 @@
         {
           "productId": "cezanne-4939553042518-acac93472",
           "productName": "マスカラリムーバー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2364,6 +2580,8 @@
         {
           "productId": "cezanne-4939553043386-81c5c917f",
           "productName": "耐久カールスリムマスカラ（S1）",
+          "series": null,
+          "productType": null,
           "variant": "S1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2375,6 +2593,8 @@
         {
           "productId": "cezanne-4939553530114-e6b81adda",
           "productName": "トリートメントリップバーム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2386,6 +2606,8 @@
         {
           "productId": "cezanne-4939553013730-f5bdda936",
           "productName": "BBクリーム パール入り（P2）",
+          "series": null,
+          "productType": null,
           "variant": "P2",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2397,6 +2619,8 @@
         {
           "productId": "cezanne-4939553042792-d63d078fe",
           "productName": "皮脂テカリ防止下地（ソフトイエロー）",
+          "series": null,
+          "productType": null,
           "variant": "ソフトイエロー",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2408,6 +2632,8 @@
         {
           "productId": "cezanne-4939553530602-c3f77fbaf",
           "productName": "皮脂テカリ防止下地50（ナチュラルベージュ）",
+          "series": null,
+          "productType": null,
           "variant": "ナチュラルベージュ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2419,6 +2645,8 @@
         {
           "productId": "cezanne-4939553011262-ed8208505",
           "productName": "ハイライトコンシーラー（クリアベージュ）",
+          "series": null,
+          "productType": null,
           "variant": "クリアベージュ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2430,6 +2658,8 @@
         {
           "productId": "cezanne-4939553040095-e7274f514",
           "productName": "ストレッチコンシーラー（30）",
+          "series": null,
+          "productType": null,
           "variant": "30",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2441,6 +2671,8 @@
         {
           "productId": "cezanne-4939553040644-5f1589ad2",
           "productName": "赤み補正コンシーラー（ソフトグリーン）",
+          "series": null,
+          "productType": null,
           "variant": "ソフトグリーン",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2452,6 +2684,8 @@
         {
           "productId": "cezanne-4939553043171-231dc003e",
           "productName": "ナチュラルバランシングクリーム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2463,6 +2697,8 @@
         {
           "productId": "cezanne-4939553530718-074edaa26",
           "productName": "ナチュラルクリアマスク",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2474,6 +2710,8 @@
         {
           "productId": "cezanne-4939553041917-a3762a90c",
           "productName": "濃密スキンコンディショナー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2485,6 +2723,8 @@
         {
           "productId": "cezanne-4939553042785-66596cddb",
           "productName": "ウォータリーグロウリップ（P0）",
+          "series": null,
+          "productType": null,
           "variant": "P0",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2496,6 +2736,8 @@
         {
           "productId": "cezanne-4939553042990-2e21bac61",
           "productName": "スタイリングアイブロウマスカラ（00　クリア）",
+          "series": null,
+          "productType": null,
           "variant": "00　クリア",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2507,6 +2749,8 @@
         {
           "productId": "cezanne-4939553530534-9c2a6856e",
           "productName": "アイブロウ&シェードパウダー（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2518,6 +2762,8 @@
         {
           "productId": "cezanne-4939553530534-65c77480e",
           "productName": "アイブロウ&シェードパウダー（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2529,6 +2775,8 @@
         {
           "productId": "cezanne-4939553530909-c1b22d597",
           "productName": "超細芯ソフトアイブロウ（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2540,6 +2788,8 @@
         {
           "productId": "cezanne-4939553530909-8b36667bd",
           "productName": "超細芯ソフトアイブロウ（08）",
+          "series": null,
+          "productType": null,
           "variant": "08",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2551,6 +2801,8 @@
         {
           "productId": "cezanne-4939553042136-33e766c7a",
           "productName": "耐久カールマスカラ（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2562,6 +2814,8 @@
         {
           "productId": "cezanne-4939553042136-e8a939daa",
           "productName": "耐久カールマスカラ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2573,6 +2827,8 @@
         {
           "productId": "cezanne-4939553530435-02d522858",
           "productName": "グロウコートマスカラ（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2584,6 +2840,8 @@
         {
           "productId": "cezanne-4939553530435-fd98f8950",
           "productName": "グロウコートマスカラ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2595,6 +2853,8 @@
         {
           "productId": "cezanne-4939553530664-3e6e570ba",
           "productName": "アンダーアイライナー（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2606,6 +2866,8 @@
         {
           "productId": "cezanne-4939553530664-37a82fef4",
           "productName": "アンダーアイライナー（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2617,6 +2879,8 @@
         {
           "productId": "cezanne-4939553530671-d9da23e2d",
           "productName": "極細アイライナーEXプラス（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2628,6 +2892,8 @@
         {
           "productId": "cezanne-4939553530671-370872e48",
           "productName": "極細アイライナーEXプラス（10）",
+          "series": null,
+          "productType": null,
           "variant": "10",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2639,6 +2905,8 @@
         {
           "productId": "cezanne-4939553043034-644a2a265",
           "productName": "アイジェニックカラーライナー（10）",
+          "series": null,
+          "productType": null,
           "variant": "10",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2650,6 +2918,8 @@
         {
           "productId": "cezanne-4939553043034-5ed6a9867",
           "productName": "アイジェニックカラーライナー（20）",
+          "series": null,
+          "productType": null,
           "variant": "20",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2661,6 +2931,8 @@
         {
           "productId": "cezanne-4939553043355-231aa66a5",
           "productName": "ブレぴたライナー（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2672,6 +2944,8 @@
         {
           "productId": "cezanne-4939553043355-8f9276273",
           "productName": "ブレぴたライナー（20）",
+          "series": null,
+          "productType": null,
           "variant": "20",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2683,6 +2957,8 @@
         {
           "productId": "cezanne-4939553530251-57e775541",
           "productName": "フェイスアイパレット（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2694,6 +2970,8 @@
         {
           "productId": "cezanne-4939553530251-4b0025034",
           "productName": "フェイスアイパレット（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2705,6 +2983,8 @@
         {
           "productId": "cezanne-4939553043294-eaaa9cd39",
           "productName": "ペールトーンアイシャドウ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2716,6 +2996,8 @@
         {
           "productId": "cezanne-4939553043294-8b019205d",
           "productName": "ペールトーンアイシャドウ（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2727,6 +3009,8 @@
         {
           "productId": "cezanne-4939553042921-b9bd12abe",
           "productName": "ビタートーンアイシャドウ（01　オレンジガナッシュ）",
+          "series": null,
+          "productType": null,
           "variant": "01　オレンジガナッシュ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2738,6 +3022,8 @@
         {
           "productId": "cezanne-4939553042921-0fc60e805",
           "productName": "ビタートーンアイシャドウ（02　ドライローズ）",
+          "series": null,
+          "productType": null,
           "variant": "02　ドライローズ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2749,6 +3035,8 @@
         {
           "productId": "cezanne-4939553530152-d6cf7d35e",
           "productName": "ライティングアップアイシャドウ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2760,6 +3048,8 @@
         {
           "productId": "cezanne-4939553530152-c3b045705",
           "productName": "ライティングアップアイシャドウ（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2771,6 +3061,8 @@
         {
           "productId": "cezanne-4939553043157-ee9161cf1",
           "productName": "アイメイクベース（クリア）",
+          "series": null,
+          "productType": null,
           "variant": "クリア",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2782,6 +3074,8 @@
         {
           "productId": "cezanne-4939553043157-f6a932b3e",
           "productName": "アイメイクベース（ラベンダー）",
+          "series": null,
+          "productType": null,
           "variant": "ラベンダー",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2793,6 +3087,8 @@
         {
           "productId": "cezanne-4939553042709-984b21637",
           "productName": "リップカラーシールド（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2804,6 +3100,8 @@
         {
           "productId": "cezanne-4939553042709-cf44e606a",
           "productName": "リップカラーシールド（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2815,6 +3113,8 @@
         {
           "productId": "cezanne-4939553530305-eaa29db42",
           "productName": "ブレンドカラーシェーディング（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2826,6 +3126,8 @@
         {
           "productId": "cezanne-4939553530305-583a17a83",
           "productName": "ブレンドカラーシェーディング（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2837,6 +3139,8 @@
         {
           "productId": "cezanne-4939553530725-42ec09a35",
           "productName": "セラムクッションファンデーション（P5）",
+          "series": null,
+          "productType": null,
           "variant": "P5",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2848,6 +3152,8 @@
         {
           "productId": "cezanne-4939553530725-7736ebef2",
           "productName": "セラムクッションファンデーション（N10）",
+          "series": null,
+          "productType": null,
           "variant": "N10",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2859,6 +3165,8 @@
         {
           "productId": "cezanne-4939553043089-820134346",
           "productName": "グロウスキンベース（クリアグロウ）",
+          "series": null,
+          "productType": null,
           "variant": "クリアグロウ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2870,6 +3178,8 @@
         {
           "productId": "cezanne-4939553043089-cc565e9e4",
           "productName": "グロウスキンベース（ラベンダーグロウ）",
+          "series": null,
+          "productType": null,
           "variant": "ラベンダーグロウ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2881,6 +3191,8 @@
         {
           "productId": "cezanne-4939553041047-2c620517c",
           "productName": "アイブロウマスカラ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2892,6 +3204,8 @@
         {
           "productId": "cezanne-4939553042136-60433442f",
           "productName": "耐久カールマスカラ（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2903,6 +3217,8 @@
         {
           "productId": "cezanne-4939553042136-d06117f6a",
           "productName": "耐久カールマスカラ（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2914,6 +3230,8 @@
         {
           "productId": "cezanne-4939553040453-d2174e204",
           "productName": "ジェルアイライナー（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2925,6 +3243,8 @@
         {
           "productId": "cezanne-4939553043034-5e77e6d3c",
           "productName": "アイジェニックカラーライナー（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2936,6 +3256,8 @@
         {
           "productId": "cezanne-4939553040149-720e99750",
           "productName": "トーンアップアイシャドウ（08）",
+          "series": null,
+          "productType": null,
           "variant": "08",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2947,6 +3269,8 @@
         {
           "productId": "cezanne-4939553043331-38ecbf97f",
           "productName": "シングルシャイニーアイシャドウ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2958,6 +3282,8 @@
         {
           "productId": "cezanne-4939553043331-a02aa76df",
           "productName": "シングルシャイニーアイシャドウ（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2969,6 +3295,8 @@
         {
           "productId": "cezanne-4939553043331-62cb75b64",
           "productName": "シングルシャイニーアイシャドウ（SP1）",
+          "series": null,
+          "productType": null,
           "variant": "SP1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2980,6 +3308,8 @@
         {
           "productId": "cezanne-4939553041238-5831ea8e4",
           "productName": "シングルカラーアイシャドウ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -2991,6 +3321,8 @@
         {
           "productId": "cezanne-4939553041238-94635a726",
           "productName": "シングルカラーアイシャドウ（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3002,6 +3334,8 @@
         {
           "productId": "cezanne-4939553530251-c412b6bf9",
           "productName": "フェイスアイパレット（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3013,6 +3347,8 @@
         {
           "productId": "cezanne-4939553043294-9375b8eff",
           "productName": "ペールトーンアイシャドウ（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3024,6 +3360,8 @@
         {
           "productId": "cezanne-4939553042334-a6a96a8c5",
           "productName": "ベージュトーンアイシャドウ（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3035,6 +3373,8 @@
         {
           "productId": "cezanne-4939553042334-9cd10066d",
           "productName": "ベージュトーンアイシャドウ（06）",
+          "series": null,
+          "productType": null,
           "variant": "06",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3046,6 +3386,8 @@
         {
           "productId": "cezanne-4939553042921-6b503f928",
           "productName": "ビタートーンアイシャドウ（03　ビスケットブラウン）",
+          "series": null,
+          "productType": null,
           "variant": "03　ビスケットブラウン",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3057,6 +3399,8 @@
         {
           "productId": "cezanne-4939553530152-a99a7d29f",
           "productName": "ライティングアップアイシャドウ（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3068,6 +3412,8 @@
         {
           "productId": "cezanne-4939553530152-e009be780",
           "productName": "ライティングアップアイシャドウ（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3079,6 +3425,8 @@
         {
           "productId": "cezanne-4939553530350-c01e2bf5d",
           "productName": "ラスティングステイリップカラー（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3090,6 +3438,8 @@
         {
           "productId": "cezanne-4939553530497-745d418ed",
           "productName": "ラスティンググロスリップN（101）",
+          "series": null,
+          "productType": null,
           "variant": "101",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3101,6 +3451,8 @@
         {
           "productId": "cezanne-4939553530497-71ebc8275",
           "productName": "ラスティンググロスリップN（201）",
+          "series": null,
+          "productType": null,
           "variant": "201",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3112,6 +3464,8 @@
         {
           "productId": "cezanne-4939553530497-25fcdf010",
           "productName": "ラスティンググロスリップN（301）",
+          "series": null,
+          "productType": null,
           "variant": "301",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3123,6 +3477,8 @@
         {
           "productId": "cezanne-4939553043317-7f32f45a4",
           "productName": "3Dジェリーリップ（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3134,6 +3490,8 @@
         {
           "productId": "cezanne-4939553043317-90abe36d4",
           "productName": "3Dジェリーリップ（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3145,6 +3503,8 @@
         {
           "productId": "cezanne-4939553042013-fec437147",
           "productName": "ウォータリーティントリップ（09）",
+          "series": null,
+          "productType": null,
           "variant": "09",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3156,6 +3516,8 @@
         {
           "productId": "cezanne-4939553042013-2be121eed",
           "productName": "ウォータリーティントリップ（10）",
+          "series": null,
+          "productType": null,
           "variant": "10",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3167,6 +3529,8 @@
         {
           "productId": "cezanne-4939553042013-e3d7091eb",
           "productName": "ウォータリーティントリップ（P1）",
+          "series": null,
+          "productType": null,
           "variant": "P1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3178,6 +3542,8 @@
         {
           "productId": "cezanne-4939553042709-91eb7e882",
           "productName": "リップカラーシールド（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3189,6 +3555,8 @@
         {
           "productId": "cezanne-4939553042709-3b01bc4d1",
           "productName": "リップカラーシールド（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3200,6 +3568,8 @@
         {
           "productId": "cezanne-4939553042709-7d0d0978f",
           "productName": "リップカラーシールド（05）",
+          "series": null,
+          "productType": null,
           "variant": "05",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3211,6 +3581,8 @@
         {
           "productId": "cezanne-4939553042709-ad098dc97",
           "productName": "リップカラーシールド（06）",
+          "series": null,
+          "productType": null,
           "variant": "06",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3222,6 +3594,8 @@
         {
           "productId": "cezanne-4939553042709-e147bbd0a",
           "productName": "リップカラーシールド（07）",
+          "series": null,
+          "productType": null,
           "variant": "07",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3233,6 +3607,8 @@
         {
           "productId": "cezanne-4939553042709-15b416a1e",
           "productName": "リップカラーシールド（08）",
+          "series": null,
+          "productType": null,
           "variant": "08",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3244,6 +3620,8 @@
         {
           "productId": "cezanne-4939553530299-fd2c80f4a",
           "productName": "トーンフィルターハイライト（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3255,6 +3633,8 @@
         {
           "productId": "cezanne-4939553530299-3a1a44d8c",
           "productName": "トーンフィルターハイライト（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3266,6 +3646,8 @@
         {
           "productId": "cezanne-4939553530305-0e930919b",
           "productName": "ブレンドカラーシェーディング（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3277,6 +3659,8 @@
         {
           "productId": "cezanne-4939553530046-febee6fcd",
           "productName": "シェーディングペンシル（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3288,6 +3672,8 @@
         {
           "productId": "cezanne-4939553530046-b5e7322ae",
           "productName": "シェーディングペンシル（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3299,6 +3685,8 @@
         {
           "productId": "cezanne-4939553530886-eefcd3e90",
           "productName": "ハイライトペンシル（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3310,6 +3698,8 @@
         {
           "productId": "cezanne-4939553530886-deddabd3c",
           "productName": "ハイライトペンシル（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3321,6 +3711,8 @@
         {
           "productId": "cezanne-4939553042457-55b77a128",
           "productName": "フェイスグロウカラー（SP1）",
+          "series": null,
+          "productType": null,
           "variant": "SP1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3332,6 +3724,8 @@
         {
           "productId": "cezanne-4939553530817-979b60831",
           "productName": "パールグロウハイライトN（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3343,6 +3737,8 @@
         {
           "productId": "cezanne-4939553530817-9d3d03183",
           "productName": "パールグロウハイライトN（05）",
+          "series": null,
+          "productType": null,
           "variant": "05",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3354,6 +3750,8 @@
         {
           "productId": "cezanne-4939553041122-ef2e91c57",
           "productName": "パールグロウハイライト（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3365,6 +3763,8 @@
         {
           "productId": "cezanne-4939553041122-e98c411b9",
           "productName": "パールグロウハイライト（04）",
+          "series": null,
+          "productType": null,
           "variant": "04",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3376,6 +3776,8 @@
         {
           "productId": "cezanne-4939553041122-b4bf87759",
           "productName": "パールグロウハイライト（SP3）",
+          "series": null,
+          "productType": null,
           "variant": "SP3",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3387,6 +3789,8 @@
         {
           "productId": "cezanne-4939553042686-e72112bbb",
           "productName": "パールグロウニュアンサー（N1）",
+          "series": null,
+          "productType": null,
           "variant": "N1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3398,6 +3802,8 @@
         {
           "productId": "cezanne-4939553042686-8b7faeb56",
           "productName": "パールグロウニュアンサー（N2）",
+          "series": null,
+          "productType": null,
           "variant": "N2",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3409,6 +3815,8 @@
         {
           "productId": "cezanne-4939553002918-39a111e2f",
           "productName": "ナチュラル チークN（05）",
+          "series": null,
+          "productType": null,
           "variant": "05",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3420,6 +3828,8 @@
         {
           "productId": "cezanne-4939553530091-f2853e554",
           "productName": "ブレンドカラーチーク（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3431,6 +3841,8 @@
         {
           "productId": "cezanne-4939553530091-047949274",
           "productName": "ブレンドカラーチーク（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3442,6 +3854,8 @@
         {
           "productId": "cezanne-4939553530091-ff57322c0",
           "productName": "ブレンドカラーチーク（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3453,6 +3867,8 @@
         {
           "productId": "cezanne-4939553530091-7e2ef2682",
           "productName": "ブレンドカラーチーク（H1）",
+          "series": null,
+          "productType": null,
           "variant": "H1",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3464,6 +3880,8 @@
         {
           "productId": "cezanne-4939553042877-2a737b920",
           "productName": "チークブラッシュ（06）",
+          "series": null,
+          "productType": null,
           "variant": "06",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3475,6 +3893,8 @@
         {
           "productId": "cezanne-4939553530725-275effdf2",
           "productName": "セラムクッションファンデーション（N20）",
+          "series": null,
+          "productType": null,
           "variant": "N20",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3486,6 +3906,8 @@
         {
           "productId": "cezanne-4939553009795-10668a763",
           "productName": "BBクリーム（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3497,6 +3919,8 @@
         {
           "productId": "cezanne-4939553009795-118051a84",
           "productName": "BBクリーム（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3508,6 +3932,8 @@
         {
           "productId": "cezanne-4939553009795-6e862b1da",
           "productName": "BBクリーム（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3519,6 +3945,8 @@
         {
           "productId": "cezanne-4939553040811-5e7f593b0",
           "productName": "うるふわ仕上げパウダー（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3530,6 +3958,8 @@
         {
           "productId": "cezanne-4939553040057-60f7a6968",
           "productName": "皮脂テカリ防止下地（ピュアラベンダー）",
+          "series": null,
+          "productType": null,
           "variant": "ピュアラベンダー",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3541,6 +3971,8 @@
         {
           "productId": "cezanne-4939553042723-390641c64",
           "productName": "パレットコンシーラー ハイカバー（10）",
+          "series": null,
+          "productType": null,
           "variant": "10",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3552,6 +3984,8 @@
         {
           "productId": "cezanne-4939553042723-435fa6163",
           "productName": "パレットコンシーラー ハイカバー（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3563,6 +3997,8 @@
         {
           "productId": "cezanne-4939553041603-442ddca45",
           "productName": "毛穴レスコンシーラー（カバーベージュ）",
+          "series": null,
+          "productType": null,
           "variant": "カバーベージュ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3574,6 +4010,8 @@
         {
           "productId": "cezanne-4939553530084-491bb9798",
           "productName": "ブライトカラーシーラー（00）",
+          "series": null,
+          "productType": null,
           "variant": "00",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3585,6 +4023,8 @@
         {
           "productId": "cezanne-4939553530084-1c0f30f70",
           "productName": "ブライトカラーシーラー（20）",
+          "series": null,
+          "productType": null,
           "variant": "20",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3596,6 +4036,8 @@
         {
           "productId": "cezanne-4939553041757-479118e3b",
           "productName": "UVウルトラフィットベースEX（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3607,6 +4049,8 @@
         {
           "productId": "cezanne-4939553530619-0364c05b3",
           "productName": "毛穴レスフィックスパウダー（CL クリア）",
+          "series": null,
+          "productType": null,
           "variant": "CL クリア",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3618,6 +4062,8 @@
         {
           "productId": "cezanne-4939553530619-06095bff1",
           "productName": "毛穴レスフィックスパウダー（SL シアーラベンダー）",
+          "series": null,
+          "productType": null,
           "variant": "SL シアーラベンダー",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3629,6 +4075,8 @@
         {
           "productId": "cezanne-4939553043423-16a640738",
           "productName": "影色リップメイカー（01）",
+          "series": null,
+          "productType": null,
           "variant": "01",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3640,6 +4088,8 @@
         {
           "productId": "cezanne-4939553043423-a46d31ea0",
           "productName": "影色リップメイカー（02）",
+          "series": null,
+          "productType": null,
           "variant": "02",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3651,6 +4101,8 @@
         {
           "productId": "cezanne-4939553043423-3e73261ad",
           "productName": "影色リップメイカー（03）",
+          "series": null,
+          "productType": null,
           "variant": "03",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3662,6 +4114,8 @@
         {
           "productId": "cezanne-4939553042891-ba1fb564a",
           "productName": "描くアイゾーンコンシーラー（01なじみベージュ）",
+          "series": null,
+          "productType": null,
           "variant": "01なじみベージュ",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3673,6 +4127,8 @@
         {
           "productId": "cezanne-4939553042891-32030862e",
           "productName": "描くアイゾーンコンシーラー（02なじみピンク）",
+          "series": null,
+          "productType": null,
           "variant": "02なじみピンク",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3684,6 +4140,8 @@
         {
           "productId": "cezanne-4939553042969-65e2f80ae",
           "productName": "ヘアメイクパウダー（01 なじみブラウン）",
+          "series": null,
+          "productType": null,
           "variant": "01 なじみブラウン",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3695,6 +4153,8 @@
         {
           "productId": "cezanne-4939553042969-e50082593",
           "productName": "ヘアメイクパウダー（02 明るめブラウン）",
+          "series": null,
+          "productType": null,
           "variant": "02 明るめブラウン",
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
@@ -3721,6 +4181,8 @@
         {
           "productId": "canmake-muchi-puru-tint-sheer-balm-s01",
           "productName": "むちぷるティント～シアーバーム～ [S01]アプリコットソルベ",
+          "series": null,
+          "productType": null,
           "variant": "[S01]アプリコットソルベ",
           "sourceUrl": "https://www.canmake.com/item/detail/muchi-puru-tint-sheer-balm/",
           "kind": "cosmetic",
@@ -3732,6 +4194,8 @@
         {
           "productId": "canmake-mellow-dew-lip-mask-01",
           "productName": "メロウデューリップマスク [01]クリアピンク",
+          "series": null,
+          "productType": null,
           "variant": "[01]クリアピンク",
           "sourceUrl": "https://www.canmake.com/item/detail/mellow-dew-lip-mask/",
           "kind": "cosmetic",
@@ -3743,6 +4207,8 @@
         {
           "productId": "canmake-airy-extension-liner-01",
           "productName": "エアリーエクステンションライナー [01]メイプルパンケーキ",
+          "series": null,
+          "productType": null,
           "variant": "[01]メイプルパンケーキ",
           "sourceUrl": "https://www.canmake.com/item/detail/airy-extension-liner/",
           "kind": "cosmetic",
@@ -3754,6 +4220,8 @@
         {
           "productId": "canmake-cream-cheek-05",
           "productName": "クリームチーク [05]スウィートアプリコット",
+          "series": null,
+          "productType": null,
           "variant": "[05]スウィートアプリコット",
           "sourceUrl": "https://www.canmake.com/item/detail/cream-cheek/",
           "kind": "cosmetic",
@@ -3765,6 +4233,8 @@
         {
           "productId": "canmake-marshmallow-finish-powder-abloom-01",
           "productName": "マシュマロフィニッシュパウダー ～Abloom～ [01]ディアレストブーケ",
+          "series": null,
+          "productType": null,
           "variant": "[01]ディアレストブーケ",
           "sourceUrl": "https://www.canmake.com/item/detail/marshmallow-finish-powder-abloom/",
           "kind": "cosmetic",
@@ -3776,6 +4246,8 @@
         {
           "productId": "canmake-clear-veil-setting-powder-01",
           "productName": "クリアヴェールセッティングパウダー [01]ミスティッククリア",
+          "series": null,
+          "productType": null,
           "variant": "[01]ミスティッククリア",
           "sourceUrl": "https://www.canmake.com/item/detail/clear-veil-setting-powder/",
           "kind": "cosmetic",
@@ -3802,6 +4274,8 @@
         {
           "productId": "laneige-cream-skin",
           "productName": "クリームスキン ローション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://jp.laneige.com/products/cream-skin-cerapeptide-refiner",
           "kind": null,
@@ -3828,6 +4302,8 @@
         {
           "productId": "innisfree-green-tea-milk",
           "productName": "グリーンティー セラミド ミルク エッセンストナー",
+          "series": "グリーンティー",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.innisfree.jp/products/green-tea-ceramide-milk",
           "kind": null,
@@ -3854,6 +4330,8 @@
         {
           "productId": "etude-cloud-filter-cushion",
           "productName": "クラウドフィルタークッション",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://etude.jp/etude_product/213010464",
           "kind": null,
@@ -3880,6 +4358,8 @@
         {
           "productId": "rc37-aestura",
           "productName": "アトバリア365 クリーム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://jp.aestura.com/products/atobarrier365-cream",
           "kind": null,
@@ -3906,6 +4386,8 @@
         {
           "productId": "hera-hydro-reflecting-toner",
           "productName": "ハイドロ リフレクティング トナー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://jp.hera.com/products/hydro-reflecting-toner",
           "kind": null,
@@ -3932,6 +4414,8 @@
         {
           "productId": "rc37-sulwhasoo",
           "productName": "潤燥ファーストケア アクティブセラムVI",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://jp.sulwhasoo.com/products/first-care-activating-serum-vi",
           "kind": null,
@@ -4042,6 +4526,8 @@
         {
           "productId": "rc37-cnp",
           "productName": "プロP セラム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://cnp-laboratory.jp/item/104/",
           "kind": null,
@@ -4138,6 +4624,8 @@
         {
           "productId": "source-jp-c03bf70471cc7d4b",
           "productName": "ドクダミ シルキーモイスチャーサンクリーム",
+          "series": "ドクダミ",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://anuashop.jp/collections/half-leaf-line/products/sior0016",
           "kind": "cosmetic",
@@ -4178,6 +4666,8 @@
         {
           "productId": "rc39-cosrx",
           "productName": "ザ・６ペプチドスキンブースターセラム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/8800311121805",
           "kind": null,
@@ -4232,6 +4722,8 @@
         {
           "productId": "source-jp-e1a019d46ffc36f0",
           "productName": "マデカッソシド エッセンシャルマスク ブレミッシュリペア",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://mediheal.jp/product/%E3%83%9E%E3%83%87%E3%82%AB%E3%83%83%E3%82%BD%E3%82%B7%E3%83%89-%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%AF-%E3%83%96%E3%83%AC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%83%9A%E3%82%A2/1785/",
           "kind": "cosmetic",
@@ -4272,6 +4764,8 @@
         {
           "productId": "torriden-dive-toner",
           "productName": "ダイブイン トナー",
+          "series": "ダイブイン",
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://torriden.jp/products/no0002",
           "kind": null,
@@ -4298,6 +4792,8 @@
         {
           "productId": "vt-cica-daily-mask",
           "productName": "シカデイリースージングマスク",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://m.vtcosmetics.jp/product/zoom.html?product_no=94",
           "kind": "cosmetic",
@@ -4324,6 +4820,8 @@
         {
           "productId": "rc38-numbuzin",
           "productName": "5番 白玉グルタチオンＣ美容液",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://numbuzin.jp/product/5%E7%95%AA-%E7%99%BD%E7%8E%89%E3%82%B0%E3%83%AB%E3%82%BF%E3%83%81%E3%82%AA%E3%83%B3%EF%BC%A3%E7%BE%8E%E5%AE%B9%E6%B6%B2/172/category/119/display/1/",
           "kind": null,
@@ -4364,6 +4862,8 @@
         {
           "productId": "rc39-drjart",
           "productName": "シカペア インテンシブ S リペア クリーム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://drjartjp.com/",
           "kind": null,
@@ -4390,6 +4890,8 @@
         {
           "productId": "manyo-pure-oil-deep-clean",
           "productName": "ピュア クレンジング オイル ディープ クリーン",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://manyo-japanese.com/Product/Detail/view/pid/450/cid/125",
           "kind": "cosmetic",
@@ -4416,6 +4918,8 @@
         {
           "productId": "rc38-medicube",
           "productName": "PDRNピンクアンプル",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://themedicube.jp/products/pdrn-pinkpeptideserum",
           "kind": null,
@@ -4442,6 +4946,8 @@
         {
           "productId": "rc37-tirtir",
           "productName": "MASK FIT AI FILTER CUSHION",
+          "series": null,
+          "productType": null,
           "variant": "15C",
           "sourceUrl": "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion",
           "kind": null,
@@ -4468,6 +4974,8 @@
         {
           "productId": "rc38-dalba",
           "productName": "ホワイトトリュフ ファーストスプレーセラム",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://dalba.jp/products/white-truffle-first-spray-serum",
           "kind": null,
@@ -4550,6 +5058,8 @@
         {
           "productId": "rc38-skinfood",
           "productName": "ブラックシュガー パーフェクト エッセンシャル スクラブ 2X",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.skinfood.co.jp/fs/skin/15016",
           "kind": null,
@@ -4576,6 +5086,8 @@
         {
           "productId": "missha-vitac-pack-cleanser",
           "productName": "ビタシープラス 泡マスク洗顔",
+          "series": null,
+          "productType": null,
           "variant": "洗顔料・洗い流すパック",
           "sourceUrl": "https://www.missha.co.jp/product/vitac_packformcleanser/",
           "kind": "cosmetic",
@@ -4602,6 +5114,8 @@
         {
           "productId": "rc37-apieu",
           "productName": "アピューミントスカルプヘアビネガートリートメント",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://www.missha.co.jp/product/apieu_hairvinegar_ms/",
           "kind": null,
@@ -4628,6 +5142,8 @@
         {
           "productId": "rc39-clio",
           "productName": "キル カバー ファンウェア クッション ザ オリジナル",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/",
           "kind": null,
@@ -4682,6 +5198,8 @@
         {
           "productId": "rc39-romand",
           "productName": "ザジューシーラスティングティント",
+          "series": null,
+          "productType": null,
           "variant": "01 ポメロスキン",
           "sourceUrl": "https://ainz-tulpe.jp/products/4570128220322",
           "kind": null,
@@ -4708,6 +5226,8 @@
         {
           "productId": "rc39-3ce",
           "productName": "マルチアイカラーパレット TA テイクオーバー",
+          "series": null,
+          "productType": null,
           "variant": "TA テイクオーバー",
           "sourceUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375",
           "kind": null,
@@ -4762,6 +5282,8 @@
         {
           "productId": "rc37-celimax",
           "productName": "ノニエネルギーアンプル",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://celimax.jp/products/noniampoule2-0",
           "kind": null,
@@ -4970,6 +5492,8 @@
         {
           "productId": "rc37-fwee",
           "productName": "リップアンドチークブラーリープリンポット",
+          "series": null,
+          "productType": null,
           "variant": "BS01 クール",
           "sourceUrl": "https://fwee.jp/product/detail.html?cate_no=75&display_group=1&product_no=231",
           "kind": null,
@@ -4996,6 +5520,8 @@
         {
           "productId": "hince-second-skin-primer",
           "productName": "セカンドスキンハイドレイティングプライマー",
+          "series": null,
+          "productType": null,
           "variant": null,
           "sourceUrl": "https://hince.jp/c/event/2026/brandweek_2026_s/HC085",
           "kind": null,
