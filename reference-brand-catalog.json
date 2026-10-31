@@ -771,7 +771,107 @@
       "brandId": 69,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "なめらか本舗 化粧水 ND",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 化粧水 ND（つめかえ用）",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "つめかえ用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 しっとり化粧水 ND",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 しっとり化粧水 ND（つめかえ用）",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "つめかえ用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 ミルク化粧水 ND",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 ミルク化粧水 ND（つめかえ用）",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "つめかえ用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 乳液 ND",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 乳液 ND（つめかえ用）",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "つめかえ用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 クリーム ND",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 リンクル化粧水 N",
+          "url": "https://noevirgroup.jp/sana/g/g48576/",
+          "volume": "200mL",
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "なめらか本舗 薬用リンクル化粧水 ホワイト",
+          "url": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "volume": null,
+          "variant": "医薬部外品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1602,7 +1702,44 @@
       "brandId": 115,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "超低分子ヒアルロン酸トナー",
+          "url": "https://www.cosme.com/products/detail.php?product_id=414127",
+          "volume": "300mL",
+          "variant": null,
+          "jan": "4571475235915",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "超低分子ヒアルロン酸セラム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=414125",
+          "volume": "50mL",
+          "variant": null,
+          "jan": "4571475235922",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "超低分子ヒアルロン酸ジンク水分クリーム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=414123",
+          "volume": null,
+          "variant": null,
+          "jan": "4571475235939",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "超低分子ヒアルロン酸シートマスク",
+          "url": "https://www.cosme.com/products/detail.php?product_id=414121",
+          "volume": "25g×3枚",
+          "variant": null,
+          "jan": "4571475236028",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1993,7 +2130,26 @@
       "brandId": 127,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "フューチャーステップアイクリームforフェイス",
+          "url": "https://www.cosme.com/products/detail.php?product_id=219861",
+          "volume": "30mL",
+          "variant": null,
+          "jan": "4589664762326",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "マスターズアクアリッチサンクリーム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=413619",
+          "volume": "50mL",
+          "variant": "本体",
+          "jan": "8809759083935",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2472,7 +2628,44 @@
       "brandId": 144,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "シャドウパレット 35 ラブエンジェル",
+          "url": "https://www.cosme.com/products/detail.php?product_id=412407",
+          "volume": "7.5g",
+          "variant": "35 ラブエンジェル",
+          "jan": "8800299141444",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "シャドウパレット 37 スウィートブロッサム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=412433",
+          "volume": "7g",
+          "variant": "37 スウィートブロッサム",
+          "jan": "8800299143561",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "シャドウパレット 38 コーラルコテージ",
+          "url": "https://www.cosme.com/products/detail.php?product_id=412425",
+          "volume": "8g",
+          "variant": "38 コーラルコテージ",
+          "jan": "8800299143813",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "シャドウパレット 39 ローズコテージ",
+          "url": "https://www.cosme.com/products/detail.php?product_id=412431",
+          "volume": "8g",
+          "variant": "39 ローズコテージ",
+          "jan": "8800299143820",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2547,7 +2740,71 @@
       "brandId": 147,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "アンプル",
+          "url": "https://www.cosme.com/products/detail.php?product_id=321106",
+          "volume": "10mL",
+          "variant": "通常品",
+          "jan": "8806121402530",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "デュアル エフェクト アンプル",
+          "url": "https://www.cosme.com/products/detail.php?product_id=335016",
+          "volume": "10mL",
+          "variant": "通常品",
+          "jan": "8806121402721",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "モイスチャートリートメントアンプル",
+          "url": "https://www.cosme.com/products/detail.php?product_id=321102",
+          "volume": "30mL",
+          "variant": null,
+          "jan": "8806121402523",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ポアタイトニングアンプル",
+          "url": "https://www.cosme.com/products/detail.php?product_id=425367",
+          "volume": "30mL",
+          "variant": null,
+          "jan": "8806121405166",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ポアタイトニングトナーパッド",
+          "url": "https://www.cosme.com/products/detail.php?product_id=425369",
+          "volume": "60枚",
+          "variant": null,
+          "jan": "8806121405180",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "アクティブクリーム エンハンスド",
+          "url": "https://www.cosme.com/products/detail.php?product_id=391465",
+          "volume": "50mL",
+          "variant": null,
+          "jan": "8806121403506",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ポアタイトニングゲルマスク",
+          "url": "https://www.cosme.com/products/detail.php?product_id=425371",
+          "volume": "32g×5枚",
+          "variant": null,
+          "jan": "8806121405197",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
