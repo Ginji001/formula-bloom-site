@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T22:17:07.644Z",
+  "generatedAt": "2026-10-31T22:47:23.713Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
   "brandsWithKnownIngredientsOnly": 39,
   "brandsWithNoIngredientEvidence": 36,
   "knownIngredientExcerptCount": 39,
-  "englishInciReferenceCount": 11,
-  "brandsWithEnglishReferences": 11,
-  "brandsWithNoEvidenceInAnyLanguage": 25,
+  "englishInciReferenceCount": 19,
+  "brandsWithEnglishReferences": 19,
+  "brandsWithNoEvidenceInAnyLanguage": 17,
   "savedFormulaCount": 234,
   "registeredCandidateCount": 469,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
@@ -4090,8 +4090,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 3,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc63-illiyoon-02",
+          "sourceUrl": "https://us.oliveyoung.com/products/UA41616850",
+          "sourceType": "foreign-retailer-english-inci",
+          "retailerName": "OLIVE YOUNG US",
+          "sourceMarket": "overseas-retailer-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -4168,6 +4180,8 @@
         {
           "productId": "rc51-belif-aqua-bomb-50g",
           "sourceUrl": "https://lgbeauty.com/products/the-true-cream-aqua-bomb",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4347,6 +4361,8 @@
         {
           "productId": "rc53-beautyofjoseon-rice-sunscreen-50",
           "sourceUrl": "https://jp.beautyofjoseon.com/products/relief-sun-aqua-fresh",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "japan-facing-official-english",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4374,6 +4390,8 @@
         {
           "productId": "rc53-skin1004-teca-ampoule-50",
           "sourceUrl": "https://www.skin1004.com/products/centella-teca-ampoule",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4513,6 +4531,8 @@
         {
           "productId": "rc38-numbuzin",
           "sourceUrl": "https://us.numbuzin.com/products/no-5-vitamin-concentrated-serum",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4602,6 +4622,8 @@
         {
           "productId": "rc38-medicube",
           "sourceUrl": "https://medicube.us/products/rose-pdrn-pink-peptide-serum",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4629,6 +4651,8 @@
         {
           "productId": "rc52-tirtir-makeup-fixer-80",
           "sourceUrl": "https://tirtir.global/products/mask-fit-makeup-fixer-amazon",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -4898,8 +4922,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc53-goodal-green-tangerine-40",
+          "sourceUrl": "https://lewkin.com/ja-jp/products/green-tangerine-vita-c-dark-spot-care-serum-40ml",
+          "sourceType": "foreign-retailer-english-inci",
+          "retailerName": "LEWKIN",
+          "sourceMarket": "japan-facing-retailer-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -4915,8 +4951,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc39-romand",
+          "sourceUrl": "https://wholesale.q-depot.com/product/romand-the-juicy-lasting-tint-01-pomelo-skin",
+          "sourceType": "foreign-retailer-english-inci",
+          "retailerName": "Q-Depot wholesale",
+          "sourceMarket": "overseas-retailer-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -4932,8 +4980,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc39-3ce",
+          "sourceUrl": "https://www.3cecosmetics.com/all-products/eyes/eyeshadow/3ce-multi-eye-color-palette-the-textile?variant=TAKE+OVER",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5010,6 +5070,8 @@
         {
           "productId": "rc37-celimax",
           "sourceUrl": "https://celimax.com/products/celimax-the-real-noni-energy-ampoule-2-size",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -5037,6 +5099,8 @@
         {
           "productId": "rc61-catalog-093",
           "sourceUrl": "https://doctoraltheaglobal.com/products/345-relief-cream",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -5064,6 +5128,8 @@
         {
           "productId": "rc54-biodance-collagen-mask-34",
           "sourceUrl": "https://biodance.com/products/biodance-bio-collagen-real-deep-mask",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -5086,8 +5152,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 6,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc61-catalog-080",
+          "sourceUrl": "https://us.oliveyoung.com/products/UA10124939",
+          "sourceType": "foreign-retailer-english-inci",
+          "retailerName": "OLIVE YOUNG US",
+          "sourceMarket": "overseas-retailer-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5108,6 +5186,8 @@
         {
           "productId": "rc63-haruharu-02",
           "sourceUrl": "https://haruharuwonder.com/products/haruharuwonder-black-rice-hyaluronic-toner",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -5180,6 +5260,8 @@
         {
           "productId": "rc64-heimish-clean-balm",
           "sourceUrl": "https://heimish.us/products/all-clean-balm-120ml",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
           "sourceMarket": "overseas-official",
           "checkedOn": "2026-11-01",
           "ingredientCount": 8,
@@ -5202,8 +5284,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc64-benton-guava-pad",
+          "sourceUrl": "https://us.oliveyoung.com/products/UA79611134",
+          "sourceType": "foreign-retailer-english-inci",
+          "retailerName": "OLIVE YOUNG US",
+          "sourceMarket": "overseas-retailer-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5382,8 +5476,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 4,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc62-dasique-01",
+          "sourceUrl": "https://dasique.com/collections/balletcore/products/eyeshadow-palette-35-love-angel",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5427,8 +5533,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc54-amuse-dew-tint-tokyo",
+          "sourceUrl": "https://amusemakeup.jp/product/new-%E3%83%87%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/486/category/45/display/1/",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
+          "sourceMarket": "japan-facing-official-english",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",

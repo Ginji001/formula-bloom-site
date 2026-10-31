@@ -9,13 +9,15 @@ export function validateInciReferenceEvidence(payload){
   if(!product||seen.has(record.productId)||product.brand!==record.brand||
     product.name!==record.productName||(product.volume||null)!==(record.volume||null)||
     (product.variant||null)!==(record.variant||null)||
-    record.sourceType!=='manufacturer-official-english-inci'||record.coverage!=='english-excerpt-only'||
+    !['manufacturer-official-english-inci','foreign-retailer-english-inci'].includes(record.sourceType)||record.coverage!=='english-excerpt-only'||
     record.order!=='not-confirmed'||record.domesticFormulaMatched!==false||
     record.labelCompared!==false||record.currentFormulaCompared!==false||
     record.exportAsFullFormula!==false||
-    !['overseas-official','japan-facing-official-english'].includes(record.sourceMarket)||
+    !['overseas-official','japan-facing-official-english','overseas-retailer-english','japan-facing-retailer-english'].includes(record.sourceMarket)||
+    (record.sourceType==='manufacturer-official-english-inci'&&!['overseas-official','japan-facing-official-english'].includes(record.sourceMarket))||
+    (record.sourceType==='foreign-retailer-english-inci'&&(!['overseas-retailer-english','japan-facing-retailer-english'].includes(record.sourceMarket)||typeof record.retailerName!=='string'||!record.retailerName.trim()))||
     !/^https:\/\//i.test(record.sourceUrl)||
-    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
+    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
     !Array.isArray(record.ingredients)||record.ingredients.length<2||record.ingredients.length>12||
     record.ingredients.some(v=>typeof v!=='string'||v.length>90||!ingredientPattern.test(v))||
     new Set(record.ingredients.map(x=>x.toLowerCase())).size!==record.ingredients.length||

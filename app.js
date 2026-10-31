@@ -388,12 +388,13 @@ function showEnglishInciChoices(container,item,version){
   const record=inciReferenceForProduct(records,item);
   if(!record)return;
   const info=document.createElement('p');info.className='muted';
-  info.textContent='英語INCIの参考記録 '+record.ingredients.length+'成分（'+(record.sourceMarket==='japan-facing-official-english'?'日本向け公式サイトの英語欄':'海外メーカー公式')+'）。日本版の全成分・処方の一致は未確認です。';
+  const originLabel=record.sourceType==='foreign-retailer-english-inci'?'海外販売店 '+record.retailerName+' の英語成分欄':record.sourceMarket==='japan-facing-official-english'?'日本向け公式サイトの英語欄':'海外メーカー公式';
+  info.textContent='英語INCIの参考記録 '+record.ingredients.length+'成分（'+originLabel+'）。日本版の全成分・処方の一致は未確認です。';
   const btn=document.createElement('button');btn.type='button';btn.className='secondary';
   btn.textContent='英語INCIの参考の花を表示（国内版未確認）';
   btn.onclick=()=>useEnglishInciReference(item,record.ingredients,{
    sourceUrl:record.sourceUrl,checkedOn:record.checkedOn,
-   scope:'メーカー英語成分抜粋・'+record.sourceMarket+'／'+record.note
+   scope:originLabel+'・'+record.sourceMarket+'／'+record.note
   });
   container.append(info,btn);
   sourceLink(container,record.sourceUrl,'英語INCI参考元');
