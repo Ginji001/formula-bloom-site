@@ -143,7 +143,7 @@ referencePanel.id='referenceCatalogPanel';
 const referenceSummary=document.createElement('summary');referenceSummary.textContent='参考・推測データから選ぶ（未検証）';
 const referenceList=document.createElement('div');referenceList.dataset.referenceList='';
 referencePanel.append(referenceSummary,referenceList);
-$('savedFormulas').insertAdjacentElement('afterend',referencePanel);
+$('registeredBrandDirectory').insertAdjacentElement('afterend',referencePanel);
 referencePanel.addEventListener('toggle',()=>{if(referencePanel.open)showReferenceCatalog();});
 let savedFormulaListLoaded=false;
 $('savedFormulas').ontoggle=async()=>{
