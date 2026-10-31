@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:36:40.862Z",
+  "generatedAt": "2026-10-31T02:10:39.836Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 44,
-  "brandsWithPendingProductNames": 103,
-  "productNameRecords": 206,
+  "brandsWithRegisteredProductNames": 91,
+  "brandsWithPendingProductNames": 56,
+  "productNameRecords": 253,
   "ingredientRecords": 188,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -334,13 +334,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-integrate",
+          "productName": "すっぴんメイカー トーンアップUV",
+          "variant": "ピュアカラー",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G68501.html",
+          "kind": null,
+          "volume": "25mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 10,
@@ -374,13 +386,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-cpb",
+          "productName": "ローションエサンシエルA",
+          "variant": null,
+          "sourceUrl": "https://www.cledepeau-beaute.com/jp/products/skincare/lotions/H725.html",
+          "kind": null,
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 12,
@@ -388,13 +412,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-benefique",
+          "productName": "リセットクリア N",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/benefique/product/benefique/reset_clear_n/",
+          "kind": null,
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 13,
@@ -450,13 +486,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-revital",
+          "productName": "スキンハイドレーター",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/revital/products/skin_hydrator/",
+          "kind": "quasi",
+          "volume": "150mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 15,
@@ -464,13 +512,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-inoui",
+          "productName": "フィックスプライマー",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/inoui/products/fix_primer/index.html",
+          "kind": null,
+          "volume": "30g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 16,
@@ -504,13 +564,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-ipsa",
+          "productName": "ザ・タイムR アクア e",
+          "variant": null,
+          "sourceUrl": "https://www.ipsa.co.jp/products/bestseller/43828.html",
+          "kind": "quasi",
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 18,
@@ -654,13 +726,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-est",
+          "productName": "ザ ローション EX K レフィル",
+          "variant": "レフィル",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301459596/",
+          "kind": null,
+          "volume": "130mL",
+          "sku": null,
+          "jan": "4901301459596",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 23,
@@ -720,13 +804,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-dew",
+          "productName": "ローション さっぱり",
+          "variant": "さっぱり",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251645/",
+          "kind": null,
+          "volume": "150mL",
+          "sku": null,
+          "jan": "4973167251645",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 26,
@@ -734,13 +830,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-alblanc",
+          "productName": "ザ ローション I",
+          "variant": "I",
+          "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-alblanc/products/skincare/the-lotion/",
+          "kind": "quasi",
+          "volume": "140mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 27,
@@ -748,13 +856,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-kate",
+          "productName": "リップモンスター",
+          "variant": null,
+          "sourceUrl": "https://www.nomorerules.net/pickup/lip_monster/",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 28,
@@ -762,13 +882,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-allie",
+          "productName": "クロノビューティ ジェルUV EX",
+          "variant": null,
+          "sourceUrl": "https://www.kanebo-cosmetics.jp/allie/product/item/item01/",
+          "kind": null,
+          "volume": "90g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 29,
@@ -776,13 +908,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-lunasol",
+          "productName": "アイカラーレーションN",
+          "variant": null,
+          "sourceUrl": "https://www.lunasol-official.com/categories/pointmake/eye-shadow/p/4973167063187",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 30,
@@ -790,13 +934,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-freeplus",
+          "productName": "マイルドソープa",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/freeplus/4973167070604/",
+          "kind": null,
+          "volume": "100g",
+          "sku": null,
+          "jan": "4973167070604",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 31,
@@ -804,13 +960,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-primavista",
+          "productName": "スキンプロテクトベース 皮脂くずれ防止 UV50 EX",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-primavista/products/base_spf50/",
+          "kind": null,
+          "volume": "25mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 32,
@@ -818,13 +986,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-twany",
+          "productName": "ローションN I",
+          "variant": "I",
+          "sourceUrl": "https://www.kanebo-cosmetics.jp/twany/lineup/twany_skin/lotion_n/",
+          "kind": "quasi",
+          "volume": "180mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 33,
@@ -832,13 +1012,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-lissage",
+          "productName": "スキンメインテナイザー（S）",
+          "variant": "S",
+          "sourceUrl": "https://www.lissage.jp/products/detail/781/",
+          "kind": "quasi",
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 34,
@@ -860,13 +1052,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-sekkisei",
+          "productName": "薬用雪肌精 ブライトニング エッセンス ローション",
+          "variant": null,
+          "sourceUrl": "https://sekkisei.jp/site/p/brightening_essence_lotion.aspx",
+          "kind": "quasi",
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 36,
@@ -874,13 +1078,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-decorte",
+          "productName": "リポソーム アドバンスト リペアセラム",
+          "variant": null,
+          "sourceUrl": "https://www.decorte.com/site/g/gJVAG/",
+          "kind": null,
+          "volume": "75mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 37,
@@ -888,13 +1104,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-onebykose",
+          "productName": "セラムヴェール ディープリペア",
+          "variant": null,
+          "sourceUrl": "https://maison.kose.co.jp/site/p/serumveildeeprepair.aspx",
+          "kind": "quasi",
+          "volume": "60mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 38,
@@ -902,13 +1130,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-visee-item",
+          "productName": "ネンマクフェイク ルージュ BE351",
+          "variant": "BE351 桃のはにかみ",
+          "sourceUrl": "https://maison.kose.co.jp/site/visee/g/gYNRF351",
+          "kind": null,
+          "volume": "3.8g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 39,
@@ -916,13 +1156,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-esprique",
+          "productName": "トリプル ラスティング プライマー",
+          "variant": null,
+          "sourceUrl": "https://maison.kose.co.jp/site/esprique/g/gMLRG/",
+          "kind": null,
+          "volume": "30g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 40,
@@ -930,13 +1182,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-addiction",
+          "productName": "ザ アイシャドウ パール 029P ドロップアウト",
+          "variant": "029P Drop Out ドロップアウト",
+          "sourceUrl": "https://www.addiction-beauty.com/site/g/gMAKB029/",
+          "kind": null,
+          "volume": "1g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 41,
@@ -944,13 +1208,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-jillstuart",
+          "productName": "リップブロッサム グロウ 07",
+          "variant": "07 ranunculus nocturne",
+          "sourceUrl": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/",
+          "kind": null,
+          "volume": "3.6g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 42,
@@ -958,13 +1234,25 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-predia",
+          "productName": "スパ・エ・メール ファンゴ W クレンズ",
+          "variant": null,
+          "sourceUrl": "https://maison.kose.co.jp/site/predia/g/gQLCW/",
+          "kind": null,
+          "volume": "300g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 43,
@@ -1296,13 +1584,25 @@
       "maker": "ちふれグループ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.chifure.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-ayaka",
+          "productName": "潤肌実 化粧水",
+          "variant": null,
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_lotion/",
+          "kind": null,
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 54,
@@ -1310,13 +1610,25 @@
       "maker": "ちふれグループ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.chifure.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-hikarimirai",
+          "productName": "バランシング ローション",
+          "variant": null,
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/lotion_n.html",
+          "kind": null,
+          "volume": "160mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 55,
@@ -1412,13 +1724,25 @@
       "maker": "ポーラ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-ba",
+          "productName": "ローション 7",
+          "variant": null,
+          "sourceUrl": "https://www.pola.co.jp/ec/products/g-1234/",
+          "kind": null,
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 59,
@@ -1452,13 +1776,25 @@
       "maker": "アテニア",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-attenir",
+          "productName": "スキンクリア クレンズ オイル",
+          "variant": null,
+          "sourceUrl": "https://www.attenir.co.jp/special/cleanse/index.html",
+          "kind": null,
+          "volume": "175mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 61,
@@ -1466,13 +1802,25 @@
       "maker": "DHC",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.dhc.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-dhc",
+          "productName": "薬用ディープクレンジングオイル リニューブライト",
+          "variant": null,
+          "sourceUrl": "https://www.dhc.co.jp/goods/23476.html",
+          "kind": "quasi",
+          "volume": "200mL",
+          "sku": null,
+          "jan": "4511413529652",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 62,
@@ -1543,13 +1891,25 @@
       "maker": "富士フイルム",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.fujifilm.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-astalift",
+          "productName": "メン モイストローション",
+          "variant": null,
+          "sourceUrl": "https://ls-jp.fujifilm.com/astaliftmen/products/moist-lotion/",
+          "kind": null,
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 65,
@@ -1557,13 +1917,25 @@
       "maker": "富士フイルム",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.fujifilm.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-lunamer",
+          "productName": "AC スキンコンディショナー しっとりタイプ",
+          "variant": "しっとりタイプ",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121004000000.html",
+          "kind": "quasi",
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 66,
@@ -1597,13 +1969,25 @@
       "maker": "第一三共ヘルスケア",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.daiichisankyo-hc.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-transino",
+          "productName": "薬用ブライトニングクリアローション",
+          "variant": null,
+          "sourceUrl": "https://www.daiichisankyo-hc.co.jp/products/details/transino_b-lotion/",
+          "kind": "quasi",
+          "volume": "150mL",
+          "sku": null,
+          "jan": "4987107673473",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 68,
@@ -1651,13 +2035,25 @@
       "maker": "ノエビアグループ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-nameraka-jp",
+          "productName": "水クレンジング",
+          "variant": null,
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g41619/",
+          "kind": null,
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 71,
@@ -1665,13 +2061,25 @@
       "maker": "ノエビアグループ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-excel",
+          "productName": "スキニーリッチシャドウ N SK08 カシミヤブラウン",
+          "variant": "SK08 カシミヤブラウン",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78310/",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 72,
@@ -1679,13 +2087,25 @@
       "maker": "クラシエ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-hadabisei",
+          "productName": "CHOI薬用マスク 肌・毛穴ケア",
+          "variant": null,
+          "sourceUrl": "https://www.kracie.co.jp/products/khp/10190426_21121.html",
+          "kind": "quasi",
+          "volume": "10枚（美容液155mL）",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 73,
@@ -1693,13 +2113,25 @@
       "maker": "クラシエ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-naive",
+          "productName": "ボディソープ（桃の葉エキス配合）",
+          "variant": "ポンプ",
+          "sourceUrl": "https://www.kracie.co.jp/products/khp/10101193_21121.html",
+          "kind": null,
+          "volume": "530mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 74,
@@ -1707,13 +2139,25 @@
       "maker": "クラシエ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-ichikami",
+          "productName": "なめらかスムースケア シャンプー",
+          "variant": "ポンプ",
+          "sourceUrl": "https://www.kracie.co.jp/products/khp/10193007_21121.html",
+          "kind": null,
+          "volume": "450mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 75,
@@ -1721,13 +2165,25 @@
       "maker": "マンダム",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-gatsby",
+          "productName": "フェイシャルペーパー アイスタイプ 徳用タイプ",
+          "variant": "徳用タイプ",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=011243",
+          "kind": null,
+          "volume": "42枚",
+          "sku": null,
+          "jan": "4902806112436",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 76,
@@ -1735,13 +2191,25 @@
       "maker": "マンダム",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-lucido",
+          "productName": "薬用トータルケア化粧水",
+          "variant": null,
+          "sourceUrl": "https://www.lucido.jp/products/facecare/m_sc_water/",
+          "kind": "quasi",
+          "volume": "110mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 77,
@@ -1749,13 +2217,25 @@
       "maker": "マンダム",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-bifesta",
+          "productName": "ミセラークレンジングウォーター ブライトアップ",
+          "variant": null,
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=013121",
+          "kind": null,
+          "volume": "400mL",
+          "sku": null,
+          "jan": "4902806113112",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 78,
@@ -3378,13 +3858,25 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-aestura",
+          "productName": "アトバリア365 クリーム",
+          "variant": null,
+          "sourceUrl": "https://jp.aestura.com/products/atobarrier365-cream",
+          "kind": null,
+          "volume": "80mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 84,
@@ -3418,13 +3910,25 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-sulwhasoo",
+          "productName": "潤燥ファーストケア アクティブセラムVI",
+          "variant": null,
+          "sourceUrl": "https://jp.sulwhasoo.com/products/first-care-activating-serum-vi",
+          "kind": null,
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 86,
@@ -3516,13 +4020,25 @@
       "maker": "LG生活健康",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-cnp",
+          "productName": "プロP セラム",
+          "variant": null,
+          "sourceUrl": "https://cnp-laboratory.jp/item/104/",
+          "kind": null,
+          "volume": "15mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 93,
@@ -3856,13 +4372,25 @@
       "maker": "TIRTIR",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://tirtir.global/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-tirtir",
+          "productName": "MASK FIT AI FILTER CUSHION",
+          "variant": "15C",
+          "sourceUrl": "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 113,
@@ -3980,13 +4508,25 @@
       "maker": "MISSHA",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.missha.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-apieu",
+          "productName": "アピューミントスカルプヘアビネガートリートメント",
+          "variant": null,
+          "sourceUrl": "https://www.missha.co.jp/product/apieu_hairvinegar_ms/",
+          "kind": null,
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 121,
@@ -4092,13 +4632,25 @@
       "maker": "celimax",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://celimax.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-celimax",
+          "productName": "ノニエネルギーアンプル",
+          "variant": null,
+          "sourceUrl": "https://celimax.jp/products/noniampoule2-0",
+          "kind": null,
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 129,
@@ -4288,13 +4840,25 @@
       "maker": "fwee",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://fwee.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc37-fwee",
+          "productName": "リップアンドチークブラーリープリンポット",
+          "variant": "BS01 クール",
+          "sourceUrl": "https://fwee.jp/product/detail.html?cate_no=75&display_group=1&product_no=231",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 143,

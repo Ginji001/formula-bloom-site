@@ -6,12 +6,26 @@ const domesticOfficialHosts=[
  'kose.co.jp','pola.co.jp','daiichisankyo-hc.co.jp','kracie.co.jp',
  'mandom.co.jp','canmake.com','manyo-japanese.com','anuashop.jp','torriden.jp','mediheal.jp','jp.laneige.com','jp.hera.com'
 ];
+// Individually confirmed Japanese storefronts on .com domains; scope by host and path.
+const domesticComPaths=new Map([
+ ['www.cledepeau-beaute.com',/^\/jp\/products\//],
+ ['www.decorte.com',/^\/site\//],
+ ['www.lunasol-official.com',/^\/categories\/pointmake\//],
+ ['www.addiction-beauty.com',/^\/site\//],
+ ['www.jillstuart-floranotisjillstuart.com',/^\/site\/jillstuart\//],
+ ['www.nomorerules.net',/^\/pickup\/lip_monster\//],
+ ['ls-jp.fujifilm.com',/^\/astaliftmen\/products\//],
+ ['h-jp.fujifilm.com',/^\/products\/lunamer\//],
+ ['jp.aestura.com',/^\/products\//],
+ ['jp.sulwhasoo.com',/^\/products\//]
+]);
 const matchesHost=(host,expected)=>host===expected||host.endsWith('.'+expected);
 export function isJapaneseMarketURL(input){
  let u;try{u=new URL(input);}catch{return false;}
  if(u.protocol!=='https:'||u.username||u.password||u.port)return false;
  const host=u.hostname.toLowerCase();
  if(domesticOfficialHosts.some(x=>matchesHost(host,x)))return true;
+ if(domesticComPaths.has(host))return domesticComPaths.get(host).test(u.pathname);
  // 未登録国内ドメインの場合、公式ページの本人確認と日本語成分表示が別途必須。
  if(host.endsWith('.co.jp')||host.endsWith('.jp'))return true;
  if(matchesHost(host,'kao-kirei.com'))return /^\/ja\/(official|item)\//.test(u.pathname);
