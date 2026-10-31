@@ -300,6 +300,33 @@
           ],
           "registrationStatus": "official-listed-pending-product-registration",
           "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "クレ・ド・ポー ボーテ シナクティフ",
+          "aliases": [
+            "クレ・ド・ポー ボーテ シナクティフ"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.shiseido.co.jp/wp/brand/"
+        },
+        {
+          "brandId": null,
+          "name": "グレイシィ",
+          "aliases": [
+            "グレイシィ"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.shiseido.co.jp/wp/brand/"
+        },
+        {
+          "brandId": null,
+          "name": "ザ・コラーゲン",
+          "aliases": [
+            "ザ・コラーゲン"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.shiseido.co.jp/wp/brand/"
         }
       ]
     },
@@ -2003,8 +2030,8 @@
       ]
     }
   ],
-  "officialExpansionCount": 36,
-  "directoryBrandCount": 183,
+  "officialExpansionCount": 39,
+  "directoryBrandCount": 186,
   "officialExpansionSources": [
     {
       "maker": "資生堂",
@@ -2013,6 +2040,10 @@
     {
       "maker": "花王・カネボウ",
       "url": "https://www.kao-kirei.com/ja/brand/kbb/"
+    },
+    {
+      "maker": "資生堂",
+      "url": "https://www.shiseido.co.jp/wp/brand/"
     }
   ]
 }
