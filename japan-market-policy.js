@@ -20,6 +20,9 @@ const domesticComPaths=new Map([
  ['jp.sulwhasoo.com',/^\/products\//],
  ['drjartjp.com',/^\/$/],
  ['www.matsukiyococokara-online.com',/^\/store\/catalog\/product\/view\/id\/\d{13}\/?$/],
+ // Individually confirmed Japan-market product identity links only; does not grant ingredient copying.
+ ['jp.abib.com',/^\/product\//],
+ ['www.cosme.com',/^\/products\/detail\.php$/],
  // Link-only Japanese product identity. Never authorizes external scraping or formula republication.
  ['www.cosme.net',/^\/products\/\d+\/?$/],
  ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/],
