@@ -539,6 +539,213 @@
           "name": "敏感肌用化粧水 高保湿",
           "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550583434991",
           "variant": "高保湿"
+        },
+        {
+          "name": "敏感肌用化粧水 高保湿（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "高保湿・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 高保湿（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "270mL",
+          "variant": "高保湿・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 しっとり",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550583434960",
+          "volume": "300mL",
+          "variant": "しっとり",
+          "jan": "4550583434960",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 しっとり（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "しっとり・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 しっとり（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "270mL",
+          "variant": "しっとり・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 さっぱり",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "300mL",
+          "variant": "さっぱり",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 さっぱり（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "さっぱり・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用化粧水 さっぱり（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "270mL",
+          "variant": "さっぱり・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 高保湿",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550584935367",
+          "volume": "200mL",
+          "variant": "高保湿",
+          "jan": "4550584935367",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 高保湿（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "高保湿・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 高保湿（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "180mL",
+          "variant": "高保湿・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 しっとり",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "200mL",
+          "variant": "しっとり",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 しっとり（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "しっとり・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 しっとり（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "180mL",
+          "variant": "しっとり・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 さっぱり",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "200mL",
+          "variant": "さっぱり",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 さっぱり（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "さっぱり・携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用乳液 さっぱり（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "180mL",
+          "variant": "さっぱり・詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用クリーム化粧水",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "300mL",
+          "variant": "本体",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用クリーム化粧水（携帯用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": "携帯用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用クリーム化粧水（詰替用）",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "270mL",
+          "variant": "詰替用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用薬用美容液",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "50mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用オールインワンジェル",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107020127",
+          "volume": "150g",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "敏感肌用クリーム",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550584935381",
+          "volume": "50g",
+          "variant": null,
+          "jan": "4550584935381",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
         }
       ],
       "ingredientNames": [],
@@ -1420,7 +1627,53 @@
       "brandId": 116,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "AHA-BHA-PHA 30 DAYS MIRACLE TONER",
+          "url": "https://shop.somebymi.jp/",
+          "volume": null,
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "RETINOL INTENSE ADVANCED TRIPLE ACTION EYE CREAM",
+          "url": "https://shop.somebymi.jp/",
+          "volume": null,
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "GALACTOMYCES PURE VITAMIN C GLOW SERUM",
+          "url": "https://shop.somebymi.jp/",
+          "volume": null,
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ミラクル ボディローション",
+          "url": "https://shop.somebymi.jp/",
+          "volume": "200mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "レチノール デイリーマスク",
+          "url": "https://shop.somebymi.jp/",
+          "volume": "30枚",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1552,7 +1805,35 @@
       "brandId": 122,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "インク ムード グロイ ティント",
+          "url": "https://www.peripera.jp/product/%E3%82%A4%E3%83%B3%E3%82%AF-%E3%83%A0%E3%83%BC%E3%83%89-%E3%82%B0%E3%83%AD%E3%82%A4-%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/149/category/1/display/2/",
+          "volume": "4g",
+          "variant": "色番未指定",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ウォーター ベアー ティント",
+          "url": "https://peripera.jp/category/peritage/128/",
+          "volume": null,
+          "variant": "色番未指定",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "オール テイク ムード ライク パレット",
+          "url": "https://peripera.jp/category/peritage/128/",
+          "volume": null,
+          "variant": "色番未指定",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1668,7 +1949,26 @@
       "brandId": 126,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "クリーンイットゼロ クレンジングバーム OR",
+          "url": "https://www.cosme.com/products/detail.php?product_id=380901",
+          "volume": "100mL",
+          "variant": "オリジナル",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "クリーンイットゼロ クレンジングバーム CL",
+          "url": "https://www.cosme.net/products/10178026/",
+          "volume": "100mL",
+          "variant": "CL",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1751,7 +2051,17 @@
       "brandId": 129,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "345フェイスクリーム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=423441",
+          "volume": "50mL",
+          "variant": "50mL・新仕様",
+          "jan": "8809447256221",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1801,7 +2111,62 @@
       "brandId": 131,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "緑豆弱酸性 洗顔フォーム",
+          "url": "https://www.beplain.info/jp",
+          "volume": "80mL",
+          "variant": "80mL",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "緑豆弱酸性 洗顔フォーム",
+          "url": "https://www.beplain.info/jp",
+          "volume": "160mL",
+          "variant": "160mL",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "緑豆毛穴クレイパック",
+          "url": "https://www.beplain.info/jp",
+          "volume": "120mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "緑豆クレンジングミルクバーム",
+          "url": "https://www.beplain.info/jp",
+          "volume": "100mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "シカテロル トナー",
+          "url": "https://www.beplain.info/jp",
+          "volume": "200mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "シカテロル アンプル",
+          "url": "https://www.beplain.info/jp",
+          "volume": "30mL",
+          "variant": null,
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [

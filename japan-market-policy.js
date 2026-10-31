@@ -8,6 +8,10 @@ const domesticOfficialHosts=[
 ];
 // Individually confirmed Japanese storefronts on .com domains; scope by host and path.
 const domesticComPaths=new Map([
+ ['www.canmake.com',/^\/item\/detail\/mermaid-skin-gel-uv(?:-oil-block)?\/$/],
+ ['www.peripera.jp',/^\/product\//],
+ ['www.beplain.info',/^\/jp\/?$/],
+ ['peripera.jp',/^\/category\/peritage\/128\/$/],
  ['www.cledepeau-beaute.com',/^\/jp\/products\//],
  ['www.decorte.com',/^\/site\//],
  ['www.lunasol-official.com',/^\/categories\/pointmake\//],
@@ -39,7 +43,7 @@ export function isJapaneseMarketURL(input){
  // A specific 2026 Japanese importer product-announcement page, not blanket PR content.
  if(host==='prtimes.jp')return u.pathname==='/main/html/rd/p/000000025.000128129.html';
  if(host.endsWith('.co.jp')||host.endsWith('.jp'))return true;
- if(matchesHost(host,'kao-kirei.com'))return /^\/ja\/(official|item)\//.test(u.pathname);
+ if(matchesHost(host,'kao-kirei.com'))return /^\/ja\/(?:official|item)\//.test(u.pathname)||/^\/ja\/brand\/khg\/biore\/$/.test(u.pathname);
  if(matchesHost(host,'kao.com')||matchesHost(host,'muji.com'))return /^\/jp(?:\/|$)/.test(u.pathname);
  return false;
 }
