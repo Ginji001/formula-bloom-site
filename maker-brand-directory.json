@@ -1,0 +1,1682 @@
+{
+  "schemaVersion": 1,
+  "brandCount": 147,
+  "makerGroupCount": 69,
+  "completeAllMakers": false,
+  "completeAllBrands": false,
+  "scope": "既存登録147ブランドをメーカー別に整理した暫定台帳。法人グループとブランド保有者の関係は未監査。",
+  "makers": [
+    {
+      "maker": "資生堂",
+      "country": "JP",
+      "site": "https://www.shiseido.co.jp/",
+      "brands": [
+        {
+          "brandId": 1,
+          "name": "資生堂",
+          "aliases": [
+            "資生堂",
+            "SHISEIDO"
+          ]
+        },
+        {
+          "brandId": 2,
+          "name": "エリクシール",
+          "aliases": [
+            "エリクシール",
+            "ELIXIR"
+          ]
+        },
+        {
+          "brandId": 3,
+          "name": "アネッサ",
+          "aliases": [
+            "アネッサ",
+            "ANESSA"
+          ]
+        },
+        {
+          "brandId": 4,
+          "name": "dプログラム",
+          "aliases": [
+            "dプログラム",
+            "d program",
+            "d-program"
+          ]
+        },
+        {
+          "brandId": 5,
+          "name": "イハダ",
+          "aliases": [
+            "イハダ",
+            "IHADA"
+          ]
+        },
+        {
+          "brandId": 6,
+          "name": "アクアレーベル",
+          "aliases": [
+            "アクアレーベル",
+            "AQUALABEL"
+          ]
+        },
+        {
+          "brandId": 7,
+          "name": "HAKU",
+          "aliases": [
+            "HAKU",
+            "ハク"
+          ]
+        },
+        {
+          "brandId": 8,
+          "name": "マキアージュ",
+          "aliases": [
+            "マキアージュ",
+            "MAQUILLAGE"
+          ]
+        },
+        {
+          "brandId": 9,
+          "name": "インテグレート",
+          "aliases": [
+            "インテグレート",
+            "INTEGRATE"
+          ]
+        },
+        {
+          "brandId": 10,
+          "name": "マジョリカ マジョルカ",
+          "aliases": [
+            "マジョリカ マジョルカ",
+            "MAJOLICA MAJORCA"
+          ]
+        },
+        {
+          "brandId": 11,
+          "name": "クレ・ド・ポー ボーテ",
+          "aliases": [
+            "クレ・ド・ポー ボーテ",
+            "Cle de Peau Beaute"
+          ]
+        },
+        {
+          "brandId": 12,
+          "name": "ベネフィーク",
+          "aliases": [
+            "ベネフィーク",
+            "BENEFIQUE"
+          ]
+        },
+        {
+          "brandId": 13,
+          "name": "プリオール",
+          "aliases": [
+            "プリオール",
+            "PRIOR"
+          ]
+        },
+        {
+          "brandId": 14,
+          "name": "リバイタル",
+          "aliases": [
+            "リバイタル",
+            "REVITAL"
+          ]
+        },
+        {
+          "brandId": 15,
+          "name": "インウイ",
+          "aliases": [
+            "インウイ",
+            "INOUI"
+          ]
+        },
+        {
+          "brandId": 16,
+          "name": "BAUM",
+          "aliases": [
+            "BAUM",
+            "バウム"
+          ]
+        },
+        {
+          "brandId": 17,
+          "name": "IPSA",
+          "aliases": [
+            "IPSA",
+            "イプサ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "花王・カネボウ",
+      "country": "JP",
+      "site": "https://www.kao-kirei.com/",
+      "brands": [
+        {
+          "brandId": 18,
+          "name": "花王",
+          "aliases": [
+            "花王",
+            "Kao"
+          ]
+        },
+        {
+          "brandId": 19,
+          "name": "キュレル",
+          "aliases": [
+            "キュレル",
+            "Curel"
+          ]
+        },
+        {
+          "brandId": 20,
+          "name": "ビオレ",
+          "aliases": [
+            "ビオレ",
+            "Biore"
+          ]
+        },
+        {
+          "brandId": 21,
+          "name": "ソフィーナ iP",
+          "aliases": [
+            "ソフィーナ iP",
+            "SOFINA iP"
+          ]
+        },
+        {
+          "brandId": 22,
+          "name": "エスト",
+          "aliases": [
+            "エスト",
+            "est"
+          ]
+        },
+        {
+          "brandId": 23,
+          "name": "カネボウ",
+          "aliases": [
+            "カネボウ",
+            "KANEBO"
+          ]
+        },
+        {
+          "brandId": 24,
+          "name": "スイサイ",
+          "aliases": [
+            "スイサイ",
+            "suisai"
+          ]
+        },
+        {
+          "brandId": 25,
+          "name": "DEW",
+          "aliases": [
+            "DEW",
+            "デュウ"
+          ]
+        },
+        {
+          "brandId": 26,
+          "name": "ALBLANC",
+          "aliases": [
+            "ALBLANC",
+            "アルブラン"
+          ]
+        },
+        {
+          "brandId": 27,
+          "name": "KATE",
+          "aliases": [
+            "KATE",
+            "ケイト"
+          ]
+        },
+        {
+          "brandId": 28,
+          "name": "ALLIE",
+          "aliases": [
+            "ALLIE",
+            "アリィー"
+          ]
+        },
+        {
+          "brandId": 29,
+          "name": "LUNASOL",
+          "aliases": [
+            "LUNASOL",
+            "ルナソル"
+          ]
+        },
+        {
+          "brandId": 30,
+          "name": "freeplus",
+          "aliases": [
+            "freeplus",
+            "フリープラス"
+          ]
+        },
+        {
+          "brandId": 31,
+          "name": "Primavista",
+          "aliases": [
+            "Primavista",
+            "プリマヴィスタ"
+          ]
+        },
+        {
+          "brandId": 32,
+          "name": "TWANY",
+          "aliases": [
+            "TWANY",
+            "トワニー"
+          ]
+        },
+        {
+          "brandId": 33,
+          "name": "LISSAGE",
+          "aliases": [
+            "LISSAGE",
+            "リサージ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "コーセー",
+      "country": "JP",
+      "site": "https://www.kose.co.jp/",
+      "brands": [
+        {
+          "brandId": 34,
+          "name": "コーセー",
+          "aliases": [
+            "コーセー",
+            "KOSE"
+          ]
+        },
+        {
+          "brandId": 35,
+          "name": "雪肌精",
+          "aliases": [
+            "雪肌精",
+            "SEKKISEI"
+          ]
+        },
+        {
+          "brandId": 36,
+          "name": "コスメデコルテ",
+          "aliases": [
+            "コスメデコルテ",
+            "DECORTE"
+          ]
+        },
+        {
+          "brandId": 37,
+          "name": "ONE BY KOSE",
+          "aliases": [
+            "ONE BY KOSE",
+            "ワンバイコーセー"
+          ]
+        },
+        {
+          "brandId": 38,
+          "name": "ヴィセ",
+          "aliases": [
+            "ヴィセ",
+            "VISEE"
+          ]
+        },
+        {
+          "brandId": 39,
+          "name": "エスプリーク",
+          "aliases": [
+            "エスプリーク",
+            "ESPRIQUE"
+          ]
+        },
+        {
+          "brandId": 40,
+          "name": "ADDICTION",
+          "aliases": [
+            "ADDICTION",
+            "アディクション"
+          ]
+        },
+        {
+          "brandId": 41,
+          "name": "ジルスチュアート",
+          "aliases": [
+            "ジルスチュアート",
+            "JILL STUART"
+          ]
+        },
+        {
+          "brandId": 42,
+          "name": "プレディア",
+          "aliases": [
+            "プレディア",
+            "Predia"
+          ]
+        },
+        {
+          "brandId": 43,
+          "name": "セラムヴェール",
+          "aliases": [
+            "セラムヴェール"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ロート製薬",
+      "country": "JP",
+      "site": "https://www.shop.rohto.co.jp/",
+      "brands": [
+        {
+          "brandId": 44,
+          "name": "ロート製薬",
+          "aliases": [
+            "ロート製薬",
+            "ROHTO"
+          ]
+        },
+        {
+          "brandId": 45,
+          "name": "肌ラボ",
+          "aliases": [
+            "肌ラボ",
+            "Hada Labo"
+          ]
+        },
+        {
+          "brandId": 46,
+          "name": "メラノCC",
+          "aliases": [
+            "メラノCC",
+            "Melano CC"
+          ]
+        },
+        {
+          "brandId": 47,
+          "name": "ケアセラ",
+          "aliases": [
+            "ケアセラ",
+            "CareCera"
+          ]
+        },
+        {
+          "brandId": 48,
+          "name": "オバジ",
+          "aliases": [
+            "オバジ",
+            "Obagi"
+          ]
+        },
+        {
+          "brandId": 49,
+          "name": "スキンアクア",
+          "aliases": [
+            "スキンアクア",
+            "Skin Aqua"
+          ]
+        },
+        {
+          "brandId": 50,
+          "name": "デオコ",
+          "aliases": [
+            "デオコ",
+            "Deoco"
+          ]
+        },
+        {
+          "brandId": 51,
+          "name": "50の恵",
+          "aliases": [
+            "50の恵"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ちふれ",
+      "country": "JP",
+      "site": "https://www.chifure.co.jp/products/skinlotion/2871",
+      "brands": [
+        {
+          "brandId": 52,
+          "name": "ちふれ",
+          "aliases": [
+            "ちふれ",
+            "CHIFURE"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ちふれグループ",
+      "country": "JP",
+      "site": "https://www.chifure.co.jp/",
+      "brands": [
+        {
+          "brandId": 53,
+          "name": "綾花",
+          "aliases": [
+            "綾花",
+            "AYAKA"
+          ]
+        },
+        {
+          "brandId": 54,
+          "name": "HIKARIMIRAI",
+          "aliases": [
+            "HIKARIMIRAI",
+            "ヒカリミライ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "オルビス",
+      "country": "JP",
+      "site": "https://www.orbis.co.jp/small/1201010/",
+      "brands": [
+        {
+          "brandId": 55,
+          "name": "オルビス",
+          "aliases": [
+            "オルビス",
+            "ORBIS"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ファンケル",
+      "country": "JP",
+      "site": "https://www.fancl.co.jp/beauty/",
+      "brands": [
+        {
+          "brandId": 56,
+          "name": "ファンケル",
+          "aliases": [
+            "ファンケル",
+            "FANCL"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ポーラ",
+      "country": "JP",
+      "site": "https://www.pola.co.jp/",
+      "brands": [
+        {
+          "brandId": 57,
+          "name": "ポーラ",
+          "aliases": [
+            "ポーラ",
+            "POLA"
+          ]
+        },
+        {
+          "brandId": 58,
+          "name": "B.A",
+          "aliases": [
+            "B.A",
+            "ポーラB.A"
+          ]
+        },
+        {
+          "brandId": 59,
+          "name": "リンクルショット",
+          "aliases": [
+            "リンクルショット"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "アテニア",
+      "country": "JP",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 60,
+          "name": "アテニア",
+          "aliases": [
+            "アテニア",
+            "Attenir"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "DHC",
+      "country": "JP",
+      "site": "https://www.dhc.co.jp/",
+      "brands": [
+        {
+          "brandId": 61,
+          "name": "DHC",
+          "aliases": [
+            "DHC",
+            "ディーエイチシー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "無印良品",
+      "country": "JP",
+      "site": "https://www.muji.com/",
+      "brands": [
+        {
+          "brandId": 62,
+          "name": "無印良品",
+          "aliases": [
+            "無印良品",
+            "MUJI"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "トゥヴェール",
+      "country": "JP",
+      "site": "https://www.tvert.jp/shop",
+      "brands": [
+        {
+          "brandId": 63,
+          "name": "トゥヴェール",
+          "aliases": [
+            "トゥヴェール",
+            "TOUT VERT"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "富士フイルム",
+      "country": "JP",
+      "site": "https://www.fujifilm.com/",
+      "brands": [
+        {
+          "brandId": 64,
+          "name": "アスタリフト",
+          "aliases": [
+            "アスタリフト",
+            "ASTALIFT"
+          ]
+        },
+        {
+          "brandId": 65,
+          "name": "ルナメア",
+          "aliases": [
+            "ルナメア",
+            "Lunamer"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "第一三共ヘルスケア",
+      "country": "JP",
+      "site": "https://www.daiichisankyo-hc.co.jp/",
+      "brands": [
+        {
+          "brandId": 66,
+          "name": "ミノン",
+          "aliases": [
+            "ミノン",
+            "MINON"
+          ]
+        },
+        {
+          "brandId": 67,
+          "name": "トランシーノ",
+          "aliases": [
+            "トランシーノ",
+            "TRANSINO"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ノエビアグループ",
+      "country": "JP",
+      "site": "https://noevirgroup.jp/",
+      "brands": [
+        {
+          "brandId": 68,
+          "name": "ノブ",
+          "aliases": [
+            "ノブ",
+            "NOV"
+          ]
+        },
+        {
+          "brandId": 69,
+          "name": "サナ",
+          "aliases": [
+            "サナ",
+            "SANA"
+          ]
+        },
+        {
+          "brandId": 70,
+          "name": "なめらか本舗",
+          "aliases": [
+            "なめらか本舗"
+          ]
+        },
+        {
+          "brandId": 71,
+          "name": "エクセル",
+          "aliases": [
+            "エクセル",
+            "excel"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "クラシエ",
+      "country": "JP",
+      "site": "https://www.kracie.co.jp/",
+      "brands": [
+        {
+          "brandId": 72,
+          "name": "肌美精",
+          "aliases": [
+            "肌美精",
+            "HADABISEI"
+          ]
+        },
+        {
+          "brandId": 73,
+          "name": "ナイーブ",
+          "aliases": [
+            "ナイーブ",
+            "naive"
+          ]
+        },
+        {
+          "brandId": 74,
+          "name": "いち髪",
+          "aliases": [
+            "いち髪",
+            "ICHIKAMI"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "マンダム",
+      "country": "JP",
+      "site": "https://www.mandom.co.jp/",
+      "brands": [
+        {
+          "brandId": 75,
+          "name": "ギャツビー",
+          "aliases": [
+            "ギャツビー",
+            "GATSBY"
+          ]
+        },
+        {
+          "brandId": 76,
+          "name": "ルシード",
+          "aliases": [
+            "ルシード",
+            "LUCIDO"
+          ]
+        },
+        {
+          "brandId": 77,
+          "name": "ビフェスタ",
+          "aliases": [
+            "ビフェスタ",
+            "Bifesta"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "セザンヌ化粧品",
+      "country": "JP",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 78,
+          "name": "セザンヌ",
+          "aliases": [
+            "セザンヌ",
+            "CEZANNE"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "井田ラボラトリーズ",
+      "country": "JP",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 79,
+          "name": "キャンメイク",
+          "aliases": [
+            "キャンメイク",
+            "CANMAKE"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "アモーレパシフィック",
+      "country": "KR",
+      "site": "https://jp.laneige.com/",
+      "brands": [
+        {
+          "brandId": 80,
+          "name": "ラネージュ",
+          "aliases": [
+            "ラネージュ",
+            "LANEIGE",
+            "라네즈"
+          ]
+        },
+        {
+          "brandId": 81,
+          "name": "イニスフリー",
+          "aliases": [
+            "イニスフリー",
+            "innisfree",
+            "이니스프리"
+          ]
+        },
+        {
+          "brandId": 82,
+          "name": "エチュード",
+          "aliases": [
+            "エチュード",
+            "ETUDE",
+            "에뛰드"
+          ]
+        },
+        {
+          "brandId": 83,
+          "name": "エストラ",
+          "aliases": [
+            "エストラ",
+            "AESTURA",
+            "에스트라"
+          ]
+        },
+        {
+          "brandId": 84,
+          "name": "ヘラ",
+          "aliases": [
+            "ヘラ",
+            "HERA",
+            "헤라"
+          ]
+        },
+        {
+          "brandId": 85,
+          "name": "ソルファス",
+          "aliases": [
+            "ソルファス",
+            "Sulwhasoo",
+            "설화수"
+          ]
+        },
+        {
+          "brandId": 86,
+          "name": "プリメラ",
+          "aliases": [
+            "プリメラ",
+            "primera"
+          ]
+        },
+        {
+          "brandId": 87,
+          "name": "IOPE",
+          "aliases": [
+            "IOPE",
+            "アイオペ"
+          ]
+        },
+        {
+          "brandId": 88,
+          "name": "ハンユル",
+          "aliases": [
+            "ハンユル",
+            "HANYUL"
+          ]
+        },
+        {
+          "brandId": 89,
+          "name": "マモンド",
+          "aliases": [
+            "マモンド",
+            "MAMONDE"
+          ]
+        },
+        {
+          "brandId": 90,
+          "name": "イリユン",
+          "aliases": [
+            "イリユン",
+            "ILLIYOON"
+          ]
+        },
+        {
+          "brandId": 91,
+          "name": "エスポア",
+          "aliases": [
+            "エスポア",
+            "espoir"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "LG生活健康",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 92,
+          "name": "CNP",
+          "aliases": [
+            "CNP",
+            "CNP Laboratory",
+            "シーエヌピー"
+          ]
+        },
+        {
+          "brandId": 93,
+          "name": "ビリーフ",
+          "aliases": [
+            "ビリーフ",
+            "belif"
+          ]
+        },
+        {
+          "brandId": 94,
+          "name": "ザ・フェイスショップ",
+          "aliases": [
+            "ザ・フェイスショップ",
+            "THE FACE SHOP"
+          ]
+        },
+        {
+          "brandId": 95,
+          "name": "VDL",
+          "aliases": [
+            "VDL",
+            "ブイディーエル"
+          ]
+        },
+        {
+          "brandId": 96,
+          "name": "ザ・フー",
+          "aliases": [
+            "ザ・フー",
+            "THE WHOO"
+          ]
+        },
+        {
+          "brandId": 97,
+          "name": "ビヨンド",
+          "aliases": [
+            "ビヨンド",
+            "BEYOND"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ANUA",
+      "country": "KR",
+      "site": "https://www.anuashop.jp/",
+      "brands": [
+        {
+          "brandId": 98,
+          "name": "アヌア",
+          "aliases": [
+            "アヌア",
+            "ANUA",
+            "아누아"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ROUND LAB",
+      "country": "KR",
+      "site": "https://roundlab.com/",
+      "brands": [
+        {
+          "brandId": 99,
+          "name": "ラウンドラボ",
+          "aliases": [
+            "ラウンドラボ",
+            "ROUND LAB",
+            "라운드랩"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "COSRX",
+      "country": "KR",
+      "site": "https://www.cosrx.com/",
+      "brands": [
+        {
+          "brandId": 100,
+          "name": "COSRX",
+          "aliases": [
+            "COSRX",
+            "コスアールエックス",
+            "코스알엑스"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Beauty of Joseon",
+      "country": "KR",
+      "site": "https://beautyofjoseon.com/",
+      "brands": [
+        {
+          "brandId": 101,
+          "name": "Beauty of Joseon",
+          "aliases": [
+            "Beauty of Joseon",
+            "ビューティーオブジョソン",
+            "朝鮮美女"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "SKIN1004",
+      "country": "KR",
+      "site": "https://www.skin1004.com/",
+      "brands": [
+        {
+          "brandId": 102,
+          "name": "SKIN1004",
+          "aliases": [
+            "SKIN1004",
+            "スキン1004",
+            "スキンサウザンドフォー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "MEDIHEAL",
+      "country": "KR",
+      "site": "https://mediheal.jp/",
+      "brands": [
+        {
+          "brandId": 103,
+          "name": "MEDIHEAL",
+          "aliases": [
+            "MEDIHEAL",
+            "メディヒール",
+            "메디힐"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "mixsoon",
+      "country": "KR",
+      "site": "https://mixsoon.us/",
+      "brands": [
+        {
+          "brandId": 104,
+          "name": "mixsoon",
+          "aliases": [
+            "mixsoon",
+            "ミクスン"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Torriden",
+      "country": "KR",
+      "site": "https://torriden.jp/",
+      "brands": [
+        {
+          "brandId": 105,
+          "name": "Torriden",
+          "aliases": [
+            "Torriden",
+            "トリデン",
+            "토리든"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "VT COSMETICS",
+      "country": "KR",
+      "site": "https://www.vtcosmetics.jp/",
+      "brands": [
+        {
+          "brandId": 106,
+          "name": "VT",
+          "aliases": [
+            "VT",
+            "VTコスメティックス",
+            "VT COSMETICS"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "numbuzin",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 107,
+          "name": "numbuzin",
+          "aliases": [
+            "numbuzin",
+            "ナンバーズイン"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Dr.G",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 108,
+          "name": "Dr.G",
+          "aliases": [
+            "Dr.G",
+            "ドクタージー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Dr.Jart+",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 109,
+          "name": "Dr.Jart+",
+          "aliases": [
+            "Dr.Jart+",
+            "ドクタージャルト"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "ma:nyo",
+      "country": "KR",
+      "site": "https://manyo-japanese.com/",
+      "brands": [
+        {
+          "brandId": 110,
+          "name": "ma:nyo",
+          "aliases": [
+            "ma:nyo",
+            "manyo",
+            "魔女工場"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "medicube",
+      "country": "KR",
+      "site": "https://medicube.us/",
+      "brands": [
+        {
+          "brandId": 111,
+          "name": "medicube",
+          "aliases": [
+            "medicube",
+            "メディキューブ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "TIRTIR",
+      "country": "KR",
+      "site": "https://tirtir.global/",
+      "brands": [
+        {
+          "brandId": 112,
+          "name": "TIRTIR",
+          "aliases": [
+            "TIRTIR",
+            "ティルティル"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "d'Alba",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 113,
+          "name": "d'Alba",
+          "aliases": [
+            "d'Alba",
+            "ダルバ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Abib",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 114,
+          "name": "Abib",
+          "aliases": [
+            "Abib",
+            "アビブ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Isntree",
+      "country": "KR",
+      "site": "https://isntree-global.com/",
+      "brands": [
+        {
+          "brandId": 115,
+          "name": "Isntree",
+          "aliases": [
+            "Isntree",
+            "イズエンツリー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "SOME BY MI",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 116,
+          "name": "SOME BY MI",
+          "aliases": [
+            "SOME BY MI",
+            "サムバイミー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "PURITO",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 117,
+          "name": "PURITO",
+          "aliases": [
+            "PURITO",
+            "ピュリト"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "SKINFOOD",
+      "country": "KR",
+      "site": "https://www.skinfood.co.jp/",
+      "brands": [
+        {
+          "brandId": 118,
+          "name": "SKINFOOD",
+          "aliases": [
+            "SKINFOOD",
+            "スキンフード"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "MISSHA",
+      "country": "KR",
+      "site": "https://www.missha.co.jp/",
+      "brands": [
+        {
+          "brandId": 119,
+          "name": "MISSHA",
+          "aliases": [
+            "MISSHA",
+            "ミシャ"
+          ]
+        },
+        {
+          "brandId": 120,
+          "name": "A’pieu",
+          "aliases": [
+            "A’pieu",
+            "アピュー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "CLIO",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 121,
+          "name": "CLIO",
+          "aliases": [
+            "CLIO",
+            "クリオ"
+          ]
+        },
+        {
+          "brandId": 122,
+          "name": "peripera",
+          "aliases": [
+            "peripera",
+            "ペリペラ"
+          ]
+        },
+        {
+          "brandId": 123,
+          "name": "goodal",
+          "aliases": [
+            "goodal",
+            "グーダル"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "rom&nd",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 124,
+          "name": "rom&nd",
+          "aliases": [
+            "rom&nd",
+            "ロムアンド"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "3CE",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 125,
+          "name": "3CE",
+          "aliases": [
+            "3CE",
+            "スリーコンセプトアイズ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Banila Co",
+      "country": "KR",
+      "site": "https://banilausa.com/",
+      "brands": [
+        {
+          "brandId": 126,
+          "name": "BANILA CO",
+          "aliases": [
+            "BANILA CO",
+            "バニラコ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "AHC",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 127,
+          "name": "AHC",
+          "aliases": [
+            "AHC",
+            "エーエイチシー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "celimax",
+      "country": "KR",
+      "site": "https://celimax.jp/",
+      "brands": [
+        {
+          "brandId": 128,
+          "name": "celimax",
+          "aliases": [
+            "celimax",
+            "セリマックス"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Dr.Althea",
+      "country": "KR",
+      "site": "https://doctoraltheaglobal.com/",
+      "brands": [
+        {
+          "brandId": 129,
+          "name": "Dr.Althea",
+          "aliases": [
+            "Dr.Althea",
+            "ドクターエルシア"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "BIODANCE",
+      "country": "KR",
+      "site": "https://biodance.com/",
+      "brands": [
+        {
+          "brandId": 130,
+          "name": "BIODANCE",
+          "aliases": [
+            "BIODANCE",
+            "バイオダンス"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "beplain",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 131,
+          "name": "beplain",
+          "aliases": [
+            "beplain",
+            "ビープレーン"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "haruharu wonder",
+      "country": "KR",
+      "site": "https://haruharuwonder.com/",
+      "brands": [
+        {
+          "brandId": 132,
+          "name": "haruharu wonder",
+          "aliases": [
+            "haruharu wonder",
+            "ハルハルワンダー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "AXIS-Y",
+      "country": "KR",
+      "site": "https://axis-y.com/",
+      "brands": [
+        {
+          "brandId": 133,
+          "name": "AXIS-Y",
+          "aliases": [
+            "AXIS-Y",
+            "アクシスワイ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "TOCOBO",
+      "country": "KR",
+      "site": "https://tocobo.us/",
+      "brands": [
+        {
+          "brandId": 134,
+          "name": "TOCOBO",
+          "aliases": [
+            "TOCOBO",
+            "トコボ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Heimish",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 135,
+          "name": "heimish",
+          "aliases": [
+            "heimish",
+            "ヘイミッシュ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Benton",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 136,
+          "name": "Benton",
+          "aliases": [
+            "Benton",
+            "ベントン"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "iUNIK",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 137,
+          "name": "iUNIK",
+          "aliases": [
+            "iUNIK",
+            "アイユニック"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "WELLAGE",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 138,
+          "name": "WELLAGE",
+          "aliases": [
+            "WELLAGE",
+            "ウェラージュ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "BIOHEAL BOH",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 139,
+          "name": "BIOHEAL BOH",
+          "aliases": [
+            "BIOHEAL BOH",
+            "バイオヒールボ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Dr.Ceuracle",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 140,
+          "name": "Dr.Ceuracle",
+          "aliases": [
+            "Dr.Ceuracle",
+            "ドクターセラクル"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "Centellian24",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 141,
+          "name": "Centellian24",
+          "aliases": [
+            "Centellian24",
+            "センテリアン24"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "fwee",
+      "country": "KR",
+      "site": "https://fwee.jp/",
+      "brands": [
+        {
+          "brandId": 142,
+          "name": "fwee",
+          "aliases": [
+            "fwee",
+            "フィー"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "hince",
+      "country": "KR",
+      "site": "https://hince.jp/",
+      "brands": [
+        {
+          "brandId": 143,
+          "name": "hince",
+          "aliases": [
+            "hince",
+            "ヒンス"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "dasique",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 144,
+          "name": "dasique",
+          "aliases": [
+            "dasique",
+            "デイジーク"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "WAKEMAKE",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 145,
+          "name": "WAKEMAKE",
+          "aliases": [
+            "WAKEMAKE",
+            "ウェイクメイク"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "AMUSE",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 146,
+          "name": "AMUSE",
+          "aliases": [
+            "AMUSE",
+            "アミューズ"
+          ]
+        }
+      ]
+    },
+    {
+      "maker": "REJURAN",
+      "country": "KR",
+      "site": null,
+      "brands": [
+        {
+          "brandId": 147,
+          "name": "REJURAN",
+          "aliases": [
+            "REJURAN",
+            "リジュラン"
+          ]
+        }
+      ]
+    }
+  ]
+}
