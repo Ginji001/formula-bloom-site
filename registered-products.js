@@ -598,17 +598,238 @@ export function findRegisteredProducts(query){
  }).filter(Boolean);
  return matches.sort((a,b)=>b.score-a.score||a.product.name.localeCompare(b.product.name,'ja'));
 }
-// Manufacturer-name searches must not create a fictional "花王" product or mix in
-// foreign-market variants. Only registered Japan-facing Kao/Kanebo source URLs qualify.
-export function findManufacturerProducts(query){
+// The maker/brand associations are copied from server/brands.mjs and checked by
+// tests. They do not assert that every brand's full Japan SKU list is available.
+export const manufacturerGroups=Object.freeze([
+ {
+  "maker": "資生堂",
+  "aliases": [
+   "資生堂",
+   "SHISEIDO",
+   "資生堂グループ"
+  ],
+  "brands": [
+   "資生堂",
+   "エリクシール",
+   "アネッサ",
+   "dプログラム",
+   "イハダ",
+   "アクアレーベル",
+   "HAKU",
+   "マキアージュ",
+   "インテグレート",
+   "マジョリカ マジョルカ",
+   "クレ・ド・ポー ボーテ",
+   "ベネフィーク",
+   "プリオール",
+   "リバイタル",
+   "インウイ",
+   "BAUM",
+   "IPSA"
+  ]
+ },
+ {
+  "maker": "花王・カネボウ",
+  "aliases": [
+   "花王",
+   "KAO",
+   "花王・カネボウ"
+  ],
+  "brands": [
+   "花王",
+   "キュレル",
+   "ビオレ",
+   "ソフィーナ iP",
+   "エスト",
+   "カネボウ",
+   "スイサイ",
+   "DEW",
+   "ALBLANC",
+   "KATE",
+   "ALLIE",
+   "LUNASOL",
+   "freeplus",
+   "Primavista",
+   "TWANY",
+   "LISSAGE"
+  ]
+ },
+ {
+  "maker": "コーセー",
+  "aliases": [
+   "コーセー",
+   "KOSE",
+   "コーセーグループ"
+  ],
+  "brands": [
+   "コーセー",
+   "雪肌精",
+   "コスメデコルテ",
+   "ONE BY KOSE",
+   "ヴィセ",
+   "エスプリーク",
+   "ADDICTION",
+   "ジルスチュアート",
+   "プレディア",
+   "セラムヴェール"
+  ]
+ },
+ {
+  "maker": "ロート製薬",
+  "aliases": [
+   "ロート製薬",
+   "ROHTO"
+  ],
+  "brands": [
+   "ロート製薬",
+   "肌ラボ",
+   "メラノCC",
+   "ケアセラ",
+   "オバジ",
+   "スキンアクア",
+   "デオコ",
+   "50の恵"
+  ]
+ },
+ {
+  "maker": "ノエビアグループ",
+  "aliases": [
+   "ノエビアグループ",
+   "ノエビア"
+  ],
+  "brands": [
+   "ノブ",
+   "サナ",
+   "なめらか本舗",
+   "エクセル"
+  ]
+ },
+ {
+  "maker": "クラシエ",
+  "aliases": [
+   "クラシエ",
+   "KRACIE"
+  ],
+  "brands": [
+   "肌美精",
+   "ナイーブ",
+   "いち髪"
+  ]
+ },
+ {
+  "maker": "アモーレパシフィック",
+  "aliases": [
+   "アモーレパシフィック",
+   "AMOREPACIFIC"
+  ],
+  "brands": [
+   "ラネージュ",
+   "イニスフリー",
+   "エチュード",
+   "エストラ",
+   "ヘラ",
+   "ソルファス",
+   "プリメラ",
+   "IOPE",
+   "ハンユル",
+   "マモンド",
+   "イリユン",
+   "エスポア"
+  ]
+ },
+ {
+  "maker": "LG生活健康",
+  "aliases": [
+   "LG生活健康",
+   "LG H&H"
+  ],
+  "brands": [
+   "CNP",
+   "ビリーフ",
+   "ザ・フェイスショップ",
+   "VDL",
+   "ザ・フー",
+   "ビヨンド"
+  ]
+ },
+ {
+  "maker": "第一三共ヘルスケア",
+  "aliases": [
+   "第一三共ヘルスケア"
+  ],
+  "brands": [
+   "ミノン",
+   "トランシーノ"
+  ]
+ },
+ {
+  "maker": "マンダム",
+  "aliases": [
+   "マンダム",
+   "MANDOM"
+  ],
+  "brands": [
+   "ギャツビー",
+   "ルシード",
+   "ビフェスタ"
+  ]
+ },
+ {
+  "maker": "富士フイルム",
+  "aliases": [
+   "富士フイルム",
+   "FUJIFILM"
+  ],
+  "brands": [
+   "アスタリフト",
+   "ルナメア"
+  ]
+ },
+ {
+  "maker": "ちふれグループ",
+  "aliases": [
+   "ちふれグループ"
+  ],
+  "brands": [
+   "綾花",
+   "HIKARIMIRAI"
+  ]
+ },
+ {
+  "maker": "ポーラ",
+  "aliases": [
+   "ポーラ",
+   "POLA"
+  ],
+  "brands": [
+   "ポーラ",
+   "B.A",
+   "リンクルショット"
+  ]
+ }
+].map(g=>Object.freeze({...g,aliases:Object.freeze(g.aliases),brands:Object.freeze(g.brands)})));
+
+export function manufacturerQuery(query){
  const raw=String(query||'').normalize('NFKC').trim();
- const match=raw.match(/^(?:花王|KAO)(?:[\s\u3000・]+|$)/i);
- if(!match)return [];
- const terms=raw.slice(match[0].length).trim().split(/[\s\u3000]+/).map(productFold).filter(Boolean);
+ for(const group of manufacturerGroups){
+  for(const alias of group.aliases){
+   if(!raw.toLowerCase().startsWith(alias.toLowerCase()))continue;
+   const next=raw.slice(alias.length);
+   if(next&&!/^[\s\u3000]+/.test(next))continue;
+   return {maker:group.maker,brands:group.brands,terms:next.trim().split(/[\s\u3000]+/).map(productFold).filter(Boolean)};
+  }
+ }
+ return null;
+}
+
+export function findManufacturerProducts(query){
+ const target=manufacturerQuery(query);
+ if(!target)return [];
+ const listedBrands=new Set(target.brands);
  return registeredProducts.filter(p=>{
-  if(!String(p.url||'').startsWith('https://www.kao-kirei.com/ja/'))return false;
-  const fields=[p.brand,p.name,...p.aliases,p.variant,p.volume].map(productFold);
-  return terms.every(term=>fields.some(field=>field.includes(term)));
+  if(!listedBrands.has(p.brand))return false;
+  const fields=[p.brand,p.name,...p.aliases,p.variant,p.volume,p.jan].map(productFold);
+  return target.terms.every(term=>fields.some(field=>field.includes(term)));
  }).sort((a,b)=>a.brand.localeCompare(b.brand,'ja')||a.name.localeCompare(b.name,'ja'));
 }
 export function chooseExactRegisteredProduct(query){

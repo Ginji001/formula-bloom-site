@@ -4,7 +4,7 @@ import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanes
 import {japaneseIngredientLabel} from './japan-market.js';
 import {isJapaneseIngredientsList} from './japan-market-policy.js';
 import {cleanPastedProductName} from './product-query.js';
-import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,chooseExactRegisteredProduct,productFold} from './registered-products.js';
+import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,manufacturerQuery,chooseExactRegisteredProduct,productFold} from './registered-products.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {domesticResearchLink} from './research-assist.js';
@@ -493,7 +493,7 @@ function quickRegisteredBrands(){
     if(count)productBrands++;
     const b=document.createElement('button');b.className='registered-chip'+(count||manufacturerCount?'':' brand-pending');
     b.type='button';
-    b.textContent=brand.name+(count?'（商品候補 '+count+'件）':manufacturerCount?'（メーカー・傘下ブランド '+manufacturerCount+'商品候補）':'（仮登録・商品名未確認）');
+    b.textContent=brand.name+(manufacturerCount?'（メーカー系列 '+manufacturerCount+'商品候補）':count?'（商品候補 '+count+'件）':'（仮登録・商品名未確認）');
     b.onclick=()=>{
       tab('search');$('query').value=brand.name;
       invalidate();openBrandOrManufacturer(brand.name);
@@ -535,9 +535,9 @@ const ctx=beginLookup();
 if(!forceOfficial&&!/^https:\/\//.test(q)){
  const makerProducts=findManufacturerProducts(q);
  if(makerProducts.length){
-  presentRegisteredProducts(makerProducts,'花王・カネボウ系の国内公式掲載商品');
+  presentRegisteredProducts(makerProducts,manufacturerQuery(q)?.maker+' の登録済み商品候補');
   const note=document.createElement('p');note.className='muted';
-  note.textContent='「花王」はメーカー名です。登録済みの傘下ブランドから実際の商品・容量を選んでください。全成分未収録品は成分を推測せず、原文の確認を案内します。';
+  note.textContent='メーカー「'+(manufacturerQuery(q)?.maker||q)+'」に登録されたブランドの商品候補です。実際の商品・容量・色を選んでください。全成分未収録品は成分を推測せず、原文の確認を案内します。';
   $('searchResults').prepend(note);
   return;
  }
@@ -776,7 +776,7 @@ function showBrands(){
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
     const productCount=productFamilies(productsForBrand(brand.name)).length;
     const manufacturerCount=findManufacturerProducts(brand.name).length;
-    meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
+    meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(manufacturerCount?'メーカー検索：系列 '+manufacturerCount+'商品候補 ／ ブランド自身の保存版 '+savedCount+'処方':savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
       productCount?'商品候補 '+productCount+'件／全成分未確認':
       manufacturerCount?'メーカー名／傘下ブランドの商品候補 '+manufacturerCount+'件':'ブランド仮登録済み／商品名未登録');
     cell.append(select,meta);
