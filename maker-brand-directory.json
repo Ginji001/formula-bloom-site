@@ -718,7 +718,10 @@
           "name": "セラムヴェール",
           "aliases": [
             "セラムヴェール"
-          ]
+          ],
+          "catalogType": "product-series",
+          "parentBrand": "ONE BY KOSE",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -736,7 +739,10 @@
             "PrediaBLUE"
           ],
           "registrationStatus": "official-listed-pending-product-registration",
-          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/",
+          "catalogType": "subbrand",
+          "parentBrand": "プレディア",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -745,7 +751,10 @@
             "雪肌精BLUE"
           ],
           "registrationStatus": "official-listed-pending-product-registration",
-          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/",
+          "catalogType": "subbrand",
+          "parentBrand": "雪肌精",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -781,7 +790,10 @@
             "カルテHD"
           ],
           "registrationStatus": "official-listed-pending-product-registration",
-          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/",
+          "catalogType": "brand",
+          "parentBrand": null,
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -808,7 +820,10 @@
             "メイクキープミスト"
           ],
           "registrationStatus": "official-listed-pending-product-registration",
-          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+          "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/",
+          "catalogType": "series",
+          "parentBrand": "メイクキープ",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -837,7 +852,10 @@
           ],
           "registrationStatus": "official-catalog-listed-products-unverified",
           "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
-          "sourceCheckedAt": "2026-10-31"
+          "sourceCheckedAt": "2026-10-31",
+          "catalogType": "brand",
+          "parentBrand": null,
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -977,7 +995,10 @@
           ],
           "registrationStatus": "official-catalog-listed-products-unverified",
           "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
-          "sourceCheckedAt": "2026-10-31"
+          "sourceCheckedAt": "2026-10-31",
+          "catalogType": "product-series",
+          "parentBrand": "コーセー",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
@@ -987,7 +1008,10 @@
           ],
           "registrationStatus": "official-catalog-listed-products-unverified",
           "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
-          "sourceCheckedAt": "2026-10-31"
+          "sourceCheckedAt": "2026-10-31",
+          "catalogType": "subbrand",
+          "parentBrand": "エスプリーク",
+          "classificationSource": "https://maison.kose.co.jp/site/p/brandlist.aspx"
         },
         {
           "brandId": null,
