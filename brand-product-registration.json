@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T00:44:37.716Z",
+  "generatedAt": "2026-10-31T01:01:33.058Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 24,
-  "brandsWithPendingProductNames": 123,
-  "productNameRecords": 178,
+  "brandsWithRegisteredProductNames": 25,
+  "brandsWithPendingProductNames": 122,
+  "productNameRecords": 182,
   "ingredientRecords": 178,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -30,13 +30,58 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 4,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "elixir-liftmoist-lotion-fresh-ba",
+          "productName": "リフトモイスト ローション みずみずしいタイプ ba",
+          "variant": "みずみずしいタイプ",
+          "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
+          "kind": "quasi",
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "elixir-liftmoist-lotion-rich-ba",
+          "productName": "リフトモイスト ローション しっとりタイプ ba",
+          "variant": "しっとりタイプ",
+          "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
+          "kind": "quasi",
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "elixir-liftmoist-emulsion-fresh-ba",
+          "productName": "リフトモイスト エマルジョン みずみずしいタイプ ba",
+          "variant": "みずみずしいタイプ",
+          "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
+          "kind": "quasi",
+          "volume": "130mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "elixir-liftmoist-emulsion-rich-ba",
+          "productName": "リフトモイスト エマルジョン しっとりタイプ ba",
+          "variant": "しっとりタイプ",
+          "sourceUrl": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/",
+          "kind": "quasi",
+          "volume": "130mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 3,
@@ -86,7 +131,9 @@
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",
           "kind": "quasi",
           "volume": "180mL",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "ihada-rich-lotion",
@@ -95,7 +142,9 @@
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",
           "kind": "quasi",
           "volume": "180mL",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "ihada-moist-emulsion",
@@ -104,7 +153,9 @@
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-emulsion.html",
           "kind": "quasi",
           "volume": "135mL",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "ihada-clear-lotion",
@@ -113,7 +164,9 @@
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-clear-lotion.html",
           "kind": "quasi",
           "volume": "180mL",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "ihada-clear-emulsion",
@@ -122,7 +175,9 @@
           "sourceUrl": "https://www.shiseido.co.jp/ihada/products/skincare-clear-emulsion.html",
           "kind": "quasi",
           "volume": "135mL",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -328,7 +383,9 @@
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236043/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "curel-lotion-ii",
@@ -337,7 +394,9 @@
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236197/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "curel-lotion-iii",
@@ -346,7 +405,9 @@
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "curel-emulsion",
@@ -355,7 +416,9 @@
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236173/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "curel-facecream",
@@ -364,7 +427,9 @@
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236210/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -738,7 +803,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/hadalabo/rich-gokujun-uv/145676.html",
           "kind": "cosmetic",
           "volume": "90g",
-          "sku": "145676"
+          "sku": "145676",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -762,7 +829,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198900.html",
           "kind": "quasi",
           "volume": "170mL",
-          "sku": "198900"
+          "sku": "198900",
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "jp-rohto-198924",
@@ -771,7 +840,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198924.html",
           "kind": "quasi",
           "volume": "170mL",
-          "sku": "198924"
+          "sku": "198924",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -795,7 +866,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/155620.html?cgid=care",
           "kind": "cosmetic",
           "volume": null,
-          "sku": "155620"
+          "sku": "155620",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -819,7 +892,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/144730.html?cgid=care",
           "kind": "cosmetic",
           "volume": null,
-          "sku": "144730"
+          "sku": "144730",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -843,7 +918,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/skin-aqua/193899.html",
           "kind": "cosmetic",
           "volume": "70g",
-          "sku": "193899"
+          "sku": "193899",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -867,7 +944,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193943.html",
           "kind": "cosmetic",
           "volume": "450mL",
-          "sku": "193943"
+          "sku": "193943",
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "jp-rohto-193967",
@@ -876,7 +955,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193967.html",
           "kind": "cosmetic",
           "volume": "450g",
-          "sku": "193967"
+          "sku": "193967",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -900,7 +981,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/132973.html",
           "kind": "cosmetic",
           "volume": "230mL",
-          "sku": "132973"
+          "sku": "132973",
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "jp-rohto-133192",
@@ -909,7 +992,9 @@
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/133192.html",
           "kind": "cosmetic",
           "volume": "90g",
-          "sku": "133192"
+          "sku": "133192",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -933,7 +1018,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2871",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "chifure-lotion-light",
@@ -942,7 +1029,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2875",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "chifure-lotion-rich",
@@ -951,7 +1040,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2873",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "chifure-lotion-base",
@@ -960,7 +1051,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2920",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "chifure-milk-rich",
@@ -969,7 +1062,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/milkylotion/2630",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "chifure-milk-base",
@@ -978,7 +1073,9 @@
           "sourceUrl": "https://www.chifure.co.jp/products/milkylotion/2877",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -1030,7 +1127,9 @@
           "sourceUrl": "https://www.orbis.co.jp/small/11010852/",
           "kind": null,
           "volume": "180mL",
-          "sku": "9041"
+          "sku": "9041",
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "orbis-aquanist-rm",
@@ -1039,7 +1138,9 @@
           "sourceUrl": "https://www.orbis.co.jp/small/11010852/",
           "kind": null,
           "volume": "180mL",
-          "sku": "9043"
+          "sku": "9043",
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "orbis-encore-lotion",
@@ -1048,7 +1149,9 @@
           "sourceUrl": "https://www.orbis.co.jp/small/11010502/",
           "kind": null,
           "volume": "180mL",
-          "sku": "9340"
+          "sku": "9340",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -1072,7 +1175,9 @@
           "sourceUrl": "https://www.fancl.co.jp/item/Seibun?category=01&item_id=3792-11",
           "kind": null,
           "volume": null,
-          "sku": "3792-11"
+          "sku": "3792-11",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -1180,7 +1285,9 @@
           "sourceUrl": "https://www.tvert.jp/shop/products/tvt002-2508tv0384",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "tvert-ga-normal",
@@ -1189,7 +1296,9 @@
           "sourceUrl": "https://www.tvert.jp/shop/products/tvt002-2508tv0384",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -1409,7 +1518,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-skin-conditioner-high-moisture",
@@ -1418,7 +1529,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-rich-skin-conditioner-milk",
@@ -1427,7 +1540,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-makeup-fix-mist",
@@ -1436,7 +1551,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-natural-lotion",
@@ -1445,7 +1562,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-cleansing-balm",
@@ -1454,7 +1573,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-rich-hydro-mask",
@@ -1463,7 +1584,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041580-9e557e50c",
@@ -1472,7 +1595,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042518-acac93472",
@@ -1481,7 +1606,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043386-81c5c917f",
@@ -1490,7 +1617,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530114-e6b81adda",
@@ -1499,7 +1628,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553013730-f5bdda936",
@@ -1508,7 +1639,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042792-d63d078fe",
@@ -1517,7 +1650,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530602-c3f77fbaf",
@@ -1526,7 +1661,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553011262-ed8208505",
@@ -1535,7 +1672,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040095-e7274f514",
@@ -1544,7 +1683,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040644-5f1589ad2",
@@ -1553,7 +1694,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043171-231dc003e",
@@ -1562,7 +1705,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530718-074edaa26",
@@ -1571,7 +1716,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041917-a3762a90c",
@@ -1580,7 +1727,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042785-66596cddb",
@@ -1589,7 +1738,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042990-2e21bac61",
@@ -1598,7 +1749,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530534-9c2a6856e",
@@ -1607,7 +1760,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530534-65c77480e",
@@ -1616,7 +1771,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530909-c1b22d597",
@@ -1625,7 +1782,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530909-8b36667bd",
@@ -1634,7 +1793,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042136-33e766c7a",
@@ -1643,7 +1804,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042136-e8a939daa",
@@ -1652,7 +1815,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530435-02d522858",
@@ -1661,7 +1826,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530435-fd98f8950",
@@ -1670,7 +1837,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530664-3e6e570ba",
@@ -1679,7 +1848,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530664-37a82fef4",
@@ -1688,7 +1859,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530671-d9da23e2d",
@@ -1697,7 +1870,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530671-370872e48",
@@ -1706,7 +1881,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043034-644a2a265",
@@ -1715,7 +1892,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043034-5ed6a9867",
@@ -1724,7 +1903,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043355-231aa66a5",
@@ -1733,7 +1914,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043355-8f9276273",
@@ -1742,7 +1925,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530251-57e775541",
@@ -1751,7 +1936,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530251-4b0025034",
@@ -1760,7 +1947,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043294-eaaa9cd39",
@@ -1769,7 +1958,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043294-8b019205d",
@@ -1778,7 +1969,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042921-b9bd12abe",
@@ -1787,7 +1980,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042921-0fc60e805",
@@ -1796,7 +1991,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530152-d6cf7d35e",
@@ -1805,7 +2002,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530152-c3b045705",
@@ -1814,7 +2013,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043157-ee9161cf1",
@@ -1823,7 +2024,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043157-f6a932b3e",
@@ -1832,7 +2035,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-984b21637",
@@ -1841,7 +2046,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-cf44e606a",
@@ -1850,7 +2057,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530305-eaa29db42",
@@ -1859,7 +2068,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530305-583a17a83",
@@ -1868,7 +2079,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530725-42ec09a35",
@@ -1877,7 +2090,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530725-7736ebef2",
@@ -1886,7 +2101,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043089-820134346",
@@ -1895,7 +2112,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043089-cc565e9e4",
@@ -1904,7 +2123,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041047-2c620517c",
@@ -1913,7 +2134,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042136-60433442f",
@@ -1922,7 +2145,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042136-d06117f6a",
@@ -1931,7 +2156,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040453-d2174e204",
@@ -1940,7 +2167,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043034-5e77e6d3c",
@@ -1949,7 +2178,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040149-720e99750",
@@ -1958,7 +2189,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043331-38ecbf97f",
@@ -1967,7 +2200,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043331-a02aa76df",
@@ -1976,7 +2211,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043331-62cb75b64",
@@ -1985,7 +2222,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041238-5831ea8e4",
@@ -1994,7 +2233,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041238-94635a726",
@@ -2003,7 +2244,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530251-c412b6bf9",
@@ -2012,7 +2255,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043294-9375b8eff",
@@ -2021,7 +2266,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042334-a6a96a8c5",
@@ -2030,7 +2277,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042334-9cd10066d",
@@ -2039,7 +2288,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042921-6b503f928",
@@ -2048,7 +2299,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530152-a99a7d29f",
@@ -2057,7 +2310,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530152-e009be780",
@@ -2066,7 +2321,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530350-c01e2bf5d",
@@ -2075,7 +2332,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530497-745d418ed",
@@ -2084,7 +2343,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530497-71ebc8275",
@@ -2093,7 +2354,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530497-25fcdf010",
@@ -2102,7 +2365,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043317-7f32f45a4",
@@ -2111,7 +2376,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043317-90abe36d4",
@@ -2120,7 +2387,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042013-fec437147",
@@ -2129,7 +2398,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042013-2be121eed",
@@ -2138,7 +2409,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042013-e3d7091eb",
@@ -2147,7 +2420,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-91eb7e882",
@@ -2156,7 +2431,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-3b01bc4d1",
@@ -2165,7 +2442,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-7d0d0978f",
@@ -2174,7 +2453,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-ad098dc97",
@@ -2183,7 +2464,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-e147bbd0a",
@@ -2192,7 +2475,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042709-15b416a1e",
@@ -2201,7 +2486,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530299-fd2c80f4a",
@@ -2210,7 +2497,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530299-3a1a44d8c",
@@ -2219,7 +2508,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530305-0e930919b",
@@ -2228,7 +2519,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530046-febee6fcd",
@@ -2237,7 +2530,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530046-b5e7322ae",
@@ -2246,7 +2541,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530886-eefcd3e90",
@@ -2255,7 +2552,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530886-deddabd3c",
@@ -2264,7 +2563,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042457-55b77a128",
@@ -2273,7 +2574,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530817-979b60831",
@@ -2282,7 +2585,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530817-9d3d03183",
@@ -2291,7 +2596,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041122-ef2e91c57",
@@ -2300,7 +2607,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041122-e98c411b9",
@@ -2309,7 +2618,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041122-b4bf87759",
@@ -2318,7 +2629,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042686-e72112bbb",
@@ -2327,7 +2640,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042686-8b7faeb56",
@@ -2336,7 +2651,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553002918-39a111e2f",
@@ -2345,7 +2662,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530091-f2853e554",
@@ -2354,7 +2673,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530091-047949274",
@@ -2363,7 +2684,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530091-ff57322c0",
@@ -2372,7 +2695,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530091-7e2ef2682",
@@ -2381,7 +2706,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042877-2a737b920",
@@ -2390,7 +2717,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530725-275effdf2",
@@ -2399,7 +2728,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553009795-10668a763",
@@ -2408,7 +2739,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553009795-118051a84",
@@ -2417,7 +2750,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553009795-6e862b1da",
@@ -2426,7 +2761,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040811-5e7f593b0",
@@ -2435,7 +2772,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553040057-60f7a6968",
@@ -2444,7 +2783,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042723-390641c64",
@@ -2453,7 +2794,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042723-435fa6163",
@@ -2462,7 +2805,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041603-442ddca45",
@@ -2471,7 +2816,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530084-491bb9798",
@@ -2480,7 +2827,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530084-1c0f30f70",
@@ -2489,7 +2838,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553041757-479118e3b",
@@ -2498,7 +2849,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530619-0364c05b3",
@@ -2507,7 +2860,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553530619-06095bff1",
@@ -2516,7 +2871,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043423-16a640738",
@@ -2525,7 +2882,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043423-a46d31ea0",
@@ -2534,7 +2893,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553043423-3e73261ad",
@@ -2543,7 +2904,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042891-ba1fb564a",
@@ -2552,7 +2915,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042891-32030862e",
@@ -2561,7 +2926,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042969-65e2f80ae",
@@ -2570,7 +2937,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "cezanne-4939553042969-e50082593",
@@ -2579,7 +2948,9 @@
           "sourceUrl": "https://www.cezanne.co.jp/lineup/seibun/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2603,7 +2974,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/muchi-puru-tint-sheer-balm/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "canmake-mellow-dew-lip-mask-01",
@@ -2612,7 +2985,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/mellow-dew-lip-mask/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "canmake-airy-extension-liner-01",
@@ -2621,7 +2996,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/airy-extension-liner/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "canmake-cream-cheek-05",
@@ -2630,7 +3007,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/cream-cheek/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "canmake-marshmallow-finish-powder-abloom-01",
@@ -2639,7 +3018,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/marshmallow-finish-powder-abloom/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         },
         {
           "productId": "canmake-clear-veil-setting-powder-01",
@@ -2648,7 +3029,9 @@
           "sourceUrl": "https://www.canmake.com/item/detail/clear-veil-setting-powder/",
           "kind": "cosmetic",
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2672,7 +3055,9 @@
           "sourceUrl": "https://jp.laneige.com/products/cream-skin-cerapeptide-refiner",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2696,7 +3081,9 @@
           "sourceUrl": "https://www.innisfree.jp/products/green-tea-ceramide-milk",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2720,7 +3107,9 @@
           "sourceUrl": "https://etude.jp/etude_product/213010464",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2758,7 +3147,9 @@
           "sourceUrl": "https://jp.hera.com/products/hydro-reflecting-toner",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -2964,7 +3355,9 @@
           "sourceUrl": "https://anuashop.jp/collections/half-leaf-line/products/sior0016",
           "kind": "cosmetic",
           "volume": "50mL",
-          "sku": "sior0016"
+          "sku": "sior0016",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -3044,7 +3437,9 @@
           "sourceUrl": "https://mediheal.jp/product/%E3%83%9E%E3%83%87%E3%82%AB%E3%83%83%E3%82%BD%E3%82%B7%E3%83%89-%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%AF-%E3%83%96%E3%83%AC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%83%9A%E3%82%A2/1785/",
           "kind": "cosmetic",
           "volume": "24mL（1枚）",
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -3082,7 +3477,9 @@
           "sourceUrl": "https://torriden.jp/products/no0002",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -3288,7 +3685,9 @@
           "sourceUrl": "https://www.missha.co.jp/product/vitac_packformcleanser/",
           "kind": "cosmetic",
           "volume": "140mL",
-          "sku": "MS103671"
+          "sku": "MS103671",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -3634,7 +4033,9 @@
           "sourceUrl": "https://hince.jp/c/event/2026/brandweek_2026_s/HC085",
           "kind": null,
           "volume": null,
-          "sku": null
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },

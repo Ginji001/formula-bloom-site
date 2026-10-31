@@ -289,6 +289,13 @@ function offerJapaneseIngredients(){
 }
 function selectRegisteredFormula(item,context=''){
   $('query').value=item.brand+' '+item.name;
+  if(item.registrationStatus==='name-only'){
+    beginLookup();invalidate();remoteProduct=null;official=false;
+    $('searchResults').replaceChildren();
+    $('officialStatus').textContent='商品名・タイプ・容量のみ確認済みです。全成分は未収録です。';
+    sourceLink($('searchResults'),item.url,'日本向け公式の商品情報を開く');
+    offerJapaneseIngredients();return;
+  }
   $('searchResults').textContent='日本語全成分を確認しています：'+item.brand+' '+item.name;
   fetchProduct(item.url,false,true,0,null,item.variant,item);
 }
@@ -299,7 +306,7 @@ function addProductFamily(container,family,query=''){
   const button=document.createElement('button');button.className='product-option';button.type='button';
   const title=document.createElement('strong');title.textContent=family.brand+' '+family.name;
   const hint=document.createElement('small');
-  hint.textContent=family.products.length===1?'日本語全成分で花を生成':
+  hint.textContent=first.registrationStatus==='name-only'?'商品名登録済み・全成分未収録':family.products.length===1?'日本語全成分で花を生成':
     '同じ商品として表示（掲載色 '+family.products.length+'件）。'+
     (selectedIsExact?'指定色で解析':'代表色 '+(first.variant||first.name)+'で解析');
   button.append(title,hint);
@@ -325,7 +332,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   $('searchResults').replaceChildren();
   const families=productFamilies(products);
   const lead=document.createElement('p');lead.className='muted';
-  lead.textContent=heading+'：'+families.length+'商品（全成分の掲載記録 '+products.length+'件）。容量違い・色違いは同じ商品として表示。旧処方は参考情報として区別します。';
+  lead.textContent=heading+'：'+families.length+'商品（商品名登録 '+products.length+'件）。容量違い・色違いは同じ商品として表示。旧処方は参考情報として区別します。';
   $('searchResults').append(lead);
   for(const family of families)addProductFamily($('searchResults'),family,$('query').value);
   const more=document.createElement('button');more.type='button';more.className='secondary';
@@ -334,7 +341,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   $('searchResults').append(more);
 }
 function showBrandProducts(data){
-  if(data.products?.length&&data.products.every(item=>item.registered&&item.id)){
+  if(data.products?.length&&data.products.every(item=>item.id&&registeredProducts.some(p=>p.id===item.id))){
    presentRegisteredProducts(data.products,data.brand?.name||'ブランド');
    return;
   }
@@ -475,6 +482,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   if(!instant){
     const matched=chooseExactRegisteredProduct(q);
     if(matched){
+      if(matched.registrationStatus==='name-only'){selectRegisteredFormula(matched);return;}
       $('searchResults').textContent='日本公式の商品情報を確認しています：'+matched.brand+' '+matched.name;
       await fetchProduct(matched.url,false,true,0,ctx,matched.variant,matched);
       return;

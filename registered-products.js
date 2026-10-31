@@ -1,4 +1,4 @@
-// 公式の国内向け商品ページで日本語成分表を実際に確認できた製品だけを登録。
+// 国内向け公式掲載で商品名を確認した製品を登録。全成分未収録は name-only と明示。
 // ブランドの登録と製品の登録は区別する。これらは日本での販売継続や薬機法適合の保証ではない。
 export const registeredProducts=Object.freeze([
  {id:"ihada-moist-lotion",brand:'イハダ',name:"薬用うるおいローション（しっとり）",
@@ -229,6 +229,10 @@ export const registeredProducts=Object.freeze([
  {id:"jp-rohto-193967",brand:"デオコ",name:"スカルプケアコンディショナー",aliases:["デオコ スカルプケアコンディショナー","ロート製薬 スカルプケアコンディショナー"],url:"https://www.shop.rohto.co.jp/category/skincare/deoco/193967.html",variant:null,kind:"cosmetic",sku:"193967",volume:"450g",ingredientsExpected:38},
  {id:"jp-rohto-198900",brand:"メラノCC",name:"薬用しみ対策 美白化粧水",aliases:["メラノCC 薬用しみ対策 美白化粧水","ロート製薬 薬用しみ対策 美白化粧水"],url:"https://www.shop.rohto.co.jp/category/skincare/melanocc/198900.html",variant:null,kind:"quasi",sku:"198900",volume:"170mL",ingredientsExpected:30},
  {id:"jp-rohto-198924",brand:"メラノCC",name:"薬用しみ対策 美白化粧水しっとりタイプ",aliases:["メラノCC 薬用しみ対策 美白化粧水しっとりタイプ","ロート製薬 薬用しみ対策 美白化粧水しっとりタイプ"],url:"https://www.shop.rohto.co.jp/category/skincare/melanocc/198924.html",variant:null,kind:"quasi",sku:"198924",volume:"170mL",ingredientsExpected:23},
+ {"id": "elixir-liftmoist-lotion-fresh-ba", "brand": "エリクシール", "name": "リフトモイスト ローション みずみずしいタイプ ba", "aliases": ["ELIXIR リフトモイスト ローション みずみずしいタイプ ba"], "url": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/", "variant": "みずみずしいタイプ", "kind": "quasi", "volume": "170mL", "registrationStatus": "name-only", "identityVerifiedAt": "2026-10-31", "sku": null, "jan": null},
+ {"id": "elixir-liftmoist-lotion-rich-ba", "brand": "エリクシール", "name": "リフトモイスト ローション しっとりタイプ ba", "aliases": ["ELIXIR リフトモイスト ローション しっとりタイプ ba"], "url": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/", "variant": "しっとりタイプ", "kind": "quasi", "volume": "170mL", "registrationStatus": "name-only", "identityVerifiedAt": "2026-10-31", "sku": null, "jan": null},
+ {"id": "elixir-liftmoist-emulsion-fresh-ba", "brand": "エリクシール", "name": "リフトモイスト エマルジョン みずみずしいタイプ ba", "aliases": ["ELIXIR リフトモイスト エマルジョン みずみずしいタイプ ba"], "url": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/", "variant": "みずみずしいタイプ", "kind": "quasi", "volume": "130mL", "registrationStatus": "name-only", "identityVerifiedAt": "2026-10-31", "sku": null, "jan": null},
+ {"id": "elixir-liftmoist-emulsion-rich-ba", "brand": "エリクシール", "name": "リフトモイスト エマルジョン しっとりタイプ ba", "aliases": ["ELIXIR リフトモイスト エマルジョン しっとりタイプ ba"], "url": "https://www.shiseido.co.jp/elixir/promotion/liftmoist-lotion-emulsion/", "variant": "しっとりタイプ", "kind": "quasi", "volume": "130mL", "registrationStatus": "name-only", "identityVerifiedAt": "2026-10-31", "sku": null, "jan": null},
 ].map(x=>Object.freeze({...x,aliases:Object.freeze(x.aliases)})));
 
 export const registeredBrands=Object.freeze([...new Set(registeredProducts.map(x=>x.brand))]);
@@ -242,26 +246,36 @@ export function productsForBrand(brand){
  const folded=productFold(brand);
  return registeredProducts.filter(x=>productFold(x.brand)===folded);
 }
+// Page section IDs are not JANs. Only explicit identifiers and Kao's SKU URLs qualify.
+export function catalogIdentifiers(p){
+ const kao=p.url?.match(/^https:\/\/(?:www\.)?kao-kirei\.com\/ja\/item\/kbb\/[^/]+\/(\d{13})\/?$/)?.[1];
+ return [...new Set([p.jan,p.sku,kao].filter(Boolean).map(String))];
+}
 export function findRegisteredProducts(query){
  const q=productFold(query);
  if(!q)return [];
+ const tokens=String(query||'').normalize('NFKC').trim().split(/[\s　]+/).map(productFold).filter(Boolean);
+ const identifierTokens=tokens.filter(t=>/^(?:\d{4,13}|[a-z]{1,8}\d{4,}|\d{4,}-?\d{2,})$/i.test(t));
  const matches=registeredProducts.map(p=>{
   const names=[p.brand+' '+p.name,p.name,...p.aliases].map(productFold);
-  const exact=names.some(x=>x===q);
-  const contains=names.some(x=>x.includes(q)||q.includes(x));
-  const tokens=String(query||'').normalize('NFKC').split(/[\s　]+/).map(productFold).filter(Boolean);
-  const wordMatch=tokens.length>1&&tokens.every(t=>names.some(x=>x.includes(t)));
+  const ids=catalogIdentifiers(p).map(productFold);
+  if(identifierTokens.some(t=>!ids.includes(t)))return null;
+  const identifierExact=ids.includes(q);
+  const exact=identifierExact||names.some(x=>x===q);
+  const contains=names.some(x=>x.includes(q));
+  const wordMatch=tokens.length>1&&tokens.every(t=>ids.includes(t)||names.some(x=>x.includes(t)));
   const brandOnly=productFold(p.brand)===q;
   if(!exact&&!contains&&!wordMatch&&!brandOnly)return null;
-  const score=exact?100:brandOnly?50:wordMatch?40:contains?30:0;
-  return {product:p,score,exact};
+  const score=identifierExact?120:exact?100:brandOnly?50:wordMatch?40:30;
+  return {product:p,score,exact,identifierExact};
  }).filter(Boolean);
- return matches.sort((a,b)=>b.score-a.score||a.product.name.localeCompare(b.product.name,'ja')).map(x=>x);
+ return matches.sort((a,b)=>b.score-a.score||a.product.name.localeCompare(b.product.name,'ja'));
 }
 export function chooseExactRegisteredProduct(query){
  const matched=findRegisteredProducts(query);
  const exact=matched.filter(x=>x.exact);
  if(exact.length!==1)return null;
+ if(exact[0].identifierExact)return exact[0].product;
  const name=productFold(exact[0].product.name);
  // 「保湿化粧水」「GAローション」など総称は、派生処方が登録されているとき自動選択しない。
  return matched.some(x=>x!==exact[0]&&productFold(x.product.name).includes(name))?null:exact[0].product;

@@ -15,10 +15,7 @@ const searchProviders=[
  ['LIPS','https://lipscosme.com/search?keyword=']
 ];
 const shopLinks=q=>searchProviders.map(([name,base],i)=>({id:['amazon','rakuten','yahoo','qoo10','cosme','lips'][i],name,url:base+encodeURIComponent(q)+(i===1?'/':'')}));
-const staticProducts=q=>{
- const s=fold(q);if(!s)return [];
- return registeredProducts.filter(x=>[x.brand+' '+x.name,x.name,...x.aliases].some(value=>fold(value).includes(s)||s.includes(fold(value)))).slice(0,30);
-};
+const staticProducts=q=>findRegisteredProducts(q).map(x=>x.product);
 const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:p.kind||'cosmetic'});
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
