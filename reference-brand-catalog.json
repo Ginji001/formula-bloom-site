@@ -511,7 +511,19 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "Relief Sun : Rice + Niacinamide (formerly Rice + Probiotics)",
+          "status": "参考",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://jp.beautyofjoseon.com/products/relief-sun-rice-probiotics"
+          ],
+          "ingredientsINCI": "AQUA, DIBUTYL ADIPATE, PROPANEDIOL, DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE, POLYMETHYLSILSESQUIOXANE, ETHYLHEXYL TRIAZONE, METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL (NANO), NIACINAMIDE, COCO-CAPRYLATE/CAPRATE, CAPRYLYL METHICONE, DIETHYLHEXYL BUTAMIDO TRIAZONE, GLYCERIN, 1,2-HEXANEDIOL, BUTYLENE GLYCOL, PENTYLENE GLYCOL, BEHENYL ALCOHOL, POLY C10-30 ALKYL ACRYLATE, POLYGLYCERYL-3 METHYLGLUCOSE DISTEARATE, DECYL GLUCOSIDE, ORYZA SATIVA (RICE) EXTRACT, TROMETHAMINE, CARBOMER, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, SODIUM STEAROYL GLUTAMATE, POLYACRYLATE CROSSPOLYMER-6, ETHYLHEXYLGLYCERIN, ADENOSINE, XANTHAN GUM, T-BUTYL ALCOHOL, TOCOPHEROL, ORYZA SATIVA (RICE) GERM EXTRACT, CAMELLIA SINENSIS LEAF EXTRACT, SACCHARUM OFFICINARUM (SUGARCANE) EXTRACT, MACROCYSTIS PYRIFERA (KELP) EXTRACT, LACTOBACILLUS/PUMPKIN FERMENT EXTRACT, BACILLUS/SOYBEAN FERMENT EXTRACT, ASPERGILLUS FERMENT, COCOS NUCIFERA (COCONUT) FRUIT EXTRACT, PANAX GINSENG ROOT EXTRACT, MONASCUS/RICE FERMENT, LACTOBACILLUS/RICE FERMENT, SACCHAROMYCES/RICE FERMENT FILTRATE",
+          "note": "日本向け公式サイトのINCI全成分欄。日本語容器表示との一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "SKIN1004",
@@ -637,7 +649,20 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "Heartleaf essence Calming pump",
+          "volume": "50mL",
+          "status": "参考",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://en.abib.com/products/calming-pump-1"
+          ],
+          "ingredientsINCI": "Houttuynia Cordata Extract, Glycerin, Water, Methylpropanediol, Dipropylene Glycol, Glycereth-26, Chondrus Crispus Extract, Saccharum Officinarum (Sugarcane) Extract, Mentha Aquatica Extract, Sodium Hyaluronate, Gaultheria Procumbens (Wintergreen) Leaf Extract, Butylene Glycol, Hydroxyethyl Urea, Panthenol, Ammonium Acryloyldimethyltaurate/VP Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Caprylyl Glycol, Succinic Acid, 1,2-Hexanediol, Xanthan Gum",
+          "note": "公式掲載の全成分。日本向け処方は未照合。"
+        }
+      ]
     },
     {
       "brand": "Isntree",
@@ -834,7 +859,21 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "Dark Spot Correcting Glow Serum",
+          "volume": "50mL",
+          "status": "参考",
+          "market": "global",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://www.axis-y.com/products/dark-spot-correcting-glow-serum"
+          ],
+          "ingredientsINCI": "Water, Glycerin, Niacinamide, Sodium Hyaluronate, Propanediol, Erythritol, Butylene Glycol, Squalane, Oryza Sativa (Rice) Bran Extract, Calendula Officinalis Flower Extract, Carica Papaya (Papaya) Fruit Extract, Hippophae Rhamnoides Fruit Extract, Malpighia Glabra (Acerola)Fruit Extract, Polyglyceryl-10 Laurate, Chlorphenesin, Arginine, Ethylhexylglycerin, Carbomer, Glutathione, 1,2-Hexanediol, Hydroxypropyl Cyclodextrin, Disodium EDTA, Hydroxyethylcellulose, Allantoin, Rosmarinus Officinalis (Rosemary) Leaf Oil",
+          "note": "メーカー掲載。日本向け処方との一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "TOCOBO",
@@ -960,6 +999,6 @@
       "flowerGeneration": "reference-input-only"
     }
   ],
-  "referenceProductCount": 6,
-  "referenceBrandsWithIngredients": 6
+  "referenceProductCount": 9,
+  "referenceBrandsWithIngredients": 9
 }
