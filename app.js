@@ -4,7 +4,7 @@ import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanes
 import {japaneseIngredientLabel} from './japan-market.js';
 import {isJapaneseIngredientsList} from './japan-market-policy.js';
 import {cleanPastedProductName} from './product-query.js';
-import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,chooseExactRegisteredProduct,productFold} from './registered-products.js';
+import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,chooseExactRegisteredProduct,productFold} from './registered-products.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {domesticResearchLink} from './research-assist.js';
@@ -469,6 +469,10 @@ async function openBrandProducts(brand){
     }
   }finally{if(ctx.version===lookupVersion)busy(false);}
 }
+function openBrandOrManufacturer(brand){
+ if(findManufacturerProducts(brand).length)search();
+ else openBrandProducts(brand);
+}
 function presentRegisteredBrand(brand){
   const entries=productsForBrand(brand);
   if(!entries.length)return false;
@@ -485,13 +489,14 @@ function quickRegisteredBrands(){
   let productBrands=0;
   for(const brand of matches){
     const count=productFamilies(productsForBrand(brand.name)).length;
+    const manufacturerCount=findManufacturerProducts(brand.name).length;
     if(count)productBrands++;
-    const b=document.createElement('button');b.className='registered-chip'+(count?'':' brand-pending');
+    const b=document.createElement('button');b.className='registered-chip'+(count||manufacturerCount?'':' brand-pending');
     b.type='button';
-    b.textContent=brand.name+(count?'（商品候補 '+count+'件）':'（仮登録・商品名未確認）');
+    b.textContent=brand.name+(count?'（商品候補 '+count+'件）':manufacturerCount?'（メーカー・傘下ブランド '+manufacturerCount+'商品候補）':'（仮登録・商品名未確認）');
     b.onclick=()=>{
       tab('search');$('query').value=brand.name;
-      invalidate();openBrandProducts(brand.name);
+      invalidate();openBrandOrManufacturer(brand.name);
     };
     zone.append(b);
   }
@@ -527,6 +532,16 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
+if(!forceOfficial&&!/^https:\/\//.test(q)){
+ const makerProducts=findManufacturerProducts(q);
+ if(makerProducts.length){
+  presentRegisteredProducts(makerProducts,'花王・カネボウ系の国内公式掲載商品');
+  const note=document.createElement('p');note.className='muted';
+  note.textContent='「花王」はメーカー名です。登録済みの傘下ブランドから実際の商品・容量を選んでください。全成分未収録品は成分を推測せず、原文の確認を案内します。';
+  $('searchResults').prepend(note);
+  return;
+ }
+}
 if(!forceOfficial&&!/^https:\/\//.test(q)){
   try{
     const brandData=await getJSON('/api/brand-products?q='+encodeURIComponent(q)+(instant?'&retail=0':''),ctx.signal);
@@ -754,15 +769,16 @@ function showBrands(){
     select.onclick=()=>{
       tab('search');invalidate();remoteProduct=null;$('query').value=brand.name;
       $('brandDirectory').open=false;
-      openBrandProducts(brand.name);
+      openBrandOrManufacturer(brand.name);
       $('query').focus();
     };
     const meta=document.createElement('small');
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
     const productCount=productFamilies(productsForBrand(brand.name)).length;
+    const manufacturerCount=findManufacturerProducts(brand.name).length;
     meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
       productCount?'商品候補 '+productCount+'件／全成分未確認':
-      'ブランド仮登録済み／商品名未登録');
+      manufacturerCount?'メーカー名／傘下ブランドの商品候補 '+manufacturerCount+'件':'ブランド仮登録済み／商品名未登録');
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);

@@ -575,6 +575,19 @@ export function findRegisteredProducts(query){
  }).filter(Boolean);
  return matches.sort((a,b)=>b.score-a.score||a.product.name.localeCompare(b.product.name,'ja'));
 }
+// Manufacturer-name searches must not create a fictional "花王" product or mix in
+// foreign-market variants. Only registered Japan-facing Kao/Kanebo source URLs qualify.
+export function findManufacturerProducts(query){
+ const raw=String(query||'').normalize('NFKC').trim();
+ const match=raw.match(/^(?:花王|KAO)(?:[\s\u3000・]+|$)/i);
+ if(!match)return [];
+ const terms=raw.slice(match[0].length).trim().split(/[\s\u3000]+/).map(productFold).filter(Boolean);
+ return registeredProducts.filter(p=>{
+  if(!String(p.url||'').startsWith('https://www.kao-kirei.com/ja/'))return false;
+  const fields=[p.brand,p.name,...p.aliases,p.variant,p.volume].map(productFold);
+  return terms.every(term=>fields.some(field=>field.includes(term)));
+ }).sort((a,b)=>a.brand.localeCompare(b.brand,'ja')||a.name.localeCompare(b.name,'ja'));
+}
 export function chooseExactRegisteredProduct(query){
  const q=productFold(query);
  const matched=findRegisteredProducts(query);
