@@ -90,7 +90,19 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "マジカルカラーベース",
+          "status": "参考",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://www.shiseido.co.jp/sw/onlinestore/products/G81501.html"
+          ],
+          "ingredients": "水,ＢＧ,メトキシケイヒ酸エチルヘキシル,エタノール,サリチル酸エチルヘキシル,ジフェニルシロキシフェニルトリメチコン,イソドデカン,ジメチコン,グリセリン,トリエチルヘキサノイン,水添ポリデセン,ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン,ＰＥＧ－８,フェニルベンズイミダゾールスルホン酸,ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル,ＡＭＰＤ,（アクリロイルジメチルタウリンアンモニウム／メタクリル酸ベヘネス－２５）クロスポリマー,キサンタンガム,ポリアクリル酸Ｎａ,ラベンダー油,カミツレ花エキス,ドクダミエキス,チャ葉エキス,アセチルヒアルロン酸Ｎａ,キイチゴエキス,ヨモギ葉エキス,ベヘニルアルコール,ベヘネス－２０,ポリソルベート２０,シリカ,ＰＥＧ－１２ジメチコン,（ジメチルアクリルアミド／アクリロイルジメチルタウリンＮａ）クロスポリマー,ポリ酢酸ビニル,ステアリルアルコール,ジメチルシリル化シリカ,水酸化Ａｌ,トリエトキシカプリリルシラン,メタリン酸Ｎａ,ポリエステル－１,ＢＨＴ,トコフェロール,ポリビニルアルコール,ＥＤＴＡ－３Ｎａ,ピロ亜硫酸Ｎａ,ローズマリー葉エキス,ツボクサ葉／茎エキス,フェノキシエタノール,酸化チタン,硫酸Ｂａ,酸化鉄,マイカ,青１",
+          "note": "掲載元の全成分欄から転記。実物ロットとの一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "クレ・ド・ポー ボーテ",
@@ -120,7 +132,19 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "リセットクリア N",
+          "status": "参考",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://www.shiseido.co.jp/benefique/product/benefique/reset_clear_n/"
+          ],
+          "ingredients": "水,エタノール,グリセリン,セリン,チャエキス,ショウガ根茎エキス,トウキ根エキス,イザヨイバラエキス,アカヤジオウ根エキス,ＰＰＧ－１３デシルテトラデセス－２４,カルボマー,水酸化Ｋ,ＥＤＴＡ－２Ｎａ,ピロ亜硫酸Ｎａ,ＢＧ,カシア樹皮エキス,トコフェロール,フェノキシエタノール,香料",
+          "note": "掲載元の全成分欄から転記。実物ロットとの一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "リバイタル",
@@ -1025,6 +1049,6 @@
       "flowerGeneration": "reference-input-only"
     }
   ],
-  "referenceProductCount": 11,
-  "referenceBrandsWithIngredients": 11
+  "referenceProductCount": 13,
+  "referenceBrandsWithIngredients": 13
 }
