@@ -41,12 +41,15 @@ export function productFamilies(products){
  return [...groups.values()].map(g=>({...g,products:Object.freeze(g.products),formulaVariants:g.products.length}));
 }
 
-export function chooseFamilyFormula(family,query=''){
+// Only a unique exact product/alias can bypass explicit variant selection.
+// A family name alone is not a safe identity when packages, shades or formulas differ.
+export function exactFamilyMember(family,query=''){
  const q=productFold(query);
- if(q){
-  const exact=family.products.filter(p=>
+ if(!q)return null;
+ const exact=family.products.filter(p=>
    [p.brand+' '+p.name,p.name,...p.aliases].some(v=>productFold(v)===q));
-  if(exact.length===1)return exact[0];
- }
- return family.products[0]; // representative shade, explicitly labeled in the UI
+ return exact.length===1?exact[0]:null;
+}
+export function chooseFamilyFormula(family,query=''){
+ return exactFamilyMember(family,query)||family.products[0]; // UI opens ambiguous variants
 }

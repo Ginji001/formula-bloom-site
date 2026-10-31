@@ -5,7 +5,8 @@ import {japaneseIngredientLabel} from './japan-market.js';
 import {isJapaneseIngredientsList} from './japan-market-policy.js';
 import {cleanPastedProductName} from './product-query.js';
 import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,chooseExactRegisteredProduct,productFold} from './registered-products.js';
-import {productFamilies,chooseFamilyFormula} from './product-families.js';
+import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
+import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
@@ -333,6 +334,12 @@ function selectRegisteredFormula(item,context=''){
       notice.textContent=item.productIdentityNote;
       $('searchResults').append(notice);
     }
+    const review=reviewGuidanceForProduct(item);
+    if(review){
+      const notice=document.createElement('p');notice.className='muted';
+      notice.textContent='未収録の理由：'+review.reason+' 次に確認すること：'+review.next;
+      $('searchResults').append(notice);
+    }
     sourceLink($('searchResults'),item.url,'国内向けの商品掲載元を開く');
     addIngredientReviewButton($('searchResults'),item);
     appendDomesticResearchLink($('searchResults'),item.brand,item.name);
@@ -343,24 +350,30 @@ function selectRegisteredFormula(item,context=''){
 }
 function addProductFamily(container,family,query=''){
   const first=chooseFamilyFormula(family,query);
-  const selectedIsExact=[first.brand+' '+first.name,first.name,...first.aliases]
-    .some(x=>productFold(x)===productFold(query));
   const button=document.createElement('button');button.className='product-option';button.type='button';
   const packageVariant=family.products.length===1&&/^(?:本体|付けかえ用|詰め替え|詰替用|レフィル)$/.test(first.variant||'')&&
     !productFold(family.name).includes(productFold(first.variant))?' ／ '+first.variant:'';
   const title=document.createElement('strong');title.textContent=family.brand+' '+(family.series&& !productFold(family.name).includes(productFold(family.series))?family.series+' ／ ':'')+family.name+
     (family.productType&&!productFold(family.name).includes(productFold(family.productType))?' ／ '+family.productType:'')+packageVariant;
   const hint=document.createElement('small');
-  hint.textContent=first.registrationStatus==='name-only'?'商品名登録済み・全成分未収録':family.products.length===1?'日本語全成分で花を生成':
-    '同じ商品として表示（掲載色 '+family.products.length+'件）。'+
-    (selectedIsExact?'指定色で解析':'代表色 '+(first.variant||first.name)+'で解析');
+  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください':first.registrationStatus==='name-only'?'商品名登録済み・全成分未収録':'日本語全成分で花を生成';
   button.append(title,hint);
-  button.onclick=()=>selectRegisteredFormula(first);
+  const uniqueExact=exactFamilyMember(family,query);
+  let variants=null;
+  button.onclick=()=>{
+    if(family.products.length>1&&!uniqueExact){
+      variants.open=true;
+      variants.querySelector('summary')?.focus();
+      variants.scrollIntoView({behavior:'smooth',block:'nearest'});
+      return;
+    }
+    selectRegisteredFormula(uniqueExact||first);
+  };
   container.append(button);
   if(first.registrationStatus==='name-only'&&family.products.length===1)
    addIngredientReviewButton(container,first);
   if(family.products.length>1){
-   const variants=document.createElement('details');variants.className='formula-family-variants';
+   variants=document.createElement('details');variants.className='formula-family-variants';
    const summary=document.createElement('summary');summary.textContent='容量・色・仕様 '+family.products.length+'件（成分が異なる場合あり）';
    variants.append(summary);
    const warning=document.createElement('p');warning.className='muted';

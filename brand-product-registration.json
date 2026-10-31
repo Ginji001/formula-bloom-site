@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T14:59:07.078Z",
+  "generatedAt": "2026-10-31T15:13:56.522Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 120,
@@ -2525,10 +2525,10 @@
           "productType": null,
           "variant": "ポンプ",
           "sourceUrl": "https://www.kracie.co.jp/products/khp/10101193_21121.html",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": "530mL",
           "sku": null,
-          "jan": null,
+          "jan": "4901417169518",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
