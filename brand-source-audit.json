@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T08:48:50.067Z",
+  "checkedAt": "2026-10-31T11:46:16.970Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 71,
-  "brandsWithoutIngredientRecords": 76,
+  "brandsWithIngredientRecords": 72,
+  "brandsWithoutIngredientRecords": 75,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -1085,9 +1085,9 @@
       "brand": "A’pieu",
       "sourceCandidate": "https://www.missha.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 121,

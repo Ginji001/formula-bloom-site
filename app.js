@@ -1,3 +1,4 @@
+import {staticGetJSON} from './static-api.js';
 import {analyze,groups,product,SOURCE,normalize,pickAutomaticProduct,pickIngredientVariant} from './engine.js';
 import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanese.js';
 import {japaneseIngredientLabel} from './japan-market.js';
@@ -28,7 +29,7 @@ function tab(name){lookupAbort?.abort();++lookupVersion;clearTimeout(typingTimer
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 function loadProduct(){invalidate();$('japanConfirmed').checked=true;remoteProduct=null;$('sourceInfo').replaceChildren();official=true;ocrRequired=false;$('ingredients').value=product.ingredients;$('kind').value='cosmetic';$('origin').textContent=product.order;$('error').textContent='';tab('search');run();}
 $('sample').onclick=loadProduct;
-async function getJSON(path,signal){const r=await fetch(path,{signal});if(!(r.headers.get('content-type')||'').includes('application/json'))throw Error('公式ページを読み込めません。アプリのプレビュー画面からお試しください。');const data=await r.json();if(!r.ok)throw Error(data.error||'読み込めませんでした。');return data;}
+async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let formulaArchivePromise=null;
 function formulaArchive(){

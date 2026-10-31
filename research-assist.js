@@ -26,6 +26,9 @@ export function makeDomesticResearchQueue(brands,products,records,generatedAt){
   const suggestion=domesticResearchLink(b.name);
   return {
    brand:b.name,country:b.country,stage,productNameCount,archivedFormulaCount:formulaCount,
+   referenceStatus:formulaCount?'source-linked-archived-formula':'reference-only-unverified',
+   referenceUsableFor:'ブランド検索・商品候補調査・日本語成分の手入力案内',
+   referenceIsCompleteFormula:formulaCount>0,
    nextCheck:stage==='brand-only'?'日本国内向けの個別製品名・タイプ・容量・掲載元を確認':
     stage==='product-names-only'?'登録済み個別製品と日本語全成分・利用許諾・現物表示を照合':
     '残りの色・容量・SKUと最新処方・現物・利用許諾を照合',
@@ -40,6 +43,8 @@ export function makeDomesticResearchQueue(brands,products,records,generatedAt){
   nameOnlyBrandCount:entries.filter(e=>e.stage==='product-names-only').length,
   archivedFormulaBrandCount:entries.filter(e=>e.stage==='has-archived-formulas').length,
   allSKUsVerified:false,formulaRedistributionLicensesVerified:false,
+  referenceOnlyBrands:entries.filter(e=>e.referenceStatus==='reference-only-unverified').length,
+  referenceHandling:'未収録ブランドも参考調査対象として扱う。成分未確認のブランドから成分表・花・効能・濃度を生成しない。',
   notice:'この台帳の優先作業と検索先は推定の調査補助です。製品の存在・日本国内販売・全成分・再配布許諾の確認済み証拠ではありません。外部サイトには利用者がリンクを開いた場合だけ移動します。',
   brands:entries};
 }
