@@ -17,7 +17,7 @@ export function validateInciReferenceEvidence(payload){
     (record.sourceType==='manufacturer-official-english-inci'&&!['overseas-official','japan-facing-official-english'].includes(record.sourceMarket))||
     (record.sourceType==='foreign-retailer-english-inci'&&(!['overseas-retailer-english','japan-facing-retailer-english'].includes(record.sourceMarket)||typeof record.retailerName!=='string'||!record.retailerName.trim()))||
     !/^https:\/\//i.test(record.sourceUrl)||
-    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
+    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','global.amoremall.com','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
     !Array.isArray(record.ingredients)||record.ingredients.length<2||record.ingredients.length>12||
     record.ingredients.some(v=>typeof v!=='string'||v.length>90||!ingredientPattern.test(v))||
     new Set(record.ingredients.map(x=>x.toLowerCase())).size!==record.ingredients.length||

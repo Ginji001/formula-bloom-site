@@ -559,6 +559,35 @@
       "exportAsFullFormula": false,
       "checkedOn": "2026-11-01",
       "note": "海外販売店のILLIYOON Ceramide Ato Concentrate Cream 75mLに記載の英語名8件。日本登録の商品名はセラミド アト フェイス＆ボディクリーム（販売名CAコンセントレートクリーム）で容量未登録。日本で75mL容器が販売されたか、同配合かは確認していない。"
+    },
+    {
+      "productId": "rc63-hanyul-01",
+      "brand": "ハンユル",
+      "productName": "ヨモギ スージングトナーパッド",
+      "volume": null,
+      "variant": "販売名：PA トナーパッド",
+      "kind": "cosmetic",
+      "ingredients": [
+        "Water / Aqua / Eau",
+        "Butylene Glycol",
+        "Glycerin",
+        "Artemisia Argyi Leaf Water",
+        "1,2-Hexanediol",
+        "Panthenol",
+        "Polyglyceryl-10 Laurate",
+        "Allantoin"
+      ],
+      "sourceUrl": "https://global.amoremall.com/products/hanyul-pure-artemisia-hydrating-calming-toner-pad",
+      "sourceType": "manufacturer-official-english-inci",
+      "sourceMarket": "overseas-official",
+      "coverage": "english-excerpt-only",
+      "order": "not-confirmed",
+      "domesticFormulaMatched": false,
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "exportAsFullFormula": false,
+      "checkedOn": "2026-11-01",
+      "note": "アモーレパシフィックGlobal AMORE MALL掲載のHANYUL Pure Artemisia Hydrating Calming Toner pad 60枚の英語成分欄から8名称抜粋。日本国内候補はハンユル ヨモギ スージングトナーパッド（販売名PA トナーパッド）で、容量・JAN・処方改良日・現物ラベルが照合できていないため海外版と国内版の一致は主張しない。"
     }
   ]
 }

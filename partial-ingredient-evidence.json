@@ -1020,6 +1020,35 @@
       "currentFormulaCompared": false,
       "copyingPermissionForFullList": false,
       "note": "国内販売店の30mL/JAN4589631361187掲載から、ミント・ローズ・ペールブルー3色全ての欄で一致する日本語表示名6件だけ抽出。色選択未指定につき着色料等は登録しない。"
+    },
+    {
+      "productId": "rc39-drjart",
+      "brand": "Dr.Jart+",
+      "productName": "シカペア インテンシブ S リペア クリーム",
+      "volume": null,
+      "variant": null,
+      "kind": "cosmetic",
+      "ingredients": [
+        "水",
+        "DPG",
+        "セテアリルアルコール",
+        "プロパンジオール",
+        "BG",
+        "シア脂",
+        "ナイアシンアミド",
+        "アラントイン"
+      ],
+      "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=338198",
+      "checkedOn": "2026-11-01",
+      "sourceType": "japanese-domestic-retailer-listing",
+      "retailerName": "@cosme SHOPPING",
+      "evidenceType": "japan-domestic-retailer-ingredient-excerpt",
+      "coverage": "partial-only",
+      "order": "not-confirmed",
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "copyingPermissionForFullList": false,
+      "note": "国内販売店@cosme SHOPPINGで2026-11-01に確認した50mL／コクのある感触／JAN 8809844996515に掲載される日本語成分名8件の抜粋。ジェルクリームと混同しない。商品名は一致するが既存登録候補には容量とJANがなく、現物ラベル・処方改良時期・製品の全成分との一致は未確認。配合順の保持・全成分転載は行わない。"
     }
   ]
 }
