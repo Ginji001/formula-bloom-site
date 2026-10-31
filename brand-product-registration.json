@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:01:33.058Z",
+  "generatedAt": "2026-10-31T01:03:10.850Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 25,
@@ -382,10 +382,10 @@
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236043/",
           "kind": null,
-          "volume": null,
+          "volume": "150mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": null
+          "jan": "4901301236043",
+          "identityVerifiedAt": "2026-10-31"
         },
         {
           "productId": "curel-lotion-ii",
@@ -393,10 +393,10 @@
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236197/",
           "kind": null,
-          "volume": null,
+          "volume": "150mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": null
+          "jan": "4901301236197",
+          "identityVerifiedAt": "2026-10-31"
         },
         {
           "productId": "curel-lotion-iii",
@@ -404,10 +404,10 @@
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/",
           "kind": null,
-          "volume": null,
+          "volume": "150mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": null
+          "jan": "4901301236180",
+          "identityVerifiedAt": "2026-10-31"
         },
         {
           "productId": "curel-emulsion",
@@ -417,8 +417,8 @@
           "kind": null,
           "volume": null,
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": null
+          "jan": "4901301236173",
+          "identityVerifiedAt": "2026-10-31"
         },
         {
           "productId": "curel-facecream",
@@ -428,8 +428,8 @@
           "kind": null,
           "volume": null,
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": null
+          "jan": "4901301236210",
+          "identityVerifiedAt": "2026-10-31"
         }
       ]
     },
