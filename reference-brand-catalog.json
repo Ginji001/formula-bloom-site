@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "brandCount": 76,
+  "meaning": "未収録ブランドを参考データとして登録。成分名がない場合は入力から花を生成する。",
+  "entries": [
+    {
+      "brand": "資生堂",
+      "brandId": 1,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "SHISEIDO バイタルパーフェクション ブライトリバイタル ローション",
+          "url": "https://www.shiseido.co.jp/sw/onlinestore/products/H09901.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "マキアージュ",
+      "brandId": 8,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ドラマティックエッセンスルージュ PK301 未来予想",
+          "url": "https://www.shiseido.co.jp/sw/onlinestore/products/G98601.html",
+          "variant": "PK301 未来予想"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "インテグレート",
+      "brandId": 9,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "すっぴんメイカー トーンアップUV",
+          "url": "https://www.shiseido.co.jp/sw/onlinestore/products/G68501.html",
+          "variant": "ピュアカラー"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "マジョリカ マジョルカ",
+      "brandId": 10,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "マジカルカラーベース",
+          "url": "https://www.shiseido.co.jp/sw/onlinestore/products/G81501.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "クレ・ド・ポー ボーテ",
+      "brandId": 11,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ローションエサンシエルA",
+          "url": "https://www.cledepeau-beaute.com/jp/products/skincare/lotions/H725.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ベネフィーク",
+      "brandId": 12,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "リセットクリア N",
+          "url": "https://www.shiseido.co.jp/benefique/product/benefique/reset_clear_n/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "リバイタル",
+      "brandId": 14,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "スキンハイドレーター",
+          "url": "https://www.shiseido.co.jp/revital/products/skin_hydrator/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "インウイ",
+      "brandId": 15,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "フィックスプライマー",
+          "url": "https://www.shiseido.co.jp/inoui/products/fix_primer/index.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "BAUM",
+      "brandId": 16,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ハイドロ エッセンスローション n（つけかえ用）",
+          "url": "https://www.shiseido.co.jp/sw/onlinestore/products/H21301.html",
+          "variant": "つけかえ用"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "IPSA",
+      "brandId": 17,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ザ・タイムR アクア e",
+          "url": "https://www.ipsa.co.jp/products/bestseller/43828.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "花王",
+      "brandId": 18,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ADDICTION",
+      "brandId": 40,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ザ アイシャドウ パール 029P ドロップアウト",
+          "url": "https://www.addiction-beauty.com/site/g/gMAKB029/",
+          "variant": "029P Drop Out ドロップアウト"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ジルスチュアート",
+      "brandId": 41,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "リップブロッサム グロウ 07",
+          "url": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/",
+          "variant": "07 ranunculus nocturne"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "セラムヴェール",
+      "brandId": 43,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ロート製薬",
+      "brandId": 44,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "DHC",
+      "brandId": 61,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "薬用ディープクレンジングオイル リニューブライト",
+          "url": "https://www.dhc.co.jp/goods/23476.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "無印良品",
+      "brandId": 62,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "敏感肌用化粧水 高保湿",
+          "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550583434991",
+          "variant": "高保湿"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "サナ",
+      "brandId": 69,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "エクセル",
+      "brandId": 71,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "スキニーリッチシャドウ N SK08 カシミヤブラウン",
+          "url": "https://noevirgroup.jp/excel/g/g78310/",
+          "variant": "SK08 カシミヤブラウン"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "肌美精",
+      "brandId": 72,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "CHOI薬用マスク 肌・毛穴ケア",
+          "url": "https://www.kracie.co.jp/products/khp/10190426_21121.html",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ナイーブ",
+      "brandId": 73,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ボディソープ（桃の葉エキス配合）",
+          "url": "https://www.kracie.co.jp/products/khp/10101193_21121.html",
+          "variant": "ポンプ"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "いち髪",
+      "brandId": 74,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "なめらかスムースケア シャンプー",
+          "url": "https://www.kracie.co.jp/products/khp/10193007_21121.html",
+          "variant": "ポンプ"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ソルファス",
+      "brandId": 85,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "潤燥ファーストケア アクティブセラムVI",
+          "url": "https://jp.sulwhasoo.com/products/first-care-activating-serum-vi",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "プリメラ",
+      "brandId": 86,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "IOPE",
+      "brandId": 87,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ハンユル",
+      "brandId": 88,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "マモンド",
+      "brandId": 89,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "イリユン",
+      "brandId": 90,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "エスポア",
+      "brandId": 91,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "CNP",
+      "brandId": 92,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "プロP セラム",
+          "url": "https://cnp-laboratory.jp/item/104/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ビリーフ",
+      "brandId": 93,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ザ・フェイスショップ",
+      "brandId": 94,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "VDL",
+      "brandId": 95,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ザ・フー",
+      "brandId": 96,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ビヨンド",
+      "brandId": 97,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "ラウンドラボ",
+      "brandId": 99,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "brandId": 101,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "SKIN1004",
+      "brandId": 102,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "マダガスカル センテラ アンプル",
+          "volume": "100mL",
+          "status": "参考",
+          "ingredients": "水、グリセリン、BG、ツボクサエキス、1,2-ヘキサンジオール、セルロースガム、エチルヘキシルグリセリン",
+          "sources": [
+            "https://www.iitoko.jp/view/item/000000001866?category_page_id=ct76",
+            "https://zozo.jp/shop/fcbox/goods-sale/104232302/",
+            "https://www.skin1004.com/products/skin1004-madagascar-centella-ampoule"
+          ],
+          "sourceType": "advertising-retail",
+          "note": "メーカー公式と販売サイトに記載された7成分を参考収録。日本販売品の現物・改訂版との一致は未確認。"
+        }
+      ]
+    },
+    {
+      "brand": "mixsoon",
+      "brandId": 104,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "numbuzin",
+      "brandId": 107,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "5番 白玉グルタチオンＣ美容液",
+          "url": "https://numbuzin.jp/product/5%E7%95%AA-%E7%99%BD%E7%8E%89%E3%82%B0%E3%83%AB%E3%82%BF%E3%83%81%E3%82%AA%E3%83%B3%EF%BC%A3%E7%BE%8E%E5%AE%B9%E6%B6%B2/172/category/119/display/1/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Dr.G",
+      "brandId": 108,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Dr.Jart+",
+      "brandId": 109,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "シカペア インテンシブ S リペア クリーム",
+          "url": "https://drjartjp.com/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "medicube",
+      "brandId": 111,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "PDRNピンクアンプル",
+          "url": "https://themedicube.jp/products/pdrn-pinkpeptideserum",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "TIRTIR",
+      "brandId": 112,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "MASK FIT AI FILTER CUSHION",
+          "url": "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion",
+          "variant": "15C"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "d'Alba",
+      "brandId": 113,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ホワイトトリュフ ファーストスプレーセラム",
+          "url": "https://dalba.jp/products/white-truffle-first-spray-serum",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Abib",
+      "brandId": 114,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Isntree",
+      "brandId": 115,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "SOME BY MI",
+      "brandId": 116,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "PURITO",
+      "brandId": 117,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "A’pieu",
+      "brandId": 120,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "アピューミントスカルプヘアビネガートリートメント",
+          "url": "https://www.missha.co.jp/product/apieu_hairvinegar_ms/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "CLIO",
+      "brandId": 121,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "キル カバー ファンウェア クッション ザ オリジナル",
+          "url": "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "peripera",
+      "brandId": 122,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "goodal",
+      "brandId": 123,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "rom&nd",
+      "brandId": 124,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ザジューシーラスティングティント",
+          "url": "https://ainz-tulpe.jp/products/4570128220322",
+          "variant": "01 ポメロスキン"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "3CE",
+      "brandId": 125,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "マルチアイカラーパレット TA テイクオーバー",
+          "url": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375",
+          "variant": "TA テイクオーバー"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "BANILA CO",
+      "brandId": 126,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "AHC",
+      "brandId": 127,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "celimax",
+      "brandId": 128,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "ノニエネルギーアンプル",
+          "url": "https://celimax.jp/products/noniampoule2-0",
+          "variant": null
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Dr.Althea",
+      "brandId": 129,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "BIODANCE",
+      "brandId": 130,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "beplain",
+      "brandId": 131,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "haruharu wonder",
+      "brandId": 132,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "AXIS-Y",
+      "brandId": 133,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "TOCOBO",
+      "brandId": 134,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "heimish",
+      "brandId": 135,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Benton",
+      "brandId": 136,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "iUNIK",
+      "brandId": 137,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "WELLAGE",
+      "brandId": 138,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "BIOHEAL BOH",
+      "brandId": 139,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Dr.Ceuracle",
+      "brandId": 140,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "Centellian24",
+      "brandId": 141,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "fwee",
+      "brandId": 142,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [
+        {
+          "name": "リップアンドチークブラーリープリンポット",
+          "url": "https://fwee.jp/product/detail.html?cate_no=75&display_group=1&product_no=231",
+          "variant": "BS01 クール"
+        }
+      ],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "dasique",
+      "brandId": 144,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "WAKEMAKE",
+      "brandId": 145,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "AMUSE",
+      "brandId": 146,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    },
+    {
+      "brand": "REJURAN",
+      "brandId": 147,
+      "status": "参考",
+      "formulaVerified": false,
+      "productCandidates": [],
+      "ingredientNames": [],
+      "flowerGeneration": "reference-input-only"
+    }
+  ],
+  "referenceProductCount": 1
+}
