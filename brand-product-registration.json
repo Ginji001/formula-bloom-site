@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T14:14:09.034Z",
+  "generatedAt": "2026-10-31T14:22:28.128Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 115,
-  "brandsWithPendingProductNames": 32,
-  "productNameRecords": 294,
+  "brandsWithRegisteredProductNames": 119,
+  "brandsWithPendingProductNames": 28,
+  "productNameRecords": 298,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -4785,13 +4785,27 @@
       "maker": "LG生活健康",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc55-vdl-color-correcting-30",
+          "productName": "カラーコレクティングプライマー",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://ainz-tulpe.jp/products/4589631361187",
+          "kind": "cosmetic",
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 96,
@@ -5759,13 +5773,27 @@
       "maker": "TOCOBO",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://tocobo.us/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc55-tocobo-mini-cica-stick",
+          "productName": "ミニシカクーリングサンスティック",
+          "series": null,
+          "productType": null,
+          "variant": "ミニシカ",
+          "sourceUrl": "https://ainz-tulpe.jp/products/8809835064605",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": "8809835064605",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 135,
@@ -5829,13 +5857,27 @@
       "maker": "BIOHEAL BOH",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc55-bioheal-3d-cream-50",
+          "productName": "プロバイオダーム 3Dリフティングクリーム",
+          "series": null,
+          "productType": null,
+          "variant": "3Dリフティング",
+          "sourceUrl": "https://ainz-tulpe.jp/products/8809971488648",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": "8809971488648",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 140,
@@ -5857,13 +5899,27 @@
       "maker": "Centellian24",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc55-centellian-madeca-time-reverse-50",
+          "productName": "マデカクリーム タイムリバース",
+          "series": null,
+          "productType": null,
+          "variant": "タイムリバース",
+          "sourceUrl": "https://ainz-tulpe.jp/products/8806109101257",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": "8806109101257",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 142,
