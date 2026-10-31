@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T04:12:56.606Z",
+  "generatedAt": "2026-10-31T04:49:11.305Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 101,
-  "brandsWithPendingProductNames": 46,
-  "productNameRecords": 263,
-  "ingredientRecords": 188,
+  "brandsWithRegisteredProductNames": 102,
+  "brandsWithPendingProductNames": 45,
+  "productNameRecords": 269,
+  "ingredientRecords": 194,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -1134,13 +1134,53 @@
       "maker": "コーセー",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 3,
+      "ingredientRecordCount": 3,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-reviewed-4a8cb2ed2d10e229",
+          "productName": "メイク キープ ミスト EX ＋",
+          "series": "メイク キープ",
+          "productType": null,
+          "variant": "通常",
+          "sourceUrl": "https://maison.kose.co.jp/site/makekeepmist/g/gDLEA/",
+          "kind": "cosmetic",
+          "volume": "80mL",
+          "sku": "DLEA",
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-reviewed-4efa63056b89325e",
+          "productName": "メイク キープ ミスト EX ＋ 無香料",
+          "series": "メイク キープ",
+          "productType": null,
+          "variant": "無香料",
+          "sourceUrl": "https://maison.kose.co.jp/site/makekeepmist/g/gDLCK",
+          "kind": "cosmetic",
+          "volume": "80mL",
+          "sku": "DLCK",
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-reviewed-cf71e1d1a0aca827",
+          "productName": "メイク キープ ミスト EX ＋ モイスト Y",
+          "series": "メイク キープ",
+          "productType": null,
+          "variant": "モイスト Y",
+          "sourceUrl": "https://maison.kose.co.jp/site/makekeepmist/g/gDLBI/",
+          "kind": "cosmetic",
+          "volume": "80mL",
+          "sku": "DLBI",
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 35,
@@ -2230,8 +2270,8 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
-      "ingredientRecordCount": 0,
+      "productNameCount": 3,
+      "ingredientRecordCount": 2,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -2248,6 +2288,32 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "jp-reviewed-2ec15088f8de20c7",
+          "productName": "マイルド化粧水 NC",
+          "series": "豆乳イソフラボン",
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70207/",
+          "kind": "cosmetic",
+          "volume": "200mL",
+          "sku": "70207",
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-reviewed-5fdbae1a2882b4d7",
+          "productName": "マイクロミスト化粧水",
+          "series": "豆乳イソフラボン",
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70170/",
+          "kind": "cosmetic",
+          "volume": "150g",
+          "sku": "70170",
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -4657,8 +4723,8 @@
       "country": "KR",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
-      "ingredientRecordCount": 0,
+      "productNameCount": 2,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.cosrx.com/",
@@ -4675,6 +4741,19 @@
           "sku": null,
           "jan": "8800311121805",
           "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "jp-reviewed-5b52c5df1e95e51f",
+          "productName": "フルフィットプロポリスライトアンプル",
+          "series": "フルフィット",
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://skinholic.jp/c/brand_list/cosrx/31000007",
+          "kind": "cosmetic",
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
