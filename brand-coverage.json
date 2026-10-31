@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T23:56:12.028Z",
+  "generatedAt": "2026-10-31T00:08:28.015Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 15,
-  "brandsWithoutSavedFormulas": 132,
-  "savedFormulaCount": 166,
-  "registeredCandidateCount": 166,
+  "brandsWithSavedFormulas": 21,
+  "brandsWithoutSavedFormulas": 126,
+  "savedFormulaCount": 172,
+  "registeredCandidateCount": 172,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -643,12 +643,23 @@
       "brand": "肌ラボ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-e5d5333ea71c2b92",
+          "productName": "極潤UVホワイトゲル",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/hadalabo/rich-gokujun-uv/145676.html",
+          "ingredientCount": 31
+        }
+      ]
     },
     {
       "brandId": 46,
@@ -667,36 +678,69 @@
       "brand": "ケアセラ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-6e3c6c1396004c5d",
+          "productName": "APフェイス＆ボディ乳液",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/155620.html?cgid=care",
+          "ingredientCount": 36
+        }
+      ]
     },
     {
       "brandId": 48,
       "brand": "オバジ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-c7409fa67699b5c6",
+          "productName": "アクティブベース クリアローション",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/144730.html?cgid=care",
+          "ingredientCount": 28
+        }
+      ]
     },
     {
       "brandId": 49,
       "brand": "スキンアクア",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-36d45e055926ed89",
+          "productName": "スーパーモイスチャーUVライトアップエッセンス",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/skin-aqua/193899.html",
+          "ingredientCount": 30
+        }
+      ]
     },
     {
       "brandId": 50,
@@ -2819,12 +2863,23 @@
       "brand": "アヌア",
       "maker": "ANUA",
       "country": "KR",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-c03bf70471cc7d4b",
+          "productName": "ドクダミ シルキーモイスチャーサンクリーム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://anuashop.jp/collections/half-leaf-line/products/sior0016",
+          "ingredientCount": 40
+        }
+      ]
     },
     {
       "brandId": 99,
@@ -2879,12 +2934,23 @@
       "brand": "MEDIHEAL",
       "maker": "MEDIHEAL",
       "country": "KR",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 1,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "source-jp-e1a019d46ffc36f0",
+          "productName": "マデカッソシド エッセンシャルマスク ブレミッシュリペア",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:05:31+09:00",
+          "sourceUrl": "https://mediheal.jp/product/%E3%83%9E%E3%83%87%E3%82%AB%E3%83%83%E3%82%BD%E3%82%B7%E3%83%89-%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%AF-%E3%83%96%E3%83%AC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%83%9A%E3%82%A2/1785/",
+          "ingredientCount": 41
+        }
+      ]
     },
     {
       "brandId": 104,
