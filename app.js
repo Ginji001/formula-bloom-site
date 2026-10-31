@@ -10,7 +10,7 @@ import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
-import {describeFormulaSignature,formatFormulaSignature} from './formula-signature.js';
+import {describeFormulaSignature,formatFormulaSignature} from './formula-signature-v60.js';
 import {provenance,provenanceText} from './provenance.js';
 import {checkProductIdentity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord} from './formula-archive.js';
