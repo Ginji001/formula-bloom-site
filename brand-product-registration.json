@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T08:00:01.718Z",
+  "generatedAt": "2026-10-31T08:18:55.063Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 102,
   "brandsWithPendingProductNames": 45,
-  "productNameRecords": 269,
-  "ingredientRecords": 229,
+  "productNameRecords": 272,
+  "ingredientRecords": 232,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -939,8 +939,8 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
-      "ingredientRecordCount": 0,
+      "productNameCount": 2,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -956,6 +956,19 @@
           "volume": null,
           "sku": null,
           "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc48-kate-tears-remover",
+          "productName": "ルイシンノイチゲキリムーバー",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167049969/",
+          "kind": "cosmetic",
+          "volume": "7.8mL",
+          "sku": null,
+          "jan": "4973167049969",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -995,8 +1008,8 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
-      "ingredientRecordCount": 0,
+      "productNameCount": 2,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1012,6 +1025,19 @@
           "volume": null,
           "sku": null,
           "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc48-lunasol-polishing-gel",
+          "productName": "ポリッシングクリア ジェルウォッシュ",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/lunasol/4973167029114/",
+          "kind": "cosmetic",
+          "volume": "150g",
+          "sku": null,
+          "jan": "4973167029114",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -1051,8 +1077,8 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
-      "ingredientRecordCount": 0,
+      "productNameCount": 2,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1068,6 +1094,19 @@
           "volume": "25mL",
           "sku": null,
           "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc48-primavista-hydration-sheer-beige",
+          "productName": "角層保水プライマー シアーベージュ",
+          "series": null,
+          "productType": null,
+          "variant": "シアーベージュ",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/primavista/4901301463920/",
+          "kind": "cosmetic",
+          "volume": "25g",
+          "sku": null,
+          "jan": "4901301463920",
           "identityVerifiedAt": "2026-10-31"
         }
       ]

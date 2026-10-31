@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T08:00:01.716Z",
+  "generatedAt": "2026-10-31T08:18:55.060Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 67,
-  "brandsWithoutSavedFormulas": 80,
-  "savedFormulaCount": 229,
-  "registeredCandidateCount": 269,
+  "brandsWithSavedFormulas": 70,
+  "brandsWithoutSavedFormulas": 77,
+  "savedFormulaCount": 232,
+  "registeredCandidateCount": 272,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -610,12 +610,23 @@
       "brand": "KATE",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc48-kate-tears-remover",
+          "productName": "ルイシンノイチゲキリムーバー",
+          "variant": null,
+          "sourcePageId": "4973167049969",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T08:16:31Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167049969/",
+          "ingredientCount": 13
+        }
+      ]
     },
     {
       "brandId": 28,
@@ -645,12 +656,23 @@
       "brand": "LUNASOL",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc48-lunasol-polishing-gel",
+          "productName": "ポリッシングクリア ジェルウォッシュ",
+          "variant": null,
+          "sourcePageId": "4973167029114",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T08:16:31Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/lunasol/4973167029114/",
+          "ingredientCount": 25
+        }
+      ]
     },
     {
       "brandId": 30,
@@ -680,12 +702,23 @@
       "brand": "Primavista",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 1,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc48-primavista-hydration-sheer-beige",
+          "productName": "角層保水プライマー シアーベージュ",
+          "variant": "シアーベージュ",
+          "sourcePageId": "4901301463920",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T08:16:31Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/primavista/4901301463920/",
+          "ingredientCount": 40
+        }
+      ]
     },
     {
       "brandId": 32,
