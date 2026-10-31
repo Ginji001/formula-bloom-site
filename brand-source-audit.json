@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T04:50:50.780Z",
+  "checkedAt": "2026-10-31T07:21:13.115Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 37,
-  "brandsWithoutIngredientRecords": 110,
+  "brandsWithIngredientRecords": 44,
+  "brandsWithoutIngredientRecords": 103,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -185,9 +185,9 @@
       "brand": "ビオレ",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 21,
@@ -203,36 +203,36 @@
       "brand": "エスト",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 23,
       "brand": "カネボウ",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 24,
       "brand": "スイサイ",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 25,
       "brand": "DEW",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 26,
@@ -275,9 +275,9 @@
       "brand": "freeplus",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 31,
@@ -698,9 +698,9 @@
       "brand": "ビフェスタ",
       "sourceCandidate": "https://www.mandom.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 78,
