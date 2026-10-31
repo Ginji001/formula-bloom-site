@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "brandCount": 76,
-  "meaning": "未収録ブランドを参考データとして登録。成分名がない場合は入力から花を生成する。",
+  "meaning": "参考は出典のある未検証全成分。推測は実製品の全成分ではなく一般的な成分類型の仮説であり、花の自動生成には利用しない。",
   "entries": [
     {
       "brand": "資生堂",
@@ -16,7 +16,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "SHISEIDO バイタルパーフェクション ブライトリバイタル ローション",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.shiseido.co.jp/sw/onlinestore/products/H09901.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "マキアージュ",
@@ -117,7 +135,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ローションエサンシエルA",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.cledepeau-beaute.com/jp/products/skincare/lotions/H725.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ベネフィーク",
@@ -159,7 +195,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "スキンハイドレーター",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.shiseido.co.jp/revital/products/skin_hydrator/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "インウイ",
@@ -174,7 +228,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "フィックスプライマー",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.shiseido.co.jp/inoui/products/fix_primer/index.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "BAUM",
@@ -189,7 +261,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ハイドロ エッセンスローション n（つけかえ用）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.shiseido.co.jp/sw/onlinestore/products/H21301.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "IPSA",
@@ -225,7 +315,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "花王 の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ADDICTION",
@@ -240,7 +346,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ザ アイシャドウ パール 029P ドロップアウト",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.addiction-beauty.com/site/g/gMAKB029/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ジルスチュアート",
@@ -255,7 +379,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "リップブロッサム グロウ 07",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "セラムヴェール",
@@ -264,7 +406,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "セラムヴェール の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ロート製薬",
@@ -273,7 +431,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ロート製薬 の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "DHC",
@@ -288,7 +462,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "薬用ディープクレンジングオイル リニューブライト",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.dhc.co.jp/goods/23476.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "無印良品",
@@ -327,7 +519,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "サナ の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "エクセル",
@@ -342,7 +550,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "スキニーリッチシャドウ N SK08 カシミヤブラウン",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://noevirgroup.jp/excel/g/g78310/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "肌美精",
@@ -357,7 +583,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "CHOI薬用マスク 肌・毛穴ケア",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.kracie.co.jp/products/khp/10190426_21121.html"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ナイーブ",
@@ -428,7 +672,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "潤燥ファーストケア アクティブセラムVI",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://jp.sulwhasoo.com/products/first-care-activating-serum-vi"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "プリメラ",
@@ -437,7 +699,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "プリメラ の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "IOPE",
@@ -446,7 +724,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "IOPE の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ハンユル",
@@ -455,7 +749,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ハンユル の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "マモンド",
@@ -464,7 +774,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "マモンド の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "イリユン",
@@ -473,7 +799,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "イリユン の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "エスポア",
@@ -482,7 +824,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "エスポア の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "CNP",
@@ -497,7 +855,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "プロP セラム",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://cnp-laboratory.jp/item/104/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ビリーフ",
@@ -506,7 +882,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ビリーフ の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ザ・フェイスショップ",
@@ -515,7 +907,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ザ・フェイスショップ の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "VDL",
@@ -524,7 +932,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "VDL の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ザ・フー",
@@ -533,7 +957,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ザ・フー の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ビヨンド",
@@ -542,7 +982,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ビヨンド の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "ラウンドラボ",
@@ -618,7 +1074,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "mixsoon の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "numbuzin",
@@ -633,7 +1105,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "5番 白玉グルタチオンＣ美容液",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://numbuzin.jp/product/5%E7%95%AA-%E7%99%BD%E7%8E%89%E3%82%B0%E3%83%AB%E3%82%BF%E3%83%81%E3%82%AA%E3%83%B3%EF%BC%A3%E7%BE%8E%E5%AE%B9%E6%B6%B2/172/category/119/display/1/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Dr.G",
@@ -642,7 +1132,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Dr.G の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Dr.Jart+",
@@ -657,7 +1163,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "シカペア インテンシブ S リペア クリーム",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://drjartjp.com/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "medicube",
@@ -672,7 +1196,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "PDRNピンクアンプル",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://themedicube.jp/products/pdrn-pinkpeptideserum"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "TIRTIR",
@@ -687,7 +1229,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "MASK FIT AI FILTER CUSHION",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "d'Alba",
@@ -702,7 +1262,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ホワイトトリュフ ファーストスプレーセラム",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://dalba.jp/products/white-truffle-first-spray-serum"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Abib",
@@ -733,7 +1311,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Isntree の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "SOME BY MI",
@@ -742,7 +1336,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "SOME BY MI の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "PURITO",
@@ -780,7 +1390,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "アピューミントスカルプヘアビネガートリートメント",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.missha.co.jp/product/apieu_hairvinegar_ms/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "CLIO",
@@ -795,7 +1423,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "キル カバー ファンウェア クッション ザ オリジナル",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "peripera",
@@ -804,7 +1450,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "peripera の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "goodal",
@@ -813,7 +1475,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "goodal の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "rom&nd",
@@ -828,7 +1506,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ザジューシーラスティングティント",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://ainz-tulpe.jp/products/4570128220322"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "3CE",
@@ -843,7 +1539,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "マルチアイカラーパレット TA テイクオーバー",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "BANILA CO",
@@ -852,7 +1566,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "BANILA CO の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "AHC",
@@ -861,7 +1591,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "AHC の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "celimax",
@@ -876,7 +1622,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "ノニエネルギーアンプル",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://celimax.jp/products/noniampoule2-0"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Dr.Althea",
@@ -885,7 +1649,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Dr.Althea の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "BIODANCE",
@@ -894,7 +1674,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "BIODANCE の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "beplain",
@@ -903,7 +1699,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "beplain の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "haruharu wonder",
@@ -912,7 +1724,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "haruharu wonder の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "AXIS-Y",
@@ -944,7 +1772,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "TOCOBO の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "heimish",
@@ -953,7 +1797,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "heimish の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Benton",
@@ -962,7 +1822,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Benton の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "iUNIK",
@@ -971,7 +1847,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "iUNIK の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "WELLAGE",
@@ -980,7 +1872,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "WELLAGE の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "BIOHEAL BOH",
@@ -989,7 +1897,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "BIOHEAL BOH の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Dr.Ceuracle",
@@ -998,7 +1922,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Dr.Ceuracle の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "Centellian24",
@@ -1007,7 +1947,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "Centellian24 の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "fwee",
@@ -1022,7 +1978,25 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "リップアンドチークブラーリープリンポット",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [
+            "https://fwee.jp/product/detail.html?cate_no=75&display_group=1&product_no=231"
+          ],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "dasique",
@@ -1031,7 +2005,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "dasique の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "WAKEMAKE",
@@ -1040,7 +2030,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "WAKEMAKE の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "AMUSE",
@@ -1049,7 +2055,23 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "AMUSE の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     },
     {
       "brand": "REJURAN",
@@ -1058,9 +2080,26 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "estimatedProducts": [
+        {
+          "name": "REJURAN の代表的なスキンケア製品（商品未特定）",
+          "status": "推測",
+          "estimateType": "ingredient-category-only",
+          "estimatedIngredientCategories": [
+            "水性基剤（例：水）",
+            "保湿剤（例：グリセリン、BG）",
+            "製剤安定化成分（例：増粘剤・乳化剤）"
+          ],
+          "ingredientOrderKnown": false,
+          "formulaVerified": false,
+          "sources": [],
+          "note": "実製品の全成分ではありません。一般的な化粧品の構成を例示した仮説であり、各成分の配合有無・順序・濃度は不明です。"
+        }
+      ]
     }
   ],
   "referenceProductCount": 14,
-  "referenceBrandsWithIngredients": 14
+  "referenceBrandsWithIngredients": 14,
+  "estimatedBrandCount": 62
 }
