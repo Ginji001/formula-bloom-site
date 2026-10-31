@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T16:18:59.545Z",
+  "generatedAt": "2026-10-31T16:32:40.080Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 130,
-  "brandsWithPendingProductNames": 17,
-  "productNameRecords": 422,
+  "brandsWithRegisteredProductNames": 134,
+  "brandsWithPendingProductNames": 13,
+  "productNameRecords": 436,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -5817,13 +5817,27 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc63-hanyul-01",
+          "productName": "ヨモギ スージングトナーパッド",
+          "series": null,
+          "productType": null,
+          "variant": "販売名：PA トナーパッド",
+          "sourceUrl": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        }
+      ]
     },
     {
       "brandId": 89,
@@ -5845,13 +5859,53 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 3,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc63-illiyoon-01",
+          "productName": "セラミド アト フェイス＆ボディミルク",
+          "series": null,
+          "productType": null,
+          "variant": "販売名：CA ローション",
+          "sourceUrl": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-illiyoon-02",
+          "productName": "セラミド アト フェイス＆ボディクリーム",
+          "series": null,
+          "productType": null,
+          "variant": "販売名：CA コンセントレートクリーム",
+          "sourceUrl": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-illiyoon-03",
+          "productName": "セラミド アト トップトゥトー ウォッシュ",
+          "series": null,
+          "productType": null,
+          "variant": "販売名：CA トップトゥートーウォッシュ",
+          "sourceUrl": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        }
+      ]
     },
     {
       "brandId": 91,
@@ -7223,13 +7277,66 @@
       "maker": "haruharu wonder",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 4,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://haruharuwonder.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc63-haruharu-01",
+          "productName": "ブラックライスセラム",
+          "series": null,
+          "productType": null,
+          "variant": "2022年国内発売品",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "kind": "cosmetic",
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-haruharu-02",
+          "productName": "ブラックライストナー",
+          "series": null,
+          "productType": null,
+          "variant": "2022年国内発売品",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "kind": "cosmetic",
+          "volume": "150mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-haruharu-03",
+          "productName": "ブラックライスヒアルロニッククリーム",
+          "series": null,
+          "productType": null,
+          "variant": "50mL・2022年国内発売品",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-haruharu-04",
+          "productName": "ブラックライスヒアルロニッククリーム",
+          "series": null,
+          "productType": null,
+          "variant": "90mL・2022年国内発売品",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "kind": "cosmetic",
+          "volume": "90mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01"
+        }
+      ]
     },
     {
       "brandId": 133,
@@ -7321,13 +7428,92 @@
       "maker": "WELLAGE",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 6,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc63-wellage-01",
+          "productName": "HAブルーセラム",
+          "series": null,
+          "productType": null,
+          "variant": "本体",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=383713",
+          "kind": "cosmetic",
+          "volume": "60mL",
+          "sku": null,
+          "jan": "8809619272714",
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-wellage-02",
+          "productName": "HYPER PDRN REPAIR AMPOULE",
+          "series": null,
+          "productType": null,
+          "variant": "本体",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=396055",
+          "kind": "cosmetic",
+          "volume": "30mL",
+          "sku": null,
+          "jan": "8809619273612",
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-wellage-03",
+          "productName": "PEP COLゲルシートマスク",
+          "series": null,
+          "productType": null,
+          "variant": "5枚セット",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=400684",
+          "kind": "cosmetic",
+          "volume": "38g×5枚",
+          "sku": null,
+          "jan": "8809619273490",
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-wellage-04",
+          "productName": "PEPセラムマスク",
+          "series": null,
+          "productType": null,
+          "variant": "5枚セット",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=400682",
+          "kind": "cosmetic",
+          "volume": "25mL×5枚",
+          "sku": null,
+          "jan": "8809619273247",
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-wellage-05",
+          "productName": "HAブルーセラム100 ハローキティ エディション",
+          "series": null,
+          "productType": null,
+          "variant": "ハローキティ限定",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=421543",
+          "kind": "cosmetic",
+          "volume": "60mL",
+          "sku": null,
+          "jan": "8809619274411",
+          "identityVerifiedAt": "2026-11-01"
+        },
+        {
+          "productId": "rc63-wellage-06",
+          "productName": "HAブルーセラムマスク ハローキティ エディション",
+          "series": null,
+          "productType": null,
+          "variant": "ハローキティ限定",
+          "sourceUrl": "https://www.cosme.com/products/detail.php?product_id=421541",
+          "kind": "cosmetic",
+          "volume": "7枚",
+          "sku": null,
+          "jan": "8809619273605",
+          "identityVerifiedAt": "2026-11-01"
+        }
+      ]
     },
     {
       "brandId": 139,

@@ -27,6 +27,7 @@ const domesticComPaths=new Map([
  // Individually confirmed Japan-market product identity links only; does not grant ingredient copying.
  ['jp.abib.com',/^\/product\//],
  ['www.cosme.com',/^\/products\/detail\.php$/],
+ ['www.apgroup.com',/^\/jp\/ja\/news\/1361676_29900\.html$/],
  // Link-only Japanese product identity. Never authorizes external scraping or formula republication.
  ['www.cosme.net',/^\/products\/\d+\/?$/],
  ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/],
@@ -41,7 +42,7 @@ export function isJapaneseMarketURL(input){
  if(domesticComPaths.has(host))return domesticComPaths.get(host).test(u.pathname);
  // 未登録国内ドメインの場合、公式ページの本人確認と日本語成分表示が別途必須。
  // A specific 2026 Japanese importer product-announcement page, not blanket PR content.
- if(host==='prtimes.jp')return u.pathname==='/main/html/rd/p/000000025.000128129.html';
+ if(host==='prtimes.jp')return ['/main/html/rd/p/000000025.000128129.html','/main/html/rd/p/000000016.000022550.html'].includes(u.pathname);
  if(host.endsWith('.co.jp')||host.endsWith('.jp'))return true;
  if(matchesHost(host,'kao-kirei.com'))return /^\/ja\/(?:official|item)\//.test(u.pathname)||/^\/ja\/brand\/khg\/biore\/$/.test(u.pathname);
  if(matchesHost(host,'kao.com')||matchesHost(host,'muji.com'))return /^\/jp(?:\/|$)/.test(u.pathname);

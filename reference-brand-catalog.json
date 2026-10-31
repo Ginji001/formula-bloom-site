@@ -1120,7 +1120,17 @@
       "brandId": 88,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ヨモギ スージングトナーパッド",
+          "url": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "volume": null,
+          "variant": "販売名：PA トナーパッド",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1170,7 +1180,35 @@
       "brandId": 90,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "セラミド アト フェイス＆ボディミルク",
+          "url": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "volume": null,
+          "variant": "販売名：CA ローション",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "セラミド アト フェイス＆ボディクリーム",
+          "url": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "volume": null,
+          "variant": "販売名：CA コンセントレートクリーム",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "セラミド アト トップトゥトー ウォッシュ",
+          "url": "https://www.apgroup.com/jp/ja/news/1361676_29900.html",
+          "volume": null,
+          "variant": "販売名：CA トップトゥートーウォッシュ",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2347,7 +2385,44 @@
       "brandId": 132,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ブラックライスセラム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "volume": "30mL",
+          "variant": "2022年国内発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ブラックライストナー",
+          "url": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "volume": "150mL",
+          "variant": "2022年国内発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ブラックライスヒアルロニッククリーム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "volume": "50mL",
+          "variant": "50mL・2022年国内発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ブラックライスヒアルロニッククリーム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+          "volume": "90mL",
+          "variant": "90mL・2022年国内発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2495,7 +2570,62 @@
       "brandId": 138,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "HAブルーセラム",
+          "url": "https://www.cosme.com/products/detail.php?product_id=383713",
+          "volume": "60mL",
+          "variant": "本体",
+          "jan": "8809619272714",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "HYPER PDRN REPAIR AMPOULE",
+          "url": "https://www.cosme.com/products/detail.php?product_id=396055",
+          "volume": "30mL",
+          "variant": "本体",
+          "jan": "8809619273612",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "PEP COLゲルシートマスク",
+          "url": "https://www.cosme.com/products/detail.php?product_id=400684",
+          "volume": "38g×5枚",
+          "variant": "5枚セット",
+          "jan": "8809619273490",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "PEPセラムマスク",
+          "url": "https://www.cosme.com/products/detail.php?product_id=400682",
+          "volume": "25mL×5枚",
+          "variant": "5枚セット",
+          "jan": "8809619273247",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "HAブルーセラム100 ハローキティ エディション",
+          "url": "https://www.cosme.com/products/detail.php?product_id=421543",
+          "volume": "60mL",
+          "variant": "ハローキティ限定",
+          "jan": "8809619274411",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "HAブルーセラムマスク ハローキティ エディション",
+          "url": "https://www.cosme.com/products/detail.php?product_id=421541",
+          "volume": "7枚",
+          "variant": "ハローキティ限定",
+          "jan": "8809619273605",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
