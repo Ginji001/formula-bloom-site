@@ -345,8 +345,8 @@ function showBrandProducts(data){
     const text=document.createElement('p');
     text.className='muted';
     text.textContent=data.brand?.japanSiteVerified?
-      '候補が見つかりません。サイトで探すか、全成分を入力してください。':
-      '商品候補が見つかりません。下のサイトで探してください。';
+      'ブランドは仮登録済みです。商品名・全成分はまだ未登録です。掲載元で製品を特定して入力してください。':
+      'ブランドは仮登録済みです。商品名は未登録です。下のサイトで探し、日本向け製品を確認してください。';
     holder.append(text);
     if(data.brand?.site)sourceLink(holder,data.brand.site,brand+'の日本向け公式サイト');
     appendRetailLinks(holder,data);
@@ -404,17 +404,47 @@ function presentRegisteredBrand(brand){
   presentRegisteredProducts(entries,brand);
   return true;
 }
+let provisionalBrands=null,provisionalLoading=false;
 function quickRegisteredBrands(){
   const zone=$('registeredQuick');if(!zone)return;
   zone.replaceChildren();
-  for(const brand of registeredBrands){
-    const b=document.createElement('button');b.className='registered-chip';b.type='button';
-    b.textContent=brand+'（'+productFamilies(productsForBrand(brand)).length+'商品）';
-    b.onclick=()=>{tab('search');$('query').value=brand;invalidate();openBrandProducts(brand);};
+  const all=provisionalBrands||registeredBrands.map(name=>({name,aliases:[name]}));
+  const q=$('registeredBrandFilter').value.trim();
+  const matches=all.filter(b=>!q||brandQueryMatches(b,q));
+  let productBrands=0;
+  for(const brand of matches){
+    const count=productFamilies(productsForBrand(brand.name)).length;
+    if(count)productBrands++;
+    const b=document.createElement('button');b.className='registered-chip'+(count?'':' brand-pending');
+    b.type='button';
+    b.textContent=brand.name+(count?'（商品候補 '+count+'件）':'（仮登録・商品名未確認）');
+    b.onclick=()=>{
+      tab('search');$('query').value=brand.name;
+      invalidate();openBrandProducts(brand.name);
+    };
     zone.append(b);
   }
+  $('registeredBrandCounts').textContent=provisionalBrands?
+    '全147ブランドを仮登録 ／ 商品候補あり '+all.filter(b=>productsForBrand(b.name).length>0).length+
+    'ブランド ／ 商品名未登録 '+all.filter(b=>productsForBrand(b.name).length===0).length+
+    'ブランド。全商品を収録した意味ではありません。':
+    '商品候補のあるブランドを表示中。開くと全147ブランドの仮登録を読み込みます。';
+  if(!matches.length)zone.textContent='該当するブランドはありません。';
 }
 quickRegisteredBrands();
+$('registeredBrandFilter').oninput=quickRegisteredBrands;
+$('registeredBrandDirectory').ontoggle=async()=>{
+  if(!$('registeredBrandDirectory').open||provisionalBrands||provisionalLoading)return;
+  provisionalLoading=true;
+  try{
+    const catalog=await getJSON('/api/brands');
+    if(!Array.isArray(catalog.brands)||catalog.brands.length!==147)throw Error('ブランド台帳の件数を確認できません。');
+    provisionalBrands=catalog.brands;
+    quickRegisteredBrands();
+  }catch{
+    $('registeredBrandCounts').textContent='全ブランド一覧を読み込めませんでした。「147ブランドから選ぶ」もお試しください。';
+  }finally{provisionalLoading=false;}
+};
 
 async function search({instant=false,forceOfficial=false}={}){clearTimeout(typingTimer);const raw=$('query').value.trim();const q=instant?raw:cleanPastedProductName(raw);if(!instant&&raw!==q)$('query').value=q;if(q.length<2)return;
 if(!forceOfficial&&!/^https:\/\//.test(q)){
@@ -648,8 +678,10 @@ function showBrands(){
     };
     const meta=document.createElement('small');
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
-    meta.textContent=savedCount?'全成分の掲載記録 '+savedCount+'処方（同商品に色違いを含む）':
-      '日本語全成分：未収録（ブランド登録のみ）';
+    const productCount=productFamilies(productsForBrand(brand.name)).length;
+    meta.textContent=savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
+      productCount?'商品候補 '+productCount+'件／全成分未確認':
+      'ブランド仮登録済み／商品名未登録';
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);

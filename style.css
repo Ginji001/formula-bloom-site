@@ -75,4 +75,9 @@ button,input,select,textarea{touch-action:manipulation}
 .formula-family-variants summary{cursor:pointer;font-size:.87rem;padding:8px 0}
 .formula-family-variants button{margin:4px 6px 4px 0;max-width:100%;white-space:normal;text-align:left;min-height:44px}
 
+#registeredBrandFilter{width:100%;font-size:16px;min-height:44px;padding:9px 12px;border:1px solid #d7c8d0;border-radius:10px;background:#fffefa;color:#41363b;margin:5px 0 10px}
+#registeredBrandCounts{font-size:12px;line-height:1.6}
+.registered-chip.brand-pending{border-style:dashed;background:#f8f5f4;color:#6d6669}
+.registered-chip:focus-visible{outline:3px solid #a26d85;outline-offset:2px}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}
