@@ -818,6 +818,206 @@
           ],
           "registrationStatus": "official-listed-pending-product-registration",
           "officialSource": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+        },
+        {
+          "brandId": null,
+          "name": "NATURE&CO",
+          "aliases": [
+            "NATURE&CO"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "米肌",
+          "aliases": [
+            "米肌"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "マニフィーク",
+          "aliases": [
+            "マニフィーク"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "ソフティモ",
+          "aliases": [
+            "ソフティモ"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "セラミエイド",
+          "aliases": [
+            "セラミエイド"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "クリアターン",
+          "aliases": [
+            "クリアターン"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "サンカット",
+          "aliases": [
+            "サンカット"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "ビオリス",
+          "aliases": [
+            "ビオリス"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "ウルミナプラス",
+          "aliases": [
+            "ウルミナプラス"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "エスカラット",
+          "aliases": [
+            "エスカラット"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "デオカラット",
+          "aliases": [
+            "デオカラット"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "コエンリッチ",
+          "aliases": [
+            "コエンリッチ"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "ドクターフィル コスメティクス",
+          "aliases": [
+            "ドクターフィル コスメティクス"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "フローラノーティス ジルスチュアート",
+          "aliases": [
+            "フローラノーティス ジルスチュアート"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "ビタプル",
+          "aliases": [
+            "ビタプル"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "カールキープマジック",
+          "aliases": [
+            "カールキープマジック"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "エスプリーク エクラ",
+          "aliases": [
+            "エスプリーク エクラ"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "キラージュ",
+          "aliases": [
+            "キラージュ"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "フォルミュール",
+          "aliases": [
+            "フォルミュール"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
+        },
+        {
+          "brandId": null,
+          "name": "フィルナチュラント",
+          "aliases": [
+            "フィルナチュラント"
+          ],
+          "registrationStatus": "official-catalog-listed-products-unverified",
+          "officialSource": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+          "sourceCheckedAt": "2026-10-31"
         }
       ]
     },
@@ -1140,9 +1340,10 @@
           "aliases": [
             "do organic"
           ],
-          "registrationStatus": "historical-official-listing-current-status-unverified",
-          "officialSource": "https://www.chifure.co.jp/news/20201015",
-          "sourcePublishedAt": "2020-10-15"
+          "registrationStatus": "official-current-retail-listed",
+          "officialSource": "https://www.chifure.co.jp/news/i02_20261026",
+          "sourcePublishedAt": "2020-10-15",
+          "sourceCheckedAt": "2026-10-31"
         },
         {
           "brandId": null,
@@ -1150,9 +1351,10 @@
           "aliases": [
             "do natural"
           ],
-          "registrationStatus": "historical-official-listing-current-status-unverified",
-          "officialSource": "https://www.chifure.co.jp/news/20201015",
-          "sourcePublishedAt": "2020-10-15"
+          "registrationStatus": "official-current-retail-listed",
+          "officialSource": "https://www.chifure.co.jp/news/i02_20261026",
+          "sourcePublishedAt": "2020-10-15",
+          "sourceCheckedAt": "2026-10-31"
         },
         {
           "brandId": null,
@@ -1160,9 +1362,10 @@
           "aliases": [
             "BEAUTY UP TOOL"
           ],
-          "registrationStatus": "historical-official-listing-current-status-unverified",
-          "officialSource": "https://www.chifure.co.jp/news/20201015",
-          "sourcePublishedAt": "2020-10-15"
+          "registrationStatus": "official-current-retail-listed",
+          "officialSource": "https://www.chifure.co.jp/news/i02_20261026",
+          "sourcePublishedAt": "2020-10-15",
+          "sourceCheckedAt": "2026-10-31"
         }
       ]
     },
@@ -1200,8 +1403,8 @@
           "aliases": [
             "BRANCHIC"
           ],
-          "registrationStatus": "historical-official-listing-current-status-unverified",
-          "officialSource": "https://www.fancl.jp/news/20240094/news_20240094.html",
+          "registrationStatus": "official-product-announced-2025-current-sales-unverified",
+          "officialSource": "https://www.fancl.jp/news/20250034/news_20250034.html",
           "note": "2024年公式発表。現在の販売状況は別途確認が必要"
         },
         {
@@ -2386,8 +2589,8 @@
       ]
     }
   ],
-  "officialExpansionCount": 78,
-  "directoryBrandCount": 225,
+  "officialExpansionCount": 98,
+  "directoryBrandCount": 245,
   "officialExpansionSources": [
     {
       "maker": "資生堂",
@@ -2417,6 +2620,11 @@
     {
       "maker": "ファンケル",
       "url": "https://www.fancl.jp/news/20240094/news_20240094.html"
+    },
+    {
+      "maker": "コーセー",
+      "url": "https://maison.kose.co.jp/site/p/brandlist.aspx",
+      "checkedAt": "2026-10-31"
     }
   ]
 }
