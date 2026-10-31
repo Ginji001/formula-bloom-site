@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-31T00:17:00.700Z",
+  "brandCount": 147,
+  "siteCandidateCount": 47,
+  "sitesWithReachableHead": 46,
+  "brandsWithIngredientRecords": 24,
+  "brandsWithoutIngredientRecords": 123,
+  "allBrandProductsVerified": false,
+  "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
+  "brands": [
+    {
+      "brandId": 1,
+      "brand": "資生堂",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 2,
+      "brand": "エリクシール",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 3,
+      "brand": "アネッサ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 4,
+      "brand": "dプログラム",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 5,
+      "brand": "イハダ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 5,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 6,
+      "brand": "アクアレーベル",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 7,
+      "brand": "HAKU",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 8,
+      "brand": "マキアージュ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 9,
+      "brand": "インテグレート",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 10,
+      "brand": "マジョリカ マジョルカ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 11,
+      "brand": "クレ・ド・ポー ボーテ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 12,
+      "brand": "ベネフィーク",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 13,
+      "brand": "プリオール",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 14,
+      "brand": "リバイタル",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 15,
+      "brand": "インウイ",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 16,
+      "brand": "BAUM",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 17,
+      "brand": "IPSA",
+      "sourceCandidate": "https://www.shiseido.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 18,
+      "brand": "花王",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 19,
+      "brand": "キュレル",
+      "sourceCandidate": "https://www.kao-kirei.com/ja/official/curel/products/skincare_moisturizers/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 5,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 20,
+      "brand": "ビオレ",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 21,
+      "brand": "ソフィーナ iP",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 22,
+      "brand": "エスト",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 23,
+      "brand": "カネボウ",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 24,
+      "brand": "スイサイ",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 25,
+      "brand": "DEW",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 26,
+      "brand": "ALBLANC",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 27,
+      "brand": "KATE",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 28,
+      "brand": "ALLIE",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 29,
+      "brand": "LUNASOL",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 30,
+      "brand": "freeplus",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 31,
+      "brand": "Primavista",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 32,
+      "brand": "TWANY",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 33,
+      "brand": "LISSAGE",
+      "sourceCandidate": "https://www.kao-kirei.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 34,
+      "brand": "コーセー",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 35,
+      "brand": "雪肌精",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 36,
+      "brand": "コスメデコルテ",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 37,
+      "brand": "ONE BY KOSE",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 38,
+      "brand": "ヴィセ",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 39,
+      "brand": "エスプリーク",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 40,
+      "brand": "ADDICTION",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 41,
+      "brand": "ジルスチュアート",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 42,
+      "brand": "プレディア",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 43,
+      "brand": "セラムヴェール",
+      "sourceCandidate": "https://www.kose.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 44,
+      "brand": "ロート製薬",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 45,
+      "brand": "肌ラボ",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 46,
+      "brand": "メラノCC",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 2,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 47,
+      "brand": "ケアセラ",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 48,
+      "brand": "オバジ",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 49,
+      "brand": "スキンアクア",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 50,
+      "brand": "デオコ",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 2,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 51,
+      "brand": "50の恵",
+      "sourceCandidate": "https://www.shop.rohto.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 2,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 52,
+      "brand": "ちふれ",
+      "sourceCandidate": "https://www.chifure.co.jp/products/skinlotion/2871",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 6,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 53,
+      "brand": "綾花",
+      "sourceCandidate": "https://www.chifure.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 54,
+      "brand": "HIKARIMIRAI",
+      "sourceCandidate": "https://www.chifure.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 55,
+      "brand": "オルビス",
+      "sourceCandidate": "https://www.orbis.co.jp/small/1201010/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 3,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 56,
+      "brand": "ファンケル",
+      "sourceCandidate": "https://www.fancl.co.jp/beauty/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 57,
+      "brand": "ポーラ",
+      "sourceCandidate": "https://www.pola.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 58,
+      "brand": "B.A",
+      "sourceCandidate": "https://www.pola.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 59,
+      "brand": "リンクルショット",
+      "sourceCandidate": "https://www.pola.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 60,
+      "brand": "アテニア",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 61,
+      "brand": "DHC",
+      "sourceCandidate": "https://www.dhc.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 62,
+      "brand": "無印良品",
+      "sourceCandidate": "https://www.muji.com/",
+      "sourceStatus": "unreachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 63,
+      "brand": "トゥヴェール",
+      "sourceCandidate": "https://www.tvert.jp/shop",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 2,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 64,
+      "brand": "アスタリフト",
+      "sourceCandidate": "https://www.fujifilm.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 65,
+      "brand": "ルナメア",
+      "sourceCandidate": "https://www.fujifilm.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 66,
+      "brand": "ミノン",
+      "sourceCandidate": "https://www.daiichisankyo-hc.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 67,
+      "brand": "トランシーノ",
+      "sourceCandidate": "https://www.daiichisankyo-hc.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 68,
+      "brand": "ノブ",
+      "sourceCandidate": "https://noevirgroup.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 69,
+      "brand": "サナ",
+      "sourceCandidate": "https://noevirgroup.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 70,
+      "brand": "なめらか本舗",
+      "sourceCandidate": "https://noevirgroup.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 71,
+      "brand": "エクセル",
+      "sourceCandidate": "https://noevirgroup.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 72,
+      "brand": "肌美精",
+      "sourceCandidate": "https://www.kracie.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 73,
+      "brand": "ナイーブ",
+      "sourceCandidate": "https://www.kracie.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 74,
+      "brand": "いち髪",
+      "sourceCandidate": "https://www.kracie.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 75,
+      "brand": "ギャツビー",
+      "sourceCandidate": "https://www.mandom.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 76,
+      "brand": "ルシード",
+      "sourceCandidate": "https://www.mandom.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 77,
+      "brand": "ビフェスタ",
+      "sourceCandidate": "https://www.mandom.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 78,
+      "brand": "セザンヌ",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 131,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 79,
+      "brand": "キャンメイク",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 6,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 80,
+      "brand": "ラネージュ",
+      "sourceCandidate": "https://jp.laneige.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 81,
+      "brand": "イニスフリー",
+      "sourceCandidate": "https://www.innisfree.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 82,
+      "brand": "エチュード",
+      "sourceCandidate": "https://etude.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 83,
+      "brand": "エストラ",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 84,
+      "brand": "ヘラ",
+      "sourceCandidate": "https://jp.hera.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 85,
+      "brand": "ソルファス",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 86,
+      "brand": "プリメラ",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 87,
+      "brand": "IOPE",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 88,
+      "brand": "ハンユル",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 89,
+      "brand": "マモンド",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 90,
+      "brand": "イリユン",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 91,
+      "brand": "エスポア",
+      "sourceCandidate": "https://www.apgroup.com/jp/ja/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 92,
+      "brand": "CNP",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 93,
+      "brand": "ビリーフ",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 94,
+      "brand": "ザ・フェイスショップ",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 95,
+      "brand": "VDL",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 96,
+      "brand": "ザ・フー",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 97,
+      "brand": "ビヨンド",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 98,
+      "brand": "アヌア",
+      "sourceCandidate": "https://www.anuashop.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 99,
+      "brand": "ラウンドラボ",
+      "sourceCandidate": "https://roundlab.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 100,
+      "brand": "COSRX",
+      "sourceCandidate": "https://www.cosrx.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 101,
+      "brand": "Beauty of Joseon",
+      "sourceCandidate": "https://beautyofjoseon.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 102,
+      "brand": "SKIN1004",
+      "sourceCandidate": "https://www.skin1004.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 103,
+      "brand": "MEDIHEAL",
+      "sourceCandidate": "https://mediheal.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 104,
+      "brand": "mixsoon",
+      "sourceCandidate": "https://mixsoon.us/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 105,
+      "brand": "Torriden",
+      "sourceCandidate": "https://torriden.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 106,
+      "brand": "VT",
+      "sourceCandidate": "https://www.vtcosmetics.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 107,
+      "brand": "numbuzin",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 108,
+      "brand": "Dr.G",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 109,
+      "brand": "Dr.Jart+",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 110,
+      "brand": "ma:nyo",
+      "sourceCandidate": "https://manyo-japanese.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 111,
+      "brand": "medicube",
+      "sourceCandidate": "https://medicube.us/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 112,
+      "brand": "TIRTIR",
+      "sourceCandidate": "https://tirtir.global/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 113,
+      "brand": "d'Alba",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 114,
+      "brand": "Abib",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 115,
+      "brand": "Isntree",
+      "sourceCandidate": "https://isntree-global.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 116,
+      "brand": "SOME BY MI",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 117,
+      "brand": "PURITO",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 118,
+      "brand": "SKINFOOD",
+      "sourceCandidate": "https://www.skinfood.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 119,
+      "brand": "MISSHA",
+      "sourceCandidate": "https://www.missha.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 120,
+      "brand": "A’pieu",
+      "sourceCandidate": "https://www.missha.co.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 121,
+      "brand": "CLIO",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 122,
+      "brand": "peripera",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 123,
+      "brand": "goodal",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 124,
+      "brand": "rom&nd",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 125,
+      "brand": "3CE",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 126,
+      "brand": "BANILA CO",
+      "sourceCandidate": "https://banilausa.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 127,
+      "brand": "AHC",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 128,
+      "brand": "celimax",
+      "sourceCandidate": "https://celimax.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 129,
+      "brand": "Dr.Althea",
+      "sourceCandidate": "https://doctoraltheaglobal.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 130,
+      "brand": "BIODANCE",
+      "sourceCandidate": "https://biodance.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 131,
+      "brand": "beplain",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 132,
+      "brand": "haruharu wonder",
+      "sourceCandidate": "https://haruharuwonder.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 133,
+      "brand": "AXIS-Y",
+      "sourceCandidate": "https://axis-y.com/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 134,
+      "brand": "TOCOBO",
+      "sourceCandidate": "https://tocobo.us/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 135,
+      "brand": "heimish",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 136,
+      "brand": "Benton",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 137,
+      "brand": "iUNIK",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 138,
+      "brand": "WELLAGE",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 139,
+      "brand": "BIOHEAL BOH",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 140,
+      "brand": "Dr.Ceuracle",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 141,
+      "brand": "Centellian24",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 142,
+      "brand": "fwee",
+      "sourceCandidate": "https://fwee.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+    },
+    {
+      "brandId": 143,
+      "brand": "hince",
+      "sourceCandidate": "https://hince.jp/",
+      "sourceStatus": "reachable",
+      "ingredientRecordCount": 1,
+      "allProductsCovered": false,
+      "nextAction": "verify-unlisted-products-and-variants"
+    },
+    {
+      "brandId": 144,
+      "brand": "dasique",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 145,
+      "brand": "WAKEMAKE",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 146,
+      "brand": "AMUSE",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    },
+    {
+      "brandId": 147,
+      "brand": "REJURAN",
+      "sourceCandidate": null,
+      "sourceStatus": "no-source-registered",
+      "ingredientRecordCount": 0,
+      "allProductsCovered": false,
+      "nextAction": "discover-japan-market-sales-source"
+    }
+  ]
+}

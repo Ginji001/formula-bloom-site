@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T00:08:28.015Z",
+  "generatedAt": "2026-10-31T00:21:05.248Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 21,
-  "brandsWithoutSavedFormulas": 126,
-  "savedFormulaCount": 172,
-  "registeredCandidateCount": 172,
+  "brandsWithSavedFormulas": 24,
+  "brandsWithoutSavedFormulas": 123,
+  "savedFormulaCount": 178,
+  "registeredCandidateCount": 178,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -666,12 +666,33 @@
       "brand": "メラノCC",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 2,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "jp-rohto-198900",
+          "productName": "薬用しみ対策 美白化粧水",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "quasi",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198900.html",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "jp-rohto-198924",
+          "productName": "薬用しみ対策 美白化粧水しっとりタイプ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "quasi",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/melanocc/198924.html",
+          "ingredientCount": 23
+        }
+      ]
     },
     {
       "brandId": 47,
@@ -747,24 +768,66 @@
       "brand": "デオコ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 2,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "jp-rohto-193943",
+          "productName": "スカルプケアシャンプー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193943.html",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "jp-rohto-193967",
+          "productName": "スカルプケアコンディショナー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/deoco/193967.html",
+          "ingredientCount": 38
+        }
+      ]
     },
     {
       "brandId": 51,
       "brand": "50の恵",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
-      "status": "no-saved-formula",
+      "savedFormulaCount": 2,
+      "registeredCandidateCount": 2,
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "jp-rohto-132973",
+          "productName": "コラーゲン養潤液",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/132973.html",
+          "ingredientCount": 65
+        },
+        {
+          "productId": "jp-rohto-133192",
+          "productName": "コラーゲン養潤クリーム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T09:16:25+09:00",
+          "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/50megumi/133192.html",
+          "ingredientCount": 67
+        }
+      ]
     },
     {
       "brandId": 52,
