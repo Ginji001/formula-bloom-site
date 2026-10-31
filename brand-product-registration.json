@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T13:47:10.144Z",
+  "generatedAt": "2026-10-31T13:51:16.315Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 108,
@@ -4913,7 +4913,7 @@
           "kind": "cosmetic",
           "volume": "50mL",
           "sku": null,
-          "jan": null,
+          "jan": "8809913834557",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
