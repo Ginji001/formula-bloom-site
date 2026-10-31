@@ -291,6 +291,13 @@
           "name": "ザ・タイムR アクア e",
           "url": "https://www.ipsa.co.jp/products/bestseller/43828.html",
           "variant": null
+        },
+        {
+          "name": "スキンフレグランスジェル 02 澄んだ陽の光",
+          "url": "https://www.ipsa.co.jp/products/balancecare/fragrance/SF2506F.html?color=02+%E6%BE%84%E3%82%93%E3%81%A0%E9%99%BD%E3%81%AE%E5%85%89&lang=ja-JP&pid=43819",
+          "variant": "02 澄んだ陽の光",
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://www.ipsa.co.jp/static/wh/information/terms/terms.html"
         }
       ],
       "ingredientNames": [],
@@ -459,6 +466,13 @@
           "name": "薬用ディープクレンジングオイル リニューブライト",
           "url": "https://www.dhc.co.jp/goods/23476.html",
           "variant": null
+        },
+        {
+          "name": "DHCクリームクレンジング",
+          "url": "https://www.dhc.co.jp/goods/23411M.html",
+          "variant": null,
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://www.dhc.co.jp/guide/page_guide_terms.html"
         }
       ],
       "ingredientNames": [],
@@ -851,7 +865,10 @@
         {
           "name": "プロP セラム",
           "url": "https://cnp-laboratory.jp/item/104/",
-          "variant": null
+          "variant": null,
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://stefany.co.jp/shop/pages/agreement.aspx",
+          "reviewedSourceUrl": "https://stefany.co.jp/shop/g/gW1000142/"
         }
       ],
       "ingredientNames": [],
@@ -880,7 +897,15 @@
       "brandId": 93,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ザ トゥルー クリーム アクアボム",
+          "url": "https://stefany.co.jp/shop/g/gW1000723/",
+          "variant": null,
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://stefany.co.jp/shop/pages/agreement.aspx"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [

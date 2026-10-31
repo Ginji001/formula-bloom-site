@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T11:47:47.217Z",
+  "generatedAt": "2026-10-31T12:17:06.128Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 102,
-  "brandsWithPendingProductNames": 45,
-  "productNameRecords": 273,
+  "brandsWithRegisteredProductNames": 103,
+  "brandsWithPendingProductNames": 44,
+  "productNameRecords": 276,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -621,7 +621,7 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -637,6 +637,19 @@
           "kind": "quasi",
           "volume": "200mL",
           "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc51-ipsa-fragrance-gel-02",
+          "productName": "スキンフレグランスジェル 02 澄んだ陽の光",
+          "series": null,
+          "productType": null,
+          "variant": "02 澄んだ陽の光",
+          "sourceUrl": "https://www.ipsa.co.jp/products/balancecare/fragrance/SF2506F.html?color=02+%E6%BE%84%E3%82%93%E3%81%A0%E9%99%BD%E3%81%AE%E5%85%89&lang=ja-JP&pid=43819",
+          "kind": "cosmetic",
+          "volume": "25mL",
+          "sku": "43819",
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
         }
@@ -2058,7 +2071,7 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -2075,6 +2088,19 @@
           "volume": "200mL",
           "sku": null,
           "jan": "4511413529652",
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc51-dhc-cream-cleansing-120g",
+          "productName": "DHCクリームクレンジング",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.dhc.co.jp/goods/23411M.html",
+          "kind": "cosmetic",
+          "volume": "120g",
+          "sku": "23411",
+          "jan": "4511413529102",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -4649,13 +4675,27 @@
       "maker": "LG生活健康",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc51-belif-aqua-bomb-50g",
+          "productName": "ザ トゥルー クリーム アクアボム",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://stefany.co.jp/shop/g/gW1000723/",
+          "kind": "cosmetic",
+          "volume": "50g",
+          "sku": "W1000723",
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 94,
