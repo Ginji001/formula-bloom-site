@@ -8,6 +8,7 @@ import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProdu
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
+import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciNames} from './inci-reference-evidence.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
@@ -25,7 +26,7 @@ let lookupVersion=0,lookupAbort=null,typingTimer=null;
 function beginLookup(){lookupAbort?.abort();lookupAbort=new AbortController();return {version:++lookupVersion,signal:lookupAbort.signal};}
 function busy(value){$('searchBtn').disabled=value;$('fetchOfficial').disabled=value;$('searchBtn').textContent=value?'検索中…':'商品を探す ↗';$('search').setAttribute('aria-busy',String(value));}
 const $=id=>document.getElementById(id);let remoteProduct=null;let current=[],selected='root',inputMode='search',official=false,ocrRequired=false,worker,report='',reportCore='',bloomRecommendation=null,posterState=null;
-const japaneseName=x=>japaneseIngredientLabel(x.name,{kind:$('kind').value})||'日本語表示名未確認';
+const japaneseName=x=>remoteProduct?.englishInciReference?x.name:(japaneseIngredientLabel(x.name,{kind:$('kind').value})||'日本語表示名未確認');
 const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 $('guideParts').innerHTML=groups.map(([,name,title,desc])=>`<div><b>${name}</b><p>${title}<br>${desc}</p></div>`).join('');
 function tab(name){lookupAbort?.abort();++lookupVersion;clearTimeout(typingTimer);busy(false);inputMode=name;if(name!=='image')hideOCRReview();else if(ocrRequired)refreshOCRReview();document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===name)));document.querySelectorAll('.pane').forEach(p=>p.hidden=p.id!==name);$('editorDetails').open=name!=='search';}
@@ -38,6 +39,11 @@ let partialEvidencePromise=null;
 function partialEvidence(){
  if(!partialEvidencePromise)partialEvidencePromise=getJSON('/partial-ingredient-evidence.json').then(validatePartialEvidence).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
+}
+let englishInciEvidencePromise=null;
+function englishInciEvidence(){
+ if(!englishInciEvidencePromise)englishInciEvidencePromise=getJSON('/inci-reference-evidence.json').then(validateInciReferenceEvidence).catch(e=>{englishInciEvidencePromise=null;throw e;});
+ return englishInciEvidencePromise;
 }
 let formulaArchivePromise=null;
 function formulaArchive(){
@@ -350,6 +356,73 @@ function useKnownIngredients(item,names,{sourceUrl='',scope='利用者入力の�
   run();
   if(!$('error').textContent)$('officialStatus').textContent='判明した成分だけで参考の花を表示しました。全成分を再現したものではありません。';
 }
+function useEnglishInciReference(item,names,{sourceUrl='',checkedOn='未確認',scope='利用者が英語INCIを自己確認・第三者未検証'}={}){
+ const clean=reviewEnglishInciNames(names.join('、'));
+ invalidate();official=false;ocrRequired=false;
+ remoteProduct={
+   name:item.brand+' '+item.name,sourceType:'english-inci-reference',
+   documentedPartial:true,englishInciReference:true,
+   partialEvidenceScope:'【英語INCI参考・国内版未確認】'+scope,
+   partialCheckedOn:checkedOn,partialSourceUrl:sourceUrl,
+   japanMarketConfirmed:false,region:'global',url:sourceUrl||'',
+   kind:item.kind||'unsure',
+   order:'英語INCI抜粋・配合順不明・国内向け全成分未確認',
+   ingredients:clean.join('、'),rows:[],label:'海外・英語INCI参考のみ'
+ };
+ $('ingredients').value=remoteProduct.ingredients;
+ $('origin').textContent='英語INCI参考のみ・国内版の配合順ではありません';
+ $('kind').value=item.kind==='quasi'?'quasi':item.kind==='cosmetic'?'cosmetic':'unsure';
+ $('japanConfirmed').checked=false;
+ $('sourceInfo').replaceChildren();
+ const msg=document.createElement('p');msg.className='muted';
+ msg.textContent='【海外/英語INCIの参考】'+clean.length+'成分だけを役割分類。これは日本国内向けの成分表示ではなく、国内処方・現物ラベルとの一致は未確認です。全成分・濃度・配合順・有効性は判断できず、画像保存・履歴登録もできません。';
+ $('sourceInfo').append(msg);
+ if(sourceUrl)sourceLink($('sourceInfo'),sourceUrl,'英語INCI参考元（国内処方の証明ではありません）');
+ sourceLink($('sourceInfo'),item.url,'日本国内向け商品名の出典（英語参考元とは別）');
+ run();
+ if(!$('error').textContent)$('officialStatus').textContent='海外公式・英語INCI参考の部分的な花を表示しました。日本向け処方を再現していません。';
+}
+function showEnglishInciChoices(container,item,version){
+ englishInciEvidence().then(records=>{
+  if(version!==lookupVersion)return;
+  const record=inciReferenceForProduct(records,item);
+  if(!record)return;
+  const info=document.createElement('p');info.className='muted';
+  info.textContent='英語INCIの参考記録 '+record.ingredients.length+'成分（'+(record.sourceMarket==='japan-facing-official-english'?'日本向け公式サイトの英語欄':'海外メーカー公式')+'）。日本版の全成分・処方の一致は未確認です。';
+  const btn=document.createElement('button');btn.type='button';btn.className='secondary';
+  btn.textContent='英語INCIの参考の花を表示（国内版未確認）';
+  btn.onclick=()=>useEnglishInciReference(item,record.ingredients,{
+   sourceUrl:record.sourceUrl,checkedOn:record.checkedOn,
+   scope:'メーカー英語成分抜粋・'+record.sourceMarket+'／'+record.note
+  });
+  container.append(info,btn);
+  sourceLink(container,record.sourceUrl,'英語INCI参考元');
+ }).catch(()=>{if(version===lookupVersion){const p=document.createElement('p');p.className='muted';p.textContent='英語INCI参考資料を読み込めません。日本語成分の解析は引き続き利用できます。';container.append(p);}});
+}
+function showEnglishInciInput(container,item){
+ const detail=document.createElement('details');detail.className='partial-ingredient-editor';
+ const summary=document.createElement('summary');summary.textContent='確認した英語INCIで参考の花を作る';detail.append(summary);
+ const guide=document.createElement('p');guide.className='muted';
+ guide.textContent='海外版と日本版の処方は同一とみなしません。原文で確認した英語INCI名2～30件だけを入力してください。入力は保存・送信されず、全成分として登録されません。';
+ detail.append(guide);
+ const label=document.createElement('label');label.textContent='英語INCI名（カンマ、改行または「、」区切り）';
+ const input=document.createElement('textarea');input.rows=3;input.maxLength=2400;input.placeholder='例：Water, Glycerin, Niacinamide';
+ detail.append(label,input);
+ const sourceLabel=document.createElement('label');sourceLabel.textContent='英語成分表の出典URL（任意）';
+ const source=document.createElement('input');source.type='url';source.placeholder='https://...';detail.append(sourceLabel,source);
+ const confirm=document.createElement('label');confirm.className='check';const checkbox=document.createElement('input');checkbox.type='checkbox';
+ confirm.append(checkbox,document.createTextNode(' 英語原文と商品系列を確認した。国内処方との一致を主張しない'));
+ detail.append(confirm);
+ const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='英語INCIの参考の花を表示';
+ const status=document.createElement('p');status.className='muted';status.setAttribute('role','status');
+ btn.onclick=()=>{try{
+  if(!checkbox.checked)throw Error('英語の原文と国内版との相違について確認してください。');
+  const url=source.value.trim();
+  if(url&&!/^https:\/\//i.test(url))throw Error('出典URLはHTTPSを指定してください。');
+  useEnglishInciReference(item,reviewEnglishInciNames(input.value),{sourceUrl:url,scope:'利用者の原文照合申告・商品と国内版の一致は未検証'});
+ }catch(e){status.textContent=e.message;}};
+ detail.append(btn,status);container.append(detail);
+}
 function showPartialInput(container,item,record){
  const wrap=document.createElement('details');wrap.className='partial-ingredient-editor';
  const summary=document.createElement('summary');summary.textContent='自分で確認した一部成分から花にする';
@@ -381,6 +454,8 @@ function showPartialInput(container,item,record){
 }
 function showPartialChoices(container,item){
  const version=lookupVersion;
+ showEnglishInciChoices(container,item,version);
+ showEnglishInciInput(container,item);
  partialEvidence().then(records=>{
   if(version!==lookupVersion)return;
   const record=partialForProduct(records,item);
@@ -688,10 +763,10 @@ function showAutomaticFlower(){
   if(remoteProduct?.documentedPartial){
     $('formulaSignature').hidden=true;
     $('formulaAim').hidden=true;
-    $('flowerTypeTag').textContent='参考：判明成分だけの花';
+    $('flowerTypeTag').textContent=remoteProduct.englishInciReference?'参考：英語INCIの花・国内処方未確認':'参考：判明成分だけの花';
     $('flowerTypeReason').textContent='確認できた成分名に対応する花の比喩です。未確認の成分が多数あり、処方の特徴・濃度・効果・安全性・優劣・配合順・全成分の割合は判断できません。';
     $('flowerCaptionNote').textContent='判明した成分だけの参考表示。全成分と実際の処方の特徴は未確認です。';
-    report='処方の花【部分表示・全成分ではありません】\n'+remoteProduct.name+'\n判明成分（配合順不明）：\n'+current.map(x=>japaneseName(x)+' / '+x.role).join('\n')+'\n確認元：'+(remoteProduct.partialSourceUrl||'利用者が個別確認・第三者未検証')+'\n未確認成分が存在し、成分数は配合割合を表しません。花は学習用の比喩であり濃度・有効性・品質・安全性・処方全体の評価ではありません。';
+    report=(remoteProduct.englishInciReference?'処方の花【海外英語INCI参考・国内向け処方未確認・部分表示】\n':'')+'処方の花【部分表示・全成分ではありません】\n'+remoteProduct.name+'\n判明成分（配合順不明）：\n'+current.map(x=>japaneseName(x)+' / '+x.role).join('\n')+'\n確認元：'+(remoteProduct.partialSourceUrl||'利用者が個別確認・第三者未検証')+'\n未確認成分が存在し、成分数は配合割合を表しません。花は学習用の比喩であり濃度・有効性・品質・安全性・処方全体の評価ではありません。';
     part(selected);
     return;
   }
@@ -707,9 +782,10 @@ function showAutomaticFlower(){
   report=reportCore+'\n\n出典・処方: '+$('sourceQuality').textContent+'\n\nこの処方ならではの特徴（成分からの推論）:\n'+signatureText+'\n表示成分名だけからの仮説であり、濃度・性能・メーカー意図は未確認。\n\n処方の狙い（成分からの推定）: '+intent+'\n花の種類: '+flower.name+'（自動判定）\n選定理由: '+choice.reasons.join(' ')+'\n花種は視覚的比喩であり、処方の効果・安全性・配合濃度を評価しません。';
   part(selected);
 }
-function run(){try{$('error').textContent='';const unconfirmedPreview=!official&&!remoteProduct;if(!official&&!remoteProduct&&!isJapaneseIngredientsList($('ingredients').value))throw Error('日本向け容器・外箱に記載された日本語の成分名を入力してください。海外版INCIや英語の成分表では解析できません。');const unsureKind=$('kind').value==='unsure';if(ocrRequired&&!$('ocrChecked').checked)throw Error('写真と読み取り結果を確認・修正し、チェックを入れてください。');if(remoteProduct&&!remoteProduct.japanMarketConfirmed&&!remoteProduct.documentedPartial)throw Error('日本向け成分表示を確認できない商品は解析できません。');const result=analyze($('ingredients').value);current=result;$('sourceQuality').textContent=unconfirmedPreview?'確認前の日本語成分名を参考分類。国内向け製品との一致・全成分の網羅性は未確認です。':remoteProduct?.documentedPartial?('部分表示：'+remoteProduct.partialEvidenceScope+'／判明した成分名のみ '+current.length+'件／配合順不明／全成分と現物ラベル未確認／確認日 '+(remoteProduct.partialCheckedOn||'未確認')):remoteProduct?provenanceText(provenance(remoteProduct)):official?'収録サンプル：'+product.name+'／メーカーの配合目的別表・配合順ではありません／出典：'+SOURCE:'利用者入力：メーカー公式原文・販売地域・処方バージョンは未確認です。';if(remoteProduct){for(const x of current){const row=remoteProduct.rows.find(r=>normalize(r.name)===normalize(x.name));if(row){const role=row.role;const mapped=/基剤/.test(role)?'root':/保湿|エモリエント|保護/.test(role)?'leaf':/乳化|可溶化|増粘|防腐|調整|酸化防止|キレート|安定/.test(role)?'stem':/着香|香料|感触/.test(role)?'scent':/整肌/.test(role)?'petal':null;if(mapped)x.group=mapped;x.role=row.role;x.evidence=row.evidence||'公式ページに記載された配合目的。分類は本アプリの解釈。';x.url=remoteProduct.url;}}}bloomRecommendation=recommendFlower(current);selected='petal';const counts=groups.map(([id])=>current.filter(x=>x.group===id).length),unknown=current.filter(x=>x.group==='unknown').length;const leaf=counts[2]>0;const known=current.length-unknown;const missingJapanese=current.filter(x=>japaneseName(x)==='日本語表示名未確認').length;$('flowerTitle').textContent=remoteProduct?.documentedPartial?'確認できた成分だけの花（部分表示）':known?(unknown?'確認できた成分の花':leaf?'うるおいの葉を広げる、一輪。':'土台と構造から、処方を眺める。'):'まだ、花のかたちはわかりません。';$('flowerSubtitle').textContent=remoteProduct?(productJapaneseAid(remoteProduct.name)?productJapaneseAid(remoteProduct.name)+'（公式名：'+remoteProduct.name+'）':remoteProduct.name):official?product.name:'入力された成分からの、役割の仮説です。';$('resultBadge').textContent=(remoteProduct?.documentedPartial?'部分表示・':unconfirmedPreview?'参考：':'')+`${known} / ${current.length}成分を分類`;$('analysisDetails').hidden=false;$('uncertainty').textContent=(unconfirmedPreview?'参考／':'')+
+function run(){try{$('error').textContent='';const unconfirmedPreview=!official&&!remoteProduct;if(!official&&!remoteProduct&&!isJapaneseIngredientsList($('ingredients').value))throw Error('日本向け容器・外箱に記載された日本語の成分名を入力してください。海外版INCIや英語の成分表では解析できません。');const unsureKind=$('kind').value==='unsure';if(ocrRequired&&!$('ocrChecked').checked)throw Error('写真と読み取り結果を確認・修正し、チェックを入れてください。');if(remoteProduct&&!remoteProduct.japanMarketConfirmed&&!remoteProduct.documentedPartial)throw Error('日本向け成分表示を確認できない商品は解析できません。');const result=analyze($('ingredients').value);current=result;$('sourceQuality').textContent=unconfirmedPreview?'確認前の日本語成分名を参考分類。国内向け製品との一致・全成分の網羅性は未確認です。':remoteProduct?.documentedPartial?('部分表示：'+remoteProduct.partialEvidenceScope+'／判明した成分名のみ '+current.length+'件／配合順不明／全成分と現物ラベル未確認／確認日 '+(remoteProduct.partialCheckedOn||'未確認')):remoteProduct?provenanceText(provenance(remoteProduct)):official?'収録サンプル：'+product.name+'／メーカーの配合目的別表・配合順ではありません／出典：'+SOURCE:'利用者入力：メーカー公式原文・販売地域・処方バージョンは未確認です。';if(remoteProduct){for(const x of current){const row=remoteProduct.rows.find(r=>normalize(r.name)===normalize(x.name));if(row){const role=row.role;const mapped=/基剤/.test(role)?'root':/保湿|エモリエント|保護/.test(role)?'leaf':/乳化|可溶化|増粘|防腐|調整|酸化防止|キレート|安定/.test(role)?'stem':/着香|香料|感触/.test(role)?'scent':/整肌/.test(role)?'petal':null;if(mapped)x.group=mapped;x.role=row.role;x.evidence=row.evidence||'公式ページに記載された配合目的。分類は本アプリの解釈。';x.url=remoteProduct.url;}}}bloomRecommendation=recommendFlower(current);selected='petal';const counts=groups.map(([id])=>current.filter(x=>x.group===id).length),unknown=current.filter(x=>x.group==='unknown').length;const leaf=counts[2]>0;const known=current.length-unknown;const missingJapanese=remoteProduct?.englishInciReference?0:current.filter(x=>japaneseName(x)==='日本語表示名未確認').length;$('flowerTitle').textContent=remoteProduct?.englishInciReference?'英語INCI参考の花（日本向け処方未確認）':remoteProduct?.documentedPartial?'確認できた成分だけの花（部分表示）':known?(unknown?'確認できた成分の花':leaf?'うるおいの葉を広げる、一輪。':'土台と構造から、処方を眺める。'):'まだ、花のかたちはわかりません。';$('flowerSubtitle').textContent=remoteProduct?(productJapaneseAid(remoteProduct.name)?productJapaneseAid(remoteProduct.name)+'（公式名：'+remoteProduct.name+'）':remoteProduct.name):official?product.name:'入力された成分からの、役割の仮説です。';$('resultBadge').textContent=(remoteProduct?.documentedPartial?'部分表示・':unconfirmedPreview?'参考：':'')+`${known} / ${current.length}成分を分類`;$('analysisDetails').hidden=false;$('uncertainty').textContent=(unconfirmedPreview?'参考／':'')+
  (unsureKind?'製品区分が未確認のため医薬部外品の表示区分・効能は判断しません。／':'')+
- (unknown?`未確認 ${unknown}成分あり・根拠は下で確認できます`:'成分の役割から描いたイメージです');if(remoteProduct?.documentedPartial)$('uncertainty').textContent='【必ず確認】これらは全成分ではありません。未掲載成分は未知であり、花の形や既知成分数から処方全体を推定できません。／'+$('uncertainty').textContent;if($('kind').value==='quasi')$('uncertainty').textContent+='／薬用製品は成分の一般的役割のみを分類。効能・濃度は判定していません。';if(matchMedia('(max-width: 850px)').matches)$('flower').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});const summary=`${counts[0]?`根のベース成分${counts[0]}種`:'ベース骨格は未確認'}、${counts[1]?`茎の構造・安定性成分${counts[1]}種`:'構造成分は未確認'}、${counts[2]?`葉の保湿・保護成分${counts[2]}種`:'保湿・保護成分は未確認'}として読み解きました。${counts[3]?`花びらには機能性・訴求に関わる${counts[3]}種を対応させています。`:'花びらに当たる成分は今回の辞書では確認できません。'}${counts[4]?`香り・使用感に関わる成分は${counts[4]}種です。`:'香り・使用感に関わる成分は未確認です。'} 成分の種類数は配合量や効果の強さを表しません。`;$('summary').textContent=summary;$('coverage').textContent=`分類済み ${known}種 ／ 未確認 ${unknown}種。${missingJapanese?'日本語表示名未確認 '+missingJapanese+'種。':''}多機能の成分を一つの主分類に整理した説明用の図です。`;
+ (unknown?`未確認 ${unknown}成分あり・根拠は下で確認できます`:'成分の役割から描いたイメージです');if(remoteProduct?.englishInciReference)$('uncertainty').textContent='【必ず確認】海外公式等の英語INCI抜粋であり日本国内向け表示ではありません。国内版の処方、現物ラベル、販売地域・色・ロットの一致は未確認です。／'+$('uncertainty').textContent;
+if(remoteProduct?.documentedPartial)$('uncertainty').textContent='【必ず確認】これらは全成分ではありません。未掲載成分は未知であり、花の形や既知成分数から処方全体を推定できません。／'+$('uncertainty').textContent;if($('kind').value==='quasi')$('uncertainty').textContent+='／薬用製品は成分の一般的役割のみを分類。効能・濃度は判定していません。';if(matchMedia('(max-width: 850px)').matches)$('flower').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});const summary=`${counts[0]?`根のベース成分${counts[0]}種`:'ベース骨格は未確認'}、${counts[1]?`茎の構造・安定性成分${counts[1]}種`:'構造成分は未確認'}、${counts[2]?`葉の保湿・保護成分${counts[2]}種`:'保湿・保護成分は未確認'}として読み解きました。${counts[3]?`花びらには機能性・訴求に関わる${counts[3]}種を対応させています。`:'花びらに当たる成分は今回の辞書では確認できません。'}${counts[4]?`香り・使用感に関わる成分は${counts[4]}種です。`:'香り・使用感に関わる成分は未確認です。'} 成分の種類数は配合量や効果の強さを表しません。`;$('summary').textContent=summary;$('coverage').textContent=`分類済み ${known}種 ／ 未確認 ${unknown}種。${missingJapanese?'日本語表示名未確認 '+missingJapanese+'種。':''}多機能の成分を一つの主分類に整理した説明用の図です。`;
 $('boundaryTitle').textContent=$('kind').value==='quasi'?'医薬部外品：1%境界は推定対象外':'位置は推定不能・濃度は表示しません';$('boundaryText').textContent=(official||remoteProduct?.order?.includes('目的別')?'この公式データは配合目的別の表で、配合順ではありません。':'表示順だけでは1%以下になる位置を特定できません。')+' 1%以下の成分と着色剤には順不同の例外があります。防腐剤や増粘剤の位置は考察の手がかりになっても、境界の証拠にはなりません。メーカーの配合量資料がない入力には、数値を補いません。';if($('kind').value==='quasi')$('boundaryText').textContent='この製品は医薬部外品（薬用）として取り扱います。有効成分・その他の成分という表示区分と、化粧品の全成分表示の配合順ルールは同じではありません。成分の並びから1%境界や濃度は推定できず、配合しているだけで有効性を証明するものでもありません。';if(remoteProduct?.documentedPartial)$('boundaryText').textContent='この一覧は判明成分の抜粋であり配合順を保持していません。1%境界、配合濃度、配合量、成分の欠落率は判断できません。医薬部外品の場合も有効成分とその他成分を混同しません。';if(remoteProduct?.region==='global'&&$('kind').value!=='quasi')$('boundaryText').textContent='海外公式版の全成分表示です。販売地域や改良によって国内版と異なる場合があります。日本の表示順ルールをそのまま適用せず、記載順だけで濃度や1%境界を断定しません。';const claim=$('claim').value.trim();$('adText').textContent=claim?`入力された訴求「${claim}」は未検証です。今回の成分分類では、この広告の正確さや効能を判定できません。`:'広告の訴求が未入力のため、個別の比較は行っていません。';$('ingredientRows').innerHTML=current.map(x=>`<tr><td>${x.index+1}${official?'（表順）':''}</td><td>${escape(japaneseName(x))}</td><td>${groups.find(g=>g[0]===x.group)?.[1]||'未確認'} / ${escape(x.role)}</td><td>${escape(official&&x.url===SOURCE?'この製品のメーカー公表目的。花への対応付けは本アプリの解釈。':x.evidence)}${x.url?`<br><a href="${x.url}" target="_blank" rel="noopener">参考出典 ↗</a>`:''}</td></tr>`).join('');buttons();reportCore=`処方の花 / ${new Date().toISOString()}\n${remoteProduct?(productJapaneseAid(remoteProduct.name)?productJapaneseAid(remoteProduct.name)+'（公式名：'+remoteProduct.name+'）':remoteProduct.name):official?product.name:'利用者入力'}\n${summary}\n${$('boundaryText').textContent}\n${$('adText').textContent}\n\n${current.map(x=>`${x.index+1}. ${japaneseName(x)} / ${x.role} / ${x.evidence} ${x.url||''}`).join('\n')}\n\n全成分の出典: ${remoteProduct?.url|| (official?SOURCE:'利用者入力')}\n参考: ${SOURCE}\n濃度・製品効果・安全性は評価していません。`;showAutomaticFlower();if(!remoteProduct?.documentedPartial){historyTools.ready();$('exportImage').disabled=false;$('shareImage').disabled=false;}else{$('exportImage').disabled=true;$('shareImage').disabled=true;} }catch(e){$('error').textContent=e.message;$('editorDetails').open=true;}}
 const historyTools=setupHistoryTools(()=>makeSnapshot({
  name:remoteProduct?.name||(official?product.name:($('query').value.trim()||'利用者入力の処方')),
@@ -839,7 +915,7 @@ $('ocr').onclick=async()=>{if(!photoFile)return;$('ocr').disabled=true;const tar
 // SVGは説明用の画像として扱い、キーボード操作は画面下の実際のボタンに集約。
 for(const [id] of groups){const node=$('visual'+id[0].toUpperCase()+id.slice(1));node.style.cursor='pointer';node.onclick=()=>part(id);}
 
-let brandCatalog=null,brandLoading=false,verifiedBrandCounts=new Map(),partialBrandCounts=new Map(),coverageLoaded=false;
+let brandCatalog=null,brandLoading=false,verifiedBrandCounts=new Map(),partialBrandCounts=new Map(),englishInciBrandCounts=new Map(),coverageLoaded=false;
 function showBrands(){
   if(!brandCatalog)return;
   const query=$('brandFilter').value.trim();
@@ -864,12 +940,14 @@ function showBrands(){
     const meta=document.createElement('small');
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
     const partialCount=partialBrandCounts.get(brand.name)||0;
+    const englishCount=englishInciBrandCounts.get(brand.name)||0;
     const productCount=productFamilies(productsForBrand(brand.name)).length;
     const manufacturerCount=findManufacturerProducts(brand.name).length;
     meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(manufacturerCount?'メーカー検索：系列 '+manufacturerCount+'商品候補 ／ ブランド自身の保存版 '+savedCount+'処方':savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
       productCount?'商品候補 '+productCount+'件／全成分未確認':
       manufacturerCount?'メーカー名／傘下ブランドの商品候補 '+manufacturerCount+'件':'ブランド仮登録済み／商品名未登録');
     if(partialCount)meta.textContent+=' ／ 判明成分のみ '+partialCount+'商品（参考の花）';
+    if(englishCount)meta.textContent+=' ／ 英語INCI参考 '+englishCount+'商品（日本国内向け処方は未確認）';
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);
@@ -879,7 +957,8 @@ function showBrands(){
   const verifiedBrands=[...verifiedBrandCounts].filter(([,count])=>count>0).length;
   const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
   const partialOnly=[...partialBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)).length;
-  $('brandCounts').textContent='登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド。全商品の網羅ではありません。';
+  const englishOnly=[...englishInciBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)&&!partialBrandCounts.get(brand)).length;
+  $('brandCounts').textContent='登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド ／ 英語INCI参考 '+englishOnly+'ブランド（国内未収録に含む）。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。国内販売店の掲載元でも商品名を調べられます。';
 }
 const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧（245件・一部未登録）</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
@@ -893,7 +972,7 @@ $('brandDirectory').ontoggle=async()=>{
   if(!$('brandDirectory').open||brandCatalog||brandLoading)return;
   brandLoading=true;
   try{
-   const [catalog,archive,partials]=await Promise.all([getJSON('/api/brands'),formulaArchive(),partialEvidence().catch(()=>[])]);
+   const [catalog,archive,partials,english]=await Promise.all([getJSON('/api/brands'),formulaArchive(),partialEvidence().catch(()=>[]),englishInciEvidence().catch(()=>[])]);
    brandCatalog=catalog;
    verifiedBrandCounts=new Map();
    for(const record of archive?.records||[]){
@@ -901,6 +980,8 @@ $('brandDirectory').ontoggle=async()=>{
    }
    partialBrandCounts=new Map();
    for(const entry of partials)partialBrandCounts.set(entry.brand,(partialBrandCounts.get(entry.brand)||0)+1);
+   englishInciBrandCounts=new Map();
+   for(const entry of english)englishInciBrandCounts.set(entry.brand,(englishInciBrandCounts.get(entry.brand)||0)+1);
    coverageLoaded=!!archive;
    showBrands();
   }
