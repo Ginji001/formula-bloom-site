@@ -336,7 +336,20 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "ボディソープ（桃の葉エキス配合）ミニ",
+          "volume": "80mL",
+          "status": "参考",
+          "sourceType": "retailer",
+          "sources": [
+            "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901417164605"
+          ],
+          "ingredients": "水、ラウリン酸、ミリスチン酸、パルミチン酸、水酸化Ｋ、デシルグルコシド、グリセリン、塩化Ｋ、ジステアリン酸グリコール、ステアリン酸、モモ葉エキス、サピンヅストリホリアツス果実エキス、オリーブ果実油、ホホバ種子油、グリコシルトレハロース、アセチルグルコサミン、ヒドロキシプロピルメチルセルロース、塩化Ｎａ、ポリクオタニウム－７、ココイルグルタミン酸２Ｎａ、ココイルトレオニンＮａ、ココイルグルタミン酸Ｎａ、ＢＧ、加水分解水添デンプン、ＥＤＴＡ－２Ｎａ、安息香酸Ｎａ、香料",
+          "note": "通販の商品成分欄に掲載された処方の参考転記。ロット・容量・発売年による処方差があるため現物との一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "いち髪",
@@ -351,7 +364,20 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "なめらかスムースケア シャンプー ポンプ",
+          "volume": "450mL",
+          "status": "参考",
+          "sourceType": "retailer",
+          "sources": [
+            "https://www.biccamera.com/bc/item/14807721/"
+          ],
+          "ingredients": "水、ラウロイルサルコシンＴＥＡ、パーム核脂肪酸アミドプロピルベタイン、コカミドメチルＭＥＡ、ラウロイルメチルアラニンＮａ、コカミドＭＥＡ、ジステアリン酸グリコール、コメ胚芽油、サクラ葉エキス、トウキンセンカ花エキス、コメヌカ油、コメヌカエキス、アシタバ葉／茎エキス、ムクロジ果皮エキス、ヒオウギエキス、ツバキ種子エキス、クエン酸、イソペンチルジオール、ヤシ油脂肪酸ＰＥＧ－７グリセリル、塩化Ｎａ、グルタミン酸Ｎａ、ポリクオタニウム－１０、グアーヒドロキシプロピルトリモニウムクロリド、ポリクオタニウム－７、ＢＧ、エタノール、ＥＤＴＡ－２Ｎａ、安息香酸Ｎａ、香料、カラメル",
+          "note": "通販の商品成分欄に掲載された処方の参考転記。ロット・容量・発売年による処方差があるため現物との一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "ソルファス",
@@ -999,6 +1025,6 @@
       "flowerGeneration": "reference-input-only"
     }
   ],
-  "referenceProductCount": 9,
-  "referenceBrandsWithIngredients": 9
+  "referenceProductCount": 11,
+  "referenceBrandsWithIngredients": 11
 }
