@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T02:10:39.836Z",
+  "generatedAt": "2026-10-31T03:11:19.331Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 91,
-  "brandsWithPendingProductNames": 56,
-  "productNameRecords": 253,
+  "brandsWithRegisteredProductNames": 96,
+  "brandsWithPendingProductNames": 51,
+  "productNameRecords": 258,
   "ingredientRecords": 188,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -1710,13 +1710,25 @@
       "maker": "ポーラ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc38-pola",
+          "productName": "アロマエッセゴールド シャンプー N",
+          "variant": null,
+          "sourceUrl": "https://www.pola.co.jp/ec/products/g-V419/",
+          "kind": null,
+          "volume": "470mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 58,
@@ -4290,13 +4302,25 @@
       "maker": "numbuzin",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc38-numbuzin",
+          "productName": "5番 白玉グルタチオンＣ美容液",
+          "variant": null,
+          "sourceUrl": "https://numbuzin.jp/product/5%E7%95%AA-%E7%99%BD%E7%8E%89%E3%82%B0%E3%83%AB%E3%82%BF%E3%83%81%E3%82%AA%E3%83%B3%EF%BC%A3%E7%BE%8E%E5%AE%B9%E6%B6%B2/172/category/119/display/1/",
+          "kind": null,
+          "volume": "30mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 108,
@@ -4358,13 +4382,25 @@
       "maker": "medicube",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://medicube.us/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc38-medicube",
+          "productName": "PDRNピンクアンプル",
+          "variant": null,
+          "sourceUrl": "https://themedicube.jp/products/pdrn-pinkpeptideserum",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 112,
@@ -4398,13 +4434,25 @@
       "maker": "d'Alba",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc38-dalba",
+          "productName": "ホワイトトリュフ ファーストスプレーセラム",
+          "variant": null,
+          "sourceUrl": "https://dalba.jp/products/white-truffle-first-spray-serum",
+          "kind": null,
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 114,
@@ -4468,13 +4516,25 @@
       "maker": "SKINFOOD",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.skinfood.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc38-skinfood",
+          "productName": "ブラックシュガー パーフェクト エッセンシャル スクラブ 2X",
+          "variant": null,
+          "sourceUrl": "https://www.skinfood.co.jp/fs/skin/15016",
+          "kind": null,
+          "volume": "100g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 119,
