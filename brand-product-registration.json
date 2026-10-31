@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:08:14.268Z",
+  "generatedAt": "2026-10-31T01:36:40.862Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 30,
-  "brandsWithPendingProductNames": 117,
-  "productNameRecords": 192,
+  "brandsWithRegisteredProductNames": 44,
+  "brandsWithPendingProductNames": 103,
+  "productNameRecords": 206,
   "ingredientRecords": 188,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -16,13 +16,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "shiseido-vp-bright-lotion",
+          "productName": "SHISEIDO バイタルパーフェクション ブライトリバイタル ローション",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H09901.html",
+          "kind": "quasi",
+          "volume": "150mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 2,
@@ -296,13 +308,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "maquillage-essence-rouge-pk301",
+          "productName": "ドラマティックエッセンスルージュ PK301 未来予想",
+          "variant": "PK301 未来予想",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G98601.html",
+          "kind": "cosmetic",
+          "volume": "4g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 9,
@@ -324,13 +348,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "majolica-magical-base",
+          "productName": "マジカルカラーベース",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/G81501.html",
+          "kind": "cosmetic",
+          "volume": "25g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 11,
@@ -442,13 +478,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "baum-hydro-lotion-n-refill",
+          "productName": "ハイドロ エッセンスローション n（つけかえ用）",
+          "variant": "つけかえ用",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H21301.html",
+          "kind": "cosmetic",
+          "volume": "150mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 17,
@@ -554,13 +602,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "biore-home-esthe-clear-180",
+          "productName": "おうちdeエステ ジェル洗顔 肌なめらかクリア",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301463890/",
+          "kind": "cosmetic",
+          "volume": "180g",
+          "sku": null,
+          "jan": "4901301463890",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 21,
@@ -568,13 +628,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "sofina-ip-base-serum",
+          "productName": "ベースケア セラム（土台美容液）",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-ip/products/basecareserum/",
+          "kind": "cosmetic",
+          "volume": "90g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 22,
@@ -596,13 +668,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "kanebo-scrubbing-mud-wash",
+          "productName": "スクラビング マッド ウォッシュ",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167640234/",
+          "kind": "cosmetic",
+          "volume": "130g",
+          "sku": null,
+          "jan": "4973167640234",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 24,
@@ -610,13 +694,25 @@
       "maker": "花王・カネボウ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "suisai-powder-wash-n-32",
+          "productName": "ビューティクリア パウダーウォッシュN",
+          "variant": null,
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167823859/",
+          "kind": "cosmetic",
+          "volume": "0.4g×32個",
+          "sku": null,
+          "jan": "4973167823859",
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 25,
@@ -1330,13 +1426,25 @@
       "maker": "ポーラ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "wrinkleshot-medical-serum-n",
+          "productName": "メディカル セラム N",
+          "variant": null,
+          "sourceUrl": "https://www.pola.co.jp/ec/products/g-0850/",
+          "kind": "quasi",
+          "volume": "20g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 60,
@@ -1372,13 +1480,25 @@
       "maker": "無印良品",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.muji.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "muji-sensitive-lotion-rich",
+          "productName": "敏感肌用化粧水 高保湿",
+          "variant": "高保湿",
+          "sourceUrl": "https://www.muji.com/jp/ja/store/cmdty/detail/4550583434991",
+          "kind": "cosmetic",
+          "volume": "300mL",
+          "sku": "83434991",
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 63,
@@ -1451,13 +1571,25 @@
       "maker": "第一三共ヘルスケア",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.daiichisankyo-hc.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "minon-moist-charge-milk",
+          "productName": "アミノモイスト モイストチャージ ミルク",
+          "variant": null,
+          "sourceUrl": "https://www.daiichisankyo-hc.co.jp/products/details/minon-aminomoist_milk/",
+          "kind": "cosmetic",
+          "volume": "100g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 67,
@@ -1479,13 +1611,25 @@
       "maker": "ノエビアグループ",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "nov-iii-lotion-r",
+          "productName": "Ⅲ フェイスローション R（しっとりタイプ）",
+          "variant": "しっとりタイプ",
+          "sourceUrl": "https://noevirgroup.jp/nov/g/g51541/",
+          "kind": "quasi",
+          "volume": "120mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 69,
@@ -3604,13 +3748,25 @@
       "maker": "VT COSMETICS",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.vtcosmetics.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "vt-cica-daily-mask",
+          "productName": "シカデイリースージングマスク",
+          "variant": null,
+          "sourceUrl": "https://m.vtcosmetics.jp/product/zoom.html?product_no=94",
+          "kind": "cosmetic",
+          "volume": "350g（30枚）",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 107,
@@ -3660,13 +3816,25 @@
       "maker": "ma:nyo",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://manyo-japanese.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "manyo-pure-oil-deep-clean",
+          "productName": "ピュア クレンジング オイル ディープ クリーン",
+          "variant": null,
+          "sourceUrl": "https://manyo-japanese.com/Product/Detail/view/pid/450/cid/125",
+          "kind": "cosmetic",
+          "volume": "200mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 111,

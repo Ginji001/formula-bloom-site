@@ -292,7 +292,7 @@ function selectRegisteredFormula(item,context=''){
   if(item.registrationStatus==='name-only'){
     beginLookup();invalidate();remoteProduct=null;official=false;
     $('searchResults').replaceChildren();
-    $('officialStatus').textContent='商品名・タイプ・容量のみ確認済みです。全成分は未収録です。';
+    $('officialStatus').textContent='商品名を公式掲載で確認しています。全成分は未収録です。';
     sourceLink($('searchResults'),item.url,'日本向け公式の商品情報を開く');
     offerJapaneseIngredients();return;
   }
