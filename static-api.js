@@ -20,6 +20,11 @@ const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:fals
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
  const u=new URL(path,location.href),q=(u.searchParams.get('q')||'').trim();
+ if(u.pathname.endsWith('/partial-ingredient-evidence.json')){
+  const response=await fetch('./partial-ingredient-evidence.json',{signal});
+  if(!response.ok)throw Error('判明成分の資料を読み込めませんでした。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/formula-records.json')){
   const response=await fetch('./formula-records.json',{signal});
   if(!response.ok)throw Error('収録データを読み込めません。');
