@@ -744,7 +744,26 @@
       "brandId": 86,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ビタチノール バウンシー リフト セラム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000025.000128129.html",
+          "volume": "30g",
+          "variant": "オンライン専用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ビタチノール バウンシー リフト セラム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000025.000128129.html",
+          "volume": "15g",
+          "variant": "オフライン専用",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [

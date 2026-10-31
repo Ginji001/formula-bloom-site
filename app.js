@@ -328,6 +328,11 @@ function selectRegisteredFormula(item,context=''){
     const identity=document.createElement('p');identity.className='muted';
     identity.textContent='商品：'+item.brand+' '+item.name+(item.series?' ／ シリーズ：'+item.series:'')+(item.productType?' ／ タイプ：'+item.productType:'')+(item.variant?' ／ 仕様：'+item.variant:'')+(item.volume?' ／ '+item.volume:'')+(item.jan?' ／ JAN：'+item.jan:'')+'。掲載全成分は未確認です。';
     $('searchResults').append(identity);
+    if(item.productIdentityNote){
+      const notice=document.createElement('p');notice.className='muted';
+      notice.textContent=item.productIdentityNote;
+      $('searchResults').append(notice);
+    }
     sourceLink($('searchResults'),item.url,'国内向けの商品掲載元を開く');
     addIngredientReviewButton($('searchResults'),item);
     appendDomesticResearchLink($('searchResults'),item.brand,item.name);
@@ -356,14 +361,14 @@ function addProductFamily(container,family,query=''){
    addIngredientReviewButton(container,first);
   if(family.products.length>1){
    const variants=document.createElement('details');variants.className='formula-family-variants';
-   const summary=document.createElement('summary');summary.textContent='色・掲載処方 '+family.products.length+'件（成分が異なる場合あり）';
+   const summary=document.createElement('summary');summary.textContent='容量・色・仕様 '+family.products.length+'件（成分が異なる場合あり）';
    variants.append(summary);
    const warning=document.createElement('p');warning.className='muted';
-   warning.textContent='商品は同じグループです。花には選択した色の掲載全成分を使用します。別色や過去の処方が同じ成分とは限りません。';
+   warning.textContent='選択した製品・容量・色の成分だけを使用します。異なる容量・色や旧処方の成分が同じとは限りません。';
    variants.append(warning);
    for(const option of family.products){
     const choice=document.createElement('button');choice.type='button';choice.className='secondary';
-    choice.textContent=option.variant||option.name;
+    choice.textContent=[option.variant,option.volume,option.jan?'JAN '+option.jan:null].filter(Boolean).join(' ／ ')||option.name;
     choice.onclick=()=>selectRegisteredFormula(option);
     variants.append(choice);
    }

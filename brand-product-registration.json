@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T14:34:22.748Z",
+  "generatedAt": "2026-10-31T14:59:07.078Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 119,
-  "brandsWithPendingProductNames": 28,
-  "productNameRecords": 299,
+  "brandsWithRegisteredProductNames": 120,
+  "brandsWithPendingProductNames": 27,
+  "productNameRecords": 301,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -4630,13 +4630,40 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc57-primera-vitatinol-bouncy-30",
+          "productName": "ビタチノール バウンシー リフト セラム",
+          "series": null,
+          "productType": null,
+          "variant": "オンライン専用",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000025.000128129.html",
+          "kind": "cosmetic",
+          "volume": "30g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc57-primera-vitatinol-bouncy-15",
+          "productName": "ビタチノール バウンシー リフト セラム",
+          "series": null,
+          "productType": null,
+          "variant": "オフライン専用",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000025.000128129.html",
+          "kind": "cosmetic",
+          "volume": "15g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        }
+      ]
     },
     {
       "brandId": 87,
