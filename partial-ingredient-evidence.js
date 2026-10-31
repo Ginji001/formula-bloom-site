@@ -11,7 +11,8 @@ export function validatePartialEvidence(data){
    record.coverage!=='partial-only'||record.order!=='not-confirmed'||record.labelCompared!==false||
    !Array.isArray(record.ingredients)||!record.ingredients.length||
    record.ingredients.some(s=>!isJapaneseIngredientText(s))||
-   record.sourceType!=='japanese-manufacturer-website')throw Error('判明成分の出典・商品照合が不正: '+record.productId);
+   !['japanese-manufacturer-website','japanese-domestic-retailer-listing'].includes(record.sourceType)||
+   (record.sourceType==='japanese-domestic-retailer-listing'&&!record.retailerName))throw Error('判明成分の出典・商品照合が不正: '+record.productId);
   seen.add(record.productId);
   return Object.freeze({...record,ingredients:Object.freeze([...new Set(record.ingredients)])});
  }));

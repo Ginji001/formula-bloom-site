@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T21:35:27.944Z",
+  "generatedAt": "2026-10-31T21:58:52.922Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 139,
   "brandsWithPendingProductNames": 8,
   "productNameRecords": 469,
   "ingredientRecords": 234,
-  "knownIngredientRecords": 24,
-  "brandsWithKnownIngredientsOnly": 24,
+  "knownIngredientRecords": 39,
+  "brandsWithKnownIngredientsOnly": 39,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -6443,7 +6443,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -6460,7 +6460,7 @@
           "sku": null,
           "jan": "8809563937752",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -6871,7 +6871,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6888,7 +6888,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -7139,7 +7139,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://mixsoon.us/",
@@ -7156,7 +7156,7 @@
           "sku": null,
           "jan": "8809732914300",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -7437,7 +7437,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7454,7 +7454,7 @@
           "sku": null,
           "jan": "8809563068753",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -7467,7 +7467,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7484,7 +7484,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -7497,7 +7497,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 4,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://isntree-global.com/",
@@ -7514,7 +7514,7 @@
           "sku": null,
           "jan": "4571475235915",
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc62-isntree-02",
@@ -7569,7 +7569,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 5,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7628,7 +7628,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc61-catalog-090",
@@ -7980,7 +7980,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://banilausa.com/",
@@ -7997,7 +7997,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc61-catalog-092",
@@ -8024,7 +8024,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8041,7 +8041,7 @@
           "sku": null,
           "jan": "4589664762326",
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc62-ahc-02",
@@ -8345,7 +8345,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://tocobo.us/",
@@ -8362,7 +8362,7 @@
           "sku": null,
           "jan": "8809835064605",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -8450,7 +8450,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 6,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8467,7 +8467,7 @@
           "sku": null,
           "jan": "8809619272714",
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc63-wellage-02",
@@ -8550,7 +8550,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8567,7 +8567,7 @@
           "sku": null,
           "jan": "8809971488648",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -8595,7 +8595,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8612,7 +8612,7 @@
           "sku": null,
           "jan": "8806109101257",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -8757,7 +8757,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8774,7 +8774,7 @@
           "sku": null,
           "jan": "4582356610301",
           "identityVerifiedAt": "2026-10-31",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -8817,7 +8817,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 7,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8876,7 +8876,7 @@
           "sku": null,
           "jan": "8806121405166",
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc62-rejuran-05",

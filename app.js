@@ -386,11 +386,13 @@ function showPartialChoices(container,item){
   const record=partialForProduct(records,item);
   if(record){
    const msg=document.createElement('p');msg.className='muted';
-   msg.textContent='メーカー出典で判明した一部成分 '+record.ingredients.length+'件。全成分と配合順・現物ラベルは未確認です。';
+   const retailer=record.sourceType==='japanese-domestic-retailer-listing';
+   const sourceTypeLabel=retailer?'国内販売店掲載':'メーカー掲載';
+   msg.textContent=sourceTypeLabel+'で確認した一部成分 '+record.ingredients.length+'件。全成分と配合順・現物ラベルは未確認です。';
    const action=document.createElement('button');action.type='button';action.className='secondary';
-   action.textContent='メーカー掲載の判明成分だけで花にする';
-   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:'メーカーが該当商品に掲載した一部成分（全成分ではない）',checkedOn:record.checkedOn});
-   container.append(msg,action);sourceLink(container,record.sourceUrl,'判明成分のメーカー掲載元');
+   action.textContent=sourceTypeLabel+'の判明成分だけで花にする';
+   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未照合、全成分ではない）':'メーカーが該当商品に掲載した一部成分（全成分ではない）'),checkedOn:record.checkedOn});
+   container.append(msg,action);sourceLink(container,record.sourceUrl,retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');
   }
   showPartialInput(container,item,record);
  }).catch(()=>{if(version===lookupVersion){const warning=document.createElement('p');warning.className='muted';warning.textContent='判明成分資料を読み込めませんでした。原文を確認して入力することはできます。';container.append(warning);showPartialInput(container,item,null);}});
