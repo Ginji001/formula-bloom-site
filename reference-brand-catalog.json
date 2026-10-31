@@ -204,7 +204,19 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "ザ・タイムR デイエッセンススティックe",
+          "status": "参考",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://www.ipsa.co.jp/products/skincare/skintrouble/drying/43686.html?cgid=skincare-skintrouble-drying&lang=ja"
+          ],
+          "ingredients": "水,ジメチコン,ＢＧ,グリセリン,パラフィン,ジフェニルシロキシフェニルトリメチコン,トレハロース,トリエチルヘキサノイン,カプリリルメチコン,塩化Ｎａ,ＰＥＧ／ＰＰＧ－１４／７ジメチルエーテル,ポリクオタニウム－５１,ラベンダー油,テンチャエキス,ダイズ種子エキス,ＰＥＧ－１０ジメチコン,ミリスチン酸ミリスチル,（ジメチコン／フェニルビニルジメチコン）クロスポリマー,マイクロクリスタリンワックス,（ジメチコン／（ＰＥＧ－１０／１５））クロスポリマー,ＢＨＴ,ＥＤＴＡ－２Ｎａ,ＤＰＧ,トコフェロール,フェノキシエタノール",
+          "note": "IPSA公式サイト掲載の全成分。既存候補のザ・タイムR アクアeとは別商品。"
+        }
+      ]
     },
     {
       "brand": "花王",
@@ -1049,6 +1061,6 @@
       "flowerGeneration": "reference-input-only"
     }
   ],
-  "referenceProductCount": 13,
-  "referenceBrandsWithIngredients": 13
+  "referenceProductCount": 14,
+  "referenceBrandsWithIngredients": 14
 }
