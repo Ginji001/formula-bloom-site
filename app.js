@@ -83,68 +83,6 @@ async function reviewStoredFormula(expected,p,v,accept){
  }
  accept();
 }
-// Reference entries are explicitly provisional, never promoted to verified formulas.
-async function showReferenceCatalog(){
- const panel=document.getElementById('referenceCatalogPanel');
- if(!panel)return;
- const list=panel.querySelector('[data-reference-list]');
- list.textContent='参考成分を読み込み中…';
- try{
-  const data=await getJSON('/reference-brand-catalog.json');
-  list.replaceChildren();
-  const entries=data.entries.flatMap(entry=>(entry.referenceProducts||[]).map(p=>({brand:entry.brand,p})));
-  const estimates=data.entries.flatMap(entry=>(entry.estimatedProducts||[]).map(p=>({brand:entry.brand,p})));
-  if(!entries.length&&!estimates.length){list.textContent='参考・推測データはまだありません。';return;}
-  for(const {brand,p} of entries){
-   const b=document.createElement('button');b.type='button';b.className='product-option';
-   b.textContent='参考：'+brand+' '+p.name+(p.variant?' ／ '+p.variant:'');
-   b.onclick=()=>{
-    const ingredients=p.ingredients||p.ingredientsINCI||'';
-    $('query').value=brand+' '+p.name;
-    $('sourceInfo').replaceChildren();
-    const note=document.createElement('p');note.className='muted';
-    note.textContent='参考：'+(p.market||'販売地域未確認')+'／最新処方・日本向け商品との一致は未確認。';
-    $('sourceInfo').append(note);
-    for(const url of p.sources||[])if(typeof url==='string'&&url.startsWith('https://'))sourceLink($('sourceInfo'),url,'成分掲載元');
-    if(p.ingredients){
-     invalidate();remoteProduct=null;official=false;ocrRequired=false;
-     $('ingredients').value=ingredients;$('kind').value='cosmetic';
-     $('japanConfirmed').checked=false;tab('text');run();
-    }else{
-     tab('text');$('ingredients').value=ingredients;
-     $('error').textContent='参考：海外向けINCI表記です。日本語表示名の確認なしに花を自動生成しません。';
-    }
-   };
-   list.append(b);
-  }
-  for(const {brand,p} of estimates){
-   const b=document.createElement('button');b.type='button';b.className='product-option';
-   b.textContent='推測：'+brand+' '+p.name;
-   b.onclick=()=>{
-    invalidate();remoteProduct=null;official=false;ocrRequired=false;
-    $('query').value=brand+' '+p.name;
-    $('ingredients').value='';tab('text');
-    $('sourceInfo').replaceChildren();
-    const heading=document.createElement('p');heading.className='muted';
-    heading.textContent='推測データ：実際の全成分表ではありません。配合有無・順序・濃度は不明です。';
-    $('sourceInfo').append(heading);
-    const details=document.createElement('p');details.className='muted';
-    details.textContent='一般的な成分類型の例：'+(p.estimatedIngredientCategories||[]).join('／');
-    $('sourceInfo').append(details);
-    for(const url of p.sources||[])if(typeof url==='string'&&url.startsWith('https://'))sourceLink($('sourceInfo'),url,'商品候補の掲載元');
-    $('error').textContent='推測データは成分未確認のため花を自動生成しません。実際の全成分を入力してください。';
-   };
-   list.append(b);
-  }
- }catch(e){list.textContent='参考成分を読み込めませんでした：'+e.message;}
-}
-const referencePanel=document.createElement('details');
-referencePanel.id='referenceCatalogPanel';
-const referenceSummary=document.createElement('summary');referenceSummary.textContent='参考・推測データから選ぶ（未検証）';
-const referenceList=document.createElement('div');referenceList.dataset.referenceList='';
-referencePanel.append(referenceSummary,referenceList);
-$('registeredBrandDirectory').insertAdjacentElement('afterend',referencePanel);
-referencePanel.addEventListener('toggle',()=>{if(referencePanel.open)showReferenceCatalog();});
 let savedFormulaListLoaded=false;
 $('savedFormulas').ontoggle=async()=>{
  if(!$('savedFormulas').open||savedFormulaListLoaded)return;
