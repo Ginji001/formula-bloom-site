@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T21:21:54.223Z",
+  "generatedAt": "2026-10-31T21:35:27.944Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 139,
   "brandsWithPendingProductNames": 8,
   "productNameRecords": 469,
   "ingredientRecords": 234,
+  "knownIngredientRecords": 24,
+  "brandsWithKnownIngredientsOnly": 24,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -19,6 +21,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -34,7 +37,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -47,6 +51,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 7,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -62,7 +67,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "elixir-liftmoist-lotion-rich-ba",
@@ -75,7 +81,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "elixir-liftmoist-emulsion-fresh-ba",
@@ -88,7 +95,8 @@
           "volume": "130mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "elixir-liftmoist-emulsion-rich-ba",
@@ -101,7 +109,8 @@
           "volume": "130mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "jp-shiseido-j10502-0",
@@ -114,7 +123,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-078",
@@ -127,7 +137,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-079",
@@ -140,7 +151,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -153,6 +165,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -168,7 +181,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-053",
@@ -181,7 +195,8 @@
           "volume": "90g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-054",
@@ -194,7 +209,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -207,6 +223,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 10,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -222,7 +239,8 @@
           "volume": "125mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-shiseido-h81102-0",
@@ -235,7 +253,8 @@
           "volume": "125mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-045",
@@ -248,7 +267,8 @@
           "volume": "125mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-046",
@@ -261,7 +281,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-047",
@@ -274,7 +295,8 @@
           "volume": "125mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-048",
@@ -287,7 +309,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-049",
@@ -300,7 +323,8 @@
           "volume": "125mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-050",
@@ -313,7 +337,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-051",
@@ -326,7 +351,8 @@
           "volume": "57mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-052",
@@ -339,7 +365,8 @@
           "volume": "45g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -352,6 +379,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 5,
       "ingredientRecordCount": 5,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -367,7 +395,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "ihada-rich-lotion",
@@ -380,7 +409,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "ihada-moist-emulsion",
@@ -393,7 +423,8 @@
           "volume": "135mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "ihada-clear-lotion",
@@ -406,7 +437,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "ihada-clear-emulsion",
@@ -419,7 +451,8 @@
           "volume": "135mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -432,6 +465,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -447,7 +481,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-shiseido-h15901-1",
@@ -460,7 +495,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -473,6 +509,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -488,7 +525,8 @@
           "volume": "45g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -501,6 +539,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -516,7 +555,8 @@
           "volume": "4g",
           "sku": null,
           "jan": "4909978146030",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -529,6 +569,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -544,7 +585,8 @@
           "volume": "25mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -557,6 +599,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -572,7 +615,8 @@
           "volume": "25g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -585,6 +629,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -600,7 +645,8 @@
           "volume": "170mL",
           "sku": "H72502",
           "jan": "4514254213551",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -613,6 +659,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -628,7 +675,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -641,6 +689,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 3,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -656,7 +705,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-shiseido-f16802-1",
@@ -669,7 +719,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-shiseido-f16802-2",
@@ -682,7 +733,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -695,6 +747,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -710,7 +763,8 @@
           "volume": "150mL",
           "sku": "H25901",
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -723,6 +777,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -738,7 +793,8 @@
           "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -751,6 +807,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -766,7 +823,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -779,6 +837,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -794,7 +853,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc51-ipsa-fragrance-gel-02",
@@ -807,7 +867,8 @@
           "volume": "25mL",
           "sku": "43819",
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -820,6 +881,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -834,6 +896,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 5,
       "ingredientRecordCount": 5,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/ja/official/curel/products/skincare_moisturizers/",
@@ -849,7 +912,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "4901301236043",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "curel-lotion-ii",
@@ -862,7 +926,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "4901301236197",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "curel-lotion-iii",
@@ -875,7 +940,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "4901301236180",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "curel-emulsion",
@@ -888,7 +954,8 @@
           "volume": null,
           "sku": null,
           "jan": "4901301236173",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "curel-facecream",
@@ -901,7 +968,8 @@
           "volume": null,
           "sku": null,
           "jan": "4901301236210",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -914,6 +982,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 7,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -929,7 +998,8 @@
           "volume": "180g",
           "sku": null,
           "jan": "4901301463890",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-064",
@@ -942,7 +1012,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-065",
@@ -955,7 +1026,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-066",
@@ -968,7 +1040,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-067",
@@ -981,7 +1054,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-068",
@@ -994,7 +1068,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-069",
@@ -1007,7 +1082,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": "4901301474407",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -1020,6 +1096,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1035,7 +1112,8 @@
           "volume": "90g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1048,6 +1126,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1063,7 +1142,8 @@
           "volume": "130mL",
           "sku": null,
           "jan": "4901301459596",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1076,6 +1156,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1091,7 +1172,8 @@
           "volume": "130g",
           "sku": null,
           "jan": "4973167640234",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1104,6 +1186,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1119,7 +1202,8 @@
           "volume": "0.4g×32個",
           "sku": null,
           "jan": "4973167823859",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1132,6 +1216,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1147,7 +1232,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "4973167251645",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1160,6 +1246,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1175,7 +1262,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": "4901301455741",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1188,6 +1276,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1203,7 +1292,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc48-kate-tears-remover",
@@ -1216,7 +1306,8 @@
           "volume": "7.8mL",
           "sku": null,
           "jan": "4973167049969",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1229,6 +1320,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1244,7 +1336,8 @@
           "volume": "90g",
           "sku": null,
           "jan": "4973167057742",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1257,6 +1350,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1272,7 +1366,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc48-lunasol-polishing-gel",
@@ -1285,7 +1380,8 @@
           "volume": "150g",
           "sku": null,
           "jan": "4973167029114",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1298,6 +1394,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1313,7 +1410,8 @@
           "volume": "100g",
           "sku": null,
           "jan": "4973167070604",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1326,6 +1424,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1341,7 +1440,8 @@
           "volume": "25mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc48-primavista-hydration-sheer-beige",
@@ -1354,7 +1454,8 @@
           "volume": "25g",
           "sku": null,
           "jan": "4901301463920",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1367,6 +1468,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1382,7 +1484,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": "4973167013809",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1395,6 +1498,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -1410,7 +1514,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": "4973167548264",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1423,6 +1528,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 3,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1438,7 +1544,8 @@
           "volume": "80mL",
           "sku": "DLEA",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-reviewed-4efa63056b89325e",
@@ -1451,7 +1558,8 @@
           "volume": "80mL",
           "sku": "DLCK",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-reviewed-cf71e1d1a0aca827",
@@ -1464,7 +1572,8 @@
           "volume": "80mL",
           "sku": "DLBI",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1477,6 +1586,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1492,7 +1602,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1505,6 +1616,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1520,7 +1632,8 @@
           "volume": "75mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1533,6 +1646,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 10,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1548,7 +1662,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-055",
@@ -1561,7 +1676,8 @@
           "volume": "40mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-056",
@@ -1574,7 +1690,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-057",
@@ -1587,7 +1704,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-058",
@@ -1600,7 +1718,8 @@
           "volume": "135mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-059",
@@ -1613,7 +1732,8 @@
           "volume": "115mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-060",
@@ -1626,7 +1746,8 @@
           "volume": "18g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-061",
@@ -1639,7 +1760,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-062",
@@ -1652,7 +1774,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-063",
@@ -1665,7 +1788,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -1678,6 +1802,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1693,7 +1818,8 @@
           "volume": "3.8g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1706,6 +1832,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1721,7 +1848,8 @@
           "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1734,6 +1862,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1749,7 +1878,8 @@
           "volume": "1g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc52-addiction-uv-foundation-sand-012",
@@ -1762,7 +1892,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -1775,6 +1906,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1790,7 +1922,8 @@
           "volume": "3.6g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc52-jill-moisture-lotion-200",
@@ -1803,7 +1936,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -1816,6 +1950,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1831,7 +1966,8 @@
           "volume": "300g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -1844,6 +1980,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -1859,7 +1996,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": "4971710577341",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc56-serum-veil-deep-repair-refill-60",
@@ -1872,7 +2010,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": "4971710580372",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -1885,6 +2024,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -1900,7 +2040,8 @@
           "volume": "145mL",
           "sku": null,
           "jan": "4987241192809",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -1913,6 +2054,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 16,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -1928,7 +2070,8 @@
           "volume": "90g",
           "sku": "145676",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-024",
@@ -1941,7 +2084,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-025",
@@ -1954,7 +2098,8 @@
           "volume": "400mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-026",
@@ -1967,7 +2112,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-027",
@@ -1980,7 +2126,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-028",
@@ -1993,7 +2140,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-029",
@@ -2006,7 +2154,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-030",
@@ -2019,7 +2168,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-031",
@@ -2032,7 +2182,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-032",
@@ -2045,7 +2196,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-033",
@@ -2058,7 +2210,8 @@
           "volume": "50g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-034",
@@ -2071,7 +2224,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-035",
@@ -2084,7 +2238,8 @@
           "volume": "170mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-036",
@@ -2097,7 +2252,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-037",
@@ -2110,7 +2266,8 @@
           "volume": "140mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-038",
@@ -2123,7 +2280,8 @@
           "volume": "50g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -2136,6 +2294,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2151,7 +2310,8 @@
           "volume": "170mL",
           "sku": "198900",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-rohto-198924",
@@ -2164,7 +2324,8 @@
           "volume": "170mL",
           "sku": "198924",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2177,6 +2338,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2192,7 +2354,8 @@
           "volume": null,
           "sku": "155620",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2205,6 +2368,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2220,7 +2384,8 @@
           "volume": null,
           "sku": "144730",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2233,6 +2398,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2248,7 +2414,8 @@
           "volume": "70g",
           "sku": "193899",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2261,6 +2428,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2276,7 +2444,8 @@
           "volume": "450mL",
           "sku": "193943",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-rohto-193967",
@@ -2289,7 +2458,8 @@
           "volume": "450g",
           "sku": "193967",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2302,6 +2472,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shop.rohto.co.jp/",
@@ -2317,7 +2488,8 @@
           "volume": "230mL",
           "sku": "132973",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-rohto-133192",
@@ -2330,7 +2502,8 @@
           "volume": "90g",
           "sku": "133192",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2343,6 +2516,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 11,
       "ingredientRecordCount": 6,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.chifure.co.jp/products/skinlotion/2871",
@@ -2358,7 +2532,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "chifure-lotion-light",
@@ -2371,7 +2546,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "chifure-lotion-rich",
@@ -2384,7 +2560,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "chifure-lotion-base",
@@ -2397,7 +2574,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "chifure-milk-rich",
@@ -2410,7 +2588,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "chifure-milk-base",
@@ -2423,7 +2602,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc67-chifure-deep-refill",
@@ -2436,7 +2616,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc67-chifure-light-refill",
@@ -2449,7 +2630,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc67-chifure-rich-refill",
@@ -2462,7 +2644,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc67-chifure-base-refill",
@@ -2475,7 +2658,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc67-chifure-milk-refill",
@@ -2488,7 +2672,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -2501,6 +2686,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.chifure.co.jp/",
@@ -2516,7 +2702,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2529,6 +2716,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.chifure.co.jp/",
@@ -2544,7 +2732,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2557,6 +2746,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 3,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.orbis.co.jp/small/1201010/",
@@ -2572,7 +2762,8 @@
           "volume": "180mL",
           "sku": "9041",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "orbis-aquanist-rm",
@@ -2585,7 +2776,8 @@
           "volume": "180mL",
           "sku": "9043",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "orbis-encore-lotion",
@@ -2598,7 +2790,8 @@
           "volume": "180mL",
           "sku": "9340",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2611,6 +2804,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 7,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.fancl.co.jp/beauty/",
@@ -2626,7 +2820,8 @@
           "volume": null,
           "sku": "3792-11",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-039",
@@ -2639,7 +2834,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-040",
@@ -2652,7 +2848,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-041",
@@ -2665,7 +2862,8 @@
           "volume": "115mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-042",
@@ -2678,7 +2876,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-043",
@@ -2691,7 +2890,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-044",
@@ -2704,7 +2904,8 @@
           "volume": "115mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -2717,6 +2918,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
@@ -2732,7 +2934,8 @@
           "volume": "470mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2745,6 +2948,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
@@ -2760,7 +2964,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2773,6 +2978,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.pola.co.jp/",
@@ -2788,7 +2994,8 @@
           "volume": "20g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2801,6 +3008,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -2816,7 +3024,8 @@
           "volume": "175mL",
           "sku": "1662-22",
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -2829,6 +3038,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.dhc.co.jp/",
@@ -2844,7 +3054,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": "4511413529652",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc51-dhc-cream-cleansing-120g",
@@ -2857,7 +3068,8 @@
           "volume": "120g",
           "sku": "23411",
           "jan": "4511413529102",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -2870,6 +3082,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 24,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.muji.com/",
@@ -2885,7 +3098,8 @@
           "volume": "300mL",
           "sku": "83434991",
           "jan": "4550583434991",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc61-catalog-001",
@@ -2898,7 +3112,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-002",
@@ -2911,7 +3126,8 @@
           "volume": "270mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-003",
@@ -2924,7 +3140,8 @@
           "volume": "300mL",
           "sku": null,
           "jan": "4550583434960",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-004",
@@ -2937,7 +3154,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-005",
@@ -2950,7 +3168,8 @@
           "volume": "270mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-006",
@@ -2963,7 +3182,8 @@
           "volume": "300mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-007",
@@ -2976,7 +3196,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-008",
@@ -2989,7 +3210,8 @@
           "volume": "270mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-009",
@@ -3002,7 +3224,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": "4550584935367",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-010",
@@ -3015,7 +3238,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-011",
@@ -3028,7 +3252,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-012",
@@ -3041,7 +3266,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-013",
@@ -3054,7 +3280,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-014",
@@ -3067,7 +3294,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-015",
@@ -3080,7 +3308,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-016",
@@ -3093,7 +3322,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-017",
@@ -3106,7 +3336,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-018",
@@ -3119,7 +3350,8 @@
           "volume": "300mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-019",
@@ -3132,7 +3364,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-020",
@@ -3145,7 +3378,8 @@
           "volume": "270mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-021",
@@ -3158,7 +3392,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-022",
@@ -3171,7 +3406,8 @@
           "volume": "150g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-023",
@@ -3184,7 +3420,8 @@
           "volume": "50g",
           "sku": null,
           "jan": "4550584935381",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -3197,6 +3434,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 2,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.tvert.jp/shop",
@@ -3212,7 +3450,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "tvert-ga-normal",
@@ -3225,7 +3464,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3238,6 +3478,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.fujifilm.com/",
@@ -3253,7 +3494,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3266,6 +3508,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.fujifilm.com/",
@@ -3281,7 +3524,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3294,6 +3538,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.daiichisankyo-hc.co.jp/",
@@ -3309,7 +3554,8 @@
           "volume": "100g",
           "sku": null,
           "jan": "4987107670465",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3322,6 +3568,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.daiichisankyo-hc.co.jp/",
@@ -3337,7 +3584,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "4987107673473",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3350,6 +3598,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -3365,7 +3614,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3378,6 +3628,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 11,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -3393,7 +3644,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc62-sana-02",
@@ -3406,7 +3658,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-03",
@@ -3419,7 +3672,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-04",
@@ -3432,7 +3686,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-05",
@@ -3445,7 +3700,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-06",
@@ -3458,7 +3714,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-07",
@@ -3471,7 +3728,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-08",
@@ -3484,7 +3742,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-09",
@@ -3497,7 +3756,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-10",
@@ -3510,7 +3770,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-sana-11",
@@ -3523,7 +3784,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -3536,6 +3798,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 3,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -3551,7 +3814,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-reviewed-2ec15088f8de20c7",
@@ -3564,7 +3828,8 @@
           "volume": "200mL",
           "sku": "70207",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "jp-reviewed-5fdbae1a2882b4d7",
@@ -3577,7 +3842,8 @@
           "volume": "150g",
           "sku": "70170",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3590,6 +3856,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -3605,7 +3872,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -3618,6 +3886,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -3633,7 +3902,8 @@
           "volume": "10枚（美容液155mL）",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -3646,6 +3916,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -3661,7 +3932,8 @@
           "volume": "530mL",
           "sku": null,
           "jan": "4901417169518",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -3674,6 +3946,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -3689,7 +3962,8 @@
           "volume": "450mL",
           "sku": null,
           "jan": "4901417723819",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -3702,6 +3976,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
@@ -3717,7 +3992,8 @@
           "volume": "42枚",
           "sku": null,
           "jan": "4902806112436",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3730,6 +4006,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
@@ -3745,7 +4022,8 @@
           "volume": "110mL",
           "sku": null,
           "jan": "4902806107296",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3758,6 +4036,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
@@ -3773,7 +4052,8 @@
           "volume": "400mL",
           "sku": null,
           "jan": "4902806113112",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -3786,6 +4066,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 131,
       "ingredientRecordCount": 131,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -3801,7 +4082,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-skin-conditioner-high-moisture",
@@ -3814,7 +4096,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-rich-skin-conditioner-milk",
@@ -3827,7 +4110,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-makeup-fix-mist",
@@ -3840,7 +4124,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-natural-lotion",
@@ -3853,7 +4138,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-cleansing-balm",
@@ -3866,7 +4152,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-rich-hydro-mask",
@@ -3879,7 +4166,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041580-9e557e50c",
@@ -3892,7 +4180,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042518-acac93472",
@@ -3905,7 +4194,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043386-81c5c917f",
@@ -3918,7 +4208,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530114-e6b81adda",
@@ -3931,7 +4222,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553013730-f5bdda936",
@@ -3944,7 +4236,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042792-d63d078fe",
@@ -3957,7 +4250,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530602-c3f77fbaf",
@@ -3970,7 +4264,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553011262-ed8208505",
@@ -3983,7 +4278,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040095-e7274f514",
@@ -3996,7 +4292,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040644-5f1589ad2",
@@ -4009,7 +4306,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043171-231dc003e",
@@ -4022,7 +4320,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530718-074edaa26",
@@ -4035,7 +4334,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041917-a3762a90c",
@@ -4048,7 +4348,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042785-66596cddb",
@@ -4061,7 +4362,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042990-2e21bac61",
@@ -4074,7 +4376,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530534-9c2a6856e",
@@ -4087,7 +4390,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530534-65c77480e",
@@ -4100,7 +4404,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530909-c1b22d597",
@@ -4113,7 +4418,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530909-8b36667bd",
@@ -4126,7 +4432,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042136-33e766c7a",
@@ -4139,7 +4446,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042136-e8a939daa",
@@ -4152,7 +4460,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530435-02d522858",
@@ -4165,7 +4474,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530435-fd98f8950",
@@ -4178,7 +4488,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530664-3e6e570ba",
@@ -4191,7 +4502,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530664-37a82fef4",
@@ -4204,7 +4516,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530671-d9da23e2d",
@@ -4217,7 +4530,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530671-370872e48",
@@ -4230,7 +4544,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043034-644a2a265",
@@ -4243,7 +4558,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043034-5ed6a9867",
@@ -4256,7 +4572,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043355-231aa66a5",
@@ -4269,7 +4586,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043355-8f9276273",
@@ -4282,7 +4600,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530251-57e775541",
@@ -4295,7 +4614,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530251-4b0025034",
@@ -4308,7 +4628,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043294-eaaa9cd39",
@@ -4321,7 +4642,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043294-8b019205d",
@@ -4334,7 +4656,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042921-b9bd12abe",
@@ -4347,7 +4670,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042921-0fc60e805",
@@ -4360,7 +4684,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530152-d6cf7d35e",
@@ -4373,7 +4698,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530152-c3b045705",
@@ -4386,7 +4712,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043157-ee9161cf1",
@@ -4399,7 +4726,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043157-f6a932b3e",
@@ -4412,7 +4740,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-984b21637",
@@ -4425,7 +4754,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-cf44e606a",
@@ -4438,7 +4768,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530305-eaa29db42",
@@ -4451,7 +4782,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530305-583a17a83",
@@ -4464,7 +4796,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530725-42ec09a35",
@@ -4477,7 +4810,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530725-7736ebef2",
@@ -4490,7 +4824,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043089-820134346",
@@ -4503,7 +4838,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043089-cc565e9e4",
@@ -4516,7 +4852,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041047-2c620517c",
@@ -4529,7 +4866,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042136-60433442f",
@@ -4542,7 +4880,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042136-d06117f6a",
@@ -4555,7 +4894,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040453-d2174e204",
@@ -4568,7 +4908,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043034-5e77e6d3c",
@@ -4581,7 +4922,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040149-720e99750",
@@ -4594,7 +4936,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043331-38ecbf97f",
@@ -4607,7 +4950,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043331-a02aa76df",
@@ -4620,7 +4964,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043331-62cb75b64",
@@ -4633,7 +4978,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041238-5831ea8e4",
@@ -4646,7 +4992,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041238-94635a726",
@@ -4659,7 +5006,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530251-c412b6bf9",
@@ -4672,7 +5020,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043294-9375b8eff",
@@ -4685,7 +5034,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042334-a6a96a8c5",
@@ -4698,7 +5048,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042334-9cd10066d",
@@ -4711,7 +5062,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042921-6b503f928",
@@ -4724,7 +5076,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530152-a99a7d29f",
@@ -4737,7 +5090,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530152-e009be780",
@@ -4750,7 +5104,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530350-c01e2bf5d",
@@ -4763,7 +5118,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530497-745d418ed",
@@ -4776,7 +5132,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530497-71ebc8275",
@@ -4789,7 +5146,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530497-25fcdf010",
@@ -4802,7 +5160,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043317-7f32f45a4",
@@ -4815,7 +5174,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043317-90abe36d4",
@@ -4828,7 +5188,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042013-fec437147",
@@ -4841,7 +5202,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042013-2be121eed",
@@ -4854,7 +5216,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042013-e3d7091eb",
@@ -4867,7 +5230,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-91eb7e882",
@@ -4880,7 +5244,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-3b01bc4d1",
@@ -4893,7 +5258,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-7d0d0978f",
@@ -4906,7 +5272,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-ad098dc97",
@@ -4919,7 +5286,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-e147bbd0a",
@@ -4932,7 +5300,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042709-15b416a1e",
@@ -4945,7 +5314,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530299-fd2c80f4a",
@@ -4958,7 +5328,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530299-3a1a44d8c",
@@ -4971,7 +5342,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530305-0e930919b",
@@ -4984,7 +5356,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530046-febee6fcd",
@@ -4997,7 +5370,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530046-b5e7322ae",
@@ -5010,7 +5384,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530886-eefcd3e90",
@@ -5023,7 +5398,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530886-deddabd3c",
@@ -5036,7 +5412,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042457-55b77a128",
@@ -5049,7 +5426,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530817-979b60831",
@@ -5062,7 +5440,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530817-9d3d03183",
@@ -5075,7 +5454,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041122-ef2e91c57",
@@ -5088,7 +5468,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041122-e98c411b9",
@@ -5101,7 +5482,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041122-b4bf87759",
@@ -5114,7 +5496,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042686-e72112bbb",
@@ -5127,7 +5510,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042686-8b7faeb56",
@@ -5140,7 +5524,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553002918-39a111e2f",
@@ -5153,7 +5538,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530091-f2853e554",
@@ -5166,7 +5552,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530091-047949274",
@@ -5179,7 +5566,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530091-ff57322c0",
@@ -5192,7 +5580,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530091-7e2ef2682",
@@ -5205,7 +5594,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042877-2a737b920",
@@ -5218,7 +5608,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530725-275effdf2",
@@ -5231,7 +5622,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553009795-10668a763",
@@ -5244,7 +5636,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553009795-118051a84",
@@ -5257,7 +5650,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553009795-6e862b1da",
@@ -5270,7 +5664,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040811-5e7f593b0",
@@ -5283,7 +5678,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553040057-60f7a6968",
@@ -5296,7 +5692,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042723-390641c64",
@@ -5309,7 +5706,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042723-435fa6163",
@@ -5322,7 +5720,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041603-442ddca45",
@@ -5335,7 +5734,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530084-491bb9798",
@@ -5348,7 +5748,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530084-1c0f30f70",
@@ -5361,7 +5762,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553041757-479118e3b",
@@ -5374,7 +5776,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530619-0364c05b3",
@@ -5387,7 +5790,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553530619-06095bff1",
@@ -5400,7 +5804,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043423-16a640738",
@@ -5413,7 +5818,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043423-a46d31ea0",
@@ -5426,7 +5832,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553043423-3e73261ad",
@@ -5439,7 +5846,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042891-ba1fb564a",
@@ -5452,7 +5860,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042891-32030862e",
@@ -5465,7 +5874,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042969-65e2f80ae",
@@ -5478,7 +5888,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "cezanne-4939553042969-e50082593",
@@ -5491,7 +5902,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5504,6 +5916,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 11,
       "ingredientRecordCount": 6,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -5519,7 +5932,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "canmake-mellow-dew-lip-mask-01",
@@ -5532,7 +5946,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "canmake-airy-extension-liner-01",
@@ -5545,7 +5960,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "canmake-cream-cheek-05",
@@ -5558,7 +5974,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "canmake-marshmallow-finish-powder-abloom-01",
@@ -5571,7 +5988,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "canmake-clear-veil-setting-powder-01",
@@ -5584,7 +6002,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc61-catalog-070",
@@ -5597,7 +6016,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-071",
@@ -5610,7 +6030,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-072",
@@ -5623,7 +6044,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-073",
@@ -5636,7 +6058,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-074",
@@ -5649,7 +6072,8 @@
           "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -5662,6 +6086,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://jp.laneige.com/",
@@ -5677,7 +6102,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5690,6 +6116,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.innisfree.jp/",
@@ -5705,7 +6132,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5718,6 +6146,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://etude.jp/",
@@ -5733,7 +6162,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5746,6 +6176,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5761,7 +6192,8 @@
           "volume": "80mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5774,6 +6206,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://jp.hera.com/",
@@ -5789,7 +6222,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -5802,6 +6236,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5817,7 +6252,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -5830,6 +6266,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5845,7 +6282,8 @@
           "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc57-primera-vitatinol-bouncy-15",
@@ -5858,7 +6296,8 @@
           "volume": "15g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -5871,6 +6310,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5886,7 +6326,8 @@
           "volume": "17g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -5899,6 +6340,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5914,7 +6356,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -5927,6 +6370,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5941,6 +6385,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -5956,7 +6401,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-illiyoon-02",
@@ -5969,7 +6415,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-illiyoon-03",
@@ -5982,7 +6429,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -5995,6 +6443,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -6010,7 +6459,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": "8809563937752",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6023,6 +6473,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6038,7 +6489,8 @@
           "volume": "15mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -6051,6 +6503,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6066,7 +6519,8 @@
           "volume": "50g",
           "sku": "W1000723",
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6079,6 +6533,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 23,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6094,7 +6549,8 @@
           "volume": "50枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-02",
@@ -6107,7 +6563,8 @@
           "volume": "20枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-03",
@@ -6120,7 +6577,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-04",
@@ -6133,7 +6591,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-05",
@@ -6146,7 +6605,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-06",
@@ -6159,7 +6619,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-07",
@@ -6172,7 +6633,8 @@
           "volume": "10枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-08",
@@ -6185,7 +6647,8 @@
           "volume": "1枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-09",
@@ -6198,7 +6661,8 @@
           "volume": "50g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-10",
@@ -6211,7 +6675,8 @@
           "volume": "50枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-11",
@@ -6224,7 +6689,8 @@
           "volume": "20枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-12",
@@ -6237,7 +6703,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-13",
@@ -6250,7 +6717,8 @@
           "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-14",
@@ -6263,7 +6731,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-15",
@@ -6276,7 +6745,8 @@
           "volume": "500mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-16",
@@ -6289,7 +6759,8 @@
           "volume": "55mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-17",
@@ -6302,7 +6773,8 @@
           "volume": "30枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-18",
@@ -6315,7 +6787,8 @@
           "volume": "10枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-19",
@@ -6328,7 +6801,8 @@
           "volume": "45mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc65-faceshop-20",
@@ -6341,7 +6815,8 @@
           "volume": "45mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc69-faceshop-ultimate-n10-30",
@@ -6354,7 +6829,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "4571537792189",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc69-faceshop-ultimate-p1-30",
@@ -6367,7 +6843,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "4571537792196",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc69-faceshop-ultimate-mp8-30",
@@ -6380,7 +6857,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "4571537792271",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6393,6 +6871,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6408,7 +6887,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6421,6 +6901,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6435,6 +6916,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6450,7 +6932,8 @@
           "volume": "150g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc64-beyond-aqua-toner",
@@ -6463,7 +6946,8 @@
           "volume": "500mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6476,6 +6960,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.anuashop.jp/",
@@ -6491,7 +6976,8 @@
           "volume": "50mL",
           "sku": "sior0016",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6504,6 +6990,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://roundlab.com/",
@@ -6518,6 +7005,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.cosrx.com/",
@@ -6533,7 +7021,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": "8800311121805",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "jp-reviewed-5b52c5df1e95e51f",
@@ -6546,7 +7035,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6559,6 +7049,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://beautyofjoseon.com/",
@@ -6574,7 +7065,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809968130277",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6587,6 +7079,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.skin1004.com/",
@@ -6602,7 +7095,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809913834557",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6615,6 +7109,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://mediheal.jp/",
@@ -6630,7 +7125,8 @@
           "volume": "24mL（1枚）",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6643,6 +7139,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://mixsoon.us/",
@@ -6658,7 +7155,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8809732914300",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6671,6 +7169,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://torriden.jp/",
@@ -6686,7 +7185,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6699,6 +7199,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.vtcosmetics.jp/",
@@ -6714,7 +7215,8 @@
           "volume": "350g（30枚）",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6727,6 +7229,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6742,7 +7245,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8809652583389",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6755,6 +7259,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6770,7 +7275,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809838652489",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc51-dr-g-clear-moisture-50",
@@ -6783,7 +7289,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809963504646",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6796,6 +7303,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6811,7 +7319,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6824,6 +7333,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://manyo-japanese.com/",
@@ -6839,7 +7349,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -6852,6 +7363,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://medicube.us/",
@@ -6867,7 +7379,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8800256108053",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6880,6 +7393,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://tirtir.global/",
@@ -6895,7 +7409,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc52-tirtir-makeup-fixer-80",
@@ -6908,7 +7423,8 @@
           "volume": "80mL",
           "sku": null,
           "jan": "8809679699612",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6921,6 +7437,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6936,7 +7453,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": "8809563068753",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6949,6 +7467,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -6964,7 +7483,8 @@
           "volume": "27mL×10枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -6977,6 +7497,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 4,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://isntree-global.com/",
@@ -6992,7 +7513,8 @@
           "volume": "300mL",
           "sku": null,
           "jan": "4571475235915",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-isntree-02",
@@ -7005,7 +7527,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "4571475235922",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-isntree-03",
@@ -7018,7 +7541,8 @@
           "volume": null,
           "sku": null,
           "jan": "4571475235939",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-isntree-04",
@@ -7031,7 +7555,8 @@
           "volume": "25g×3枚",
           "sku": null,
           "jan": "4571475236028",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7044,6 +7569,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 5,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7059,7 +7585,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-087",
@@ -7072,7 +7599,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-088",
@@ -7085,7 +7613,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-089",
@@ -7098,7 +7627,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-090",
@@ -7111,7 +7641,8 @@
           "volume": "30枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7124,6 +7655,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7138,6 +7670,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.skinfood.co.jp/",
@@ -7153,7 +7686,8 @@
           "volume": "100g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -7166,6 +7700,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.missha.co.jp/",
@@ -7181,7 +7716,8 @@
           "volume": "140mL",
           "sku": "MS103671",
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -7194,6 +7730,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.missha.co.jp/",
@@ -7209,7 +7746,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc50-apieu-raspberry-hair-vinegar-200",
@@ -7222,7 +7760,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -7235,6 +7774,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7250,7 +7790,8 @@
           "volume": "15g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc52-clio-original-21c",
@@ -7263,7 +7804,8 @@
           "volume": "15g",
           "sku": null,
           "jan": "4573198754933",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc52-clio-original-21n",
@@ -7276,7 +7818,8 @@
           "volume": "15g",
           "sku": null,
           "jan": "4573198754940",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7289,6 +7832,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 3,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7304,7 +7848,8 @@
           "volume": "4g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-076",
@@ -7317,7 +7862,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-077",
@@ -7330,7 +7876,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7343,6 +7890,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7358,7 +7906,8 @@
           "volume": "40mL",
           "sku": null,
           "jan": "4582356617249",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7371,6 +7920,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7386,7 +7936,8 @@
           "volume": "3.5g",
           "sku": null,
           "jan": "4570128220322",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7399,6 +7950,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7414,7 +7966,8 @@
           "volume": null,
           "sku": null,
           "jan": "6902395984375",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7427,6 +7980,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://banilausa.com/",
@@ -7442,7 +7996,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-092",
@@ -7455,7 +8010,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7468,6 +8024,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 2,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7483,7 +8040,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "4589664762326",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-ahc-02",
@@ -7496,7 +8054,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809759083935",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7509,6 +8068,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://celimax.jp/",
@@ -7524,7 +8084,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7537,6 +8098,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://doctoraltheaglobal.com/",
@@ -7552,7 +8114,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809447256221",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7565,6 +8128,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://biodance.com/",
@@ -7580,7 +8144,8 @@
           "volume": "34g×1枚",
           "sku": null,
           "jan": "8809937361022",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7593,6 +8158,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 6,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7608,7 +8174,8 @@
           "volume": "80mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-081",
@@ -7621,7 +8188,8 @@
           "volume": "160mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-082",
@@ -7634,7 +8202,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-083",
@@ -7647,7 +8216,8 @@
           "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-084",
@@ -7660,7 +8230,8 @@
           "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc61-catalog-085",
@@ -7673,7 +8244,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7686,6 +8258,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 4,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://haruharuwonder.com/",
@@ -7701,7 +8274,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-haruharu-02",
@@ -7714,7 +8288,8 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-haruharu-03",
@@ -7727,7 +8302,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-haruharu-04",
@@ -7740,7 +8316,8 @@
           "volume": "90mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7753,6 +8330,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://axis-y.com/",
@@ -7767,6 +8345,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://tocobo.us/",
@@ -7782,7 +8361,8 @@
           "volume": null,
           "sku": null,
           "jan": "8809835064605",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7795,6 +8375,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7810,7 +8391,8 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7823,6 +8405,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7838,7 +8421,8 @@
           "volume": "210g・70枚",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7851,6 +8435,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7865,6 +8450,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 6,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7880,7 +8466,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": "8809619272714",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-wellage-02",
@@ -7893,7 +8480,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8809619273612",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-wellage-03",
@@ -7906,7 +8494,8 @@
           "volume": "38g×5枚",
           "sku": null,
           "jan": "8809619273490",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-wellage-04",
@@ -7919,7 +8508,8 @@
           "volume": "25mL×5枚",
           "sku": null,
           "jan": "8809619273247",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-wellage-05",
@@ -7932,7 +8522,8 @@
           "volume": "60mL",
           "sku": null,
           "jan": "8809619274411",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc63-wellage-06",
@@ -7945,7 +8536,8 @@
           "volume": "7枚",
           "sku": null,
           "jan": "8809619273605",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7958,6 +8550,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -7973,7 +8566,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8809971488648",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -7986,6 +8580,7 @@
       "productRegistration": "pending-product-names",
       "productNameCount": 0,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8000,6 +8595,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8015,7 +8611,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8806109101257",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -8028,6 +8625,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://fwee.jp/",
@@ -8043,7 +8641,8 @@
           "volume": "5g",
           "sku": null,
           "jan": "8809652587585",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -8056,6 +8655,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 1,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://hince.jp/",
@@ -8071,7 +8671,8 @@
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": null
+          "identityVerifiedAt": null,
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -8084,6 +8685,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 4,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8099,7 +8701,8 @@
           "volume": "7.5g",
           "sku": null,
           "jan": "8800299141444",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-dasique-02",
@@ -8112,7 +8715,8 @@
           "volume": "7g",
           "sku": null,
           "jan": "8800299143561",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-dasique-03",
@@ -8125,7 +8729,8 @@
           "volume": "8g",
           "sku": null,
           "jan": "8800299143813",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-dasique-04",
@@ -8138,7 +8743,8 @@
           "volume": "8g",
           "sku": null,
           "jan": "8800299143820",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -8151,6 +8757,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8166,7 +8773,8 @@
           "volume": "14g",
           "sku": null,
           "jan": "4582356610301",
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -8179,6 +8787,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 1,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8194,7 +8803,8 @@
           "volume": "4g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-10-31"
+          "identityVerifiedAt": "2026-10-31",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     },
@@ -8207,6 +8817,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 7,
       "ingredientRecordCount": 0,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
@@ -8222,7 +8833,8 @@
           "volume": "10mL",
           "sku": null,
           "jan": "8806121402530",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-02",
@@ -8235,7 +8847,8 @@
           "volume": "10mL",
           "sku": null,
           "jan": "8806121402721",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-03",
@@ -8248,7 +8861,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8806121402523",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-04",
@@ -8261,7 +8875,8 @@
           "volume": "30mL",
           "sku": null,
           "jan": "8806121405166",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-05",
@@ -8274,7 +8889,8 @@
           "volume": "60枚",
           "sku": null,
           "jan": "8806121405180",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-06",
@@ -8287,7 +8903,8 @@
           "volume": "50mL",
           "sku": null,
           "jan": "8806121403506",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc62-rejuran-07",
@@ -8300,7 +8917,8 @@
           "volume": "32g×5枚",
           "sku": null,
           "jan": "8806121405197",
-          "identityVerifiedAt": "2026-11-01"
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]
     }

@@ -837,16 +837,17 @@ $('ocr').onclick=async()=>{if(!photoFile)return;$('ocr').disabled=true;const tar
 // SVGは説明用の画像として扱い、キーボード操作は画面下の実際のボタンに集約。
 for(const [id] of groups){const node=$('visual'+id[0].toUpperCase()+id.slice(1));node.style.cursor='pointer';node.onclick=()=>part(id);}
 
-let brandCatalog=null,brandLoading=false,verifiedBrandCounts=new Map(),coverageLoaded=false;
+let brandCatalog=null,brandLoading=false,verifiedBrandCounts=new Map(),partialBrandCounts=new Map(),coverageLoaded=false;
 function showBrands(){
   if(!brandCatalog)return;
   const query=$('brandFilter').value.trim();
   const foldQuery=productFold(query);
-  const matches=brandCatalog.brands.filter(b=>!query||brandQueryMatches(b,query)||
+  const matches=brandCatalog.brands.filter(b=>b.id!==null&&(!query||brandQueryMatches(b,query)||
     productFold(b.maker).includes(foldQuery)||
-    productsForBrand(b.name).some(p=>productFold(p.series||'').includes(foldQuery)&&!!p.series));
+    productsForBrand(b.name).some(p=>productFold(p.series||'').includes(foldQuery)&&!!p.series)));
   $('brandList').replaceChildren();
   const visible=[...matches].sort((a,b)=>(verifiedBrandCounts.get(b.name)||0)-(verifiedBrandCounts.get(a.name)||0)||
+ (partialBrandCounts.get(b.name)||0)-(partialBrandCounts.get(a.name)||0)||
  Number(b.japanSiteVerified)-Number(a.japanSiteVerified)||a.name.localeCompare(b.name,'ja'));
   for(const brand of visible){
     const cell=document.createElement('div');cell.className='brand-entry';
@@ -860,19 +861,23 @@ function showBrands(){
     };
     const meta=document.createElement('small');
     const savedCount=verifiedBrandCounts.get(brand.name)||0;
+    const partialCount=partialBrandCounts.get(brand.name)||0;
     const productCount=productFamilies(productsForBrand(brand.name)).length;
     const manufacturerCount=findManufacturerProducts(brand.name).length;
     meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(manufacturerCount?'メーカー検索：系列 '+manufacturerCount+'商品候補 ／ ブランド自身の保存版 '+savedCount+'処方':savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
       productCount?'商品候補 '+productCount+'件／全成分未確認':
       manufacturerCount?'メーカー名／傘下ブランドの商品候補 '+manufacturerCount+'件':'ブランド仮登録済み／商品名未登録');
+    if(partialCount)meta.textContent+=' ／ 判明成分のみ '+partialCount+'商品（参考の花）';
     cell.append(select,meta);
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);
   }
   const stats=brandCatalog.stats;
+  const registeredBrandCount=brandCatalog.brands.filter(b=>b.id!==null).length;
   const verifiedBrands=[...verifiedBrandCounts].filter(([,count])=>count>0).length;
   const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
-  $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 全成分の掲載記録 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方。容量・色違いは商品単位でまとめ、別色の成分差は保持します。全商品の網羅ではありません。';
+  const partialOnly=[...partialBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)).length;
+  $('brandCounts').textContent='登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。国内販売店の掲載元でも商品名を調べられます。';
 }
 const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧（245件・一部未登録）</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
@@ -886,12 +891,14 @@ $('brandDirectory').ontoggle=async()=>{
   if(!$('brandDirectory').open||brandCatalog||brandLoading)return;
   brandLoading=true;
   try{
-   const [catalog,archive]=await Promise.all([getJSON('/api/brands'),formulaArchive()]);
+   const [catalog,archive,partials]=await Promise.all([getJSON('/api/brands'),formulaArchive(),partialEvidence().catch(()=>[])]);
    brandCatalog=catalog;
    verifiedBrandCounts=new Map();
    for(const record of archive?.records||[]){
      verifiedBrandCounts.set(record.brand,(verifiedBrandCounts.get(record.brand)||0)+1);
    }
+   partialBrandCounts=new Map();
+   for(const entry of partials)partialBrandCounts.set(entry.brand,(partialBrandCounts.get(entry.brand)||0)+1);
    coverageLoaded=!!archive;
    showBrands();
   }
