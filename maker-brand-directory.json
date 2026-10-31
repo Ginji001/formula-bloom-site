@@ -1133,6 +1133,36 @@
             "HIKARIMIRAI",
             "ヒカリミライ"
           ]
+        },
+        {
+          "brandId": null,
+          "name": "do organic",
+          "aliases": [
+            "do organic"
+          ],
+          "registrationStatus": "historical-official-listing-current-status-unverified",
+          "officialSource": "https://www.chifure.co.jp/news/20201015",
+          "sourcePublishedAt": "2020-10-15"
+        },
+        {
+          "brandId": null,
+          "name": "do natural",
+          "aliases": [
+            "do natural"
+          ],
+          "registrationStatus": "historical-official-listing-current-status-unverified",
+          "officialSource": "https://www.chifure.co.jp/news/20201015",
+          "sourcePublishedAt": "2020-10-15"
+        },
+        {
+          "brandId": null,
+          "name": "BEAUTY UP TOOL",
+          "aliases": [
+            "BEAUTY UP TOOL"
+          ],
+          "registrationStatus": "historical-official-listing-current-status-unverified",
+          "officialSource": "https://www.chifure.co.jp/news/20201015",
+          "sourcePublishedAt": "2020-10-15"
         }
       ]
     },
@@ -2336,8 +2366,8 @@
       ]
     }
   ],
-  "officialExpansionCount": 73,
-  "directoryBrandCount": 220,
+  "officialExpansionCount": 76,
+  "directoryBrandCount": 223,
   "officialExpansionSources": [
     {
       "maker": "資生堂",
@@ -2358,6 +2388,11 @@
     {
       "maker": "コーセー",
       "url": "https://koseholdings.co.jp/ja/kose/info/bases/kose-sales/"
+    },
+    {
+      "maker": "ちふれグループ",
+      "url": "https://www.chifure.co.jp/news/20201015",
+      "sourcePublishedAt": "2020-10-15"
     }
   ]
 }
