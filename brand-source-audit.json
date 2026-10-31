@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T08:17:18.189Z",
+  "checkedAt": "2026-10-31T08:48:50.067Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 70,
-  "brandsWithoutIngredientRecords": 77,
+  "brandsWithIngredientRecords": 71,
+  "brandsWithoutIngredientRecords": 76,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -545,9 +545,9 @@
       "brand": "アテニア",
       "sourceCandidate": null,
       "sourceStatus": "no-source-registered",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "discover-japan-market-sales-source"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 61,
