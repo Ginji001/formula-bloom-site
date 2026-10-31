@@ -42,7 +42,7 @@ export function isJapaneseMarketURL(input){
  if(domesticComPaths.has(host))return domesticComPaths.get(host).test(u.pathname);
  // 未登録国内ドメインの場合、公式ページの本人確認と日本語成分表示が別途必須。
  // A specific 2026 Japanese importer product-announcement page, not blanket PR content.
- if(host==='prtimes.jp')return ['/main/html/rd/p/000000025.000128129.html','/main/html/rd/p/000000016.000022550.html'].includes(u.pathname);
+ if(host==='prtimes.jp')return ['/main/html/rd/p/000000025.000128129.html','/main/html/rd/p/000000016.000022550.html','/main/html/rd/p/000000001.000072494.html','/main/html/rd/p/000000034.000019093.html','/main/html/rd/p/000000007.000058726.html','/main/html/rd/p/000000149.000077777.html'].includes(u.pathname);
  if(host.endsWith('.co.jp')||host.endsWith('.jp'))return true;
  if(matchesHost(host,'kao-kirei.com'))return /^\/ja\/(?:official|item)\//.test(u.pathname)||/^\/ja\/brand\/khg\/biore\/$/.test(u.pathname);
  if(matchesHost(host,'kao.com')||matchesHost(host,'muji.com'))return /^\/jp(?:\/|$)/.test(u.pathname);

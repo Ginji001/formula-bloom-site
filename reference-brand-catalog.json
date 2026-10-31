@@ -1095,7 +1095,17 @@
       "brandId": 87,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ザ・ビタミンC23",
+          "url": "https://prtimes.jp/main/html/rd/p/000000001.000072494.html",
+          "volume": "17g",
+          "variant": "2021年国内公式ショップ品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -1402,7 +1412,26 @@
       "brandId": 97,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ビヨンド エンジェルアクア 水分クリーム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000034.000019093.html",
+          "volume": "150g",
+          "variant": "2020年日本発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ビヨンド エンジェルアクア デイリービッグトナー",
+          "url": "https://prtimes.jp/main/html/rd/p/000000034.000019093.html",
+          "volume": "500mL",
+          "variant": "2020年日本発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2495,7 +2524,17 @@
       "brandId": 135,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ヘイミッシュ オールクリーンバーム",
+          "url": "https://prtimes.jp/main/html/rd/p/000000007.000058726.html",
+          "volume": "120mL",
+          "variant": "2021年日本正規発売品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
@@ -2520,7 +2559,17 @@
       "brandId": 136,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ベントン 70スキントナーフェイスマスクパッド",
+          "url": "https://prtimes.jp/main/html/rd/p/000000149.000077777.html",
+          "volume": "210g・70枚",
+          "variant": "2025年国内展示販売予定品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
