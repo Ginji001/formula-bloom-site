@@ -10,6 +10,7 @@ import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
 import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciNames} from './inci-reference-evidence.js';
 import {inferStructure,inferredArchetypes} from './inference-flower.js';
+import {inferIngredientEvidence} from './inference-evidence.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
@@ -455,7 +456,7 @@ function showPartialInput(container,item,record){
  wrap.append(action,status);container.append(wrap);
 }
 // The separate hypothesis panel never enters analyze(), ingredient table, archives, history or exports.
-function showInferredFlower(model){
+function showInferredFlower(model,comparison=null){
  if(!model?.hypothesis||model.ingredientNames.length||model.ingredientEvidence)throw Error('推論モードには確認済み成分を登録できません。');
  invalidate();official=false;remoteProduct=null;ocrRequired=false;
  $('japanConfirmed').checked=false;
@@ -482,6 +483,55 @@ function showInferredFlower(model){
  const caution=document.createElement('p');caution.className='inference-warning';
  caution.textContent='【推論・未確認】'+model.note+' 実際の成分名・濃度・配合順・効能・品質・安全性は判断できません。未確認成分はすべて未確認のままです。画像出力・履歴保存・商品登録の対象外です。';
  panel.append(label,title,product,svg,legend,why,list,caution);
+ if(comparison){
+  const ref=document.createElement('details');ref.className='inference-evidence';
+  const heading=document.createElement('summary');heading.textContent='候補成分と根拠を確認（展開）';ref.append(heading);
+  const scope=document.createElement('p');scope.className='muted';
+  scope.textContent='比較範囲：日本国内向けの同剤型から '+comparison.sourceProductCount+'商品／'+comparison.sourceBrandCount+'ブランド。メーカー掲載の全成分と国内の一部成分から共通表示名を抽出。海外版INCI・薬用製品・旧処方は使っていません。選定数は配合確率ではありません。';
+  ref.append(scope);
+  const directTitle=document.createElement('h3');directTitle.textContent='1．出典で確認（対象商品の掲載成分）';
+  ref.append(directTitle);
+  const directInfo=document.createElement('p');directInfo.className='muted';
+  directInfo.textContent=comparison.confirmedInExactProduct.length?'対象商品の出典に名前が掲載されている成分です。現物ラベルとの一致は未確認。':'対象商品の国内向け掲載成分は未確認です。';
+  ref.append(directInfo);
+  if(comparison.confirmedInExactProduct.length){
+   const direct=document.createElement('ul');direct.className='inference-source-list';
+   for(const found of comparison.confirmedInExactProduct.slice(0,12)){
+    const li=document.createElement('li');li.textContent=found.name+' ／ '+(found.evidenceKind==='published-full'?'国内掲載の全成分':'国内掲載の部分成分')+'（掲載確認 '+String(found.checkedOn).slice(0,10)+'・現物未照合）';
+    const a=document.createElement('a');a.textContent='掲載元 ↗';a.href=found.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';li.append(' ',a);direct.append(li);
+   }
+   ref.append(direct);
+  }
+  const estimateTitle=document.createElement('h3');estimateTitle.textContent='2．同剤型の別商品から推定する候補';
+  ref.append(estimateTitle);
+  if(!comparison.analogues.length){
+   const empty=document.createElement('p');empty.className='muted';
+   empty.textContent='独立した3ブランド以上、かつメーカー掲載の全成分1商品以上という比較条件を満たす候補がありません。対象商品への配合を推定しません。';
+   ref.append(empty);
+  }else{
+   const ul=document.createElement('ul');ul.className='inference-source-list';
+   for(const estimate of comparison.analogues){
+    const li=document.createElement('li');
+    const name=document.createElement('strong');name.textContent=estimate.name+'［推定候補・対象品への配合未確認］';
+    const how=document.createElement('p');how.className='muted';
+    how.textContent='一般的役割：'+estimate.generalRole+' ／ 比較に用いた別商品 '+estimate.productExamples+'件・'+estimate.brandExamples+'ブランド（代表例。確率・濃度ではありません）';
+    li.append(name,how);
+    const samples=document.createElement('div');
+    for(const sample of estimate.comparisonExamples){
+     const anchor=document.createElement('a');anchor.href=sample.sourceUrl;anchor.target='_blank';anchor.rel='noopener noreferrer';
+     anchor.textContent=sample.brand+' '+sample.productName+'（'+sample.sourceKind+'・確認 '+String(sample.checkedOn).slice(0,10)+'） ↗';
+     samples.append(anchor);
+    }
+    li.append(samples);ul.append(li);
+   }
+   ref.append(ul);
+  }
+  const unknownTitle=document.createElement('h3');unknownTitle.textContent='3．未確認（処方への採否は不明）';
+  const unknown=document.createElement('p');unknown.className='muted';unknown.textContent=comparison.unknownExplanation+' '+comparison.warning;
+  ref.append(unknownTitle,unknown);
+  panel.append(ref);
+ }
+
  if(model.productSourceUrl)sourceLink(panel,model.productSourceUrl,'商品名の確認元（配合成分や推論結果の証拠ではありません）');
  if(matchMedia('(max-width: 850px)').matches)panel.scrollIntoView({behavior:'auto',block:'start'});
 }
@@ -504,7 +554,24 @@ function showInferredFlowerChoice(container,item=null,brand=''){
  const btn=document.createElement('button');btn.className='secondary';btn.type='button';
  btn.textContent='剤型から推論の花を表示';btn.disabled=!select.value;
  select.onchange=()=>{btn.disabled=!select.value;};
- btn.onclick=()=>{const model=inferStructure({product:item,archetypeId:select.value});if(model)showInferredFlower(model);};
+ btn.onclick=async()=>{
+  const model=inferStructure({product:item,archetypeId:select.value});
+  if(!model)return;
+  const requested=lookupVersion;
+  btn.disabled=true;
+  const original=btn.textContent;
+  btn.textContent='国内掲載の比較資料を確認中…';
+  try{
+   const [archive,partial]=await Promise.all([formulaArchive(),partialEvidence()]);
+   if(requested!==lookupVersion)return;
+   const comparison=archive?inferIngredientEvidence({hypothesis:model,product:item,archiveRecords:archive.records,partialRecords:partial}):null;
+   showInferredFlower(model,comparison);
+  }catch{
+   if(requested===lookupVersion)showInferredFlower(model);
+  }finally{
+   btn.textContent=original;btn.disabled=!select.value;
+  }
+ };
  details.append(btn);
  container.append(details);
 }

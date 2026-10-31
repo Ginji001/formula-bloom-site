@@ -105,4 +105,14 @@ button,input,select,textarea{touch-action:manipulation}
 .inference-warning{padding:12px;border-left:3px solid #ac8b67;background:#f6f2e9;font-size:11px;overflow-wrap:anywhere}
 .inference-panel a{font-size:11px;overflow-wrap:anywhere}
 
+/* Transparent comparison evidence, never verified target ingredient inclusion. */
+.inference-evidence{padding:12px;margin:14px 0;border:1px solid #c9d5c8;border-radius:10px;background:#fcfcf8}
+.inference-evidence>summary{font-size:12px;font-weight:650}
+.inference-evidence h3{font-size:12px;line-height:1.6;margin:15px 0 4px}
+.inference-source-list{padding-left:17px;margin:8px 0}
+.inference-source-list li{font-size:11px;overflow-wrap:anywhere;padding:9px 0;border-bottom:1px solid #e0e5da}
+.inference-source-list li>div{display:flex;flex-direction:column;gap:4px}
+.inference-source-list a{font-size:10px;overflow-wrap:anywhere}
+.inference-source-list li .muted{margin:3px 0}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}
