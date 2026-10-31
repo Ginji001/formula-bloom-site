@@ -83,4 +83,26 @@ button,input,select,textarea{touch-action:manipulation}
 /* External, user-initiated domestic product research (not automatic scraping). */
 .research-link{display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere;white-space:normal;text-decoration:none;line-height:1.55;margin-top:12px}.research-link:hover{background:#f0f4eb}.research-link:focus-visible{outline:3px solid #b58256;outline-offset:3px}
 \n/* Individual formula fingerprint: readable below the flower, not burned into exported artwork. */\n.formula-signature{margin:12px 0 8px;padding:12px 14px;border-left:2px solid var(--ink);background:#ffffff99;border-radius:5px;font-size:12px;line-height:1.8}.formula-signature strong{display:block;font-size:13px;line-height:1.6}.formula-signature p{margin:7px 0 4px;white-space:pre-line;overflow-wrap:anywhere}.formula-signature small{display:block;color:var(--muted);font-size:10px;line-height:1.6}.formula-signature[hidden]{display:none}\n
+
+/* An explicitly separate, non-saved role hypothesis: never a formula or a concentration diagram. */
+.result-card.is-inference>.flower-stage,.result-card.is-inference>.flower-caption,.result-card.is-inference>#analysisDetails,
+.result-card.is-inference>.share-actions{display:none!important}
+.inference-choice{margin:10px 0;border:1px dashed #a9b6a4;border-radius:9px;padding:11px;background:#f7f7f0}
+.inference-choice summary{font-weight:650;font-size:12px}
+.inference-choice .muted{font-size:11px}
+.inference-choice select{min-height:44px}
+.inference-choice button{min-height:45px}
+.inference-panel{color:#314b42;scroll-margin-top:12px}
+.inference-eyebrow{font-size:10px;letter-spacing:.4px;color:#775b48;font-weight:700}
+.inference-panel h2{font-size:23px;line-height:1.5;margin:6px 0}
+.inference-product{font-size:12px;overflow-wrap:anywhere}
+.inference-diagram{display:block;width:min(100%,300px);height:auto;margin:auto}
+.inference-why{font-size:12px}
+.inference-roles{margin:12px 0}
+.inference-role{border-top:1px solid #c9d5c8;padding:10px 0}
+.inference-role dt{font-size:12px;font-weight:650}
+.inference-role dd{font-size:11px;margin:3px 0 0;line-height:1.75}
+.inference-warning{padding:12px;border-left:3px solid #ac8b67;background:#f6f2e9;font-size:11px;overflow-wrap:anywhere}
+.inference-panel a{font-size:11px;overflow-wrap:anywhere}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}
