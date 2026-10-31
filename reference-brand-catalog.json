@@ -31,7 +31,22 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "ドラマティックエッセンスルージュ",
+          "variant": "PK301 未来予想",
+          "volume": "4g",
+          "status": "参考",
+          "sourceType": "manufacturer-product-listing",
+          "sources": [
+            "https://www.shiseido.co.jp/sw/onlinestore/products/G98601.html",
+            "https://www.shiseido.co.jp/sw/products/auth/SWFG070410.seam?online_shohin_ctlg_kbn=2&sweb_shohin_cd=4909978146023"
+          ],
+          "ingredients": "ジフェニルシロキシフェニルトリメチコン、ジフェニルジメチコン、トリイソステアリン酸ポリグリセリル－２、ポリエチレン、トリエチルヘキサノイン、水添ポリイソブテン、ＰＥＧ－１０ジメチコン、シリカ、アルガニアスピノサ核油、グルコシルヘスペリジン、オリーブ果実油、アセチルヒアルロン酸Ｎａ、ツバキ種子油、ホホバ種子油、アラントイン、トリイソステアリン、マイクロクリスタリンワックス、トリエチルヘキサン酸トリメチロールプロパン、リンゴ酸ジイソステアリル、ジイソステアリン酸グリセリル、ケイ酸（Ｌｉ／Ｍｇ／Ｎａ）、トコフェロール、メチコン、テトラデセン、水酸化Ａｌ、グリセリン、シメチコン、テトラヒドロテトラメチルシクロテトラシロキサン、ＢＨＴ、アスコルビン酸、酸化スズ、香料、マイカ、酸化鉄、酸化チタン、赤２０１、硫酸Ｂａ、赤２０２、青１",
+          "note": "資生堂掲載の2023年発売色の成分。色番による差異と実物表示を要照合。"
+        }
+      ]
     },
     {
       "brand": "インテグレート",
@@ -46,7 +61,21 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "すっぴんメイカー トーンアップUV",
+          "variant": "ピュアカラー",
+          "volume": "25mL",
+          "status": "参考",
+          "sourceType": "manufacturer-product-listing",
+          "sources": [
+            "https://www.shiseido.co.jp/sw/onlinestore/products/G68501.html?sweb_shohin_cd=4909978146207"
+          ],
+          "ingredients": "水、メトキシケイヒ酸エチルヘキシル、エタノール、ジメチコン、ＢＧ、ＤＰＧ、オクトクリレン、シリカ、水添ポリデセン、ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン、ＰＰＧ－８セテス－２０、グリセリン、ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル、トレハロース、ＰＥＧ／ＰＰＧ－１７／４ジメチルエーテル、アミノプロピルジメチコン、ポリウレタン－１０、エリスリトール、ＰＥＧ／ＰＰＧ－１４／７ジメチルエーテル、マカデミアナッツ脂肪酸フィトステリル、（ジメチルアクリルアミド／アクリロイルジメチルタウリンＮａ）クロスポリマー、ＰＥＧ－１２ジメチコン、サクシノグリカン、水酸化Ａｌ、ＰＥＧ－１１メチルエーテルジメチコン、トリエトキシカプリリルシラン、クエン酸Ｎａ、メタリン酸Ｎａ、ステアロキシヒドロキシプロピルメチルセルロース、ＥＤＴＡ－３Ｎａ、ＢＨＴ、ピロ亜硫酸Ｎａ、トコフェロール、フェノキシエタノール、酸化チタン、硫酸Ｂａ、酸化鉄",
+          "note": "資生堂の商品詳細ページに記載の成分を参考登録。現物との一致は未確認。"
+        }
+      ]
     },
     {
       "brand": "マジョリカ マジョルカ",
@@ -238,7 +267,22 @@
         }
       ],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "敏感肌用化粧水 さっぱり",
+          "volume": "300mL",
+          "jan": "4550583434939",
+          "status": "参考",
+          "sourceType": "retailer-manufacturer-store",
+          "sources": [
+            "https://item.rakuten.co.jp/mujirushi-ryohin/4550583434939/",
+            "https://www.cosme.net/variations/1170575/"
+          ],
+          "ingredients": "水、ＢＧ、グリセリン、ユーカリ葉エキス、スベリヒユエキス、グレープフルーツ種子エキス、セラミドＮＰ、アラニン、アルギニン、グルタミン酸Ｎａ、セリン、プロリン、ヒアルロン酸Ｎａ、グリチルリチン酸２Ｋ、加水分解水添デンプン、グリコシルトレハロース、ペンチレングリコール、メチルグルセス－１０、ＰＣＡ－Ｎａ、エチルヘキシルグリセリン、ポリソルベート８０、クエン酸、クエン酸Ｎａ",
+          "note": "無印良品公式楽天店の全成分表示と@cosmeの同JAN製品を照合。旧200mL処方とは別。"
+        }
+      ]
     },
     {
       "brand": "サナ",
@@ -445,7 +489,20 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "Birch Juice Mild-Up UVLock Sunscreen SPF 50+",
+          "status": "参考",
+          "market": "US",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://roundlab.com/products/birch-juice-mild-up-uvlock-sunscreen"
+          ],
+          "ingredientsINCI": "WATER, ZINC OXIDE, ISODODECANE, CAPRYLYL METHICONE, POLYGLYCERY-3 POLYDIMETHYLSILFOXYETHYL DIMETHICONE, METHYL TRIMETHICONE, DISTEARDIMONIUM HECTORITE, SODIUM HYALURONATE, HYALURONIC ACID, BETULA PLATYPHYLLA JAPONICA JUICE, ARTEMISIA ANNUA EXTRACT, METHYL METHACRYLATE CROSSPOLYMER, GLYCERIN, BUTYLENE GLYCOL, PROPANEDIOL, GLYCERYL GLUCOSIDE, MAGNESIUM SULFATE, TRIETHOXYCAPRYLYLSILANE, ANTHEMIS NOBILIS FLOWER OIL, PINUS SYLVESTRIS LEAF OIL, SACCHAROMYCES FERMENT FILTRATE, ETHYLHEXYLGLYCERIN, CAPRYLYL GLYCOL, GLYCERYL CAPRYLATE, BUTYLOCTYL SALICYLATE, POLYMETHYLSILSESQUIOXANE, CYCLOHEXASILOXANE, 1,2-HEXANEDIOL, LAURYL POLYGLYCERYL-3 POLYDIMETHYILSOXYETHYL DIMETHICONE, CRYPTOMERIA JAPONICA LEAF EXTRACT, TOCOPHEROL (VITAMIN E), ASCORBIC ACID (VITAMIN C)",
+          "note": "米国向け公式掲載INCIを参考保存。日本向け処方とは同一視しない。"
+        }
+      ]
     },
     {
       "brand": "Beauty of Joseon",
@@ -607,7 +664,21 @@
       "formulaVerified": false,
       "productCandidates": [],
       "ingredientNames": [],
-      "flowerGeneration": "reference-input-only"
+      "flowerGeneration": "reference-input-only",
+      "referenceProducts": [
+        {
+          "name": "Wonder Releaf Centella Toner Unscented",
+          "volume": "200mL / 30mL",
+          "status": "参考",
+          "market": "KR/global",
+          "sourceType": "manufacturer",
+          "sources": [
+            "https://purito.com/product/wonder-releaf-centella-toner-unscented/"
+          ],
+          "ingredientsINCI": "Water, Butylene Glycol, Pentylene Glycol, Dipropylene Glycol, 1,2-Hexanediol, Centella Asiatica Extract(6,000 ppm), Sodium Hyaluronate, Panthenol, Madecassoside, Asiaticoside, Madecassic Acid, Asiatic Acid, Trehalose, Carbomer, Allantoin, Arginine, Ethylhexylglycerin, Disodium EDTA, Portulaca Oleracea Extract",
+          "note": "メーカー掲載の全成分。日本販売品との同一性は未確認。"
+        }
+      ]
     },
     {
       "brand": "A’pieu",
@@ -889,5 +960,6 @@
       "flowerGeneration": "reference-input-only"
     }
   ],
-  "referenceProductCount": 1
+  "referenceProductCount": 6,
+  "referenceBrandsWithIngredients": 6
 }
