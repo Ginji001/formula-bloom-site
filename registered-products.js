@@ -19,24 +19,24 @@ export const registeredProducts=Object.freeze([
   aliases:['オルビス アンコール ローション'],url:'https://www.orbis.co.jp/small/11010502/',variant:null,ingredientsExpected:15,sku:'9340',volume:'180mL'},
  {id:'fancl-bc-lotion',brand:'ファンケル',name:'BC 化粧液',
   aliases:['ファンケル BC 化粧液'],url:'https://www.fancl.co.jp/item/Seibun?category=01&item_id=3792-11',variant:null,ingredientsExpected:29,sku:'3792-11'},
- {id:'tvert-ga-moist',brand:'トゥヴェール',name:'バランシングGAローション モイスト',
+ {id:'tvert-ga-moist',volume:"100mL",brand:'トゥヴェール',name:'バランシングGAローション モイスト',
   aliases:['トゥヴェール モイスト','バランシングGAローション モイスト','TOUT VERT バランシングGAローション モイスト'],
   url:'https://www.tvert.jp/shop/products/tvt002-2508tv0384',variant:'モイスト',ingredientsExpected:50},
- {id:'tvert-ga-normal',brand:'トゥヴェール',name:'バランシングGAローション',
+ {id:'tvert-ga-normal',volume:"100mL",brand:'トゥヴェール',name:'バランシングGAローション',
   aliases:['トゥヴェール GAローション','バランシングGAローション 通常版'],
   url:'https://www.tvert.jp/shop/products/tvt002-2508tv0384',variant:'通常版',ingredientsExpected:33},
- {id:'chifure-moist-deep',brand:'ちふれ',name:'保湿化粧水 とてもしっとりタイプ',
+ {id:'chifure-moist-deep',volume:"180mL",packageType:"bottle",brand:'ちふれ',name:'保湿化粧水 とてもしっとりタイプ',
   aliases:['ちふれ 保湿化粧水 とてもしっとり','ちふれ とてもしっとり'],
   url:'https://www.chifure.co.jp/products/skinlotion/2871',variant:null},
- {id:'chifure-lotion-light',brand:'ちふれ',name:'保湿化粧水 さっぱりタイプ',
+ {id:'chifure-lotion-light',volume:"180mL",packageType:"bottle",brand:'ちふれ',name:'保湿化粧水 さっぱりタイプ',
   aliases:['ちふれ 保湿化粧水 さっぱり'],url:'https://www.chifure.co.jp/products/skinlotion/2875',variant:null},
- {id:'chifure-lotion-rich',brand:'ちふれ',name:'保湿化粧水 しっとりタイプ',
+ {id:'chifure-lotion-rich',volume:"180mL",packageType:"bottle",brand:'ちふれ',name:'保湿化粧水 しっとりタイプ',
   aliases:['ちふれ 保湿化粧水 しっとり'],url:'https://www.chifure.co.jp/products/skinlotion/2873',variant:null},
- {id:'chifure-lotion-base',brand:'ちふれ',name:'保湿化粧水',
+ {id:'chifure-lotion-base',volume:"180mL",packageType:"bottle",brand:'ちふれ',name:'保湿化粧水',
   aliases:['ちふれ 保湿化粧水 通常版'],url:'https://www.chifure.co.jp/products/skinlotion/2920',variant:null},
- {id:'chifure-milk-rich',brand:'ちふれ',name:'濃厚 乳液',
+ {id:'chifure-milk-rich',volume:"150mL",brand:'ちふれ',name:'濃厚 乳液',
   aliases:['ちふれ 濃厚乳液'],url:'https://www.chifure.co.jp/products/milkylotion/2630',variant:null},
- {id:'chifure-milk-base',brand:'ちふれ',name:'保湿乳液',
+ {id:'chifure-milk-base',volume:"150mL",packageType:"bottle",brand:'ちふれ',name:'保湿乳液',
   aliases:['ちふれ 保湿乳液'],url:'https://www.chifure.co.jp/products/milkylotion/2877',variant:null},
  {id:'torriden-dive-toner',brand:'Torriden',name:'ダイブイン トナー',
   aliases:['トリデン ダイブイン トナー','Torriden DIVE IN トナー'],url:'https://torriden.jp/products/no0002',variant:null},
@@ -518,6 +518,12 @@ export const registeredProducts=Object.freeze([
  {"id":"rc65-faceshop-18","brand":"ザ・フェイスショップ","name":"イェファダム オイル イン クレンジングシート","aliases":["ザ・フェイスショップ イェファダム オイル イン クレンジングシート 10枚"],"url":"https://medicaraise-healthcare.jp/products/cosme/faceshop/","volume":"10枚","variant":"10枚入り","kind":"cosmetic","jan":null,"sku":null,"sourceScope":"Japanese domestic licensed cosmetics retailer category","registrationStatus":"name-only","identityVerifiedAt":"2026-11-01","rightsStatus":"reference-link-only","listingStatus":"out-of-stock-at-source","productIdentityNote":"国内販売店の掲載上では在庫なし。現在の在庫・JAN・現物ラベル・全成分転載許諾は未確認。"},
  {"id":"rc65-faceshop-19","brand":"ザ・フェイスショップ","name":"イェファダム プログラミング リッチ エッセンス EX","aliases":["ザ・フェイスショップ イェファダム プログラミング リッチ エッセンス EX 45mL"],"url":"https://medicaraise-healthcare.jp/products/cosme/faceshop/","volume":"45mL","variant":"EX","kind":"cosmetic","jan":null,"sku":null,"sourceScope":"Japanese domestic licensed cosmetics retailer category","registrationStatus":"name-only","identityVerifiedAt":"2026-11-01","rightsStatus":"reference-link-only","listingStatus":"out-of-stock-at-source","productIdentityNote":"国内販売店の掲載上では在庫なし。現在の在庫・JAN・現物ラベル・全成分転載許諾は未確認。"},
  {"id":"rc65-faceshop-20","brand":"ザ・フェイスショップ","name":"イェファダム プログラミング リッチ エッセンス","aliases":["ザ・フェイスショップ イェファダム プログラミング リッチ エッセンス 45mL"],"url":"https://medicaraise-healthcare.jp/products/cosme/faceshop/","volume":"45mL","variant":"通常版","kind":"cosmetic","jan":null,"sku":null,"sourceScope":"Japanese domestic licensed cosmetics retailer category","registrationStatus":"name-only","identityVerifiedAt":"2026-11-01","rightsStatus":"reference-link-only","listingStatus":"out-of-stock-at-source","productIdentityNote":"国内販売店の掲載上では在庫なし。現在の在庫・JAN・現物ラベル・全成分転載許諾は未確認。"},
+
+ {"id": "rc67-chifure-deep-refill", "brand": "ちふれ", "name": "保湿化粧水 とてもしっとりタイプ", "aliases": ["ちふれ 保湿化粧水 とてもしっとりタイプ 詰替用 150mL", "ちふれ 保湿化粧水 とてもしっとりタイプ 150mL 詰替用"], "url": "https://www.chifure.co.jp/products/skinlotion/2871", "volume": "150mL", "variant": "詰替用", "packageType": "refill", "kind": "cosmetic", "jan": null, "sku": null, "sourceScope": "manufacturer Japanese official product page", "registrationStatus": "name-only", "rightsStatus": "reference-link-only", "identityVerifiedAt": "2026-11-01", "productIdentityNote": "メーカー公式で詰替用の名称と容量を確認。現物の日本語全成分、JAN、本体との処方一致、転載許諾は未確認。"},
+ {"id": "rc67-chifure-light-refill", "brand": "ちふれ", "name": "保湿化粧水 さっぱりタイプ", "aliases": ["ちふれ 保湿化粧水 さっぱりタイプ 詰替用 150mL", "ちふれ 保湿化粧水 さっぱりタイプ 150mL 詰替用"], "url": "https://www.chifure.co.jp/products/skinlotion/2875", "volume": "150mL", "variant": "詰替用", "packageType": "refill", "kind": "cosmetic", "jan": null, "sku": null, "sourceScope": "manufacturer Japanese official product page", "registrationStatus": "name-only", "rightsStatus": "reference-link-only", "identityVerifiedAt": "2026-11-01", "productIdentityNote": "メーカー公式で詰替用の名称と容量を確認。現物の日本語全成分、JAN、本体との処方一致、転載許諾は未確認。"},
+ {"id": "rc67-chifure-rich-refill", "brand": "ちふれ", "name": "保湿化粧水 しっとりタイプ", "aliases": ["ちふれ 保湿化粧水 しっとりタイプ 詰替用 150mL", "ちふれ 保湿化粧水 しっとりタイプ 150mL 詰替用"], "url": "https://www.chifure.co.jp/products/skinlotion/2873", "volume": "150mL", "variant": "詰替用", "packageType": "refill", "kind": "cosmetic", "jan": null, "sku": null, "sourceScope": "manufacturer Japanese official product page", "registrationStatus": "name-only", "rightsStatus": "reference-link-only", "identityVerifiedAt": "2026-11-01", "productIdentityNote": "メーカー公式で詰替用の名称と容量を確認。現物の日本語全成分、JAN、本体との処方一致、転載許諾は未確認。"},
+ {"id": "rc67-chifure-base-refill", "brand": "ちふれ", "name": "保湿化粧水", "aliases": ["ちふれ 保湿化粧水 詰替用 150mL", "ちふれ 保湿化粧水 150mL 詰替用"], "url": "https://www.chifure.co.jp/products/skinlotion/2920", "volume": "150mL", "variant": "詰替用", "packageType": "refill", "kind": "cosmetic", "jan": null, "sku": null, "sourceScope": "manufacturer Japanese official product page", "registrationStatus": "name-only", "rightsStatus": "reference-link-only", "identityVerifiedAt": "2026-11-01", "productIdentityNote": "メーカー公式で詰替用の名称と容量を確認。現物の日本語全成分、JAN、本体との処方一致、転載許諾は未確認。"},
+ {"id": "rc67-chifure-milk-refill", "brand": "ちふれ", "name": "保湿乳液", "aliases": ["ちふれ 保湿乳液 詰替用 120mL", "ちふれ 保湿乳液 120mL 詰替用"], "url": "https://www.chifure.co.jp/products/milkylotion/2877", "volume": "120mL", "variant": "詰替用", "packageType": "refill", "kind": "cosmetic", "jan": null, "sku": null, "sourceScope": "manufacturer Japanese official product page", "registrationStatus": "name-only", "rightsStatus": "reference-link-only", "identityVerifiedAt": "2026-11-01", "productIdentityNote": "メーカー公式で詰替用の名称と容量を確認。現物の日本語全成分、JAN、本体との処方一致、転載許諾は未確認。"},
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
@@ -555,13 +561,30 @@ export function catalogIdentifiers(p){
  const kao=p.url?.match(/^https:\/\/(?:www\.)?kao-kirei\.com\/ja\/item\/kbb\/[^/]+\/(\d{13})\/?$/)?.[1];
  return [...new Set([p.jan,p.sku,kao].filter(Boolean).map(String))];
 }
+// The package volume can identify a specific listed SKU only when it was confirmed.
+// A refill remains a separate candidate; its composition must not inherit the bottle archive.
+export function registeredSearchNames(p){
+ const base=p.brand+' '+p.name;
+ const names=[base,p.name,...p.aliases];
+ if(p.volume){
+  names.push(base+' '+p.volume,p.name+' '+p.volume);
+  if(p.packageType==='bottle')names.push(base+' 本体 '+p.volume);
+  if(p.packageType==='refill')names.push(base+' 詰替用 '+p.volume);
+ }
+ return names;
+}
+export function hasExplicitPackageVolume(query,product,products=registeredProducts){
+ const sameName=products.some(other=>other.id!==product.id&&other.brand===product.brand&&
+  productFold(other.name)===productFold(product.name)&&other.packageType&&product.packageType);
+ return !sameName||!!(product.volume&&productFold(query).includes(productFold(product.volume)));
+}
 export function findRegisteredProducts(query){
  const q=productFold(query);
  if(!q)return [];
  const tokens=String(query||'').normalize('NFKC').trim().split(/[\s　]+/).map(productFold).filter(Boolean);
  const identifierTokens=tokens.filter(t=>/^(?:\d{4,13}|[a-z]{1,8}\d{4,}|\d{4,}-?\d{2,})$/i.test(t));
  const matches=registeredProducts.map(p=>{
-  const names=[p.brand+' '+p.name,p.name,...p.aliases].map(productFold);
+  const names=registeredSearchNames(p).map(productFold);
   const ids=catalogIdentifiers(p).map(productFold);
   if(identifierTokens.some(t=>!ids.includes(t)))return null;
   const identifierExact=ids.includes(q);
@@ -592,7 +615,7 @@ export function chooseExactRegisteredProduct(query){
  const q=productFold(query);
  const matched=findRegisteredProducts(query);
  const exact=matched.filter(x=>x.exact);
- if(exact.length!==1)return null;
+ if(exact.length!==1||!hasExplicitPackageVolume(query,exact[0].product))return null;
  if(exact[0].identifierExact)return exact[0].product;
  const selected=exact[0].product;
  const name=productFold(selected.name);

@@ -1,7 +1,7 @@
 // Product-level presentation: volumes and colors can belong to one product family.
 // Keep the actually observed formula/variant for every analysis; never substitute
 // a different shade's ingredient listing as though it was identical.
-import {productFold} from './registered-products.js';
+import {productFold,registeredSearchNames,hasExplicitPackageVolume} from './registered-products.js';
 
 const colorSuffix=/[（(]((?:\d{1,3}|[A-Z]{1,3}\d{1,3})(?:[\s　][^）)]{1,24})?|クリア|ラベンダー|ソフトイエロー|ソフトグリーン|ナチュラルベージュ|ラベンダーグロウ|クリアグロウ)[）)]$/i;
 const bracketShade=/\s*\[[A-Z]?\d{1,3}\][^\s]{0,30}$/i;
@@ -47,7 +47,8 @@ export function exactFamilyMember(family,query=''){
  const q=productFold(query);
  if(!q)return null;
  const exact=family.products.filter(p=>
-   [p.brand+' '+p.name,p.name,...p.aliases].some(v=>productFold(v)===q));
+   registeredSearchNames(p).some(v=>productFold(v)===q) &&
+   hasExplicitPackageVolume(query,p,family.products));
  return exact.length===1?exact[0]:null;
 }
 export function chooseFamilyFormula(family,query=''){

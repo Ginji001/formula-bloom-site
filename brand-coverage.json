@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T17:20:47.607Z",
+  "generatedAt": "2026-10-31T19:48:02.618Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
   "savedFormulaCount": 234,
-  "registeredCandidateCount": 461,
+  "registeredCandidateCount": 466,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -1192,7 +1192,7 @@
       "maker": "ちふれ",
       "country": "JP",
       "savedFormulaCount": 6,
-      "registeredCandidateCount": 6,
+      "registeredCandidateCount": 11,
       "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,

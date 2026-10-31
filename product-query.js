@@ -1,5 +1,5 @@
-// Copies from a product page often contain storefront words, a size and a price.
-// Keep the actual product name (including formula variants), never infer a formula.
+// Copies from a product page often contain storefront words, a package size and a price.
+// Retain package size and formula variants: 180mL bottles and 150mL refills are distinct listings.
 const knownBrands=[
   ['トゥヴェール',/(?:トゥヴェール|TOUT\s*VERT)/i],
   ['ちふれ',/(?:ちふれ|CHIFURE)/i],
@@ -31,8 +31,6 @@ export function cleanPastedProductName(input){
     .replace(/^\s*(?:商品情報|商品詳細|商品ページ)\s*[-:：]\s*/,'')
     .replace(/\s*(?:[|｜]\s*|[-–—]\s+)(?:[^|｜]{0,40}?(?:公式通販|公式オンライン|公式サイト|Qoo10|楽天市場|Amazon|Yahoo!ショッピング|ショップ|ストア|オンラインストア))\s*$/i,'')
     .replace(/\s*[|｜]\s*(?:トゥヴェール|ちふれ|キュレル|Curel|ANUA|アヌア)(?:公式)?\s*$/i,'')
-    .replace(/[（(]\s*\d+(?:\.\d+)?\s*(?:ml|mL|g|枚|個|本|包)(?:入り)?\s*[)）]/gi,' ')
-    .replace(/(?:\s+|^)\d+(?:\.\d+)?\s*(?:ml|mL|g|枚|個|本|包)(?:入り)?(?=\s|$)/gi,' ')
     .replace(/[¥￥]\s*[\d,]+(?:\s*円)?/g,' ')
     .replace(/\s+(?:税込)?[\d,]{4,}円(?:\s*[（(]税込[)）])?/g,' ')
     .replace(/\b(?:[0-9]{1,2}[%％]OFF|送料無料|正規品|国内発送|クーポン|SALE|セール|ポイント\d+倍)\b/gi,' ')

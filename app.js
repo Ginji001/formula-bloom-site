@@ -382,7 +382,7 @@ function addProductFamily(container,family,query=''){
    variants.append(warning);
    for(const option of family.products){
     const choice=document.createElement('button');choice.type='button';choice.className='secondary';
-    choice.textContent=[option.variant,option.volume,option.jan?'JAN '+option.jan:null].filter(Boolean).join(' ／ ')||option.name;
+    choice.textContent=[option.packageType==='bottle'?'本体':option.variant,option.volume,option.jan?'JAN '+option.jan:null].filter(Boolean).join(' ／ ')||option.name;
     choice.onclick=()=>selectRegisteredFormula(option);
     variants.append(choice);
    }
