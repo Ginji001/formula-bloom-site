@@ -37,7 +37,7 @@ export async function staticGetJSON(path,{signal}={}){
   const brand=exact||id;
   if(!brand)return {found:false,products:[],shopLinks:shopLinks(q)};
   const matched=staticProducts(q);
-  const products=matched.length?matched:productsForBrand(brand.name);
+  const products=exact?productsForBrand(brand.name):matched;
   return {found:true,brandOnly:!!exact,brand:{name:brand.name,site:brand.site&&isJapaneseMarketURL(brand.site)?brand.site:'',japanSiteVerified:!!brand.site&&isJapaneseMarketURL(brand.site)},products:products.map(mapped),registeredCount:products.length,shopLinks:shopLinks(q),retailerCount:0};
  }
  if(u.pathname.endsWith('/api/search')){
