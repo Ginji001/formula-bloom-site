@@ -326,7 +326,7 @@ function selectRegisteredFormula(item,context=''){
     $('searchResults').replaceChildren();
     $('officialStatus').textContent='日本国内向けの商品掲載元で商品名を確認しています。全成分は未収録です。';
     const identity=document.createElement('p');identity.className='muted';
-    identity.textContent='商品：'+item.brand+' '+item.name+(item.series?' ／ シリーズ：'+item.series:'')+(item.productType?' ／ タイプ：'+item.productType:'')+(item.volume?' ／ '+item.volume:'')+'。掲載全成分は未確認です。';
+    identity.textContent='商品：'+item.brand+' '+item.name+(item.series?' ／ シリーズ：'+item.series:'')+(item.productType?' ／ タイプ：'+item.productType:'')+(item.variant?' ／ 仕様：'+item.variant:'')+(item.volume?' ／ '+item.volume:'')+(item.jan?' ／ JAN：'+item.jan:'')+'。掲載全成分は未確認です。';
     $('searchResults').append(identity);
     sourceLink($('searchResults'),item.url,'国内向けの商品掲載元を開く');
     addIngredientReviewButton($('searchResults'),item);
@@ -341,8 +341,10 @@ function addProductFamily(container,family,query=''){
   const selectedIsExact=[first.brand+' '+first.name,first.name,...first.aliases]
     .some(x=>productFold(x)===productFold(query));
   const button=document.createElement('button');button.className='product-option';button.type='button';
+  const packageVariant=family.products.length===1&&/^(?:本体|付けかえ用|詰め替え|詰替用|レフィル)$/.test(first.variant||'')&&
+    !productFold(family.name).includes(productFold(first.variant))?' ／ '+first.variant:'';
   const title=document.createElement('strong');title.textContent=family.brand+' '+(family.series&& !productFold(family.name).includes(productFold(family.series))?family.series+' ／ ':'')+family.name+
-    (family.productType&&!productFold(family.name).includes(productFold(family.productType))?' ／ '+family.productType:'');
+    (family.productType&&!productFold(family.name).includes(productFold(family.productType))?' ／ '+family.productType:'')+packageVariant;
   const hint=document.createElement('small');
   hint.textContent=first.registrationStatus==='name-only'?'商品名登録済み・全成分未収録':family.products.length===1?'日本語全成分で花を生成':
     '同じ商品として表示（掲載色 '+family.products.length+'件）。'+

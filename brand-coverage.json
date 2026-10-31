@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T14:22:28.125Z",
+  "generatedAt": "2026-10-31T14:34:22.740Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
   "savedFormulaCount": 234,
-  "registeredCandidateCount": 298,
+  "registeredCandidateCount": 299,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
     {
@@ -977,7 +977,7 @@
       "maker": "コーセー",
       "country": "JP",
       "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
+      "registeredCandidateCount": 2,
       "status": "no-saved-formula",
       "allProductsVerified": false,
       "allSkuCount": null,

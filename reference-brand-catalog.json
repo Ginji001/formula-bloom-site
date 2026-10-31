@@ -425,7 +425,26 @@
       "brandId": 43,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "ONE BY KOSE セラムヴェール ディープリペア（付けかえ用）",
+          "url": "https://ainz-tulpe.jp/products/4971710580372",
+          "volume": "60mL",
+          "variant": "付けかえ用",
+          "jan": "4971710580372",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "ONE BY KOSE セラムヴェール ディープリペア（本体）",
+          "url": "https://shop.tsuruha.co.jp/10171797.html",
+          "volume": "60mL",
+          "variant": "本体",
+          "jan": "4971710577341",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [

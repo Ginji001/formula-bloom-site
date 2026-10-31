@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T14:22:28.128Z",
+  "generatedAt": "2026-10-31T14:34:22.748Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 119,
   "brandsWithPendingProductNames": 28,
-  "productNameRecords": 298,
+  "productNameRecords": 299,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -1491,7 +1491,7 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -1507,7 +1507,20 @@
           "kind": "quasi",
           "volume": "60mL",
           "sku": null,
-          "jan": null,
+          "jan": "4971710577341",
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc56-serum-veil-deep-repair-refill-60",
+          "productName": "ONE BY KOSE セラムヴェール ディープリペア（付けかえ用）",
+          "series": null,
+          "productType": null,
+          "variant": "付けかえ用",
+          "sourceUrl": "https://ainz-tulpe.jp/products/4971710580372",
+          "kind": "quasi",
+          "volume": "60mL",
+          "sku": null,
+          "jan": "4971710580372",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
