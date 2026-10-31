@@ -747,6 +747,12 @@ function showBrands(){
   $('brandCounts').textContent='登録 '+stats.total+'ブランド ／ 全成分の掲載記録 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方。容量・色違いは商品単位でまとめ、別色の成分差は保持します。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。国内販売店の掲載元でも商品名を調べられます。';
 }
+const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧（186件・一部未登録）</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
+$('brandDirectory').insertAdjacentElement('afterend',makerPanel);
+let makerData=null;
+function renderMakers(){const box=$('makerList');box.replaceChildren();if(!makerData)return;const q=$('makerFilter').value.toLowerCase();for(const m of makerData.makers){const names=m.brands.filter(b=>(m.maker+' '+b.name+' '+b.aliases.join(' ')).toLowerCase().includes(q));if(!names.length)continue;const h=document.createElement('p');h.textContent=m.maker+'（'+names.length+'）';box.append(h);for(const b of names){const x=document.createElement('button');x.type='button';x.className='product-option';x.textContent=b.name+(b.brandId===null?' ／ 商品未登録':'');x.onclick=()=>{$('query').value=b.name;$('query').focus();};box.append(x);}}}
+$('makerFilter').oninput=renderMakers;
+makerPanel.ontoggle=async()=>{if(!makerPanel.open||makerData)return;try{makerData=await getJSON('/maker-brand-directory.json');renderMakers();}catch(e){$('makerList').textContent='一覧を読み込めません：'+e.message;}};
 $('brandFilter').oninput=showBrands;
 $('brandDirectory').ontoggle=async()=>{
   if(!$('brandDirectory').open||brandCatalog||brandLoading)return;
