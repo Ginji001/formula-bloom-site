@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T01:03:47.423Z",
+  "generatedAt": "2026-10-31T01:08:14.268Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 25,
-  "brandsWithPendingProductNames": 122,
-  "productNameRecords": 182,
-  "ingredientRecords": 178,
+  "brandsWithRegisteredProductNames": 30,
+  "brandsWithPendingProductNames": 117,
+  "productNameRecords": 192,
+  "ingredientRecords": 188,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -31,8 +31,8 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 4,
-      "ingredientRecordCount": 0,
+      "productNameCount": 5,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -80,6 +80,17 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "jp-shiseido-j10502-0",
+          "productName": "リフトモイスト ローション マスク級高保湿 ca",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J10502.html",
+          "kind": "quasi",
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
         }
       ]
     },
@@ -89,13 +100,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-shiseido-h16501-0",
+          "productName": "パーフェクトUV スキンケアミルク NA",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H16501.html",
+          "kind": "cosmetic",
+          "volume": "60mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 4,
@@ -103,13 +126,36 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 2,
+      "ingredientRecordCount": 2,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-shiseido-h80802-0",
+          "productName": "モイストケア ローション EX",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H80802.html",
+          "kind": "quasi",
+          "volume": "125mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-shiseido-h81102-0",
+          "productName": "バイタライジング＆クリア ローション EX",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H81102.html",
+          "kind": "quasi",
+          "volume": "125mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 5,
@@ -187,13 +233,36 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 2,
+      "ingredientRecordCount": 2,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-shiseido-h15901-0",
+          "productName": "トリートメントローション（オイルイン） しっとり",
+          "variant": "しっとり",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H15901.html",
+          "kind": "cosmetic",
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-shiseido-h15901-1",
+          "productName": "トリートメントローション（オイルイン） とてもしっとり",
+          "variant": "とてもしっとり",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H15901.html",
+          "kind": "cosmetic",
+          "volume": "170mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 7,
@@ -201,13 +270,25 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
+      "ingredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-shiseido-h59402-0",
+          "productName": "メラノフォーカス IV",
+          "variant": null,
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H59402.html",
+          "kind": "quasi",
+          "volume": "45g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 8,
@@ -285,13 +366,47 @@
       "maker": "資生堂",
       "country": "JP",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
-      "ingredientRecordCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 3,
+      "ingredientRecordCount": 3,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
-      "products": []
+      "products": [
+        {
+          "productId": "jp-shiseido-f16802-0",
+          "productName": "薬用 高保湿化粧水（さらっとしっとり）",
+          "variant": "さらっとしっとり",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
+          "kind": "quasi",
+          "volume": "160mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-shiseido-f16802-1",
+          "productName": "薬用 高保湿化粧水（しっとり）",
+          "variant": "しっとり",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
+          "kind": "quasi",
+          "volume": "160mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        },
+        {
+          "productId": "jp-shiseido-f16802-2",
+          "productName": "薬用 高保湿化粧水（とてもしっとり）",
+          "variant": "とてもしっとり",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F16802.html",
+          "kind": "quasi",
+          "volume": "160mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": null
+        }
+      ]
     },
     {
       "brandId": 14,
