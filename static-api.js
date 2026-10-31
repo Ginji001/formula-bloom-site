@@ -26,7 +26,10 @@ export async function staticGetJSON(path,{signal}={}){
   return response.json();
  }
  if(u.pathname.endsWith('/api/brands')){
-  return {brands:brands.map(({id,country,maker,name,aliases,site,strategy})=>({id,country,maker,name,aliases,site:isJapaneseMarketURL(site||'')?site:'',strategy,japanSiteVerified:!!site&&isJapaneseMarketURL(site)})),stats:{...brandStats(),japanMarketBrands:brands.length,japanMarketSites:brands.filter(b=>b.site&&isJapaneseMarketURL(b.site)).length,verifiedProducts:factProductIds.size}};
+  const existing=brands.map(({id,country,maker,name,aliases,site,strategy})=>({id,country,maker,name,aliases,site:isJapaneseMarketURL(site||'')?site:'',strategy,japanSiteVerified:!!site&&isJapaneseMarketURL(site)}));
+  let extra=[];
+  try{const response=await fetch('./maker-brand-directory.json',{signal});if(response.ok){const directory=await response.json();extra=directory.makers.flatMap(m=>m.brands.filter(b=>b.brandId===null).map(b=>({id:null,country:m.country,maker:m.maker,name:b.name,aliases:b.aliases,site:'',strategy:'manual',japanSiteVerified:false})));}}catch{}
+  return {brands:[...existing,...extra],stats:{...brandStats(),total:existing.length+extra.length,japanMarketBrands:existing.length+extra.length,japanMarketSites:brands.filter(b=>b.site&&isJapaneseMarketURL(b.site)).length,verifiedProducts:factProductIds.size}};
  }
  if(u.pathname.endsWith('/api/catalog')){
   const filtered=u.searchParams.get('brand')?productsForBrand(u.searchParams.get('brand')):q?staticProducts(q):registeredProducts;
