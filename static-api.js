@@ -1,5 +1,5 @@
 // GitHub Pages向け。サーバーは使用せず、収録ブランドと商品名のみローカル検索。
-// 商品成分の自動収集・保存版再配布は行わず、利用者の手入力・写真OCRを使用する。
+// 新規の外部サイトからの自動収集は行わない。既存の全成分掲載保存版と、利用者の手入力・写真OCRを区別する。
 import {brands,identifyBrand,brandStats} from './brand-directory.js';
 import {registeredProducts,findRegisteredProducts,productsForBrand} from './registered-products.js';
 import {isJapaneseMarketURL} from './japan-market-policy.js';
@@ -16,7 +16,7 @@ const searchProviders=[
 ];
 const shopLinks=q=>searchProviders.map(([name,base],i)=>({id:['amazon','rakuten','yahoo','qoo10','cosme','lips'][i],name,url:base+encodeURIComponent(q)+(i===1?'/':'')}));
 const staticProducts=q=>findRegisteredProducts(q).map(x=>x.product);
-const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:p.kind||'cosmetic'});
+const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:false,sourceType:'registered',kind:p.kind??null});
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
  const u=new URL(path,location.href),q=(u.searchParams.get('q')||'').trim();
