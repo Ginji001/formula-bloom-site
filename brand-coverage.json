@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T04:49:11.303Z",
+  "generatedAt": "2026-10-31T04:54:02.933Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 33,
-  "brandsWithoutSavedFormulas": 114,
-  "savedFormulaCount": 194,
+  "brandsWithSavedFormulas": 37,
+  "brandsWithoutSavedFormulas": 110,
+  "savedFormulaCount": 199,
   "registeredCandidateCount": 269,
   "note": "ブランド数はメーカー数ではありません。保存版ありも一部商品を確認した意味であり、全商品・全SKUの網羅は未確認です。",
   "brands": [
@@ -696,24 +696,46 @@
       "brand": "ヴィセ",
       "maker": "コーセー",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 1,
       "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc37-visee-item",
+          "productName": "ネンマクフェイク ルージュ BE351",
+          "variant": "BE351 桃のはにかみ",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T13:50:16+09:00",
+          "sourceUrl": "https://maison.kose.co.jp/site/visee/g/gYNRF351",
+          "ingredientCount": 31
+        }
+      ]
     },
     {
       "brandId": 39,
       "brand": "エスプリーク",
       "maker": "コーセー",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 1,
       "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc37-esprique",
+          "productName": "トリプル ラスティング プライマー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T13:50:16+09:00",
+          "sourceUrl": "https://maison.kose.co.jp/site/esprique/g/gMLRG/",
+          "ingredientCount": 48
+        }
+      ]
     },
     {
       "brandId": 40,
@@ -744,12 +766,23 @@
       "brand": "プレディア",
       "maker": "コーセー",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 1,
       "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc37-predia",
+          "productName": "スパ・エ・メール ファンゴ W クレンズ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T13:50:16+09:00",
+          "sourceUrl": "https://maison.kose.co.jp/site/predia/g/gQLCW/",
+          "ingredientCount": 31
+        }
+      ]
     },
     {
       "brandId": 43,
@@ -1287,12 +1320,23 @@
       "brand": "ノブ",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 1,
       "registeredCandidateCount": 1,
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "nov-iii-lotion-r",
+          "productName": "Ⅲ フェイスローション R（しっとりタイプ）",
+          "variant": "しっとりタイプ",
+          "sourcePageId": null,
+          "kind": "quasi",
+          "verifiedAt": "2026-10-31T13:50:16+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/g/g51541/",
+          "ingredientCount": 17
+        }
+      ]
     },
     {
       "brandId": 69,
@@ -1311,7 +1355,7 @@
       "brand": "なめらか本舗",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 2,
+      "savedFormulaCount": 3,
       "registeredCandidateCount": 3,
       "status": "partially-verified",
       "allProductsVerified": false,
@@ -1336,6 +1380,16 @@
           "verifiedAt": "2026-10-31T13:44:16+09:00",
           "sourceUrl": "https://noevirgroup.jp/sana/g/g70170/",
           "ingredientCount": 26
+        },
+        {
+          "productId": "rc37-nameraka-jp",
+          "productName": "水クレンジング",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-31T13:50:16+09:00",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g41619/",
+          "ingredientCount": 15
         }
       ]
     },

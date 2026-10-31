@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T04:45:18.636Z",
+  "checkedAt": "2026-10-31T04:50:50.780Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 33,
-  "brandsWithoutIngredientRecords": 114,
+  "brandsWithIngredientRecords": 37,
+  "brandsWithoutIngredientRecords": 110,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -347,18 +347,18 @@
       "brand": "ヴィセ",
       "sourceCandidate": "https://www.kose.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 39,
       "brand": "エスプリーク",
       "sourceCandidate": "https://www.kose.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 40,
@@ -383,9 +383,9 @@
       "brand": "プレディア",
       "sourceCandidate": "https://www.kose.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 43,
@@ -617,9 +617,9 @@
       "brand": "ノブ",
       "sourceCandidate": "https://noevirgroup.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 69,
@@ -635,7 +635,7 @@
       "brand": "なめらか本舗",
       "sourceCandidate": "https://noevirgroup.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 2,
+      "ingredientRecordCount": 3,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
