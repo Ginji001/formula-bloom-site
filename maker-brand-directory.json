@@ -1193,6 +1193,26 @@
             "ファンケル",
             "FANCL"
           ]
+        },
+        {
+          "brandId": null,
+          "name": "BRANCHIC",
+          "aliases": [
+            "BRANCHIC"
+          ],
+          "registrationStatus": "historical-official-listing-current-status-unverified",
+          "officialSource": "https://www.fancl.jp/news/20240094/news_20240094.html",
+          "note": "2024年公式発表。現在の販売状況は別途確認が必要"
+        },
+        {
+          "brandId": null,
+          "name": "boscia",
+          "aliases": [
+            "boscia"
+          ],
+          "registrationStatus": "historical-official-listing-current-status-unverified",
+          "officialSource": "https://www.fancl.jp/news/20240094/news_20240094.html",
+          "note": "2024年公式発表。現在の販売状況は別途確認が必要"
         }
       ]
     },
@@ -2366,8 +2386,8 @@
       ]
     }
   ],
-  "officialExpansionCount": 76,
-  "directoryBrandCount": 223,
+  "officialExpansionCount": 78,
+  "directoryBrandCount": 225,
   "officialExpansionSources": [
     {
       "maker": "資生堂",
@@ -2393,6 +2413,10 @@
       "maker": "ちふれグループ",
       "url": "https://www.chifure.co.jp/news/20201015",
       "sourcePublishedAt": "2020-10-15"
+    },
+    {
+      "maker": "ファンケル",
+      "url": "https://www.fancl.jp/news/20240094/news_20240094.html"
     }
   ]
 }
