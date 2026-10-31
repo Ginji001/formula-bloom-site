@@ -4,7 +4,7 @@
   "makerGroupCount": 69,
   "completeAllMakers": false,
   "completeAllBrands": false,
-  "scope": "既存登録147ブランドをメーカー別に整理した暫定台帳。法人グループとブランド保有者の関係は未監査。",
+  "scope": "既存147登録ブランドに、資生堂・花王公式掲載の追加ブランド候補を統合したメーカー別台帳。追加分は商品・全成分未登録。全メーカー網羅は未確認。",
   "makers": [
     {
       "maker": "資生堂",
@@ -147,6 +147,159 @@
             "IPSA",
             "イプサ"
           ]
+        },
+        {
+          "brandId": null,
+          "name": "NARS",
+          "aliases": [
+            "NARS"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "DRUNK ELEPHANT",
+          "aliases": [
+            "DRUNK ELEPHANT"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "Dr. Dennis Gross Skincare",
+          "aliases": [
+            "Dr. Dennis Gross Skincare"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "THE GINZA",
+          "aliases": [
+            "THE GINZA"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "EFFECTIM",
+          "aliases": [
+            "EFFECTIM"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "Gallinée",
+          "aliases": [
+            "Gallinée"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "Perfect Cover",
+          "aliases": [
+            "Perfect Cover"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "AUPRES",
+          "aliases": [
+            "AUPRES"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "URARA",
+          "aliases": [
+            "URARA"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "INRYU",
+          "aliases": [
+            "INRYU"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "SHISEIDO BEAUTY WELLNESS",
+          "aliases": [
+            "SHISEIDO BEAUTY WELLNESS"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "ISSEY MIYAKE PARFUMS",
+          "aliases": [
+            "ISSEY MIYAKE PARFUMS"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "Max Mara Le Parfum",
+          "aliases": [
+            "Max Mara Le Parfum"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "narciso rodriguez",
+          "aliases": [
+            "narciso rodriguez"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "Serge Lutens",
+          "aliases": [
+            "Serge Lutens"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "TORY BURCH BEAUTY",
+          "aliases": [
+            "TORY BURCH BEAUTY"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
+        },
+        {
+          "brandId": null,
+          "name": "ZADIG&VOLTAIRE",
+          "aliases": [
+            "ZADIG&VOLTAIRE"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://corp.shiseido.com/jp/brands/"
         }
       ]
     },
@@ -282,6 +435,177 @@
             "LISSAGE",
             "リサージ"
           ]
+        },
+        {
+          "brandId": null,
+          "name": "AUBE",
+          "aliases": [
+            "AUBE"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "Beauty Works",
+          "aliases": [
+            "Beauty Works"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "COFFRET D’OR",
+          "aliases": [
+            "COFFRET D’OR"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "DEW SUPERIOR",
+          "aliases": [
+            "DEW SUPERIOR"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "EVITA",
+          "aliases": [
+            "EVITA"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "excellence",
+          "aliases": [
+            "excellence"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "FINE FIT",
+          "aliases": [
+            "FINE FIT"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "LISSAGE MEN",
+          "aliases": [
+            "LISSAGE MEN"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "L'EQUIL",
+          "aliases": [
+            "L'EQUIL"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "Milano Collection",
+          "aliases": [
+            "Milano Collection"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "media",
+          "aliases": [
+            "media"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "Primavista Dea",
+          "aliases": [
+            "Primavista Dea"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "SOFINA SYNC＋",
+          "aliases": [
+            "SOFINA SYNC＋"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "SOFINA BASIC＋",
+          "aliases": [
+            "SOFINA BASIC＋"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "SOFINA beaute",
+          "aliases": [
+            "SOFINA beaute"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "SOFINA GRACE",
+          "aliases": [
+            "SOFINA GRACE"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "SENSAI",
+          "aliases": [
+            "SENSAI"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "TWANY&me",
+          "aliases": [
+            "TWANY&me"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
+        },
+        {
+          "brandId": null,
+          "name": "UNLICS",
+          "aliases": [
+            "UNLICS"
+          ],
+          "registrationStatus": "official-listed-pending-product-registration",
+          "officialSource": "https://www.kao-kirei.com/ja/brand/kbb/"
         }
       ]
     },
@@ -1677,6 +2001,18 @@
           ]
         }
       ]
+    }
+  ],
+  "officialExpansionCount": 36,
+  "directoryBrandCount": 183,
+  "officialExpansionSources": [
+    {
+      "maker": "資生堂",
+      "url": "https://corp.shiseido.com/jp/brands/"
+    },
+    {
+      "maker": "花王・カネボウ",
+      "url": "https://www.kao-kirei.com/ja/brand/kbb/"
     }
   ]
 }
