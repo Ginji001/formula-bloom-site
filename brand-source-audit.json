@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T07:21:13.115Z",
+  "checkedAt": "2026-10-31T07:38:26.787Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 44,
-  "brandsWithoutIngredientRecords": 103,
+  "brandsWithIngredientRecords": 56,
+  "brandsWithoutIngredientRecords": 91,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -194,9 +194,9 @@
       "brand": "ソフィーナ iP",
       "sourceCandidate": "https://www.kao-kirei.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 22,
@@ -329,18 +329,18 @@
       "brand": "コスメデコルテ",
       "sourceCandidate": "https://www.kose.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 37,
       "brand": "ONE BY KOSE",
       "sourceCandidate": "https://www.kose.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 38,
@@ -482,9 +482,9 @@
       "brand": "綾花",
       "sourceCandidate": "https://www.chifure.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 54,
@@ -518,27 +518,27 @@
       "brand": "ポーラ",
       "sourceCandidate": "https://www.pola.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 58,
       "brand": "B.A",
       "sourceCandidate": "https://www.pola.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 59,
       "brand": "リンクルショット",
       "sourceCandidate": "https://www.pola.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 60,
@@ -581,9 +581,9 @@
       "brand": "アスタリフト",
       "sourceCandidate": "https://www.fujifilm.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 65,
@@ -680,9 +680,9 @@
       "brand": "ギャツビー",
       "sourceCandidate": "https://www.mandom.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 76,
@@ -752,9 +752,9 @@
       "brand": "エストラ",
       "sourceCandidate": "https://www.apgroup.com/jp/ja/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 84,
@@ -995,9 +995,9 @@
       "brand": "ma:nyo",
       "sourceCandidate": "https://manyo-japanese.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 111,
@@ -1067,9 +1067,9 @@
       "brand": "SKINFOOD",
       "sourceCandidate": "https://www.skinfood.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 119,
