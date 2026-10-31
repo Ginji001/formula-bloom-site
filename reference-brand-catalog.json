@@ -350,6 +350,13 @@
           "name": "ザ アイシャドウ パール 029P ドロップアウト",
           "url": "https://www.addiction-beauty.com/site/g/gMAKB029/",
           "variant": "029P Drop Out ドロップアウト"
+        },
+        {
+          "name": "UVプロテクター ファンデーション 012 Sand サンド",
+          "url": "https://www.addiction-beauty.com/site/g/gMAPN012",
+          "variant": "012 Sand サンド",
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://www.addiction-beauty.com/site/s/kiyaku.aspx"
         }
       ],
       "ingredientNames": [],
@@ -383,6 +390,13 @@
           "name": "リップブロッサム グロウ 07",
           "url": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/",
           "variant": "07 ranunculus nocturne"
+        },
+        {
+          "name": "モイスチュア ローション",
+          "url": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSIRQ/",
+          "variant": null,
+          "reviewStatus": "reference-link-only",
+          "rightsUrl": "https://www.jillstuart-floranotisjillstuart.com/site/s/kiyaku.aspx"
         }
       ],
       "ingredientNames": [],
@@ -1251,6 +1265,15 @@
           "name": "MASK FIT AI FILTER CUSHION",
           "url": "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion",
           "variant": "15C"
+        },
+        {
+          "name": "MASK FIT MAKE-UP FIXER",
+          "url": "https://tirtir.co.jp/products/mask-fit-make-up-fixer",
+          "variant": null,
+          "jan": "8809679699612",
+          "volume": "80mL",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
         }
       ],
       "ingredientNames": [],
@@ -1445,6 +1468,24 @@
           "name": "キル カバー ファンウェア クッション ザ オリジナル",
           "url": "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/",
           "variant": null
+        },
+        {
+          "name": "キル カバー ファンウェア クッション ザ オリジナル 21C ランジェリー",
+          "url": "https://aeonretail.com/product/0/P-4573198754933/",
+          "variant": "21C ランジェリー",
+          "jan": "4573198754933",
+          "volume": "15g",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "キル カバー ファンウェア クッション ザ オリジナル 21N リネン",
+          "url": "https://aeonretail.com/product/0/P-4573198754933/",
+          "variant": "21N リネン",
+          "jan": "4573198754940",
+          "volume": "15g",
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
         }
       ],
       "ingredientNames": [],

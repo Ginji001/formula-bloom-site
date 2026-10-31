@@ -19,7 +19,8 @@ const domesticComPaths=new Map([
  ['jp.aestura.com',/^\/products\//],
  ['jp.sulwhasoo.com',/^\/products\//],
  ['drjartjp.com',/^\/$/],
- ['www.matsukiyococokara-online.com',/^\/store\/catalog\/product\/view\/id\/\d{13}\/?$/]
+ ['www.matsukiyococokara-online.com',/^\/store\/catalog\/product\/view\/id\/\d{13}\/?$/],
+ ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/]
 ]);
 const matchesHost=(host,expected)=>host===expected||host.endsWith('.'+expected);
 export function isJapaneseMarketURL(input){

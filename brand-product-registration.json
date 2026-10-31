@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T12:21:03.093Z",
+  "generatedAt": "2026-10-31T13:37:10.407Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 104,
   "brandsWithPendingProductNames": 43,
-  "productNameRecords": 278,
+  "productNameRecords": 283,
   "ingredientRecords": 234,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
@@ -359,7 +359,7 @@
           "kind": "cosmetic",
           "volume": "4g",
           "sku": null,
-          "jan": null,
+          "jan": "4909978146030",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -440,10 +440,10 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.cledepeau-beaute.com/jp/products/skincare/lotions/H725.html",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": "170mL",
-          "sku": null,
-          "jan": null,
+          "sku": "H72502",
+          "jan": "4514254213551",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -552,7 +552,7 @@
           "sourceUrl": "https://www.shiseido.co.jp/revital/products/skin_hydrator/",
           "kind": "quasi",
           "volume": "150mL",
-          "sku": null,
+          "sku": "H25901",
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
         }
@@ -1381,7 +1381,7 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -1399,6 +1399,19 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc52-addiction-uv-foundation-sand-012",
+          "productName": "UVプロテクター ファンデーション 012 Sand サンド",
+          "series": null,
+          "productType": null,
+          "variant": "012 Sand サンド",
+          "sourceUrl": "https://www.addiction-beauty.com/site/g/gMAPN012",
+          "kind": "cosmetic",
+          "volume": null,
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
         }
       ]
     },
@@ -1409,7 +1422,7 @@
       "country": "JP",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -1424,6 +1437,19 @@
           "sourceUrl": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSILD007/",
           "kind": null,
           "volume": "3.6g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc52-jill-moisture-lotion-200",
+          "productName": "モイスチュア ローション",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.jillstuart-floranotisjillstuart.com/site/jillstuart/g/gSIRQ/",
+          "kind": "cosmetic",
+          "volume": "200mL",
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-10-31"
@@ -2128,7 +2154,7 @@
           "kind": "cosmetic",
           "volume": "300mL",
           "sku": "83434991",
-          "jan": null,
+          "jan": "4550583434991",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -2486,10 +2512,10 @@
           "productType": null,
           "variant": "ポンプ",
           "sourceUrl": "https://www.kracie.co.jp/products/khp/10193007_21121.html",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": "450mL",
           "sku": null,
-          "jan": null,
+          "jan": "4901417723819",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -4982,10 +5008,10 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://numbuzin.jp/product/5%E7%95%AA-%E7%99%BD%E7%8E%89%E3%82%B0%E3%83%AB%E3%82%BF%E3%83%81%E3%82%AA%E3%83%B3%EF%BC%A3%E7%BE%8E%E5%AE%B9%E6%B6%B2/172/category/119/display/1/",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": "30mL",
           "sku": null,
-          "jan": null,
+          "jan": "8809652583389",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -5107,10 +5133,10 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://themedicube.jp/products/pdrn-pinkpeptideserum",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "30mL",
           "sku": null,
-          "jan": null,
+          "jan": "8800256108053",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -5122,7 +5148,7 @@
       "country": "KR",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -5139,6 +5165,19 @@
           "volume": null,
           "sku": null,
           "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc52-tirtir-makeup-fixer-80",
+          "productName": "MASK FIT MAKE-UP FIXER",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://tirtir.co.jp/products/mask-fit-make-up-fixer",
+          "kind": "cosmetic",
+          "volume": "80mL",
+          "sku": null,
+          "jan": "8809679699612",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -5163,10 +5202,10 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://dalba.jp/products/white-truffle-first-spray-serum",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "100mL",
           "sku": null,
-          "jan": null,
+          "jan": "8809563068753",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -5331,7 +5370,7 @@
       "country": "KR",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 3,
       "ingredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -5348,6 +5387,32 @@
           "volume": "15g",
           "sku": null,
           "jan": null,
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc52-clio-original-21c",
+          "productName": "キル カバー ファンウェア クッション ザ オリジナル 21C ランジェリー",
+          "series": null,
+          "productType": null,
+          "variant": "21C ランジェリー",
+          "sourceUrl": "https://aeonretail.com/product/0/P-4573198754933/",
+          "kind": "cosmetic",
+          "volume": "15g",
+          "sku": null,
+          "jan": "4573198754933",
+          "identityVerifiedAt": "2026-10-31"
+        },
+        {
+          "productId": "rc52-clio-original-21n",
+          "productName": "キル カバー ファンウェア クッション ザ オリジナル 21N リネン",
+          "series": null,
+          "productType": null,
+          "variant": "21N リネン",
+          "sourceUrl": "https://aeonretail.com/product/0/P-4573198754933/",
+          "kind": "cosmetic",
+          "volume": "15g",
+          "sku": null,
+          "jan": "4573198754940",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
@@ -5694,10 +5759,10 @@
           "productType": null,
           "variant": "BS01 クール",
           "sourceUrl": "https://fwee.jp/product/detail.html?cate_no=75&display_group=1&product_no=231",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "5g",
           "sku": null,
-          "jan": null,
+          "jan": "8809652587585",
           "identityVerifiedAt": "2026-10-31"
         }
       ]
