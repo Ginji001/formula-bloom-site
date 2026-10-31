@@ -1337,7 +1337,188 @@
       "brandId": 94,
       "status": "参考",
       "formulaVerified": false,
-      "productCandidates": [],
+      "productCandidates": [
+        {
+          "name": "イェファダム オールインワンケアシート DX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "50枚",
+          "variant": "DX・50枚",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム オールインワンケアシート DX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "20枚",
+          "variant": "DX・20枚",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム モイスチャーゲル EX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "100mL",
+          "variant": "EX・通常",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム モイスチャーゲル EX ミニチューブ",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "30mL",
+          "variant": "EX・ミニチューブ",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム Yカメリア ファースト エッセンス",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "180mL",
+          "variant": "10周年記念デザイン",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム サンキッド",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "50mL",
+          "variant": "日本限定・SPF50+ PA++++",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム マスクリームシート",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "10枚",
+          "variant": "10枚セット",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム マスクリームシート",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "1枚",
+          "variant": "単品",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム ゴールデン ロイヤル クリーム EX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "50g",
+          "variant": "EX",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム オールインワンケアシート EX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "50枚",
+          "variant": "EX・50枚",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム オールインワンケアシート EX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "20枚",
+          "variant": "EX・20枚",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム セラム イン ミスト リッチ",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "120mL",
+          "variant": "通常ボトル",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム Yカメリア ファースト エッセンス",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "180mL",
+          "variant": "通常版",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム モイスチャー ゲル",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "150mL",
+          "variant": "限定パッケージ",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム ロイヤルリッチ ソープ",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "500mL",
+          "variant": "日本限定",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム セラム イン ミスト リッチ",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "55mL",
+          "variant": "ミニボトル",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム オイル イン クレンジングシート",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "30枚",
+          "variant": "30枚入り",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム オイル イン クレンジングシート",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "10枚",
+          "variant": "10枚入り",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム プログラミング リッチ エッセンス EX",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "45mL",
+          "variant": "EX",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        },
+        {
+          "name": "イェファダム プログラミング リッチ エッセンス",
+          "url": "https://medicaraise-healthcare.jp/products/cosme/faceshop/",
+          "volume": "45mL",
+          "variant": "通常版",
+          "jan": null,
+          "reviewStatus": "reference-link-only",
+          "rightsStatus": "permission-not-cleared"
+        }
+      ],
       "ingredientNames": [],
       "flowerGeneration": "reference-input-only",
       "estimatedProducts": [
