@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T08:40:39.691Z",
+  "generatedAt": "2026-11-01T08:50:46.853Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 145,
-  "brandsWithPendingProductNames": 2,
-  "productNameRecords": 477,
+  "brandsWithRegisteredProductNames": 146,
+  "brandsWithPendingProductNames": 1,
+  "productNameRecords": 479,
   "ingredientRecords": 234,
   "knownIngredientRecords": 49,
   "brandsWithKnownIngredientsOnly": 46,
@@ -6927,14 +6927,43 @@
       "maker": "LG生活健康",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc91-whoo-bicheop-circulation-50",
+          "productName": "秘貼 循環エッセンス",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://item.rakuten.co.jp/lg-beauty/51107168/",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        },
+        {
+          "productId": "rc91-whoo-bicheop-circulation-90",
+          "productName": "秘貼 循環エッセンス",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://item.rakuten.co.jp/lg-beauty/51107168/",
+          "kind": "cosmetic",
+          "volume": "90mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 97,

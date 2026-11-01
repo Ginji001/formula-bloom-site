@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T08:40:39.687Z",
+  "generatedAt": "2026-11-01T08:50:46.850Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -11,7 +11,7 @@
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
   "savedFormulaCount": 234,
-  "registeredCandidateCount": 477,
+  "registeredCandidateCount": 479,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -4304,7 +4304,7 @@
       "maker": "LG生活健康",
       "country": "KR",
       "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
+      "registeredCandidateCount": 2,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],

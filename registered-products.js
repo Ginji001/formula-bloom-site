@@ -579,6 +579,18 @@ export const registeredProducts=Object.freeze([
   jan:null,sku:null,registrationStatus:'name-only',sourceScope:'japan-facing-korean-crossborder-personal-import-only',
   identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
   productIdentityNote:'Qoo10日本語の商品名・単品50mLと韓国からの海外配送を確認。JOLSE韓国向け海外販売ページの英語INCIを参考にするが、販売店により掲載成分や割合の表記が異なる。現物の版・日本国内向け法定表示・製造販売元・JANとの照合は未完了。別容量15mL・2本セットへ流用しない。'},
+ {id:'rc91-whoo-bicheop-circulation-50',brand:'ザ・フー',name:'秘貼 循環エッセンス',
+  aliases:['THE WHOO 秘貼 循環エッセンス 50mL','ザフー ビチョプ スンファン エッセンス 50mL','ドフー 秘貼 循環エッセンス 50mL'],
+  url:'https://item.rakuten.co.jp/lg-beauty/51107168/',volume:'50mL',variant:null,jan:null,kind:'cosmetic',
+  registrationStatus:'name-only',sourceScope:'japan-facing-korean-crossborder-personal-import-only',
+  identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'LG BEAUTY公式楽天市場店の日本語販売ページは50mLと90mLを選択表示。購入者が輸入者となる韓国からの個人輸入・直送と明示。海外メーカー販売品と日本国内流通の法定表示を同一視しません。現物のJAN・輸入販売元・日本語全成分・処方一致は未確認です。'},
+ {id:'rc91-whoo-bicheop-circulation-90',brand:'ザ・フー',name:'秘貼 循環エッセンス',
+  aliases:['THE WHOO 秘貼 循環エッセンス 90mL','ザフー ビチョプ スンファン エッセンス 90mL','ドフー 秘貼 循環エッセンス 90mL'],
+  url:'https://item.rakuten.co.jp/lg-beauty/51107168/',volume:'90mL',variant:null,jan:null,kind:'cosmetic',
+  registrationStatus:'name-only',sourceScope:'japan-facing-korean-crossborder-personal-import-only',
+  identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'LG BEAUTY公式楽天市場店の日本語販売ページは50mLと90mLを選択表示。購入者が輸入者となる韓国からの個人輸入・直送と明示。海外メーカー販売品と日本国内流通の法定表示を同一視しません。現物のJAN・輸入販売元・日本語全成分・処方一致は未確認です。'},
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
