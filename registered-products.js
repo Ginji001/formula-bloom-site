@@ -1,3 +1,4 @@
+import {officialReviewedRC108Upgrades,officialReviewedRC108Products} from './official-reviewed-rc108.js';
 import {officialReviewedRC107Products} from './official-reviewed-rc107.js';
 import {officialReviewedRC106Products} from './official-reviewed-rc106.js';
 import {officialReviewedRC105Products} from './official-reviewed-rc105.js';
@@ -612,8 +613,13 @@ export const registeredProducts=Object.freeze([
  ...officialReviewedRC104Products,
  ...officialReviewedRC105Products,
  ...officialReviewedRC106Products,
- ...officialReviewedRC107Products
+ ...officialReviewedRC107Products,
+ ...officialReviewedRC108Products
  ].map(x=>{
+  // Historical products retain their original IDs, aliases and search identity.
+  // An exact Japanese manufacturer full-ingredient source can upgrade their status.
+  const upgrade=officialReviewedRC108Upgrades[x.id];
+  if(upgrade)x={...x,...upgrade};
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
   const titleSeries={
