@@ -665,6 +665,31 @@ function showSkuIdentityEvidence(container,item,version){
   if(record.independentManufacturerIdentityUrl)sourceLink(details,record.independentManufacturerIdentityUrl,'メーカー日本公式：シリーズ・容量の確認元');
   if(record.domesticImporterBrandUrl)sourceLink(details,record.domesticImporterBrandUrl,'国内輸入販売企業のブランド紹介（このSKUのラベル確認ではありません）');
   if(record.crossborderShippingPolicyUrl)sourceLink(details,record.crossborderShippingPolicyUrl,'販売店の韓国直送・個人輸入に関する配送規約');
+  if(record.retailChannels){
+   const audit=document.createElement('details');audit.className='retail-channel-audit';
+   const summary=document.createElement('summary');summary.textContent='国内販売・韓国直送・容量の矛盾を比較';audit.append(summary);
+   const overview=document.createElement('p');overview.className='muted';
+   overview.textContent='国内販売ページ2件・韓国直送ページ2件を別区分。日本語の販売ページがあっても、日本向け現物の全成分表示が一致するとは限りません。';
+   audit.append(overview);
+   for(const example of record.retailChannels.cases){
+    const section=document.createElement('section');section.className='retail-channel-case';
+    const heading=document.createElement('h4');heading.textContent=(example.localRetailPage?'国内向け商品掲載（ラベル未確認）':'韓国直送・個人輸入（国内版の証拠ではない）')+'｜'+example.sourceName;
+    section.append(heading);
+    if(example.titleSpecMismatch){
+     const mismatch=document.createElement('p');mismatch.className='retail-channel-warning';
+     mismatch.textContent='容量不一致：商品名 '+example.titleVolume+' ／ 詳細欄 '+example.specVolume;
+     section.append(mismatch);
+    }
+    for(const finding of example.findings){
+     const text=document.createElement('p');text.className='muted';text.textContent=finding;section.append(text);
+    }
+    sourceLink(section,example.sourceUrl,'比較した出典（'+example.checkedOn+'確認）');
+    audit.append(section);
+   }
+   const warning=document.createElement('p');warning.className='muted';
+   warning.textContent=record.retailChannels.nextAction+' すべての資料で国内法定日本語全成分の現物確認がないため、成分を自動登録しません。';
+   audit.append(warning);details.append(audit);
+  }
   if(record.janReconciliation?.length){
    const evidence=document.createElement('details');evidence.className='sku-ean-details';
    const summary=document.createElement('summary');summary.textContent='JAN候補の確認資料（商品種類まで比較）';

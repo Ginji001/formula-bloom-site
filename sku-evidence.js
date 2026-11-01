@@ -2,6 +2,7 @@
 import {registeredProducts} from './registered-products.js';
 import {isJapaneseMarketURL} from './japan-market-policy.js';
 import {reconcileBarcodes} from './barcode-reconciliation.js';
+import {evaluateRetailChannels} from './retail-channel-review.js';
 const fold=x=>String(x||'').normalize('NFKC').toLowerCase().replace(/[\s・_－―‐ー\-()（）「」]/g,'');
 const size=x=>String(x||'').normalize('NFKC').toLowerCase().replace(/\s/g,'');
 export function compareSkuRecord(product,record){
@@ -63,7 +64,10 @@ export function validateSkuEvidence(data){
     janReconciliation[0].value!=='8809738600221'||janReconciliation[0].status!=='corroborated-cream-reference'||
     janReconciliation[1].value!=='8809624726400'||janReconciliation[1].status!=='cross-category-conflict'
    ))throw Error('ラウンドラボのJAN証拠評価が改変されました');
-  return Object.freeze({...r,janReconciliation,comparison:result});
+  if(r.marketChannelEvidence&&r.productId!=='rc82-roundlab-birch-80')throw Error('監査対象外の製品の流通記録です');
+  if(r.productId==='rc82-roundlab-birch-80'&&!r.marketChannelEvidence)throw Error('ラウンドラボの流通経路の監査資料がありません');
+  const retailChannels=r.marketChannelEvidence?evaluateRetailChannels(r.marketChannelEvidence):null;
+  return Object.freeze({...r,janReconciliation,retailChannels,comparison:result});
  }));
 }
 export const skuRecordForProduct=(validated,product)=>validated.find(x=>x.productId===product?.id)||null;

@@ -143,4 +143,13 @@ button,input,select,textarea{touch-action:manipulation}
 .roundlab-review-next button{min-height:44px;margin:5px 5px 5px 0}
 .roundlab-review-next a{display:block;font-size:11px;overflow-wrap:anywhere}
 
+/* Static research on Japanese retailer versus cross-border listings. */
+.retail-channel-audit{margin-top:12px;padding:10px;border-top:1px solid #b8cbc0}
+.retail-channel-audit summary{font-size:12px;font-weight:700}
+.retail-channel-case{background:#fff;margin:10px 0;padding:9px 12px;border:1px solid #dce3df;border-radius:8px}
+.retail-channel-case h4{font-size:11px;line-height:1.65;margin:0 0 5px;overflow-wrap:anywhere}
+.retail-channel-case .muted{font-size:11px;line-height:1.65;margin:5px 0}
+.retail-channel-case a{display:block;font-size:11px;overflow-wrap:anywhere}
+.retail-channel-warning{font-weight:650;font-size:11px;color:#9c4c3b}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}

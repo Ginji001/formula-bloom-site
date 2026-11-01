@@ -111,7 +111,65 @@
           ]
         }
       ],
-      "note": "国内小売のビックカメラは80mL商品名・容量と国内販売を掲載し、潮音コスメティックはROUND LABブランド取扱いを紹介。ただし当該現物の日本向け法定表示・JAN・正しい日本語全成分は未照合。JAN8809738600221は三井ショッピングパークなど同商品種類の販売資料で複数確認。別候補8809624726400はクリーム80mLだけでなくシートマスク10枚にも掲載され、商品種類をまたいだ競合がある。どちらも現物未確認のためJANはnull。小売掲載の乱れた成分名を修正・創作して登録しない。"
+      "note": "国内小売のビックカメラは80mL商品名・容量と国内販売を掲載し、潮音コスメティックはROUND LABブランド取扱いを紹介。ただし当該現物の日本向け法定表示・JAN・正しい日本語全成分は未照合。JAN8809738600221は三井ショッピングパークなど同商品種類の販売資料で複数確認。別候補8809624726400はクリーム80mLだけでなくシートマスク10枚にも掲載され、商品種類をまたいだ競合がある。どちらも現物未確認のためJANはnull。小売掲載の乱れた成分名を修正・創作して登録しない。",
+      "marketChannelEvidence": [
+        {
+          "id": "mitsui-80",
+          "targetProductId": "rc82-roundlab-birch-80",
+          "sourceName": "三井ショッピングパーク（国内商品掲載）",
+          "sourceUrl": "https://mitsui-shopping-park.com/ec/p/1104800000305?mallColor=9501",
+          "checkedOn": "2026-11-01",
+          "kind": "domestic-listing-no-label",
+          "titleVolume": "80mL",
+          "specVolume": "80mL",
+          "shipping": "domestic-listing",
+          "ingredients": "unreliable-translation",
+          "japanLegalLabelConfirmed": false,
+          "currentFormulaConfirmed": false
+        },
+        {
+          "id": "yodobashi-80",
+          "targetProductId": "rc82-roundlab-birch-80",
+          "sourceName": "ヨドバシ.com（国内商品掲載）",
+          "sourceUrl": "https://www.yodobashi.com/product/100000001009269391/",
+          "checkedOn": "2026-11-01",
+          "kind": "domestic-listing-no-label",
+          "titleVolume": "80mL",
+          "specVolume": "80mL",
+          "shipping": "domestic-listing",
+          "ingredients": "garbled",
+          "japanLegalLabelConfirmed": false,
+          "currentFormulaConfirmed": false
+        },
+        {
+          "id": "plusq-conflict",
+          "targetProductId": "rc82-roundlab-birch-80",
+          "sourceName": "plusq（韓国直送・容量欄不一致）",
+          "sourceUrl": "https://plus-q.jp/products/roundlab-birch-juice-moisturizing-cream",
+          "checkedOn": "2026-11-01",
+          "kind": "crossborder-with-volume-conflict",
+          "titleVolume": "80mL",
+          "specVolume": "50mL",
+          "shipping": "korea-direct",
+          "ingredients": "translation-unverified",
+          "japanLegalLabelConfirmed": false,
+          "currentFormulaConfirmed": false
+        },
+        {
+          "id": "joyance-personal-import",
+          "targetProductId": "rc82-roundlab-birch-80",
+          "sourceName": "JOYANCE-M（韓国直送・購入者による個人輸入）",
+          "sourceUrl": "https://item.rakuten.co.jp/joyance-m/10000454/",
+          "checkedOn": "2026-11-01",
+          "kind": "personal-import-from-korea",
+          "titleVolume": "80mL",
+          "specVolume": "80mL",
+          "shipping": "korea-direct",
+          "ingredients": "not-confirmed",
+          "japanLegalLabelConfirmed": false,
+          "currentFormulaConfirmed": false
+        }
+      ]
     },
     {
       "productId": "rc82-drceuracle-kombucha-150",
