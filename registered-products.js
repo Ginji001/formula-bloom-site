@@ -1,3 +1,4 @@
+import {officialReviewedRC103Products} from './official-reviewed-rc103.js';
 import {officialReviewedRC102Products} from './official-reviewed-rc102.js';
 import {officialReviewedRC101Products} from './official-reviewed-rc101.js';
 import {officialReviewedRC100Products} from './official-reviewed-rc100.js';
@@ -602,7 +603,8 @@ export const registeredProducts=Object.freeze([
  ...officialDomesticNamesRC94,
  ...officialReviewedRC100Products,
  ...officialReviewedRC101Products,
- ...officialReviewedRC102Products
+ ...officialReviewedRC102Products,
+ ...officialReviewedRC103Products
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
