@@ -1,4 +1,5 @@
 import {staticGetJSON} from './static-api.js';
+import {kaoOfficialCatalogIndex} from './official-kao-family-index.js';
 import {officialCatalogSources} from './official-catalog-families.js';
 import {analyze,groups,product,SOURCE,normalize,pickAutomaticProduct,pickIngredientVariant} from './engine.js';
 import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanese.js';
@@ -760,7 +761,9 @@ function selectRegisteredFormula(item,context=''){
       (item.variant&&item.variant.length<=28&&!productFold(item.name).includes(productFold(item.variant))?' · '+item.variant:'');
     container.append(selected);
     const state=document.createElement('p');state.className='selected-product-state';
-    state.textContent=imported?'国内向け全成分：未確認（韓国直送）':'全成分：未収録';
+    state.textContent=item.scheduledReleaseDate?'発売予定（'+item.scheduledReleaseDate+'）／全成分：未収録':
+      item.sourceScope==='japan-manufacturer-item-link-referenced-only'?'全成分：未収録（メーカー掲載名・現在の販売状況は未確認）':
+      imported?'国内向け全成分：未確認（韓国直送）':'全成分：未収録';
     container.append(state);
     showPartialChoices($('searchResults'),item);
     const input=document.createElement('button');input.type='button';input.className='secondary quick-manual-input';
@@ -843,7 +846,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const lead=document.createElement('p');lead.className='product-choice-count';
   lead.textContent='商品候補 '+families.length+'件';
   holder.append(lead);
-  const officialCatalog=officialCatalogSources[products[0]?.brand];
+  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand];
   if(officialCatalog){
     const catalogHint=document.createElement('p');catalogHint.className='muted official-catalog-note';
     catalogHint.textContent='メーカーの商品一覧から確認した名称を含みます。容量・色・全成分は未確認の候補があります。';
