@@ -1,3 +1,4 @@
+import {officialCatalogFamilyNames} from './official-catalog-families.js';
 // 国内向け公式掲載で商品名を確認した製品を登録。全成分未収録は name-only と明示。
 // ブランドの登録と製品の登録は区別する。これらは日本での販売継続や薬機法適合の保証ではない。
 export const registeredProducts=Object.freeze([
@@ -591,6 +592,7 @@ export const registeredProducts=Object.freeze([
   registrationStatus:'name-only',sourceScope:'japan-facing-korean-crossborder-personal-import-only',
   identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
   productIdentityNote:'LG BEAUTY公式楽天市場店の日本語販売ページは50mLと90mLを選択表示。購入者が輸入者となる韓国からの個人輸入・直送と明示。海外メーカー販売品と日本国内流通の法定表示を同一視しません。現物のJAN・輸入販売元・日本語全成分・処方一致は未確認です。'},
+ ...officialCatalogFamilyNames
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.

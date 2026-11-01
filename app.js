@@ -1,4 +1,5 @@
 import {staticGetJSON} from './static-api.js';
+import {officialCatalogSources} from './official-catalog-families.js';
 import {analyze,groups,product,SOURCE,normalize,pickAutomaticProduct,pickIngredientVariant} from './engine.js';
 import {productJapaneseAid,japaneseBrandLabel,brandQueryMatches} from './japanese.js';
 import {japaneseIngredientLabel} from './japan-market.js';
@@ -842,6 +843,16 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const lead=document.createElement('p');lead.className='product-choice-count';
   lead.textContent='商品候補 '+families.length+'件';
   holder.append(lead);
+  const officialCatalog=officialCatalogSources[products[0]?.brand];
+  if(officialCatalog){
+    const catalogHint=document.createElement('p');catalogHint.className='muted official-catalog-note';
+    catalogHint.textContent='メーカーの商品一覧から確認した名称を含みます。容量・色・全成分は未確認の候補があります。';
+    holder.append(catalogHint);
+    sourceLink(holder,officialCatalog,'メーカー公式の商品一覧で未登録品も確認');
+  }else if(products.every(p=>p.brand===products[0].brand)){
+    const suggestion=domesticResearchLink(products[0].brand);
+    if(suggestion)sourceLink(holder,suggestion.url,'未登録の商品を外部で探す（国内向けか要確認）');
+  }
   let visible=0;
   const more=document.createElement('button');more.type='button';more.className='secondary show-more-products';
   const batch=()=>{
