@@ -69,7 +69,7 @@ jobs:
           const rc104=fs.readFileSync('_site/official-reviewed-rc104.js','utf8');
           if(!rc104.includes('rc104-lunamer-')||!rc104.includes('japan-manufacturer-individual-full-ingredients'))
             throw Error('Missing verified rc104 Fujifilm Japanese full-formula identity records');
-          const allFuji=archived.records.filter(r=>r.brand==='ルナメア');
+          const allFuji=archived.records.filter(r=>r.productId==='rc37-lunamer'||r.productId.startsWith('rc104-lunamer-'));
           if(allFuji.length!==5||!['121003000000','121003000001','121004000000','121005000000'].every(id=>
              allFuji.some(r=>r.productId==='rc104-lunamer-'+id&&r.sourceType==='official'&&r.formulaUpdatedAt===null)))
              throw Error('Fujifilm individual products missing or not distinguished from moist toner');
