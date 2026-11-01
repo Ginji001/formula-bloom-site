@@ -42,6 +42,21 @@ export function validateInciReferenceEvidence(payload){
     record.sourceType!=='manufacturer-official-english-inci'||record.sourceMarket!=='overseas-official'||
     JSON.stringify(record.ingredients)!==JSON.stringify(['Water','Glycerin','Dipropylene Glycol','Propanediol','Butylene Glycol','Niacinamide','1,2-Hexanediol','Sodium Hyaluronate'])
   ))throw Error('PURITOオリジナル60mLの海外公式INCI参照が変更されました');
+  const pinnedReferences={
+   'rc90-iope-super-vital-softener-150':{
+    sourceUrl:'https://global.amoremall.com/products/iope-super-vital-softener',sourceType:'manufacturer-official-english-inci',
+    ingredients:['BUTYLENE GLYCOL','GLYCERETH-26','GLYCERIN','ALCOHOL DENAT.','NIACINAMIDE','1,2-HEXANEDIOL','DIMETHICONE','PROPANEDIOL']},
+   'rc90-mamonde-pore-shrinker-serum-50':{
+    sourceUrl:'https://global.amoremall.com/products/mamonde-pore-shrinker-bakuchiol-serum',sourceType:'manufacturer-official-english-inci',
+    ingredients:['BUTYLENE GLYCOL','CAPRYLIC/CAPRIC TRIGLYCERIDE','GLYCERIN','1,2-HEXANEDIOL','BETAINE','BEHENYL ALCOHOL','GELLAN GUM','SODIUM CHLORIDE']},
+   'rc90-iunik-teatree-relief-serum-50':{
+    sourceUrl:'https://www.jolse.com/product/iunik-tea-tree-relief-serum-50ml/53747/category/1230/display/1/',sourceType:'foreign-retailer-english-inci',
+    ingredients:['Melaleuca Alternifolia (Tea Tree) Leaf Water','Centella Asiatica Leaf Water','Butylene Glycol','Niacinamide','Glycereth-26','Water','Centella Asiatica (Gotu Kola) Extract','Sodium Hyaluronate']}
+  };
+  const pin=pinnedReferences[record.productId];
+  if(pin&&(record.sourceUrl!==pin.sourceUrl||record.sourceType!==pin.sourceType||
+   record.sourceMarket!==(pin.sourceType==='manufacturer-official-english-inci'?'overseas-official':'overseas-retailer-english')||
+   JSON.stringify(record.ingredients)!==JSON.stringify(pin.ingredients)))throw Error('商品固有の海外英語INCI参考出典・名称が不正です');
   const parsed=analyze(record.ingredients.join('、'));
   if(parsed.length!==record.ingredients.length)throw Error('英語INCIの分割結果が一致しません: '+record.productId);
   seen.add(record.productId);

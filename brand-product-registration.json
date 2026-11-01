@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T07:59:55.237Z",
+  "generatedAt": "2026-11-01T08:40:39.691Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 143,
-  "brandsWithPendingProductNames": 4,
-  "productNameRecords": 474,
+  "brandsWithRegisteredProductNames": 145,
+  "brandsWithPendingProductNames": 2,
+  "productNameRecords": 477,
   "ingredientRecords": 234,
   "knownIngredientRecords": 49,
   "brandsWithKnownIngredientsOnly": 46,
@@ -6308,7 +6308,7 @@
       "country": "KR",
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
-      "productNameCount": 1,
+      "productNameCount": 2,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
@@ -6324,6 +6324,20 @@
           "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000072494.html",
           "kind": "cosmetic",
           "volume": "17g",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        },
+        {
+          "productId": "rc90-iope-super-vital-softener-150",
+          "productName": "スーパー バイタル ソフナー",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.qoo10.jp/item/%E3%82%A2%E3%82%A4%E3%82%AA%E3%83%9A-%E5%BC%BE%E5%8A%9B%E9%9B%86%E4%B8%AD%E3%82%B1%E3%82%A2-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC-%E3%83%90%E3%82%A4%E3%82%BF%E3%83%AB-%E3%82%BD%E3%83%95%E3%83%8A%E3%83%BC-150ML/728587104",
+          "kind": "cosmetic",
+          "volume": "150mL",
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
@@ -6367,14 +6381,29 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc90-mamonde-pore-shrinker-serum-50",
+          "productName": "ポアシュリンカー バクチオールセラム",
+          "series": null,
+          "productType": null,
+          "variant": "セラム（クリーム60mLとは別）",
+          "sourceUrl": "https://www.qoo10.jp/gmkt.inc/Goods/Goods.aspx?goodscode=1089625479",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 90,
@@ -8491,14 +8520,29 @@
       "maker": "iUNIK",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc90-iunik-teatree-relief-serum-50",
+          "productName": "ティーツリーリリーフセラム",
+          "series": null,
+          "productType": null,
+          "variant": "単品50mL（2本組・旧版と別）",
+          "sourceUrl": "https://www.qoo10.jp/gmkt.inc/Goods/Goods.aspx?goodscode=850011475",
+          "kind": "cosmetic",
+          "volume": "50mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 138,
