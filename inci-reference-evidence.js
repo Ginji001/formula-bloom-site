@@ -17,12 +17,21 @@ export function validateInciReferenceEvidence(payload){
     (record.sourceType==='manufacturer-official-english-inci'&&!['overseas-official','japan-facing-official-english'].includes(record.sourceMarket))||
     (record.sourceType==='foreign-retailer-english-inci'&&(!['overseas-retailer-english','japan-facing-retailer-english'].includes(record.sourceMarket)||typeof record.retailerName!=='string'||!record.retailerName.trim()))||
     !/^https:\/\//i.test(record.sourceUrl)||
-    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','global.amoremall.com','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
+    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','global.amoremall.com','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com','www.jolse.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
     !Array.isArray(record.ingredients)||record.ingredients.length<2||record.ingredients.length>12||
     record.ingredients.some(v=>typeof v!=='string'||v.length>90||!ingredientPattern.test(v))||
     new Set(record.ingredients.map(x=>x.toLowerCase())).size!==record.ingredients.length||
     typeof record.note!=='string'||record.note.length<20||
     typeof record.checkedOn!=='string')throw Error('英語INCI参考資料の商品・成分・出典照合が不正: '+record.productId);
+  if(record.productId==='rc82-drceuracle-kombucha-150'&&(
+      record.sourceUrl!=='https://www.jolse.com/product/drceuracle-vegan-kombucha-tea-essence-150ml/36156/'||
+      record.sourceType!=='foreign-retailer-english-inci'||
+      record.sourceMarket!=='overseas-retailer-english'||
+      record.ingredients.length!==8||
+      record.ingredients[0]!=='Water'||
+      record.ingredients[2]!=='Hydrogenated Poly(C6-14 Olefin)'||
+      record.ingredients[7]!=='Trilaureth-4 Phosphate'
+  ))throw Error('Dr.Ceuracle海外参照の出典・抜粋内容が確認時と異なります');
   const parsed=analyze(record.ingredients.join('、'));
   if(parsed.length!==record.ingredients.length)throw Error('英語INCIの分割結果が一致しません: '+record.productId);
   seen.add(record.productId);

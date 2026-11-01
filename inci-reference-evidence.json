@@ -588,6 +588,36 @@
       "exportAsFullFormula": false,
       "checkedOn": "2026-11-01",
       "note": "アモーレパシフィックGlobal AMORE MALL掲載のHANYUL Pure Artemisia Hydrating Calming Toner pad 60枚の英語成分欄から8名称抜粋。日本国内候補はハンユル ヨモギ スージングトナーパッド（販売名PA トナーパッド）で、容量・JAN・処方改良日・現物ラベルが照合できていないため海外版と国内版の一致は主張しない。"
+    },
+    {
+      "productId": "rc82-drceuracle-kombucha-150",
+      "brand": "Dr.Ceuracle",
+      "productName": "ヴィーガンコンブチャティーエッセンス",
+      "volume": "150mL",
+      "variant": "2023年に日本の商品情報サイトで掲載",
+      "kind": "cosmetic",
+      "ingredients": [
+        "Water",
+        "Triethylhexanoin",
+        "Hydrogenated Poly(C6-14 Olefin)",
+        "1,2-Hexanediol",
+        "Methylpropanediol",
+        "Butylene Glycol",
+        "Glycerin",
+        "Trilaureth-4 Phosphate"
+      ],
+      "sourceUrl": "https://www.jolse.com/product/drceuracle-vegan-kombucha-tea-essence-150ml/36156/",
+      "sourceType": "foreign-retailer-english-inci",
+      "retailerName": "JOLSE (Korean cross-border retailer)",
+      "sourceMarket": "overseas-retailer-english",
+      "coverage": "english-excerpt-only",
+      "order": "not-confirmed",
+      "domesticFormulaMatched": false,
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "exportAsFullFormula": false,
+      "checkedOn": "2026-11-01",
+      "note": "海外販売店JOLSE掲載のDr.Ceuracle Vegan Kombucha Tea Essence（150mL）の英語INCIから原文の8名称だけを抜粋。日本の商品情報サイトの2023年発売・150mL品と同一名称・容量だが、国内向け製造販売元・JAN・日本語の法定表示・処方改良日・実物容器・同一配合はいずれも未照合。海外版参考の部分表示に限定し、日本語へ機械翻訳して実成分として登録しない。"
     }
   ]
 }
