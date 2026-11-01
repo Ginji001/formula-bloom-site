@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2024||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==234)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.103 release');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2098||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==238)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.104 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -66,11 +66,18 @@ jobs:
           const review103=fs.readFileSync('_site/official-reviewed-rc103.js','utf8');
           if(!review103.includes('rc103-nov-')||!review103.includes('japan-official-category-name-only'))
             throw Error('rc.103 Japan manufacturer product name references missing');
+          const rc104=fs.readFileSync('_site/official-reviewed-rc104.js','utf8');
+          if(!rc104.includes('rc104-lunamer-')||!rc104.includes('japan-manufacturer-individual-full-ingredients'))
+            throw Error('Missing verified rc104 Fujifilm Japanese full-formula identity records');
+          const allFuji=archived.records.filter(r=>r.brand==='ルナメア');
+          if(allFuji.length!==5||!['121003000000','121003000001','121004000000','121005000000'].every(id=>
+             allFuji.some(r=>r.productId==='rc104-lunamer-'+id&&r.sourceType==='official'&&r.formulaUpdatedAt===null)))
+             throw Error('Fujifilm individual products missing or not distinguished from moist toner');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.103: 2024 names, 146/147 brand names, 234 Japanese source snapshots');
+          console.log('Verified public static release rc.104: 2098 names, 146/147 brand names, 238 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

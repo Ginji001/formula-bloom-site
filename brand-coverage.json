@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T12:45:18.666Z",
+  "generatedAt": "2026-11-01T14:17:04.278Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,8 +10,8 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 234,
-  "registeredCandidateCount": 2024,
+  "savedFormulaCount": 238,
+  "registeredCandidateCount": 2098,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -2050,8 +2050,8 @@
       "brand": "ルナメア",
       "maker": "富士フイルム",
       "country": "JP",
-      "savedFormulaCount": 1,
-      "registeredCandidateCount": 1,
+      "savedFormulaCount": 5,
+      "registeredCandidateCount": 5,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -2070,6 +2070,46 @@
           "verifiedAt": "2026-10-31T16:52:54+09:00",
           "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121004000000.html",
           "ingredientCount": 27
+        },
+        {
+          "productId": "rc104-lunamer-121003000000",
+          "productName": "AC クレンジングオイル",
+          "variant": null,
+          "sourcePageId": "121003000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:12:21+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121003000000.html",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc104-lunamer-121003000001",
+          "productName": "AC ファイバーフォーム",
+          "variant": null,
+          "sourcePageId": "121003000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:12:21+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121003000001.html",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc104-lunamer-121004000000",
+          "productName": "AC スキンコンディショナー ノーマルタイプ",
+          "variant": "ノーマルタイプ",
+          "sourcePageId": "121004000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:12:21+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121004000000.html",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc104-lunamer-121005000000",
+          "productName": "AC ジェルクリーム",
+          "variant": null,
+          "sourcePageId": "121005000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:12:21+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121005000000.html",
+          "ingredientCount": 28
         }
       ]
     },
@@ -3925,7 +3965,7 @@
       "maker": "アモーレパシフィック",
       "country": "KR",
       "savedFormulaCount": 1,
-      "registeredCandidateCount": 1,
+      "registeredCandidateCount": 18,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -4359,7 +4399,7 @@
       "maker": "ANUA",
       "country": "KR",
       "savedFormulaCount": 1,
-      "registeredCandidateCount": 1,
+      "registeredCandidateCount": 40,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -4602,7 +4642,7 @@
       "maker": "numbuzin",
       "country": "KR",
       "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
+      "registeredCandidateCount": 13,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 1,
       "englishInciReferences": [
@@ -4669,7 +4709,7 @@
       "maker": "Dr.Jart+",
       "country": "KR",
       "savedFormulaCount": 0,
-      "registeredCandidateCount": 1,
+      "registeredCandidateCount": 3,
       "knownIngredientExcerptCount": 1,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
