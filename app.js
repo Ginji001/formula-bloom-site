@@ -1,4 +1,5 @@
 import {staticGetJSON} from './static-api.js';
+import {officialReviewedRC110Catalogs} from './official-reviewed-rc110.js';
 import {officialReviewedRC109Catalogs} from './official-reviewed-rc109.js';
 import {officialReviewedRC108Catalogs} from './official-reviewed-rc108.js';
 import {officialReviewedRC107Catalogs} from './official-reviewed-rc107.js';
@@ -88,6 +89,25 @@ function useStoredFormula(record){
  showMedicatedCategories(remoteProduct);
  run();
  $('officialStatus').textContent=$('error').textContent?'保存版を解析できませんでした。':'保存版から花を生成しました（最新処方は未確認）。';
+}
+// Registered products with an exact reviewed archive must work offline:
+ // product search → source-backed Japanese ingredient snapshot → educational flower.
+ // A saved manufacturer's listing is NEVER claimed to match today's physical batch.
+async function showArchivedRegisteredFormula(item,ctx=null){
+ ctx=ctx||beginLookup();
+ $('searchResults').textContent='日本語全成分の確認済み保存版を読み込んでいます…';
+ const archive=await storedFormulaFor(item);
+ if(ctx.version!==lookupVersion)return;
+ if(!archive){await fetchProduct(item.url,false,true,0,ctx,item.variant,item);return;}
+ useStoredFormula(archive);
+ const area=$('searchResults');area.replaceChildren();
+ const label=document.createElement('p');label.className='selected-product-name';
+ label.textContent=item.brand+' '+item.name+(item.volume?' · '+item.volume:'')+(item.jan?' ／ JAN '+item.jan:'');
+ const note=document.createElement('p');note.className='muted';
+ note.textContent='メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。最新ロット・現物ラベルとの一致は未確認です。';
+ area.append(label,note);
+ sourceLink(area,archive.sourceUrl,'全成分の出典');
+ if(item.url!==archive.sourceUrl)sourceLink(area,item.url,'商品ページ');
 }
 function offerStoredFormula(record){
  if(!record)return;
@@ -810,7 +830,7 @@ function selectRegisteredFormula(item,context=''){
     return;
   }
   $('searchResults').textContent='日本語全成分を確認しています：'+item.brand+' '+item.name;
-  fetchProduct(item.url,false,true,0,null,item.variant,item);
+  showArchivedRegisteredFormula(item);
 }
 let familyVariantCounter=0;
 function addProductFamily(container,family,query='',before=null){
@@ -863,7 +883,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const lead=document.createElement('p');lead.className='product-choice-count';
   lead.textContent='商品候補 '+families.length+'件';
   holder.append(lead);
-  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand]||officialReviewedRC100Catalogs[products[0]?.brand]||officialReviewedRC101Catalogs[products[0]?.brand]||officialReviewedRC102Catalogs[products[0]?.brand]||officialReviewedRC103Catalogs[products[0]?.brand]||officialReviewedRC104Catalogs[products[0]?.brand]||officialReviewedRC105Catalogs[products[0]?.brand]||officialReviewedRC106Catalogs[products[0]?.brand]||officialReviewedRC107Catalogs[products[0]?.brand]||officialReviewedRC108Catalogs[products[0]?.brand]||officialReviewedRC109Catalogs[products[0]?.brand];
+  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand]||officialReviewedRC100Catalogs[products[0]?.brand]||officialReviewedRC101Catalogs[products[0]?.brand]||officialReviewedRC102Catalogs[products[0]?.brand]||officialReviewedRC103Catalogs[products[0]?.brand]||officialReviewedRC104Catalogs[products[0]?.brand]||officialReviewedRC105Catalogs[products[0]?.brand]||officialReviewedRC106Catalogs[products[0]?.brand]||officialReviewedRC107Catalogs[products[0]?.brand]||officialReviewedRC108Catalogs[products[0]?.brand]||officialReviewedRC109Catalogs[products[0]?.brand]||officialReviewedRC110Catalogs[products[0]?.brand];
   if(officialCatalog){
     const catalogHint=document.createElement('p');catalogHint.className='muted official-catalog-note';
     catalogHint.textContent='メーカーの商品一覧から確認した名称を含みます。容量・色・全成分は未確認の候補があります。';
@@ -1079,7 +1099,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
     if(matched){
       if(matched.registrationStatus==='name-only'){selectRegisteredFormula(matched);return;}
       $('searchResults').textContent='日本公式の商品情報を確認しています：'+matched.brand+' '+matched.name;
-      await fetchProduct(matched.url,false,true,0,ctx,matched.variant,matched);
+      await showArchivedRegisteredFormula(matched,ctx);
       return;
     }
   }

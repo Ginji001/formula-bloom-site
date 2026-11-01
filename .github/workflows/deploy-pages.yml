@@ -42,8 +42,8 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2132||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==276)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.109 release');
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==284)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.110 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -133,11 +133,29 @@ jobs:
           if(!am||!pm||am.ingredientCount!==40||pm.ingredientCount!==33||
              am.ingredients===pm.ingredients||am.volume!=='5g'||pm.volume!=='18g')
              throw Error('Medicinal morning/night types are not differentiated');
+          const reviewed110=fs.readFileSync('_site/official-reviewed-rc110.js','utf8');
+          const extraIds=['rc94-jp-official-carecera-122',
+            'rc94-jp-official-carecera-123',
+            'rc94-jp-official-carecera-124',
+            'rc94-jp-official-carecera-125',
+            'rc61-catalog-024','rc61-catalog-027','rc61-catalog-029','rc61-catalog-033'];
+          if(extraIds.some(id=>!reviewed110.includes(id)))
+            throw Error('rc110 exact eight manufacturer-matched historical product IDs missing');
+          const rohtoEight=archived.records.filter(r=>extraIds.includes(r.productId));
+          if(rohtoEight.length!==8||new Set(rohtoEight.map(r=>r.productId)).size!==8||
+             rohtoEight.some(r=>r.kind!=='cosmetic'||r.sourceType!=='official'||
+               r.region!=='jp'||r.formulaUpdatedAt!==null||
+               !r.sourceUrl.startsWith('https://jp.rohto.com/seib/seib?kw=')))
+            throw Error('rc110 Rohto eight Japanese ingredient records invalid or duplicative');
+          const required=[['rc94-jp-official-carecera-122',34,'4987241195206'],
+            ['rc61-catalog-027',12,'4987241155736']];
+          if(required.some(([id,n,jan])=>!rohtoEight.some(r=>r.productId===id&&r.ingredientCount===n&&r.sku===jan)))
+            throw Error('JAN / exact Japanese ingredient-count mapping failed');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.109: 2132 names, 146/147 brand names, 276 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.110: 2132 names, 146/147 brand names, 284 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

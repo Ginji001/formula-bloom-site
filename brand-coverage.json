@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:00:31.802Z",
+  "generatedAt": "2026-11-01T16:19:17.224Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,7 +10,7 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 276,
+  "savedFormulaCount": 284,
   "registeredCandidateCount": 2132,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
@@ -1380,7 +1380,7 @@
       "brand": "肌ラボ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 5,
       "registeredCandidateCount": 16,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -1400,6 +1400,46 @@
           "verifiedAt": "2026-10-31T09:05:31+09:00",
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/hadalabo/rich-gokujun-uv/145676.html",
           "ingredientCount": 31
+        },
+        {
+          "productId": "rc61-catalog-024",
+          "productName": "極潤ヒアルロン液",
+          "variant": null,
+          "sourcePageId": "155712",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=155712",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc61-catalog-027",
+          "productName": "極潤ヒアルロン液 ライトタイプ",
+          "variant": null,
+          "sourcePageId": "155736",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=155736",
+          "ingredientCount": 12
+        },
+        {
+          "productId": "rc61-catalog-029",
+          "productName": "極潤ヒアルロン乳液",
+          "variant": null,
+          "sourcePageId": "127054",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=127054",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc61-catalog-033",
+          "productName": "極潤ヒアルロンクリーム",
+          "variant": null,
+          "sourcePageId": "127948",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=127948",
+          "ingredientCount": 23
         }
       ]
     },
@@ -1446,7 +1486,7 @@
       "brand": "ケアセラ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 5,
       "registeredCandidateCount": 9,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -1466,6 +1506,46 @@
           "verifiedAt": "2026-10-31T09:05:31+09:00",
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/155620.html?cgid=care",
           "ingredientCount": 36
+        },
+        {
+          "productId": "rc94-jp-official-carecera-122",
+          "productName": "AP高保湿先行バリア乳液",
+          "variant": null,
+          "sourcePageId": "195206",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=195206",
+          "ingredientCount": 34
+        },
+        {
+          "productId": "rc94-jp-official-carecera-123",
+          "productName": "AP高保湿バリアスキンバーム",
+          "variant": null,
+          "sourcePageId": "195220",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=195220",
+          "ingredientCount": 53
+        },
+        {
+          "productId": "rc94-jp-official-carecera-124",
+          "productName": "AP高保湿クリームラップマスク",
+          "variant": null,
+          "sourcePageId": "202188",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=202188",
+          "ingredientCount": 50
+        },
+        {
+          "productId": "rc94-jp-official-carecera-125",
+          "productName": "モイストバリアリップクリーム",
+          "variant": null,
+          "sourcePageId": "195015",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T01:13:46+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=195015",
+          "ingredientCount": 31
         }
       ]
     },
