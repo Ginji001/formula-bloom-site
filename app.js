@@ -1,4 +1,5 @@
 import {staticGetJSON} from './static-api.js';
+import {officialDomesticCatalogRC94} from './official-domestic-catalog-rc94.js';
 import {kaoOfficialCatalogIndex} from './official-kao-family-index.js';
 import {officialCatalogSources} from './official-catalog-families.js';
 import {analyze,groups,product,SOURCE,normalize,pickAutomaticProduct,pickIngredientVariant} from './engine.js';
@@ -846,7 +847,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const lead=document.createElement('p');lead.className='product-choice-count';
   lead.textContent='商品候補 '+families.length+'件';
   holder.append(lead);
-  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand];
+  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand];
   if(officialCatalog){
     const catalogHint=document.createElement('p');catalogHint.className='muted official-catalog-note';
     catalogHint.textContent='メーカーの商品一覧から確認した名称を含みます。容量・色・全成分は未確認の候補があります。';

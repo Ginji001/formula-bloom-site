@@ -41,20 +41,22 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==1318||
+          if(catalog.brandCount!==147||catalog.productNameRecords!==1520||
               catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==234)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.93 release');
+            throw Error('Version or Japan formula coverage does not match reviewed rc.94 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
           const kaoFamilies=fs.readFileSync('_site/official-kao-family-index.js','utf8');
           if(!kaoFamilies.includes('rc93-kao-')||!kaoFamilies.includes('japan-manufacturer-item-link-referenced-only'))
             throw Error('The official Japanese manufacturer catalog family index is missing');
+          const names=fs.readFileSync('_site/official-domestic-catalog-rc94.js','utf8');
+          if(!names.includes('rc94-jp-official-')||!names.includes('japanese-official-product-category-name-only'))throw Error('Missing reviewed name catalog');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.93: 1318 names, 146/147 brand names, 234 Japanese source snapshots');
+          console.log('Verified public static release rc.94: 1520 names, 146/147 brand names, 234 Japanese source snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
