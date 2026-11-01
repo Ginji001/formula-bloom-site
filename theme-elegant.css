@@ -645,3 +645,38 @@ footer>span:last-child{color:#827b77}
 .retail-sources a{font-size:11px}
 @media(max-width:850px){.intro{padding:10px 13px!important}.intro-art{height:95px!important}.hero-flower-photo{max-height:95px}.input-card{padding:17px}}
 @media(max-width:390px){.intro-art{height:80px!important}.hero-flower-photo{max-height:80px}}
+
+
+/* rc.87: search-first, compact product selection; provenance remains in details. */
+#catalogTools{border:1px solid #e5dde0;border-radius:10px;padding:9px 12px;margin:8px 0 14px;background:#faf8f8}
+#catalogTools>summary{font-size:12px;font-weight:650;min-height:28px}
+#catalogTools>details{margin-top:9px}
+#searchHint{margin:4px 0;color:#777;font-size:10px}
+#searchResults{margin-top:10px}
+#searchResults .product-option{padding:10px 12px;margin:5px 0;min-height:50px;border-radius:10px}
+#searchResults .product-option strong{font-size:13px;font-weight:650;line-height:1.45}
+#searchResults .product-option small{font-size:10px;line-height:1.45;margin:2px 0 0}
+#searchResults .product-choice-count{font-size:11px;color:#81767d;margin:4px 0 8px}
+#searchResults .show-more-products{min-height:44px;text-align:center;width:100%;margin:7px 0}
+#searchResults .formula-family-variants{padding:4px 9px;margin:3px 0 9px}
+#searchResults .formula-family-variants summary{font-size:11px}
+#searchResults .formula-family-variants button{display:block;width:100%;min-height:44px;margin:5px 0;text-align:left;font-size:12px}
+#searchResults .search-extra-actions,#searchResults .product-extra-actions,#searchResults .product-evidence-more{border-top:1px solid #ebe6e6;padding:9px 2px;margin-top:10px}
+#searchResults .search-extra-actions>summary,#searchResults .product-extra-actions>summary,#searchResults .product-evidence-more>summary{font-size:11px;color:#756b70;font-weight:600}
+#searchResults .selected-product-name{font-size:14px;line-height:1.6;font-weight:750;margin:5px 0}
+#searchResults .selected-product-state{font-size:11px;color:#756f72;margin:2px 0 9px}
+#searchResults .partial-flower-action{display:block;width:100%;min-height:48px;text-align:center;font-weight:700;background:#eff5ee;margin:10px 0 5px}
+#searchResults .quick-manual-input{display:block;width:100%;min-height:44px;margin:6px 0 2px;text-align:center}
+#searchResults .product-evidence-more .sku-evidence,#searchResults .product-evidence-more .inference-choice{margin:8px 0}
+#searchResults .product-extra-actions .muted,#searchResults .product-evidence-more .muted{font-size:11px;line-height:1.55}
+@media(max-width:850px){
+  #catalogTools{margin:6px 0 9px}
+  #searchHint{display:none}
+  .input-card{padding:16px}
+  #searchResults .product-option{min-height:50px}
+  .examples{margin:8px 0}
+  .examples button{min-height:30px;padding:4px 9px;font-size:10px}
+}
+
+#searchResults .product-primary-actions{display:grid;gap:5px;margin-top:6px}
+#searchResults .product-primary-actions button{margin:0;width:100%;min-height:44px}
