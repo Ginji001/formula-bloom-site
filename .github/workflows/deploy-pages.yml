@@ -1,0 +1,59 @@
+name: Deploy verified static Formula Bloom site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: formula-bloom-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public static repository
+        uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Assemble only public static assets and validate catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/_site/' ./ _site/
+          test -f _site/index.html
+          test -f _site/.nojekyll
+          test -f _site/sw.js
+          test -f _site/registered-products.js
+          test ! -e _site/.github
+          test ! -e _site/.git
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
+          const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
+          if(catalog.brandCount!==147||catalog.productNameRecords!==479||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==234)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.91 release');
+          const src=fs.readFileSync('_site/registered-products.js','utf8');
+          for(const size of ['50','90'])
+            if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
+              throw Error('One of the two non-domestic WHOO size candidates is missing');
+          console.log('Verified public static release rc.91: 479 names, 146/147 brand names, 234 Japanese source snapshots');
+          NODE
+      - name: Upload public site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
