@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2107||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==247)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.105 release');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2116||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==256)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.106 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -81,11 +81,19 @@ jobs:
              ast.filter(r=>r.kind==='quasi').length!==3||ast.filter(r=>r.kind==='cosmetic').length!==6||
              ast.some(r=>r.sourceType!=='official'||r.formulaUpdatedAt!==null))
             throw Error('Astalift nine exact Japanese formula snapshots or medicinal partitions mismatch');
+          const review106=fs.readFileSync('_site/official-reviewed-rc106.js','utf8');
+          if(!review106.includes('rc106-astalift-')||!review106.includes('rc106-lunamer-121105000001-さっぱり'))
+            throw Error('Missing rc106 source-linked AstaLift and separate LunaMea emulsion identities');
+          const newFormulas=archived.records.filter(r=>r.productId.startsWith('rc106-'));
+          if(newFormulas.length!==9||new Set(newFormulas.map(r=>r.productId)).size!==9||
+             newFormulas.filter(r=>r.kind==='quasi').length!==3||
+             newFormulas.some(r=>r.sourceType!=='official'||r.formulaUpdatedAt!==null))
+            throw Error('rc106 nine separately verified Japanese full ingredient snapshots mismatch');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.105: 2107 names, 146/147 brand names, 247 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.106: 2116 names, 146/147 brand names, 256 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

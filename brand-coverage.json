@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T14:42:13.709Z",
+  "generatedAt": "2026-11-01T15:02:52.505Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,8 +10,8 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 247,
-  "registeredCandidateCount": 2107,
+  "savedFormulaCount": 256,
+  "registeredCandidateCount": 2116,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -2022,8 +2022,8 @@
       "brand": "アスタリフト",
       "maker": "富士フイルム",
       "country": "JP",
-      "savedFormulaCount": 10,
-      "registeredCandidateCount": 14,
+      "savedFormulaCount": 15,
+      "registeredCandidateCount": 19,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -2132,6 +2132,56 @@
           "verifiedAt": "2026-11-01T23:39:46+09:00",
           "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/astaliftwhite/100406000000.html",
           "ingredientCount": 27
+        },
+        {
+          "productId": "rc106-astalift-100301100000",
+          "productName": "スパークル タイト セラム",
+          "variant": null,
+          "sourcePageId": "100301100000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100301100000.html",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc106-astalift-100306000001",
+          "productName": "アイクリーム",
+          "variant": null,
+          "sourcePageId": "100306000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100306000001.html",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc106-astalift-100401000000",
+          "productName": "エッセンス インフィルト",
+          "variant": null,
+          "sourcePageId": "100401000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/astaliftwhite/100401000000.html",
+          "ingredientCount": 32
+        },
+        {
+          "productId": "rc106-astalift-101333000000",
+          "productName": "ザ セラム マルチチューン",
+          "variant": null,
+          "sourcePageId": "101333000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/serum/101333000000.html",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc106-astalift-101335001100",
+          "productName": "ザ セラム ブライトニング",
+          "variant": null,
+          "sourcePageId": "101335001100",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/serum/101335001100.html",
+          "ingredientCount": 25
         }
       ]
     },
@@ -2140,8 +2190,8 @@
       "brand": "ルナメア",
       "maker": "富士フイルム",
       "country": "JP",
-      "savedFormulaCount": 5,
-      "registeredCandidateCount": 5,
+      "savedFormulaCount": 9,
+      "registeredCandidateCount": 9,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -2200,6 +2250,46 @@
           "verifiedAt": "2026-11-01T23:12:21+09:00",
           "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-ac/121005000000.html",
           "ingredientCount": 28
+        },
+        {
+          "productId": "rc106-lunamer-121101000000",
+          "productName": "ブライトナー",
+          "variant": null,
+          "sourcePageId": "121101000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-bc/121101000000.html",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc106-lunamer-121105000001-さっぱり",
+          "productName": "エマルジョン さっぱりタイプ",
+          "variant": "さっぱりタイプ",
+          "sourcePageId": "121105000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-bc/121105000001.html",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc106-lunamer-121105000001-しっとり",
+          "productName": "エマルジョン しっとりタイプ",
+          "variant": "しっとりタイプ",
+          "sourcePageId": "121105000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-bc/121105000001.html",
+          "ingredientCount": 32
+        },
+        {
+          "productId": "rc106-lunamer-121105000000",
+          "productName": "クリーム",
+          "variant": null,
+          "sourcePageId": "121105000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:59:53+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/lunamer/lunamer-bc/121105000000.html",
+          "ingredientCount": 35
         }
       ]
     },
