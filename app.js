@@ -12,6 +12,7 @@ import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciN
 import {inferStructure,inferredArchetypes} from './inference-flower.js';
 import {inferIngredientEvidence} from './inference-evidence.js';
 import {validateSkuEvidence,skuRecordForProduct} from './sku-evidence.js';
+import {roundlabInquiryContactUrl,roundlabInquiryText,reviewRoundlabPackage} from './roundlab-label-review.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
@@ -581,6 +582,54 @@ function skuEvidence(){
  if(!skuEvidencePromise)skuEvidencePromise=getJSON('/sku-evidence.json').then(validateSkuEvidence).catch(e=>{skuEvidencePromise=null;throw e;});
  return skuEvidencePromise;
 }
+function showRoundlabPackageReview(container){
+ const steps=document.createElement('details');steps.className='roundlab-review-next';
+ const summary=document.createElement('summary');
+ summary.textContent='国内向けJAN・全成分の確認へ進む';
+ steps.append(summary);
+ const intro=document.createElement('p');intro.className='muted';
+ intro.textContent='現物裏面または正式な国内向け製品資料が必要です。ここで入力した内容は送信・自動保存されず、確認済みの全成分データにも反映されません。';
+ steps.append(intro);
+ const title=document.createElement('h4');title.textContent='1．手元の容器を確認';steps.append(title);
+ const field=document.createElement('label');field.textContent='現物のバーコード下の13桁';
+ const input=document.createElement('input');input.type='text';input.inputMode='numeric';input.maxLength=24;input.placeholder='13桁（全角入力も可）';field.append(input);
+ steps.append(field);
+ const vl=document.createElement('label');vl.textContent='現物に書かれた容量';
+ const volume=document.createElement('input');volume.type='text';volume.maxLength=24;volume.placeholder='例：80mL';vl.append(volume);steps.append(vl);
+ const il=document.createElement('label');il.textContent='日本語の製造販売元・輸入販売責任者（社名だけ）';
+ const importer=document.createElement('input');importer.type='text';importer.maxLength=160;importer.placeholder='容器・外箱に書かれた企業名';il.append(importer);steps.append(il);
+ const label=document.createElement('label');label.className='check';
+ const labelCheck=document.createElement('input');labelCheck.type='checkbox';
+ label.append(labelCheck,' 現物の日本語ラベルを読みました');steps.append(label);
+ const ingredientsLabel=document.createElement('label');ingredientsLabel.className='check';
+ const ingredientCheck=document.createElement('input');ingredientCheck.type='checkbox';
+ ingredientsLabel.append(ingredientCheck,' 全成分を原画像と見比べました');steps.append(ingredientsLabel);
+ const result=document.createElement('p');result.setAttribute('role','status');result.className='muted';
+ const compare=document.createElement('button');compare.type='button';compare.className='secondary';
+ compare.textContent='入力した識別情報だけを確認';
+ compare.onclick=()=>{
+  const outcome=reviewRoundlabPackage({ean:input.value,volume:volume.value,responsibleCompany:importer.value,japaneseLabel:labelCheck.checked,ingredientList:ingredientCheck.checked});
+  result.textContent='判定：'+outcome.sourceNote+' '+outcome.status+' '+outcome.privacy;
+ };
+ steps.append(compare,result);
+ const photo=document.createElement('button');photo.type='button';photo.className='secondary';
+ photo.textContent='現物の日本語成分ラベルを写真で確認';
+ photo.onclick=()=>{tab('image');$('ocrStatus').textContent='原画像とバーコード・容量・製造販売元・全成分を確認してください。読み取った成分は自動保存されません。';$('photo').click();};
+ steps.append(photo);
+ const contactHeading=document.createElement('h4');contactHeading.textContent='2．国内取扱企業へ個別SKUの資料を問い合わせる';
+ const note=document.createElement('p');note.className='muted';note.textContent='株式会社潮音コスメティックはROUND LABを取扱ブランドとして掲載していますが、当該80mL品の輸入販売責任者であるとは確認できていません。まず問い合わせ先として確認します。';
+ steps.append(contactHeading,note);
+ const request=document.createElement('textarea');request.rows=7;request.readOnly=true;request.value=roundlabInquiryText;request.setAttribute('aria-label','国内向け製品の確認依頼文');steps.append(request);
+ const copied=document.createElement('p');copied.className='muted';copied.setAttribute('role','status');
+ const copy=document.createElement('button');copy.type='button';copy.className='secondary';copy.textContent='問い合わせ文をコピー';
+ copy.onclick=async()=>{
+  try{await navigator.clipboard.writeText(request.value);copied.textContent='問い合わせ文をコピーしました。フォームへの送信は行っていません。';}
+  catch{request.focus();request.select();copied.textContent='自動コピーが使えません。選択された文章をコピーしてください。';}
+ };
+ steps.append(copy,copied);
+ sourceLink(steps,roundlabInquiryContactUrl,'ROUND LAB取扱企業の公式お問い合わせフォーム（送信は本人が操作）');
+ container.append(steps);
+}
 function showSkuIdentityEvidence(container,item,version){
  skuEvidence().then(rows=>{
   if(version!==lookupVersion)return;
@@ -636,6 +685,7 @@ function showSkuIdentityEvidence(container,item,version){
    next.textContent='最終確認：国内の輸入販売元または実際の80mL商品の外箱・裏面で、JAN／商品名／輸入販売元／日本語全成分を同時に確認してください。JANは未確定のため商品登録欄へ自動設定しません。';
    evidence.append(next);
    details.append(evidence);
+   if(item.id==='rc82-roundlab-birch-80')showRoundlabPackageReview(details);
   }
   container.append(details);
  }).catch(()=>{if(version===lookupVersion){const p=document.createElement('p');p.className='muted';p.textContent='商品識別の比較資料を読み込めません。国内向け成分の確認は続けられます。';container.append(p);}});
