@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T06:25:30.264Z",
+  "generatedAt": "2026-11-01T07:59:55.237Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 142,
-  "brandsWithPendingProductNames": 5,
-  "productNameRecords": 473,
+  "brandsWithRegisteredProductNames": 143,
+  "brandsWithPendingProductNames": 4,
+  "productNameRecords": 474,
   "ingredientRecords": 234,
   "knownIngredientRecords": 49,
   "brandsWithKnownIngredientsOnly": 46,
@@ -7667,14 +7667,29 @@
       "maker": "PURITO",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc89-purito-centella-60-original",
+          "productName": "ワンダーリリーフ センテラセラム",
+          "series": null,
+          "productType": null,
+          "variant": "オリジナル（無香料版とは別）",
+          "sourceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Goods/goods.aspx?goodscode=1153043100",
+          "kind": "cosmetic",
+          "volume": "60mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 118,

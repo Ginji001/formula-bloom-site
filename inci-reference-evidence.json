@@ -618,6 +618,64 @@
       "exportAsFullFormula": false,
       "checkedOn": "2026-11-01",
       "note": "海外販売店JOLSE掲載のDr.Ceuracle Vegan Kombucha Tea Essence（150mL）の英語INCIから原文の8名称だけを抜粋。日本の商品情報サイトの2023年発売・150mL品と同一名称・容量だが、国内向け製造販売元・JAN・日本語の法定表示・処方改良日・実物容器・同一配合はいずれも未照合。海外版参考の部分表示に限定し、日本語へ機械翻訳して実成分として登録しない。"
+    },
+    {
+      "productId": "rc83-axisy-glow-50",
+      "brand": "AXIS-Y",
+      "productName": "ダークスポットコレクティンググローセラム",
+      "volume": "50mL",
+      "variant": null,
+      "kind": "cosmetic",
+      "ingredients": [
+        "Water",
+        "Glycerin",
+        "Niacinamide",
+        "Sodium Hyaluronate",
+        "Propanediol",
+        "Erythritol",
+        "Butylene Glycol",
+        "Squalane"
+      ],
+      "sourceUrl": "https://www.axis-y.com/products/dark-spot-correcting-glow-serum",
+      "sourceType": "manufacturer-official-english-inci",
+      "sourceMarket": "overseas-official",
+      "coverage": "english-excerpt-only",
+      "order": "not-confirmed",
+      "domesticFormulaMatched": false,
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "exportAsFullFormula": false,
+      "checkedOn": "2026-11-01",
+      "note": "AXIS-Y英語メーカー公式50mL「Dark Spot Correcting Glow Serum」の英語Ingredients列にある8名称の限定抜粋。国内日本語の販売サイトCoréelle Japanは韓国発送・原則個人輸入。日本向け法定全成分・製造販売元・JAN・ロット・現物との同一処方は未確認。別サイズ20mLや旧版への転用不可。"
+    },
+    {
+      "productId": "rc89-purito-centella-60-original",
+      "brand": "PURITO",
+      "productName": "ワンダーリリーフ センテラセラム",
+      "volume": "60mL",
+      "variant": "オリジナル（無香料版とは別）",
+      "kind": "cosmetic",
+      "ingredients": [
+        "Water",
+        "Glycerin",
+        "Dipropylene Glycol",
+        "Propanediol",
+        "Butylene Glycol",
+        "Niacinamide",
+        "1,2-Hexanediol",
+        "Sodium Hyaluronate"
+      ],
+      "sourceUrl": "https://purito.com/product/wonder-releaf-centella-serum/",
+      "sourceType": "manufacturer-official-english-inci",
+      "sourceMarket": "overseas-official",
+      "coverage": "english-excerpt-only",
+      "order": "not-confirmed",
+      "domesticFormulaMatched": false,
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "exportAsFullFormula": false,
+      "checkedOn": "2026-11-01",
+      "note": "PURITO英語メーカー公式「Wonder Releaf Centella Serum」60mLの成分列から英語8名称のみ抜粋。Centella Asiatica Extract(34,685 ppm)は数値を含むためこの抜粋には含めず、含有量を推定・訂正しない。日本向けの海外販売店は韓国直送。Unscented 60mLは別製品であり成分を混同しない。日本国内向け法定日本語成分・JAN・製造販売元・現物ラベルとの一致は未確認。"
     }
   ]
 }

@@ -17,7 +17,7 @@ export function validateInciReferenceEvidence(payload){
     (record.sourceType==='manufacturer-official-english-inci'&&!['overseas-official','japan-facing-official-english'].includes(record.sourceMarket))||
     (record.sourceType==='foreign-retailer-english-inci'&&(!['overseas-retailer-english','japan-facing-retailer-english'].includes(record.sourceMarket)||typeof record.retailerName!=='string'||!record.retailerName.trim()))||
     !/^https:\/\//i.test(record.sourceUrl)||
-    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','global.amoremall.com','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com','www.jolse.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
+    !['jp.beautyofjoseon.com','www.skin1004.com','tirtir.global','celimax.com','haruharuwonder.com','biodance.com','us.numbuzin.com','lgbeauty.com','heimish.us','doctoraltheaglobal.com','medicube.us','global.amoremall.com','www.3cecosmetics.com','dasique.com','amusemakeup.jp','us.oliveyoung.com','wholesale.q-depot.com','lewkin.com','www.jolse.com','www.axis-y.com','purito.com'].includes((()=>{try{return new URL(record.sourceUrl).hostname;}catch{return '';}})())||
     !Array.isArray(record.ingredients)||record.ingredients.length<2||record.ingredients.length>12||
     record.ingredients.some(v=>typeof v!=='string'||v.length>90||!ingredientPattern.test(v))||
     new Set(record.ingredients.map(x=>x.toLowerCase())).size!==record.ingredients.length||
@@ -32,6 +32,16 @@ export function validateInciReferenceEvidence(payload){
       record.ingredients[2]!=='Hydrogenated Poly(C6-14 Olefin)'||
       record.ingredients[7]!=='Trilaureth-4 Phosphate'
   ))throw Error('Dr.Ceuracle海外参照の出典・抜粋内容が確認時と異なります');
+  if(record.productId==='rc83-axisy-glow-50'&&(
+    record.sourceUrl!=='https://www.axis-y.com/products/dark-spot-correcting-glow-serum'||
+    record.sourceType!=='manufacturer-official-english-inci'||record.sourceMarket!=='overseas-official'||
+    JSON.stringify(record.ingredients)!==JSON.stringify(['Water','Glycerin','Niacinamide','Sodium Hyaluronate','Propanediol','Erythritol','Butylene Glycol','Squalane'])
+  ))throw Error('AXIS-Y海外公式英語INCI参照の照合条件が変更されました');
+  if(record.productId==='rc89-purito-centella-60-original'&&(
+    record.sourceUrl!=='https://purito.com/product/wonder-releaf-centella-serum/'||
+    record.sourceType!=='manufacturer-official-english-inci'||record.sourceMarket!=='overseas-official'||
+    JSON.stringify(record.ingredients)!==JSON.stringify(['Water','Glycerin','Dipropylene Glycol','Propanediol','Butylene Glycol','Niacinamide','1,2-Hexanediol','Sodium Hyaluronate'])
+  ))throw Error('PURITOオリジナル60mLの海外公式INCI参照が変更されました');
   const parsed=analyze(record.ingredients.join('、'));
   if(parsed.length!==record.ingredients.length)throw Error('英語INCIの分割結果が一致しません: '+record.productId);
   seen.add(record.productId);

@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T06:25:30.260Z",
+  "generatedAt": "2026-11-01T07:59:55.234Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
   "brandsWithKnownIngredientsOnly": 46,
   "brandsWithNoIngredientEvidence": 29,
   "knownIngredientExcerptCount": 49,
-  "englishInciReferenceCount": 21,
-  "brandsWithEnglishReferences": 21,
-  "brandsWithNoEvidenceInAnyLanguage": 8,
+  "englishInciReferenceCount": 23,
+  "brandsWithEnglishReferences": 23,
+  "brandsWithNoEvidenceInAnyLanguage": 6,
   "savedFormulaCount": 234,
-  "registeredCandidateCount": 473,
+  "registeredCandidateCount": 474,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -4871,10 +4871,22 @@
       "maker": "PURITO",
       "country": "KR",
       "savedFormulaCount": 0,
-      "registeredCandidateCount": 0,
+      "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc89-purito-centella-60-original",
+          "sourceUrl": "https://purito.com/product/wonder-releaf-centella-serum/",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
@@ -5318,8 +5330,20 @@
       "savedFormulaCount": 0,
       "registeredCandidateCount": 1,
       "knownIngredientExcerptCount": 0,
-      "englishInciReferenceCount": 0,
-      "englishInciReferences": [],
+      "englishInciReferenceCount": 1,
+      "englishInciReferences": [
+        {
+          "productId": "rc83-axisy-glow-50",
+          "sourceUrl": "https://www.axis-y.com/products/dark-spot-correcting-glow-serum",
+          "sourceType": "manufacturer-official-english-inci",
+          "retailerName": null,
+          "sourceMarket": "overseas-official",
+          "checkedOn": "2026-11-01",
+          "ingredientCount": 8,
+          "domesticFormulaMatched": false,
+          "labelCompared": false
+        }
+      ],
       "ingredientEvidenceStatus": "no-ingredients-recorded",
       "partialProducts": [],
       "status": "no-saved-formula",
