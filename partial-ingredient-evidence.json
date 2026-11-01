@@ -1223,6 +1223,35 @@
       "currentFormulaCompared": false,
       "copyingPermissionForFullList": false,
       "note": "国内販売店で選択色BS01 クール5g、JAN8809652587585の商品詳細と成分欄から8名称を抜粋。BS02～BS05ほか別色には流用せず、色材と全色共通配合を推測しない。最新現物ラベル未照合。"
+    },
+    {
+      "productId": "rc81-peripera-ink-mood-18",
+      "brand": "peripera",
+      "productName": "インク ムード グロイ ティント",
+      "volume": "4g",
+      "variant": "18 ウォームベージュ",
+      "kind": "cosmetic",
+      "ingredients": [
+        "水",
+        "ジフェニルジメチコン",
+        "リンゴ酸ジイソステアリル",
+        "ビスジグリセリルポリアシルアジペート-2",
+        "水添ポリイソブテン",
+        "ジグリセリン",
+        "DPG",
+        "セチルPEG/PPG-10/1ジメチコン"
+      ],
+      "sourceUrl": "https://cosme-wld.com/products/detail/76984",
+      "checkedOn": "2026-11-01",
+      "sourceType": "japanese-domestic-retailer-listing",
+      "retailerName": "美っとワールドCOSME",
+      "evidenceType": "domestic-retailer-japanese-ingredient-excerpt",
+      "coverage": "partial-only",
+      "order": "not-confirmed",
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "copyingPermissionForFullList": false,
+      "note": "日本国内販売店の商品専用ページで、インク ムード グロイ ティント 18 ウォームベージュ／4g／JAN4573198754230（商品コードATT4573198754230）と日本語成分名を照合した抜粋8件。ペリペラ日本公式はシリーズ4gまでを確認。現物ラベル未照合、処方改良日不明。色番未指定・22/24番・別色の色材や配合を同一としない。"
     }
   ]
 }

@@ -1,6 +1,12 @@
 // 国内向け公式掲載で商品名を確認した製品を登録。全成分未収録は name-only と明示。
 // ブランドの登録と製品の登録は区別する。これらは日本での販売継続や薬機法適合の保証ではない。
 export const registeredProducts=Object.freeze([
+ {id:'rc81-peripera-ink-mood-18',brand:'peripera',name:'インク ムード グロイ ティント',
+  aliases:['ペリペラ インク ムード グロイ ティント 18 ウォームベージュ','PERIPERA インク ムード グロイ ティント 18 ウォームベージュ'],
+  url:'https://www.peripera.jp/product/%E3%82%A4%E3%83%B3%E3%82%AF-%E3%83%A0%E3%83%BC%E3%83%89-%E3%82%B0%E3%83%AD%E3%82%A4-%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/149/category/1/display/2/',
+  variant:'18 ウォームベージュ',volume:'4g',jan:'4573198754230',kind:'cosmetic',registrationStatus:'name-only',
+  sourceScope:'domestic-jan-variant',identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'日本公式はシリーズ名と4gを確認。日本国内販売店の18ウォームベージュ専用ページで色番・4g・JAN4573198754230・日本語部分成分を確認。現物ラベル・改良履歴は未照合。色番未指定品や別色へ成分を流用しません。'},
  {id:"ihada-moist-lotion",brand:'イハダ',name:"薬用うるおいローション（しっとり）",
   aliases:["イハダ うるおいローション しっとり", "IHADA 薬用うるおいローション しっとり"],url:"https://www.shiseido.co.jp/ihada/products/skincare-lotion.html",variant:"しっとり",kind:'quasi',volume:"180mL",ingredientsExpected:23},
  {id:"ihada-rich-lotion",brand:'イハダ',name:"薬用うるおいローション（とてもしっとり）",

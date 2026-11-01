@@ -11,6 +11,7 @@ import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './pa
 import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciNames} from './inci-reference-evidence.js';
 import {inferStructure,inferredArchetypes} from './inference-flower.js';
 import {inferIngredientEvidence} from './inference-evidence.js';
+import {validateSkuEvidence,skuRecordForProduct} from './sku-evidence.js';
 import {domesticResearchLink} from './research-assist.js';
 import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-types.js';
 import {summarizeFormulaIntent} from './formula-intent.js';
@@ -160,7 +161,7 @@ function showMedicatedCategories(item){
 function showIdentityNote(check){
   const note=document.createElement('p');
   note.className='muted';
-  note.textContent='商品確認：'+(check.status==='unverified'?'未照合':check.status==='review'?'利用者確認': '一致項目あり')+' ／ '+check.text;
+  note.textContent='商品確認：'+(check.status==='unverified'?'未確認':check.status==='review'?'利用者確認': '一致項目あり')+' ／ '+check.text;
   $('sourceInfo').append(note);
 }
 async function fetchProduct(url,confirmed=false,auto=false,depth=0,ctx=null,preferredVariant=null,expected=null){ctx=ctx||beginLookup();if(depth===0){invalidate();remoteProduct=null;official=false;}busy(true);$('officialStatus').textContent='公式ページの全成分を確認しています…';$('fetchOfficial').disabled=true;try{const p=await getJSON('/api/official?url='+encodeURIComponent(url)+(confirmed||$('officialConfirmed').checked?'&confirmed=1':''),ctx.signal);if(ctx.version!==lookupVersion)return;$('officialStatus').replaceChildren();sourceLink($('officialStatus'),p.url,p.name);if(auto&&p.variants.length===0&&p.ingredientPages?.length===1&&depth<2){await fetchProduct(p.ingredientPages[0].url,confirmed,true,depth+1,ctx,preferredVariant,expected);return;}const hint=document.createElement('p');hint.textContent='商品と処方を確認して、全成分表を選んでください。';$('officialStatus').append(hint);for(const link of p.ingredientPages||[]){const b=document.createElement('button');b.className='secondary';b.textContent=link.name+'の成分表を開く';b.onclick=()=>fetchProduct(link.url,confirmed,auto,depth+1,ctx);$('officialStatus').append(b);}const selectedVariant=auto?pickIngredientVariant(p.variants,$('query').value):null;const registeredVariant=expected?.id?p.variants.find(v=>v.productId===expected.id):preferredVariant?p.variants.find(v=>preferredVariant==='通常版'?!v.label.includes('モイスト'):v.label.includes(preferredVariant)):null;for(const v of (expected?.id?p.variants.filter(item=>item.productId===expected.id):p.variants)){const b=document.createElement('button');b.className='secondary';b.textContent=v.label+'を取り込む';b.onclick=()=>identityGate(expected,p,v,check=>reviewStoredFormula(expected,p,v,()=>{
@@ -422,7 +423,7 @@ function showEnglishInciInput(container,item){
   if(!checkbox.checked)throw Error('英語の原文と国内版との相違について確認してください。');
   const url=source.value.trim();
   if(url&&!/^https:\/\//i.test(url))throw Error('出典URLはHTTPSを指定してください。');
-  useEnglishInciReference(item,reviewEnglishInciNames(input.value),{sourceUrl:url,scope:'利用者の原文照合申告・商品と国内版の一致は未検証'});
+  useEnglishInciReference(item,reviewEnglishInciNames(input.value),{sourceUrl:url,scope:'利用者の原文確認申告・商品と国内版の一致は未検証'});
  }catch(e){status.textContent=e.message;}};
  detail.append(btn,status);container.append(detail);
 }
@@ -497,7 +498,7 @@ function showInferredFlower(model,comparison=null){
   if(comparison.confirmedInExactProduct.length){
    const direct=document.createElement('ul');direct.className='inference-source-list';
    for(const found of comparison.confirmedInExactProduct.slice(0,12)){
-    const li=document.createElement('li');li.textContent=found.name+' ／ '+(found.evidenceKind==='published-full'?'国内掲載の全成分':'国内掲載の部分成分')+'（掲載確認 '+String(found.checkedOn).slice(0,10)+'・現物未照合）';
+    const li=document.createElement('li');li.textContent=found.name+' ／ '+(found.evidenceKind==='published-full'?'国内掲載の全成分':'国内掲載の部分成分')+'（掲載確認 '+String(found.checkedOn).slice(0,10)+'・現物未確認）';
     const a=document.createElement('a');a.textContent='掲載元 ↗';a.href=found.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';li.append(' ',a);direct.append(li);
    }
    ref.append(direct);
@@ -575,8 +576,39 @@ function showInferredFlowerChoice(container,item=null,brand=''){
  details.append(btn);
  container.append(details);
 }
+let skuEvidencePromise=null;
+function skuEvidence(){
+ if(!skuEvidencePromise)skuEvidencePromise=getJSON('/sku-evidence.json').then(validateSkuEvidence).catch(e=>{skuEvidencePromise=null;throw e;});
+ return skuEvidencePromise;
+}
+function showSkuIdentityEvidence(container,item,version){
+ skuEvidence().then(rows=>{
+  if(version!==lookupVersion)return;
+  const record=skuRecordForProduct(rows,item);
+  if(!record)return;
+  const compared=record.comparison;
+  const details=document.createElement('details');details.className='sku-evidence';
+  const title=document.createElement('summary');
+  title.textContent=compared.status==='sku-identifiers-matched'?'商品特定：色番・容量・JANを確認':'商品特定：海外版との不一致に注意';
+  details.append(title);
+  const status=document.createElement('p');status.className='muted';
+  status.textContent=compared.status==='sku-identifiers-matched'?'国内掲載ページ上の商品の識別子が一致。配合成分・現物ラベルの一致を証明するものではありません。':'国内品に対応しない海外資料を区別しています。国内版の成分として転用できません。';
+  details.append(status);
+  const items=document.createElement('ul');
+  for(const check of compared.checks){const li=document.createElement('li');li.textContent='確認：'+check;items.append(li);}
+  for(const risk of compared.risks){const li=document.createElement('li');li.textContent='注意：'+risk;items.append(li);}
+  details.append(items);
+  const note=document.createElement('p');note.className='muted';
+  note.textContent='比較元：'+compared.sourceKind+' ／ 確認日：'+compared.checkedOn+'。'+record.note+' '+compared.nextAction;
+  details.append(note);
+  sourceLink(details,compared.sourceUrl,'比較した商品ページ');
+  if(record.independentManufacturerIdentityUrl)sourceLink(details,record.independentManufacturerIdentityUrl,'メーカー日本公式：シリーズ・容量の確認元');
+  container.append(details);
+ }).catch(()=>{if(version===lookupVersion){const p=document.createElement('p');p.className='muted';p.textContent='商品識別の比較資料を読み込めません。国内向け成分の確認は続けられます。';container.append(p);}});
+}
 function showPartialChoices(container,item){
  const version=lookupVersion;
+ showSkuIdentityEvidence(container,item,version);
  showInferredFlowerChoice(container,item);
  showEnglishInciChoices(container,item,version);
  showEnglishInciInput(container,item);
@@ -590,7 +622,7 @@ function showPartialChoices(container,item){
    msg.textContent=sourceTypeLabel+'で確認した一部成分 '+record.ingredients.length+'件。全成分と配合順・現物ラベルは未確認です。';
    const action=document.createElement('button');action.type='button';action.className='secondary';
    action.textContent=sourceTypeLabel+'の判明成分だけで花にする';
-   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未照合、全成分ではない）':'メーカーが該当商品に掲載した一部成分（全成分ではない）'),checkedOn:record.checkedOn});
+   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':'メーカーが該当商品に掲載した一部成分（全成分ではない）'),checkedOn:record.checkedOn});
    container.append(msg,action);sourceLink(container,record.sourceUrl,retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');
   }
   showPartialInput(container,item,record);

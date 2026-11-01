@@ -1,0 +1,42 @@
+{
+ "schemaVersion":1,
+ "records":[
+  {
+   "productId":"rc81-peripera-ink-mood-18",
+   "checkedOn":"2026-11-01",
+   "labelCompared":false,
+   "formulaConfirmed":false,
+   "expectedStatus":"sku-identifiers-matched",
+   "observation":{
+    "productName":"インク ムード グロイ ティント",
+    "brand":"peripera",
+    "volume":"4g",
+    "variant":"18 ウォームベージュ",
+    "jan":"4573198754230",
+    "sourceUrl":"https://cosme-wld.com/products/detail/76984",
+    "sourceMarket":"japan-domestic-retailer",
+    "sourceKind":"国内販売店の商品別掲載情報（色番・容量・JAN・日本語成分）"
+   },
+   "independentManufacturerIdentityUrl":"https://www.peripera.jp/product/%E3%82%A4%E3%83%B3%E3%82%AF-%E3%83%A0%E3%83%BC%E3%83%89-%E3%82%B0%E3%83%AD%E3%82%A4-%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/149/category/1/display/2/",
+   "note":"peripera日本向け公式はインク ムード グロイ ティントのシリーズ・4gを確認。18 ウォームベージュ固有の日本語成分・JANは国内販売店で確認。メーカーの色別全成分や現物ラベル一致は未確認。"
+  },
+  {
+   "productId":"rc64-beyond-aqua-cream",
+   "checkedOn":"2026-11-01",
+   "labelCompared":false,
+   "formulaConfirmed":false,
+   "expectedStatus":"foreign-not-transferable",
+   "observation":{
+    "productName":"ビヨンド エンジェルアクア 水分クリーム",
+    "brand":"ビヨンド",
+    "volume":"150mL",
+    "variant":"韓国メーカー現行の保湿バリアクリーム（日本2020年品とは未照合）",
+    "jan":null,
+    "sourceUrl":"https://www.lgcaremall.com/product/detail/A50049882",
+    "sourceMarket":"overseas-maker",
+    "sourceKind":"韓国メーカー直販の別容量・海外版（韓国語成分）"
+   },
+   "note":"2020年日本発売の登録候補150gに対し韓国メーカー現行販売品は150mL。gとmLの差は密度が不明なため互換換算できず、商品名・処方改良・JAN一致も不明。韓国版を日本版全成分とみなさない。"
+  }
+ ]
+}
