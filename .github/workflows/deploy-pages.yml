@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2116||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==256)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.106 release');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2124||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==264)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.107 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -89,11 +89,23 @@ jobs:
              newFormulas.filter(r=>r.kind==='quasi').length!==3||
              newFormulas.some(r=>r.sourceType!=='official'||r.formulaUpdatedAt!==null))
             throw Error('rc106 nine separately verified Japanese full ingredient snapshots mismatch');
+          const rc107=fs.readFileSync('_site/official-reviewed-rc107.js','utf8');
+          if(!rc107.includes('rc107-astalift-100609000002')||
+             !rc107.includes('rc107-astalift-100712000000')||
+             !rc107.includes('japan-manufacturer-individual-full-ingredients'))
+            throw Error('Missing rc107 Japanese AstaLift product reference index');
+          const added107=archived.records.filter(r=>r.productId.startsWith('rc107-astalift-'));
+          if(added107.length!==8||new Set(added107.map(r=>r.productId)).size!==8||
+             added107.filter(r=>r.kind==='quasi').length!==2||
+             added107.filter(r=>r.kind==='cosmetic').length!==6||
+             added107.some(r=>r.sourceType!=='official'||r.formulaUpdatedAt!==null||
+               r.region!=='jp'||!r.sourceUrl.includes('h-jp.fujifilm.com/')))
+            throw Error('rc107 eight Japanese full-ingredient snapshots incorrectly merged or classified');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.106: 2116 names, 146/147 brand names, 256 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.107: 2124 names, 146/147 brand names, 264 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
