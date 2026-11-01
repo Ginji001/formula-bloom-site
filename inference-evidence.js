@@ -28,12 +28,12 @@ export function inferIngredientEvidence({hypothesis,product=null,archiveRecords=
  if(exactArchive&&exactArchive.region==='jp'){
   for(const name of makeNames(exactArchive))result.confirmedInExactProduct.push({name,market:'jp',evidenceKind:'published-full',sourceUrl:exactArchive.sourceUrl,checkedOn:exactArchive.verifiedAt,sourceType:exactArchive.sourceType,labelCompared:false});
  }else if(exactPartial){
-  for(const name of makeNames(exactPartial))result.confirmedInExactProduct.push({name,market:'jp',evidenceKind:'published-excerpt',sourceUrl:exactPartial.sourceUrl,checkedOn:exactPartial.checkedOn,sourceType:exactPartial.sourceType,labelCompared:false});
+  for(const name of makeNames(exactPartial))result.confirmedInExactProduct.push({name,market:'jp',evidenceKind:exactPartial.sourceType==='japanese-domestic-launch-announcement'?'historical-series-common':'published-excerpt',sourceUrl:exactPartial.sourceUrl,checkedOn:exactPartial.checkedOn,sourceType:exactPartial.sourceType,labelCompared:false});
  }
  // Distinct source classes and product identities; never mix overseas INCI with Japanese ingredients.
  const sources=[
  ...archiveRecords.filter(r=>r.kind==='cosmetic'&&r.region==='jp'&&r.sourceType==='official'&&r.formulaStatus!=='historical-reference').map(r=>({...r,sourceKind:'メーカー掲載の日本語全成分',checkedOn:r.verifiedAt})),
- ...partialRecords.filter(r=>r.kind==='cosmetic'&&r.coverage==='partial-only'&&r.labelCompared===false).map(r=>({...r,sourceKind:r.sourceType==='japanese-manufacturer-website'?'メーカー掲載の日本語部分成分':'国内販売店掲載の日本語部分成分'}))
+ ...partialRecords.filter(r=>r.kind==='cosmetic'&&r.coverage==='partial-only'&&r.labelCompared===false&&r.sourceType!=='japanese-domestic-launch-announcement').map(r=>({...r,sourceKind:r.sourceType==='japanese-manufacturer-website'?'メーカー掲載の日本語部分成分':'国内販売店掲載の日本語部分成分'}))
  ].filter(r=>r.productId!==product?.id&&archetype(r)===hypothesis.archetypeId&&comparable(hypothesis.archetypeId,product?.name||'',r.productName));
  result.sourceProductCount=sources.length;
  result.sourceBrandCount=new Set(sources.map(s=>s.brand)).size;

@@ -11,6 +11,7 @@ const domesticComPaths=new Map([
  ['www.canmake.com',/^\/item\/detail\/mermaid-skin-gel-uv(?:-oil-block)?\/$/],
  ['www.peripera.jp',/^\/product\//],
  ['cosme-wld.com',/^\/products\/detail\/76984\/?$/],
+ ['coreelle.jp',/^\/products\/ax-darkserum-01\/?$/],
  ['www.beplain.info',/^\/jp\/?$/],
  ['peripera.jp',/^\/category\/peritage\/128\/$/],
  ['www.cledepeau-beaute.com',/^\/jp\/products\//],

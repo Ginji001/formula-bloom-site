@@ -545,6 +545,12 @@ export const registeredProducts=Object.freeze([
   jan:null,sku:null,registrationStatus:'name-only',sourceScope:'user-contributed-product-catalog-unconfirmed',
   identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
   productIdentityNote:'日本語商品情報サイト@cosmeで150mL・発売日2023/1/16として掲載。ただし同サイトは「公式情報確認中または確認前・メンバー登録を含む」と明示。メーカー発表・輸入販売元・国内パッケージJAN・現物ラベル・全成分・最新処方は未確認。シリーズ内のジェルクリームやBBクリームとは別商品。'},
+ {id:'rc83-axisy-glow-50',brand:'AXIS-Y',name:'ダークスポットコレクティンググローセラム',
+  aliases:['AXIS-Y ダークスポットコレクティンググローセラム 50mL','アクシスワイ ダークスポット コレクティング グロー セラム','AXIS-Y Dark Spot Correcting Glow Serum'],
+  url:'https://coreelle.jp/products/ax-darkserum-01',volume:'50mL',variant:null,kind:'cosmetic',
+  jan:null,sku:null,registrationStatus:'name-only',sourceScope:'japan-facing-korean-crossborder-personal-import-only',
+  identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'日本語小売サイト Coréelle Japan に50mL商品名・日本語成分表示がありますが、同店の配送規約は韓国直送・原則個人輸入と明示。日本国内の流通向け法定日本語ラベル、輸入販売元、JAN、現行処方の一致は未確認です。掲載日本語成分を国内向け処方として取り込みません。'},
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.

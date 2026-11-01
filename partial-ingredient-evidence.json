@@ -1252,6 +1252,68 @@
       "currentFormulaCompared": false,
       "copyingPermissionForFullList": false,
       "note": "日本国内販売店の商品専用ページで、インク ムード グロイ ティント 18 ウォームベージュ／4g／JAN4573198754230（商品コードATT4573198754230）と日本語成分名を照合した抜粋8件。ペリペラ日本公式はシリーズ4gまでを確認。現物ラベル未照合、処方改良日不明。色番未指定・22/24番・別色の色材や配合を同一としない。"
+    },
+    {
+      "productId": "rc64-beyond-aqua-cream",
+      "brand": "ビヨンド",
+      "productName": "ビヨンド エンジェルアクア 水分クリーム",
+      "volume": "150g",
+      "variant": "2020年日本発売品",
+      "kind": "cosmetic",
+      "ingredients": [
+        "シラカンバ樹液",
+        "バンブサアルンジナセア液汁",
+        "ブドウつる液",
+        "加水分解ヒアルロン酸",
+        "ヒアルロン酸Na",
+        "ツボクサエキス",
+        "カンゾウ根エキス",
+        "カミツレ花エキス"
+      ],
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000034.000019093.html",
+      "checkedOn": "2026-11-01",
+      "sourceType": "japanese-domestic-launch-announcement",
+      "publisherName": "エフエムジー＆ミッション",
+      "publishedOn": "2019-12-19",
+      "historicalOnly": true,
+      "ingredientScope": "series-common-named-ingredients",
+      "coverage": "partial-only",
+      "order": "not-confirmed",
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "copyingPermissionForFullList": false,
+      "note": "日本国内販売元の2019年12月19日発表で、2020年1月8日発売の水分クリーム150gとデイリービッグトナー500mLに「共通配合成分」として列挙された日本語成分のうち8名称を抜粋。全成分/配合順ではない。現在の処方、現物ラベル、JAN、濃度、メーカー2026年版との同一性は未確認。海外版150mLと混同しない。"
+    },
+    {
+      "productId": "rc64-beyond-aqua-toner",
+      "brand": "ビヨンド",
+      "productName": "ビヨンド エンジェルアクア デイリービッグトナー",
+      "volume": "500mL",
+      "variant": "2020年日本発売品",
+      "kind": "cosmetic",
+      "ingredients": [
+        "シラカンバ樹液",
+        "バンブサアルンジナセア液汁",
+        "ブドウつる液",
+        "加水分解ヒアルロン酸",
+        "ヒアルロン酸Na",
+        "ツボクサエキス",
+        "カンゾウ根エキス",
+        "カミツレ花エキス"
+      ],
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000034.000019093.html",
+      "checkedOn": "2026-11-01",
+      "sourceType": "japanese-domestic-launch-announcement",
+      "publisherName": "エフエムジー＆ミッション",
+      "publishedOn": "2019-12-19",
+      "historicalOnly": true,
+      "ingredientScope": "series-common-named-ingredients",
+      "coverage": "partial-only",
+      "order": "not-confirmed",
+      "labelCompared": false,
+      "currentFormulaCompared": false,
+      "copyingPermissionForFullList": false,
+      "note": "日本国内販売元の2019年12月19日発表で、2020年1月8日発売の水分クリーム150gとデイリービッグトナー500mLに「共通配合成分」として列挙された日本語成分のうち8名称を抜粋。全成分/配合順ではない。現在の処方、現物ラベル、JAN、濃度、メーカー2026年版との同一性は未確認。海外版150mLと混同しない。"
     }
   ]
 }

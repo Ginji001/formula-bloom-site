@@ -1,6 +1,7 @@
 import {isJapaneseIngredientText,isJapaneseMarketURL} from './japan-market-policy.js';
 import {analyze,splitIngredients} from './engine.js';
 import {registeredProducts} from './registered-products.js';
+const pinnedHistoricalLaunchProductIds=new Set(['rc64-beyond-aqua-cream','rc64-beyond-aqua-toner']);
 export function validatePartialEvidence(data){
  if(data?.schemaVersion!==1||!Array.isArray(data.records))throw Error('判明成分資料が不正です');
  const seen=new Set();
@@ -9,10 +10,16 @@ export function validatePartialEvidence(data){
   if(!product||seen.has(record.productId)||product.brand!==record.brand||product.name!==record.productName||
    (product.volume||null)!==(record.volume||null)||!isJapaneseMarketURL(record.sourceUrl)||
    record.coverage!=='partial-only'||record.order!=='not-confirmed'||record.labelCompared!==false||
+   (pinnedHistoricalLaunchProductIds.has(record.productId)&&record.sourceType!=='japanese-domestic-launch-announcement')||
    !Array.isArray(record.ingredients)||!record.ingredients.length||
    record.ingredients.some(s=>!isJapaneseIngredientText(s))||
-   !['japanese-manufacturer-website','japanese-domestic-retailer-listing'].includes(record.sourceType)||
-   (record.sourceType==='japanese-domestic-retailer-listing'&&!record.retailerName))throw Error('判明成分の出典・商品照合が不正: '+record.productId);
+   !['japanese-manufacturer-website','japanese-domestic-retailer-listing','japanese-domestic-launch-announcement'].includes(record.sourceType)||
+   (record.sourceType==='japanese-domestic-retailer-listing'&&!record.retailerName)||
+   (record.sourceType==='japanese-domestic-launch-announcement'&&(
+     record.publisherName!=='エフエムジー＆ミッション'||
+     record.sourceUrl!=='https://prtimes.jp/main/html/rd/p/000000034.000019093.html'||
+     record.publishedOn!=='2019-12-19'||record.historicalOnly!==true||
+     record.currentFormulaCompared!==false||record.ingredientScope!=='series-common-named-ingredients')) )throw Error('判明成分の出典・商品照合が不正: '+record.productId);
   seen.add(record.productId);
   return Object.freeze({...record,ingredients:Object.freeze([...new Set(record.ingredients)])});
  }));

@@ -498,7 +498,7 @@ function showInferredFlower(model,comparison=null){
   if(comparison.confirmedInExactProduct.length){
    const direct=document.createElement('ul');direct.className='inference-source-list';
    for(const found of comparison.confirmedInExactProduct.slice(0,12)){
-    const li=document.createElement('li');li.textContent=found.name+' ／ '+(found.evidenceKind==='published-full'?'国内掲載の全成分':'国内掲載の部分成分')+'（掲載確認 '+String(found.checkedOn).slice(0,10)+'・現物未確認）';
+    const li=document.createElement('li');li.textContent=found.name+' ／ '+(found.evidenceKind==='published-full'?'国内掲載の全成分':found.evidenceKind==='historical-series-common'?'2020年発売時の共通配合成分':'国内掲載の部分成分')+'（掲載確認 '+String(found.checkedOn).slice(0,10)+'・現物未確認）';
     const a=document.createElement('a');a.textContent='掲載元 ↗';a.href=found.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';li.append(' ',a);direct.append(li);
    }
    ref.append(direct);
@@ -592,6 +592,8 @@ function showSkuIdentityEvidence(container,item,version){
   title.textContent=compared.status==='sku-identifiers-matched'?'商品特定：色番・容量・JANを確認':
     compared.status==='foreign-not-transferable'?'商品特定：海外版との不一致に注意':
     compared.status==='catalog-unverified'?'商品候補：日本語掲載はあるが公式未確認':
+    compared.status==='crossborder-not-domestic'?'商品候補：韓国直送・国内ラベル未確認':
+    compared.status==='historical-domestic-identity'?'国内販売履歴：現行JAN・成分は未確認':
     compared.status==='blocked-identity-conflict'?'商品特定：識別情報に矛盾あり':
     '商品候補：国内販売は確認、JAN・現物は未確認';
   details.append(title);
@@ -599,6 +601,8 @@ function showSkuIdentityEvidence(container,item,version){
   status.textContent=compared.status==='sku-identifiers-matched'?'国内掲載ページ上の商品の識別子が一致。配合成分・現物ラベルの一致を証明するものではありません。':
     compared.status==='foreign-not-transferable'?'国内品に対応しない海外資料を区別しています。国内版の成分として転用できません。':
     compared.status==='catalog-unverified'?'一般利用者による登録を含む商品情報サイトの掲載。国内公式製品・実際の成分を確認したことにはなりません。':
+    compared.status==='crossborder-not-domestic'?'日本語の販売サイトですが韓国直送・原則個人輸入です。国内向け日本語法定ラベルや製品の配合を確認したものではありません。':
+    compared.status==='historical-domestic-identity'?'2021年の国内公式ショップ取り扱いを発売元が公表。ASINはJANではありません。現在の販売・実際の成分は未確認です。':
     '国内小売店の商品名・容量は確認できますが、JAN候補に相違があり現物ラベルも未確認です。日本語成分を登録していません。';
   details.append(status);
   const items=document.createElement('ul');
@@ -611,6 +615,7 @@ function showSkuIdentityEvidence(container,item,version){
   sourceLink(details,compared.sourceUrl,'比較した商品ページ');
   if(record.independentManufacturerIdentityUrl)sourceLink(details,record.independentManufacturerIdentityUrl,'メーカー日本公式：シリーズ・容量の確認元');
   if(record.domesticImporterBrandUrl)sourceLink(details,record.domesticImporterBrandUrl,'国内輸入販売企業のブランド紹介（このSKUのラベル確認ではありません）');
+  if(record.crossborderShippingPolicyUrl)sourceLink(details,record.crossborderShippingPolicyUrl,'販売店の韓国直送・個人輸入に関する配送規約');
   if(record.janCandidates?.length){
    const candidateTitle=document.createElement('p');candidateTitle.className='muted';
    candidateTitle.textContent='販売ページにあるJAN候補（競合あり・いずれも現物未確認）：';
@@ -632,12 +637,13 @@ function showPartialChoices(container,item){
   if(record){
    const msg=document.createElement('p');msg.className='muted';
    const retailer=record.sourceType==='japanese-domestic-retailer-listing';
-   const sourceTypeLabel=retailer?'国内販売店掲載':'メーカー掲載';
-   msg.textContent=sourceTypeLabel+'で確認した一部成分 '+record.ingredients.length+'件。全成分と配合順・現物ラベルは未確認です。';
+   const historical=record.sourceType==='japanese-domestic-launch-announcement';
+   const sourceTypeLabel=historical?'国内発売元発表（2020年発売時）':retailer?'国内販売店掲載':'メーカー掲載';
+   msg.textContent=sourceTypeLabel+'で確認した一部成分 '+record.ingredients.length+'件。'+(historical?'両商品の共通配合成分として発売元が2019年に発表。現在の配合とは照合していません。':'')+'全成分と配合順・現物ラベルは未確認です。';
    const action=document.createElement('button');action.type='button';action.className='secondary';
    action.textContent=sourceTypeLabel+'の判明成分だけで花にする';
-   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':'メーカーが該当商品に掲載した一部成分（全成分ではない）'),checkedOn:record.checkedOn});
-   container.append(msg,action);sourceLink(container,record.sourceUrl,retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');
+   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(historical?'国内発売元 '+record.publisherName+' による2019年発表の2020年発売品・シリーズ共通成分。現行処方・現物未確認、全成分ではない':retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':'メーカーが該当商品に掲載した一部成分（全成分ではない）'),checkedOn:record.checkedOn});
+   container.append(msg,action);sourceLink(container,record.sourceUrl,historical?'2020年国内発売元の発表を確認':retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');
   }
   showPartialInput(container,item,record);
  }).catch(()=>{if(version===lookupVersion){const warning=document.createElement('p');warning.className='muted';warning.textContent='判明成分資料を読み込めませんでした。原文を確認して入力することはできます。';container.append(warning);showPartialInput(container,item,null);}});
@@ -647,7 +653,8 @@ function selectRegisteredFormula(item,context=''){
   if(item.registrationStatus==='name-only'){
     beginLookup();invalidate();remoteProduct=null;official=false;
     $('searchResults').replaceChildren();
-    $('officialStatus').textContent='日本国内向けの商品掲載元で商品名を確認しています。全成分は未収録です。';
+    const imported=item.sourceScope==='japan-facing-korean-crossborder-personal-import-only';
+    $('officialStatus').textContent=imported?'日本語の商品販売ページで名称を確認しています。韓国直送のため国内版の全成分は未収録です。':'日本国内向けの商品掲載元で商品名を確認しています。全成分は未収録です。';
     const identity=document.createElement('p');identity.className='muted';
     identity.textContent='商品：'+item.brand+' '+item.name+(item.series?' ／ シリーズ：'+item.series:'')+(item.productType?' ／ タイプ：'+item.productType:'')+(item.variant?' ／ 仕様：'+item.variant:'')+(item.volume?' ／ '+item.volume:'')+(item.jan?' ／ JAN：'+item.jan:'')+'。掲載全成分は未確認です。';
     $('searchResults').append(identity);
@@ -662,7 +669,7 @@ function selectRegisteredFormula(item,context=''){
       notice.textContent='未収録の理由：'+review.reason+' 次に確認すること：'+review.next;
       $('searchResults').append(notice);
     }
-    sourceLink($('searchResults'),item.url,'国内向けの商品掲載元を開く');
+    sourceLink($('searchResults'),item.url,imported?'日本語の海外直送商品ページを開く（国内処方未確認）':'国内向けの商品掲載元を開く');
     showPartialChoices($('searchResults'),item);
     addIngredientReviewButton($('searchResults'),item);
     appendDomesticResearchLink($('searchResults'),item.brand,item.name);

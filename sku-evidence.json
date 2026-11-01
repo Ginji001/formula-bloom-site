@@ -84,6 +84,45 @@
         "sourceKind": "日本語の商品情報サイト（利用者登録を含みメーカー公式確認前）"
       },
       "note": "@cosmeに2023/1/16発売・150mLとして掲載されているが、メーカー情報は公式未確認。現物の日本向け表示・JAN・輸入販売元・成分の存在確認はまだできない。メーカーの韓国語成分や海外流通処方を国内版として転用しない。"
+    },
+    {
+      "productId": "rc64-iope-vitamin-c23",
+      "checkedOn": "2026-11-01",
+      "labelCompared": false,
+      "formulaConfirmed": false,
+      "expectedStatus": "historical-domestic-identity",
+      "observation": {
+        "productName": "ザ・ビタミンC23",
+        "brand": "IOPE",
+        "volume": "17g",
+        "variant": "2021年国内公式ショップ品",
+        "jan": null,
+        "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000072494.html",
+        "sourceMarket": "historical-domestic-maker-announcement",
+        "sourceKind": "アモーレパシフィック2021-01-28国内公式Amazonショップ取扱発表"
+      },
+      "publishedOn": "2021-01-28",
+      "retailerAsin": "B08R3GZGDP",
+      "note": "株式会社アモーレパシフィックの国内公式Amazonショップ開始発表が、IOPEザ・ビタミンC23／17g／ASIN B08R3GZGDPの取り扱いと国内倉庫発送を明記。ASINはJANではなく、2026年の販売継続・国内容器表示・INCI・現物・改良処方は未確認。製品のビタミンC23%訴求は全成分名称や濃度の独立した検査証明ではない。"
+    },
+    {
+      "productId": "rc83-axisy-glow-50",
+      "checkedOn": "2026-11-01",
+      "labelCompared": false,
+      "formulaConfirmed": false,
+      "expectedStatus": "crossborder-not-domestic",
+      "observation": {
+        "productName": "ダークスポットコレクティンググローセラム",
+        "brand": "AXIS-Y",
+        "volume": "50mL",
+        "variant": null,
+        "jan": null,
+        "sourceUrl": "https://coreelle.jp/products/ax-darkserum-01",
+        "sourceMarket": "japan-facing-crossborder-retailer",
+        "sourceKind": "日本語販売店Coréelle Japanの韓国直送50mL商品"
+      },
+      "crossborderShippingPolicyUrl": "https://coreelle.jp/pages/about-shipping-and-delivery",
+      "note": "商品名・50mLは日本語販売店で確認。ただし同店の配送規約は韓国直送、原則個人輸入、関税・税金は購入者負担を明示。日本の国内向け法定全成分表示、輸入販売責任者、実際の国内流通JANは未確認。日本語の成分欄があっても日本版として全成分へ採用しない。"
     }
   ]
 }
