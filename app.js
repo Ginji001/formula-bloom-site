@@ -616,11 +616,26 @@ function showSkuIdentityEvidence(container,item,version){
   if(record.independentManufacturerIdentityUrl)sourceLink(details,record.independentManufacturerIdentityUrl,'メーカー日本公式：シリーズ・容量の確認元');
   if(record.domesticImporterBrandUrl)sourceLink(details,record.domesticImporterBrandUrl,'国内輸入販売企業のブランド紹介（このSKUのラベル確認ではありません）');
   if(record.crossborderShippingPolicyUrl)sourceLink(details,record.crossborderShippingPolicyUrl,'販売店の韓国直送・個人輸入に関する配送規約');
-  if(record.janCandidates?.length){
-   const candidateTitle=document.createElement('p');candidateTitle.className='muted';
-   candidateTitle.textContent='販売ページにあるJAN候補（競合あり・いずれも現物未確認）：';
-   details.append(candidateTitle);
-   for(const candidate of record.janCandidates)sourceLink(details,candidate.sourceUrl,candidate.value+'：候補の掲載元（未確定）');
+  if(record.janReconciliation?.length){
+   const evidence=document.createElement('details');evidence.className='sku-ean-details';
+   const summary=document.createElement('summary');summary.textContent='JAN候補の確認資料（商品種類まで比較）';
+   evidence.append(summary);
+   const overview=document.createElement('p');overview.className='muted';
+   overview.textContent='2つともEAN-13チェックデジットは正常。ただし番号が有効な形式であっても、日本向け現物に使われたJANかは未確認です。掲載数は真正性・独立性・配合一致を保証しません。';
+   evidence.append(overview);
+   for(const candidate of record.janReconciliation){
+    const section=document.createElement('section');section.className='sku-ean-candidate';
+    const title=document.createElement('h4');title.textContent=candidate.value+' ／ '+(candidate.status==='cross-category-conflict'?'別の商品種類にも掲載あり（要確認）':'クリーム80mLへの掲載が複数ある候補');
+    const description=document.createElement('p');description.className='muted';description.textContent=candidate.finding;
+    section.append(title,description);
+    for(const source of candidate.sameCategorySources)sourceLink(section,source.url,'クリーム80mL：'+source.site);
+    for(const source of candidate.conflictingCategorySources)sourceLink(section,source.url,'異なる商品種類：'+source.site+'（シートマスク10枚）');
+    evidence.append(section);
+   }
+   const next=document.createElement('p');next.className='muted';
+   next.textContent='最終確認：国内の輸入販売元または実際の80mL商品の外箱・裏面で、JAN／商品名／輸入販売元／日本語全成分を同時に確認してください。JANは未確定のため商品登録欄へ自動設定しません。';
+   evidence.append(next);
+   details.append(evidence);
   }
   container.append(details);
  }).catch(()=>{if(version===lookupVersion){const p=document.createElement('p');p.className='muted';p.textContent='商品識別の比較資料を読み込めません。国内向け成分の確認は続けられます。';container.append(p);}});

@@ -123,4 +123,13 @@ button,input,select,textarea{touch-action:manipulation}
 .sku-evidence li{font-size:11px;line-height:1.7;overflow-wrap:anywhere}
 .sku-evidence a{display:block;margin:6px 0;font-size:11px;overflow-wrap:anywhere}
 
+
+/* Compact source-specific EAN attribution; no unverified domestic barcode promotion. */
+.sku-ean-details{margin-top:12px;border-top:1px solid #b8cbc0;padding:10px 0 2px}
+.sku-ean-details summary{font-size:12px;font-weight:650}
+.sku-ean-candidate{margin:10px 0 12px;padding:10px;background:#fff;border:1px solid #dbe3d9;border-radius:8px}
+.sku-ean-candidate h4{font-size:12px;line-height:1.6;margin:0 0 5px;overflow-wrap:anywhere}
+.sku-ean-candidate a{display:block;margin:5px 0;font-size:10px;overflow-wrap:anywhere}
+.sku-ean-details .muted{font-size:11px;line-height:1.75}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}

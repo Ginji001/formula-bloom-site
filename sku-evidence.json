@@ -58,14 +58,60 @@
       "janCandidates": [
         {
           "value": "8809738600221",
-          "sourceUrl": "https://store.shopping.yahoo.co.jp/skingarden11/roundlab-cream.html"
+          "sourceUrl": "https://mitsui-shopping-park.com/ec/p/1104800000305?mallColor=9501",
+          "references": [
+            {
+              "url": "https://mitsui-shopping-park.com/ec/p/1104800000305?mallColor=9501",
+              "site": "三井ショッピングパーク公式通販（国内）",
+              "market": "japan-retailer",
+              "productCategory": "cream-80ml"
+            },
+            {
+              "url": "https://jp.iherb.com/pr/round-lab-birch-juice-moisturizing-cream-2-70-fl-oz-80-ml/126164",
+              "site": "iHerb（日本語ページ・国外販売）",
+              "market": "crossborder-retailer",
+              "productCategory": "cream-80ml"
+            },
+            {
+              "url": "https://theglowtrade.com/collections/round-lab",
+              "site": "The Glow Trade（海外卸）",
+              "market": "overseas-wholesaler",
+              "productCategory": "cream-80ml"
+            }
+          ]
         },
         {
           "value": "8809624726400",
-          "sourceUrl": "https://ymall.jp/store/luckycart/b081vs3f27-20250924/"
+          "sourceUrl": "https://ymall.jp/store/luckycart/b081vs3f27-20250924/",
+          "references": [
+            {
+              "url": "https://ymall.jp/store/luckycart/b081vs3f27-20250924/",
+              "site": "ヤマダモール LUCKYCART（国内販売）",
+              "market": "japan-retailer",
+              "productCategory": "cream-80ml"
+            },
+            {
+              "url": "https://www.ozcosmetics.com/Round_Lab_Birch_Juice_Moisturizing_Cream_80ml/357329.aspx",
+              "site": "OzCosmetics（海外販売）",
+              "market": "overseas-retailer",
+              "productCategory": "cream-80ml"
+            },
+            {
+              "url": "https://kateminimalist.com/products/round-lab-silver-birch-juice-moisturizing-mask-sheet-10ea-set",
+              "site": "Kate Minimalist（シートマスク10枚）",
+              "market": "overseas-retailer",
+              "productCategory": "mask-sheet-10"
+            },
+            {
+              "url": "https://www.barcodespider.com/round-lab-birch-juice",
+              "site": "Barcode Spider（バーコード集約）",
+              "market": "barcode-aggregator",
+              "productCategory": "mask-sheet-10"
+            }
+          ]
         }
       ],
-      "note": "国内販売経路を確認した80mL品。潮音コスメティックの公式サイトはROUND LABのブランド取扱いを示すだけで、現物輸入者・JAN・成分の一致は示さない。別店舗で二つの異なるJAN候補が掲載される。国内小売店の成分欄には著しい翻訳・転記誤りがあり、成分名は公表データへ採用しない。"
+      "note": "国内小売のビックカメラは80mL商品名・容量と国内販売を掲載し、潮音コスメティックはROUND LABブランド取扱いを紹介。ただし当該現物の日本向け法定表示・JAN・正しい日本語全成分は未照合。JAN8809738600221は三井ショッピングパークなど同商品種類の販売資料で複数確認。別候補8809624726400はクリーム80mLだけでなくシートマスク10枚にも掲載され、商品種類をまたいだ競合がある。どちらも現物未確認のためJANはnull。小売掲載の乱れた成分名を修正・創作して登録しない。"
     },
     {
       "productId": "rc82-drceuracle-kombucha-150",

@@ -1,6 +1,7 @@
 // Source-first product identity only. A matching barcode does not establish a matching current formulation.
 import {registeredProducts} from './registered-products.js';
 import {isJapaneseMarketURL} from './japan-market-policy.js';
+import {reconcileBarcodes} from './barcode-reconciliation.js';
 const fold=x=>String(x||'').normalize('NFKC').toLowerCase().replace(/[\s・_－―‐ー\-()（）「」]/g,'');
 const size=x=>String(x||'').normalize('NFKC').toLowerCase().replace(/\s/g,'');
 export function compareSkuRecord(product,record){
@@ -55,7 +56,14 @@ export function validateSkuEvidence(data){
   const result=compareSkuRecord(product,r);
   if(result.sourceMarket==='overseas-maker'&&!/^https:\/\//.test(result.sourceUrl))throw Error('海外資料のURLが不正');
   if(r.expectedStatus!==result.status)throw Error('SKU照合ステータスと実際の識別子が矛盾：'+r.productId);
-  return Object.freeze({...r,comparison:result});
+  if(r.janCandidates&&r.productId!=='rc82-roundlab-birch-80')throw Error('未監査の商品にJAN候補の比較を追加できません');
+  if(r.productId==='rc82-roundlab-birch-80'&&(!Array.isArray(r.janCandidates)||r.janCandidates.length!==2||product.jan!==null))throw Error('ラウンドラボ候補JANの比較必須・現物JAN未確認');
+  const janReconciliation=r.janCandidates?reconcileBarcodes(r.janCandidates):Object.freeze([]);
+  if(r.productId==='rc82-roundlab-birch-80'&&(
+    janReconciliation[0].value!=='8809738600221'||janReconciliation[0].status!=='corroborated-cream-reference'||
+    janReconciliation[1].value!=='8809624726400'||janReconciliation[1].status!=='cross-category-conflict'
+   ))throw Error('ラウンドラボのJAN証拠評価が改変されました');
+  return Object.freeze({...r,janReconciliation,comparison:result});
  }));
 }
 export const skuRecordForProduct=(validated,product)=>validated.find(x=>x.productId===product?.id)||null;
