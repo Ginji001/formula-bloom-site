@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2125||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==269)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.108 release');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2132||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==276)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.109 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -117,11 +117,27 @@ jobs:
              new108.filter(r=>r.kind==='cosmetic').length!==3||
              new108.some(r=>r.sourceType!=='official'||r.formulaUpdatedAt!==null||r.region!=='jp'))
             throw Error('rc108 four upgrades and fifth new Japanese full ingredient record not verified');
+          const review109=fs.readFileSync('_site/official-reviewed-rc109.js','utf8');
+          if(!review109.includes('rc109-astalift-101334000000-morning')||
+             !review109.includes('rc109-astalift-101334000000-night')||
+             !review109.includes('rc109-astalift-100503000000'))
+             throw Error('Missing reviewed Japanese Men and separate medicinal morning/night record references');
+          const new109=archived.records.filter(r=>r.productId.startsWith('rc109-'));
+          if(new109.length!==7||new Set(new109.map(r=>r.productId)).size!==7||
+             new109.filter(r=>r.kind==='quasi').length!==2||
+             new109.filter(r=>r.kind==='cosmetic').length!==5||
+             new109.some(r=>r.sourceType!=='official'||r.region!=='jp'||r.formulaUpdatedAt!==null))
+             throw Error('Expected seven separate Japanese manufacturer formula records');
+          const am=new109.find(r=>r.productId==='rc109-astalift-101334000000-morning');
+          const pm=new109.find(r=>r.productId==='rc109-astalift-101334000000-night');
+          if(!am||!pm||am.ingredientCount!==40||pm.ingredientCount!==33||
+             am.ingredients===pm.ingredients||am.volume!=='5g'||pm.volume!=='18g')
+             throw Error('Medicinal morning/night types are not differentiated');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.108: 2125 names, 146/147 brand names, 269 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.109: 2132 names, 146/147 brand names, 276 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

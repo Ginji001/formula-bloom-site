@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T15:37:40.149Z",
+  "generatedAt": "2026-11-01T16:00:31.802Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,8 +10,8 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 269,
-  "registeredCandidateCount": 2125,
+  "savedFormulaCount": 276,
+  "registeredCandidateCount": 2132,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -2022,8 +2022,8 @@
       "brand": "アスタリフト",
       "maker": "富士フイルム",
       "country": "JP",
-      "savedFormulaCount": 28,
-      "registeredCandidateCount": 28,
+      "savedFormulaCount": 35,
+      "registeredCandidateCount": 35,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -2312,6 +2312,76 @@
           "verifiedAt": "2026-11-02T00:34:12+09:00",
           "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100303000002.html",
           "ingredientCount": 21
+        },
+        {
+          "productId": "rc109-astalift-100406000001",
+          "productName": "クリアトリートメント",
+          "variant": null,
+          "sourcePageId": "100406000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/astaliftwhite/100406000001.html",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc109-astalift-100306000002",
+          "productName": "モイスチャライジングマスク",
+          "variant": null,
+          "sourcePageId": "100306000002",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100306000002.html",
+          "ingredientCount": 36
+        },
+        {
+          "productId": "rc109-astalift-100502000000",
+          "productName": "メン ジェリー アクアリスタ",
+          "variant": null,
+          "sourcePageId": "100502000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astaliftmen/men/100502000000.html",
+          "ingredientCount": 34
+        },
+        {
+          "productId": "rc109-astalift-100503000000",
+          "productName": "メン モイストクリアウォッシュ",
+          "variant": null,
+          "sourcePageId": "100503000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astaliftmen/men/100503000000.html",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc109-astalift-100505000000",
+          "productName": "メン モイストエマルジョン",
+          "variant": null,
+          "sourcePageId": "100505000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astaliftmen/men/100505000000.html",
+          "ingredientCount": 36
+        },
+        {
+          "productId": "rc109-astalift-101334000000-morning",
+          "productName": "ザ セラム リンクルリペア 朝用",
+          "variant": "朝用",
+          "sourcePageId": "101334000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/serum/101334000000.html",
+          "ingredientCount": 40
+        },
+        {
+          "productId": "rc109-astalift-101334000000-night",
+          "productName": "ザ セラム リンクルリペア 夜用",
+          "variant": "夜用",
+          "sourcePageId": "101334000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T00:58:31+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/serum/101334000000.html",
+          "ingredientCount": 33
         }
       ]
     },
