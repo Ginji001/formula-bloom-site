@@ -32,6 +32,7 @@ const domesticComPaths=new Map([
  ['medicaraise-healthcare.jp',/^\/products\/cosme\/faceshop\/(?:sheetdx\.html)?$/],
  // Link-only Japanese product identity. Never authorizes external scraping or formula republication.
  ['www.cosme.net',/^\/products\/\d+\/?$/],
+ ['www.biccamera.com',/^\/bc\/item\/15277443\/?$/],
  ['aeonretail.com',/^\/product\/0\/P-\d{13}\/?$/],
  ['www.yodobashi.com',/^\/product\/\d+\/?$/]
 ]);

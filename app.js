@@ -589,10 +589,17 @@ function showSkuIdentityEvidence(container,item,version){
   const compared=record.comparison;
   const details=document.createElement('details');details.className='sku-evidence';
   const title=document.createElement('summary');
-  title.textContent=compared.status==='sku-identifiers-matched'?'商品特定：色番・容量・JANを確認':'商品特定：海外版との不一致に注意';
+  title.textContent=compared.status==='sku-identifiers-matched'?'商品特定：色番・容量・JANを確認':
+    compared.status==='foreign-not-transferable'?'商品特定：海外版との不一致に注意':
+    compared.status==='catalog-unverified'?'商品候補：日本語掲載はあるが公式未確認':
+    compared.status==='blocked-identity-conflict'?'商品特定：識別情報に矛盾あり':
+    '商品候補：国内販売は確認、JAN・現物は未確認';
   details.append(title);
   const status=document.createElement('p');status.className='muted';
-  status.textContent=compared.status==='sku-identifiers-matched'?'国内掲載ページ上の商品の識別子が一致。配合成分・現物ラベルの一致を証明するものではありません。':'国内品に対応しない海外資料を区別しています。国内版の成分として転用できません。';
+  status.textContent=compared.status==='sku-identifiers-matched'?'国内掲載ページ上の商品の識別子が一致。配合成分・現物ラベルの一致を証明するものではありません。':
+    compared.status==='foreign-not-transferable'?'国内品に対応しない海外資料を区別しています。国内版の成分として転用できません。':
+    compared.status==='catalog-unverified'?'一般利用者による登録を含む商品情報サイトの掲載。国内公式製品・実際の成分を確認したことにはなりません。':
+    '国内小売店の商品名・容量は確認できますが、JAN候補に相違があり現物ラベルも未確認です。日本語成分を登録していません。';
   details.append(status);
   const items=document.createElement('ul');
   for(const check of compared.checks){const li=document.createElement('li');li.textContent='確認：'+check;items.append(li);}
@@ -603,6 +610,13 @@ function showSkuIdentityEvidence(container,item,version){
   details.append(note);
   sourceLink(details,compared.sourceUrl,'比較した商品ページ');
   if(record.independentManufacturerIdentityUrl)sourceLink(details,record.independentManufacturerIdentityUrl,'メーカー日本公式：シリーズ・容量の確認元');
+  if(record.domesticImporterBrandUrl)sourceLink(details,record.domesticImporterBrandUrl,'国内輸入販売企業のブランド紹介（このSKUのラベル確認ではありません）');
+  if(record.janCandidates?.length){
+   const candidateTitle=document.createElement('p');candidateTitle.className='muted';
+   candidateTitle.textContent='販売ページにあるJAN候補（競合あり・いずれも現物未確認）：';
+   details.append(candidateTitle);
+   for(const candidate of record.janCandidates)sourceLink(details,candidate.sourceUrl,candidate.value+'：候補の掲載元（未確定）');
+  }
   container.append(details);
  }).catch(()=>{if(version===lookupVersion){const p=document.createElement('p');p.className='muted';p.textContent='商品識別の比較資料を読み込めません。国内向け成分の確認は続けられます。';container.append(p);}});
 }

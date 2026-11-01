@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T00:08:45.515Z",
+  "generatedAt": "2026-11-01T00:17:30.671Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
-  "brandsWithRegisteredProductNames": 139,
-  "brandsWithPendingProductNames": 8,
-  "productNameRecords": 470,
+  "brandsWithRegisteredProductNames": 141,
+  "brandsWithPendingProductNames": 6,
+  "productNameRecords": 472,
   "ingredientRecords": 234,
   "knownIngredientRecords": 47,
   "brandsWithKnownIngredientsOnly": 45,
@@ -6987,14 +6987,29 @@
       "maker": "ROUND LAB",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://roundlab.com/",
-      "products": []
+      "products": [
+        {
+          "productId": "rc82-roundlab-birch-80",
+          "productName": "ラウンド ラボ バーチジュース モイスチャライジングクリーム",
+          "series": null,
+          "productType": null,
+          "variant": null,
+          "sourceUrl": "https://www.biccamera.com/bc/item/15277443/",
+          "kind": "cosmetic",
+          "volume": "80mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 100,
@@ -8591,14 +8606,29 @@
       "maker": "Dr.Ceuracle",
       "country": "KR",
       "brandRegistration": "registered",
-      "productRegistration": "pending-product-names",
-      "productNameCount": 0,
+      "productRegistration": "partially-registered",
+      "productNameCount": 1,
       "ingredientRecordCount": 0,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": null,
-      "products": []
+      "products": [
+        {
+          "productId": "rc82-drceuracle-kombucha-150",
+          "productName": "ヴィーガンコンブチャティーエッセンス",
+          "series": null,
+          "productType": null,
+          "variant": "2023年に日本の商品情報サイトで掲載",
+          "sourceUrl": "https://www.cosme.net/products/10239837/",
+          "kind": "cosmetic",
+          "volume": "150mL",
+          "sku": null,
+          "jan": null,
+          "identityVerifiedAt": "2026-11-01",
+          "ingredientEvidenceStatus": "no-ingredients-recorded"
+        }
+      ]
     },
     {
       "brandId": 141,

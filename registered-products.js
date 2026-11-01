@@ -533,6 +533,18 @@ export const registeredProducts=Object.freeze([
  {"id": "rc69-faceshop-ultimate-n10-30", "brand": "ザ・フェイスショップ", "name": "TFS オルティメイト N10 セラム", "aliases": ["ザ・フェイスショップ TFS オルティメイト N10 セラム 30mL", "THE FACE SHOP TFS オルティメイト N10 セラム"], "url": "https://ainz-tulpe.jp/products/4571537792189", "volume": "30mL", "variant": "N10", "jan": "4571537792189", "kind": "cosmetic", "sku": null, "sourceScope": "Japan authorized distributor announcement and domestic retail exact JAN", "registrationStatus": "name-only", "identityVerifiedAt": "2026-11-01", "rightsStatus": "reference-link-only", "listingStatus": "domestic-retail-listing", "productIdentityNote": "日本正規代理店の国内販売発表と国内販売店の日本語商品名・30mL・JANを照合。現物日本語ラベル、現在の全成分、転載許諾、最新処方は未確認。"},
  {"id": "rc69-faceshop-ultimate-p1-30", "brand": "ザ・フェイスショップ", "name": "TFS オルティメイト P1 セラム", "aliases": ["ザ・フェイスショップ TFS オルティメイト P1 セラム 30mL", "THE FACE SHOP TFS オルティメイト P1 セラム"], "url": "https://ainz-tulpe.jp/products/4571537792196", "volume": "30mL", "variant": "P1", "jan": "4571537792196", "kind": "cosmetic", "sku": null, "sourceScope": "Japan authorized distributor announcement and domestic retail exact JAN", "registrationStatus": "name-only", "identityVerifiedAt": "2026-11-01", "rightsStatus": "reference-link-only", "listingStatus": "domestic-retail-listing", "productIdentityNote": "日本正規代理店の国内販売発表と国内販売店の日本語商品名・30mL・JANを照合。現物日本語ラベル、現在の全成分、転載許諾、最新処方は未確認。"},
  {"id": "rc69-faceshop-ultimate-mp8-30", "brand": "ザ・フェイスショップ", "name": "TFS オルティメイト MP8 セラム", "aliases": ["ザ・フェイスショップ TFS オルティメイト MP8 セラム 30mL", "THE FACE SHOP TFS オルティメイト MP8 セラム"], "url": "https://ainz-tulpe.jp/products/4571537792271", "volume": "30mL", "variant": "MP8", "jan": "4571537792271", "kind": "cosmetic", "sku": null, "sourceScope": "Japan authorized distributor announcement and domestic retail exact JAN", "registrationStatus": "name-only", "identityVerifiedAt": "2026-11-01", "rightsStatus": "reference-link-only", "listingStatus": "domestic-retail-listing", "productIdentityNote": "日本正規代理店の国内販売発表と国内販売店の日本語商品名・30mL・JANを照合。現物日本語ラベル、現在の全成分、転載許諾、最新処方は未確認。"},
+ {id:'rc82-roundlab-birch-80',brand:'ラウンドラボ',name:'ラウンド ラボ バーチジュース モイスチャライジングクリーム',
+  aliases:['ラウンドラボ 白樺水分クリーム 80mL','ROUND LAB バーチジュース モイスチャライジングクリーム 80ml','ROUND LAB 白樺水分クリーム'],
+  url:'https://www.biccamera.com/bc/item/15277443/',volume:'80mL',variant:null,kind:'cosmetic',
+  jan:null,sku:null,registrationStatus:'name-only',sourceScope:'japanese-domestic-retailer-identity-only',
+  identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'日本国内ビックカメラで80mL商品名と販売取扱いを確認。日本向け販売関係企業・潮音コスメティックのブランド取扱いも確認。ただしJAN候補8809738600221と8809624726400に競合があり、現物JAN・国内ラベル・責任表示・正しい日本語全成分は未照合。小売掲載の成分には文字化け・機械翻訳らしき誤表記があり成分登録はしない。'},
+ {id:'rc82-drceuracle-kombucha-150',brand:'Dr.Ceuracle',name:'ヴィーガンコンブチャティーエッセンス',
+  aliases:['Dr.Ceuracle ヴィーガンコンブチャティーエッセンス 150ml','ドクターシュラクル ヴィーガンコンブチャティーエッセンス','ドクターシュラクル コンブチャティーエッセンス'],
+  url:'https://www.cosme.net/products/10239837/',volume:'150mL',variant:'2023年に日本の商品情報サイトで掲載',kind:'cosmetic',
+  jan:null,sku:null,registrationStatus:'name-only',sourceScope:'user-contributed-product-catalog-unconfirmed',
+  identityVerifiedAt:'2026-11-01',rightsStatus:'reference-link-only',
+  productIdentityNote:'日本語商品情報サイト@cosmeで150mL・発売日2023/1/16として掲載。ただし同サイトは「公式情報確認中または確認前・メンバー登録を含む」と明示。メーカー発表・輸入販売元・国内パッケージJAN・現物ラベル・全成分・最新処方は未確認。シリーズ内のジェルクリームやBBクリームとは別商品。'},
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
