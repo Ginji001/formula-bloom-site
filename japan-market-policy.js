@@ -22,7 +22,7 @@ const domesticComPaths=new Map([
  ['www.addiction-beauty.com',/^\/site\//],
  ['www.jillstuart-floranotisjillstuart.com',/^\/site\/jillstuart\//],
  ['www.nomorerules.net',/^\/pickup\/lip_monster\//],
- ['h-jp.fujifilm.com',/^\/products\/lunamer\//],
+ ['h-jp.fujifilm.com',/^(?:\/products\/lunamer\/|\/products\/astalift\/(?:jelly|skincare|astaliftwhite)\/\d{12}\.html$)/],
  ['jp.aestura.com',/^\/products\//],
  ['jp.sulwhasoo.com',/^\/products\//],
  ['drjartjp.com',/^\/$/],

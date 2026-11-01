@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T14:17:04.278Z",
+  "generatedAt": "2026-11-01T14:42:13.709Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,8 +10,8 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 238,
-  "registeredCandidateCount": 2098,
+  "savedFormulaCount": 247,
+  "registeredCandidateCount": 2107,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -2022,8 +2022,8 @@
       "brand": "アスタリフト",
       "maker": "富士フイルム",
       "country": "JP",
-      "savedFormulaCount": 1,
-      "registeredCandidateCount": 5,
+      "savedFormulaCount": 10,
+      "registeredCandidateCount": 14,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -2042,6 +2042,96 @@
           "verifiedAt": "2026-10-31T16:34:27+09:00",
           "sourceUrl": "https://ls-jp.fujifilm.com/astaliftmen/products/moist-lotion/",
           "ingredientCount": 28
+        },
+        {
+          "productId": "rc105-astalift-100202000001",
+          "productName": "ジェリー アクアリスタ",
+          "variant": null,
+          "sourcePageId": "100202000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/jelly/100202000001.html",
+          "ingredientCount": 34
+        },
+        {
+          "productId": "rc105-astalift-100202000002",
+          "productName": "ホワイト ジェリー アクアリスタ",
+          "variant": null,
+          "sourcePageId": "100202000002",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/jelly/100202000002.html",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "rc105-astalift-100301000000",
+          "productName": "エッセンス デスティニー",
+          "variant": null,
+          "sourcePageId": "100301000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100301000000.html",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "rc105-astalift-100303000000",
+          "productName": "クレンジングジェル",
+          "variant": null,
+          "sourcePageId": "100303000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100303000000.html",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc105-astalift-100303000001",
+          "productName": "クレンジングオイル",
+          "variant": null,
+          "sourcePageId": "100303000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100303000001.html",
+          "ingredientCount": 12
+        },
+        {
+          "productId": "rc105-astalift-100305000001",
+          "productName": "エマルジョン",
+          "variant": null,
+          "sourcePageId": "100305000001",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100305000001.html",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc105-astalift-100306000000",
+          "productName": "ナイトチャージクリーム",
+          "variant": null,
+          "sourcePageId": "100306000000",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/skincare/100306000000.html",
+          "ingredientCount": 45
+        },
+        {
+          "productId": "rc105-astalift-100405000001",
+          "productName": "ホワイト エマルジョン",
+          "variant": null,
+          "sourcePageId": "100405000001",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/astaliftwhite/100405000001.html",
+          "ingredientCount": 38
+        },
+        {
+          "productId": "rc105-astalift-100406000000",
+          "productName": "ブライトニングマスク",
+          "variant": null,
+          "sourcePageId": "100406000000",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-01T23:39:46+09:00",
+          "sourceUrl": "https://h-jp.fujifilm.com/products/astalift/astaliftwhite/100406000000.html",
+          "ingredientCount": 27
         }
       ]
     },
