@@ -680,3 +680,8 @@ footer>span:last-child{color:#827b77}
 
 #searchResults .product-primary-actions{display:grid;gap:5px;margin-top:6px}
 #searchResults .product-primary-actions button{margin:0;width:100%;min-height:44px}
+
+/* rc.100: local-only in-brand filter for large verified name indexes. */
+#searchResults .within-brand-filter{display:block;box-sizing:border-box;width:100%;min-height:44px;margin:6px 0 10px;border:1px solid #c6b9bf;border-radius:9px;padding:10px 12px;background:#fff;color:inherit;font:inherit}
+#searchResults .within-brand-filter:focus-visible{outline:3px solid #497d78;outline-offset:2px}
+#searchResults label[for=withinBrandProductFilter]{font-size:13px;font-weight:600}

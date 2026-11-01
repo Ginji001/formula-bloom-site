@@ -14,7 +14,7 @@ const domesticComPaths=new Map([
  ['coreelle.jp',/^\/products\/ax-darkserum-01\/?$/],
  ['www.beplain.info',/^\/jp\/?$/],
  ['peripera.jp',/^\/category\/peritage\/128\/$/],
- ['www.cledepeau-beaute.com',/^\/jp\/products\//],
+ ['www.cledepeau-beaute.com',/^\/jp\/(?:products\/|products-skincare-facialcare-uv\/|synactif\/F473\.html$)/],
  ['www.decorte.com',/^\/site\//],
  ['www.lunasol-official.com',/^\/categories\/pointmake\//],
  ['www.addiction-beauty.com',/^\/site\//],

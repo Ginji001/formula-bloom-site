@@ -1,3 +1,4 @@
+import {officialReviewedRC100Products} from './official-reviewed-rc100.js';
 import {officialDomesticNamesRC94} from './official-domestic-catalog-rc94.js';
 import {kaoOfficialFamilyNames} from './official-kao-family-index.js';
 import {officialCatalogFamilyNames} from './official-catalog-families.js';
@@ -596,7 +597,8 @@ export const registeredProducts=Object.freeze([
   productIdentityNote:'LG BEAUTY公式楽天市場店の日本語販売ページは50mLと90mLを選択表示。購入者が輸入者となる韓国からの個人輸入・直送と明示。海外メーカー販売品と日本国内流通の法定表示を同一視しません。現物のJAN・輸入販売元・日本語全成分・処方一致は未確認です。'},
  ...officialCatalogFamilyNames,
  ...kaoOfficialFamilyNames,
- ...officialDomesticNamesRC94
+ ...officialDomesticNamesRC94,
+ ...officialReviewedRC100Products
  ].map(x=>{
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.
