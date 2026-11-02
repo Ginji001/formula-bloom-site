@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-90')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-91')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -670,6 +670,29 @@ jobs:
              !sourceOnlyHome.includes('unresolved-review-rc130.html'))
               throw Error('rc130 54 reference products and 1700 missing-name cohort gate failed');
           console.log('Verified rc130: 22 independent Japanese name facts for Chifure milk refill, 54 reference products, 1700 still missing');
+          const p131=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc131.json','utf8'));
+          const c131=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc131.json','utf8'));
+          const r131=fs.readFileSync('_site/unresolved-review-rc131.html','utf8');
+          const csv131=fs.readFileSync('_site/ingredient-name-coverage-rc131.csv','utf8');
+          const ids131=new Set(c131.records.map(x=>x.productId));
+          if(c131.records.length!==1754||ids131.size!==1754||
+             c131.summary.japaneseNameReferenceProducts!==57||
+             c131.summary.japaneseNameNotRecordedProducts!==1697||
+             c131.summary.fullJapaneseFormulaSnapshots!==409||
+             c131.summary.newlyRecordedJapaneseIngredientNameProducts!==3||
+             c131.summary.newlyRecordedJapaneseIngredientNames!==45||
+             c131.records.filter(x=>x.status==='ingredient-name-reference-available').length!==57||
+             c131.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1697||
+             p131.records.length!==3||!p131.excludeConditionalPigmentCandidates||
+             p131.records.reduce((sum,x)=>sum+x.ingredients.length,0)!==45||
+             p131.records.some(x=>!x.sourceShade||!x.sourceUrl.startsWith('https://noevirgroup.jp/excel/g/')||x.coverage!=='partial-only'||x.labelCompared!==false||x.order!=='not-confirmed'||x.currentFormulaCompared!==false)||
+             !csv131.startsWith('\uFEFF')||csv131.split('\n').length!==1756||
+             !r131.includes('ingredient-name-coverage-rc131.json')||!r131.includes('1,697')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc131.json')||
+             !sourceOnlyHome.includes('unresolved-review-rc131.html'))
+              throw Error('rc131 Excel three exact shade references or 57/1697 coverage invalid');
+          console.log('Verified rc131: 3 Excel shade-common base name references, 57 reference products, 1697 without any Japanese name');
+
 
 
 
