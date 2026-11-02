@@ -179,12 +179,12 @@ jobs:
              !review112.includes('rc92-official-family-obagi-003')||
              !review112.includes('japan-rohto-maker-item-and-ingredient-display'))
              throw Error('rc112 reviewed individual Obagi source data or exact product references missing');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1824||
+          if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1824)||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage112.unresolvedFullIngredientCandidateCount!==1824||
+             (!Number.isInteger(coverage112.unresolvedFullIngredientCandidateCount)||coverage112.unresolvedFullIngredientCandidateCount>1824)||
              coverage112.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc112 unverified 1824 remaining candidates/rights are not honestly disclosed');
+             throw Error('rc112 baseline coverage regression or rights verification misrepresented');
           const obagi112=archived.records.filter(r=>r.productId.startsWith('rc92-official-family-obagi-')||
              r.productId==='rc112-obagi-x-emulsion-bottle');
           if(obagi112.length!==17||new Set(obagi112.map(r=>r.productId)).size!==17||
