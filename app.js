@@ -769,6 +769,10 @@ function showPartialChoices(container,item){
  explicit.textContent='明記された成分だけで参考の花';
  explicit.setAttribute('aria-label','出典に書かれた日本語成分名だけで参考の花を作る（全成分未確認）');
  actions.append(explicit);
+ const updateReferenceCount=count=>{
+  const state=container.querySelector('.selected-product-state');
+  if(state&&count>0){const old=Number(state.dataset.referenceNamesCount||0);const max=Math.max(old,count);state.dataset.referenceNamesCount=String(max);state.textContent='日本語成分名収録済（参考・'+max+'件）／全成分・配合順・現物は未確認';}
+ };
  const advanced=document.createElement('details');
  advanced.className='product-evidence-more';
  const summary=document.createElement('summary');summary.textContent='成分の根拠・詳細';
@@ -781,6 +785,7 @@ function showPartialChoices(container,item){
   if(version!==lookupVersion)return;
   const record=disclosedNameFactsForProduct(records,item);
   if(!record)return;
+  updateReferenceCount(record.ingredientCount);
   const action=document.createElement('button');action.type='button';action.className='secondary source-listed-fact-flower-action';
   action.textContent='公式明記 '+record.ingredientCount+'成分で参考の花';
   action.setAttribute('aria-label','メーカーの目的別表から確認した表示名称で参考の花を表示。配合順・現物一致は未確認');
@@ -795,6 +800,7 @@ function showPartialChoices(container,item){
   if(version!==lookupVersion)return;
   const record=partialForProduct(records,item);
   if(record){
+   updateReferenceCount(record.ingredients.length);
    const msg=document.createElement('p');msg.className='muted';
    const retailer=record.sourceType==='japanese-domestic-retailer-listing';
    const historical=record.sourceType==='japanese-domestic-launch-announcement';

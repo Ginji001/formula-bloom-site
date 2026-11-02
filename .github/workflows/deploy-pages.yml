@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-88')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-89')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -628,6 +628,23 @@ jobs:
              !fs.readFileSync('_site/unresolved-review-rc124.html','utf8').includes('fact-transcribed'))
              throw Error('rc128 normalized Japanese ingredient-name reference record did not validate');
           console.log('Verified rc128: 6 product-specific independent factual name lists (124 fact entries), no unverified full-formula promotion');
+          const nameCover129=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc129.json','utf8'));
+          const nameCoverCsv=fs.readFileSync('_site/ingredient-name-coverage-rc129.csv','utf8');
+          const covered129=nameCover129.records.filter(x=>x.status==='ingredient-name-reference-available');
+          const missing129=nameCover129.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed');
+          const ids129=new Set(nameCover129.records.map(x=>x.productId));
+          if(nameCover129.records.length!==1754||ids129.size!==1754||
+             [...ids129].some(id=>!decisionIds.has(id))||covered129.length!==53||missing129.length!==1701||
+             nameCover129.summary.fullJapaneseFormulaSnapshots!==409||
+             nameCover129.summary.overlapOfTwoSources!==1||
+             nameCover129.summary.fullFormulaNewlyAdded!==0||
+             nameCover129.records.some(x=>x.fullIngredientListInArchive||x.formulaOrderVerified)||
+             covered129.some(x=>!x.sourceRecords.length||!x.referenceIngredientCount)||
+             !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756||
+             !caseViewer.includes('ingredient-name-coverage-rc129.json')||
+             !sourceOnlyHome.includes('成分名未収録1,701件・参考収録53件'))
+             throw Error('rc129 relaxed Japanese name-reference coverage failed');
+          console.log('Verified rc129: 53 reference-name products and 1701 remaining, 409 full formula snapshots');
 
 
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
