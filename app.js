@@ -69,7 +69,7 @@ function partialEvidence(){
 }
 let sourceDisclosedFactsPromise=null;
 function sourceDisclosedFacts(){
- if(!sourceDisclosedFactsPromise)sourceDisclosedFactsPromise=Promise.all([getJSON('/source-disclosed-ingredient-names-rc128.json'),getJSON('/source-disclosed-ingredient-names-rc130.json')]).then(all=>all.flatMap(validateDisclosedNameFacts)).catch(e=>{sourceDisclosedFactsPromise=null;throw e;});
+ if(!sourceDisclosedFactsPromise)sourceDisclosedFactsPromise=Promise.all([getJSON('/source-disclosed-ingredient-names-rc128.json'),getJSON('/source-disclosed-ingredient-names-rc130.json'),getJSON('/source-disclosed-ingredient-names-rc132.json')]).then(all=>all.flatMap(validateDisclosedNameFacts)).catch(e=>{sourceDisclosedFactsPromise=null;throw e;});
  return sourceDisclosedFactsPromise;
 }
 let englishInciEvidencePromise=null;
@@ -809,7 +809,9 @@ function showPartialChoices(container,item){
    const action=document.createElement('button');action.type='button';action.className='secondary partial-flower-action';
    action.textContent=historical?'2020年の部分成分で花を見る':'部分成分で花を見る'+(record.sourceShade?'（'+record.sourceShade+'）':'');
    action.setAttribute('aria-label',sourceTypeLabel+'の判明成分だけで花にする');
-   action.onclick=()=>useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(historical?'国内発売元 '+record.publisherName+' による2019年発表の2020年発売品・シリーズ共通成分。現行処方・現物未確認、全成分ではない':retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':(record.sourceShade?'日本公式の特定色番 '+record.sourceShade+' の全成分欄にある（＋／－）色材表記より前の表示名称のみ。色材候補・別色番・パレット内の各色を混同せず、全成分ではない。':'メーカーが該当商品に掲載した一部成分（全成分ではない）')),checkedOn:record.checkedOn});
+   action.onclick=()=>{useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(historical?'国内発売元 '+record.publisherName+' による2019年発表の2020年発売品・シリーズ共通成分。現行処方・現物未確認、全成分ではない':retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':(record.sourceShade?'日本公式の特定色番 '+record.sourceShade+' の全成分欄にある（＋／－）色材表記より前の表示名称のみ。色材候補・別色番・パレット内の各色を混同せず、全成分ではない。':'メーカーが該当商品に掲載した一部成分（全成分ではない）')),checkedOn:record.checkedOn});
+    if(record.sourceShade){const note=document.createElement('p');note.className='muted';note.textContent='掲載元の色番：'+record.sourceShade+'。条件付き着色剤候補は含めていません。他色・各色の配合や現物一致は未確認です。';$('sourceInfo').prepend(note);}
+   };
    actions.prepend(action);
    advanced.append(msg);
    sourceLink(advanced,record.sourceUrl,historical?'2020年国内発売元の発表を確認':retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');

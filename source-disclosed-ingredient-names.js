@@ -16,7 +16,7 @@ export function validateDisclosedNameFacts(data){
    !Array.isArray(r.ingredientNames)||r.ingredientNames.length<2||r.ingredientNames.length>40||
    r.ingredientCount!==r.ingredientNames.length||
    reviewPartialInput(r.ingredientNames.join('、')).length!==r.ingredientCount||
-   !/^https:\/\/(?:www\.chifure\.co\.jp\/products\/|www\.shop\.rohto\.co\.jp\/category\/skincare\/bloomio\/)/.test(r.sourceUrl))
+   !/^https:\/\/(?:www\.chifure\.co\.jp\/products\/|www\.shop\.rohto\.co\.jp\/category\/skincare\/bloomio\/|www\.kao-kirei\.com\/ja\/item\/kbb\/kate\/)/.test(r.sourceUrl))
    throw Error('明記成分と国内向け商品の照合が不正: '+r.productId);
   ids.add(r.productId);
  }

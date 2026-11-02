@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-91')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-92')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -692,6 +692,36 @@ jobs:
              !sourceOnlyHome.includes('unresolved-review-rc131.html'))
               throw Error('rc131 Excel three exact shade references or 57/1697 coverage invalid');
           console.log('Verified rc131: 3 Excel shade-common base name references, 57 reference products, 1697 without any Japanese name');
+          const names132=JSON.parse(fs.readFileSync('_site/source-disclosed-ingredient-names-rc132.json','utf8'));
+          const coverage132=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc132.json','utf8'));
+          const review132=fs.readFileSync('_site/unresolved-review-rc132.html','utf8');
+          const csv132=fs.readFileSync('_site/ingredient-name-coverage-rc132.csv','utf8');
+          const id132=new Set(coverage132.records.map(x=>x.productId));
+          const officialKateJan132=new Map([['4973167006009',16],['4973167012574',16],['4973167012598',10],['4973167016275',18]]);
+          if(names132.productCount!==4||names132.records.length!==4||
+             names132.notFullFormulaArchive!==true||
+             names132.records.reduce((n,x)=>n+x.ingredientCount,0)!==60||
+             names132.records.some(x=>x.brand!=='KATE'||!officialKateJan132.has(x.jan)||
+               officialKateJan132.get(x.jan)!==x.ingredientNames.length||
+               !x.sourceUrl.includes('/ja/item/kbb/kate/'+x.jan+'/')||
+               x.formulaOrderConfirmed||x.completePhysicalLabelConfirmed||
+               x.republicationOfManufacturerProse)||
+             coverage132.records.length!==1754||id132.size!==1754||
+             [...id132].some(id=>!decisionIds.has(id))||
+             coverage132.summary.japaneseNameReferenceProducts!==61||
+             coverage132.summary.japaneseNameNotRecordedProducts!==1693||
+             coverage132.summary.fullJapaneseFormulaSnapshots!==409||
+             coverage132.summary.fullFormulaNewlyAdded!==0||
+             coverage132.records.filter(x=>x.status==='ingredient-name-reference-available').length!==61||
+             coverage132.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1693||
+             !csv132.startsWith('\uFEFF')||csv132.split('\n').length!==1756||
+             !review132.includes('ingredient-name-coverage-rc132.json')||
+             !review132.includes('1,693')||
+             !sourceOnlyHome.includes('unresolved-review-rc132.html')||
+             !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc132.json'))
+              throw Error('rc132 KATE four exact JAN ingredient facts or 61 / 1693 count invalid');
+          console.log('Verified rc132: 4 exact KATE JANs, 60 reference ingredient-name facts, 61 covered products, 1693 remaining');
+
 
 
 
