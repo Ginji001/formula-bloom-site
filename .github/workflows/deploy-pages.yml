@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-92')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-93')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -721,6 +721,35 @@ jobs:
              !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc132.json'))
               throw Error('rc132 KATE four exact JAN ingredient facts or 61 / 1693 count invalid');
           console.log('Verified rc132: 4 exact KATE JANs, 60 reference ingredient-name facts, 61 covered products, 1693 remaining');
+          const shiseido133=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc133.json','utf8'));
+          const cover133=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc133.json','utf8'));
+          const viewer133=fs.readFileSync('_site/unresolved-review-rc133.html','utf8');
+          const csv133=fs.readFileSync('_site/ingredient-name-coverage-rc133.csv','utf8');
+          const cohort133=new Set(cover133.records.map(r=>r.productId));
+          if(shiseido133.productCount!==4||shiseido133.records.length!==4||
+             shiseido133.quasiDrugActiveAndOtherSeparated!==true||
+             shiseido133.records.reduce((n,r)=>n+r.ingredients.length,0)!==52||
+             shiseido133.records.some(r=>r.kind!=='quasi'||r.brand!=='エリクシール'||
+               r.activeIngredientName!=='トラネキサム酸'||r.otherIngredientNames.length!==12||
+               !r.ingredients.includes('トラネキサム酸')||!r.sourceUrl.startsWith('https://www.shiseido.co.jp/sw/onlinestore/products/')||
+               !r.sourceSection.includes(r.variant)||r.coverage!=='partial-only'||
+               r.labelCompared!==false||r.currentFormulaCompared!==false||r.order!=='not-confirmed')||
+             cover133.records.length!==1754||cohort133.size!==1754||
+             [...cohort133].some(id=>!decisionIds.has(id))||
+             cover133.summary.japaneseNameReferenceProducts!==65||
+             cover133.summary.japaneseNameNotRecordedProducts!==1689||
+             cover133.summary.fullJapaneseFormulaSnapshots!==409||
+             cover133.summary.fullFormulaNewlyAdded!==0||
+             cover133.records.filter(x=>x.status==='ingredient-name-reference-available').length!==65||
+             cover133.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1689||
+             !csv133.startsWith('\uFEFF')||csv133.split('\n').length!==1756||
+             !viewer133.includes('ingredient-name-coverage-rc133.json')||
+             !viewer133.includes('1,689')||
+             !sourceOnlyHome.includes('unresolved-review-rc133.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc133.json'))
+             throw Error('rc133 four Japanese quasi-drug variant facts or 65 / 1689 cohort invalid');
+          console.log('Verified rc133: four exact ELIXIR quasi-drug variants with active/other distinction, 65 covered and 1689 missing');
+
 
 
 

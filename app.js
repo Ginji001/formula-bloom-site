@@ -64,7 +64,7 @@ async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let partialEvidencePromise=null;
 function partialEvidence(){
- if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
+ if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
 }
 let sourceDisclosedFactsPromise=null;
@@ -805,12 +805,13 @@ function showPartialChoices(container,item){
    const retailer=record.sourceType==='japanese-domestic-retailer-listing';
    const historical=record.sourceType==='japanese-domestic-launch-announcement';
    const sourceTypeLabel=historical?'国内発売元発表（2020年発売時）':retailer?'国内販売店掲載':'メーカー掲載';
-   msg.textContent=sourceTypeLabel+(record.sourceShade?'（'+record.sourceShade+'）':'')+'：'+record.ingredients.length+'成分。'+(historical?'発売当時の共通成分です。現行処方は未確認。':'')+'全成分・配合順・現物は未確認。';
+   msg.textContent=sourceTypeLabel+(record.sourceShade?'（'+record.sourceShade+'）':record.kind==='quasi'?'（'+record.variant+'／医薬部外品）':'')+'：'+record.ingredients.length+'成分。'+(record.kind==='quasi'?'有効成分：'+record.activeIngredientName+'、その他成分'+record.otherIngredientNames.length+'名称。別タイプには転用しません。':'')+(historical?'発売当時の共通成分です。現行処方は未確認。':'')+'全成分・配合順・現物は未確認。';
    const action=document.createElement('button');action.type='button';action.className='secondary partial-flower-action';
-   action.textContent=historical?'2020年の部分成分で花を見る':'部分成分で花を見る'+(record.sourceShade?'（'+record.sourceShade+'）':'');
+   action.textContent=historical?'2020年の部分成分で花を見る':'部分成分で花を見る'+(record.sourceShade?'（'+record.sourceShade+'）':record.kind==='quasi'?'（'+record.variant+'／薬用）':'');
    action.setAttribute('aria-label',sourceTypeLabel+'の判明成分だけで花にする');
-   action.onclick=()=>{useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(historical?'国内発売元 '+record.publisherName+' による2019年発表の2020年発売品・シリーズ共通成分。現行処方・現物未確認、全成分ではない':retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':(record.sourceShade?'日本公式の特定色番 '+record.sourceShade+' の全成分欄にある（＋／－）色材表記より前の表示名称のみ。色材候補・別色番・パレット内の各色を混同せず、全成分ではない。':'メーカーが該当商品に掲載した一部成分（全成分ではない）')),checkedOn:record.checkedOn});
+   action.onclick=()=>{useKnownIngredients(item,record.ingredients,{sourceUrl:record.sourceUrl,scope:(historical?'国内発売元 '+record.publisherName+' による2019年発表の2020年発売品・シリーズ共通成分。現行処方・現物未確認、全成分ではない':retailer?'国内販売店 '+record.retailerName+' に掲載された一部成分（メーカー・現物未確認、全成分ではない）':(record.kind==='quasi'?'資生堂日本公式の医薬部外品 '+record.variant+' の明記名称のみ。有効成分トラネキサム酸とその他12名称を区別。別タイプ・詰替・現物・全成分順序は未確認。':record.sourceShade?'日本公式の特定色番 '+record.sourceShade+' の全成分欄にある（＋／－）色材表記より前の表示名称のみ。色材候補・別色番・パレット内の各色を混同せず、全成分ではない。':'メーカーが該当商品に掲載した一部成分（全成分ではない）')),checkedOn:record.checkedOn});
     if(record.sourceShade){const note=document.createElement('p');note.className='muted';note.textContent='掲載元の色番：'+record.sourceShade+'。条件付き着色剤候補は含めていません。他色・各色の配合や現物一致は未確認です。';$('sourceInfo').prepend(note);}
+    if(record.kind==='quasi'&&record.activeIngredientName){const note=document.createElement('p');note.className='muted';note.textContent='医薬部外品 '+record.variant+'：有効成分 '+record.activeIngredientName+' ／ その他の成分 '+record.otherIngredientNames.length+'件。記載した13名称のみの参考の花。実際の全成分・現物ラベル・別タイプの処方は未確認です。';$('sourceInfo').prepend(note);}
    };
    actions.prepend(action);
    advanced.append(msg);
