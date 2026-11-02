@@ -571,6 +571,17 @@ jobs:
              fs.existsSync('_site/docs/rc124-all-1754-fixed-scope-case-decisions-20261102.md'))
              throw Error('rc124 private evidence or offline researcher leaked to public static files');
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
+          const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
+          const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-85')||
+             !sourceOnlyUI.includes('明記された成分だけで参考の花')||
+             !sourceOnlyUI.includes('explicit-source-ingredients-action')||
+             !sourceOnlyUI.includes('抜粋や表示順不明の成分を「全成分」とは扱いません')||
+             !sourceOnlyUI.includes('入力は送信・自動保存されません')||
+             !sourceOnlyUI.includes('利用者が原文確認')||
+             archived.records.length!==409||caseReview.records.length!==1754)
+            throw Error('rc125 explicitly listed Japanese names reference-only UI or full-formula safeguard missing');
+          console.log('Verified rc.125: Japanese published-name-only reference flower shortcut, no false full formula promotions');
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
           NODE
       - name: Upload public site artifact

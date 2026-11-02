@@ -474,13 +474,13 @@ function showPartialInput(container,item,record){
  const summary=document.createElement('summary');summary.textContent='自分で確認した一部成分から花にする';
  wrap.append(summary);
  const guide=document.createElement('p');guide.className='muted';
- guide.textContent='商品・国内向け成分名を原文で確認してください。分かる成分だけを入力（1～40件）。全成分欄の転載や海外INCIは禁止です。入力は保存・送信されません。';
+ guide.textContent='公式などの国内向け商品ページに明記された日本語の成分名だけを入力（1～40件）。すべてそろっていなくても参考の花にできます。抜粋や表示順不明の成分を「全成分」とは扱いません。ページ本文の丸ごと転載や海外INCIの国内版転用は禁止。入力は送信・自動保存されません。';
  wrap.append(guide);
  const label=document.createElement('label');label.textContent='判明した日本語成分名（配合順不明）';
  const area=document.createElement('textarea');area.rows=3;area.maxLength=2200;area.placeholder='例：グリセリン、BG';
  wrap.append(label,area);
- const sourceLabel=document.createElement('label');sourceLabel.textContent='確認元URL（任意・現物ラベルなら空欄）';
- const url=document.createElement('input');url.type='url';url.placeholder='https://...';
+ const sourceLabel=document.createElement('label');sourceLabel.textContent='日本語成分の掲載元URL（現物ラベルなら空欄）';
+ const url=document.createElement('input');url.type='url';url.placeholder='https://...';if(item.sourceScope==='japan-maker-exact-ingredient-page-no-republication-permission'&&item.ingredientSourceUrl)url.value=item.ingredientSourceUrl;
  wrap.append(sourceLabel,url);
  const confirmed=document.createElement('label');confirmed.className='check';
  const checkbox=document.createElement('input');checkbox.type='checkbox';
@@ -493,7 +493,7 @@ function showPartialInput(container,item,record){
    if(!checkbox.checked)throw Error('日本語成分名称と商品の対応を確認してください。');
    const raw=url.value.trim();
    if(raw&&(!/^https:\/\//.test(raw)||!isJapaneseMarketURL(raw)))throw Error('日本向けのHTTPS掲載元を指定してください。');
-   useKnownIngredients(item,reviewPartialInput(area.value),{sourceUrl:raw,scope:'利用者が原文で確認したと申告（第三者未検証）'});
+   useKnownIngredients(item,reviewPartialInput(area.value),{sourceUrl:raw,scope:'日本国内向けの出典に明記された成分名だけを利用者が原文確認（抜粋・配合順不明・第三者未検証・全成分保証なし）'});
   }catch(e){status.textContent=e.message;}
  };
  wrap.append(action,status);container.append(wrap);
@@ -759,6 +759,10 @@ function showSkuIdentityEvidence(container,item,version){
 function showPartialChoices(container,item){
  const version=lookupVersion;
  const actions=document.createElement('div');actions.className='product-primary-actions';container.append(actions);
+ const explicit=document.createElement('button');explicit.type='button';explicit.className='secondary explicit-source-ingredients-action';
+ explicit.textContent='明記された成分だけで参考の花';
+ explicit.setAttribute('aria-label','出典に書かれた日本語成分名だけで参考の花を作る（全成分未確認）');
+ actions.append(explicit);
  const advanced=document.createElement('details');
  advanced.className='product-evidence-more';
  const summary=document.createElement('summary');summary.textContent='成分の根拠・詳細';
@@ -767,7 +771,7 @@ function showPartialChoices(container,item){
  showInferredFlowerChoice(advanced,item);
  showEnglishInciChoices(advanced,item,version);
  showEnglishInciInput(advanced,item);
- partialEvidence().then(records=>{
+ const ready=partialEvidence().then(records=>{
   if(version!==lookupVersion)return;
   const record=partialForProduct(records,item);
   if(record){
@@ -786,6 +790,13 @@ function showPartialChoices(container,item){
   }
   showPartialInput(advanced,item,record);
  }).catch(()=>{if(version===lookupVersion){const warning=document.createElement('p');warning.className='muted';warning.textContent='部分成分の資料を読み込めません。';advanced.append(warning);showPartialInput(advanced,item,null);}});
+ explicit.onclick=async()=>{
+  await ready;
+  if(version!==lookupVersion)return;
+  advanced.open=true;
+  const editor=advanced.querySelector('.partial-ingredient-editor');
+  if(editor){editor.open=true;editor.scrollIntoView({behavior:'auto',block:'nearest'});editor.querySelector('textarea')?.focus();}
+ };
 }
 function selectRegisteredFormula(item,context=''){
   $('query').value=item.brand+' '+item.name;
