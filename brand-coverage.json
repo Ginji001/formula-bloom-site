@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T07:53:57.933Z",
+  "generatedAt": "2026-11-02T08:20:46.197Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 391,
-  "registeredCandidateCount": 2153,
-  "unresolvedFullIngredientCandidateCount": 1762,
+  "savedFormulaCount": 400,
+  "registeredCandidateCount": 2161,
+  "unresolvedFullIngredientCandidateCount": 1761,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -3724,8 +3724,8 @@
       "brand": "エクセル",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 9,
-      "registeredCandidateCount": 32,
+      "savedFormulaCount": 18,
+      "registeredCandidateCount": 40,
       "knownIngredientExcerptCount": 1,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -3835,6 +3835,96 @@
           "verifiedAt": "2026-11-02T16:49:54+09:00",
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78270/",
           "ingredientCount": 39
+        },
+        {
+          "productId": "rc122-excel-gleam-gf11",
+          "productName": "グリームオンフィットシャドウ GF11 ビジューリング",
+          "variant": "GF11 ビジューリング",
+          "sourcePageId": "78222",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78222/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc122-excel-blush-ab09",
+          "productName": "オーラティック ブラッシュ AB09 パッションティー",
+          "variant": "AB09 パッションティー",
+          "sourcePageId": "78229",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78229/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc122-excel-motivate-mt02",
+          "productName": "モチベートユアスキン MT02 ラベンダーピンク",
+          "variant": "MT02 ラベンダーピンク",
+          "sourcePageId": "78316",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78316/",
+          "ingredientCount": 43
+        },
+        {
+          "productId": "rc122-excel-skinflutter-refill-sf01",
+          "productName": "スキンフラッター セラムクッション リフィル SF01 ライトベージュ",
+          "variant": "SF01 ライトベージュ",
+          "sourcePageId": "78273",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78273/",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "rc122-excel-ethereal-er01",
+          "productName": "エシリアル セラムコンシーラー ER01 ブライトベージュ",
+          "variant": "ER01 ブライトベージュ",
+          "sourcePageId": "78276",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78276/",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc122-excel-realclose-cx08",
+          "productName": "リアルクローズシャドウ CX08 クオーツリング",
+          "variant": "CX08 クオーツリング",
+          "sourcePageId": "78528",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78528/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc103-excel-484a783a838d",
+          "productName": "サイレントカバー コンシーラー",
+          "variant": null,
+          "sourcePageId": "48444",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g48444/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc122-excel-lipvelvet-lv11",
+          "productName": "リップベルベティスト LV11 ローズヒップ",
+          "variant": "LV11 ローズヒップ",
+          "sourcePageId": "78217",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78217/",
+          "ingredientCount": 17
+        },
+        {
+          "productId": "rc122-excel-glazebalm-gb06",
+          "productName": "グレイズバームリップ GB06 ショコラベリー",
+          "variant": "GB06 ショコラベリー",
+          "sourcePageId": "48520",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T17:16:49+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g48520/",
+          "ingredientCount": 31
         }
       ]
     },

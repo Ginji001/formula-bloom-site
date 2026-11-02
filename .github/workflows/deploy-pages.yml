@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2153||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==391)
-            throw Error('rc121 Japanese product name count or verified formula count mismatch');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2161||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==400)
+            throw Error('rc122 Japanese product name count or verified formula count mismatch');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -379,14 +379,14 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1762||
+          if(catalog.unverifiedFullIngredientCandidateCount!==1761||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage118.unresolvedFullIngredientCandidateCount!==1762||
+             coverage118.unresolvedFullIngredientCandidateCount!==1761||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
              coverage118.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc120 1762 remaining names, brand coverage or rights uncertainty not disclosed');
+             throw Error('rc122 1761 remaining names, brand coverage or rights uncertainty not disclosed');
           if(fs.existsSync('_site/data/rc118-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/data/rc118-nov-30-official-japan-ingredient-formulas-20261102.json')||
              fs.existsSync('_site/docs/rc118-rights-and-physical-sku-verification.md'))
@@ -450,7 +450,40 @@ jobs:
              fs.existsSync('_site/data/rc121-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc121-rights-and-shade-identity-audit.md'))
              throw Error('rc121 private origin source or permission research leaked');
-          console.log('Verified public release rc.121: 2153 name candidates, 391 Japanese formula snapshots; 2 Excel exact shades and 1 conditional-color block');
+          const maker122=fs.readFileSync('_site/official-reviewed-rc122.js','utf8');
+          const checked122=[
+            ['rc122-excel-gleam-gf11','78222',21,null,'GF11 ビジューリング'],
+            ['rc122-excel-blush-ab09','78229',20,null,'AB09 パッションティー'],
+            ['rc122-excel-motivate-mt02','78316',43,'40g','MT02 ラベンダーピンク'],
+            ['rc122-excel-skinflutter-refill-sf01','78273',39,null,'SF01 ライトベージュ'],
+            ['rc122-excel-ethereal-er01','78276',37,null,'ER01 ブライトベージュ'],
+            ['rc122-excel-realclose-cx08','78528',21,null,'CX08 クオーツリング'],
+            ['rc103-excel-484a783a838d','48444',20,null,null],
+            ['rc122-excel-lipvelvet-lv11','78217',17,null,'LV11 ローズヒップ'],
+            ['rc122-excel-glazebalm-gb06','48520',31,null,'GB06 ショコラベリー']
+          ];
+          if(!src.includes('official-reviewed-rc122.js')||
+             !maker122.includes('officialReviewedRC122Upgrades')||
+             !maker122.includes('officialReviewedRC122Products')||
+             (maker122.match(/"registrationStatus": "formula-verified"/g)||[]).length!==9||
+             (maker122.match(/"rightsStatus": "republication-permission-unconfirmed"/g)||[]).length!==9||
+             checked122.some(([id,page,count,capacity,shade])=>!maker122.includes(id)||
+               archived.records.filter(r=>r.productId===id&&r.sourcePageId===page&&
+                 r.ingredientCount===count&&r.volume===capacity&&r.variant===shade&&r.sku===null&&
+                 r.region==='jp'&&r.kind==='cosmetic'&&r.sourceType==='official'&&
+                 r.formulaUpdatedAt===null&&
+                 r.sourceUrl==='https://noevirgroup.jp/excel/g/g'+page+'/').length!==1))
+             throw Error('rc122 Japan maker 9 individual shade/refill ingredient identity/rights check failed');
+          const sameShade=archived.records.find(x=>x.productId==='rc121-excel-skinflutter-sf01-lightbeige');
+          const refill=archived.records.find(x=>x.productId==='rc122-excel-skinflutter-refill-sf01');
+          if(!sameShade||!refill||sameShade.sourceUrl===refill.sourceUrl||
+             !refill.productName.includes('リフィル'))
+             throw Error('rc122 package/variant re-use must not confuse bottle and refill');
+          if(fs.existsSync('_site/data/rc122-excel-nine-individual-jp-full-ingredients-20261102.json')||
+             fs.existsSync('_site/data/rc122-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc122-nine-excel-original-japan-product-pages.md'))
+             throw Error('rc122 private original ingredient review or internal audit leaked to public Pages');
+          console.log('Verified public rc.122: 2161 names / 400 official Japanese saved formulas / 1761 unresolved; 9 exact Excel original-page identities');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
