@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-97')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-98')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -867,6 +867,44 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc137.json'))
                throw Error('rc137 Obagi three exact maker refill partial name cases or 85/1669 invalid');
           console.log('Verified rc137: 3 Japanese Obagi exact refill names, source-only volumes, 85 reference products / 1669 missing names');
+          const original138=JSON.parse(fs.readFileSync('_site/original-name-coverage-rc138.json','utf8'));
+          const inci138=JSON.parse(fs.readFileSync('_site/inci-reference-evidence.json','utf8'));
+          const view138=fs.readFileSync('_site/original-name-review-rc138.html','utf8');
+          const csv138=fs.readFileSync('_site/original-name-coverage-rc138.csv','utf8');
+          const originalIds138=new Set(original138.records.map(x=>x.productId));
+          const s138=original138.summary;
+          const storedInci138=new Map(inci138.records.map(x=>[x.productId,x]));
+          if(original138.records.length!==1754||originalIds138.size!==1754||
+             [...originalIds138].some(id=>!decisionIds.has(id))||
+             s138.frozenCohort!==1754||s138.fullJapaneseFormulaSnapshots!==409||
+             s138.japaneseNameReferenceProducts!==85||
+             s138.originalEnglishReferenceProducts!==26||
+             s138.overlappingJapaneseAndEnglishProducts!==4||
+             s138.englishOnlyReferenceProducts!==22||
+             s138.noRecordedIngredientNameProducts!==1647||
+             s138.ingredientNameReferenceProducts!==107||
+             s138.japaneseNameNotRecordedProducts!==1669||
+             s138.originalNamesPreservedWithoutTranslation!==true||
+             s138.newlyDiscoveredIngredients!==0||
+             storedInci138.size!==26||
+             original138.records.filter(x=>x.status==='japanese-reference-recorded').length!==85||
+             original138.records.filter(x=>x.status==='original-inci-reference-only').length!==22||
+             original138.records.filter(x=>x.status==='no-ingredient-name-evidence').length!==1647||
+             original138.records.some(x=>x.fullFormulaReproduced!==false||
+               x.sequenceValidated!==false||x.japaneseDomesticLabelMatched!==false)||
+             original138.records.some(x=>{
+               const ref=storedInci138.get(x.productId);
+               return ref?JSON.stringify(x.originalNames)!==JSON.stringify(ref.ingredients)||
+                 x.originalSourceMarket!==ref.sourceMarket||x.originalSourceUrl!==ref.sourceUrl:
+                 x.originalNames.length!==0;
+             })||
+             !csv138.startsWith('\uFEFF')||csv138.split('\n').length!==1756||
+             !view138.includes('original-name-coverage-rc138.json')||
+             !view138.includes('原文成分名の収録状況')||
+             !sourceOnlyHome.includes('original-name-review-rc138.html'))
+               throw Error('rc138 original language 85/22/1647 ledger or exact INCI spelling mismatch');
+          console.log('Verified rc138: original English INCI names unchanged for 26 references; 85 Japanese, 22 English-only, 1647 with no names');
+
 
 
 
