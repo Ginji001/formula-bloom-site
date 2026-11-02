@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-95')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-96')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -807,6 +807,38 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc135.json'))
               throw Error('rc135 three verified KATE maker JANs or 74/1680 coverage invalid');
           console.log('Verified rc135: three individual Japanese KATE maker JANs, 45 displayed names, 74 with references and 1680 still missing');
+          const rr136=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc136.json','utf8'));
+          const cx136=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc136.json','utf8'));
+          const cv136=fs.readFileSync('_site/unresolved-review-rc136.html','utf8');
+          const csv136=fs.readFileSync('_site/ingredient-name-coverage-rc136.csv','utf8');
+          const group136=new Set(cx136.records.map(r=>r.productId));
+          const expected136=new Map([['rc61-catalog-025',10],['rc61-catalog-026',10],
+           ['rc61-catalog-028',4],['rc61-catalog-030',10],['rc61-catalog-032',8],
+           ['rc61-catalog-035',6],['rc61-catalog-037',9],['rc124-rohto-bloomio-cream-30',11]]);
+          if(rr136.records.length!==8||rr136.productCount!==8||
+             rr136.ingredientNameAssociations!==68||
+             rr136.records.some(x=>expected136.get(x.productId)!==x.ingredients.length||
+               !x.sourceUrl.startsWith('https://www.shop.rohto.co.jp/category/skincare/')||
+               x.coverage!=='partial-only'||x.order!=='not-confirmed'||
+               x.labelCompared!==false||x.currentFormulaCompared!==false||
+               x.manufacturerProductPageIndividuallyChecked!==true)||
+             rr136.records.find(x=>x.productId==='rc61-catalog-028')?.sourceEvidenceType!=='featured-hyaluronic-name-facts-only-no-full-ingredient-panel'||
+             cx136.records.length!==1754||group136.size!==1754||
+             [...group136].some(x=>!decisionIds.has(x))||
+             cx136.summary.japaneseNameReferenceProducts!==82||
+             cx136.summary.japaneseNameNotRecordedProducts!==1672||
+             cx136.summary.fullJapaneseFormulaSnapshots!==409||
+             cx136.summary.fullFormulaNewlyAdded!==0||
+             cx136.records.filter(x=>x.status==='ingredient-name-reference-available').length!==82||
+             cx136.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1672||
+             !csv136.startsWith('\uFEFF')||csv136.split('\n').length!==1756||
+             !cv136.includes('ingredient-name-coverage-rc136.json')||
+             !cv136.includes('1,672')||
+             !sourceOnlyHome.includes('unresolved-review-rc136.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc136.json'))
+               throw Error('rc136 exact manufacturer page partial-name references 82/1672 invalid');
+          console.log('Verified rc136: 8 Japanese ROHTO SKU facts (68 names), 82 references / 1672 without Japanese name evidence');
+
 
 
 
