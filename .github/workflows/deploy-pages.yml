@@ -41,7 +41,7 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2161||
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2163||
               catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==409)
             throw Error('rc123 Japanese product name count or verified formula count mismatch');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
@@ -180,9 +180,9 @@ jobs:
              !review112.includes('japan-rohto-maker-item-and-ingredient-display'))
              throw Error('rc112 reviewed individual Obagi source data or exact product references missing');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1824)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(coverage112.unresolvedFullIngredientCandidateCount)||coverage112.unresolvedFullIngredientCandidateCount>1824)||
-             coverage112.singleProductCandidateBrandCount!==33||
+             coverage112.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
              throw Error('rc112 baseline coverage regression or rights verification misrepresented');
           const obagi112=archived.records.filter(r=>r.productId.startsWith('rc92-official-family-obagi-')||
@@ -223,9 +223,9 @@ jobs:
              !uv113.some(r=>r.productId===id&&r.ingredientCount===n&&r.sku===jan&&r.volume==='70g')))
              throw Error('Skin Aqua color shade JAN or individual ingredients mismatched');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1810)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(coverage113.unresolvedFullIngredientCandidateCount)||coverage113.unresolvedFullIngredientCandidateCount>1810)||
-             coverage113.singleProductCandidateBrandCount!==33||
+             coverage113.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
              throw Error('rc113 historical baseline coverage regression or misleading source rights disclosure');
           if(fs.existsSync('_site/data/rc113-all-unresolved-japan-formula-triage-20261102.json')||
@@ -256,9 +256,9 @@ jobs:
                !r.order.includes('配合順')))
              throw Error('rc114 expected domestic 8/5 brands and separately disclosed quasi-drug actives');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1797)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(coverage114.unresolvedFullIngredientCandidateCount)||coverage114.unresolvedFullIngredientCandidateCount>1797)||
-             coverage114.singleProductCandidateBrandCount!==33||
+             coverage114.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
              throw Error('rc114 historical baseline regression or rights uncertainty not publicly preserved');
           if(fs.existsSync('_site/data/rc114-all-unresolved-japan-formula-triage-20261102.json')||
@@ -287,9 +287,9 @@ jobs:
              !quasi115.otherIngredients||!quasi115.order.includes('配合順'))
              throw Error('rc115 genuine five-ingredient remover, unverified pack and quasi status not respected');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1790)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(cov115.unresolvedFullIngredientCandidateCount)||cov115.unresolvedFullIngredientCandidateCount>1790)||
-             cov115.singleProductCandidateBrandCount!==33||
+             cov115.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
             throw Error('rc115 historical baseline or rights uncertainty regressed');
           if(fs.existsSync('_site/data/rc115-all-unresolved-japan-formula-triage-20261102.csv')||
@@ -316,11 +316,11 @@ jobs:
              !unknown116||unknown116.volume!==null||unknown116.sku!==null)
              throw Error('rc116 SANA 200mL source-specific JAN or unlisted Fit Eye Base capacity incorrect');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1785)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(coverage116.unresolvedFullIngredientCandidateCount)||coverage116.unresolvedFullIngredientCandidateCount>1785)||
              coverage116.brandsWithSavedFormulas!==74||
              coverage116.brandsWithoutSavedFormulas!==73||
-             coverage116.singleProductCandidateBrandCount!==33||
+             coverage116.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
              throw Error('rc116 historical maximum unresolved candidates, 74 brands or republishing rights baseline regression');
           if(fs.existsSync('_site/data/rc116-all-unresolved-japan-formula-triage-20261102.csv')||
@@ -349,11 +349,11 @@ jobs:
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc117 8 unique NOV drug ingredients and one preserved exact 17-ingredient R not verified');
           if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1777)||
-             catalog.singleProductCandidateBrandCount!==33||
+             catalog.singleProductCandidateBrandCount!==32||
              (!Number.isInteger(coverage117.unresolvedFullIngredientCandidateCount)||coverage117.unresolvedFullIngredientCandidateCount>1777)||
              coverage117.brandsWithSavedFormulas!==74||
              coverage117.brandsWithoutSavedFormulas!==73||
-             coverage117.singleProductCandidateBrandCount!==33||
+             coverage117.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
              throw Error('rc117 historical remaining-name baseline, source coverage or legal rights regressed');
           if(fs.existsSync('_site/data/rc117-nov3-nine-jp-official-quasi-formulas-20261102.json')||
@@ -379,14 +379,14 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1752||
-             catalog.singleProductCandidateBrandCount!==33||
-             coverage118.unresolvedFullIngredientCandidateCount!==1752||
+          if(catalog.unverifiedFullIngredientCandidateCount!==1754||
+             catalog.singleProductCandidateBrandCount!==32||
+             coverage118.unresolvedFullIngredientCandidateCount!==1754||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
-             coverage118.singleProductCandidateBrandCount!==33||
+             coverage118.singleProductCandidateBrandCount!==32||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc123 1752 remaining names, brand coverage or rights uncertainty not disclosed');
+             throw Error('rc124 1754 still-unknown ingredients, brand coverage and rights uncertainty not disclosed');
           if(fs.existsSync('_site/data/rc118-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/data/rc118-nov-30-official-japan-ingredient-formulas-20261102.json')||
              fs.existsSync('_site/docs/rc118-rights-and-physical-sku-verification.md'))
@@ -522,7 +522,30 @@ jobs:
              fs.existsSync('_site/data/rc123-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc123-sana-nd-nine-original-refill-japan-maker-review.md'))
              throw Error('Private manufacturer source or historical partial rights review leaked');
-          console.log('Verified rc.123: 2161 product names, 409 full Japanese formulas, 1752 unresolved, 48 active partial references; 9 SANA ND individual original/refill pages verified');
+          const maker124=fs.readFileSync('_site/official-identity-rc124.js','utf8');
+          const browser124=fs.readFileSync('_site/app.js','utf8');
+          const rohto124=[
+            ['rc54-rohto-bloomio-lotion-145','192809','145mL','4987241192809'],
+            ['rc124-rohto-bloomio-serum-50','198702','50g','4987241198702'],
+            ['rc124-rohto-bloomio-cream-30','174560','30g','4987241174560']
+          ];
+          const rohtoEntries=catalog.brands.find(x=>x.brand==='ロート製薬');
+          if(!rohtoEntries||!maker124.includes('officialIdentityRC124Upgrades')||
+             !maker124.includes('officialIdentityRC124Products')||
+             !browser124.includes('メーカー公式の日本語全成分を開く')||
+             !browser124.includes('花の自動生成は行いません')||
+             rohto124.some(([id,page,volume,jan])=>
+               !maker124.includes(id)||!maker124.includes(jan)||
+               rohtoEntries.products.filter(p=>p.productId===id&&p.volume===volume&&p.jan===jan&&
+                 p.ingredientEvidenceStatus===(id==='rc54-rohto-bloomio-lotion-145'?'known-ingredients-only':'no-ingredients-recorded')&&
+                 p.sourceUrl==='https://www.shop.rohto.co.jp/category/skincare/bloomio/'+page+'.html').length!==1||
+               archived.records.some(r=>r.productId===id)))
+             throw Error('rc124 Rohto exact-name-only maker URL/JAN or no-license full-list safeguards failed');
+          if(fs.existsSync('_site/data/rc124-rohto-bloomio-three-official-japan-sku-formula-audit-20261102.json')||
+             fs.existsSync('_site/data/rc124-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc124-rohto-bloomio-public-source-rights-gate.md'))
+             throw Error('rc124 private manufacturer ingredient audit or rights findings leaked to static site');
+          console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

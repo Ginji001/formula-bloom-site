@@ -805,6 +805,14 @@ function selectRegisteredFormula(item,context=''){
       item.sourceScope?.startsWith('japan-official-')?'全成分：未収録（公式掲載名・販売状況と現物ラベルは未確認）':
       imported?'国内向け全成分：未確認（韓国直送）':'全成分：未収録';
     container.append(state);
+    // A manufacturer's exact ingredient page can be known without having permission
+    // to republish the list. This is a link, not an automatic formula or endorsement.
+    if(item.sourceScope==='japan-maker-exact-ingredient-page-no-republication-permission'&&item.ingredientSourceUrl){
+      const notice=document.createElement('p');notice.className='muted';
+      notice.textContent='メーカー公式で商品・容量・JAN・成分欄を確認済み。全成分の転載許諾と現物表示は未確認のため、花の自動生成は行いません。';
+      container.append(notice);
+      sourceLink(container,item.ingredientSourceUrl,'メーカー公式の日本語全成分を開く');
+    }
     showPartialChoices($('searchResults'),item);
     const input=document.createElement('button');input.type='button';input.className='secondary quick-manual-input';
     input.textContent='日本語全成分を入力';
