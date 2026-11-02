@@ -405,30 +405,6 @@
       "note": "良品計画の日本商品300mL販売情報・注釈と無印良品公式楽天店の日本語成分名を照合した抜粋。詰替/携帯用へ流用しない。"
     },
     {
-      "productId": "rc62-sana-01",
-      "brand": "サナ",
-      "productName": "なめらか本舗 化粧水 ND",
-      "volume": null,
-      "variant": "本体",
-      "kind": "cosmetic",
-      "ingredients": [
-        "豆乳イソフラボン",
-        "豆乳発酵液",
-        "セラミドNG",
-        "グリチルリチン酸2K"
-      ],
-      "sourceUrl": "https://nameraka.jp/sp/line/makecleansingmilk.html",
-      "checkedOn": "2026-11-01",
-      "sourceType": "japanese-manufacturer-website",
-      "evidenceType": "manufacturer-declared-partial-ingredient-names",
-      "coverage": "partial-only",
-      "order": "not-confirmed",
-      "labelCompared": false,
-      "currentFormulaCompared": false,
-      "copyingPermissionForFullList": false,
-      "note": "常盤薬品の公式2026保湿ラインにおける「化粧水ND」専用の商品説明と成分名称。グリセリンフリーを維持し旧化粧水/しっとり/詰替を混ぜない。"
-    },
-    {
       "productId": "rc37-jillstuart",
       "brand": "ジルスチュアート",
       "productName": "リップブロッサム グロウ 07",

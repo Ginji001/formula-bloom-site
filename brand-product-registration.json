@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T08:20:46.205Z",
+  "generatedAt": "2026-11-02T08:34:20.955Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2161,
-  "ingredientRecords": 400,
-  "knownIngredientRecords": 49,
-  "unverifiedFullIngredientCandidateCount": 1761,
+  "ingredientRecords": 409,
+  "knownIngredientRecords": 48,
+  "unverifiedFullIngredientCandidateCount": 1752,
   "singleProductCandidateBrandCount": 33,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
@@ -21495,8 +21495,8 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 11,
-      "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 1,
+      "ingredientRecordCount": 10,
+      "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://noevirgroup.jp/",
@@ -21507,13 +21507,13 @@
           "series": null,
           "productType": null,
           "variant": "本体",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70337/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "known-ingredients-only"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-02",
@@ -21521,13 +21521,13 @@
           "series": null,
           "productType": null,
           "variant": "つめかえ用",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70338/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-03",
@@ -21535,13 +21535,13 @@
           "series": null,
           "productType": null,
           "variant": "本体",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70339/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-04",
@@ -21549,13 +21549,13 @@
           "series": null,
           "productType": null,
           "variant": "つめかえ用",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70340/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-05",
@@ -21563,13 +21563,13 @@
           "series": null,
           "productType": null,
           "variant": "本体",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70341/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "200mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-06",
@@ -21577,13 +21577,13 @@
           "series": null,
           "productType": null,
           "variant": "つめかえ用",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70342/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-07",
@@ -21591,13 +21591,13 @@
           "series": null,
           "productType": null,
           "variant": "本体",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70343/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-08",
@@ -21605,13 +21605,13 @@
           "series": null,
           "productType": null,
           "variant": "つめかえ用",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70344/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "130mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-09",
@@ -21619,13 +21619,13 @@
           "series": null,
           "productType": null,
           "variant": "本体",
-          "sourceUrl": "https://noevirgroup.jp/sana/c/cnameraka/",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g70345/",
           "kind": "cosmetic",
-          "volume": null,
+          "volume": "50g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-10",

@@ -42,8 +42,8 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2161||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==400)
-            throw Error('rc122 Japanese product name count or verified formula count mismatch');
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==409)
+            throw Error('rc123 Japanese product name count or verified formula count mismatch');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -379,14 +379,14 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1761||
+          if(catalog.unverifiedFullIngredientCandidateCount!==1752||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage118.unresolvedFullIngredientCandidateCount!==1761||
+             coverage118.unresolvedFullIngredientCandidateCount!==1752||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
              coverage118.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc122 1761 remaining names, brand coverage or rights uncertainty not disclosed');
+             throw Error('rc123 1752 remaining names, brand coverage or rights uncertainty not disclosed');
           if(fs.existsSync('_site/data/rc118-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/data/rc118-nov-30-official-japan-ingredient-formulas-20261102.json')||
              fs.existsSync('_site/docs/rc118-rights-and-physical-sku-verification.md'))
@@ -483,7 +483,46 @@ jobs:
              fs.existsSync('_site/data/rc122-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc122-nine-excel-original-japan-product-pages.md'))
              throw Error('rc122 private original ingredient review or internal audit leaked to public Pages');
-          console.log('Verified public rc.122: 2161 names / 400 official Japanese saved formulas / 1761 unresolved; 9 exact Excel original-page identities');
+          const sana123=fs.readFileSync('_site/official-reviewed-rc123.js','utf8');
+          const nd123=[
+            ['rc62-sana-01','70337','200mL','本体',21],
+            ['rc62-sana-02','70338','180mL','つめかえ用',21],
+            ['rc62-sana-03','70339','200mL','本体',21],
+            ['rc62-sana-04','70340','180mL','つめかえ用',21],
+            ['rc62-sana-05','70341','200mL','本体',24],
+            ['rc62-sana-06','70342','180mL','つめかえ用',24],
+            ['rc62-sana-07','70343','150mL','本体',24],
+            ['rc62-sana-08','70344','130mL','つめかえ用',24],
+            ['rc62-sana-09','70345','50g','本体',31]
+          ];
+          const named=new Set(nd123.map(([id])=>id));
+          if(!sana123.includes('officialReviewedRC123Upgrades')||
+             nd123.some(([id,page,volume,variant,count])=>
+               !sana123.includes(id)||
+               archived.records.filter(r=>r.productId===id&&r.sourcePageId===page&&
+                 r.sourceUrl==='https://noevirgroup.jp/sana/g/g'+page+'/'&&
+                 r.ingredientCount===count&&r.volume===volume&&r.variant===variant&&r.sku===null&&
+                 r.region==='jp'&&r.kind==='cosmetic'&&r.sourceType==='official'&&
+                 r.formulaUpdatedAt===null).length!==1))
+             throw Error('rc123 SANA ND 9 original/refill Japanese ingredients or source identities invalid');
+          if(new Set(archived.records.filter(r=>named.has(r.productId)).map(r=>r.productId)).size!==9)
+             throw Error('Missing original 9 ND ingredient records');
+          for(const [i,j] of [[0,1],[2,3],[4,5],[6,7]]){
+            const a=archived.records.find(r=>r.productId===nd123[i][0]);
+            const b=archived.records.find(r=>r.productId===nd123[j][0]);
+            if(a.sourceUrl===b.sourceUrl||a.volume===b.volume||a.sha256!==b.sha256||a.ingredients!==b.ingredients)
+              throw Error('ND original/refill independent manufacturer lists differ or SKU types conflated');
+          }
+          const partial123=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence.json','utf8'));
+          if(partial123.records.length!==48||catalog.knownIngredientRecords!==48||
+             partial123.records.some(x=>x.productId==='rc62-sana-01'))
+             throw Error('Old ND partial-only evidence was not migrated after exact full-ingredient upgrade');
+          if(fs.existsSync('_site/data/rc123-sana-nd-nine-exact-japanese-ingredient-formulas-20261102.json')||
+             fs.existsSync('_site/data/rc123-sana-nd-migrated-partial-evidence-20261102.json')||
+             fs.existsSync('_site/data/rc123-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc123-sana-nd-nine-original-refill-japan-maker-review.md'))
+             throw Error('Private manufacturer source or historical partial rights review leaked');
+          console.log('Verified rc.123: 2161 product names, 409 full Japanese formulas, 1752 unresolved, 48 active partial references; 9 SANA ND individual original/refill pages verified');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
