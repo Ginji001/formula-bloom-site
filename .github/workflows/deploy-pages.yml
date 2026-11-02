@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-89')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-90')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -645,6 +645,32 @@ jobs:
              !sourceOnlyHome.includes('成分名未収録1,701件・参考収録53件'))
              throw Error('rc129 relaxed Japanese name-reference coverage failed');
           console.log('Verified rc129: 53 reference-name products and 1701 remaining, 409 full formula snapshots');
+          const nextCoverage=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc130.json','utf8'));
+          const nextFacts=JSON.parse(fs.readFileSync('_site/source-disclosed-ingredient-names-rc130.json','utf8'));
+          const nextReview=fs.readFileSync('_site/unresolved-review-rc130.html','utf8');
+          const nextCSV=fs.readFileSync('_site/ingredient-name-coverage-rc130.csv','utf8');
+          const newRef=nextFacts.records[0];
+          const idsRC130=new Set(nextCoverage.records.map(x=>x.productId));
+          if(nextCoverage.records.length!==1754||idsRC130.size!==1754||
+             nextCoverage.summary.japaneseNameReferenceProducts!==54||
+             nextCoverage.summary.japaneseNameNotRecordedProducts!==1700||
+             nextCoverage.summary.fullJapaneseFormulaSnapshots!==409||
+             nextCoverage.summary.newlyRecordedJapaneseIngredientNameProducts!==1||
+             nextCoverage.summary.newlyRecordedJapaneseIngredientNames!==22||
+             nextCoverage.records.filter(x=>x.status==='ingredient-name-reference-available').length!==54||
+             nextCoverage.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1700||
+             nextFacts.records.length!==1||nextFacts.notFullFormulaArchive!==true||
+             newRef.productId!=='rc67-chifure-milk-refill'||newRef.ingredientNames.length!==22||
+             newRef.formulaOrderConfirmed!==false||newRef.completePhysicalLabelConfirmed!==false||
+             newRef.sourceUrl!=='https://www.chifure.co.jp/products/milkylotion/2877'||
+             !nextCSV.startsWith('\uFEFF')||nextCSV.split('\n').length!==1756||
+             !nextReview.includes('ingredient-name-coverage-rc130.json')||
+             !nextReview.includes('1,700')||!nextReview.includes('54')||
+             !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc130.json')||
+             !sourceOnlyHome.includes('unresolved-review-rc130.html'))
+              throw Error('rc130 54 reference products and 1700 missing-name cohort gate failed');
+          console.log('Verified rc130: 22 independent Japanese name facts for Chifure milk refill, 54 reference products, 1700 still missing');
+
 
 
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');

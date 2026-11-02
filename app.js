@@ -69,7 +69,7 @@ function partialEvidence(){
 }
 let sourceDisclosedFactsPromise=null;
 function sourceDisclosedFacts(){
- if(!sourceDisclosedFactsPromise)sourceDisclosedFactsPromise=getJSON('/source-disclosed-ingredient-names-rc128.json').then(validateDisclosedNameFacts).catch(e=>{sourceDisclosedFactsPromise=null;throw e;});
+ if(!sourceDisclosedFactsPromise)sourceDisclosedFactsPromise=Promise.all([getJSON('/source-disclosed-ingredient-names-rc128.json'),getJSON('/source-disclosed-ingredient-names-rc130.json')]).then(all=>all.flatMap(validateDisclosedNameFacts)).catch(e=>{sourceDisclosedFactsPromise=null;throw e;});
  return sourceDisclosedFactsPromise;
 }
 let englishInciEvidencePromise=null;
