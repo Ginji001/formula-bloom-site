@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-94')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-95')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -779,6 +779,35 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc134.json'))
              throw Error('rc134 domestic 6 Japanese ingredient reference SKUs or 71/1683 count invalid');
           console.log('Verified rc134: 6 exact Japan-domestic product references, 15 names each, 71 reference products and 1683 missing');
+          const k135=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc135.json','utf8'));
+          const c135=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc135.json','utf8'));
+          const v135=fs.readFileSync('_site/unresolved-review-rc135.html','utf8');
+          const csv135=fs.readFileSync('_site/ingredient-name-coverage-rc135.csv','utf8');
+          const ids135=new Set(c135.records.map(x=>x.productId));
+          const kateJans=new Set(['4973167016848','4973167016855','4973167016862']);
+          if(k135.productCount!==3||k135.records.length!==3||
+             k135.ingredientNameAssociations!==45||
+             k135.records.some(x=>x.brand!=='KATE'||!kateJans.has(x.jan)||
+              x.sourceUrl!=='https://www.kao-kirei.com/ja/item/kbb/kate/'+x.jan+'/'||
+              x.ingredients.length!==15||x.coverage!=='partial-only'||
+              x.order!=='not-confirmed'||x.labelCompared!==false||
+              x.currentFormulaCompared!==false||x.makerPageIndividuallyReviewed!==true)||
+             ids135.size!==1754||c135.records.length!==1754||
+             [...ids135].some(id=>!decisionIds.has(id))||
+             c135.summary.japaneseNameReferenceProducts!==74||
+             c135.summary.japaneseNameNotRecordedProducts!==1680||
+             c135.summary.fullJapaneseFormulaSnapshots!==409||
+             c135.summary.fullFormulaNewlyAdded!==0||
+             c135.records.filter(x=>x.status==='ingredient-name-reference-available').length!==74||
+             c135.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1680||
+             !csv135.startsWith('\uFEFF')||csv135.split('\n').length!==1756||
+             !v135.includes('ingredient-name-coverage-rc135.json')||
+             !v135.includes('1,680')||
+             !sourceOnlyHome.includes('unresolved-review-rc135.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc135.json'))
+              throw Error('rc135 three verified KATE maker JANs or 74/1680 coverage invalid');
+          console.log('Verified rc135: three individual Japanese KATE maker JANs, 45 displayed names, 74 with references and 1680 still missing');
+
 
 
 
