@@ -45,6 +45,11 @@ export async function staticGetJSON(path,{signal}={}){
   if(!response.ok)throw Error('追加の表示名称資料を読み込めません。');
   return response.json();
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc140.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc140.json',{signal});
+  if(!response.ok)throw Error('個別JANの公式成分原文を読み込めません。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc139.json')){
   const response=await fetch('./partial-ingredient-evidence-rc139.json',{signal});
   if(!response.ok)throw Error('個別JANの公式成分原文を読み込めません。');

@@ -64,7 +64,7 @@ async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let partialEvidencePromise=null;
 function partialEvidence(){
- if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json'),getJSON('/partial-ingredient-evidence-rc139.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
+ if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json'),getJSON('/partial-ingredient-evidence-rc139.json'),getJSON('/partial-ingredient-evidence-rc140.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
 }
 let sourceDisclosedFactsPromise=null;
