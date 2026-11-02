@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2151||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==389)
-            throw Error('rc120 Japanese product name count or verified formula count mismatch');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2153||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==391)
+            throw Error('rc121 Japanese product name count or verified formula count mismatch');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -428,7 +428,29 @@ jobs:
              fs.existsSync('_site/data/rc120-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc120-rights-and-physical-sku-verification.md'))
              throw Error('rc120 original maker evidence or private rights audit published');
-          console.log('Verified public static release rc.120: 2151 names, 146/147 brand names, 389 Japanese ingredient snapshots (74 brands), 3 new Excel formulas and 16 name-only PREMIER SKUs');
+          const excel121=fs.readFileSync('_site/official-reviewed-rc121.js','utf8');
+          const exact121=[
+            ['rc121-excel-extrarich-ex05-sugargem',60,'17g','EX05 シュガージェム','78315'],
+            ['rc121-excel-skinflutter-sf01-lightbeige',39,'13g','SF01 ライトベージュ','78270']
+          ];
+          if(!src.includes('official-reviewed-rc121.js')||
+             (excel121.match(/"registrationStatus": "formula-verified"/g)||[]).length!==2||
+             (excel121.match(/"rightsStatus": "republication-permission-unconfirmed"/g)||[]).length!==2||
+             exact121.some(([id,n,vol,shade,code])=>!excel121.includes(id)||
+               archived.records.filter(r=>r.productId===id&&r.ingredientCount===n&&
+                 r.volume===vol&&r.variant===shade&&r.kind==='cosmetic'&&
+                 r.sourceType==='official'&&r.region==='jp'&&r.sku===null&&
+                 r.formulaUpdatedAt===null&&r.sourcePageId===code&&
+                 r.sourceUrl==='https://noevirgroup.jp/excel/g/g'+code+'/').length!==1))
+             throw Error('rc121 Excel exact shades, capacities, ingredient counts or rights boundaries invalid');
+          if(archived.records.some(r=>['rc103-excel-1f0ff66001cc','rc103-excel-688264ed59f8','rc103-excel-24cb5b037a8f'].includes(r.productId))||
+             archived.records.some(r=>r.sourcePageId==='78330'))
+             throw Error('rc121 unconfirmed generic/conditional-color formulas must remain unavailable');
+          if(fs.existsSync('_site/data/rc121-excel-two-shade-specific-japan-maker-formulas-20261102.json')||
+             fs.existsSync('_site/data/rc121-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc121-rights-and-shade-identity-audit.md'))
+             throw Error('rc121 private origin source or permission research leaked');
+          console.log('Verified public release rc.121: 2153 name candidates, 391 Japanese formula snapshots; 2 Excel exact shades and 1 conditional-color block');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

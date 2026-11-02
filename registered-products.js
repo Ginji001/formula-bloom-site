@@ -1,3 +1,4 @@
+import {officialReviewedRC121Products} from './official-reviewed-rc121.js';
 import {officialReviewedRC120Upgrades,officialReviewedRC120Products} from './official-reviewed-rc120.js';
 import {officialReviewedRC118Upgrades} from './official-reviewed-rc118.js';
 import {officialReviewedRC117Upgrades} from './official-reviewed-rc117.js';
@@ -630,7 +631,8 @@ export const registeredProducts=Object.freeze([
  ...officialReviewedRC108Products,
  ...officialReviewedRC109Products,
  ...officialReviewedRC112Products,
- ...officialReviewedRC120Products
+ ...officialReviewedRC120Products,
+ ...officialReviewedRC121Products
  ].map(x=>{
   // Historical products retain their original IDs, aliases and search identity.
   // An exact Japanese manufacturer full-ingredient source can upgrade their status.
