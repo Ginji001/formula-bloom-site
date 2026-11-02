@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-31T12:15:00.148Z",
+  "checkedAt": "2026-11-02T01:27:36.796Z",
   "brandCount": 147,
   "siteCandidateCount": 47,
   "sitesWithReachableHead": 46,
-  "brandsWithIngredientRecords": 72,
-  "brandsWithoutIngredientRecords": 75,
+  "brandsWithIngredientRecords": 74,
+  "brandsWithoutIngredientRecords": 73,
   "allBrandProductsVerified": false,
   "note": "登録済み47サイトの接続状態確認と147ブランドの成分収録状況。サイト接続は商品・全成分の取得成功を意味しません。",
   "brands": [
@@ -410,7 +410,7 @@
       "brand": "肌ラボ",
       "sourceCandidate": "https://www.shop.rohto.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -428,7 +428,7 @@
       "brand": "ケアセラ",
       "sourceCandidate": "https://www.shop.rohto.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -437,7 +437,7 @@
       "brand": "オバジ",
       "sourceCandidate": "https://www.shop.rohto.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 18,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -446,7 +446,7 @@
       "brand": "スキンアクア",
       "sourceCandidate": "https://www.shop.rohto.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 15,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -482,7 +482,7 @@
       "brand": "綾花",
       "sourceCandidate": "https://www.chifure.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 6,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -491,7 +491,7 @@
       "brand": "HIKARIMIRAI",
       "sourceCandidate": "https://www.chifure.co.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 16,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -581,7 +581,7 @@
       "brand": "アスタリフト",
       "sourceCandidate": "https://www.fujifilm.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 35,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -590,7 +590,7 @@
       "brand": "ルナメア",
       "sourceCandidate": "https://www.fujifilm.com/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "allProductsCovered": false,
       "nextAction": "verify-unlisted-products-and-variants"
     },
@@ -626,9 +626,9 @@
       "brand": "サナ",
       "sourceCandidate": "https://noevirgroup.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 70,
@@ -644,9 +644,9 @@
       "brand": "エクセル",
       "sourceCandidate": "https://noevirgroup.jp/",
       "sourceStatus": "reachable",
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 4,
       "allProductsCovered": false,
-      "nextAction": "locate-domestic-product-page-and-verify-japanese-full-ingredients"
+      "nextAction": "verify-unlisted-products-and-variants"
     },
     {
       "brandId": 72,

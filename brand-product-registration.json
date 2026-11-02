@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:58:09.002Z",
+  "generatedAt": "2026-11-02T01:28:24.247Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2133,
-  "ingredientRecords": 343,
+  "ingredientRecords": 348,
   "knownIngredientRecords": 49,
-  "unverifiedFullIngredientCandidateCount": 1790,
+  "unverifiedFullIngredientCandidateCount": 1785,
   "singleProductCandidateBrandCount": 33,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
-  "brandsWithKnownIngredientsOnly": 46,
+  "brandsWithKnownIngredientsOnly": 44,
   "completeAllProducts": false,
   "note": "全ブランドを仮登録。商品名が未確認のブランドでは実在しない商品の名称を作らない。既登録の製品も全SKU網羅や販売中を保証しない。成分保存版の有無は別管理。",
   "brands": [
@@ -21495,7 +21495,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 11,
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 1,
       "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -21637,9 +21637,9 @@
           "kind": "cosmetic",
           "volume": "200mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "jan": "4964596485763",
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc62-sana-11",
@@ -21723,7 +21723,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 28,
-      "ingredientRecordCount": 0,
+      "ingredientRecordCount": 4,
       "knownIngredientRecordCount": 1,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -22044,12 +22044,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78124/",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-excel-468dfeadb9db",
@@ -22086,12 +22086,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78269/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "190mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-excel-249db6e7099c",
@@ -22100,12 +22100,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78226/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "43g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-excel-3e4068de4818",
@@ -22114,12 +22114,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/excel/g/g78107/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "195mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },

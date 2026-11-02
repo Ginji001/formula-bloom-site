@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:58:08.994Z",
+  "generatedAt": "2026-11-02T01:28:24.239Z",
   "brandCount": 147,
-  "brandsWithSavedFormulas": 72,
-  "brandsWithoutSavedFormulas": 75,
-  "brandsWithKnownIngredientsOnly": 46,
+  "brandsWithSavedFormulas": 74,
+  "brandsWithoutSavedFormulas": 73,
+  "brandsWithKnownIngredientsOnly": 44,
   "brandsWithNoIngredientEvidence": 29,
   "knownIngredientExcerptCount": 49,
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 343,
+  "savedFormulaCount": 348,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1790,
+  "unresolvedFullIngredientCandidateCount": 1785,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -3257,12 +3257,12 @@
       "brand": "サナ",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 1,
       "registeredCandidateCount": 11,
       "knownIngredientExcerptCount": 1,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
-      "ingredientEvidenceStatus": "known-ingredients-only",
+      "ingredientEvidenceStatus": "full-list-snapshot-available",
       "partialProducts": [
         {
           "productId": "rc62-sana-01",
@@ -3275,10 +3275,21 @@
           "physicalLabelCompared": false
         }
       ],
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc62-sana-10",
+          "productName": "なめらか本舗 リンクル化粧水 N",
+          "variant": "本体",
+          "sourcePageId": "48576",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:19:31+09:00",
+          "sourceUrl": "https://noevirgroup.jp/sana/g/g48576/",
+          "ingredientCount": 36
+        }
+      ]
     },
     {
       "brandId": 70,
@@ -3333,12 +3344,12 @@
       "brand": "エクセル",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 0,
+      "savedFormulaCount": 4,
       "registeredCandidateCount": 28,
       "knownIngredientExcerptCount": 1,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
-      "ingredientEvidenceStatus": "known-ingredients-only",
+      "ingredientEvidenceStatus": "full-list-snapshot-available",
       "partialProducts": [
         {
           "productId": "rc37-excel",
@@ -3351,10 +3362,51 @@
           "physicalLabelCompared": false
         }
       ],
-      "status": "no-saved-formula",
+      "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
-      "formulas": []
+      "formulas": [
+        {
+          "productId": "rc103-excel-a481ccdab027",
+          "productName": "デイスキンウェイキング",
+          "variant": null,
+          "sourcePageId": "78269",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:19:31+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78269/",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc103-excel-249db6e7099c",
+          "productName": "デイスキンコンフォート",
+          "variant": null,
+          "sourcePageId": "78226",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:19:31+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78226/",
+          "ingredientCount": 51
+        },
+        {
+          "productId": "rc103-excel-3e4068de4818",
+          "productName": "セラムオイルクレンズ",
+          "variant": null,
+          "sourcePageId": "78107",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:19:31+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78107/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc103-excel-4c706401d162",
+          "productName": "フィットアイベース",
+          "variant": null,
+          "sourcePageId": "78124",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:19:31+09:00",
+          "sourceUrl": "https://noevirgroup.jp/excel/g/g78124/",
+          "ingredientCount": 26
+        }
+      ]
     },
     {
       "brandId": 72,
