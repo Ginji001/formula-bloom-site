@@ -42,7 +42,7 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==348)
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==356)
             throw Error('Version or Japan formula coverage does not match reviewed rc.113 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
@@ -315,23 +315,56 @@ jobs:
              original116.volume!=='200mL'||original116.sku!=='4964596485763'||
              !unknown116||unknown116.volume!==null||unknown116.sku!==null)
              throw Error('rc116 SANA 200mL source-specific JAN or unlisted Fit Eye Base capacity incorrect');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1785||
+          if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1785)||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage116.unresolvedFullIngredientCandidateCount!==1785||
+             (!Number.isInteger(coverage116.unresolvedFullIngredientCandidateCount)||coverage116.unresolvedFullIngredientCandidateCount>1785)||
              coverage116.brandsWithSavedFormulas!==74||
              coverage116.brandsWithoutSavedFormulas!==73||
              coverage116.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc116 exact 1785 unresolved names, 74 brands or republishing rights disclosure stale');
+             throw Error('rc116 historical maximum unresolved candidates, 74 brands or republishing rights baseline regression');
           if(fs.existsSync('_site/data/rc116-all-unresolved-japan-formula-triage-20261102.csv')||
              fs.existsSync('_site/data/rc116-excel-sana-five-japan-individual-ingredient-records-20261102.json')||
              fs.existsSync('_site/docs/rc116-rights-and-physical-sku-verification.md'))
              throw Error('Private SKU evidence or rights review cannot be deployed publicly');
+          const novel117=fs.readFileSync('_site/official-reviewed-rc117.js','utf8');
+          const coverage117=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          const ids117=['rc103-nov-2a0ce390c807','rc103-nov-8635f933e71f',
+            'rc103-nov-f41b052a7cce','rc103-nov-ee87d3aeefbb',
+            'rc103-nov-2dd53450e6c6','rc103-nov-26c316fd9a21',
+            'rc103-nov-fe3cc30c967c','rc103-nov-26518a1d8b5b'];
+          if(ids117.some(x=>!novel117.includes(x))||
+             novel117.includes('"rc103-nov-1ffc746a39bc"')||
+             !novel117.includes('japan-nov3-maker-per-item-quasi-ingredient-label'))
+             throw Error('rc117 NOV drug source registration list missing or preexisting R duplicated');
+          const newNov117=archived.records.filter(x=>ids117.includes(x.productId));
+          const novR117=archived.records.filter(x=>x.productId==='nov-iii-lotion-r');
+          const medicineCounts=[24,19,14,25,29,23,23,29];
+          if(newNov117.length!==8||novR117.length!==1||
+             new Set(newNov117.map(x=>x.productId)).size!==8||
+             ids117.some((id,i)=>!newNov117.some(x=>x.productId===id&&x.ingredientCount===medicineCounts[i]&&
+                x.kind==='quasi'&&x.sourceType==='official'&&x.region==='jp'&&
+                x.activeIngredients&&x.otherIngredients&&x.sourceUrl==='https://noevirgroup.jp/nov/brand/product/nov3.aspx'))||
+             novR117[0].ingredientCount!==17||
+             archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
+             throw Error('rc117 8 unique NOV drug ingredients and one preserved exact 17-ingredient R not verified');
+          if(catalog.unverifiedFullIngredientCandidateCount!==1777||
+             catalog.singleProductCandidateBrandCount!==33||
+             coverage117.unresolvedFullIngredientCandidateCount!==1777||
+             coverage117.brandsWithSavedFormulas!==74||
+             coverage117.brandsWithoutSavedFormulas!==73||
+             coverage117.singleProductCandidateBrandCount!==33||
+             catalog.allRepublicationPermissionsVerified!==false)
+             throw Error('rc117 exact unresolved 1777 count, source coverage or legal rights misrepresented');
+          if(fs.existsSync('_site/data/rc117-nov3-nine-jp-official-quasi-formulas-20261102.json')||
+             fs.existsSync('_site/data/rc117-all-unresolved-japan-formula-triage-20261102.csv')||
+             fs.existsSync('_site/docs/rc117-rights-and-physical-sku-verification.md'))
+             throw Error('Private maker original review, unresolved queue or rights assessment leaked to static site');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.116: 2133 names, 146/147 brand names, 348 Japanese full-ingredient snapshots (74 brands)');
+          console.log('Verified public static release rc.117: 2133 names, 146/147 brand names, 356 Japanese full-ingredient snapshots (74 brands)');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

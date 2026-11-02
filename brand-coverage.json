@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:28:24.239Z",
+  "generatedAt": "2026-11-02T01:47:04.271Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 348,
+  "savedFormulaCount": 356,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1785,
+  "unresolvedFullIngredientCandidateCount": 1777,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -3229,7 +3229,7 @@
       "brand": "ノブ",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 9,
       "registeredCandidateCount": 40,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -3249,6 +3249,86 @@
           "verifiedAt": "2026-10-31T13:50:16+09:00",
           "sourceUrl": "https://noevirgroup.jp/nov/g/g51541/",
           "ingredientCount": 17
+        },
+        {
+          "productId": "rc103-nov-2a0ce390c807",
+          "productName": "ノブ III クレンジングクリーム",
+          "variant": null,
+          "sourcePageId": "nov3-product-1",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc103-nov-8635f933e71f",
+          "productName": "ノブ III ウォッシングクリーム",
+          "variant": null,
+          "sourcePageId": "nov3-product-2",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc103-nov-f41b052a7cce",
+          "productName": "ノブ III フェイスローション L",
+          "variant": null,
+          "sourcePageId": "nov3-product-3",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 14
+        },
+        {
+          "productId": "rc103-nov-ee87d3aeefbb",
+          "productName": "ノブ III フェイスローション EX",
+          "variant": null,
+          "sourcePageId": "nov3-product-5",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc103-nov-2dd53450e6c6",
+          "productName": "ノブ III バリアコンセントレイト",
+          "variant": null,
+          "sourcePageId": "nov3-product-6",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc103-nov-26c316fd9a21",
+          "productName": "ノブ III ミルキィローション",
+          "variant": null,
+          "sourcePageId": "nov3-product-7",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc103-nov-fe3cc30c967c",
+          "productName": "ノブ III モイスチュアクリーム",
+          "variant": null,
+          "sourcePageId": "nov3-product-8",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc103-nov-26518a1d8b5b",
+          "productName": "ノブ III バリアクリーム UV",
+          "variant": null,
+          "sourcePageId": "nov3-product-9",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:40:22+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
+          "ingredientCount": 29
         }
       ]
     },

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:28:24.247Z",
+  "generatedAt": "2026-11-02T01:47:04.279Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2133,
-  "ingredientRecords": 348,
+  "ingredientRecords": 356,
   "knownIngredientRecords": 49,
-  "unverifiedFullIngredientCandidateCount": 1785,
+  "unverifiedFullIngredientCandidateCount": 1777,
   "singleProductCandidateBrandCount": 33,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
@@ -20919,7 +20919,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 40,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -20946,12 +20946,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "120g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-8635f933e71f",
@@ -20960,12 +20960,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "120g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-f41b052a7cce",
@@ -20974,12 +20974,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-1ffc746a39bc",
@@ -21002,12 +21002,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-2dd53450e6c6",
@@ -21016,12 +21016,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-26c316fd9a21",
@@ -21030,12 +21030,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "80mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-fe3cc30c967c",
@@ -21044,12 +21044,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "45g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-26518a1d8b5b",
@@ -21058,12 +21058,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc103-nov-80480da6e314",
