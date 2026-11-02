@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2132||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==292)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.111 release');
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==309)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.112 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -173,11 +173,40 @@ jobs:
              !items111.some(r=>r.productId===id&&r.ingredientCount===n&&
                r.volume===volume&&r.variant===variant&&r.sku===jan)))
             throw Error('rc111 exact Japanese name, pack, fragrance, JAN or source record mismatch');
+          const review112=fs.readFileSync('_site/official-reviewed-rc112.js','utf8');
+          const coverage112=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          if(!review112.includes('rc112-obagi-x-emulsion-bottle')||
+             !review112.includes('rc92-official-family-obagi-003')||
+             !review112.includes('japan-rohto-maker-item-and-ingredient-display'))
+             throw Error('rc112 reviewed individual Obagi source data or exact product references missing');
+          if(catalog.unverifiedFullIngredientCandidateCount!==1824||
+             catalog.singleProductCandidateBrandCount!==33||
+             coverage112.unresolvedFullIngredientCandidateCount!==1824||
+             coverage112.singleProductCandidateBrandCount!==33||
+             catalog.allRepublicationPermissionsVerified!==false)
+             throw Error('rc112 unverified 1824 remaining candidates/rights are not honestly disclosed');
+          const obagi112=archived.records.filter(r=>r.productId.startsWith('rc92-official-family-obagi-')||
+             r.productId==='rc112-obagi-x-emulsion-bottle');
+          if(obagi112.length!==17||new Set(obagi112.map(r=>r.productId)).size!==17||
+             obagi112.some(r=>r.brand!=='オバジ'||r.kind!=='cosmetic'||
+               r.sourceType!=='official'||r.region!=='jp'||r.formulaUpdatedAt!==null||
+               !r.sourceUrl.startsWith('https://jp.rohto.com/seib/seib?kw=')))
+             throw Error('rc112 did not preserve 17 exact Japanese manufacturer formulas');
+          const required112=[['rc92-official-family-obagi-003',25,'26mL','4987241199914'],
+            ['rc92-official-family-obagi-004',25,'12mL','4987241199938'],
+            ['rc112-obagi-x-emulsion-bottle',49,'100g','4987241191789']];
+          if(required112.some(([id,n,volume,jan])=>
+              !obagi112.some(r=>r.productId===id&&r.ingredientCount===n&&
+                r.volume===volume&&r.sku===jan)))
+             throw Error('rc112 Obagi regular/large, original bottle, JAN mapping wrong');
+          if(fs.existsSync('_site/data/rc112-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc112-rights-and-physical-sku-verification.md'))
+             throw Error('Private SKU audit or rights follow-up documents must NOT be published');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.111: 2132 names, 146/147 brand names, 292 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.112: 2133 names, 146/147 brand names, 309 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3

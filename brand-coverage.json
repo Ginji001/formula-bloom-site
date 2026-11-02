@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:39:11.525Z",
+  "generatedAt": "2026-11-02T00:18:29.814Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,8 +10,13 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 292,
-  "registeredCandidateCount": 2132,
+  "savedFormulaCount": 309,
+  "registeredCandidateCount": 2133,
+  "unresolvedFullIngredientCandidateCount": 1824,
+  "singleProductCandidateBrandCount": 33,
+  "allPhysicalJapanLabelsMatched": false,
+  "allRetailLotsMatched": false,
+  "republicationPermissionsConfirmed": false,
   "note": "全成分保存版・判明成分だけの部分表示・未収録を区別。どれも全商品や全SKUの網羅、現物ラベルの確認を意味しません。",
   "brands": [
     {
@@ -1634,8 +1639,8 @@
       "brand": "オバジ",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 1,
-      "registeredCandidateCount": 20,
+      "savedFormulaCount": 18,
+      "registeredCandidateCount": 21,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
@@ -1654,6 +1659,176 @@
           "verifiedAt": "2026-10-31T09:05:31+09:00",
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/care/144730.html?cgid=care",
           "ingredientCount": 28
+        },
+        {
+          "productId": "rc92-official-family-obagi-001",
+          "productName": "C25セラム ネオ",
+          "variant": null,
+          "sourcePageId": "199891",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=199891",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc92-official-family-obagi-002",
+          "productName": "C20セラム",
+          "variant": null,
+          "sourcePageId": "199907",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=199907",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc92-official-family-obagi-003",
+          "productName": "C10セラム（ラージ）",
+          "variant": null,
+          "sourcePageId": "199914",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=199914",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc92-official-family-obagi-004",
+          "productName": "C10セラム",
+          "variant": null,
+          "sourcePageId": "199938",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=199938",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc92-official-family-obagi-005",
+          "productName": "C5セラム",
+          "variant": null,
+          "sourcePageId": "199921",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=199921",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc92-official-family-obagi-006",
+          "productName": "オバジC 酵素洗顔パウダー",
+          "variant": null,
+          "sourcePageId": "149445",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=149445",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc92-official-family-obagi-007",
+          "productName": "オバジC 酵素洗顔パウダーDP",
+          "variant": null,
+          "sourcePageId": "194230",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=194230",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc92-official-family-obagi-008",
+          "productName": "ダーマパワーX ステムシャープアイ",
+          "variant": null,
+          "sourcePageId": "159741",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=159741",
+          "ingredientCount": 41
+        },
+        {
+          "productId": "rc92-official-family-obagi-010",
+          "productName": "X バイタライズリフトクリーム",
+          "variant": null,
+          "sourcePageId": "198481",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=198481",
+          "ingredientCount": 45
+        },
+        {
+          "productId": "rc92-official-family-obagi-011",
+          "productName": "ダーマパワーX リップエッセンス",
+          "variant": null,
+          "sourcePageId": "140275",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=140275",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc92-official-family-obagi-013",
+          "productName": "X フレームリフトローション",
+          "variant": null,
+          "sourcePageId": "191772",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=191772",
+          "ingredientCount": 49
+        },
+        {
+          "productId": "rc92-official-family-obagi-014",
+          "productName": "C セラムゲル",
+          "variant": null,
+          "sourcePageId": "165179",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=165179",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc92-official-family-obagi-016",
+          "productName": "X ディープアドバンスドリフト セラム",
+          "variant": null,
+          "sourcePageId": "194254",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=194254",
+          "ingredientCount": 40
+        },
+        {
+          "productId": "rc92-official-family-obagi-017",
+          "productName": "アクティブベース クリアミルク",
+          "variant": null,
+          "sourcePageId": "144747",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=144747",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc92-official-family-obagi-018",
+          "productName": "アクティブベース クリアクレンジング",
+          "variant": null,
+          "sourcePageId": "144754",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=144754",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc92-official-family-obagi-019",
+          "productName": "アクティブベース クリアウォッシュ",
+          "variant": null,
+          "sourcePageId": "144761",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=144761",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "rc112-obagi-x-emulsion-bottle",
+          "productName": "X フレームリフトエマルジョン",
+          "variant": null,
+          "sourcePageId": "191789",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:12:59+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=191789",
+          "ingredientCount": 49
         }
       ]
     },

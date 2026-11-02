@@ -1,4 +1,5 @@
 import {staticGetJSON} from './static-api.js';
+import {officialReviewedRC112Catalogs} from './official-reviewed-rc112.js';
 import {officialReviewedRC111Catalogs} from './official-reviewed-rc111.js';
 import {officialReviewedRC110Catalogs} from './official-reviewed-rc110.js';
 import {officialReviewedRC109Catalogs} from './official-reviewed-rc109.js';
@@ -884,7 +885,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const lead=document.createElement('p');lead.className='product-choice-count';
   lead.textContent='商品候補 '+families.length+'件';
   holder.append(lead);
-  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand]||officialReviewedRC100Catalogs[products[0]?.brand]||officialReviewedRC101Catalogs[products[0]?.brand]||officialReviewedRC102Catalogs[products[0]?.brand]||officialReviewedRC103Catalogs[products[0]?.brand]||officialReviewedRC104Catalogs[products[0]?.brand]||officialReviewedRC105Catalogs[products[0]?.brand]||officialReviewedRC106Catalogs[products[0]?.brand]||officialReviewedRC107Catalogs[products[0]?.brand]||officialReviewedRC108Catalogs[products[0]?.brand]||officialReviewedRC109Catalogs[products[0]?.brand]||officialReviewedRC110Catalogs[products[0]?.brand]||officialReviewedRC111Catalogs[products[0]?.brand];
+  const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand]||officialReviewedRC100Catalogs[products[0]?.brand]||officialReviewedRC101Catalogs[products[0]?.brand]||officialReviewedRC102Catalogs[products[0]?.brand]||officialReviewedRC103Catalogs[products[0]?.brand]||officialReviewedRC104Catalogs[products[0]?.brand]||officialReviewedRC105Catalogs[products[0]?.brand]||officialReviewedRC106Catalogs[products[0]?.brand]||officialReviewedRC107Catalogs[products[0]?.brand]||officialReviewedRC108Catalogs[products[0]?.brand]||officialReviewedRC109Catalogs[products[0]?.brand]||officialReviewedRC110Catalogs[products[0]?.brand]||officialReviewedRC111Catalogs[products[0]?.brand]||officialReviewedRC112Catalogs[products[0]?.brand];
   if(officialCatalog){
     const catalogHint=document.createElement('p');catalogHint.className='muted official-catalog-note';
     catalogHint.textContent='メーカーの商品一覧から確認した名称を含みます。容量・色・全成分は未確認の候補があります。';
