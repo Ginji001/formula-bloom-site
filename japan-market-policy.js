@@ -57,7 +57,7 @@ export function isJapaneseMarketURL(input){
 export function isJapaneseMarketBrand(brand){
  return Boolean(brand&&brand.country==='JP')||isJapaneseMarketURL(brand?.site);
 }
-export const recognizedJapaneseCodes=/^(?:BG|DPG|PG|BHT|TEA|LPG|AMP|PCA|PVP|PCA-Na|DNA-Na|RNA-Na|EDTA-2Na|EDTA-3Na|EDTA-4Na|PEG(?:-?\d+|\(\d+\))|PPG-?\d+|CI\s*\d{5})$/i;
+export const recognizedJapaneseCodes=/^(?:BG|DPG|PG|BHT|TEA|LPG|AMP|PCA|PVP|PCA-Na|DNA-Na|RNA-Na|EDTA-2Na|EDTA-3Na|EDTA-4Na|PEG(?:-?\d+M?|\(\d+\))|PPG-?\d+|CI\s*\d{5})$/i;
 export const isJapaneseIngredientText=name=>{
  const s=String(name||'').normalize('NFKC').trim();
  return Boolean(s)&&(/[ぁ-んァ-ヶ一-龥々]/.test(s)||recognizedJapaneseCodes.test(s.replace(/^PCA[ー－−]Na$/i,'PCA-Na').replace(/[−－ー]/g,'-')));

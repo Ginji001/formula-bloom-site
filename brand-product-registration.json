@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:28:52.001Z",
+  "generatedAt": "2026-11-02T00:46:18.463Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2133,
-  "ingredientRecords": 323,
+  "ingredientRecords": 336,
   "knownIngredientRecords": 49,
-  "unverifiedFullIngredientCandidateCount": 1810,
+  "unverifiedFullIngredientCandidateCount": 1797,
   "singleProductCandidateBrandCount": 33,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
@@ -18243,7 +18243,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 7,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 6,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -18270,12 +18270,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/bright_empowering_amulet_serum/",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-ayaka-157fcaa7aeba",
@@ -18284,12 +18284,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/brightening_amulet_lotion_moist/",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-ayaka-720ef18b8f63",
@@ -18312,12 +18312,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_oil_rich_lotion/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-ayaka-d0ba39f57a17",
@@ -18326,12 +18326,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_essence/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-ayaka-8edff4ff3d15",
@@ -18340,12 +18340,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_cream/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "40g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
@@ -18357,7 +18357,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 30,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -18384,12 +18384,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/biphase_fog_balancer.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-8b95e73b1690",
@@ -18398,12 +18398,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/cleansing_oil.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "180mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-605629bbb48f",
@@ -18412,12 +18412,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/cleansing_cream.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "145g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-c94ebd8a69c0",
@@ -18426,12 +18426,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/face_wash_gel.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "150g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-5a49f67f4622",
@@ -18440,12 +18440,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/face_wash_cream.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "120g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-30f05f0e41b9",
@@ -18482,12 +18482,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/wrinkle_serum_cream.html",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-e44199ae236a",
@@ -18496,12 +18496,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/hydra_up_essence_n.html",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "100mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-9426d4dead7e",
@@ -18524,12 +18524,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/hydra_touch_uv_protector.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "60g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-5f64ff02d640",

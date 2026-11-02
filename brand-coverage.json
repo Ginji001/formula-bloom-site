@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:28:51.988Z",
+  "generatedAt": "2026-11-02T00:46:18.455Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 323,
+  "savedFormulaCount": 336,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1810,
+  "unresolvedFullIngredientCandidateCount": 1797,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -2159,7 +2159,7 @@
       "brand": "綾花",
       "maker": "ちふれグループ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 6,
       "registeredCandidateCount": 7,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -2179,6 +2179,56 @@
           "verifiedAt": "2026-10-31T16:34:27+09:00",
           "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_lotion/",
           "ingredientCount": 18
+        },
+        {
+          "productId": "rc102-ayaka-ab631d3c1538",
+          "productName": "ブライト エンパワリング アミュレット セラム",
+          "variant": null,
+          "sourcePageId": "bright_empowering_amulet_serum",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/bright_empowering_amulet_serum/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc102-ayaka-157fcaa7aeba",
+          "productName": "ブライトニング アミュレット ローション [モイスト]",
+          "variant": null,
+          "sourcePageId": "brightening_amulet_lotion_moist",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/brightening_amulet_lotion_moist/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc102-ayaka-d0ba39f57a17",
+          "productName": "潤肌実 美容液",
+          "variant": null,
+          "sourcePageId": "uruhadami_essence",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_essence/",
+          "ingredientCount": 40
+        },
+        {
+          "productId": "rc102-ayaka-8edff4ff3d15",
+          "productName": "潤肌実 クリーム",
+          "variant": null,
+          "sourcePageId": "uruhadami_cream",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_cream/",
+          "ingredientCount": 27
+        },
+        {
+          "productId": "rc102-ayaka-10a157fd9eb4",
+          "productName": "潤肌実 オイル リッチ 化粧水",
+          "variant": null,
+          "sourcePageId": "uruhadami_oil_rich_lotion",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.ayaka-ch.jp/product/item/uruhadami_oil_rich_lotion/",
+          "ingredientCount": 21
         }
       ]
     },
@@ -2187,7 +2237,7 @@
       "brand": "HIKARIMIRAI",
       "maker": "ちふれグループ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 9,
       "registeredCandidateCount": 30,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -2207,6 +2257,86 @@
           "verifiedAt": "2026-10-31T16:44:44+09:00",
           "sourceUrl": "https://www.hikarimirai.jp/skincare/lotion_n.html",
           "ingredientCount": 24
+        },
+        {
+          "productId": "rc102-hikarimirai-73b988b5a874",
+          "productName": "バイフェーズ フォグ バランサー",
+          "variant": null,
+          "sourcePageId": "biphase_fog_balancer",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/biphase_fog_balancer.html",
+          "ingredientCount": 32
+        },
+        {
+          "productId": "rc102-hikarimirai-8b95e73b1690",
+          "productName": "クレンジング オイル",
+          "variant": null,
+          "sourcePageId": "cleansing_oil",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/cleansing_oil.html",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc102-hikarimirai-605629bbb48f",
+          "productName": "クレンジング クリーム",
+          "variant": null,
+          "sourcePageId": "cleansing_cream",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/cleansing_cream.html",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "rc102-hikarimirai-c94ebd8a69c0",
+          "productName": "ウォッシュ ジェル",
+          "variant": null,
+          "sourcePageId": "face_wash_gel",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/face_wash_gel.html",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc102-hikarimirai-5a49f67f4622",
+          "productName": "ウォッシュ クリーム",
+          "variant": null,
+          "sourcePageId": "face_wash_cream",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/face_wash_cream.html",
+          "ingredientCount": 33
+        },
+        {
+          "productId": "rc102-hikarimirai-957529813c43",
+          "productName": "ハイドラ タッチ UV プロテクター",
+          "variant": null,
+          "sourcePageId": "hydra_touch_uv_protector",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/hydra_touch_uv_protector.html",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "rc102-hikarimirai-e44199ae236a",
+          "productName": "ハイドラ アップ エッセンス",
+          "variant": null,
+          "sourcePageId": "hydra_up_essence_n",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/hydra_up_essence_n.html",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc102-hikarimirai-299f042c0f11",
+          "productName": "リンクル セラム クリーム",
+          "variant": null,
+          "sourcePageId": "wrinkle_serum_cream",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T09:42:31+09:00",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/wrinkle_serum_cream.html",
+          "ingredientCount": 29
         }
       ]
     },

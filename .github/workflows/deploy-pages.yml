@@ -42,7 +42,7 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==323)
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==336)
             throw Error('Version or Japan formula coverage does not match reviewed rc.113 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
@@ -222,20 +222,53 @@ jobs:
           if(color113.some(([id,n,jan])=>
              !uv113.some(r=>r.productId===id&&r.ingredientCount===n&&r.sku===jan&&r.volume==='70g')))
              throw Error('Skin Aqua color shade JAN or individual ingredients mismatched');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1810||
+          if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1810)||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage113.unresolvedFullIngredientCandidateCount!==1810||
+             (!Number.isInteger(coverage113.unresolvedFullIngredientCandidateCount)||coverage113.unresolvedFullIngredientCandidateCount>1810)||
              coverage113.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc113 remaining 1810 candidates, 33 single-brand or rights disclosure stale');
+             throw Error('rc113 historical baseline coverage regression or misleading source rights disclosure');
           if(fs.existsSync('_site/data/rc113-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc113-rights-and-physical-sku-verification.md'))
              throw Error('Private label/rights triage data must stay out of the public static GitHub');
+          const upgrades114=fs.readFileSync('_site/official-reviewed-rc114.js','utf8');
+          const coverage114=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          const rc114Ids=['rc102-hikarimirai-73b988b5a874',
+            'rc102-hikarimirai-8b95e73b1690','rc102-hikarimirai-605629bbb48f',
+            'rc102-hikarimirai-c94ebd8a69c0','rc102-hikarimirai-5a49f67f4622',
+            'rc102-hikarimirai-957529813c43','rc102-hikarimirai-e44199ae236a',
+            'rc102-hikarimirai-299f042c0f11',
+            'rc102-ayaka-ab631d3c1538','rc102-ayaka-157fcaa7aeba',
+            'rc102-ayaka-d0ba39f57a17','rc102-ayaka-8edff4ff3d15',
+            'rc102-ayaka-10a157fd9eb4'];
+          if(rc114Ids.length!==13||rc114Ids.some(id=>!upgrades114.includes(id)))
+             throw Error('rc114 exact reviewed manufacturer product IDs missing');
+          const cases114=archived.records.filter(r=>rc114Ids.includes(r.productId));
+          if(cases114.length!==13||new Set(cases114.map(r=>r.productId)).size!==13||
+             cases114.filter(r=>r.kind==='quasi').length!==4||
+             cases114.filter(r=>r.kind==='cosmetic').length!==9||
+             cases114.some(r=>r.sourceType!=='official'||r.region!=='jp'||r.formulaUpdatedAt!==null||
+               !r.sourceUrl.startsWith(r.brand==='綾花'?'https://www.ayaka-ch.jp/product/item/':'https://www.hikarimirai.jp/skincare/')))
+             throw Error('rc114 13 domestic Japanese formulas, medicinal types or primary source identity mismatch');
+          if(cases114.filter(r=>r.brand==='HIKARIMIRAI').length!==8||
+             cases114.filter(r=>r.brand==='綾花').length!==5||
+             cases114.filter(r=>r.kind==='quasi').some(r=>!r.activeIngredients||!r.otherIngredients||
+               !r.order.includes('配合順')))
+             throw Error('rc114 expected domestic 8/5 brands and separately disclosed quasi-drug actives');
+          if(catalog.unverifiedFullIngredientCandidateCount!==1797||
+             catalog.singleProductCandidateBrandCount!==33||
+             coverage114.unresolvedFullIngredientCandidateCount!==1797||
+             coverage114.singleProductCandidateBrandCount!==33||
+             catalog.allRepublicationPermissionsVerified!==false)
+             throw Error('rc114 full 1797 unverified names and permission uncertainty not publicly preserved');
+          if(fs.existsSync('_site/data/rc114-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc114-rights-and-physical-sku-verification.md'))
+             throw Error('Private full research queue or rights audit cannot ship on public Pages');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.113: 2133 names, 146/147 brand names, 323 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.114: 2133 names, 146/147 brand names, 336 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
