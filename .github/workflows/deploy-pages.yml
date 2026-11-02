@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-93')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-94')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -749,6 +749,37 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc133.json'))
              throw Error('rc133 four Japanese quasi-drug variant facts or 65 / 1689 cohort invalid');
           console.log('Verified rc133: four exact ELIXIR quasi-drug variants with active/other distinction, 65 covered and 1689 missing');
+          const domestic134=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc134.json','utf8'));
+          const coverage134=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc134.json','utf8'));
+          const viewer134=fs.readFileSync('_site/unresolved-review-rc134.html','utf8');
+          const csv134=fs.readFileSync('_site/ingredient-name-coverage-rc134.csv','utf8');
+          const ids134=new Set(coverage134.records.map(x=>x.productId));
+          const japaneseExact134=new Set(['rc38-medicube','rc39-romand','rc38-numbuzin',
+            'rc52-clio-original-21n','rc52-addiction-uv-foundation-sand-012','rc53-skin1004-teca-ampoule-50']);
+          if(domestic134.productCount!==6||domestic134.records.length!==6||
+             domestic134.ingredientNameAssociations!==90||
+             new Set(domestic134.records.map(x=>x.productId)).size!==6||
+             domestic134.records.some(x=>!japaneseExact134.has(x.productId)||
+                x.ingredients.length!==15||x.coverage!=='partial-only'||
+                x.order!=='not-confirmed'||x.currentFormulaCompared!==false||
+                x.labelCompared!==false||x.exactJapSkuCheckedAgainstArchivedResearch!==true||
+                !x.sourceUrl.startsWith('https://'))||
+             coverage134.records.length!==1754||ids134.size!==1754||
+             [...ids134].some(id=>!decisionIds.has(id))||
+             coverage134.summary.japaneseNameReferenceProducts!==71||
+             coverage134.summary.japaneseNameNotRecordedProducts!==1683||
+             coverage134.summary.fullJapaneseFormulaSnapshots!==409||
+             coverage134.summary.fullFormulaNewlyAdded!==0||
+             coverage134.records.filter(x=>x.status==='ingredient-name-reference-available').length!==71||
+             coverage134.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1683||
+             !csv134.startsWith('\uFEFF')||csv134.split('\n').length!==1756||
+             !viewer134.includes('ingredient-name-coverage-rc134.json')||
+             !viewer134.includes('1,683')||
+             !sourceOnlyHome.includes('unresolved-review-rc134.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc134.json'))
+             throw Error('rc134 domestic 6 Japanese ingredient reference SKUs or 71/1683 count invalid');
+          console.log('Verified rc134: 6 exact Japan-domestic product references, 15 names each, 71 reference products and 1683 missing');
+
 
 
 
