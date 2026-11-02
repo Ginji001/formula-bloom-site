@@ -18,6 +18,7 @@ import {officialReviewedRC102Products} from './official-reviewed-rc102.js';
 import {officialReviewedRC101Products} from './official-reviewed-rc101.js';
 import {officialReviewedRC100Products} from './official-reviewed-rc100.js';
 import {officialDomesticNamesRC94} from './official-domestic-catalog-rc94.js';
+import {officialIchikamiPremier2026SKUs} from './official-ichikami-premier-2026-skus.js';
 import {kaoOfficialFamilyNames} from './official-kao-family-index.js';
 import {officialCatalogFamilyNames} from './official-catalog-families.js';
 // 国内向け公式掲載で商品名を確認した製品を登録。全成分未収録は name-only と明示。
@@ -616,6 +617,7 @@ export const registeredProducts=Object.freeze([
  ...officialCatalogFamilyNames,
  ...kaoOfficialFamilyNames,
  ...officialDomesticNamesRC94,
+ ...officialIchikamiPremier2026SKUs,
  ...officialReviewedRC100Products,
  ...officialReviewedRC101Products,
  ...officialReviewedRC102Products,
