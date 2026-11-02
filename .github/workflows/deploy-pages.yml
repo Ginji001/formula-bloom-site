@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-86')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-87')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -583,6 +583,30 @@ jobs:
              archived.records.length!==409||caseReview.records.length!==1754)
             throw Error('rc125 explicitly listed Japanese names reference-only UI or full-formula safeguard missing');
           console.log('Verified rc.125: Japanese published-name-only reference flower shortcut, no false full formula promotions');
+          const groupedRC126=JSON.parse(fs.readFileSync('_site/source-url-groups-rc126.json','utf8'));
+          const sourceProgressRC126=JSON.parse(fs.readFileSync('_site/source-review-progress-rc126.json','utf8'));
+          const csvRC126=fs.readFileSync('_site/source-url-groups-rc126.csv','utf8');
+          const groupsRC126=groupedRC126.groups;
+          const seenSourceIds=new Set(groupsRC126.flatMap(group=>group.productIds));
+          const makerEvidenceIds=new Set(sourceProgressRC126.records.map(x=>x.productId));
+          const reviewRC126=fs.readFileSync('_site/unresolved-review-rc124.html','utf8');
+          if(groupedRC126.summary.recordedUniqueSourceUrls!==1329||groupsRC126.length!==1329||
+             groupedRC126.summary.sharedSourceUrlGroups!==50||
+             groupedRC126.summary.sourceSharedProductCandidates!==475||
+             groupsRC126.reduce((a,g)=>a+g.productCount,0)!==1754||
+             seenSourceIds.size!==1754||[...seenSourceIds].some(id=>!decisionIds.has(id))||
+             sourceProgressRC126.records.length!==15||makerEvidenceIds.size!==15||
+             sourceProgressRC126.summary.unresolvedAfter!==1754||
+             sourceProgressRC126.summary.actualFullFormulaNewlyArchived!==0||
+             sourceProgressRC126.summary.ingredientTextCopiedFromMakers!==0||
+             sourceProgressRC126.records.some(x=>x.fullFormulaPublished||x.ingredientContentCopied||x.permissionToRepublish||!x.sourceUrl.startsWith('https://'))||
+             !csvRC126.startsWith('\uFEFF')||csvRC126.split('\n').length!==1331||
+             !reviewRC126.includes('source-reviewed')||
+             !reviewRC126.includes('source-review-progress-rc126.json')||
+             !reviewRC126.includes('source-url-groups-rc126.csv'))
+             throw Error('rc126 maker source-panel review or 1329-URL fixed cohort queue did not validate');
+          console.log('Verified rc126: 1754 fixed IDs/1329 source URLs, 50 shared links/475 candidate products, 15 exact maker ingredient panels without unlicensed text');
+
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
           NODE
       - name: Upload public site artifact
