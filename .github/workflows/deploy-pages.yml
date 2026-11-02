@@ -41,9 +41,9 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
-          if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
+          if(catalog.brandCount!==147||catalog.productNameRecords!==2149||
               catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==386)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.113 release');
+            throw Error('rc119 Japanese product name count or verified formula count mismatch');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -379,14 +379,14 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1747||
+          if(catalog.unverifiedFullIngredientCandidateCount!==1763||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage118.unresolvedFullIngredientCandidateCount!==1747||
+             coverage118.unresolvedFullIngredientCandidateCount!==1763||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
              coverage118.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc118 1747 remaining names, brand coverage or rights uncertainty not disclosed');
+             throw Error('rc119 1763 remaining names, brand coverage or rights uncertainty not disclosed');
           if(fs.existsSync('_site/data/rc118-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/data/rc118-nov-30-official-japan-ingredient-formulas-20261102.json')||
              fs.existsSync('_site/docs/rc118-rights-and-physical-sku-verification.md'))
@@ -395,7 +395,19 @@ jobs:
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.118: 2133 names, 146/147 brand names, 386 Japanese full-ingredient snapshots (74 brands)');
+          const premier=fs.readFileSync('_site/official-ichikami-premier-2026-skus.js','utf8');
+          const premierIds=[...premier.matchAll(/"id": "(rc119-premier-[a-z0-9-]+)"/g)].map(m=>m[1]);
+          if(premierIds.length!==16||new Set(premierIds).size!==16||
+             (premier.match(/"registrationStatus": "name-only"/g)||[]).length!==16||
+             (premier.match(/"rightsStatus": "reference-link-only"/g)||[]).length!==16||
+             !premier.includes('10193359_3833.html')||!premier.includes('10193537_3833.html')||
+             archived.records.some(r=>premierIds.includes(r.productId))||
+             !src.includes('official-ichikami-premier-2026-skus.js'))
+             throw Error('rc119 exact PREMIER manufacturer package identities, safety flags, or no-formula policy violated');
+          if(fs.existsSync('_site/data/rc119-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/chatgpt-project'))
+             throw Error('rc119 private research or project internal documents must not appear on Pages');
+          console.log('Verified public static release rc.119: 2149 names, 146/147 brand names, 386 Japanese full-ingredient snapshots (74 brands), 16 new PREMIER name-only SKUs');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
