@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:18:29.814Z",
+  "generatedAt": "2026-11-02T00:28:51.988Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 309,
+  "savedFormulaCount": 323,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1824,
+  "unresolvedFullIngredientCandidateCount": 1810,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -1837,7 +1837,7 @@
       "brand": "スキンアクア",
       "maker": "ロート製薬",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 15,
       "registeredCandidateCount": 15,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -1857,6 +1857,146 @@
           "verifiedAt": "2026-10-31T09:05:31+09:00",
           "sourceUrl": "https://www.shop.rohto.co.jp/category/skincare/skin-aqua/193899.html",
           "ingredientCount": 30
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-105",
+          "productName": "スーパーモイスチャーバリアUVジェル",
+          "variant": null,
+          "sourcePageId": "193653",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=193653",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-106",
+          "productName": "スーパーモイスチャーバリアUVエッセンス",
+          "variant": null,
+          "sourcePageId": "193660",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=193660",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-107",
+          "productName": "スーパーモイスチャーUVジェル",
+          "variant": null,
+          "sourcePageId": "190850",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=190850",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-108",
+          "productName": "スーパーモイスチャーUVエッセンス",
+          "variant": null,
+          "sourcePageId": "190874",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=190874",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-109",
+          "productName": "スーパーモイスチャーUVミスト",
+          "variant": null,
+          "sourcePageId": "194377",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=194377",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-110",
+          "productName": "ヒアルロンセラムUV",
+          "variant": null,
+          "sourcePageId": "196401",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=196401",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-111",
+          "productName": "トーンアップUVエッセンス ラベンダー",
+          "variant": null,
+          "sourcePageId": "202041",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=202041",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-112",
+          "productName": "トーンアップUVエッセンス ホワイト",
+          "variant": null,
+          "sourcePageId": "202010",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=202010",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-113",
+          "productName": "トーンアップUVエッセンス ピンク",
+          "variant": null,
+          "sourcePageId": "201983",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=201983",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-114",
+          "productName": "トーンアップUVエッセンス ミントグリーン",
+          "variant": null,
+          "sourcePageId": "202003",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=202003",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-115",
+          "productName": "トーンアップUVエッセンス ブルー",
+          "variant": null,
+          "sourcePageId": "202058",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=202058",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-116",
+          "productName": "トーンアップUVスティック ラベンダー",
+          "variant": null,
+          "sourcePageId": "196487",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=196487",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-117",
+          "productName": "ナチュラルベールUVエッセンス ローズ",
+          "variant": null,
+          "sourcePageId": "196456",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=196456",
+          "ingredientCount": 37
+        },
+        {
+          "productId": "rc94-jp-official-skinaqua-118",
+          "productName": "ナチュラルベールUVエッセンス クリアホワイト",
+          "variant": null,
+          "sourcePageId": "196463",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T09:26:29+09:00",
+          "sourceUrl": "https://jp.rohto.com/seib/seib?kw=196463",
+          "ingredientCount": 36
         }
       ]
     },

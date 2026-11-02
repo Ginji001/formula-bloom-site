@@ -42,8 +42,8 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==309)
-            throw Error('Version or Japan formula coverage does not match reviewed rc.112 release');
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==323)
+            throw Error('Version or Japan formula coverage does not match reviewed rc.113 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -202,11 +202,40 @@ jobs:
           if(fs.existsSync('_site/data/rc112-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc112-rights-and-physical-sku-verification.md'))
              throw Error('Private SKU audit or rights follow-up documents must NOT be published');
+          const upgrades113=fs.readFileSync('_site/official-reviewed-rc113.js','utf8');
+          const coverage113=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          if(!upgrades113.includes('rc94-jp-official-skinaqua-111')||
+             !upgrades113.includes('rc94-jp-official-skinaqua-115')||
+             !upgrades113.includes('japan-rohto-maker-item-and-ingredient-display'))
+             throw Error('rc113 item-specific Skin Aqua source links missing');
+          const uv113=archived.records.filter(r=>/^rc94-jp-official-skinaqua-1(0[5-9]|1[0-8])$/.test(r.productId));
+          if(uv113.length!==14||new Set(uv113.map(r=>r.productId)).size!==14||
+             uv113.some(r=>r.kind!=='cosmetic'||r.sourceType!=='official'||
+               r.region!=='jp'||r.formulaUpdatedAt!==null||
+               !r.sourceUrl.startsWith('https://jp.rohto.com/seib/seib?kw=')))
+             throw Error('rc113 14 Japan-approved per-variant source records missing or duplicated');
+          const color113=[['rc94-jp-official-skinaqua-111',31,'4987241202041'],
+            ['rc94-jp-official-skinaqua-112',29,'4987241202010'],
+            ['rc94-jp-official-skinaqua-113',30,'4987241201983'],
+            ['rc94-jp-official-skinaqua-114',31,'4987241202003'],
+            ['rc94-jp-official-skinaqua-115',31,'4987241202058']];
+          if(color113.some(([id,n,jan])=>
+             !uv113.some(r=>r.productId===id&&r.ingredientCount===n&&r.sku===jan&&r.volume==='70g')))
+             throw Error('Skin Aqua color shade JAN or individual ingredients mismatched');
+          if(catalog.unverifiedFullIngredientCandidateCount!==1810||
+             catalog.singleProductCandidateBrandCount!==33||
+             coverage113.unresolvedFullIngredientCandidateCount!==1810||
+             coverage113.singleProductCandidateBrandCount!==33||
+             catalog.allRepublicationPermissionsVerified!==false)
+             throw Error('rc113 remaining 1810 candidates, 33 single-brand or rights disclosure stale');
+          if(fs.existsSync('_site/data/rc113-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/docs/rc113-rights-and-physical-sku-verification.md'))
+             throw Error('Private label/rights triage data must stay out of the public static GitHub');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.112: 2133 names, 146/147 brand names, 309 Japanese full-ingredient snapshots');
+          console.log('Verified public static release rc.113: 2133 names, 146/147 brand names, 323 Japanese full-ingredient snapshots');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
