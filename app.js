@@ -470,7 +470,7 @@ function showEnglishInciInput(container,item){
  detail.append(btn,status);container.append(detail);
 }
 function showPartialInput(container,item,record){
- const wrap=document.createElement('details');wrap.className='partial-ingredient-editor';
+ const wrap=document.createElement('details');wrap.className='partial-ingredient-editor source-listed-japanese-editor';
  const summary=document.createElement('summary');summary.textContent='自分で確認した一部成分から花にする';
  wrap.append(summary);
  const guide=document.createElement('p');guide.className='muted';
@@ -794,7 +794,7 @@ function showPartialChoices(container,item){
   await ready;
   if(version!==lookupVersion)return;
   advanced.open=true;
-  const editor=advanced.querySelector('.partial-ingredient-editor');
+  const editor=advanced.querySelector('.source-listed-japanese-editor');
   if(editor){editor.open=true;editor.scrollIntoView({behavior:'auto',block:'nearest'});editor.querySelector('textarea')?.focus();}
  };
 }
