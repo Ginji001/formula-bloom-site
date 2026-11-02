@@ -1,3 +1,4 @@
+import {officialReviewedRC118Upgrades} from './official-reviewed-rc118.js';
 import {officialReviewedRC117Upgrades} from './official-reviewed-rc117.js';
 import {officialReviewedRC116Upgrades} from './official-reviewed-rc116.js';
 import {officialReviewedRC115Upgrades} from './official-reviewed-rc115.js';
@@ -629,7 +630,7 @@ export const registeredProducts=Object.freeze([
  ].map(x=>{
   // Historical products retain their original IDs, aliases and search identity.
   // An exact Japanese manufacturer full-ingredient source can upgrade their status.
-  const upgrade=officialReviewedRC117Upgrades[x.id]||officialReviewedRC116Upgrades[x.id]||officialReviewedRC115Upgrades[x.id]||officialReviewedRC114Upgrades[x.id]||officialReviewedRC113Upgrades[x.id]||officialReviewedRC112Upgrades[x.id]||officialReviewedRC111Upgrades[x.id]||officialReviewedRC110Upgrades[x.id]||officialReviewedRC108Upgrades[x.id];
+  const upgrade=officialReviewedRC118Upgrades[x.id]||officialReviewedRC117Upgrades[x.id]||officialReviewedRC116Upgrades[x.id]||officialReviewedRC115Upgrades[x.id]||officialReviewedRC114Upgrades[x.id]||officialReviewedRC113Upgrades[x.id]||officialReviewedRC112Upgrades[x.id]||officialReviewedRC111Upgrades[x.id]||officialReviewedRC110Upgrades[x.id]||officialReviewedRC108Upgrades[x.id];
   if(upgrade)x={...x,...upgrade};
   // Only a series name visibly contained in the reviewed Japanese product title.
   // A word absent from the title is never inferred from marketing conventions.

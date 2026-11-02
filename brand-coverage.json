@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T01:47:04.271Z",
+  "generatedAt": "2026-11-02T02:02:23.980Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 356,
+  "savedFormulaCount": 386,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1777,
+  "unresolvedFullIngredientCandidateCount": 1747,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -3229,7 +3229,7 @@
       "brand": "ノブ",
       "maker": "ノエビアグループ",
       "country": "JP",
-      "savedFormulaCount": 9,
+      "savedFormulaCount": 39,
       "registeredCandidateCount": 40,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -3329,6 +3329,306 @@
           "verifiedAt": "2026-11-02T10:40:22+09:00",
           "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov3.aspx",
           "ingredientCount": 29
+        },
+        {
+          "productId": "rc103-nov-80480da6e314",
+          "productName": "ノブ AC クレンジングジェル",
+          "variant": null,
+          "sourcePageId": "nov-ac-product-1",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/ac.aspx",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc103-nov-d40dcafec618",
+          "productName": "ノブ AC ウォッシングフォーム",
+          "variant": null,
+          "sourcePageId": "nov-ac-product-2",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/ac.aspx",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc103-nov-d95613e49373",
+          "productName": "ノブ AC フェイスローション",
+          "variant": null,
+          "sourcePageId": "nov-ac-product-3",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/ac.aspx",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc103-nov-e480ee4d2bb8",
+          "productName": "ノブ AC モイスチュアジェル",
+          "variant": null,
+          "sourcePageId": "nov-ac-product-4",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/ac.aspx",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc103-nov-3ddb506f4a5a",
+          "productName": "ノブ AC モイスチュアクリーム",
+          "variant": null,
+          "sourcePageId": "nov-ac-product-5",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/ac.aspx",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc103-nov-5019435d62c6",
+          "productName": "ノブ II クレンジングクリーム",
+          "variant": null,
+          "sourcePageId": "nov-nov2-product-1",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov2.aspx",
+          "ingredientCount": 14
+        },
+        {
+          "productId": "rc103-nov-7bcac3bb08a0",
+          "productName": "ノブ II ウォッシングクリーム",
+          "variant": null,
+          "sourcePageId": "nov-nov2-product-2",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov2.aspx",
+          "ingredientCount": 14
+        },
+        {
+          "productId": "rc103-nov-3232564f79cb",
+          "productName": "ノブ II フェイスローション",
+          "variant": null,
+          "sourcePageId": "nov-nov2-product-3",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov2.aspx",
+          "ingredientCount": 10
+        },
+        {
+          "productId": "rc103-nov-310fbc0a6a35",
+          "productName": "ノブ II モイスチュアクリーム",
+          "variant": null,
+          "sourcePageId": "nov-nov2-product-4",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov2.aspx",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc103-nov-08d634deab7a",
+          "productName": "ノブ II モイスチュアバーム",
+          "variant": null,
+          "sourcePageId": "nov-nov2-product-5",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/nov2.aspx",
+          "ingredientCount": 13
+        },
+        {
+          "productId": "rc103-nov-9fe05377f814",
+          "productName": "ノブ L&W クレンジングオイルジェル",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-1",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc103-nov-867be380fc33",
+          "productName": "ノブ L&W ウォッシングフォーム",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-2",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc103-nov-6711ffd2f31e",
+          "productName": "ノブ L&W エンリッチローション",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-3",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 17
+        },
+        {
+          "productId": "rc103-nov-f4ab16634bdc",
+          "productName": "ノブ L&W エンリッチローション EX",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-4",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 27
+        },
+        {
+          "productId": "rc103-nov-d7c722bacfec",
+          "productName": "ノブ L&W リフトエッセンス",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-5",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 32
+        },
+        {
+          "productId": "rc103-nov-e37dc055060e",
+          "productName": "ノブ L&W ブライトニングエッセンス",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-6",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc103-nov-0c101827bc69",
+          "productName": "ノブ L&W エンリッチミルク",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-7",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc103-nov-1b563e124af1",
+          "productName": "ノブ L&W エンリッチクリーム",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-8",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc103-nov-4b082b8f9757",
+          "productName": "ノブ L&W リンクルエッセンス ブライト",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-9",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc103-nov-ece2a849d113",
+          "productName": "ノブ L&W デイエッセンス UV",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-10",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 38
+        },
+        {
+          "productId": "rc103-nov-7df2f0a61ece",
+          "productName": "ノブ L&W トーンアップクリーム UV",
+          "variant": null,
+          "sourcePageId": "nov-lw-product-11",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/lw.aspx",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "rc103-nov-df76e815e253",
+          "productName": "ノブ ACアクティブ クレンジングリキッド",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-1",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 13
+        },
+        {
+          "productId": "rc103-nov-f492d5350ca0",
+          "productName": "ノブ ACアクティブ ウォッシングフォーム",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-2",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc103-nov-de4ba082e1d5",
+          "productName": "ノブ ACアクティブ ウォッシングフォーム W",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-3",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "rc103-nov-36749ed56f12",
+          "productName": "ノブ ACアクティブ フェイスローション",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-4",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc103-nov-65b1c106d8e4",
+          "productName": "ノブ ACアクティブ フェイスローション モイスト",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-5",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc103-nov-13ea4f9362ba",
+          "productName": "ノブ ACアクティブ モイスチュアミルク",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-6",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc103-nov-3f6f8d07cebb",
+          "productName": "ノブ ACアクティブ モイスチュアクリーム",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-7",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "rc103-nov-0a1758a6baeb",
+          "productName": "ノブ ACアクティブ スポッツクリーム C",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-8",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc103-nov-2a5fc9406ede",
+          "productName": "ノブ ACアクティブ デイクリーム UV",
+          "variant": null,
+          "sourcePageId": "nov-acactive-product-9",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T10:57:53+09:00",
+          "sourceUrl": "https://noevirgroup.jp/nov/brand/product/acactive.aspx",
+          "ingredientCount": 26
         }
       ]
     },

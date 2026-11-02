@@ -42,7 +42,7 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2133||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==356)
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==386)
             throw Error('Version or Japan formula coverage does not match reviewed rc.113 release');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
@@ -348,23 +348,54 @@ jobs:
              novR117[0].ingredientCount!==17||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc117 8 unique NOV drug ingredients and one preserved exact 17-ingredient R not verified');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1777||
+          if((!Number.isInteger(catalog.unverifiedFullIngredientCandidateCount)||catalog.unverifiedFullIngredientCandidateCount>1777)||
              catalog.singleProductCandidateBrandCount!==33||
-             coverage117.unresolvedFullIngredientCandidateCount!==1777||
+             (!Number.isInteger(coverage117.unresolvedFullIngredientCandidateCount)||coverage117.unresolvedFullIngredientCandidateCount>1777)||
              coverage117.brandsWithSavedFormulas!==74||
              coverage117.brandsWithoutSavedFormulas!==73||
              coverage117.singleProductCandidateBrandCount!==33||
              catalog.allRepublicationPermissionsVerified!==false)
-             throw Error('rc117 exact unresolved 1777 count, source coverage or legal rights misrepresented');
+             throw Error('rc117 historical remaining-name baseline, source coverage or legal rights regressed');
           if(fs.existsSync('_site/data/rc117-nov3-nine-jp-official-quasi-formulas-20261102.json')||
              fs.existsSync('_site/data/rc117-all-unresolved-japan-formula-triage-20261102.csv')||
              fs.existsSync('_site/docs/rc117-rights-and-physical-sku-verification.md'))
              throw Error('Private maker original review, unresolved queue or rights assessment leaked to static site');
+          const reviewed118=fs.readFileSync('_site/official-reviewed-rc118.js','utf8');
+          const coverage118=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          const source118=[["rc103-nov-80480da6e314",20,"quasi","nov-ac-product-1","110g","https://noevirgroup.jp/nov/brand/product/ac.aspx"],["rc103-nov-d40dcafec618",18,"quasi","nov-ac-product-2","90g","https://noevirgroup.jp/nov/brand/product/ac.aspx"],["rc103-nov-d95613e49373",18,"quasi","nov-ac-product-3","120mL","https://noevirgroup.jp/nov/brand/product/ac.aspx"],["rc103-nov-e480ee4d2bb8",22,"quasi","nov-ac-product-4","40g","https://noevirgroup.jp/nov/brand/product/ac.aspx"],["rc103-nov-3ddb506f4a5a",22,"quasi","nov-ac-product-5","28g","https://noevirgroup.jp/nov/brand/product/ac.aspx"],["rc103-nov-5019435d62c6",14,"cosmetic","nov-nov2-product-1","110g","https://noevirgroup.jp/nov/brand/product/nov2.aspx"],["rc103-nov-7bcac3bb08a0",14,"cosmetic","nov-nov2-product-2","110g","https://noevirgroup.jp/nov/brand/product/nov2.aspx"],["rc103-nov-3232564f79cb",10,"quasi","nov-nov2-product-3","120mL","https://noevirgroup.jp/nov/brand/product/nov2.aspx"],["rc103-nov-310fbc0a6a35",15,"quasi","nov-nov2-product-4","50g","https://noevirgroup.jp/nov/brand/product/nov2.aspx"],["rc103-nov-08d634deab7a",13,"cosmetic","nov-nov2-product-5","30g","https://noevirgroup.jp/nov/brand/product/nov2.aspx"],["rc103-nov-9fe05377f814",22,"quasi","nov-lw-product-1","105g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-867be380fc33",24,"quasi","nov-lw-product-2","200mL","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-6711ffd2f31e",17,"quasi","nov-lw-product-3","120mL","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-f4ab16634bdc",27,"quasi","nov-lw-product-4","120mL","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-d7c722bacfec",32,"quasi","nov-lw-product-5","28g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-e37dc055060e",24,"quasi","nov-lw-product-6","30g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-0c101827bc69",31,"quasi","nov-lw-product-7","80mL","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-1b563e124af1",29,"quasi","nov-lw-product-8","48g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-4b082b8f9757",30,"quasi","nov-lw-product-9","12g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-ece2a849d113",38,"cosmetic","nov-lw-product-10","30g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-7df2f0a61ece",39,"quasi","nov-lw-product-11","50g","https://noevirgroup.jp/nov/brand/product/lw.aspx"],["rc103-nov-df76e815e253",13,"quasi","nov-acactive-product-1","120mL","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-f492d5350ca0",19,"quasi","nov-acactive-product-2","100g","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-de4ba082e1d5",16,"quasi","nov-acactive-product-3","150mL","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-36749ed56f12",20,"quasi","nov-acactive-product-4","135mL","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-65b1c106d8e4",25,"quasi","nov-acactive-product-5","135mL","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-13ea4f9362ba",30,"quasi","nov-acactive-product-6","50mL","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-3f6f8d07cebb",28,"quasi","nov-acactive-product-7","30g","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-0a1758a6baeb",29,"quasi","nov-acactive-product-8","10g","https://noevirgroup.jp/nov/brand/product/acactive.aspx"],["rc103-nov-2a5fc9406ede",26,"quasi","nov-acactive-product-9","30g","https://noevirgroup.jp/nov/brand/product/acactive.aspx"]];
+          if(source118.length!==30||source118.filter(x=>x[2]==='quasi').length!==26||
+             source118.filter(x=>x[2]==='cosmetic').length!==4||
+             source118.some(x=>!reviewed118.includes(x[0])))
+             throw Error('rc118 30 NOV Japan original product source metadata missing');
+          const nov118=archived.records.filter(x=>source118.some(c=>c[0]===x.productId));
+          if(nov118.length!==30||new Set(nov118.map(x=>x.productId)).size!==30||
+             nov118.some(x=>x.brand!=='ノブ'||x.sourceType!=='official'||x.region!=='jp'||x.formulaUpdatedAt!==null)||
+             source118.some(([id,n,kind,section,vol,url])=>!nov118.some(x=>
+                 x.productId===id&&x.ingredientCount===n&&x.kind===kind&&
+                 x.sourcePageId===section&&x.volume===vol&&x.sourceUrl===url&&
+                 (kind!=='quasi'||(x.activeIngredients&&x.otherIngredients)))))
+             throw Error('rc118 NOV original full Japanese list, individual section/volume or medically labeled groups mismatched');
+          if(archived.records.filter(x=>x.brand==='ノブ').length!==39||
+             archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
+             archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
+             throw Error('rc118 NOV original R must still be one unique archived product');
+          if(catalog.unverifiedFullIngredientCandidateCount!==1747||
+             catalog.singleProductCandidateBrandCount!==33||
+             coverage118.unresolvedFullIngredientCandidateCount!==1747||
+             coverage118.brandsWithSavedFormulas!==74||
+             coverage118.brandsWithoutSavedFormulas!==73||
+             coverage118.singleProductCandidateBrandCount!==33||
+             catalog.allRepublicationPermissionsVerified!==false)
+             throw Error('rc118 1747 remaining names, brand coverage or rights uncertainty not disclosed');
+          if(fs.existsSync('_site/data/rc118-all-unresolved-japan-formula-triage-20261102.json')||
+             fs.existsSync('_site/data/rc118-nov-30-official-japan-ingredient-formulas-20261102.json')||
+             fs.existsSync('_site/docs/rc118-rights-and-physical-sku-verification.md'))
+             throw Error('Private exact item maker review, unresolved queue and permissions must not ship to public repo');
           const src=fs.readFileSync('_site/registered-products.js','utf8');
           for(const size of ['50','90'])
             if(!src.includes('rc91-whoo-bicheop-circulation-'+size))
               throw Error('One of the two non-domestic WHOO size candidates is missing');
-          console.log('Verified public static release rc.117: 2133 names, 146/147 brand names, 356 Japanese full-ingredient snapshots (74 brands)');
+          console.log('Verified public static release rc.118: 2133 names, 146/147 brand names, 386 Japanese full-ingredient snapshots (74 brands)');
           NODE
       - name: Upload public site artifact
         uses: actions/upload-pages-artifact@v3
