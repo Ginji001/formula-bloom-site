@@ -30,6 +30,11 @@ export async function staticGetJSON(path,{signal}={}){
   if(!response.ok)throw Error('英語INCI参考資料を読み込めませんでした。');
   return response.json();
  }
+ if(u.pathname.endsWith('/source-disclosed-ingredient-names-rc128.json')){
+  const response=await fetch('./source-disclosed-ingredient-names-rc128.json',{signal});
+  if(!response.ok)throw Error('メーカーの表示名称資料を読み込めません。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence.json')){
   const response=await fetch('./partial-ingredient-evidence.json',{signal});
   if(!response.ok)throw Error('判明成分の資料を読み込めませんでした。');

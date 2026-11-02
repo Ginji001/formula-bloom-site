@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-87')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-88')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -606,6 +606,29 @@ jobs:
              !reviewRC126.includes('source-url-groups-rc126.csv'))
              throw Error('rc126 maker source-panel review or 1329-URL fixed cohort queue did not validate');
           console.log('Verified rc126: 1754 fixed IDs/1329 source URLs, 50 shared links/475 candidate products, 15 exact maker ingredient panels without unlicensed text');
+          // rc128: the first 6 independent factual Japanese ingredient-name transcriptions.
+          // These are alphabetically sorted reference facts, NOT original formula order.
+          const factRC128=JSON.parse(fs.readFileSync('_site/source-disclosed-ingredient-names-rc128.json','utf8'));
+          const namesRC128=factRC128.records;
+          const expectedRc128=new Map([
+            ['rc67-chifure-deep-refill',16],['rc67-chifure-light-refill',11],
+            ['rc67-chifure-rich-refill',15],['rc67-chifure-base-refill',15],
+            ['rc54-rohto-bloomio-lotion-145',29],['rc124-rohto-bloomio-serum-50',38]
+          ]);
+          if(!factRC128.notFullFormulaArchive||factRC128.productCount!==6||namesRC128.length!==6||
+             namesRC128.reduce((sum,r)=>sum+r.ingredientCount,0)!==124||
+             namesRC128.some(r=>!expectedRc128.has(r.productId)||
+                expectedRc128.get(r.productId)!==r.ingredientNames.length||
+                r.formulaOrderConfirmed||r.completePhysicalLabelConfirmed||r.republicationOfManufacturerProse||
+                r.order!=='ingredient-name-facts-sorted-alphabetically-not-original-formula-order'||
+                !r.sourceUrl.startsWith('https://')||
+                archivedIds.has(r.productId)||!decisionIds.has(r.productId))||
+             !sourceOnlyUI.includes('source-listed-fact-flower-action')||
+             !fs.readFileSync('_site/static-api.js','utf8').includes('source-disclosed-ingredient-names-rc128.json')||
+             !fs.readFileSync('_site/unresolved-review-rc124.html','utf8').includes('fact-transcribed'))
+             throw Error('rc128 normalized Japanese ingredient-name reference record did not validate');
+          console.log('Verified rc128: 6 product-specific independent factual name lists (124 fact entries), no unverified full-formula promotion');
+
 
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
           NODE

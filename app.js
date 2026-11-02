@@ -30,6 +30,7 @@ import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProdu
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
+import {validateDisclosedNameFacts,disclosedNameFactsForProduct} from './source-disclosed-ingredient-names.js';
 import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciNames} from './inci-reference-evidence.js';
 import {inferStructure,inferredArchetypes} from './inference-flower.js';
 import {inferIngredientEvidence} from './inference-evidence.js';
@@ -65,6 +66,11 @@ let partialEvidencePromise=null;
 function partialEvidence(){
  if(!partialEvidencePromise)partialEvidencePromise=getJSON('/partial-ingredient-evidence.json').then(validatePartialEvidence).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
+}
+let sourceDisclosedFactsPromise=null;
+function sourceDisclosedFacts(){
+ if(!sourceDisclosedFactsPromise)sourceDisclosedFactsPromise=getJSON('/source-disclosed-ingredient-names-rc128.json').then(validateDisclosedNameFacts).catch(e=>{sourceDisclosedFactsPromise=null;throw e;});
+ return sourceDisclosedFactsPromise;
 }
 let englishInciEvidencePromise=null;
 function englishInciEvidence(){
@@ -771,6 +777,20 @@ function showPartialChoices(container,item){
  showInferredFlowerChoice(advanced,item);
  showEnglishInciChoices(advanced,item,version);
  showEnglishInciInput(advanced,item);
+ const factsReady=sourceDisclosedFacts().then(records=>{
+  if(version!==lookupVersion)return;
+  const record=disclosedNameFactsForProduct(records,item);
+  if(!record)return;
+  const action=document.createElement('button');action.type='button';action.className='secondary source-listed-fact-flower-action';
+  action.textContent='公式明記 '+record.ingredientCount+'成分で参考の花';
+  action.setAttribute('aria-label','メーカーの目的別表から確認した表示名称で参考の花を表示。配合順・現物一致は未確認');
+  action.onclick=()=>useKnownIngredients(item,record.ingredientNames,{sourceUrl:record.sourceUrl,
+   scope:record.sourceKind.includes('purpose-grouped')?'日本メーカーの目的別全成分・分量表に明記された名称の五十音順データ。配合順・本体と詰替の処方一致・現物は未確認。':'日本メーカーの個別JAN成分欄に明記された名称を独立して五十音順に整理。原文の配合順を再現せず、現物・現行処方は未確認。',checkedOn:record.transcribedOn});
+  actions.prepend(action);
+  const explanation=document.createElement('p');explanation.className='muted';
+  explanation.textContent='メーカーの日本語成分欄に明記された'+record.ingredientCount+'名称を独立して五十音順に整理。原文の配合順・現物は未確認。'+(record.sourceKind.includes('purpose-grouped')?'詰替の処方同一性も未確認。':'現行ロットの同一性も未確認。')+'全成分保存版ではありません。';
+  advanced.append(explanation);sourceLink(advanced,record.sourceUrl,'表示名称の日本公式出典');
+ }).catch(()=>{if(version===lookupVersion){const message=document.createElement('p');message.className='muted';message.textContent='公式掲載の参考成分データを読み込めません。掲載元を開き手入力してください。';advanced.append(message);}});
  const ready=partialEvidence().then(records=>{
   if(version!==lookupVersion)return;
   const record=partialForProduct(records,item);
@@ -1434,3 +1454,10 @@ $('shareImage').onclick=async()=>{
  $('shareStatus').textContent=outcome==='shared'?'共有先へ渡しました。':outcome==='saved'?'画像を保存しました。共有できない端末では画像を添付してください。':'操作をキャンセルしました。';}
  catch(e){$('shareStatus').textContent='共有できませんでした：'+e.message;}
 };
+
+// Internal fixed-catalog deep link from the case-status table. Never read or transmit an arbitrary URL.
+const requestedCaseId=new URLSearchParams(location.search).get('productId');
+if(requestedCaseId){
+ const linked=registeredProducts.find(p=>p.id===requestedCaseId);
+ if(linked){$('query').value=linked.brand+' '+linked.name;selectRegisteredFormula(linked);}
+}
