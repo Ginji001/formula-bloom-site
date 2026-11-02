@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-98')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-99')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -904,6 +904,46 @@ jobs:
              !sourceOnlyHome.includes('original-name-review-rc138.html'))
                throw Error('rc138 original language 85/22/1647 ledger or exact INCI spelling mismatch');
           console.log('Verified rc138: original English INCI names unchanged for 26 references; 85 Japanese, 22 English-only, 1647 with no names');
+          const orig139=JSON.parse(fs.readFileSync('_site/original-name-coverage-rc139.json','utf8'));
+          const names139=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc139.json','utf8'));
+          const jp139=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc139.json','utf8'));
+          const view139=fs.readFileSync('_site/original-name-review-rc139.html','utf8');
+          const csv139=fs.readFileSync('_site/original-name-coverage-rc139.csv','utf8');
+          const source139=new Map(names139.records.map(x=>[x.productId,x]));
+          const idSet139=new Set(orig139.records.map(x=>x.productId));
+          const sourceJan139=new Set(['4973167434147','4973167027400','4973167385487']);
+          if(names139.productCount!==3||names139.records.length!==3||
+             names139.originalJapaneseNameAssociations!==36||source139.size!==3||
+             names139.records.some(x=>!sourceJan139.has(x.sourceObservedJan)||
+               x.sourceUrl!=='https://www.kao-kirei.com/ja/item/kbb/kate/'+x.sourceObservedJan+'/'||
+               x.sourceOriginalNames.length!==12||!x.sourceOriginalNames.includes('ＤＰＧ')||
+               x.ingredients.length!==12||x.volume!==null||x.jan!==null||
+               x.coverage!=='partial-only'||x.order!=='not-confirmed'||
+               x.labelCompared!==false||x.currentFormulaCompared!==false||
+               x.sourceOriginalNamesNotTranslated!==true)||
+             orig139.records.length!==1754||idSet139.size!==1754||
+             [...idSet139].some(id=>!decisionIds.has(id))||
+             orig139.summary.ingredientNameReferenceProducts!==110||
+             orig139.summary.noRecordedIngredientNameProducts!==1644||
+             orig139.summary.japaneseNameReferenceProducts!==88||
+             orig139.summary.originalEnglishReferenceProducts!==26||
+             orig139.summary.englishOnlyReferenceProducts!==22||
+             orig139.summary.overlappingJapaneseAndEnglishProducts!==4||
+             orig139.summary.fullJapaneseFormulaSnapshots!==409||
+             jp139.summary.japaneseNameReferenceProducts!==88||
+             jp139.summary.japaneseNameNotRecordedProducts!==1666||
+             orig139.records.filter(x=>x.status==='japanese-reference-recorded').length!==88||
+             orig139.records.filter(x=>x.status==='original-inci-reference-only').length!==22||
+             orig139.records.filter(x=>x.status==='no-ingredient-name-evidence').length!==1644||
+             orig139.records.some(x=>{const y=source139.get(x.productId);return y?JSON.stringify(x.sourceOriginalJapaneseNames)!==JSON.stringify(y.sourceOriginalNames):false})||
+             !csv139.startsWith('\uFEFF')||csv139.split('\n').length!==1756||
+             !view139.includes('original-name-coverage-rc139.json')||
+             !view139.includes('sourceOriginalJapaneseNames?.length')||
+             !sourceOnlyHome.includes('original-name-review-rc139.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc139.json'))
+               throw Error('rc139 exact manufacturer raw Japanese names or 110/1644 ledger incorrect');
+          console.log('Verified rc139: 3 KATE maker JANs, 36 original Japanese strings; 110 with names, 1644 without; 26 English sources unchanged');
+
 
 
 
