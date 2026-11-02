@@ -64,7 +64,7 @@ async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let partialEvidencePromise=null;
 function partialEvidence(){
- if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
+ if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
 }
 let sourceDisclosedFactsPromise=null;
@@ -814,7 +814,8 @@ function showPartialChoices(container,item){
     if(record.kind==='quasi'&&record.activeIngredientName){const note=document.createElement('p');note.className='muted';note.textContent='医薬部外品 '+record.variant+'：有効成分 '+record.activeIngredientName+' ／ その他の成分 '+record.otherIngredientNames.length+'件。記載した13名称のみの参考の花。実際の全成分・現物ラベル・別タイプの処方は未確認です。';$('sourceInfo').prepend(note);}
     if(record.exactJapSkuCheckedAgainstArchivedResearch){const note=document.createElement('p');note.className='muted';note.textContent='国内向け '+record.productName+(record.variant?'／'+record.variant:'')+(record.jan?'／JAN '+record.jan:'')+'の掲載15成分名だけを参考に整理。'+(record.shadeWarning||'')+'全成分・現物ラベル・現在の処方は未確認です。';$('sourceInfo').prepend(note);}
     if(record.makerPageIndividuallyReviewed){const note=document.createElement('p');note.className='muted';note.textContent='花王日本公式のKATE個別商品／JAN '+record.jan+'に明記された15名称のみを独立整理。配合順・全成分・現物・最新ロットは未確認です。';$('sourceInfo').prepend(note);}
-    if(record.manufacturerProductPageIndividuallyChecked){const note=document.createElement('p');note.className='muted';note.textContent='ロート製薬公式の品番 '+record.makerProductCode+' に明記された'+record.ingredientCount+'名称だけの参考の花。'+(record.sourceEvidenceType.startsWith('featured-')?'この商品では4種のヒアルロン酸名称のみを掲載した脚注に基づき、全成分欄の確認ではありません。':'成分欄のうち曖昧な表記・注釈より前の名称だけを利用。')+'配合順・全成分・最新ロット・現物ラベルは未確認です。';$('sourceInfo').prepend(note);}
+    if(record.sourceVolumeNotYetRegistered){const note=document.createElement('p');note.className='muted';note.textContent='ロート公式のオバジX詰替・レフィル商品 '+record.makerProductCode+'（メーカー掲載容量'+record.sourceObservedVolume+'）の8成分名だけ。JANと現物・全成分は未確認。容量は商品の登録台帳にはまだ反映していません。';$('sourceInfo').prepend(note);}
+    if(record.manufacturerProductPageIndividuallyChecked&&!record.sourceVolumeNotYetRegistered){const note=document.createElement('p');note.className='muted';note.textContent='ロート製薬公式の品番 '+record.makerProductCode+' に明記された'+record.ingredientCount+'名称だけの参考の花。'+(record.sourceEvidenceType.startsWith('featured-')?'この商品では4種のヒアルロン酸名称のみを掲載した脚注に基づき、全成分欄の確認ではありません。':'成分欄のうち曖昧な表記・注釈より前の名称だけを利用。')+'配合順・全成分・最新ロット・現物ラベルは未確認です。';$('sourceInfo').prepend(note);}
    };
    actions.prepend(action);
    advanced.append(msg);

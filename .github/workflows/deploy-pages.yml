@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-96')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-97')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -838,6 +838,36 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc136.json'))
                throw Error('rc136 exact manufacturer page partial-name references 82/1672 invalid');
           console.log('Verified rc136: 8 Japanese ROHTO SKU facts (68 names), 82 references / 1672 without Japanese name evidence');
+          const obagi137=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc137.json','utf8'));
+          const cov137=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc137.json','utf8'));
+          const view137=fs.readFileSync('_site/unresolved-review-rc137.html','utf8');
+          const csv137=fs.readFileSync('_site/ingredient-name-coverage-rc137.csv','utf8');
+          const ids137=new Set(cov137.records.map(r=>r.productId));
+          const expected137=new Map([['rc92-official-family-obagi-009','140mL'],['rc92-official-family-obagi-012','90g'],['rc92-official-family-obagi-015','50g']]);
+          if(obagi137.productCount!==3||obagi137.records.length!==3||
+             obagi137.ingredientNameAssociations!==24||
+             obagi137.records.some(r=>r.brand!=='オバジ'||r.ingredients.length!==8||
+               expected137.get(r.productId)!==r.sourceObservedVolume||
+               r.volume!==null||r.jan!==null||r.sourceVolumeNotYetRegistered!==true||
+               r.coverage!=='partial-only'||r.order!=='not-confirmed'||
+               r.labelCompared!==false||r.currentFormulaCompared!==false||
+               !r.sourceUrl.startsWith('https://www.shop.rohto.co.jp/category/skincare/obagi/'))||
+             cov137.records.length!==1754||ids137.size!==1754||
+             [...ids137].some(id=>!decisionIds.has(id))||
+             cov137.summary.japaneseNameReferenceProducts!==85||
+             cov137.summary.japaneseNameNotRecordedProducts!==1669||
+             cov137.summary.fullJapaneseFormulaSnapshots!==409||
+             cov137.summary.fullFormulaNewlyAdded!==0||
+             cov137.records.filter(x=>x.status==='ingredient-name-reference-available').length!==85||
+             cov137.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1669||
+             !csv137.startsWith('\uFEFF')||csv137.split('\n').length!==1756||
+             !view137.includes('ingredient-name-coverage-rc137.json')||
+             !view137.includes('1,669')||
+             !sourceOnlyHome.includes('unresolved-review-rc137.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc137.json'))
+               throw Error('rc137 Obagi three exact maker refill partial name cases or 85/1669 invalid');
+          console.log('Verified rc137: 3 Japanese Obagi exact refill names, source-only volumes, 85 reference products / 1669 missing names');
+
 
 
 
