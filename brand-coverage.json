@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:46:18.455Z",
+  "generatedAt": "2026-11-02T00:58:08.994Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 72,
   "brandsWithoutSavedFormulas": 75,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 336,
+  "savedFormulaCount": 343,
   "registeredCandidateCount": 2133,
-  "unresolvedFullIngredientCandidateCount": 1797,
+  "unresolvedFullIngredientCandidateCount": 1790,
   "singleProductCandidateBrandCount": 33,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -2237,7 +2237,7 @@
       "brand": "HIKARIMIRAI",
       "maker": "ちふれグループ",
       "country": "JP",
-      "savedFormulaCount": 9,
+      "savedFormulaCount": 16,
       "registeredCandidateCount": 30,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -2337,6 +2337,76 @@
           "verifiedAt": "2026-11-02T09:42:31+09:00",
           "sourceUrl": "https://www.hikarimirai.jp/skincare/wrinkle_serum_cream.html",
           "ingredientCount": 29
+        },
+        {
+          "productId": "rc102-hikarimirai-9426d4dead7e",
+          "productName": "リンクル イノベーション セラム",
+          "variant": null,
+          "sourcePageId": "wrinkle_innovation_serum",
+          "kind": "quasi",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/skincare/wrinkle_innovation_serum.html",
+          "ingredientCount": 40
+        },
+        {
+          "productId": "rc102-hikarimirai-6ab151854866",
+          "productName": "コントラスト プライマー",
+          "variant": null,
+          "sourcePageId": "contrast_primer",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_primer.html",
+          "ingredientCount": 28
+        },
+        {
+          "productId": "rc102-hikarimirai-eaa319c72d2a",
+          "productName": "コントラスト ミルク プライマー",
+          "variant": null,
+          "sourcePageId": "contrast_milk_primer",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_milk_primer.html",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc102-hikarimirai-2efc4b10a30f",
+          "productName": "コントラスト スキン スムーザー",
+          "variant": null,
+          "sourcePageId": "contrast_skin_smoother",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_skin_smoother.html",
+          "ingredientCount": 14
+        },
+        {
+          "productId": "rc102-hikarimirai-ffb34cc83694",
+          "productName": "イルミネイト ネイル トップ コート",
+          "variant": null,
+          "sourcePageId": "illuminate_nail_top_coat",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_top_coat.html",
+          "ingredientCount": 12
+        },
+        {
+          "productId": "rc102-hikarimirai-9d05ca8adb15",
+          "productName": "イルミネイト ネイル ベース コート",
+          "variant": null,
+          "sourcePageId": "illuminate_nail_base_coat",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_base_coat.html",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "rc102-hikarimirai-b7aac7a86833",
+          "productName": "イルミネイト ネイル リムーバー",
+          "variant": null,
+          "sourcePageId": "illuminate_nail_color_remover",
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-02T00:55:02.540Z",
+          "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_color_remover.html",
+          "ingredientCount": 5
         }
       ]
     },

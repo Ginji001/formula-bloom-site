@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T00:46:18.463Z",
+  "generatedAt": "2026-11-02T00:58:09.002Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2133,
-  "ingredientRecords": 336,
+  "ingredientRecords": 343,
   "knownIngredientRecords": 49,
-  "unverifiedFullIngredientCandidateCount": 1797,
+  "unverifiedFullIngredientCandidateCount": 1790,
   "singleProductCandidateBrandCount": 33,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
@@ -18357,7 +18357,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 30,
-      "ingredientRecordCount": 9,
+      "ingredientRecordCount": 16,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -18510,12 +18510,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/skincare/wrinkle_innovation_serum.html",
-          "kind": null,
-          "volume": null,
+          "kind": "quasi",
+          "volume": "20g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-957529813c43",
@@ -18566,12 +18566,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_primer.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "30g",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-eaa319c72d2a",
@@ -18580,12 +18580,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_milk_primer.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "30mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-2efc4b10a30f",
@@ -18594,12 +18594,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/basemake/contrast_skin_smoother.html",
-          "kind": null,
+          "kind": "cosmetic",
           "volume": null,
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-97f4ce3fc7df",
@@ -18748,12 +18748,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_top_coat.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "10mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-9d05ca8adb15",
@@ -18762,12 +18762,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_base_coat.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "10mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc102-hikarimirai-b7aac7a86833",
@@ -18776,12 +18776,12 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.hikarimirai.jp/pointmake/illuminate_nail_color_remover.html",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "50mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "identityVerifiedAt": "2026-11-02",
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         }
       ]
     },
