@@ -800,7 +800,8 @@ function selectRegisteredFormula(item,context=''){
       (item.variant&&item.variant.length<=28&&!productFold(item.name).includes(productFold(item.variant))?' · '+item.variant:'');
     container.append(selected);
     const state=document.createElement('p');state.className='selected-product-state';
-    state.textContent=item.scheduledReleaseDate?'発売予定（'+item.scheduledReleaseDate+'）／全成分：未収録':
+    state.textContent=item.manufacturingEndedOn?'製造終了（'+item.manufacturingEndedOn+'）／全成分：未収録（在庫・販売終了日は未確認）':
+      item.scheduledReleaseDate?'発売予定（'+item.scheduledReleaseDate+'）／全成分：未収録':
       item.sourceScope==='japan-manufacturer-item-link-referenced-only'?'全成分：未収録（メーカー掲載名・現在の販売状況は未確認）':
       item.sourceScope?.startsWith('japan-official-')?'全成分：未収録（公式掲載名・販売状況と現物ラベルは未確認）':
       imported?'国内向け全成分：未確認（韓国直送）':'全成分：未収録';
@@ -809,7 +810,7 @@ function selectRegisteredFormula(item,context=''){
     // to republish the list. This is a link, not an automatic formula or endorsement.
     if(item.sourceScope==='japan-maker-exact-ingredient-page-no-republication-permission'&&item.ingredientSourceUrl){
       const notice=document.createElement('p');notice.className='muted';
-      notice.textContent='メーカー公式で商品・容量・JAN・成分欄を確認済み。全成分の転載許諾と現物表示は未確認のため、花の自動生成は行いません。';
+      notice.textContent='メーカー公式で商品・容量'+(item.jan?'・JAN':'')+'・成分欄を確認済み。全成分の転載許諾と現物表示は未確認のため、花の自動生成は行いません。';
       container.append(notice);
       sourceLink(container,item.ingredientSourceUrl,'メーカー公式の日本語全成分を開く');
     }
@@ -825,7 +826,9 @@ function selectRegisteredFormula(item,context=''){
     extra.append(identity);
     if(item.sourceCheckedOn){
       const confirmed=document.createElement('p');confirmed.className='muted';
-      confirmed.textContent='掲載名の確認日：'+item.sourceCheckedOn+'（掲載当時の記録）。日本語全成分・現在の処方・現物ラベルは未確認です。';
+      confirmed.textContent=item.sourceScope==='japan-maker-exact-ingredient-page-no-republication-permission'?
+        'メーカー成分欄の確認日：'+item.sourceCheckedOn+'。現物ラベル・現行ロット・再掲載許諾は未確認です。':
+        '掲載名の確認日：'+item.sourceCheckedOn+'（掲載当時の記録）。日本語全成分・現在の処方・現物ラベルは未確認です。';
       extra.append(confirmed);
     }
     if(item.productIdentityNote){

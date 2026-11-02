@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T09:38:51.782Z",
+  "generatedAt": "2026-11-02T10:04:21.431Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
@@ -10112,11 +10112,11 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167006009/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "6g",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167006009",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -10280,11 +10280,11 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167016848/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "25g",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167016848",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -10294,11 +10294,11 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167016855/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "25mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167016855",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -10308,11 +10308,11 @@
           "productType": null,
           "variant": null,
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167016862/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "25mL",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167016862",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -11143,30 +11143,30 @@
         },
         {
           "productId": "rc93-kao-kate-4973167012574",
-          "productName": "ピンポイントドットスタンプ",
+          "productName": "ピンポイントドットスタンプ EX-1",
           "series": null,
           "productType": null,
-          "variant": null,
+          "variant": "EX-1 ピンクスパーク",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167012574/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "3.5g",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167012574",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
           "productId": "rc93-kao-kate-4973167012598",
-          "productName": "スーパーラスティングライナー",
+          "productName": "スーパーラスティングライナー BK-1",
           "series": null,
           "productType": null,
-          "variant": null,
+          "variant": "BK-1 漆黒ブラック",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167012598/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "0.45g",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167012598",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -11381,16 +11381,16 @@
         },
         {
           "productId": "rc93-kao-kate-4973167016275",
-          "productName": "ラッシュフォーマーEX(クリア)",
+          "productName": "ラッシュフォーマーEX(クリア) BU-1",
           "series": null,
           "productType": null,
-          "variant": null,
+          "variant": "BU-1 透明感ブルージュ",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167016275/",
-          "kind": null,
-          "volume": null,
+          "kind": "cosmetic",
+          "volume": "5g",
           "sku": null,
-          "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "jan": "4973167016275",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -18202,7 +18202,7 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -18216,7 +18216,7 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -18230,7 +18230,7 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -18244,7 +18244,7 @@
           "volume": "150mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         },
         {
@@ -18258,7 +18258,7 @@
           "volume": "120mL",
           "sku": null,
           "jan": null,
-          "identityVerifiedAt": "2026-11-01",
+          "identityVerifiedAt": "2026-11-02",
           "ingredientEvidenceStatus": "no-ingredients-recorded"
         }
       ]

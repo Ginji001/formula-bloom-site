@@ -545,6 +545,32 @@ jobs:
              fs.existsSync('_site/data/rc124-all-unresolved-japan-formula-triage-20261102.json')||
              fs.existsSync('_site/docs/rc124-rohto-bloomio-public-source-rights-gate.md'))
              throw Error('rc124 private manufacturer ingredient audit or rights findings leaked to static site');
+          // Freeze rc.124 unresolved scope: exact 1,754 names, all have documented
+          // non-formula conclusions; no silent upgrade or unauthorized ingredient text.
+          const caseReview=JSON.parse(fs.readFileSync('_site/unresolved-decisions-rc124.json','utf8'));
+          const caseViewer=fs.readFileSync('_site/unresolved-review-rc124.html','utf8');
+          const caseCsv=fs.readFileSync('_site/unresolved-decisions-rc124.csv','utf8');
+          const decisions=caseReview.records;
+          const archivedIds=new Set(archived.records.map(r=>r.productId));
+          const catalogUnresolved=new Set(catalog.brands.flatMap(b=>b.products).filter(p=>!archivedIds.has(p.productId)).map(p=>p.productId));
+          const decisionIds=new Set(decisions.map(p=>p.productId));
+          if(decisions.length!==1754||decisionIds.size!==1754||catalogUnresolved.size!==1754||
+             [...decisionIds].some(id=>!catalogUnresolved.has(id))||
+             caseReview.summary.unresolvedAtFreeze!==1754||
+             Object.values(caseReview.summary.statusCounts).reduce((sum,n)=>sum+n,0)!==1754||
+             caseReview.summary.fullJapaneseIngredientRecordsAdded!==0||
+             caseReview.summary.noLivePageValidationAcrossAll1754!==true||
+             decisions.some(x=>x.japaneseFullIngredientInArchive||x.physicalLabelVerified||x.republicationPermissionVerified||
+               !x.sourceUrl.startsWith('https://')||!x.nextAction||!x.decisionReason)||
+             !caseCsv.startsWith('\uFEFF')||caseCsv.split('\n').length!==1756||
+             !caseViewer.includes('全成分が無いと断定したものではありません')||
+             !fs.readFileSync('_site/index.html','utf8').includes('unresolved-review-rc124.html'))
+             throw Error('rc124 fixed 1754-case evidence decision register failed');
+          if(fs.existsSync('_site/data/rc124-fixed-unresolved-1754-decision-checksum-20261102.json')||
+             fs.existsSync('_site/scripts/finalize-unresolved-rc124.mjs')||
+             fs.existsSync('_site/docs/rc124-all-1754-fixed-scope-case-decisions-20261102.md'))
+             throw Error('rc124 private evidence or offline researcher leaked to public static files');
+          console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           console.log('Verified rc.124: 2163 names, 409 full Japanese archived formulations, 1754 unresolved, 48 partial references; 3 Rohto Bloomio exact maker links without unlicensed republishing');
           NODE
       - name: Upload public site artifact
