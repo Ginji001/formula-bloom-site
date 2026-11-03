@@ -53,6 +53,16 @@ export async function staticGetJSON(path,{signal}={}){
    return response.json();
   }
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc159.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc159.json',{signal});
+  if(!response.ok)throw Error('追加の日本公式原文を取得できません。');
+  return response.json();
+ }
+ if(u.pathname.endsWith('/excluded-416-recheck-rc159.json')){
+  const response=await fetch('./excluded-416-recheck-rc159.json',{signal});
+  if(!response.ok)throw Error('再調査一覧を取得できません。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc158.json')){
   const response=await fetch('./partial-ingredient-evidence-rc158.json',{signal});
   if(!response.ok)throw Error('国内公式の再調査原文を取得できません。');
