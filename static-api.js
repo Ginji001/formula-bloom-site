@@ -53,6 +53,16 @@ export async function staticGetJSON(path,{signal}={}){
    return response.json();
   }
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc155.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc155.json',{signal});
+  if(!response.ok)throw Error('200商品純増のメーカー公式原文を取得できません。');
+  return response.json();
+ }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc154.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc154.json',{signal});
+  if(!response.ok)throw Error('FANCL個別出典成分を読み込めません。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc153.json')){
   const response=await fetch('./partial-ingredient-evidence-rc153.json',{signal});
   if(!response.ok)throw Error('最新の日本公式参考成分を取得できません。');
