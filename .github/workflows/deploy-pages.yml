@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-101')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-102')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -983,6 +983,34 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc141.json'))
               throw Error('rc141 18 ALBLANC literal maker ingredient source facts or 131 / 1623 count invalid');
           console.log('Verified rc141: 18 ALBLANC manufacturer exact product pages, 270 original ingredient names; 131 recorded, 1623 missing');
+          const eligibility142=JSON.parse(fs.readFileSync('_site/ingredient-registration-eligibility-rc142.json','utf8'));
+          const e142=eligibility142.summary;
+          const ids142=new Set(eligibility142.records.map(x=>x.productId));
+          const excluded142=eligibility142.records.filter(x=>x.excludedFromRegistrationBatch);
+          const eligible142=eligibility142.records.filter(x=>x.ingredientRegistrationEligible);
+          const view142=fs.readFileSync('_site/ingredient-registration-eligibility-rc142.html','utf8');
+          const csv142=fs.readFileSync('_site/ingredient-registration-eligibility-rc142.csv','utf8');
+          if(e142.fixedRegisteredProducts!==1754||eligibility142.records.length!==1754||ids142.size!==1754||
+             [...ids142].some(x=>!decisionIds.has(x))||
+             e142.registeredWithPublishedIngredientNameEvidence!==131||
+             e142.temporarilyExcludedFromIngredientRegistration!==1623||
+             e142.sourceResearchBacklog!==1623||
+             e142.productsActuallyRemovedFromResearchOrCatalog!==0||
+             e142.newlyRegisteredProductsThisRelease!==0||
+             e142.automated100GoalMet!==false||
+             e142.fullJapaneseFormulaSnapshots!==409||
+             excluded142.length!==1623||eligible142.length!==131||
+             excluded142.some(x=>x.ingredientRegistrationEligible||x.sourceReferences.length!==0||
+               x.exclusionScope!=='automatic-ingredient-registration-only'||x.sourceAbsenceProven!==false||x.excludedFromResearch!==false)||
+             eligible142.some(x=>x.excludedFromRegistrationBatch||!x.sourceReferences.length||
+               x.sourceReferences.some(y=>!y.url.startsWith('https://')||y.count<=0))||
+             !csv142.startsWith('\uFEFF')||csv142.split('\n').length!==1756||
+             !view142.includes('ingredient-registration-eligibility-rc142.json')||
+             !view142.includes('「除外」は「収録完了」ではありません')||
+             !sourceOnlyHome.includes('ingredient-registration-eligibility-rc142.html'))
+             throw Error('rc142 anti-fabrication source registration gate and exclusions incorrect');
+          console.log('Verified rc142: 131 real-source registrable, 1623 temporarily excluded from batch yet still in research, zero new ingredients');
+
 
 
 
