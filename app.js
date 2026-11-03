@@ -819,7 +819,7 @@ function showPartialChoices(container,item){
     if(record.brand==='ALBLANC'&&record.originalManufacturerTextPreserved){const note=document.createElement('p');note.className='muted';note.textContent='花王日本公式／JAN '+record.sourceObservedJan+'（公式掲載容量'+record.sourceObservedVolume+'）に掲載の日本語成分原文'+record.ingredientCount+'件：'+record.sourceOriginalJapaneseNames.join('、')+'。'+(record.kind==='quasi'?'医薬部外品：有効成分'+record.sourceActiveIngredientNames.join('、')+'／その他の成分'+record.sourceOtherIngredientNames.length+'件。':'')+'日本語原文の文字幅・表記は変更していません。製品登録の容量とJAN・現物・全成分・配合順・現行ロットは未確認です。';$('sourceInfo').prepend(note);}
     if(record.sourceReviewBatch==='rc155'&&record.sourceOriginalJapaneseNames?.length){
       const note=document.createElement('p');note.className='muted';
-      const code=record.sourcePageIdentifier?'（出典商品コード・JAN '+record.sourcePageIdentifier+'）':'';
+      const code=record.sourcePageIdentifier?'（出典ページ識別子 '+record.sourcePageIdentifier+'）':'';
       note.textContent='【国内向けメーカー個別資料】'+record.sourceObservedName+code+'／'+record.sourceSectionHeading+'。掲載原文の参考名称：'+record.sourceOriginalJapaneseNames.join('、')+'。'+record.sourceScopeCaution+'完全な全成分・配合順・現物ロット・他色の成分一致は未確認。';
       $('sourceInfo').prepend(note);
     }
