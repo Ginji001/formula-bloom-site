@@ -4,27 +4,27 @@
 <nav><a href="./">処方の花へ戻る</a>　<a href="original-name-review-rc144.html">原文成分名の収録状況</a></nav>
 <h1>成分原文の登録対象・除外状況</h1>
 <p>メーカーや販売店に<strong>実際に掲載された成分名</strong>を確認できない商品には、架空の成分を入れません。原文名と出典の記録がない商品は、今は成分登録の対象外にします。</p>
-<div class="metrics"><div class="metric"><small>原文成分名・出典あり</small><strong id="eligible">253</strong></div><div class="metric"><small>成分自動登録から除外</small><strong id="excluded">1,501</strong></div><div class="metric"><small>出典の調査待ち</small><strong id="research">1,501</strong></div></div>
+<div class="metrics"><div class="metric"><small>原文成分名・出典あり</small><strong id="eligible">253</strong></div><div class="metric"><small>成分自動登録から除外</small><strong id="excluded">1,501</strong></div><div class="metric"><small>出典の調査継続</small><strong id="research">1,490</strong></div><div class="metric"><small>今後の調査対象から除外</small><strong id="researchExcluded">11</strong></div></div>
 <p class="notice"><strong>「除外」は「収録完了」ではありません。</strong> 除外対象は、既存の資料にその商品と対応する成分原文が見つかっていないため、<em>現時点の自動登録対象から一時的に外した商品</em>です。成分が存在しないと確認したわけではなく、商品一覧からも削除していません。出典が見つかれば参考収録候補に戻します。除外件数を「100商品収録した」実績には加えません。</p>
-<p class="muted">固定1,754商品 ／ 原文名収録253 ／ 未収録1,501 ／ 全成分保存版409（別集計）。今回、新たに成分を登録した件数：<strong>99</strong>。</p>
+<p class="muted">固定1,754商品 ／ 原文名収録253 ／ 未収録1,501（調査継続1,490・調査対象から除外11） ／ 全成分保存版409（別集計）。今回、新たに成分を登録した件数：<strong>99</strong>。</p>
 <p><a href="ingredient-registration-eligibility-rc144.csv" download>全1,754商品の登録可否CSV</a>　<a href="ingredient-registration-eligibility-rc144.json">判定理由付きJSON</a></p>
 <h2>商品別の登録判定</h2>
-<div class="controls"><input id="search" type="search" placeholder="ブランド・商品名・JAN" aria-label="商品名検索"><select id="filter" aria-label="判定の絞り込み"><option value="excluded">成分名の出典がなく登録除外（1,501件）</option><option value="eligible">出典のある参考収録済み（253件）</option><option value="">全1,754商品</option></select></div>
+<div class="controls"><input id="search" type="search" placeholder="ブランド・商品名・JAN" aria-label="商品名検索"><select id="filter" aria-label="判定の絞り込み"><option value="excluded">成分名の出典がなく登録除外（1,501件）</option><option value="eligible">出典のある参考収録済み（253件）</option><option value="researchOpen">原文情報を調査継続（1,490件）</option><option value="researchExcluded">以後の調査から除外（11件）</option><option value="">全1,754商品</option></select></div>
 <p id="status" role="status">データを読み込み中です。</p><div id="results"></div>
 <div class="pager"><button id="prev" type="button" disabled>前へ</button><span id="page">1 / 1</span><button id="next" type="button" disabled>次へ</button></div>
 <p class="muted">ページ上での検索内容は保存・送信しません。登録する場合も、元の成分名と出典・確認日・製品照合状況を保持します。</p>
 </main><script type="module">
 const $=id=>document.getElementById(id);let records=[],page=0;const size=24;
 function el(tag,text){const x=document.createElement(tag);if(text!==undefined)x.textContent=text;return x}
-function render(){const query=$('search').value.normalize('NFKC').toLowerCase().trim(),filter=$('filter').value;const arr=records.filter(r=>(!filter||(filter==='eligible'?r.ingredientRegistrationEligible:r.excludedFromRegistrationBatch))&&(!query||[r.brand,r.productName,r.jan,r.productId].join(' ').normalize('NFKC').toLowerCase().includes(query)));
+function render(){const query=$('search').value.normalize('NFKC').toLowerCase().trim(),filter=$('filter').value;const arr=records.filter(r=>(!filter||(filter==='eligible'?r.ingredientRegistrationEligible:filter==='researchOpen'?r.sourceResearchStillOpen:filter==='researchExcluded'?r.excludedFromResearch:r.excludedFromRegistrationBatch))&&(!query||[r.brand,r.productName,r.jan,r.productId].join(' ').normalize('NFKC').toLowerCase().includes(query)));
  const pages=Math.max(1,Math.ceil(arr.length/size));page=Math.min(page,pages-1);$('status').textContent='該当 '+arr.length.toLocaleString('ja-JP')+'件 ／ 全1,754商品';$('results').replaceChildren();for(const r of arr.slice(page*size,(page+1)*size)){
   const a=el('article'),h=el('h3',r.brand+'｜'+r.productName);a.append(h);
-  const tag=el('span',r.ingredientRegistrationEligible?'出典あり・参考収録済み':'自動登録から除外・出典調査待ち');tag.className='tag';a.append(tag);
+  const tag=el('span',r.ingredientRegistrationEligible?'出典あり・参考収録済み':r.excludedFromResearch?'登録・調査対象から除外':'成分登録対象外・原文調査継続');tag.className='tag';a.append(tag);
   const p=el('p',r.nextAction);p.className='reason';a.append(p);
   if(!r.ingredientRegistrationEligible){const note=el('p','※ 成分の不存在が証明されたわけではありません。架空の成分を入れずに保持中。');note.className='muted';a.append(note)}
   else{const sources=el('p');sources.className='reason';sources.append('確認元：');for(const src of r.sourceReferences.slice(0,2)){const url=src.url||'';if(url.startsWith('https://')){const link=el('a','原文の確認先（'+src.language+'）');link.href=url;link.target='_blank';link.rel='noopener noreferrer';sources.append(link,'　')}}a.append(sources)}
   const link=el('a','商品を開く');link.href='./?productId='+encodeURIComponent(r.productId);a.append(link);$('results').append(a)
  }$('page').textContent=(page+1)+' / '+pages;$('prev').disabled=page===0;$('next').disabled=page>=pages-1}
 $('search').addEventListener('input',()=>{page=0;render()});$('filter').addEventListener('change',()=>{page=0;render()});$('prev').addEventListener('click',()=>{page--;render()});$('next').addEventListener('click',()=>{page++;render()});
-try{const response=await fetch('ingredient-registration-eligibility-rc144.json');if(!response.ok)throw Error('収録判定を取得できません');const json=await response.json();const s=json.summary;if(s.fixedRegisteredProducts!==1754||s.registeredWithPublishedIngredientNameEvidence!==253||s.temporarilyExcludedFromIngredientRegistration!==1501||s.sourceResearchBacklog!==1501||json.records.length!==1754)throw Error('収録件数に不整合があります');records=json.records;render()}catch(error){$('status').textContent='登録判定を表示できません。CSVまたはJSONをご確認ください。'+error.message}
+try{const response=await fetch('ingredient-registration-eligibility-rc144.json');if(!response.ok)throw Error('収録判定を取得できません');const json=await response.json();const s=json.summary;if(s.fixedRegisteredProducts!==1754||s.registeredWithPublishedIngredientNameEvidence!==253||s.temporarilyExcludedFromIngredientRegistration!==1501||s.sourceResearchBacklog!==1490||s.researchExcludedForUnconfirmedSource!==11||json.records.length!==1754)throw Error('収録件数に不整合があります');records=json.records;render()}catch(error){$('status').textContent='登録判定を表示できません。CSVまたはJSONをご確認ください。'+error.message}
 </script></body></html>
