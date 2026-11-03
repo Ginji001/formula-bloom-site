@@ -58,6 +58,11 @@ export async function staticGetJSON(path,{signal}={}){
   if(!response.ok)throw Error('新しい国内公式参考原文が読み込めません');
   return response.json();
  }
+ if(u.pathname.endsWith('/major-maker-name-evidence-rc164.json')){
+  const response=await fetch('./major-maker-name-evidence-rc164.json',{signal});
+  if(!response.ok)throw Error('メーカー商品名の照合結果を読み込めません');
+  return response.json();
+ }
  if(u.pathname.endsWith('/major-maker-research-progress-rc163.json')){
   const response=await fetch('./major-maker-research-progress-rc163.json',{signal});
   if(!response.ok)throw Error('重点メーカー調査台帳を読み込めません');

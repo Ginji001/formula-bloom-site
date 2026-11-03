@@ -72,6 +72,14 @@ function loadProduct(){invalidate();$('japanConfirmed').checked=true;remoteProdu
 $('sample').onclick=loadProduct;
 async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
+let majorNameEvidencePromise=null;
+function majorNameEvidence(){
+ if(!majorNameEvidencePromise)majorNameEvidencePromise=getJSON('/major-maker-name-evidence-rc164.json').then(data=>{
+  if(data?.schemaVersion!==1||!data.all334StatusesAssigned||data.targetProductCount!==334||!Array.isArray(data.records)||data.records.length!==334)throw Error('商品名確認台帳の形式が不正です');
+  return data.records;
+ }).catch(e=>{majorNameEvidencePromise=null;throw e;});
+ return majorNameEvidencePromise;
+}
 let partialEvidencePromise=null;
 function partialEvidence(){
  if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json'),getJSON('/partial-ingredient-evidence-rc139.json'),getJSON('/partial-ingredient-evidence-rc140.json'),getJSON('/partial-ingredient-evidence-rc141.json'),getJSON('/partial-ingredient-evidence-rc143.json'),getJSON('/partial-ingredient-evidence-rc144.json'),getJSON('/partial-ingredient-evidence-rc145.json'),getJSON('/partial-ingredient-evidence-rc146.json'),getJSON('/partial-ingredient-evidence-rc147.json'),getJSON('/partial-ingredient-evidence-rc148.json'),getJSON('/partial-ingredient-evidence-rc149.json'),getJSON('/partial-ingredient-evidence-rc150.json'),getJSON('/partial-ingredient-evidence-rc151.json'),getJSON('/partial-ingredient-evidence-rc152.json'),getJSON('/partial-ingredient-evidence-rc153.json'),getJSON('/partial-ingredient-evidence-rc154.json'),getJSON('/partial-ingredient-evidence-rc155.json'),getJSON('/partial-ingredient-evidence-rc156.json'),getJSON('/partial-ingredient-evidence-rc157.json'),getJSON('/partial-ingredient-evidence-rc158.json'),getJSON('/partial-ingredient-evidence-rc159.json'),getJSON('/partial-ingredient-evidence-rc160.json'),getJSON('/partial-ingredient-evidence-rc162.json'),getJSON('/partial-ingredient-evidence-rc163.json')]).then(all=>all.flatMap(validatePartialEvidence)).catch(e=>{partialEvidencePromise=null;throw e;});
@@ -788,6 +796,19 @@ function showPartialChoices(container,item){
  advanced.className='product-evidence-more';
  const summary=document.createElement('summary');summary.textContent='成分の根拠・詳細';
  advanced.append(summary);container.append(advanced);
+ const nameStatus=document.createElement('p');nameStatus.className='muted product-name-source-status';container.append(nameStatus);
+ majorNameEvidence().then(rows=>{
+  if(version!==lookupVersion)return;
+  const evidence=rows.find(x=>x.productId===item.id);if(!evidence){nameStatus.remove();return;}
+  nameStatus.textContent=evidence.nameOnlyReference?'掲載元で商品名一致を確認。成分は未確認です。':
+   evidence.nameMatchStatus==='restricted-retailer-not-accessed'?'販売サイトの自動確認を控えています。商品名と成分は未確認です。':
+   evidence.nameMatchStatus==='source-fetch-unavailable'?'掲載ページに接続できず、商品名は未確認です。':
+   '現在の掲載ページでは商品名一致を確認できませんでした。成分は未確認です。';
+  const p=document.createElement('p');p.className='muted';
+  p.textContent='商品名の確認：'+evidence.matchStatusLabel+'（2026-11-04）。これは日本向け全成分・配合順・JAN・容量・バリエーションの一致を証明しません。';
+  advanced.append(p);
+  if(evidence.nameOnlyReference&&evidence.officialSourceUrl)sourceLink(advanced,evidence.officialSourceUrl,'名前の一致を確認した掲載ページ');
+ }).catch(()=>{if(version===lookupVersion)nameStatus.remove()});
  showSkuIdentityEvidence(advanced,item,version);
  showInferredFlowerChoice(advanced,item);
  showEnglishInciChoices(advanced,item,version);
