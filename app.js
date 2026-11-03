@@ -74,7 +74,7 @@ async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let majorNameEvidencePromise=null;
 function majorNameEvidence(){
- if(!majorNameEvidencePromise)majorNameEvidencePromise=getJSON('/major-maker-name-evidence-rc164.json').then(data=>{
+ if(!majorNameEvidencePromise)majorNameEvidencePromise=getJSON('/major-maker-name-evidence-rc165.json').then(data=>{
   if(data?.schemaVersion!==1||!data.all334StatusesAssigned||data.targetProductCount!==334||!Array.isArray(data.records)||data.records.length!==334)throw Error('商品名確認台帳の形式が不正です');
   return data.records;
  }).catch(e=>{majorNameEvidencePromise=null;throw e;});
@@ -800,14 +800,18 @@ function showPartialChoices(container,item){
  majorNameEvidence().then(rows=>{
   if(version!==lookupVersion)return;
   const evidence=rows.find(x=>x.productId===item.id);if(!evidence){nameStatus.remove();return;}
-  nameStatus.textContent=evidence.nameOnlyReference?'掲載元で商品名一致を確認。成分は未確認です。':
+  nameStatus.textContent=evidence.nameMatchStatus==='name-shown-only-as-crossborder-import'?'韓国直送・個人輸入の掲載のみ。日本国内版は未確認です。':
+   evidence.sourceBasis==='manufacturer-official-index'?'メーカー日本公式の検索掲載記録に商品名を確認。現行ページ・成分は未確認です。':
+   evidence.sourceBasis==='domestic-retailer-index'?'国内販売店の検索掲載記録に商品名を確認。メーカー成分は未確認です。':
+   evidence.nameOnlyReference?'商品名の掲載を確認。成分は未確認です。':
    evidence.nameMatchStatus==='restricted-retailer-not-accessed'?'販売サイトの自動確認を控えています。商品名と成分は未確認です。':
    evidence.nameMatchStatus==='source-fetch-unavailable'?'掲載ページに接続できず、商品名は未確認です。':
    '現在の掲載ページでは商品名一致を確認できませんでした。成分は未確認です。';
   const p=document.createElement('p');p.className='muted';
-  p.textContent='商品名の確認：'+evidence.matchStatusLabel+'（2026-11-04）。これは日本向け全成分・配合順・JAN・容量・バリエーションの一致を証明しません。';
+  p.textContent='商品名の確認：'+evidence.nameMatchStatusLabel+'（2026-11-04）。'+(evidence.caution||'日本向け全成分・JAN・現物は未確認です。');
   advanced.append(p);
-  if(evidence.nameOnlyReference&&evidence.officialSourceUrl)sourceLink(advanced,evidence.officialSourceUrl,'名前の一致を確認した掲載ページ');
+  if(evidence.nameOnlyReference&&evidence.officialSourceUrl)sourceLink(advanced,evidence.officialSourceUrl,evidence.sourceBasis?.includes('index')?'検索掲載記録に記載された元ページ（現行版未確認）':'名前の一致を確認した掲載ページ');
+  if(evidence.nameMatchStatus==='name-shown-only-as-crossborder-import'&&evidence.candidateProductNameEvidenceUrl)sourceLink(advanced,evidence.candidateProductNameEvidenceUrl,'韓国直送の販売元記載（国内商品ではない）');
  }).catch(()=>{if(version===lookupVersion)nameStatus.remove()});
  showSkuIdentityEvidence(advanced,item,version);
  showInferredFlowerChoice(advanced,item);
