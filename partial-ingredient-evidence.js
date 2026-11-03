@@ -13,8 +13,9 @@ export function validatePartialEvidence(data){
    (pinnedHistoricalLaunchProductIds.has(record.productId)&&record.sourceType!=='japanese-domestic-launch-announcement')||
    !Array.isArray(record.ingredients)||!record.ingredients.length||
    record.ingredients.some(s=>!isJapaneseIngredientText(s))||
-   !['japanese-manufacturer-website','japanese-domestic-retailer-listing','japanese-domestic-launch-announcement'].includes(record.sourceType)||
+   !['japanese-manufacturer-website','japanese-domestic-retailer-listing','japanese-domestic-launch-announcement','japanese-official-distributor-shop'].includes(record.sourceType)||
    (record.sourceType==='japanese-domestic-retailer-listing'&&!record.retailerName)||
+   (record.sourceType==='japanese-official-distributor-shop'&&(record.officialDistributorName!=='SKINFOOD日本総代理店'||!/^https:\/\/www\.skinfood\.co\.jp\/fs\/skin\/\d+$/.test(record.sourceUrl)))||
    (record.sourceType==='japanese-domestic-launch-announcement'&&(
      record.publisherName!=='エフエムジー＆ミッション'||
      record.sourceUrl!=='https://prtimes.jp/main/html/rd/p/000000034.000019093.html'||
