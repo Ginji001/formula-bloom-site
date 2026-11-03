@@ -573,7 +573,7 @@ jobs:
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
           const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
-          if(!sourceOnlyHome.includes('app.js?v=github-pages-99')||
+          if(!sourceOnlyHome.includes('app.js?v=github-pages-100')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
@@ -943,6 +943,47 @@ jobs:
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc139.json'))
                throw Error('rc139 exact manufacturer raw Japanese names or 110/1644 ledger incorrect');
           console.log('Verified rc139: 3 KATE maker JANs, 36 original Japanese strings; 110 with names, 1644 without; 26 English sources unchanged');
+          const a141=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc141.json','utf8'));
+          const j141=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc141.json','utf8'));
+          const o141=JSON.parse(fs.readFileSync('_site/original-name-coverage-rc141.json','utf8'));
+          const view141=fs.readFileSync('_site/original-name-review-rc141.html','utf8');
+          const csv141=fs.readFileSync('_site/original-name-coverage-rc141.csv','utf8');
+          const list141=new Map(a141.records.map(x=>[x.productId,x]));
+          const ids141=new Set(o141.records.map(x=>x.productId));
+          if(a141.productCount!==18||a141.records.length!==18||list141.size!==18||
+             a141.originalJapaneseNameAssociations!==270||
+             a141.records.some(x=>x.brand!=='ALBLANC'||x.sourceOriginalNames.length!==15||
+                x.ingredientCount!==15||x.ingredients.length!==15||
+                JSON.stringify(x.sourceOriginalNames)!==JSON.stringify(x.sourceOriginalJapaneseNames)||
+                x.sourceUrl!=='https://www.kao-kirei.com/ja/item/kbb/alblanc/'+x.sourceObservedJan+'/'||
+                x.sourceOriginalNamesNotTranslated!==true||x.originalManufacturerTextPreserved!==true||
+                x.coverage!=='partial-only'||x.order!=='not-confirmed'||
+                x.labelCompared!==false||x.currentFormulaCompared!==false||
+                x.sourceActiveIngredientNames.some(n=>!x.sourceOriginalNames.includes(n)))||
+             o141.records.length!==1754||ids141.size!==1754||[...ids141].some(x=>!decisionIds.has(x))||
+             o141.summary.ingredientNameReferenceProducts!==131||
+             o141.summary.noRecordedIngredientNameProducts!==1623||
+             o141.summary.japaneseNameReferenceProducts!==109||
+             o141.summary.originalEnglishReferenceProducts!==26||
+             o141.summary.englishOnlyReferenceProducts!==22||
+             o141.summary.overlappingJapaneseAndEnglishProducts!==4||
+             o141.summary.fullJapaneseFormulaSnapshots!==409||
+             j141.summary.japaneseNameReferenceProducts!==109||
+             j141.summary.japaneseNameNotRecordedProducts!==1645||
+             o141.records.filter(x=>x.status==='japanese-reference-recorded').length!==109||
+             o141.records.filter(x=>x.status==='original-inci-reference-only').length!==22||
+             o141.records.filter(x=>x.status==='no-ingredient-name-evidence').length!==1623||
+             o141.records.some(x=>{const s=list141.get(x.productId);return s?
+               JSON.stringify(x.sourceOriginalJapaneseNames)!==JSON.stringify(s.sourceOriginalNames)||
+               x.verifiedJanFromManufacturer!==s.sourceObservedJan:false})||
+             !csv141.startsWith('\uFEFF')||csv141.split('\n').length!==1756||
+             !view141.includes('original-name-coverage-rc141.json')||
+             !view141.includes('1,623')||
+             !sourceOnlyHome.includes('original-name-review-rc141.html')||
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc141.json'))
+              throw Error('rc141 18 ALBLANC literal maker ingredient source facts or 131 / 1623 count invalid');
+          console.log('Verified rc141: 18 ALBLANC manufacturer exact product pages, 270 original ingredient names; 131 recorded, 1623 missing');
+
 
 
 
