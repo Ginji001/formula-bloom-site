@@ -53,6 +53,16 @@ export async function staticGetJSON(path,{signal}={}){
    return response.json();
   }
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc162.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc162.json',{signal});
+  if(!response.ok)throw Error('rc162の出典付き参考成分を読み込めません');
+  return response.json();
+ }
+ if(u.pathname.endsWith('/major-maker-research-progress-rc162.json')){
+  const response=await fetch('./major-maker-research-progress-rc162.json',{signal});
+  if(!response.ok)throw Error('主要メーカー調査の更新を読み込めません');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc160.json')){
   const response=await fetch('./partial-ingredient-evidence-rc160.json',{signal});
   if(!response.ok)throw Error('新規の日本語参考原文を読み込めません。');
