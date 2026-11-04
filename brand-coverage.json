@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T13:03:58.299Z",
+  "generatedAt": "2026-11-04T13:58:18.386Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
   "brandsWithKnownIngredientsOnly": 48,
   "brandsWithNoIngredientEvidence": 25,
-  "knownIngredientExcerptCount": 1288,
+  "knownIngredientExcerptCount": 1294,
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
@@ -347,7 +347,7 @@
       "country": "JP",
       "savedFormulaCount": 2,
       "registeredCandidateCount": 25,
-      "knownIngredientExcerptCount": 3,
+      "knownIngredientExcerptCount": 9,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -379,6 +379,66 @@
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-017",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F73802.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-018",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F73801.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-022",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/887102.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-019",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F73901.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-020",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/018001.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc92-official-family-aqualabel-002",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H90501.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
           "orderConfirmed": false,
           "physicalLabelCompared": false
         }

@@ -53,6 +53,11 @@ export async function staticGetJSON(path,{signal}={}){
    return response.json();
   }
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc183.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc183.json',{signal});
+  if(!response.ok)throw Error('アクアレーベル日本公式の参考成分を読み込めません。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc178.json')){
   const response=await fetch('./partial-ingredient-evidence-rc178.json',{signal});
   if(!response.ok)throw Error('メーカー公式の追加参考成分を読み込めません');
