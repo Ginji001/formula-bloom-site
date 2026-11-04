@@ -59,8 +59,8 @@ export function extractIngredientCandidates(text){
  const raw=String(text||'');
  if(raw.length<20||raw.length>40000)return [];
  const lines=raw.replace(/\r/g,'').split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean);
- const heading=/^(?:【|\[)?(?:全成分(?:表示|一覧)?|配合全成分|配合成分(?:表示|一覧)?|成分表示|成分表)(?:】|\])?\s*[:：]?\s*(.*)$/;
- const stop=/^(?:使用方法|使い方|おすすめ|特徴|注意事項|ご使用|内容量|商品情報|販売価格|レビュー|クチコミ|関連記事|口コミ|配送|送料|香り|主な成分|主要成分|注目成分)/;
+ const heading=/^(?:【|\[)?(?:全成分(?:表示|一覧)?|配合全成分|配合成分(?:表示|一覧)?|成分表示|成分表|成分)(?:】|\])?\s*[:：]?\s*(.*)$/;
+ const stop=/^(?:使用方法|使い方|おすすめ|特徴|注意事項|ご使用|内容量|商品情報|販売名|使用感|販売価格|レビュー|クチコミ|関連記事|口コミ|配送|送料|香り|主な成分|主要成分|注目成分)/;
  const found=[];
  for(let i=0;i<lines.length;i++){
   const match=heading.exec(lines[i]);
@@ -80,4 +80,38 @@ export function extractIngredientCandidates(text){
      !found.includes(candidate))found.push(candidate);
  }
  return found;
+}
+
+
+// Japanese quasi-drug copy often separates active and other ingredients.
+// Only explicitly headed original Japanese sections are candidates; this
+// helper does not infer which ingredient is medicinal or store web content.
+export function extractMedicatedIngredientCandidates(text){
+ const raw=String(text||'');
+ if(raw.length<20||raw.length>40000)return [];
+ const marked=raw.replace(/\r/g,'')
+  .replace(/(?:＜|<|【|\[)有効成分(?:＞|>|】|\])\s*[:：]?/g,'\n__ACTIVE__\n')
+  .replace(/(?:＜|<|【|\[)その他(?:の)?成分(?:＞|>|】|\])\s*[:：]?/g,'\n__OTHER__\n')
+  .replace(/^有効成分\s*[:：]/gm,'__ACTIVE__\n')
+  .replace(/^その他(?:の)?成分\s*[:：]/gm,'__OTHER__\n');
+ const start=marked.indexOf('__ACTIVE__'),mid=marked.indexOf('__OTHER__',start+10);
+ if(start<0||mid<0)return [];
+ const slice=(chunk)=>{
+  const lines=chunk.replace(/__ACTIVE__|__OTHER__/g,'').split('\n').map(x=>x.trim()).filter(Boolean);
+  const items=[];
+  for(const line of lines){
+   if(/^(?:販売名|商品情報|内容量|使用方法|使用上|注意事項|使い方|香り|特長|商品説明)/.test(line)||
+      /[。！？]/.test(line)||line.length>3000||/https?:\/\//.test(line))break;
+   items.push(line);
+  }
+  return items.join('、').replace(/[、,，]+$/,'');
+ };
+ const activeText=slice(marked.slice(start+'__ACTIVE__'.length,mid));
+ const otherText=slice(marked.slice(mid+'__OTHER__'.length));
+ if(!activeText||!otherText||!isJapaneseIngredientsList(activeText)||!isJapaneseIngredientsList(otherText))return [];
+ const active=splitIngredients(activeText),other=splitIngredients(otherText);
+ if(active.length<1||active.length>15||other.length<3||other.length>290||
+    active.length+other.length>300)return [];
+ const ingredients=[...active,...other].join('、');
+ return [{ingredients,active,other}];
 }

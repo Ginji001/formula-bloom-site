@@ -438,6 +438,37 @@ jobs:
             throw Error('rc180 source-specific medicinal role verification or public privacy boundary failed');
           console.log('Verified rc180: 2 Japanese official medicinal roles corrected, 41 remaining, full600 partial1240 unknown180.');
 
+          // rc181: actual product search-to-full-formula client workflow, never automated mass scraping.
+          const app181=fs.readFileSync('_site/app.js','utf8');
+          const source181=fs.readFileSync('_site/shared-source.js','utf8');
+          const completion181=fs.readFileSync('_site/partial-formula-completion.js','utf8');
+          const html181=fs.readFileSync('_site/index.html','utf8');
+          const pwa181=fs.readFileSync('_site/sw.js','utf8');
+          if(!app181.includes('complete-partial-formula-action')||
+             !app181.includes('startPartialCompletion(item,record)')||
+             !app181.includes('comparePartialCompletion(record')||
+             !app181.includes('sharedCompletionIdentity')||
+             !app181.includes('sharedCompletionFullList')||
+             !app181.includes('navigator.clipboard?.readText')||
+             !app181.includes('extractMedicatedIngredientCandidates')||
+             !app181.includes('pendingMedicatedGroups')||
+             !app181.includes('showMedicatedCategories(remoteProduct)')||
+             !completion181.includes('export function comparePartialCompletion')||
+             !completion181.includes('export function sameProductSourceUrl')||
+             completion181.includes('fetch(')||completion181.includes('localStorage')||
+             !source181.includes('export function extractMedicatedIngredientCandidates')||
+             !html181.includes('id="sharedCompletionReview"')||
+             !html181.includes('id="sharedCompletionIdentity"')||
+             !html181.includes('id="sharedCompletionFullList"')||
+             !html181.includes('id="sharedCompletionClipboard"')||
+             !pwa181.includes('partial-formula-completion.js')||
+             !html181.includes('github-pages-102-rc181')||
+             fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
+             fs.existsSync('_site/docs/rc181-user-assisted-complete-formula-flow-20261104.md'))
+            throw Error('rc181 user-confirmed Japanese partial-to-complete workflow or private-file boundary failed');
+          console.log('Verified rc181: Japanese 1240-product completion workflow, medicinal group preservation and client-side explicit confirmation.');
+
+
 
 
 

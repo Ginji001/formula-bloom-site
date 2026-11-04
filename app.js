@@ -52,12 +52,14 @@ import {checkProductIdentity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord,mergeFormulaArchives} from './formula-archive.js';
 import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
-import {prepareSharedFormula,extractIngredientCandidates,sharedSource} from './shared-source.js';
+import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredientCandidates,sharedSource} from './shared-source.js';
+import {comparePartialCompletion,ingredientMatchKey} from './partial-formula-completion.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
 import {createPoster,shareCaption,savePoster,sharePoster} from './share.js';
 let lookupVersion=0,lookupAbort=null,typingTimer=null;
+let pendingPartialCompletion=null,pendingMedicatedGroups=null;
 function beginLookup(){lookupAbort?.abort();lookupAbort=new AbortController();return {version:++lookupVersion,signal:lookupAbort.signal};}
 function busy(value){$('searchBtn').disabled=value;$('fetchOfficial').disabled=value;$('searchBtn').textContent=value?'検索中…':'検索';$('search').setAttribute('aria-busy',String(value));}
 const $=id=>document.getElementById(id);let remoteProduct=null;let current=[],selected='root',inputMode='search',official=false,ocrRequired=false,worker,report='',reportCore='',bloomRecommendation=null,posterState=null;
@@ -279,10 +281,91 @@ async function fetchProduct(url,confirmed=false,auto=false,depth=0,ctx=null,pref
 $('searchSite').oninput=()=>{$('searchSiteConfirmed').checked=false;};
 $('officialUrl').oninput=()=>{$('officialConfirmed').checked=false;invalidate();remoteProduct=null;official=false;};
 $('fetchOfficial').onclick=()=>fetchProduct($('officialUrl').value.trim());
-for(const id of ['sharedUrl','sharedName','sharedIngredients'])$(id).oninput=()=>{$('sharedConfirmed').checked=false;};
-$('sharedPageText').oninput=()=>{$('sharedConfirmed').checked=false;};
+function clearPartialCompletion(){
+ pendingPartialCompletion=null;pendingMedicatedGroups=null;
+ $('sharedCompletionReview').hidden=true;
+ $('sharedCompletionIdentity').checked=false;
+ $('sharedCompletionFullList').checked=false;
+ $('sharedCompletionSource').replaceChildren();
+ $('sharedCompletionStatus').textContent='';
+}
+function completionStatus(){
+ if(!pendingPartialCompletion)return null;
+ const record=pendingPartialCompletion.record;
+ const status=comparePartialCompletion(record,{
+  sourceUrl:$('sharedUrl').value.trim(),
+  ingredients:$('sharedIngredients').value,
+  kind:$('sharedKind').value
+ });
+ const messages=[];
+ if(!status.sourceMatches)messages.push('出典URLが元の商品別ページと異なります。');
+ if(!status.kindMatches)messages.push('化粧品／医薬部外品の区分が元資料と異なります。');
+ if(!status.listFormatted)messages.push('日本語の全成分欄を5〜300名称で入力してください。');
+ messages.push('元の参考成分との一致：'+status.matchedCount+'／'+status.referenceCount+'名称一致。');
+ if(status.missing.length)messages.push('不一致：'+status.missing.slice(0,5).join('、')+(status.missing.length>5?' ほか'+(status.missing.length-5)+'名称':'')+'。別色・改良前後・異なるSKUの可能性があります。');
+ if(status.verifiedSubset)messages.push('参考名称は一致しました。全成分の完結性・現物・最新ロットは自動確認できないため、原文を自分で確認してください。');
+ $('sharedCompletionStatus').textContent=messages.join(' ');
+ return status;
+}
+function startPartialCompletion(item,record){
+ pendingMedicatedGroups=null;
+ pendingPartialCompletion={record,productId:item.id,expectedName:record.brand+' '+record.productName};
+ $('shareImport').open=true;
+ $('sharedPageDetails').open=true;
+ $('sharedCompletionReview').hidden=false;
+ $('sharedUrl').value=record.sourceUrl;
+ $('sharedName').value=pendingPartialCompletion.expectedName;
+ $('sharedKind').value=['cosmetic','quasi'].includes(record.kind)?record.kind:'';
+ $('sharedIngredients').value='';
+ $('sharedPageText').value='';
+ $('sharedExtractChoices').replaceChildren();
+ $('sharedExtractStatus').textContent='';
+ $('sharedConfirmed').checked=false;
+ $('sharedHistorical').checked=false;
+ $('sharedCompletionIdentity').checked=false;
+ $('sharedCompletionFullList').checked=false;
+ const details=[
+  record.sourceObservedJan||record.jan?'出典JAN '+(record.sourceObservedJan||record.jan):'JAN未確認',
+  record.sourceObservedVolume||record.volume?'容量 '+(record.sourceObservedVolume||record.volume):'容量未確認',
+  record.sourceShade||record.sourceObservedVariant||record.variant?'色・商品版 '+(record.sourceShade||record.sourceObservedVariant||record.variant):'商品版未確認',
+  record.kind==='quasi'?'医薬部外品（有効成分とその他は原文確認）':record.kind==='cosmetic'?'化粧品':'製品区分を原文で選択'
+ ];
+ $('sharedCompletionProduct').textContent='対象：'+pendingPartialCompletion.expectedName+' ／ '+details.join(' ／ ');
+ $('sharedCompletionSource').replaceChildren();
+ sourceLink($('sharedCompletionSource'),record.sourceUrl,'元の国内向け掲載ページを開く');
+ $('sharedImportStatus').textContent='公式などの掲載元で、商品と全成分を原文確認してください。ページをコピーして貼り付けると既存の部分成分と比べます。入力は送信・自動保存されません。';
+ completionStatus();
+ $('shareImport').scrollIntoView({behavior:'smooth',block:'start'});
+ $('sharedPageText').focus();
+}
+$('sharedCompletionClipboard').onclick=async()=>{
+ if(!pendingPartialCompletion)return;
+ try{
+  if(!navigator.clipboard?.readText)throw Error('このブラウザーでは直接貼り付けが使えません。下の入力欄に貼り付けてください。');
+  const copied=await navigator.clipboard.readText();
+  if(!copied||copied.length>40000)throw Error('コピーしたページ本文は最大40,000文字です。必要な全成分欄だけをコピーしてください。');
+  $('sharedPageText').value=copied;
+  $('sharedExtractBtn').click();
+  $('sharedExtractStatus').textContent='端末内でコピー内容を解析しました。候補を選んで、商品と全成分を原文で確認してください。';
+ }catch(error){$('sharedExtractStatus').textContent=error.message||'コピー内容を読み取れませんでした。貼り付け欄を利用してください。';}
+};
+$('sharedCompletionReset').onclick=()=>{
+ clearPartialCompletion();
+ $('sharedConfirmed').checked=false;
+ $('sharedImportStatus').textContent='商品との紐付けを解除しました。通常の手入力として出典・日本語全成分を確認してください。';
+};
+for(const id of ['sharedUrl','sharedName','sharedIngredients'])$(id).oninput=()=>{
+ if(id==='sharedIngredients')pendingMedicatedGroups=null;
+ $('sharedConfirmed').checked=false;
+ completionStatus();
+};
+$('sharedPageText').oninput=()=>{$('sharedConfirmed').checked=false;pendingMedicatedGroups=null;};
 $('sharedExtractBtn').onclick=()=>{
- const choices=extractIngredientCandidates($('sharedPageText').value);
+ const text=$('sharedPageText').value;
+ const choices=[
+  ...extractMedicatedIngredientCandidates(text).map(group=>({text:group.ingredients,group})),
+  ...extractIngredientCandidates(text).map(text=>({text,group:null}))
+ ];
  const area=$('sharedExtractChoices');area.replaceChildren();
  $('sharedConfirmed').checked=false;
  if(!choices.length){
@@ -292,38 +375,70 @@ $('sharedExtractBtn').onclick=()=>{
  $('sharedExtractStatus').textContent='全成分候補 '+choices.length+'件。原文で商品・タイプ・成分を確認して選んでください。';
  choices.forEach((candidate,index)=>{
   const btn=document.createElement('button');btn.type='button';btn.className='secondary';
-  const n=candidate.split('、').length;
-  btn.textContent='候補 '+(index+1)+'（約'+n+'成分）を入力欄へ';
+  const n=candidate.text.split('、').length;
+  btn.textContent='候補 '+(index+1)+'（約'+n+'成分'+(candidate.group?'／有効'+candidate.group.active.length+'・その他'+candidate.group.other.length:'')+'）を入力欄へ';
   btn.onclick=()=>{
-   $('sharedIngredients').value=candidate;
+   $('sharedIngredients').value=candidate.text;
+   pendingMedicatedGroups=candidate.group;
+   if(candidate.group)$('sharedKind').value='quasi';
    $('sharedConfirmed').checked=false;
-   $('sharedExtractStatus').textContent='入力欄へ転記しました。商品・タイプ・全成分が合うか原文を確認してから解析してください。';
+   $('sharedExtractStatus').textContent=candidate.group
+    ?'メーカー掲載の有効成分とその他成分を分けて一時入力しました。薬用区分・商品の一致と原文全体を確認してください。'
+    :'入力欄へ転記しました。商品・タイプ・全成分が合うか原文を確認してから解析してください。';
+   completionStatus();
    $('sharedIngredients').focus();
   };
   area.append(btn);
  });
 };
 
-$('sharedKind').onchange=()=>{$('sharedConfirmed').checked=false;};
+$('sharedKind').onchange=()=>{if($('sharedKind').value!=='quasi')pendingMedicatedGroups=null;$('sharedConfirmed').checked=false;completionStatus();};
 $('sharedHistorical').onchange=()=>{$('sharedConfirmed').checked=false;};
 $('sharedImportBtn').onclick=()=>{
  invalidate();remoteProduct=null;official=false;ocrRequired=false;
  $('sharedImportStatus').textContent='';
  try{
+  if(pendingPartialCompletion){
+   const check=completionStatus();
+   if(!check.sourceMatches)throw Error('別の商品ページへの変更を検出しました。元の出典URLへ戻してください。');
+   if($('sharedName').value.trim()!==pendingPartialCompletion.expectedName)
+    throw Error('選んだ商品名から変更されています。商品版の取り違えを避けるため、元の商品名へ戻してください。');
+   if(!check.kindMatches)throw Error('メーカー参考資料の化粧品／医薬部外品の区分と一致しません。');
+   if(!check.listFormatted)throw Error('日本語の全成分表示を5〜300名称で入力し、元の原文と確認してください。');
+   if(check.missing.length)throw Error('元の国内向け参考成分と一致しない名称があります。改良前後・色番・容量・JANを確認し、別処方なら商品との紐付けを解除してください。');
+   if(pendingPartialCompletion.record.kind==='quasi'){
+    if(!pendingMedicatedGroups)throw Error('薬用製品は「有効成分」「その他成分」が分かれた原文をコピーし、薬用候補を選択してください。');
+    const active=new Set(pendingMedicatedGroups.active.map(ingredientMatchKey));
+    const expected=pendingPartialCompletion.record.sourceActiveIngredientNames||
+     (pendingPartialCompletion.record.activeIngredientName?[pendingPartialCompletion.record.activeIngredientName]:[]);
+    if(expected.some(x=>!active.has(ingredientMatchKey(x))))
+     throw Error('元の薬用有効成分と入力した有効成分が一致しません。別処方・商品版の可能性があるため確認してください。');
+   }
+   if(!$('sharedCompletionIdentity').checked)throw Error('商品名・容量・JAN・色番など出典の製品同一性を確認してください。');
+   if(!$('sharedCompletionFullList').checked)throw Error('全成分欄を最後まで確認してください。広告の配合成分だけでは全成分として扱えません。');
+  }
   const entry=prepareSharedFormula({
    url:$('sharedUrl').value,name:$('sharedName').value,
    ingredients:$('sharedIngredients').value,kind:$('sharedKind').value,confirmed:$('sharedConfirmed').checked,historical:$('sharedHistorical').checked
   });
+  if(entry.kind==='quasi'&&pendingMedicatedGroups&&
+     entry.ingredients===pendingMedicatedGroups.ingredients){
+   entry.activeIngredients=pendingMedicatedGroups.active.join('、');
+   entry.otherIngredients=pendingMedicatedGroups.other.join('、');
+  }
   remoteProduct=entry;
   $('ingredients').value=entry.ingredients;$('kind').value=entry.kind;
   $('origin').textContent=entry.order;$('japanConfirmed').checked=true;
   $('sourceInfo').replaceChildren();
   const note=document.createElement('p');note.className='muted';
-  note.textContent=entry.siteName+'の掲載内容を利用者が転記（メーカー・現物未確認）。';
+  note.textContent=pendingPartialCompletion
+   ?'選んだ商品 '+pendingPartialCompletion.expectedName+' の元の出典付き参考成分 '+pendingPartialCompletion.record.ingredients.length+'名称を確認しました。日本語全成分の完結性・商品版は利用者の原文確認であり、メーカーの現行ロット・現物ラベルとの一致は未確認です。入力は自動保存されません。'
+   :entry.siteName+'の掲載内容を利用者が転記（メーカー・現物未確認）。';
   $('sourceInfo').append(note);
   sourceLink($('sourceInfo'),entry.url,'掲載元を開く');
+  showMedicatedCategories(remoteProduct);
   run();
-  $('sharedImportStatus').textContent=$('error').textContent?'成分を確認してください。':'掲載された日本語全成分から花を生成しました（現物未確認）。';
+  $('sharedImportStatus').textContent=$('error').textContent?'成分を確認してください。':'利用者が確認した日本語全成分から花を生成しました（現物・最新ロット未確認）。';
  }catch(error){$('sharedImportStatus').textContent=error.message;}
 };
 async function fetchRetailProduct(url,ctx=null){
@@ -380,6 +495,7 @@ function appendRetailLinks(container,data){
   container.append(div);
 }
 function openSourceInput(url,name=''){
+ clearPartialCompletion();
  $('shareImport').open=true;
  $('sharedUrl').value=url;
  if(name)$('sharedName').value=name;
@@ -418,6 +534,7 @@ function offerJapaneseIngredients(){
   $('searchResults').append(action);
 }
 function openIngredientReview(item=null){
+ clearPartialCompletion();
  const name=item?.name||$('query').value.trim();
  if(item?.url&&sharedSource(item.url))$('sharedUrl').value=item.url;
  if(name)$('sharedName').value=(item?.brand?item.brand+' ':'')+name;
@@ -859,6 +976,21 @@ function showPartialChoices(container,item){
   action.onclick=()=>useKnownIngredients(item,record.ingredientNames,{sourceUrl:record.sourceUrl,
    scope:record.sourceKind.includes('purpose-grouped')?'日本メーカーの目的別全成分・分量表に明記された名称の五十音順データ。配合順・本体と詰替の処方一致・現物は未確認。':'日本メーカーの個別JAN成分欄に明記された名称を独立して五十音順に整理。原文の配合順を再現せず、現物・現行処方は未確認。',checkedOn:record.transcribedOn});
   actions.prepend(action);
+  // Five manufacturer-declared name records are outside the partial JSON batches,
+  // but still belong to the 1,240 source-backed reference products.
+  partialEvidence().then(partials=>{
+   if(version!==lookupVersion||partialForProduct(partials,item))return;
+   const complete=document.createElement('button');
+   complete.type='button';complete.className='secondary complete-partial-formula-action';
+   complete.textContent='出典の全成分を確認して花を完成させる';
+   const partialRecord={
+    productId:item.id,brand:item.brand,productName:item.name,sourceUrl:record.sourceUrl,
+    ingredients:[...record.ingredientNames],kind:null,
+    sourceSectionHeading:'個別商品に明記された日本語名称（配合順不明）'
+   };
+   complete.onclick=()=>startPartialCompletion(item,partialRecord);
+   actions.append(complete);
+  }).catch(()=>{});
   const explanation=document.createElement('p');explanation.className='muted';
   explanation.textContent='メーカーの日本語成分欄に明記された'+record.ingredientCount+'名称を独立して五十音順に整理。原文の配合順・現物は未確認。'+(record.sourceKind.includes('purpose-grouped')?'詰替の処方同一性も未確認。':'現行ロットの同一性も未確認。')+'全成分保存版ではありません。';
   advanced.append(explanation);sourceLink(advanced,record.sourceUrl,'表示名称の日本公式出典');
@@ -976,6 +1108,12 @@ function showPartialChoices(container,item){
     if(record.manufacturerProductPageIndividuallyChecked&&!record.sourceVolumeNotYetRegistered&&record.makerProductCode&&typeof record.sourceEvidenceType==='string'){const note=document.createElement('p');note.className='muted';note.textContent='ロート製薬公式の品番 '+record.makerProductCode+' に明記された'+record.ingredientCount+'名称だけの参考の花。'+(record.sourceEvidenceType.startsWith('featured-')?'この商品では4種のヒアルロン酸名称のみを掲載した脚注に基づき、全成分欄の確認ではありません。':'成分欄のうち曖昧な表記・注釈より前の名称だけを利用。')+'配合順・全成分・最新ロット・現物ラベルは未確認です。';$('sourceInfo').prepend(note);}
    };
    actions.prepend(action);
+   const complete=document.createElement('button');
+   complete.type='button';complete.className='secondary complete-partial-formula-action';
+   complete.textContent='出典の全成分を確認して花を完成させる';
+   complete.setAttribute('aria-label','この商品の部分成分を確認し、利用者が確認した日本語全成分で花を作成');
+   complete.onclick=()=>startPartialCompletion(item,record);
+   actions.append(complete);
    advanced.append(msg);
    sourceLink(advanced,record.sourceUrl,historical?'2020年国内発売元の発表を確認':retailer?'判明成分の国内販売店掲載元':'判明成分のメーカー掲載元');
   }
