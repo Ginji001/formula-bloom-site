@@ -152,4 +152,14 @@ button,input,select,textarea{touch-action:manipulation}
 .retail-channel-case a{display:block;font-size:11px;overflow-wrap:anywhere}
 .retail-channel-warning{font-weight:650;font-size:11px;color:#9c4c3b}
 
+/* rc166: immediate access to source-linked Japanese full formula archives. */
+.ready-formulas-access{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 18px}
+.ready-formulas-access .secondary{font-weight:650;max-width:100%;min-height:42px}
+.ready-formulas-access p{margin:0;font-size:12px;line-height:1.6;flex:1 1 220px}
+.formula-ready-intro{font-size:13px}
+.formula-available-toggle{display:flex;align-items:center;gap:8px;margin:14px 0;min-height:40px;cursor:pointer}
+.formula-available-toggle input{width:18px;height:18px;flex-shrink:0}
+.product-option[data-formula-ready="true"] small{font-weight:600;color:#22765b}
+@media(max-width:440px){.ready-formulas-access{align-items:stretch;flex-direction:column}.ready-formulas-access .secondary{width:100%}.formula-available-toggle{font-size:13px}}
+
 .pwa-guide{max-width:1120px;margin:20px auto;padding:16px;border:1px solid #ecd0d9;border-radius:12px;font-size:.88rem;line-height:1.8}.pwa-guide summary{cursor:pointer}.pwa-guide button{margin:8px 4px 0 0}.pwa-guide [hidden]{display:none}.pwa-update-notice{position:fixed;z-index:1000;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:12px;align-items:center;justify-content:center;width:min(460px,calc(100vw - 24px));padding:12px 14px;background:#fffefa;color:#57404d;border:1px solid #cdaebc;border-radius:14px;box-shadow:0 6px 26px #3214233a;font-size:13px}.pwa-update-notice button{border:0;border-radius:10px;padding:9px 13px;color:white;background:#875c71;min-height:44px;white-space:nowrap}

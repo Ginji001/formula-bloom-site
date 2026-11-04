@@ -44,6 +44,7 @@ import {describeFormulaSignature,formatFormulaSignature} from './formula-signatu
 import {provenance,provenanceText} from './provenance.js';
 import {checkProductIdentity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord} from './formula-archive.js';
+import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
 import {prepareSharedFormula,extractIngredientCandidates,sharedSource} from './shared-source.js';
 import {makeSnapshot} from './history.js';
@@ -70,6 +71,30 @@ function tab(name){lookupAbort?.abort();++lookupVersion;clearTimeout(typingTimer
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 function loadProduct(){invalidate();$('japanConfirmed').checked=true;remoteProduct=null;$('sourceInfo').replaceChildren();official=true;ocrRequired=false;$('ingredients').value=product.ingredients;$('kind').value='cosmetic';$('origin').textContent=product.order;$('error').textContent='';tab('search');run();}
 $('sample').onclick=loadProduct;
+// Build an exact source-verified product list; names alone never trigger a flower.
+$('readyFormulas').onclick=async()=>{
+ const ctx=beginLookup();
+ $('query').value='';
+ $('searchResults').textContent='掲載時点の日本語全成分を確認した商品を探しています…';
+ busy(true);
+ try{
+  const archive=await formulaArchive();
+  if(ctx.version!==lookupVersion)return;
+  if(!archive)throw Error('全成分の保存版を読み込めませんでした。再度お試しください。');
+  const ready=productsWithVerifiedArchive(registeredProducts,archive,isMajorMakerProduct);
+  if(!ready.length)throw Error('日本語全成分を表示できる商品がありません。');
+  presentRegisteredProducts(ready,'日本語全成分の保存版がある商品');
+  const intro=document.createElement('p');intro.className='muted formula-ready-intro';
+  intro.textContent='掲載時点の日本語全成分の保存版 '+ready.length+'商品。製品を選ぶと花を生成します。配合順・最新ロット・現物ラベルの一致は出典ごとにご確認ください。';
+  $('searchResults').prepend(intro);
+ }catch(e){
+  if(ctx.version===lookupVersion){
+   $('searchResults').textContent=e.message;
+   const retry=document.createElement('button');retry.type='button';retry.className='secondary';
+   retry.textContent='もう一度表示';retry.onclick=()=>$('readyFormulas').click();$('searchResults').append(retry);
+  }
+ }finally{if(ctx.version===lookupVersion)busy(false);}
+};
 async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let majorNameEvidencePromise=null;
@@ -1029,7 +1054,9 @@ function addProductFamily(container,family,query='',before=null){
   if(family.products.length===1&&first.volume&&!productFold(family.name).includes(productFold(first.volume)))title.textContent+=' · '+first.volume;
   if(family.products.length===1&&first.variant&&first.variant.length<=28&&!/^(?:色番未指定|単一処方|現行|国内向け)$/.test(first.variant)&&!productFold(title.textContent).includes(productFold(first.variant)))title.textContent+=' · '+first.variant;
   const hint=document.createElement('small');
-  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類）':first.registrationStatus==='name-only'?'成分を確認':'全成分で花を見る';
+  const verifiedCount=family.products.filter(itemHasArchiveInCatalog).length;
+  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類／全成分あり'+verifiedCount+'）':itemHasArchiveInCatalog(first)?'出典付き全成分で花を見る':'全成分未収録・名前と一部成分を確認';
+  button.dataset.formulaReady=String(verifiedCount>0);
   button.append(title,hint);
   const uniqueExact=exactFamilyMember(family,query);
   let variants=null;
@@ -1056,7 +1083,7 @@ function addProductFamily(container,family,query='',before=null){
 
    for(const option of family.products){
     const choice=document.createElement('button');choice.type='button';choice.className='secondary';
-    choice.textContent=[option.packageType==='bottle'?'本体':option.variant,option.volume,option.jan?'JAN '+option.jan:null].filter(Boolean).join(' ／ ')||option.name;
+    choice.textContent=[option.packageType==='bottle'?'本体':option.variant,option.volume,option.jan?'JAN '+option.jan:null,itemHasArchiveInCatalog(option)?'掲載全成分あり':'全成分未収録'].filter(Boolean).join(' ／ ')||option.name;
     choice.onclick=()=>selectRegisteredFormula(option);
     variants.append(choice);
    }
@@ -1069,7 +1096,8 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   const holder=$('searchResults');holder.replaceChildren();
   const families=productFamilies(products);
   const lead=document.createElement('p');lead.className='product-choice-count';
-  lead.textContent='商品候補 '+families.length+'件';
+  const totalReady=products.filter(itemHasArchiveInCatalog).length;
+  lead.textContent='商品候補 '+families.length+'組（'+products.length+'商品）／掲載全成分あり '+totalReady+'商品';
   holder.append(lead);
   const officialCatalog=officialCatalogSources[products[0]?.brand]||kaoOfficialCatalogIndex[products[0]?.brand]||officialDomesticCatalogRC94[products[0]?.brand]||officialReviewedRC100Catalogs[products[0]?.brand]||officialReviewedRC101Catalogs[products[0]?.brand]||officialReviewedRC102Catalogs[products[0]?.brand]||officialReviewedRC103Catalogs[products[0]?.brand]||officialReviewedRC104Catalogs[products[0]?.brand]||officialReviewedRC105Catalogs[products[0]?.brand]||officialReviewedRC106Catalogs[products[0]?.brand]||officialReviewedRC107Catalogs[products[0]?.brand]||officialReviewedRC108Catalogs[products[0]?.brand]||officialReviewedRC109Catalogs[products[0]?.brand]||officialReviewedRC110Catalogs[products[0]?.brand]||officialReviewedRC111Catalogs[products[0]?.brand]||officialReviewedRC112Catalogs[products[0]?.brand]||officialReviewedRC113Catalogs[products[0]?.brand]||officialReviewedRC114Catalogs[products[0]?.brand]||officialReviewedRC115Catalogs[products[0]?.brand]||officialReviewedRC116Catalogs[products[0]?.brand]||officialReviewedRC117Catalogs[products[0]?.brand]||officialReviewedRC118Catalogs[products[0]?.brand];
   if(officialCatalog){
@@ -1085,6 +1113,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   let visible=0;
   let matching=families;
   let empty=null;
+  let queryFilter=null,readyOnly=null;
   const more=document.createElement('button');more.type='button';more.className='secondary show-more-products';
   const batch=()=>{
    const end=Math.min(visible+8,matching.length);
@@ -1093,26 +1122,32 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
    more.hidden=visible>=matching.length;
    more.textContent='もっと見る（'+visible+' / '+matching.length+'）';
   };
+  const refresh=()=>{
+   matching=visibleFormulaFamilies(families,{query:queryFilter?.value.trim()||'',availableOnly:readyOnly?.checked||false});
+   visible=0;list.replaceChildren();
+   if(!matching.length){
+    empty=document.createElement('p');empty.className='muted';
+    empty.textContent='条件に合う商品はありません。検索語や「全成分あり」の絞り込みを変えてください。';
+    list.append(empty);
+   }else empty=null;
+   batch();
+  };
   if(families.length>16){
    const label=document.createElement('label');label.htmlFor='withinBrandProductFilter';
-   label.textContent='この一覧内の商品名を絞り込む';
-   const filter=document.createElement('input');filter.id='withinBrandProductFilter';filter.type='search';
-   filter.className='within-brand-filter';filter.autocomplete='off';
-   filter.placeholder='例：美容液、リップ、UV';
-   filter.setAttribute('aria-label','表示中の商品候補を名前・シリーズで絞り込む');
-   filter.addEventListener('input',()=>{
-    const q=productFold(filter.value.trim());
-    matching=q?families.filter(f=>productFold([f.brand,f.name,f.series||'',f.productType||''].join(' ')).includes(q)):families;
-    visible=0;list.replaceChildren();
-    if(empty)empty.remove();
-    if(!matching.length){
-     empty=document.createElement('p');empty.className='muted';
-     empty.textContent='この一覧には該当商品がありません。別の語で検索するか、メーカー公式の一覧を確認してください。';
-     list.append(empty);
-    }
-    batch();
-   });
-   holder.append(label,filter);
+   label.textContent='この一覧の商品名を絞り込む（JAN・仕様も対象）';
+   queryFilter=document.createElement('input');queryFilter.id='withinBrandProductFilter';queryFilter.type='search';
+   queryFilter.className='within-brand-filter';queryFilter.autocomplete='off';
+   queryFilter.placeholder='例：美容液、リップ、JAN';
+   queryFilter.setAttribute('aria-label','表示中の商品候補をブランド・名前・仕様・JANで絞り込む');
+   queryFilter.addEventListener('input',refresh);
+   holder.append(label,queryFilter);
+  }
+  if(totalReady>0&&totalReady<products.length){
+   const label=document.createElement('label');label.className='formula-available-toggle';
+   readyOnly=document.createElement('input');readyOnly.id='onlyFormulaAvailable';readyOnly.type='checkbox';
+   readyOnly.addEventListener('change',refresh);
+   label.append(readyOnly,document.createTextNode('全成分の保存版がある商品だけ見る（'+totalReady+'商品）'));
+   holder.append(label);
   }
   holder.append(list,more);
   more.onclick=batch;

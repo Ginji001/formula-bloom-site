@@ -1,0 +1,19 @@
+{
+  "release": "1.0.0-rc.166",
+  "checkedOn": "2026-11-04",
+  "basis": "fixed verified records + active major-maker registration",
+  "brandsActive": 102,
+  "productsActive": 2020,
+  "archivedJapaneseIngredientProductsActive": 402,
+  "productsWithoutFullIngredientArchive": 1618,
+  "productsWithPartialIngredientEvidenceActive": 1284,
+  "allArchiveProducts": 409,
+  "archivedExcludedFromNormalSearch": 7,
+  "availableIngredientProductPercent": 19.9,
+  "proposedNextMilestone": 600,
+  "proposedMoreProductsNeeded": 198,
+  "archiveConfirmedSnapshotNotCurrentProduct": true,
+  "onlyExactProductIdMatches": true,
+  "archiveDoesNotProveCurrentIngredients": true,
+  "warning": "成分保存版は出典の掲載時点の日本語全成分（メーカーの目的別表を含む）。現物ラベル・現行処方・配合順・濃度を証明しません。部分成分を全成分として扱いません。"
+}
