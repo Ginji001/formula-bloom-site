@@ -462,7 +462,7 @@ jobs:
              !html181.includes('id="sharedCompletionFullList"')||
              !html181.includes('id="sharedCompletionClipboard"')||
              !pwa181.includes('partial-formula-completion.js')||
-             !html181.includes('github-pages-102-v1.0.0')||
+             !html181.includes('github-pages-102-v1.0.1')||
              fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
              fs.existsSync('_site/docs/rc181-user-assisted-complete-formula-flow-20261104.md'))
             throw Error('rc181 user-confirmed Japanese partial-to-complete workflow or private-file boundary failed');
@@ -558,7 +558,7 @@ jobs:
           if(!pagesRuntime184.startsWith(pagesRuntimeImport184)||
              !pagesRuntime184.includes(pagesRuntimeGetter184)||
              pagesRuntime184.includes('async function getJSON(path,signal){const r=await fetch(path,{signal});')||
-             !pagesIndex184.includes('app.js?v=github-pages-102-v1.0.0'))
+             !pagesIndex184.includes('app.js?v=github-pages-102-v1.0.1'))
             throw Error('Pages raw app.js would fetch ingredient JSON from domain root (404); staticGetJSON and the cache-busted site subpath are required');
           console.log('Verified rc184 Pages runtime: site-relative staticGetJSON adapter and versioned app module.');
 
@@ -585,7 +585,7 @@ jobs:
              !stableGuide.includes('172商品')||
              !stableGuide.includes('問い合わせ窓口はまだ設定されていません')||
              !stableHome.includes('href="release-v1.0.0.html"')||
-             !stableHome.includes('app.js?v=github-pages-102-v1.0.0')||
+             !stableHome.includes('app.js?v=github-pages-102-v1.0.1')||
              !stableSW.includes('release-v1.0.0.html')||
              !stableSW.includes('release-v1.0.0.json')||
              !stablePrivacy.includes('最終更新：2026年11月5日')||
@@ -596,6 +596,34 @@ jobs:
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
             throw Error('v1.0.0 stable release scope, policies or private-file boundaries failed');
           console.log('Verified stable v1.0.0: 600 complete / 1248 partial / 172 unverified, versioned static runtime and no fake 100% coverage.');
+
+          // v1.0.1: public support channel; never ask for personal data on public Issues.
+          const feedbackPage=fs.readFileSync('_site/support.html','utf8');
+          const feedbackHome=fs.readFileSync('_site/index.html','utf8');
+          const feedbackPrivacy=fs.readFileSync('_site/privacy.html','utf8');
+          const feedbackTerms=fs.readFileSync('_site/terms.html','utf8');
+          const feedbackBug=fs.readFileSync('.github/ISSUE_TEMPLATE/bug_report.md','utf8');
+          const feedbackCorrection=fs.readFileSync('.github/ISSUE_TEMPLATE/ingredient_correction.md','utf8');
+          const feedbackConfig=fs.readFileSync('.github/ISSUE_TEMPLATE/config.yml','utf8');
+          if(!feedbackHome.includes('href="support.html"')||
+             !feedbackHome.includes('app.js?v=github-pages-102-v1.0.1')||
+             !feedbackPage.includes('GitHubアカウント')||
+             !feedbackPage.includes('インターネット上で公開されます')||
+             !feedbackPage.includes('非公開の個別相談')||
+             !feedbackPage.includes('issues/new?template=bug_report.md')||
+             !feedbackPage.includes('issues/new?template=ingredient_correction.md')||
+             !feedbackPrivacy.includes('GitHub Issues')||
+             !feedbackPrivacy.includes('非公開の個別問い合わせ窓口は未設置')||
+             !feedbackTerms.includes('非公開の個別お問い合わせ窓口は未設置')||
+             !feedbackBug.includes('健康情報')||
+             !feedbackCorrection.includes('日本国内向け')||
+             !feedbackCorrection.includes('メーカー公式等の参照先URL')||
+             !feedbackConfig.includes('blank_issues_enabled: false')||
+             fs.existsSync('_site/.github/ISSUE_TEMPLATE')||
+             fs.existsSync('_site/ops/github-issue-templates'))
+            throw Error('v1.0.1 public feedback privacy, Issue templates or Pages boundary invalid');
+          console.log('Verified v1.0.1: public issue contact, two Japanese templates and no private data requests; 600/1248/172 unchanged.');
+
 
 
 
