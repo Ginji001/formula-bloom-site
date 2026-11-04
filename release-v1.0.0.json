@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "app": "処方の花｜Formula Bloom",
+  "version": "1.0.0",
+  "releaseDate": "2026-11-05",
+  "channel": "stable",
+  "sourceEvidenceRelease": "1.0.0-rc.184",
+  "siteUrl": "https://ginji001.github.io/formula-bloom-site/",
+  "releaseCompletionPolicy": "Stable launch covers the features and source-backed data currently available. Unknown or nonpublic product ingredients are not required to be filled.",
+  "scope": {
+    "priorityBrands": 102,
+    "priorityProducts": 2020,
+    "completeJapaneseIngredientLists": 600,
+    "partialJapaneseIngredientReferences": 1248,
+    "withoutVerifiedJapaneseIngredientNames": 172,
+    "compositeKitNotSingleFormula": 1,
+    "provenNonpublicProductCount": 0
+  },
+  "functions": [
+    "日本語の商品名・ブランド名から登録製品を検索",
+    "出典付き全成分保存版から花を自動生成",
+    "一部の日本語成分を参考として花を生成（全成分ではないことを明示）",
+    "手入力・写真OCR後の原文確認と花生成",
+    "利用者が明示保存した端末内の履歴とユーザー商品",
+    "スマートフォン対応とPWAオフラインの保存版参照"
+  ],
+  "limitations": [
+    "172商品の成分名は未確認であり、公開情報が存在しないと断定できない",
+    "一部成分を完全な全成分・配合順・濃度・現行ロットの根拠として扱わない",
+    "現物ラベルと現在の処方の全商品照合は未完了",
+    "外部の一部成分全文を許諾なく転載しない",
+    "利用者問い合わせ窓口の設定は未完了"
+  ],
+  "auditFile": "overall-evidence-audit-rc184.json",
+  "researchFile": "unverified-ingredient-research-rc184.json"
+}

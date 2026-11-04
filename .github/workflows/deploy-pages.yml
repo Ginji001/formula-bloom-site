@@ -558,9 +558,45 @@ jobs:
           if(!pagesRuntime184.startsWith(pagesRuntimeImport184)||
              !pagesRuntime184.includes(pagesRuntimeGetter184)||
              pagesRuntime184.includes('async function getJSON(path,signal){const r=await fetch(path,{signal});')||
-             !pagesIndex184.includes('app.js?v=github-pages-102-rc184-pathfix1'))
+             !pagesIndex184.includes('app.js?v=github-pages-102-v1.0.0'))
             throw Error('Pages raw app.js would fetch ingredient JSON from domain root (404); staticGetJSON and the cache-busted site subpath are required');
           console.log('Verified rc184 Pages runtime: site-relative staticGetJSON adapter and versioned app module.');
+
+          // Stable 1.0.0 release: completion is supported features and evidence, not impossible 100% ingredient coverage.
+          const stable=JSON.parse(fs.readFileSync('_site/release-v1.0.0.json','utf8'));
+          const stableGuide=fs.readFileSync('_site/release-v1.0.0.html','utf8');
+          const stablePrivacy=fs.readFileSync('_site/privacy.html','utf8');
+          const stableTerms=fs.readFileSync('_site/terms.html','utf8');
+          const stableHome=fs.readFileSync('_site/index.html','utf8');
+          const stableReadme=fs.readFileSync('_site/README.md','utf8');
+          const stableSW=fs.readFileSync('_site/sw.js','utf8');
+          if(stable.version!=='1.0.0'||stable.channel!=='stable'||
+             stable.releaseDate!=='2026-11-05'||
+             stable.scope.priorityProducts!==2020||
+             stable.scope.completeJapaneseIngredientLists!==600||
+             stable.scope.partialJapaneseIngredientReferences!==1248||
+             stable.scope.withoutVerifiedJapaneseIngredientNames!==172||
+             stable.scope.provenNonpublicProductCount!==0||
+             stable.scope.completeJapaneseIngredientLists+
+               stable.scope.partialJapaneseIngredientReferences+
+               stable.scope.withoutVerifiedJapaneseIngredientNames!==2020||
+             stable.auditFile!=='overall-evidence-audit-rc184.json'||
+             !stableGuide.includes('v1.0.0 正式版')||
+             !stableGuide.includes('172商品')||
+             !stableGuide.includes('問い合わせ窓口はまだ設定されていません')||
+             !stableHome.includes('href="release-v1.0.0.html"')||
+             !stableHome.includes('app.js?v=github-pages-102-v1.0.0')||
+             !stableSW.includes('release-v1.0.0.html')||
+             !stableSW.includes('release-v1.0.0.json')||
+             !stablePrivacy.includes('最終更新：2026年11月5日')||
+             !stableTerms.includes('v1.0.0')||
+             !stableReadme.includes('公開版 v1.0.0')||
+             /公開前ドラフト|一般公開しません/.test(stablePrivacy+stableTerms)||
+             fs.existsSync('_site/docs/v1.0.0-stable-release-20261105.md')||
+             fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
+            throw Error('v1.0.0 stable release scope, policies or private-file boundaries failed');
+          console.log('Verified stable v1.0.0: 600 complete / 1248 partial / 172 unverified, versioned static runtime and no fake 100% coverage.');
+
 
 
 
