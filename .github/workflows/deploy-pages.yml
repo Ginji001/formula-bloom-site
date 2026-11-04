@@ -164,8 +164,8 @@ jobs:
              overall172.sourceAudit.partialReferencesSupersededByFullList!==191||
              overall172.sourceAudit.independentDisclosedWithoutAlreadyTrackedPartial!==5||
              overall172.sourceAudit.distinctPartialSourceProductsAllBrands!==1163||
-             brandCoverage172.knownIngredientExcerptCount!==1288||
-             catalog.knownIngredientRecords!==1288||allQuasi.length!==87||
+             brandCoverage172.knownIngredientExcerptCount!==1294||
+             catalog.knownIngredientRecords!==1294||allQuasi.length!==87||
              allQuasi.some(r=>!r.activeIngredients||!r.otherIngredients)||
              allCurel.length!==5||allCurel.some(r=>r.activeIngredients!=='アラントイン'||
               r.sourceReview?.activeOtherSeparatedFromManufacturerStarLegend!==true)||
@@ -193,7 +193,7 @@ jobs:
              overall173.sourceAudit.partialSourceFiles!==33||
              overall173.sourceAudit.sourceDeclaredPartialRecordCount!==1394||
              overall173.sourceAudit.distinctPartialSourceProductsAllBrands!==1208||
-             brand173.knownIngredientExcerptCount!==1288||catalog.knownIngredientRecords!==1288||
+             brand173.knownIngredientExcerptCount!==1294||catalog.knownIngredientRecords!==1294||
              progress173.release!=='1.0.0-rc.173'||progress173.newPartialSourceBackedProducts!==45||
              progress173.newJapaneseNameAssociations!==516||progress173.noNameAfter!==260||
              partial173.productCount!==45||partial173.records.length!==45||
@@ -1001,7 +1001,7 @@ jobs:
               throw Error('ND original/refill independent manufacturer lists differ or SKU types conflated');
           }
           const partial123=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence.json','utf8'));
-          if(partial123.records.length!==48||catalog.knownIngredientRecords!==1288||
+          if(partial123.records.length!==48||catalog.knownIngredientRecords!==1294||
              partial123.records.some(x=>x.productId==='rc62-sana-01'))
              throw Error('Old ND partial-only evidence was not migrated after exact full-ingredient upgrade');
           if(fs.existsSync('_site/data/rc123-sana-nd-nine-exact-japanese-ingredient-formulas-20261102.json')||
