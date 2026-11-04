@@ -145,6 +145,38 @@ jobs:
              fs.existsSync('_site/data/rc171-japanese-maker-medicinal-and-cpb-partial-checkpoint-20261104.json'))
               throw Error('rc171 source-backed Japanese partial references or medicine separation failed');
           console.log('Verified rc171: 13 source-backed partial references, 134 Japanese names, 11 medicated products, full 600 unchanged');
+          // rc172: recompute coverage from every published Japanese name source; no synthetic products.
+          const overall172=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc172.json','utf8'));
+          const brandCoverage172=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
+          const allQuasi=archived.records.filter(r=>r.kind==='quasi');
+          const allCurel=archived.records.filter(r=>r.brand==='キュレル');
+          const scope172=overall172.scope;
+          const builtIndex=fs.readFileSync('_site/partial-reference-index-rc172.js','utf8');
+          if(overall172.release!=='1.0.0-rc.172'||overall172.registeredBrandsTotal!==147||
+             overall172.registeredProductNamesTotal!==2163||overall172.priorityBrands!==102||
+             overall172.priorityProducts!==2020||scope172.completeJapaneseFormulas!==600||
+             scope172.partialJapaneseIngredientEvidence!==1115||
+             scope172.withoutVerifiedJapaneseIngredientNames!==305||
+             scope172.completeJapaneseFormulas+scope172.partialJapaneseIngredientEvidence+
+             scope172.withoutVerifiedJapaneseIngredientNames!==2020||
+             overall172.brandRows.length!==102||
+             overall172.brandRows.reduce((sum,x)=>sum+x.partial,0)!==1115||
+             overall172.sourceAudit.partialReferencesSupersededByFullList!==191||
+             overall172.sourceAudit.independentDisclosedWithoutAlreadyTrackedPartial!==5||
+             overall172.sourceAudit.distinctPartialSourceProductsAllBrands!==1163||
+             brandCoverage172.knownIngredientExcerptCount!==1163||
+             catalog.knownIngredientRecords!==1163||allQuasi.length!==87||
+             allQuasi.some(r=>!r.activeIngredients||!r.otherIngredients)||
+             allCurel.length!==5||allCurel.some(r=>r.activeIngredients!=='アラントイン'||
+              r.sourceReview?.activeOtherSeparatedFromManufacturerStarLegend!==true)||
+             !builtIndex.includes('rc93-kao-kate-4973167006009')||
+             !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc172.html')||
+             !fs.readFileSync('_site/app.js','utf8').includes('hasSourceBackedPartial')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('overall-evidence-audit-rc172.html')||
+             fs.existsSync('_site/data/rc172-curel-five-exact-manufacturer-active-group-corrections-20261104.json'))
+           throw Error('rc172 actual Japanese source-coverage, medicinal grouping or privacy validation failed');
+          console.log('Verified rc172: 600 full, 1115 partial, 305 unconfirmed; 87 medicinal archive records explicitly grouped');
+
 
 
 
@@ -643,7 +675,7 @@ jobs:
               throw Error('ND original/refill independent manufacturer lists differ or SKU types conflated');
           }
           const partial123=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence.json','utf8'));
-          if(partial123.records.length!==48||catalog.knownIngredientRecords!==48||
+          if(partial123.records.length!==48||catalog.knownIngredientRecords!==1163||
              partial123.records.some(x=>x.productId==='rc62-sana-01'))
              throw Error('Old ND partial-only evidence was not migrated after exact full-ingredient upgrade');
           if(fs.existsSync('_site/data/rc123-sana-nd-nine-exact-japanese-ingredient-formulas-20261102.json')||
@@ -666,7 +698,7 @@ jobs:
              rohto124.some(([id,page,volume,jan])=>
                !maker124.includes(id)||!maker124.includes(jan)||
                rohtoEntries.products.filter(p=>p.productId===id&&p.volume===volume&&p.jan===jan&&
-                 p.ingredientEvidenceStatus===(id==='rc54-rohto-bloomio-lotion-145'?'known-ingredients-only':'no-ingredients-recorded')&&
+                 p.ingredientEvidenceStatus===('known-ingredients-only')&&
                  p.sourceUrl==='https://www.shop.rohto.co.jp/category/skincare/bloomio/'+page+'.html').length!==1||
                archived.records.some(r=>r.productId===id)))
              throw Error('rc124 Rohto exact-name-only maker URL/JAN or no-license full-list safeguards failed');

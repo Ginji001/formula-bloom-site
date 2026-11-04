@@ -33,6 +33,7 @@ import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
 import {hasRc170PartialNameEvidence} from './partial-reference-discovery-rc170.js';
 import {hasRc171PartialNameEvidence} from './partial-reference-discovery-rc171.js';
+import {hasSourceBackedPartial} from './partial-reference-index-rc172.js';
 const hasRecentPartialNameEvidence=id=>hasRc170PartialNameEvidence(id)||hasRc171PartialNameEvidence(id);
 import {validateDisclosedNameFacts,disclosedNameFactsForProduct} from './source-disclosed-ingredient-names.js';
 import {validateInciReferenceEvidence,inciReferenceForProduct,reviewEnglishInciNames} from './inci-reference-evidence.js';
@@ -828,7 +829,7 @@ function showPartialChoices(container,item){
  majorNameEvidence().then(rows=>{
   if(version!==lookupVersion)return;
   const evidence=rows.find(x=>x.productId===item.id);if(!evidence){nameStatus.remove();return;}
-  nameStatus.textContent=hasRecentPartialNameEvidence(item.id)?'メーカー日本公式の成分名を一部確認済み（完全な全成分は未収録）。':evidence.nameMatchStatus==='name-shown-only-as-crossborder-import'?'韓国直送・個人輸入の掲載のみ。日本国内版は未確認です。':
+  nameStatus.textContent=hasRecentPartialNameEvidence(item.id)?'メーカー日本公式の成分名を一部確認済み（完全な全成分は未収録）。':hasSourceBackedPartial(item.id)?'商品別の日本語参考成分名を確認済み（全成分未収録）。掲載元と区分は詳細を確認してください。':evidence.nameMatchStatus==='name-shown-only-as-crossborder-import'?'韓国直送・個人輸入の掲載のみ。日本国内版は未確認です。':
    evidence.sourceBasis==='manufacturer-official-index'?'メーカー日本公式の検索掲載記録に商品名を確認。現行ページ・成分は未確認です。':
    evidence.sourceBasis==='domestic-retailer-index'?'国内販売店の検索掲載記録に商品名を確認。メーカー成分は未確認です。':
    evidence.nameOnlyReference?'商品名の掲載を確認。成分は未確認です。':
@@ -1063,7 +1064,7 @@ function addProductFamily(container,family,query='',before=null){
   if(family.products.length===1&&first.variant&&first.variant.length<=28&&!/^(?:色番未指定|単一処方|現行|国内向け)$/.test(first.variant)&&!productFold(title.textContent).includes(productFold(first.variant)))title.textContent+=' · '+first.variant;
   const hint=document.createElement('small');
   const verifiedCount=family.products.filter(itemHasArchiveInCatalog).length;
-  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類／全成分あり'+verifiedCount+'）':itemHasArchiveInCatalog(first)?'出典付き全成分で花を見る':hasRecentPartialNameEvidence(first.id)?'一部成分の参考あり（全成分未収録）':'全成分未収録・商品名の根拠を見る';
+  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類／全成分あり'+verifiedCount+'）':itemHasArchiveInCatalog(first)?'出典付き全成分で花を見る':hasSourceBackedPartial(first.id)?'一部成分の参考あり（全成分未収録）':'全成分未収録・商品名の根拠を見る';
   button.dataset.formulaReady=String(verifiedCount>0);
   button.append(title,hint);
   const uniqueExact=exactFamilyMember(family,query);
@@ -1091,7 +1092,7 @@ function addProductFamily(container,family,query='',before=null){
 
    for(const option of family.products){
     const choice=document.createElement('button');choice.type='button';choice.className='secondary';
-    choice.textContent=[option.packageType==='bottle'?'本体':option.variant,option.volume,option.jan?'JAN '+option.jan:null,itemHasArchiveInCatalog(option)?'掲載全成分あり':hasRecentPartialNameEvidence(option.id)?'参考成分あり・全成分未収録':'全成分未収録'].filter(Boolean).join(' ／ ')||option.name;
+    choice.textContent=[option.packageType==='bottle'?'本体':option.variant,option.volume,option.jan?'JAN '+option.jan:null,itemHasArchiveInCatalog(option)?'掲載全成分あり':hasSourceBackedPartial(option.id)?'参考成分あり・全成分未収録':'全成分未収録'].filter(Boolean).join(' ／ ')||option.name;
     choice.onclick=()=>selectRegisteredFormula(option);
     variants.append(choice);
    }
