@@ -12,7 +12,11 @@
 - メーカー掲載の判明成分10商品の参考の花（全成分・配合順・処方全体を示さない）、それ以外の商品でも確認した成分だけを任意入力して部分表示
 - 任意の端末内解析履歴、PNG作成
 
-## 最新 rc.179｜一部成分1,240商品を保存資料から全件監査
+## 最新 rc.180｜トランシーノ薬用2商品の有効・その他の区分を原文照合
+- 第一三共ヘルスケア日本公式の薬用UVコンシーラー／薬用UVパウダーEXの成分欄を2026-11-04に個別再確認し、既存12名称を各「有効1・その他11」に区分。原資料は改変せず表示を補正。
+- 薬用の区分未確認43→41件。全成分600／部分1,240／成分未確認180は維持。現物・ロット・再配布許諾は未確認。
+- [最新版1,240件監査](partial-source-exhaustive-audit-rc180.html)／[集計](partial-source-exhaustive-audit-rc180-summary.json)／[個別JSON](partial-source-exhaustive-audit-rc180.json)／[総合監査](overall-evidence-audit-rc180.json)。
+## 履歴 rc.179｜一部成分1,240商品を保存資料から全件監査
 - 1,240商品の保存済みデータを商品ID・日本語成分名称・既存出典URL・薬用の区分・見出し混入の有無で照合。外部サイトを1,240件一斉に再取得したわけではありません。
 - 転記ミス2件を花王・エチュード日本公式で確認し、過去データを維持して現行表示だけ修正。薬用43商品の有効成分区分を調査保留。全成分600／部分1,240／未確認180の集計は維持。
 - [一部成分1,240商品の全件監査](partial-source-exhaustive-audit-rc179.html)／[集計JSON](partial-source-exhaustive-audit-rc179-summary.json)／[全件JSON](partial-source-exhaustive-audit-rc179.json)／[最新監査](overall-evidence-audit-rc179.json)。

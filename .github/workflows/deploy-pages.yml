@@ -405,6 +405,40 @@ jobs:
              throw Error('rc179 1240 individual source audits, source correction, published counts or private boundary failed');
           console.log('Verified rc179: 1240 static-source audits, 43 medicinal followups, 2 fixed extracts, full600 partial1240 unknown180.');
 
+          // rc180: two exact manufacturer medicinal role confirmations, 1240 original records retained.
+          const summary180=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc180-summary.json','utf8'));
+          const audit180=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc180.json','utf8'));
+          const overall180=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc180.json','utf8'));
+          const roles180=fs.readFileSync('_site/source-medicinal-role-rc180.js','utf8');
+          const app180=fs.readFileSync('_site/app.js','utf8');
+          const html180=fs.readFileSync('_site/partial-source-exhaustive-audit-rc180.html','utf8');
+          if(summary180.release!=='1.0.0-rc.180'||audit180.release!=='1.0.0-rc.180'||
+             audit180.records.length!==1240||new Set(audit180.records.map(x=>x.productId)).size!==1240||
+             summary180.counts.quasiDrugProducts!==254||
+             summary180.counts.quasiSourceActiveOtherSeparated!==213||
+             summary180.counts.quasiNeedsRoleConfirmation!==41||
+             summary180.counts.medicinalRoleCorrections!==2||
+             summary180.counts.liveSitesCheckedThisAudit!==2||
+             summary180.counts.liveSitesNotCheckedThisAudit!==1238||
+             summary180.counts.fullIngredientRecordsAdded!==0||
+             summary180.counts.partialToFullPromotions!==0||
+             audit180.records.filter(x=>x.currentMedicinalRoleVerified).length!==2||
+             Object.values(summary180.classificationCounts).reduce((a,b)=>a+b,0)!==1240||
+             overall180.release!=='1.0.0-rc.180'||
+             overall180.scope.completeJapaneseFormulas!==600||
+             overall180.scope.partialJapaneseIngredientEvidence!==1240||
+             overall180.scope.withoutVerifiedJapaneseIngredientNames!==180||
+             !roles180.includes('rc94-jp-official-transino-180')||
+             !roles180.includes('rc94-jp-official-transino-181')||
+             !app180.includes('applyVerifiedMedicinalRoleRc180')||
+             (html180.match(/<tr data-category=/g)||[]).length!==1240||
+             !fs.readFileSync('_site/index.html','utf8').includes('partial-source-exhaustive-audit-rc180.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-source-exhaustive-audit-rc180.html')||
+             fs.existsSync('_site/data/rc180-transino-two-medicinal-source-roles-20261104.json'))
+            throw Error('rc180 source-specific medicinal role verification or public privacy boundary failed');
+          console.log('Verified rc180: 2 Japanese official medicinal roles corrected, 41 remaining, full600 partial1240 unknown180.');
+
+
 
 
 
