@@ -549,6 +549,20 @@ jobs:
             throw Error('rc184 two exact Japan manufacturer partial ingredient products or privacy boundary invalid');
           console.log('Verified rc184: two AQUALABEL official Japan products, 6 Japanese names, full600 partial1248 unknown172.');
 
+          // Guard the entire product-search runtime against raw development JS on Pages.
+          // Root-relative JSON reads bypass the /formula-bloom-site/ subpath and return 404.
+          const pagesRuntime184=fs.readFileSync('_site/app.js','utf8');
+          const pagesIndex184=fs.readFileSync('_site/index.html','utf8');
+          const pagesRuntimeImport184="import {staticGetJSON} from './static-api.js';";
+          const pagesRuntimeGetter184='async function getJSON(path,signal){return staticGetJSON(path,{signal});}';
+          if(!pagesRuntime184.startsWith(pagesRuntimeImport184)||
+             !pagesRuntime184.includes(pagesRuntimeGetter184)||
+             pagesRuntime184.includes('async function getJSON(path,signal){const r=await fetch(path,{signal});')||
+             !pagesIndex184.includes('app.js?v=github-pages-102-rc184-pathfix1'))
+            throw Error('Pages raw app.js would fetch ingredient JSON from domain root (404); staticGetJSON and the cache-busted site subpath are required');
+          console.log('Verified rc184 Pages runtime: site-relative staticGetJSON adapter and versioned app module.');
+
+
 
 
 

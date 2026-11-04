@@ -1,3 +1,4 @@
+import {staticGetJSON} from './static-api.js';
 import {officialReviewedRC118Catalogs} from './official-reviewed-rc118.js';
 import {officialReviewedRC117Catalogs} from './official-reviewed-rc117.js';
 import {officialReviewedRC116Catalogs} from './official-reviewed-rc116.js';
@@ -102,7 +103,7 @@ $('readyFormulas').onclick=async()=>{
   }
  }finally{if(ctx.version===lookupVersion)busy(false);}
 };
-async function getJSON(path,signal){const r=await fetch(path,{signal});if(!(r.headers.get('content-type')||'').includes('application/json'))throw Error('公式ページを読み込めません。アプリのプレビュー画面からお試しください。');const data=await r.json();if(!r.ok)throw Error(data.error||'読み込めませんでした。');return data;}
+async function getJSON(path,signal){return staticGetJSON(path,{signal});}
 function sourceLink(container,url,title){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=title+' ↗';container.append(a);}
 let majorNameEvidencePromise=null;
 function majorNameEvidence(){
