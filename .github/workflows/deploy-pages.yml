@@ -164,8 +164,8 @@ jobs:
              overall172.sourceAudit.partialReferencesSupersededByFullList!==191||
              overall172.sourceAudit.independentDisclosedWithoutAlreadyTrackedPartial!==5||
              overall172.sourceAudit.distinctPartialSourceProductsAllBrands!==1163||
-             brandCoverage172.knownIngredientExcerptCount!==1208||
-             catalog.knownIngredientRecords!==1208||allQuasi.length!==87||
+             brandCoverage172.knownIngredientExcerptCount!==1262||
+             catalog.knownIngredientRecords!==1262||allQuasi.length!==87||
              allQuasi.some(r=>!r.activeIngredients||!r.otherIngredients)||
              allCurel.length!==5||allCurel.some(r=>r.activeIngredients!=='アラントイン'||
               r.sourceReview?.activeOtherSeparatedFromManufacturerStarLegend!==true)||
@@ -193,7 +193,7 @@ jobs:
              overall173.sourceAudit.partialSourceFiles!==33||
              overall173.sourceAudit.sourceDeclaredPartialRecordCount!==1394||
              overall173.sourceAudit.distinctPartialSourceProductsAllBrands!==1208||
-             brand173.knownIngredientExcerptCount!==1208||catalog.knownIngredientRecords!==1208||
+             brand173.knownIngredientExcerptCount!==1262||catalog.knownIngredientRecords!==1262||
              progress173.release!=='1.0.0-rc.173'||progress173.newPartialSourceBackedProducts!==45||
              progress173.newJapaneseNameAssociations!==516||progress173.noNameAfter!==260||
              partial173.productCount!==45||partial173.records.length!==45||
@@ -216,7 +216,7 @@ jobs:
              partial173.records.filter(r=>r.brand==='ヘラ').length!==12||
              partial173.records.filter(r=>r.brand==='ビフェスタ').length!==9||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc173.json')||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc173.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc174.js')||
              !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc173.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc173.html')||
@@ -224,6 +224,54 @@ jobs:
              fs.existsSync('_site/data/rc173-kao-exact-jan-set-component-partial-checkpoint-20261104.json'))
             throw Error('rc173 checked Japanese ingredient product identity, partial status or publication safeguards failed');
           console.log('Verified rc173: 45 added, 516 Japanese ingredient names, full600 / partial1160 / unconfirmed260');
+          // rc174: 54 independent Japanese-manufacturer partial references. No full-list promotion.
+          const partial174=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc174.json','utf8'));
+          const progress174=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc174.json','utf8'));
+          const overall174=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc174.json','utf8'));
+          const ids174=new Set(partial174.records.map(r=>r.productId));
+          const allow174=new Set(['www.kracie.co.jp','www.decorte.com','www.cledepeau-beaute.com','torriden.jp','jp.laneige.com']);
+          if(partial174.records.length!==54||partial174.productCount!==54||ids174.size!==54||
+             partial174.originalJapaneseNameAssociations!==259||
+             partial174.records.reduce((n,r)=>n+r.ingredientCount,0)!==259||
+             partial174.records.some(r=>archivedProductIdSet.has(r.productId)||
+               partial170Ids.has(r.productId)||partial171Ids.has(r.productId)||ids173.has(r.productId)||
+               !allow174.has(new URL(r.sourceUrl).hostname)||
+               !['quasi','cosmetic'].includes(r.kind)||r.coverage!=='partial-only'||
+               r.order!=='not-confirmed'||r.labelCompared!==false||
+               r.currentFormulaCompared!==false||r.notFullFormulaArchive!==true||
+               r.sourceOriginalNamesNotTranslated!==true||r.sourceOriginalNamesArePartial!==true||
+               r.ingredientCount!==r.ingredients.length||
+               r.ingredientCount!==r.sourceOriginalJapaneseNames.length||
+               !/^[a-f0-9]{64}$/.test(r.sourceEvidenceSha256)||
+               !/^[a-f0-9]{64}$/.test(r.sourceSectionSha256))||
+             partial174.records.filter(r=>r.kind==='quasi').length!==17||
+             partial174.records.filter(r=>r.kind==='cosmetic').length!==37||
+             partial174.records.filter(r=>r.brand==='肌美精').length!==17||
+             partial174.records.filter(r=>r.brand==='コスメデコルテ').length!==7||
+             progress174.release!=='1.0.0-rc.174'||
+             progress174.newPartialSourceBackedProducts!==54||
+             progress174.newJapaneseNameAssociations!==259||
+             progress174.partialOnlyBefore!==1160||progress174.partialOnlyAfter!==1214||
+             progress174.noNameBefore!==260||progress174.noNameAfter!==206||
+             overall174.release!=='1.0.0-rc.174'||
+             overall174.scope.completeJapaneseFormulas!==600||
+             overall174.scope.partialJapaneseIngredientEvidence!==1214||
+             overall174.scope.withoutVerifiedJapaneseIngredientNames!==206||
+             overall174.brandRows.length!==102||
+             overall174.brandRows.reduce((n,r)=>n+r.partial,0)!==1214||
+             overall174.sourceAudit.distinctPartialSourceProductsAllBrands!==1262||
+             overall174.sourceAudit.partialSourceFiles!==34||
+             overall174.sourceAudit.sourceDeclaredPartialRecordCount!==1448||
+             !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc174.json')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc174.js')||
+             !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc174.html')||
+             !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc174.json')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc174.html')||
+             fs.existsSync('_site/data/rc174-kracie-and-decorte-official-japanese-ingredient-checkpoint-20261104.json')||
+             fs.existsSync('_site/data/rc174-torriden-laneige-cledepeau-variants-components-source-checkpoint-20261104.json'))
+            throw Error('rc174 Japanese manufacturer partial ingredient sources or label separation failed');
+          console.log('Verified rc174: 54 source-backed products, 259 ingredient names, full600 / partial1214 / unconfirmed206');
+
 
 
 
@@ -724,7 +772,7 @@ jobs:
               throw Error('ND original/refill independent manufacturer lists differ or SKU types conflated');
           }
           const partial123=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence.json','utf8'));
-          if(partial123.records.length!==48||catalog.knownIngredientRecords!==1208||
+          if(partial123.records.length!==48||catalog.knownIngredientRecords!==1262||
              partial123.records.some(x=>x.productId==='rc62-sana-01'))
              throw Error('Old ND partial-only evidence was not migrated after exact full-ingredient upgrade');
           if(fs.existsSync('_site/data/rc123-sana-nd-nine-exact-japanese-ingredient-formulas-20261102.json')||

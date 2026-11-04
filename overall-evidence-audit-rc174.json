@@ -1,0 +1,1028 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.174",
+  "checkedOn": "2026-11-04",
+  "purpose": "日本向け商品の収録品質と技術的健全性を証拠ごとに検証する総合監査（製品の効能・安全性・品質評価ではない）",
+  "registeredBrandsTotal": 147,
+  "registeredProductNamesTotal": 2163,
+  "priorityBrands": 102,
+  "priorityProducts": 2020,
+  "scope": {
+    "completeJapaneseFormulas": 600,
+    "partialJapaneseIngredientEvidence": 1214,
+    "withoutVerifiedJapaneseIngredientNames": 206,
+    "manufacturerAndRetailerEvidenceProducts": 1814,
+    "completePercent": 29.7,
+    "partialPercent": 60.1,
+    "noNamePercent": 10.2
+  },
+  "sourceAudit": {
+    "completeArchivedAllBrands": 607,
+    "fullFormulaProductsOutsidePriorityScope": 7,
+    "fullFormulaSourceTypes": {
+      "official": 606,
+      "shop": 1
+    },
+    "quasiDrugFullListCount": 87,
+    "quasiDrugFullListActiveOtherSeparated": 87,
+    "quasiDrugFullListAwaitingActiveOtherSeparation": 0,
+    "partialSourceFiles": 34,
+    "sourceDeclaredPartialRecordCount": 1448,
+    "partialReferencesSupersededByFullList": 191,
+    "independentDisclosedFactCount": 11,
+    "independentDisclosedWithoutAlreadyTrackedPartial": 5,
+    "distinctPartialSourceProductsAllBrands": 1262,
+    "distinctPartialSourceProductsInPriorityScope": 1214,
+    "sourceClassBreakdownInPriorityScope": {
+      "japanese-manufacturer-website": 1199,
+      "japanese-domestic-retailer-listing": 8,
+      "individual-manufacturer-disclosed-name-facts": 5,
+      "japanese-domestic-launch-announcement": 2
+    },
+    "productIdentityVerifiedForCurrentLots": false,
+    "allPhysicalPackageLabelsChecked": false,
+    "allSourceRightsReviewed": false,
+    "allManufacturersAndRetailersRealTimeChecked": false
+  },
+  "previousReported": {
+    "partialOnly": 1160,
+    "noNames": 260
+  },
+  "verifiedReconciliation": {
+    "partialOnly": 1214,
+    "noNames": 206,
+    "differenceInPartialComparedWithPrior": 94,
+    "differenceInUnknownComparedWithPrior": -94,
+    "explanation": "rc173の未確認260商品からクラシエ、コスメデコルテ、クレ・ド・ポー ボーテ、トリデン、ラネージュの日本国内向け公式個別ページ75件を調査し、54商品の日本語参考成分259名称を確認。成分名未確認260→206、全成分保存版600は不変。",
+    "sourceReferenceMissingFive": [
+      {
+        "productId": "rc51-belif-aqua-bomb-50g",
+        "brand": "ビリーフ",
+        "productName": "ザ トゥルー クリーム アクアボム",
+        "caution": "前回の部分成分総数に含まれていたが、現在の公開用成分資料に日本向け実名の根拠を確認できないため未収録に再分類"
+      },
+      {
+        "productId": "rc63-hanyul-01",
+        "brand": "ハンユル",
+        "productName": "ヨモギ スージングトナーパッド",
+        "caution": "前回の部分成分総数に含まれていたが、現在の公開用成分資料に日本向け実名の根拠を確認できないため未収録に再分類"
+      },
+      {
+        "productId": "rc63-illiyoon-02",
+        "brand": "イリユン",
+        "productName": "セラミド アト フェイス＆ボディクリーム",
+        "caution": "前回の部分成分総数に含まれていたが、現在の公開用成分資料に日本向け実名の根拠を確認できないため未収録に再分類"
+      },
+      {
+        "productId": "rc90-iope-super-vital-softener-150",
+        "brand": "IOPE",
+        "productName": "スーパー バイタル ソフナー",
+        "caution": "前回の部分成分総数に含まれていたが、現在の公開用成分資料に日本向け実名の根拠を確認できないため未収録に再分類"
+      },
+      {
+        "productId": "rc90-mamonde-pore-shrinker-serum-50",
+        "brand": "マモンド",
+        "productName": "ポアシュリンカー バクチオールセラム",
+        "caution": "前回の部分成分総数に含まれていたが、現在の公開用成分資料に日本向け実名の根拠を確認できないため未収録に再分類"
+      }
+    ]
+  },
+  "countsCrosschecked": {
+    "scopedTotalMatches": true,
+    "uniqueSourceProductIds": true,
+    "activeAllBrandProductsRegistered": 2163,
+    "archivedProductIdCount": 607
+  },
+  "brandRows": [
+    {
+      "brand": "アヌア",
+      "all": 40,
+      "complete": 1,
+      "partial": 12,
+      "unverified": 27,
+      "coveragePercent": 32.5,
+      "fullListPercent": 2.5
+    },
+    {
+      "brand": "アクアレーベル",
+      "all": 25,
+      "complete": 2,
+      "partial": 3,
+      "unverified": 20,
+      "coveragePercent": 20,
+      "fullListPercent": 8
+    },
+    {
+      "brand": "BAUM",
+      "all": 37,
+      "complete": 0,
+      "partial": 18,
+      "unverified": 19,
+      "coveragePercent": 48.6,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ザ・フェイスショップ",
+      "all": 23,
+      "complete": 0,
+      "partial": 4,
+      "unverified": 19,
+      "coveragePercent": 17.4,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "雪肌精",
+      "all": 14,
+      "complete": 1,
+      "partial": 3,
+      "unverified": 10,
+      "coveragePercent": 28.6,
+      "fullListPercent": 7.1
+    },
+    {
+      "brand": "dプログラム",
+      "all": 10,
+      "complete": 2,
+      "partial": 0,
+      "unverified": 8,
+      "coveragePercent": 20,
+      "fullListPercent": 20
+    },
+    {
+      "brand": "ルシード",
+      "all": 21,
+      "complete": 1,
+      "partial": 12,
+      "unverified": 8,
+      "coveragePercent": 61.9,
+      "fullListPercent": 4.8
+    },
+    {
+      "brand": "肌美精",
+      "all": 33,
+      "complete": 0,
+      "partial": 25,
+      "unverified": 8,
+      "coveragePercent": 75.8,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "リバイタル",
+      "all": 13,
+      "complete": 0,
+      "partial": 6,
+      "unverified": 7,
+      "coveragePercent": 46.2,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "エスト",
+      "all": 76,
+      "complete": 15,
+      "partial": 55,
+      "unverified": 6,
+      "coveragePercent": 92.1,
+      "fullListPercent": 19.7
+    },
+    {
+      "brand": "エチュード",
+      "all": 12,
+      "complete": 1,
+      "partial": 5,
+      "unverified": 6,
+      "coveragePercent": 50,
+      "fullListPercent": 8.3
+    },
+    {
+      "brand": "ギャツビー",
+      "all": 10,
+      "complete": 1,
+      "partial": 3,
+      "unverified": 6,
+      "coveragePercent": 40,
+      "fullListPercent": 10
+    },
+    {
+      "brand": "いち髪",
+      "all": 44,
+      "complete": 0,
+      "partial": 39,
+      "unverified": 5,
+      "coveragePercent": 88.6,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ベネフィーク",
+      "all": 37,
+      "complete": 0,
+      "partial": 32,
+      "unverified": 5,
+      "coveragePercent": 86.5,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ONE BY KOSE",
+      "all": 10,
+      "complete": 1,
+      "partial": 5,
+      "unverified": 4,
+      "coveragePercent": 60,
+      "fullListPercent": 10
+    },
+    {
+      "brand": "ラネージュ",
+      "all": 17,
+      "complete": 1,
+      "partial": 12,
+      "unverified": 4,
+      "coveragePercent": 76.5,
+      "fullListPercent": 5.9
+    },
+    {
+      "brand": "イリユン",
+      "all": 3,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 3,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "プレディア",
+      "all": 27,
+      "complete": 1,
+      "partial": 23,
+      "unverified": 3,
+      "coveragePercent": 88.9,
+      "fullListPercent": 3.7
+    },
+    {
+      "brand": "無印良品",
+      "all": 24,
+      "complete": 0,
+      "partial": 21,
+      "unverified": 3,
+      "coveragePercent": 87.5,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "Dr.Jart+",
+      "all": 3,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 2,
+      "coveragePercent": 33.3,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "HAKU",
+      "all": 9,
+      "complete": 1,
+      "partial": 6,
+      "unverified": 2,
+      "coveragePercent": 77.8,
+      "fullListPercent": 11.1
+    },
+    {
+      "brand": "IOPE",
+      "all": 2,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 2,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "アネッサ",
+      "all": 3,
+      "complete": 1,
+      "partial": 0,
+      "unverified": 2,
+      "coveragePercent": 33.3,
+      "fullListPercent": 33.3
+    },
+    {
+      "brand": "キュレル",
+      "all": 49,
+      "complete": 5,
+      "partial": 42,
+      "unverified": 2,
+      "coveragePercent": 95.9,
+      "fullListPercent": 10.2
+    },
+    {
+      "brand": "コスメデコルテ",
+      "all": 28,
+      "complete": 1,
+      "partial": 25,
+      "unverified": 2,
+      "coveragePercent": 92.9,
+      "fullListPercent": 3.6
+    },
+    {
+      "brand": "ザ・フー",
+      "all": 2,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 2,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "マキアージュ",
+      "all": 15,
+      "complete": 0,
+      "partial": 13,
+      "unverified": 2,
+      "coveragePercent": 86.7,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "COSRX",
+      "all": 2,
+      "complete": 1,
+      "partial": 0,
+      "unverified": 1,
+      "coveragePercent": 50,
+      "fullListPercent": 50
+    },
+    {
+      "brand": "KATE",
+      "all": 134,
+      "complete": 1,
+      "partial": 132,
+      "unverified": 1,
+      "coveragePercent": 99.3,
+      "fullListPercent": 0.7
+    },
+    {
+      "brand": "LUNASOL",
+      "all": 2,
+      "complete": 1,
+      "partial": 0,
+      "unverified": 1,
+      "coveragePercent": 50,
+      "fullListPercent": 50
+    },
+    {
+      "brand": "Torriden",
+      "all": 14,
+      "complete": 1,
+      "partial": 12,
+      "unverified": 1,
+      "coveragePercent": 92.9,
+      "fullListPercent": 7.1
+    },
+    {
+      "brand": "VT",
+      "all": 23,
+      "complete": 1,
+      "partial": 21,
+      "unverified": 1,
+      "coveragePercent": 95.7,
+      "fullListPercent": 4.3
+    },
+    {
+      "brand": "アテニア",
+      "all": 7,
+      "complete": 1,
+      "partial": 5,
+      "unverified": 1,
+      "coveragePercent": 85.7,
+      "fullListPercent": 14.3
+    },
+    {
+      "brand": "インウイ",
+      "all": 15,
+      "complete": 0,
+      "partial": 14,
+      "unverified": 1,
+      "coveragePercent": 93.3,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "インテグレート",
+      "all": 6,
+      "complete": 0,
+      "partial": 5,
+      "unverified": 1,
+      "coveragePercent": 83.3,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "エリクシール",
+      "all": 7,
+      "complete": 1,
+      "partial": 5,
+      "unverified": 1,
+      "coveragePercent": 85.7,
+      "fullListPercent": 14.3
+    },
+    {
+      "brand": "クレ・ド・ポー ボーテ",
+      "all": 50,
+      "complete": 0,
+      "partial": 49,
+      "unverified": 1,
+      "coveragePercent": 98,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "セラムヴェール",
+      "all": 2,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 1,
+      "coveragePercent": 50,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ハンユル",
+      "all": 1,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 1,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ビリーフ",
+      "all": 1,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 1,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ファンケル",
+      "all": 7,
+      "complete": 1,
+      "partial": 5,
+      "unverified": 1,
+      "coveragePercent": 85.7,
+      "fullListPercent": 14.3
+    },
+    {
+      "brand": "プリメラ",
+      "all": 2,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 1,
+      "coveragePercent": 50,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ヘラ",
+      "all": 19,
+      "complete": 1,
+      "partial": 17,
+      "unverified": 1,
+      "coveragePercent": 94.7,
+      "fullListPercent": 5.3
+    },
+    {
+      "brand": "マジョリカ マジョルカ",
+      "all": 19,
+      "complete": 0,
+      "partial": 18,
+      "unverified": 1,
+      "coveragePercent": 94.7,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "マモンド",
+      "all": 1,
+      "complete": 0,
+      "partial": 0,
+      "unverified": 1,
+      "coveragePercent": 0,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ミノン",
+      "all": 24,
+      "complete": 1,
+      "partial": 22,
+      "unverified": 1,
+      "coveragePercent": 95.8,
+      "fullListPercent": 4.2
+    },
+    {
+      "brand": "50の恵",
+      "all": 2,
+      "complete": 2,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ADDICTION",
+      "all": 2,
+      "complete": 0,
+      "partial": 2,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ALBLANC",
+      "all": 41,
+      "complete": 14,
+      "partial": 27,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 34.1
+    },
+    {
+      "brand": "ALLIE",
+      "all": 17,
+      "complete": 12,
+      "partial": 5,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 70.6
+    },
+    {
+      "brand": "B.A",
+      "all": 4,
+      "complete": 1,
+      "partial": 3,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 25
+    },
+    {
+      "brand": "CNP",
+      "all": 1,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "DEW",
+      "all": 58,
+      "complete": 22,
+      "partial": 36,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 37.9
+    },
+    {
+      "brand": "DHC",
+      "all": 2,
+      "complete": 0,
+      "partial": 2,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "freeplus",
+      "all": 9,
+      "complete": 5,
+      "partial": 4,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 55.6
+    },
+    {
+      "brand": "HIKARIMIRAI",
+      "all": 30,
+      "complete": 16,
+      "partial": 14,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 53.3
+    },
+    {
+      "brand": "IPSA",
+      "all": 2,
+      "complete": 0,
+      "partial": 2,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "LISSAGE",
+      "all": 87,
+      "complete": 45,
+      "partial": 42,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 51.7
+    },
+    {
+      "brand": "MEDIHEAL",
+      "all": 24,
+      "complete": 1,
+      "partial": 23,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 4.2
+    },
+    {
+      "brand": "Primavista",
+      "all": 2,
+      "complete": 1,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 50
+    },
+    {
+      "brand": "SKIN1004",
+      "all": 1,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "TWANY",
+      "all": 121,
+      "complete": 26,
+      "partial": 95,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 21.5
+    },
+    {
+      "brand": "VDL",
+      "all": 1,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "アスタリフト",
+      "all": 35,
+      "complete": 35,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "イニスフリー",
+      "all": 15,
+      "complete": 1,
+      "partial": 14,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 6.7
+    },
+    {
+      "brand": "イハダ",
+      "all": 5,
+      "complete": 5,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ヴィセ",
+      "all": 21,
+      "complete": 1,
+      "partial": 20,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 4.8
+    },
+    {
+      "brand": "エクセル",
+      "all": 40,
+      "complete": 18,
+      "partial": 22,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 45
+    },
+    {
+      "brand": "エストラ",
+      "all": 18,
+      "complete": 1,
+      "partial": 17,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 5.6
+    },
+    {
+      "brand": "エスプリーク",
+      "all": 16,
+      "complete": 1,
+      "partial": 15,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 6.3
+    },
+    {
+      "brand": "エスポア",
+      "all": 1,
+      "complete": 0,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "オバジ",
+      "all": 21,
+      "complete": 18,
+      "partial": 3,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 85.7
+    },
+    {
+      "brand": "オルビス",
+      "all": 3,
+      "complete": 3,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "カネボウ",
+      "all": 75,
+      "complete": 32,
+      "partial": 43,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 42.7
+    },
+    {
+      "brand": "キャンメイク",
+      "all": 11,
+      "complete": 6,
+      "partial": 5,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 54.5
+    },
+    {
+      "brand": "ケアセラ",
+      "all": 9,
+      "complete": 9,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "コーセー",
+      "all": 3,
+      "complete": 3,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "サナ",
+      "all": 11,
+      "complete": 10,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 90.9
+    },
+    {
+      "brand": "ジルスチュアート",
+      "all": 2,
+      "complete": 0,
+      "partial": 2,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "スイサイ",
+      "all": 43,
+      "complete": 14,
+      "partial": 29,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 32.6
+    },
+    {
+      "brand": "スキンアクア",
+      "all": 15,
+      "complete": 15,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "セザンヌ",
+      "all": 131,
+      "complete": 131,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ソフィーナ iP",
+      "all": 52,
+      "complete": 12,
+      "partial": 40,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 23.1
+    },
+    {
+      "brand": "ソルファス",
+      "all": 10,
+      "complete": 0,
+      "partial": 10,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "ちふれ",
+      "all": 11,
+      "complete": 11,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "デオコ",
+      "all": 2,
+      "complete": 2,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "トランシーノ",
+      "all": 14,
+      "complete": 1,
+      "partial": 13,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 7.1
+    },
+    {
+      "brand": "ナイーブ",
+      "all": 12,
+      "complete": 0,
+      "partial": 12,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "なめらか本舗",
+      "all": 3,
+      "complete": 3,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ノブ",
+      "all": 40,
+      "complete": 39,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 97.5
+    },
+    {
+      "brand": "ビオレ",
+      "all": 7,
+      "complete": 7,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ビフェスタ",
+      "all": 10,
+      "complete": 1,
+      "partial": 9,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 10
+    },
+    {
+      "brand": "ビヨンド",
+      "all": 2,
+      "complete": 0,
+      "partial": 2,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "プリオール",
+      "all": 3,
+      "complete": 3,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ポーラ",
+      "all": 1,
+      "complete": 1,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "メラノCC",
+      "all": 2,
+      "complete": 2,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "リンクルショット",
+      "all": 5,
+      "complete": 1,
+      "partial": 4,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 20
+    },
+    {
+      "brand": "ルナメア",
+      "all": 9,
+      "complete": 9,
+      "partial": 0,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 100
+    },
+    {
+      "brand": "ロート製薬",
+      "all": 3,
+      "complete": 0,
+      "partial": 3,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "綾花",
+      "all": 7,
+      "complete": 6,
+      "partial": 1,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 85.7
+    },
+    {
+      "brand": "資生堂",
+      "all": 9,
+      "complete": 0,
+      "partial": 9,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 0
+    },
+    {
+      "brand": "肌ラボ",
+      "all": 16,
+      "complete": 9,
+      "partial": 7,
+      "unverified": 0,
+      "coveragePercent": 100,
+      "fullListPercent": 56.3
+    }
+  ],
+  "outstanding": {
+    "incompleteJapaneseFormulas": 1420,
+    "ingredientsWithoutVerifiedJapaneseName": 206,
+    "wholePhysicalLabelReviewRequired": true,
+    "rightsAndCurrentLotVerificationRequired": true
+  },
+  "notes": [
+    "日本語全成分の保存版は現物容器の照合を意味しません",
+    "「部分成分」は日本向けメーカー・正規販売の実名資料だけを分類し、海外INCIを国内版に変換しません",
+    "一部成分の表示順を配合順として扱いません",
+    "品質評価はデータ収録・検証の状態を指し、製品の効能・濃度・安全性・優劣を点数化しません"
+  ]
+}

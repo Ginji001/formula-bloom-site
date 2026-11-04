@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T07:59:28.499Z",
+  "generatedAt": "2026-11-04T08:50:00.638Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2163,
   "ingredientRecords": 607,
-  "knownIngredientRecords": 1208,
+  "knownIngredientRecords": 1262,
   "unverifiedFullIngredientCandidateCount": 1556,
   "singleProductCandidateBrandCount": 32,
   "allProductPhysicalLabelsVerified": false,
@@ -1697,7 +1697,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 50,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 46,
+      "knownIngredientRecordCount": 49,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -2078,7 +2078,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-cpb-ff15eb8d5354",
@@ -2092,7 +2092,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-cpb-ca836601a0ed",
@@ -2120,7 +2120,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-cpb-010f240842df",
@@ -15354,7 +15354,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 28,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 18,
+      "knownIngredientRecordCount": 25,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kose.co.jp/",
@@ -15455,7 +15455,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-25aca435cf62",
@@ -15511,7 +15511,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-1a4a8c224aab",
@@ -15525,7 +15525,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-0183d92c0f5a",
@@ -15581,7 +15581,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-54635a82aa70",
@@ -15609,7 +15609,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-d61b791b910e",
@@ -15623,7 +15623,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-0b765f5e6049",
@@ -15693,7 +15693,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc100-decorte-6a03393144f9",
@@ -22328,7 +22328,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 33,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 8,
+      "knownIngredientRecordCount": 25,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -22359,7 +22359,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-002",
@@ -22373,7 +22373,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-003",
@@ -22387,7 +22387,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-004",
@@ -22401,7 +22401,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-005",
@@ -22415,7 +22415,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-006",
@@ -22429,7 +22429,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-007",
@@ -22443,7 +22443,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-008",
@@ -22457,7 +22457,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-009",
@@ -22471,7 +22471,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-010",
@@ -22485,7 +22485,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-011",
@@ -22527,7 +22527,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-014",
@@ -22541,7 +22541,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-015",
@@ -22611,7 +22611,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-020",
@@ -22625,7 +22625,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-021",
@@ -22695,7 +22695,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-026",
@@ -22737,7 +22737,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-029",
@@ -22751,7 +22751,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-hadabisei-030",
@@ -22806,7 +22806,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 12,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 2,
+      "knownIngredientRecordCount": 12,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -22837,7 +22837,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-061",
@@ -22851,7 +22851,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-062",
@@ -22879,7 +22879,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-064",
@@ -22893,7 +22893,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-065",
@@ -22907,7 +22907,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-066",
@@ -22921,7 +22921,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-067",
@@ -22935,7 +22935,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-068",
@@ -22949,7 +22949,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-069",
@@ -22963,7 +22963,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-naive-070",
@@ -22977,7 +22977,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -22990,7 +22990,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 44,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 26,
+      "knownIngredientRecordCount": 39,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kracie.co.jp/",
@@ -23161,7 +23161,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-044",
@@ -23189,7 +23189,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-046",
@@ -23259,7 +23259,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-051",
@@ -23287,7 +23287,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-053",
@@ -23301,7 +23301,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-054",
@@ -23315,7 +23315,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-055",
@@ -23329,7 +23329,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-056",
@@ -23343,7 +23343,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-057",
@@ -23357,7 +23357,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-058",
@@ -23371,7 +23371,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-ichikami-059",
@@ -23385,7 +23385,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc119-premier-smooth-shampoo-bottle",
@@ -23455,7 +23455,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-02",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc119-premier-moist-shampoo-bottle",
@@ -23525,7 +23525,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-02",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc119-premier-milk-200",
@@ -26264,7 +26264,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 17,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 11,
+      "knownIngredientRecordCount": 12,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://jp.laneige.com/",
@@ -26379,7 +26379,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-laneige-096",
@@ -29478,7 +29478,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 14,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 9,
+      "knownIngredientRecordCount": 12,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://torriden.jp/",
@@ -29537,7 +29537,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-torriden-130",
@@ -29635,7 +29635,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-torriden-151",
@@ -29649,7 +29649,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc94-jp-official-torriden-152",

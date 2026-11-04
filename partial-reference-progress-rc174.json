@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.174",
+  "checkedOn": "2026-11-04",
+  "priorityProducts": 2020,
+  "priorityBrands": 102,
+  "completeJapaneseFormulaProducts": 600,
+  "partialOnlyBefore": 1160,
+  "partialOnlyAfter": 1214,
+  "noNameBefore": 260,
+  "noNameAfter": 206,
+  "newPartialSourceBackedProducts": 54,
+  "newJapaneseNameAssociations": 259,
+  "pagesAudited": 75,
+  "actualNewSourceCount": 54,
+  "byBrand": {
+    "肌美精": 17,
+    "いち髪": 13,
+    "ナイーブ": 10,
+    "コスメデコルテ": 7,
+    "クレ・ド・ポー ボーテ": 3,
+    "ラネージュ": 1,
+    "Torriden": 3
+  },
+  "byKind": {
+    "quasi": 17,
+    "cosmetic": 37
+  },
+  "originalJapaneseNamesOnly": true,
+  "allExactSkuCurrentLotVerified": false,
+  "allPhysicalLabelVerified": false,
+  "allFormulaOrderVerified": false,
+  "makerPermissionForFullRepublishingChecked": false,
+  "ingredientsInvented": 0,
+  "caveat": "国内向けメーカーの個別ページとJAN／商品名の一致を条件とし、単一商品・色番共通・セットの最初の構成品を区別。一部名称だけを表示しており、配合順や全成分の確定版ではありません。現物ラベル・最新ロット・他SKUの同一性・掲載許諾は未確認。"
+}
