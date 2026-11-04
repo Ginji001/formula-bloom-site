@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T05:49:36.629Z",
+  "generatedAt": "2026-11-04T07:59:28.499Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2163,
   "ingredientRecords": 607,
-  "knownIngredientRecords": 1163,
+  "knownIngredientRecords": 1208,
   "unverifiedFullIngredientCandidateCount": 1556,
   "singleProductCandidateBrandCount": 32,
   "allProductPhysicalLabelsVerified": false,
@@ -4838,7 +4838,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 52,
       "ingredientRecordCount": 12,
-      "knownIngredientRecordCount": 36,
+      "knownIngredientRecordCount": 40,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -4911,7 +4911,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301431509",
@@ -5023,7 +5023,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301460264",
@@ -5331,7 +5331,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301410771",
@@ -5541,7 +5541,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301446473",
@@ -7728,7 +7728,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 43,
       "ingredientRecordCount": 14,
-      "knownIngredientRecordCount": 28,
+      "knownIngredientRecordCount": 29,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -7885,7 +7885,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-suisai-4973167018156",
@@ -8346,7 +8346,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 58,
       "ingredientRecordCount": 22,
-      "knownIngredientRecordCount": 30,
+      "knownIngredientRecordCount": 36,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -8531,7 +8531,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167012123",
@@ -8545,7 +8545,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167051023",
@@ -8559,7 +8559,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167553046",
@@ -8615,7 +8615,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167251911",
@@ -8881,7 +8881,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167051030",
@@ -8895,7 +8895,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-dew-4973167041000",
@@ -9174,7 +9174,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 41,
       "ingredientRecordCount": 14,
-      "knownIngredientRecordCount": 25,
+      "knownIngredientRecordCount": 27,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -9359,7 +9359,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-alblanc-4901301409362",
@@ -9723,7 +9723,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-alblanc-4901301431967",
@@ -9764,7 +9764,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 134,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 131,
+      "knownIngredientRecordCount": 132,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -10425,7 +10425,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-kate-4973167819159",
@@ -12140,7 +12140,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 121,
       "ingredientRecordCount": 26,
-      "knownIngredientRecordCount": 93,
+      "knownIngredientRecordCount": 95,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.kao-kirei.com/",
@@ -12675,7 +12675,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-twany-4973167360446",
@@ -12703,7 +12703,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc93-kao-twany-4973167335178",
@@ -24088,7 +24088,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 10,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 0,
+      "knownIngredientRecordCount": 9,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
@@ -24119,7 +24119,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-ad914de50757",
@@ -24133,7 +24133,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-d64b6e9e1bde",
@@ -24147,7 +24147,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-940583e02ee1",
@@ -24161,7 +24161,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-be8a99f66943",
@@ -24175,7 +24175,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-b342ae54fa15",
@@ -24189,7 +24189,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-bd92b09cbfd4",
@@ -24203,7 +24203,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-e4546fd08676",
@@ -24217,7 +24217,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-bifesta-5e12296b9183",
@@ -24231,7 +24231,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -27196,7 +27196,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 19,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 5,
+      "knownIngredientRecordCount": 17,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://jp.hera.com/",
@@ -27227,7 +27227,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-5c715f379d3b",
@@ -27241,7 +27241,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-1a10d60f42da",
@@ -27255,7 +27255,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-2a4458b765ff",
@@ -27269,7 +27269,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-3e120f9e71ff",
@@ -27283,7 +27283,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-67bd75aac07e",
@@ -27297,7 +27297,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-eee0d9cac272",
@@ -27311,7 +27311,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-cb1b0180ce94",
@@ -27325,7 +27325,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-cc82bbd34f79",
@@ -27339,7 +27339,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-fd3cfe384e04",
@@ -27353,7 +27353,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-8f7467b7c399",
@@ -27381,7 +27381,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-dfe2af0a184a",
@@ -27409,7 +27409,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-hera-0084f2001469",
@@ -27478,7 +27478,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 10,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 3,
+      "knownIngredientRecordCount": 10,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.apgroup.com/jp/ja/",
@@ -27509,7 +27509,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-f9dba2f3eaad",
@@ -27523,7 +27523,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-7bd4f5f1650d",
@@ -27537,7 +27537,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-3d63add6d7ca",
@@ -27579,7 +27579,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-eb3ff05dbbfe",
@@ -27593,7 +27593,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-f4ee29345c92",
@@ -27607,7 +27607,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc103-sulwhasoo-aa39447bbae2",
@@ -27621,7 +27621,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -28386,7 +28386,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 40,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 11,
+      "knownIngredientRecordCount": 12,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.anuashop.jp/",
@@ -28431,7 +28431,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc104-anua-0c5473f08720",

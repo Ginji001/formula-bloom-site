@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.173",
+  "checkedOn": "2026-11-04",
+  "priorityProducts": 2020,
+  "priorityBrands": 102,
+  "completeJapaneseFormulaProducts": 600,
+  "partialOnlyBefore": 1115,
+  "partialOnlyAfter": 1160,
+  "noNameBefore": 305,
+  "noNameAfter": 260,
+  "newPartialSourceBackedProducts": 45,
+  "newJapaneseNameAssociations": 516,
+  "pagesAudited": 88,
+  "actualNewSourceCount": 45,
+  "byBrand": {
+    "アヌア": 1,
+    "ビフェスタ": 9,
+    "ソルファス": 7,
+    "ヘラ": 12,
+    "ソフィーナ iP": 4,
+    "スイサイ": 1,
+    "DEW": 6,
+    "ALBLANC": 2,
+    "TWANY": 2,
+    "KATE": 1
+  },
+  "byKind": {
+    "cosmetic": 42,
+    "quasi": 3
+  },
+  "originalJapaneseNamesOnly": true,
+  "allExactSkuCurrentLotVerified": false,
+  "allPhysicalLabelVerified": false,
+  "allFormulaOrderVerified": false,
+  "makerPermissionForFullRepublishingChecked": false,
+  "ingredientsInvented": 0,
+  "caveat": "国内向けメーカーの個別ページとJAN／商品名の一致を条件とし、単一商品・色番共通・セットの最初の構成品を区別。一部名称だけを表示しており、配合順や全成分の確定版ではありません。現物ラベル・最新ロット・他SKUの同一性・掲載許諾は未確認。"
+}

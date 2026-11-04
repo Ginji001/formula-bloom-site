@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T05:49:36.618Z",
+  "generatedAt": "2026-11-04T07:59:28.489Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
   "brandsWithKnownIngredientsOnly": 48,
   "brandsWithNoIngredientEvidence": 25,
-  "knownIngredientExcerptCount": 1163,
+  "knownIngredientExcerptCount": 1208,
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
@@ -2849,7 +2849,7 @@
       "country": "JP",
       "savedFormulaCount": 12,
       "registeredCandidateCount": 52,
-      "knownIngredientExcerptCount": 36,
+      "knownIngredientExcerptCount": 40,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -3208,6 +3208,46 @@
           "productId": "rc93-kao-sofina-ip-4901301449658",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301449658/",
           "checkedOn": "2026-11-03",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301447548",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301447548/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301464439",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301464439/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301422705",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301422705/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301461063",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301461063/",
+          "checkedOn": "2026-11-04",
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 12,
@@ -4836,7 +4876,7 @@
       "country": "JP",
       "savedFormulaCount": 14,
       "registeredCandidateCount": 43,
-      "knownIngredientExcerptCount": 28,
+      "knownIngredientExcerptCount": 29,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -5120,6 +5160,16 @@
           "knownIngredientCount": 12,
           "orderConfirmed": false,
           "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167066188",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167066188/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
         }
       ],
       "status": "partially-verified",
@@ -5275,7 +5325,7 @@
       "country": "JP",
       "savedFormulaCount": 22,
       "registeredCandidateCount": 58,
-      "knownIngredientExcerptCount": 30,
+      "knownIngredientExcerptCount": 36,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -5579,6 +5629,66 @@
           "knownIngredientCount": 12,
           "orderConfirmed": false,
           "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167525036",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167525036/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167012123",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167012123/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167051023",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167051023/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167024454",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167024454/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167536841",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167536841/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-dew-4973167051030",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167051030/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
         }
       ],
       "status": "partially-verified",
@@ -5814,7 +5924,7 @@
       "country": "JP",
       "savedFormulaCount": 14,
       "registeredCandidateCount": 41,
-      "knownIngredientExcerptCount": 25,
+      "knownIngredientExcerptCount": 27,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -6068,6 +6178,26 @@
           "knownIngredientCount": 12,
           "orderConfirmed": false,
           "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-alblanc-4901301474919",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/alblanc/4901301474919/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-alblanc-4901301474926",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/alblanc/4901301474926/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
         }
       ],
       "status": "partially-verified",
@@ -6223,7 +6353,7 @@
       "country": "JP",
       "savedFormulaCount": 1,
       "registeredCandidateCount": 134,
-      "knownIngredientExcerptCount": 131,
+      "knownIngredientExcerptCount": 132,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -7499,6 +7629,16 @@
           "physicalLabelCompared": false
         },
         {
+          "productId": "rc93-kao-kate-4973167911631",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167911631/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
           "productId": "rc93-kao-kate-4973167006009",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kate/4973167006009/",
           "checkedOn": "2026-11-02",
@@ -7927,7 +8067,7 @@
       "country": "JP",
       "savedFormulaCount": 26,
       "registeredCandidateCount": 121,
-      "knownIngredientExcerptCount": 93,
+      "knownIngredientExcerptCount": 95,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -8859,6 +8999,26 @@
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-twany-4973167337714",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/twany/4973167337714/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 9,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc93-kao-twany-4973167360453",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/twany/4973167360453/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 11,
           "orderConfirmed": false,
           "physicalLabelCompared": false
         }
@@ -15760,11 +15920,102 @@
       "country": "JP",
       "savedFormulaCount": 1,
       "registeredCandidateCount": 10,
-      "knownIngredientExcerptCount": 0,
+      "knownIngredientExcerptCount": 9,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
-      "partialProducts": [],
+      "partialProducts": [
+        {
+          "productId": "rc101-bifesta-8d5fb8b7f1e8",
+          "sourceUrl": "https://www.bifesta.jp/product/cleansing/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-ad914de50757",
+          "sourceUrl": "https://www.bifesta.jp/product/cleansing/#cleansing_2",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 7,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-d64b6e9e1bde",
+          "sourceUrl": "https://www.bifesta.jp/product/cleansing/#cleansing_3",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 6,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-940583e02ee1",
+          "sourceUrl": "https://www.bifesta.jp/product/cleansing/#cleansing_4",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-be8a99f66943",
+          "sourceUrl": "https://www.bifesta.jp/product/cleansing/#cleansing_5",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 11,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-b342ae54fa15",
+          "sourceUrl": "https://www.bifesta.jp/product/facewash/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 4,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-bd92b09cbfd4",
+          "sourceUrl": "https://www.bifesta.jp/product/facewash/#facewash_2",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-e4546fd08676",
+          "sourceUrl": "https://www.bifesta.jp/product/skincare/",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-bifesta-5e12296b9183",
+          "sourceUrl": "https://www.bifesta.jp/product/skincare/#skincare_2",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        }
+      ],
       "status": "partially-verified",
       "allProductsVerified": false,
       "allSkuCount": null,
@@ -17831,7 +18082,7 @@
       "country": "KR",
       "savedFormulaCount": 1,
       "registeredCandidateCount": 19,
-      "knownIngredientExcerptCount": 5,
+      "knownIngredientExcerptCount": 17,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -17885,6 +18136,126 @@
           "knownIngredientCount": 12,
           "orderConfirmed": false,
           "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-cfa3664400f8",
+          "sourceUrl": "https://jp.hera.com/products/black-cushion-foundation",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-5c715f379d3b",
+          "sourceUrl": "https://jp.hera.com/products/black-cushion-mesh-powder",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-1a10d60f42da",
+          "sourceUrl": "https://jp.hera.com/products/silkystay-serum-concealer",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-2a4458b765ff",
+          "sourceUrl": "https://jp.hera.com/products/sensual-nude-gloss",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-3e120f9e71ff",
+          "sourceUrl": "https://jp.hera.com/products/sensual-powder-matte-liquid-ex",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-67bd75aac07e",
+          "sourceUrl": "https://jp.hera.com/products/reflection-liquid-blush",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-eee0d9cac272",
+          "sourceUrl": "https://jp.hera.com/products/reflection-skin-glow-cushion-foundation",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-cb1b0180ce94",
+          "sourceUrl": "https://jp.hera.com/products/reflection-skin-glow-foundation",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-cc82bbd34f79",
+          "sourceUrl": "https://jp.hera.com/products/black-cushion-foundation-r",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-fd3cfe384e04",
+          "sourceUrl": "https://jp.hera.com/products/reflection-skin-glow-cushion-foundation-r",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-93be8ae32629",
+          "sourceUrl": "https://jp.hera.com/products/sensual-tinted-shine-lip-serum",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-hera-a3b2e289a371",
+          "sourceUrl": "https://jp.hera.com/products/sensual-tinted-shine-stick",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
         }
       ],
       "status": "partially-verified",
@@ -17910,7 +18281,7 @@
       "country": "KR",
       "savedFormulaCount": 0,
       "registeredCandidateCount": 10,
-      "knownIngredientExcerptCount": 3,
+      "knownIngredientExcerptCount": 10,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "known-ingredients-only",
@@ -17929,6 +18300,76 @@
           "productId": "rc103-sulwhasoo-ddd5ffecc42e",
           "sourceUrl": "https://jp.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cream-rich",
           "checkedOn": "2026-11-03",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-1c6a1deb8154",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-ampoule",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-f9dba2f3eaad",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cream",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-7bd4f5f1650d",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/gentle-cleansing-foam",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-97480111239a",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-water",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-eb3ff05dbbfe",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/perfecting-lip-color",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-f4ee29345c92",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/glowing-lip-balm",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc103-sulwhasoo-aa39447bbae2",
+          "sourceUrl": "https://jp.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-serum",
+          "checkedOn": "2026-11-04",
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 12,
@@ -18328,7 +18769,7 @@
       "country": "KR",
       "savedFormulaCount": 1,
       "registeredCandidateCount": 40,
-      "knownIngredientExcerptCount": 11,
+      "knownIngredientExcerptCount": 12,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -18437,6 +18878,16 @@
           "productId": "rc104-anua-066b858fa9ed",
           "sourceUrl": "https://anuashop.jp/products/sior0024",
           "checkedOn": "2026-11-03",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 12,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc104-anua-665454d3e47f",
+          "sourceUrl": "https://anuashop.jp/products/side0010",
+          "checkedOn": "2026-11-04",
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 12,
