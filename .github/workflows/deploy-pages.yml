@@ -583,14 +583,14 @@ jobs:
              stable.auditFile!=='overall-evidence-audit-rc184.json'||
              !stableGuide.includes('v1.0.0 正式版')||
              !stableGuide.includes('172商品')||
-             !stableGuide.includes('問い合わせ窓口はまだ設定されていません')||
+             !stableGuide.includes('v1.0.1で')||
              !stableHome.includes('href="release-v1.0.0.html"')||
              !stableHome.includes('app.js?v=github-pages-102-v1.0.1')||
              !stableSW.includes('release-v1.0.0.html')||
              !stableSW.includes('release-v1.0.0.json')||
              !stablePrivacy.includes('最終更新：2026年11月5日')||
-             !stableTerms.includes('v1.0.0')||
-             !stableReadme.includes('公開版 v1.0.0')||
+             !stableTerms.includes('v1.0.1')||
+             !stableReadme.includes('公開版 v1.0.1')||
              /公開前ドラフト|一般公開しません/.test(stablePrivacy+stableTerms)||
              fs.existsSync('_site/docs/v1.0.0-stable-release-20261105.md')||
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
