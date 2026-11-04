@@ -122,7 +122,7 @@ function englishInciEvidence(){
 }
 let formulaArchivePromise=null;
 function formulaArchive(){
- if(!formulaArchivePromise)formulaArchivePromise=Promise.all([getJSON('/formula-records.json'),getJSON('/formula-records-rc167.json')]).then(([base,delta])=>mergeFormulaArchives(base,[delta])).catch(()=>null);
+ if(!formulaArchivePromise)formulaArchivePromise=Promise.all([getJSON('/formula-records.json'),getJSON('/formula-records-rc167.json'),getJSON('/formula-records-rc168.json')]).then(([base,delta167,delta168])=>mergeFormulaArchives(base,[delta167,delta168])).catch(()=>null);
  return formulaArchivePromise;
 }
 async function storedFormulaFor(expected){return recordForProduct(await formulaArchive(),expected);}

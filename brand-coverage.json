@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T01:31:52.214Z",
+  "generatedAt": "2026-11-04T01:59:42.639Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 420,
+  "savedFormulaCount": 475,
   "registeredCandidateCount": 2163,
-  "unresolvedFullIngredientCandidateCount": 1743,
+  "unresolvedFullIngredientCandidateCount": 1688,
   "singleProductCandidateBrandCount": 32,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -753,7 +753,7 @@
       "brand": "ソフィーナ iP",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 12,
       "registeredCandidateCount": 52,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -773,6 +773,116 @@
           "verifiedAt": "2026-10-31T16:34:27+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/official/sofina-ip/products/basecareserum/",
           "ingredientCount": 20
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301422941",
+          "productName": "角層トリートメント 基礎化粧液",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:31.824Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301422941/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301460257",
+          "productName": "うるおい秒ミスト",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:36.292Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301460257/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301449634",
+          "productName": "水光ピーリング泡セラム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:36.778Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301449634/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301448637",
+          "productName": "スキンケアUV 01乾燥しがちな肌環境 SPF50+ PA++++",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:42.669Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301448637/",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301423917",
+          "productName": "スキンケアUV 03シミができやすい肌環境 SPF50+ PA++++",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:54.113Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301423917/",
+          "ingredientCount": 35
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301446947",
+          "productName": "うるおい高密着ショット",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:54.577Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301446947/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301412829",
+          "productName": "ベースケア セラム<土台美容液> 90G",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:55.041Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301412829/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301422750",
+          "productName": "ハリ弾力注入美容液",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:55:00.964Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301422750/",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301427588",
+          "productName": "スキンケアUV 02皮脂がでやすい肌 SPF50+ PA+++",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:55:22.949Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301427588/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301403032",
+          "productName": "ブライトニング美容液",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:55:23.408Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301403032/",
+          "ingredientCount": 31
+        },
+        {
+          "productId": "rc93-kao-sofina-ip-4901301403070",
+          "productName": "ブライトニング美容スティック",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:55:23.890Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/sofina-ip/4901301403070/",
+          "ingredientCount": 30
         }
       ]
     },
@@ -781,7 +891,7 @@
       "brand": "エスト",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 9,
       "registeredCandidateCount": 76,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -801,6 +911,86 @@
           "verifiedAt": "2026-10-31T16:19:21+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301459596/",
           "ingredientCount": 29
+        },
+        {
+          "productId": "rc93-kao-est-4901301455642",
+          "productName": "ナーチャリング クレンジングセラム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:34.592Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301455642/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc93-kao-est-4901301398574",
+          "productName": "クラリファイイング クレンジング ミルク",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:38.481Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301398574/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc93-kao-est-4901301354594",
+          "productName": "クレンジングエッセンス エンリッチド チューブ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:46.340Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301354594/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc93-kao-est-4901301398581",
+          "productName": "クラリファイイング ジェル ウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:54.623Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301398581/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc93-kao-est-4901301459565",
+          "productName": "ザ ローション EX K",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:13.253Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301459565/",
+          "ingredientCount": 29
+        },
+        {
+          "productId": "rc93-kao-est-4901301459572",
+          "productName": "ザ ローション EX S",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:18.664Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301459572/",
+          "ingredientCount": 33
+        },
+        {
+          "productId": "rc93-kao-est-4901301339775",
+          "productName": "ザ ローション",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:26.546Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301339775/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc93-kao-est-4901301445162",
+          "productName": "エストG.P. セラムイン ローション K",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:54:31.366Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/est/4901301445162/",
+          "ingredientCount": 27
         }
       ]
     },
@@ -809,7 +999,7 @@
       "brand": "カネボウ",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 14,
       "registeredCandidateCount": 75,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -829,6 +1019,136 @@
           "verifiedAt": "2026-10-31T16:19:21+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167640234/",
           "ingredientCount": 21
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167525173",
+          "productName": "メロウ オフ ヴェイル",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:38.404Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167525173/",
+          "ingredientCount": 33
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167632611",
+          "productName": "インスタント オフ オイル",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:42.197Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167632611/",
+          "ingredientCount": 12
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167827406",
+          "productName": "エンリッチド オフ クリーム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:46.050Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167827406/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167827369",
+          "productName": "クリア クレンジング トナー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:50.086Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167827369/",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167694459",
+          "productName": "コンフォート ストレッチィ ウォッシュII",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:54.289Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167694459/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167640210",
+          "productName": "クラリファイング パウダー ウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:58.527Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167640210/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167827444",
+          "productName": "リフレッシング クリーミィ ウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:04.493Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167827444/",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167019344",
+          "productName": "ジェネレイティング エッセンシャルズ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:13.632Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167019344/",
+          "ingredientCount": 39
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167534847",
+          "productName": "スキン ハーモナイザー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:17.710Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167534847/",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167936498",
+          "productName": "オン スキン エッセンス V",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:18.194Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167936498/",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167936535",
+          "productName": "オン スキン エッセンス F",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:22.745Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167936535/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167090411",
+          "productName": "ラディアント スキン リファイナー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:26.948Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167090411/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc93-kao-kanebo-4973167158845",
+          "productName": "モイスチャー フロウ ローション",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:53:30.636Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/kanebo/4973167158845/",
+          "ingredientCount": 17
         }
       ]
     },
@@ -837,7 +1157,7 @@
       "brand": "スイサイ",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 14,
       "registeredCandidateCount": 43,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -857,6 +1177,136 @@
           "verifiedAt": "2026-10-31T16:19:21+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167823859/",
           "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167552995",
+          "productName": "ビューティクリア ゴールド クレンジングバター",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:50:42.773Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167552995/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167511855",
+          "productName": "ビューティクリア メルティハンターバーム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:50:43.246Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167511855/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080740",
+          "productName": "ビューティクリア パウダーウォッシュN CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:50:52.442Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080740/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080764",
+          "productName": "ビューティクリア ブラック パウダーウォッシュ CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:50:57.266Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080764/",
+          "ingredientCount": 22
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080771",
+          "productName": "ビューティクリア ゴールド パウダーウォッシュ CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:01.943Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080771/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080788",
+          "productName": "ビューティクリア ピンク パウダーウォッシュ CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:13.831Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080788/",
+          "ingredientCount": 24
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080795",
+          "productName": "ビューティクリア グリーン パウダーウォッシュ CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:18.638Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080795/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167080757",
+          "productName": "ビューティクリア ペーストウォッシュ CS",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:23.645Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167080757/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167018156",
+          "productName": "ビューティクリア ペーストウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:24.123Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167018156/",
+          "ingredientCount": 26
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167593868",
+          "productName": "ビューティクリア グリーン パウダーウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:33.487Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167593868/",
+          "ingredientCount": 25
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167535622",
+          "productName": "ビューティクリア ピーリング パウダーウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:44.147Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167535622/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167031964",
+          "productName": "ビューティクリア ピーリング パウダーウォッシュ S",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:49.166Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167031964/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-suisai-4973167024478",
+          "productName": "ビューティクリア ポイント ポア ポリッシャー",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:49.622Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/suisai/4973167024478/",
+          "ingredientCount": 23
         }
       ]
     },
@@ -865,7 +1315,7 @@
       "brand": "DEW",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 11,
       "registeredCandidateCount": 58,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -885,6 +1335,106 @@
           "verifiedAt": "2026-10-31T16:19:21+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251645/",
           "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-dew-4973167553022",
+          "productName": "ハニーバームクレンジング クリア",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:51:57.609Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167553022/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc93-kao-dew-4973167251607",
+          "productName": "クレンジングオイル",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:01.668Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251607/",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc93-kao-dew-4973167251584",
+          "productName": "クレンジングクリーム",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:02.173Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251584/",
+          "ingredientCount": 23
+        },
+        {
+          "productId": "rc93-kao-dew-4973167511411",
+          "productName": "スイートシャンティウォッシュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:07.545Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167511411/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc93-kao-dew-4973167822449",
+          "productName": "クリアクレイフォンデュ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:11.682Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167822449/",
+          "ingredientCount": 30
+        },
+        {
+          "productId": "rc93-kao-dew-4973167251614",
+          "productName": "クリームソープ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:15.541Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251614/",
+          "ingredientCount": 21
+        },
+        {
+          "productId": "rc93-kao-dew-4973167074305",
+          "productName": "アフターグロウドロップ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:15.989Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167074305/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-dew-4973167089606",
+          "productName": "アフターグロウドロップ ミニサイズ",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:20.489Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167089606/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc93-kao-dew-4973167553046",
+          "productName": "ブライトオーラローション",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:25.062Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167553046/",
+          "ingredientCount": 27
+        },
+        {
+          "productId": "rc93-kao-dew-4973167251911",
+          "productName": "ローション",
+          "variant": null,
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:52:30.173Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/dew/4973167251911/",
+          "ingredientCount": 25
         }
       ]
     },

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T01:31:52.223Z",
+  "generatedAt": "2026-11-04T01:59:42.648Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2163,
-  "ingredientRecords": 420,
+  "ingredientRecords": 475,
   "knownIngredientRecords": 48,
-  "unverifiedFullIngredientCandidateCount": 1743,
+  "unverifiedFullIngredientCandidateCount": 1688,
   "singleProductCandidateBrandCount": 32,
   "allProductPhysicalLabelsVerified": false,
   "allRepublicationPermissionsVerified": false,
@@ -4837,7 +4837,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 52,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 12,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -4897,7 +4897,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301447548",
@@ -4981,7 +4981,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301472793",
@@ -5079,7 +5079,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301449641",
@@ -5121,7 +5121,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301448644",
@@ -5149,7 +5149,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301446947",
@@ -5163,7 +5163,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301416483",
@@ -5219,7 +5219,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301423085",
@@ -5303,7 +5303,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301422767",
@@ -5359,7 +5359,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301403032",
@@ -5373,7 +5373,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301403063",
@@ -5401,7 +5401,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-sofina-ip-4901301366221",
@@ -5581,7 +5581,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 76,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 9,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -5613,7 +5613,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301398574",
@@ -5627,7 +5627,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301354600",
@@ -5655,7 +5655,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301245274",
@@ -5711,7 +5711,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301434807",
@@ -5753,7 +5753,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301459572",
@@ -5767,7 +5767,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301459589",
@@ -5795,7 +5795,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301339782",
@@ -5823,7 +5823,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-est-4901301445124",
@@ -6661,7 +6661,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 75,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 14,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -6693,7 +6693,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167632611",
@@ -6707,7 +6707,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167827406",
@@ -6721,7 +6721,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167827369",
@@ -6735,7 +6735,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167694459",
@@ -6749,7 +6749,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167640210",
@@ -6763,7 +6763,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167827444",
@@ -6777,7 +6777,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167019344",
@@ -6791,7 +6791,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167534847",
@@ -6805,7 +6805,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167936498",
@@ -6819,7 +6819,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167936535",
@@ -6833,7 +6833,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167090411",
@@ -6847,7 +6847,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167158845",
@@ -6861,7 +6861,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-kanebo-4973167158821",
@@ -7727,7 +7727,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 43,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 14,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -7759,7 +7759,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167511855",
@@ -7773,7 +7773,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167100127",
@@ -7801,7 +7801,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167080764",
@@ -7815,7 +7815,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167080771",
@@ -7829,7 +7829,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167080788",
@@ -7843,7 +7843,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167080795",
@@ -7857,7 +7857,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167080757",
@@ -7871,7 +7871,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167066188",
@@ -7899,7 +7899,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167593905",
@@ -7941,7 +7941,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167593882",
@@ -7983,7 +7983,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167031964",
@@ -7997,7 +7997,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167535639",
@@ -8025,7 +8025,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-suisai-4973167531198",
@@ -8345,7 +8345,7 @@
       "brandRegistration": "registered",
       "productRegistration": "partially-registered",
       "productNameCount": 58,
-      "ingredientRecordCount": 1,
+      "ingredientRecordCount": 11,
       "knownIngredientRecordCount": 0,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
@@ -8391,7 +8391,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167251607",
@@ -8405,7 +8405,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167251584",
@@ -8419,7 +8419,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167511411",
@@ -8433,7 +8433,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167822449",
@@ -8447,7 +8447,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167822456",
@@ -8475,7 +8475,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167074305",
@@ -8489,7 +8489,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167074312",
@@ -8517,7 +8517,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167525036",
@@ -8573,7 +8573,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167553060",
@@ -8629,7 +8629,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "full-list-snapshot-available"
         },
         {
           "productId": "rc93-kao-dew-4973167251959",
