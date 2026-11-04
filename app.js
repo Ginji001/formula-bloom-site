@@ -1055,7 +1055,7 @@ function addProductFamily(container,family,query='',before=null){
   if(family.products.length===1&&first.variant&&first.variant.length<=28&&!/^(?:色番未指定|単一処方|現行|国内向け)$/.test(first.variant)&&!productFold(title.textContent).includes(productFold(first.variant)))title.textContent+=' · '+first.variant;
   const hint=document.createElement('small');
   const verifiedCount=family.products.filter(itemHasArchiveInCatalog).length;
-  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類／全成分あり'+verifiedCount+'）':itemHasArchiveInCatalog(first)?'出典付き全成分で花を見る':'全成分未収録・名前と一部成分を確認';
+  hint.textContent=family.products.length>1?'容量・色・仕様を選んでください（'+family.products.length+'種類／全成分あり'+verifiedCount+'）':itemHasArchiveInCatalog(first)?'出典付き全成分で花を見る':'全成分未収録・商品名の根拠を見る';
   button.dataset.formulaReady=String(verifiedCount>0);
   button.append(title,hint);
   const uniqueExact=exactFamilyMember(family,query);
