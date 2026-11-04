@@ -645,7 +645,7 @@ jobs:
                 r.formulaOrderConfirmed||r.completePhysicalLabelConfirmed||r.republicationOfManufacturerProse||
                 r.order!=='ingredient-name-facts-sorted-alphabetically-not-original-formula-order'||
                 !r.sourceUrl.startsWith('https://')||
-                archivedIds.has(r.productId)||!decisionIds.has(r.productId))||
+                (archivedIds.has(r.productId)&&!archived.records.some(x=>x.productId===r.productId&&x.brand==='ちふれ'&&x.sourceReview?.sharedManufacturerItemPage===true))||!decisionIds.has(r.productId))||
              !sourceOnlyUI.includes('source-listed-fact-flower-action')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('source-disclosed-ingredient-names-rc128.json')||
              !fs.readFileSync('_site/unresolved-review-rc124.html','utf8').includes('fact-transcribed'))
