@@ -53,7 +53,7 @@ import {recordForProduct,validateFormulaRecords,compareFormulaRecord,mergeFormul
 import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
 import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredientCandidates,sharedSource} from './shared-source.js';
-import {comparePartialCompletion,ingredientMatchKey} from './partial-formula-completion.js';
+import {comparePartialCompletion,ingredientMatchKey,rankCopiedCandidates} from './partial-formula-completion.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
@@ -346,7 +346,7 @@ $('sharedCompletionClipboard').onclick=async()=>{
   if(!copied||copied.length>40000)throw Error('コピーしたページ本文は最大40,000文字です。必要な全成分欄だけをコピーしてください。');
   $('sharedPageText').value=copied;
   $('sharedExtractBtn').click();
-  $('sharedExtractStatus').textContent='端末内でコピー内容を解析しました。候補を選んで、商品と全成分を原文で確認してください。';
+  if(!$('sharedIngredients').value)$('sharedExtractStatus').textContent='端末内でコピー内容を解析しました。候補を選んで、商品と全成分を原文で確認してください。';
  }catch(error){$('sharedExtractStatus').textContent=error.message||'コピー内容を読み取れませんでした。貼り付け欄を利用してください。';}
 };
 $('sharedCompletionReset').onclick=()=>{
@@ -366,30 +366,43 @@ $('sharedExtractBtn').onclick=()=>{
   ...extractMedicatedIngredientCandidates(text).map(group=>({text:group.ingredients,group})),
   ...extractIngredientCandidates(text).map(text=>({text,group:null}))
  ];
+ const ranked=pendingPartialCompletion
+  ?rankCopiedCandidates(pendingPartialCompletion.record,choices,$('sharedUrl').value.trim(),$('sharedKind').value)
+  :choices.map((candidate,index)=>({...candidate,index,eligibleForPrefill:false,check:null}));
  const area=$('sharedExtractChoices');area.replaceChildren();
+ pendingMedicatedGroups=null;
+ $('sharedIngredients').value='';
+ completionStatus();
  $('sharedConfirmed').checked=false;
  if(!choices.length){
   $('sharedExtractStatus').textContent='全成分欄を特定できませんでした。成分表を直接貼り付けるか、容器の写真を読み取ってください。';
   return;
  }
  $('sharedExtractStatus').textContent='全成分候補 '+choices.length+'件。原文で商品・タイプ・成分を確認して選んでください。';
- choices.forEach((candidate,index)=>{
+ const selectCandidate=(candidate)=>{
+  $('sharedIngredients').value=candidate.text;
+  pendingMedicatedGroups=candidate.group;
+  if(candidate.group)$('sharedKind').value='quasi';
+  $('sharedConfirmed').checked=false;
+  $('sharedExtractStatus').textContent=candidate.group
+   ?'メーカー掲載の有効成分とその他成分を分けて一時入力しました。薬用区分・商品の一致と原文全体を確認してください。'
+   :'入力欄へ転記しました。商品・タイプ・全成分が合うか原文を確認してから解析してください。';
+  completionStatus();
+  $('sharedIngredients').focus();
+ };
+ ranked.forEach((candidate,index)=>{
   const btn=document.createElement('button');btn.type='button';btn.className='secondary';
   const n=candidate.text.split('、').length;
-  btn.textContent='候補 '+(index+1)+'（約'+n+'成分'+(candidate.group?'／有効'+candidate.group.active.length+'・その他'+candidate.group.other.length:'')+'）を入力欄へ';
-  btn.onclick=()=>{
-   $('sharedIngredients').value=candidate.text;
-   pendingMedicatedGroups=candidate.group;
-   if(candidate.group)$('sharedKind').value='quasi';
-   $('sharedConfirmed').checked=false;
-   $('sharedExtractStatus').textContent=candidate.group
-    ?'メーカー掲載の有効成分とその他成分を分けて一時入力しました。薬用区分・商品の一致と原文全体を確認してください。'
-    :'入力欄へ転記しました。商品・タイプ・全成分が合うか原文を確認してから解析してください。';
-   completionStatus();
-   $('sharedIngredients').focus();
-  };
+  btn.textContent='候補 '+(index+1)+'（約'+n+'成分'+(candidate.group?'／有効'+candidate.group.active.length+'・その他'+candidate.group.other.length:'')+
+   (candidate.check?'／参考'+candidate.check.matchedCount+'/'+candidate.check.referenceCount+'一致'+
+    (candidate.eligibleForPrefill?'':'・要確認'):'')+'）を入力欄へ';
+  btn.onclick=()=>selectCandidate(candidate);
   area.append(btn);
  });
+ if(pendingPartialCompletion&&ranked.length===1&&ranked[0].eligibleForPrefill){
+  selectCandidate(ranked[0]);
+  $('sharedExtractStatus').textContent='候補1件の参考成分名が一致したため入力欄へ自動転記しました。全成分の完結性・商品版・原文は未確認です。チェックを入れる前に確認してください。';
+ }
 };
 
 $('sharedKind').onchange=()=>{if($('sharedKind').value!=='quasi')pendingMedicatedGroups=null;$('sharedConfirmed').checked=false;completionStatus();};

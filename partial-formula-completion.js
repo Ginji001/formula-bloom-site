@@ -51,3 +51,24 @@ export function comparePartialCompletion(record,{sourceUrl='',ingredients='',kin
   sourceUrl:record.sourceUrl
  });
 }
+
+
+// Rank only the user's copied candidates against the existing product's
+// source-backed Japanese names. This is not an identity or full-list proof.
+export function rankCopiedCandidates(record,candidates,sourceUrl,kind){
+ if(!Array.isArray(candidates))return [];
+ return candidates.map((candidate,index)=>{
+  const check=comparePartialCompletion(record,{
+   sourceUrl,kind,ingredients:candidate.text
+  });
+  const expectedActive=(record.sourceActiveIngredientNames||[]).map(ingredientMatchKey);
+  const actualActive=(candidate.group?.active||[]).map(ingredientMatchKey);
+  const medicinalReady=record.kind!=='quasi'||Boolean(candidate.group&&
+   expectedActive.every(name=>actualActive.includes(name)));
+  return Object.freeze({...candidate,index,check,medicinalReady,
+   eligibleForPrefill:check.verifiedSubset&&medicinalReady});
+ }).sort((a,b)=>
+  Number(b.eligibleForPrefill)-Number(a.eligibleForPrefill)||
+  b.check.matchedCount-a.check.matchedCount||
+  a.check.missing.length-b.check.missing.length||a.index-b.index);
+}
