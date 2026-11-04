@@ -401,9 +401,9 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1754||
+          if(catalog.unverifiedFullIngredientCandidateCount!==1688||
              catalog.singleProductCandidateBrandCount!==32||
-             coverage118.unresolvedFullIngredientCandidateCount!==1754||
+             coverage118.unresolvedFullIngredientCandidateCount!==1688||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
              coverage118.singleProductCandidateBrandCount!==32||
