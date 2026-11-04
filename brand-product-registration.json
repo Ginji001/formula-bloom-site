@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T09:27:53.089Z",
+  "generatedAt": "2026-11-04T10:05:40.944Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2163,
   "ingredientRecords": 607,
-  "knownIngredientRecords": 1262,
+  "knownIngredientRecords": 1267,
   "unverifiedFullIngredientCandidateCount": 1556,
   "singleProductCandidateBrandCount": 32,
   "allProductPhysicalLabelsVerified": false,
@@ -3429,7 +3429,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 37,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 18,
+      "knownIngredientRecordCount": 23,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -3712,7 +3712,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-d748c747cb45",
@@ -3726,7 +3726,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-f10b7e5238db",
@@ -3740,7 +3740,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-eae73b9c0227",
@@ -3754,7 +3754,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-043204e27d17",
@@ -3768,7 +3768,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-ce63ed7eb97e",

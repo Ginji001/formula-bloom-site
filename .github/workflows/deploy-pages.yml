@@ -216,7 +216,7 @@ jobs:
              partial173.records.filter(r=>r.brand==='ヘラ').length!==12||
              partial173.records.filter(r=>r.brand==='ビフェスタ').length!==9||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc173.json')||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc174.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc177.js')||
              !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc173.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc173.html')||
@@ -263,7 +263,7 @@ jobs:
              overall174.sourceAudit.partialSourceFiles!==34||
              overall174.sourceAudit.sourceDeclaredPartialRecordCount!==1448||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc174.json')||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc174.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc177.js')||
              !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc174.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc174.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc174.html')||
@@ -271,6 +271,46 @@ jobs:
              fs.existsSync('_site/data/rc174-torriden-laneige-cledepeau-variants-components-source-checkpoint-20261104.json'))
             throw Error('rc174 Japanese manufacturer partial ingredient sources or label separation failed');
           console.log('Verified rc174: 54 source-backed products, 259 ingredient names, full600 / partial1214 / unconfirmed206');
+
+          // rc177: five independently evidenced BAUM Japanese cosmetic ingredient excerpts; never publish full compositions without rights.
+          const partial177=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc177.json','utf8'));
+          const audit177=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc177.json','utf8'));
+          const queue177=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc177.json','utf8'));
+          const oldQueue175=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc175.json','utf8'));
+          const oldUnknown=new Set(oldQueue175.products.map(x=>x.productId));
+          const currentUnknown=new Set(queue177.products.map(x=>x.productId));
+          const partial177Ids=new Set(partial177.records.map(x=>x.productId));
+          if(partial177.records.length!==5||partial177Ids.size!==5||
+             partial177.records.reduce((n,r)=>n+r.ingredientCount,0)!==15||
+             partial177.rightsForFullListRedistributionConfirmed!==false||
+             partial177.records.some(r=>
+               !oldUnknown.has(r.productId)||currentUnknown.has(r.productId)||
+               archivedProductIdSet.has(r.productId)||ids173.has(r.productId)||ids174.has(r.productId)||
+               r.brand!=='BAUM'||r.kind!=='cosmetic'||
+               !/^https:\/\/www\.shiseido\.co\.jp\/sw\/onlinestore\/products\/H\d+\.html$/.test(r.sourceUrl)||
+               r.ingredientCount!==3||r.ingredients.length!==3||
+               r.sourceOriginalJapaneseNames.length!==3||r.coverage!=='partial-only'||
+               r.notFullFormulaArchive!==true||r.labelCompared!==false||r.order!=='not-confirmed'||
+               !/^[a-f0-9]{64}$/.test(r.sourceEvidenceSha256)||
+               !/^[a-f0-9]{64}$/.test(r.sourceSectionSha256))||
+             queue177.unverifiedCount!==201||queue177.products.length!==201||
+             currentUnknown.size!==201||oldUnknown.size!==206||
+             [...currentUnknown].some(id=>!oldUnknown.has(id))||
+             audit177.release!=='1.0.0-rc.177'||
+             audit177.scope.completeJapaneseFormulas!==600||
+             audit177.scope.partialJapaneseIngredientEvidence!==1219||
+             audit177.scope.withoutVerifiedJapaneseIngredientNames!==201||
+             audit177.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
+             audit177.sourceAudit.quasiDrugFullListAwaitingActiveOtherSeparation!==0||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc177.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc177.json')||
+             !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc177.json')||
+             !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc177.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc177.html')||
+             fs.existsSync('_site/data/rc177-baum-five-official-japanese-full-list-section-audit-20261104.json'))
+            throw Error('rc177 verified Japanese BAUM partial sources, current coverage or private-data boundary failed');
+          console.log('Verified rc177: 5 BAUM official products / 15 partial name facts; full600, partial1219, unknown201');
+
 
 
 
