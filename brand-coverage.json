@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T10:05:40.934Z",
+  "generatedAt": "2026-11-04T10:52:14.639Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
   "brandsWithKnownIngredientsOnly": 48,
   "brandsWithNoIngredientEvidence": 25,
-  "knownIngredientExcerptCount": 1267,
+  "knownIngredientExcerptCount": 1288,
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
@@ -2049,7 +2049,7 @@
       "country": "JP",
       "savedFormulaCount": 0,
       "registeredCandidateCount": 37,
-      "knownIngredientExcerptCount": 23,
+      "knownIngredientExcerptCount": 36,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "known-ingredients-only",
@@ -2271,6 +2271,136 @@
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-ac03cd66ec97",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H92901.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-31922454470d",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H97601.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-f9d6ffe1c5af",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J02401.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-cbc5c939d5e3",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F07001.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-bedd43e3e526",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F07001.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-c57d258a85f8",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/F07001.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-2c82d5b35feb",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H56101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-c286a18aa455",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H56101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-9c0be5c0e016",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H56101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-2eeb6478527d",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J05101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-6e6816c701af",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J05101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-5a0e3fb68063",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J05101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc102-baum-10372ac8b921",
+          "sourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/J05101.html",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 2,
           "orderConfirmed": false,
           "physicalLabelCompared": false
         },
@@ -16321,7 +16451,7 @@
       "country": "JP",
       "savedFormulaCount": 1,
       "registeredCandidateCount": 21,
-      "knownIngredientExcerptCount": 12,
+      "knownIngredientExcerptCount": 20,
       "englishInciReferenceCount": 0,
       "englishInciReferences": [],
       "ingredientEvidenceStatus": "full-list-snapshot-available",
@@ -16443,6 +16573,86 @@
           "sourceType": "japanese-manufacturer-website",
           "retailerName": null,
           "knownIngredientCount": 1,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-d35917c22828",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=010057",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-3f5c02f8d7e5",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=012566",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-f9b01c719085",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=054788",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-7ec0aa2a81b8",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=022123",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-6c93d4c97bea",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=016790",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-f54027bde1c1",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=025782",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-f5a609accdd1",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=010751",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
+          "orderConfirmed": false,
+          "physicalLabelCompared": false
+        },
+        {
+          "productId": "rc101-lucido-efe066a34572",
+          "sourceUrl": "https://www.mandom.co.jp/products/detail.html?id=025824",
+          "checkedOn": "2026-11-04",
+          "sourceType": "japanese-manufacturer-website",
+          "retailerName": null,
+          "knownIngredientCount": 3,
           "orderConfirmed": false,
           "physicalLabelCompared": false
         }

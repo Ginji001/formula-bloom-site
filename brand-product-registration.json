@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T10:05:40.944Z",
+  "generatedAt": "2026-11-04T10:52:14.649Z",
   "brandCount": 147,
   "allBrandRegistrationSlotsCreated": true,
   "brandsWithRegisteredProductNames": 146,
   "brandsWithPendingProductNames": 1,
   "productNameRecords": 2163,
   "ingredientRecords": 607,
-  "knownIngredientRecords": 1267,
+  "knownIngredientRecords": 1288,
   "unverifiedFullIngredientCandidateCount": 1556,
   "singleProductCandidateBrandCount": 32,
   "allProductPhysicalLabelsVerified": false,
@@ -3429,7 +3429,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 37,
       "ingredientRecordCount": 0,
-      "knownIngredientRecordCount": 23,
+      "knownIngredientRecordCount": 36,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.shiseido.co.jp/",
@@ -3460,7 +3460,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-6e6816c701af",
@@ -3474,7 +3474,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-5a0e3fb68063",
@@ -3488,7 +3488,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-10372ac8b921",
@@ -3502,7 +3502,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-cbc5c939d5e3",
@@ -3516,7 +3516,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-c57d258a85f8",
@@ -3530,7 +3530,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-bedd43e3e526",
@@ -3544,7 +3544,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-2c82d5b35feb",
@@ -3558,7 +3558,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-9c0be5c0e016",
@@ -3572,7 +3572,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-c286a18aa455",
@@ -3586,7 +3586,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-6637c1265056",
@@ -3698,7 +3698,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-d03e796f6763",
@@ -3936,7 +3936,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc102-baum-ac03cd66ec97",
@@ -3950,7 +3950,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },
@@ -23778,7 +23778,7 @@
       "productRegistration": "partially-registered",
       "productNameCount": 21,
       "ingredientRecordCount": 1,
-      "knownIngredientRecordCount": 12,
+      "knownIngredientRecordCount": 20,
       "productCatalogComplete": false,
       "skuCatalogComplete": false,
       "officialSiteCandidate": "https://www.mandom.co.jp/",
@@ -23809,7 +23809,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-d35917c22828",
@@ -23823,7 +23823,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-9e9dce360dc2",
@@ -23991,7 +23991,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-f51073ba9e5d",
@@ -24019,7 +24019,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-efe066a34572",
@@ -24033,7 +24033,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-f9b01c719085",
@@ -24047,7 +24047,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-6c93d4c97bea",
@@ -24061,7 +24061,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         },
         {
           "productId": "rc101-lucido-7ec0aa2a81b8",
@@ -24075,7 +24075,7 @@
           "sku": null,
           "jan": null,
           "identityVerifiedAt": "2026-11-01",
-          "ingredientEvidenceStatus": "no-ingredients-recorded"
+          "ingredientEvidenceStatus": "known-ingredients-only"
         }
       ]
     },

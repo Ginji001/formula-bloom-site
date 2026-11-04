@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "release": "rc178",
+  "reviewedOn": "2026-11-04",
+  "purpose": "成分の非公開と、複数製品を一つの処方として扱えない商品を区別して能動調査を絞る。根拠のない公開情報不存在の断定は禁止。",
+  "reviewedProducts": 1,
+  "withoutPublicJapaneseIngredientEvidenceConfirmed": 0,
+  "compositeKitExcludedFromSingleFormulaResearch": 1,
+  "decisions": [
+    {
+      "productId": "rc102-baum-2fecba95c35b",
+      "brand": "BAUM",
+      "productName": "スキンケア トライアルキット",
+      "publicSourceUrl": "https://www.shiseido.co.jp/sw/onlinestore/products/H61501.html",
+      "secondarySourceUrl": "https://www.baumjapan.com/baum/product/skin/skincare-trial-kit.html",
+      "sourceCheckedOn": "2026-11-04",
+      "status": "not-a-single-formula-composite-kit",
+      "reason": "国内公式はローションn 30mL、オイルn 16mL、洗顔フォーム試用見本15gの3構成品と明記。単一商品の成分表や一輪の花として混合しない。",
+      "ingredientsPubliclyUnavailableProven": false,
+      "physicalLabelCompared": false,
+      "action": "集合品を一処方として扱う調査から除外。各構成品を識別できる一次資料があるときは別SKUで検討。"
+    }
+  ]
+}
