@@ -42,8 +42,30 @@ jobs:
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           if(catalog.brandCount!==147||catalog.productNameRecords!==2163||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==409)
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==475)
             throw Error('rc123 Japanese product name count or verified formula count mismatch');
+          // rc168: fixed product/JAN Japanese ingredient records are additive, never inferred.
+          const rc168=JSON.parse(fs.readFileSync('_site/formula-records-rc168.json','utf8'));
+          const newStatus=JSON.parse(fs.readFileSync('_site/full-formula-readiness-rc168.json','utf8'));
+          const originalIds=new Set(archived.records.map(r=>r.productId));
+          const rc168Records=rc168.records;
+          if(rc168Records.length!==55||
+             rc168Records.some(r=>!originalIds.has(r.productId)||!r.sku||
+               !r.sourceUrl.endsWith(r.sku+'/')||r.ingredientCount<12||
+               r.ingredientCount!==r.ingredients.split('、').length||
+               !r.sourceReview?.manufacturerPageExactlyMatchesJan||
+               !r.sourceReview?.fullIngredientsChecked||
+               r.sourceReview?.actualPhysicalLabelChecked!==false||
+               r.sourceReview?.rightsStatus!=='republication-permission-not-verified')||
+             newStatus.readyFullIngredientProducts!==468||
+             newStatus.totalVerifiedIngredientArchive!==475||
+             newStatus.productsWithOnlyPartialIngredientReferences!==1220||
+             newStatus.productsWithoutKnownIngredientNames!==332||
+             newStatus.remainingToGoal!==132||
+             !fs.readFileSync('_site/index.html','utf8').includes('full-formula-readiness-rc168.html')||
+             fs.existsSync('_site/data/rc168-exact-japan-kao-full-formulas-20261104.json'))
+            throw Error('rc168 55 exact Japanese JAN/full ingredient record and public-private boundary failed');
+          console.log('Verified rc168: 55 Japan-maker individual SKU ingredient records and 468 flower-ready products');
           const families=fs.readFileSync('_site/official-catalog-families.js','utf8');
           if(!families.includes('rc92-official-family-')||!families.includes('domestic-manufacturer-official-product-family-index'))
             throw Error('The reviewed official family-name index is missing');
@@ -580,7 +602,7 @@ jobs:
              !sourceOnlyUI.includes('抜粋や表示順不明の成分を「全成分」とは扱いません')||
              !sourceOnlyUI.includes('入力は送信・自動保存されません')||
              !sourceOnlyUI.includes('利用者が原文確認')||
-             archived.records.length!==409||caseReview.records.length!==1754)
+             archived.records.length!==475||caseReview.records.length!==1754)
             throw Error('rc125 explicitly listed Japanese names reference-only UI or full-formula safeguard missing');
           console.log('Verified rc.125: Japanese published-name-only reference flower shortcut, no false full formula promotions');
           const groupedRC126=JSON.parse(fs.readFileSync('_site/source-url-groups-rc126.json','utf8'));
