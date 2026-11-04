@@ -357,6 +357,55 @@ jobs:
               throw Error('rc178 source-backed 21 Japanese cosmetics/quasi, triage, audit or private-data boundaries failed');
           console.log('Verified rc178: 21 source-backed products, 54 Japanese excerpt names, all full600/partial1240/unknown180/active179.');
 
+          // rc179: inspect all 1,240 persisted Japanese partial facts; preserve historical originals and no full-list promotion.
+          const qa179=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc179.json','utf8'));
+          const summary179=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc179-summary.json','utf8'));
+          const audit179=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc179.json','utf8'));
+          const ids179=new Set(qa179.records.map(r=>r.productId));
+          const page179=fs.readFileSync('_site/partial-source-exhaustive-audit-rc179.html','utf8');
+          const currentApp179=fs.readFileSync('_site/app.js','utf8');
+          const corrections179=fs.readFileSync('_site/source-ingredient-errata-rc179.js','utf8');
+          if(qa179.release!=='1.0.0-rc.179'||summary179.release!=='1.0.0-rc.179'||
+             qa179.records.length!==1240||ids179.size!==1240||
+             qa179.summary.counts.recordsAudited!==1240||
+             summary179.counts.recordsAudited!==1240||
+             summary179.counts.manufacturerPages!==1230||
+             summary179.counts.otherSources!==10||
+             summary179.counts.sourceDomains!==45||
+             summary179.counts.japanJapaneseNameStringsPassPolicy!==1240||
+             summary179.counts.quasiDrugProducts!==254||
+             summary179.counts.quasiNeedsRoleConfirmation!==43||
+             summary179.counts.historicalTranscriptionCorrections!==2||
+             summary179.counts.suspiciousIngredientNamesRemaining!==0||
+             summary179.counts.fullIngredientRecordsAdded!==0||
+             summary179.counts.liveSitesCheckedThisAudit!==2||
+             summary179.counts.liveSitesNotCheckedThisAudit!==1238||
+             summary179.counts.officialSourcePermissionConfirmedForAll!==false||
+             Object.values(summary179.classificationCounts).reduce((a,b)=>a+b,0)!==1240||
+             qa179.records.some(r=>
+               !/^https:\/\//.test(r.sourceUrl)||r.formulaPromoted!==false||
+               r.actualPhysicalLabelCompared!==false||r.currentLotCompared!==false||
+               r.permissionToRepublishCompleteFormulaVerified!==false||
+               r.visibleJapaneseNameCount<1)||
+             audit179.release!=='1.0.0-rc.179'||
+             audit179.scope.completeJapaneseFormulas!==600||
+             audit179.scope.partialJapaneseIngredientEvidence!==1240||
+             audit179.scope.withoutVerifiedJapaneseIngredientNames!==180||
+             audit179.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
+             !currentApp179.includes('source-ingredient-errata-rc179.js')||
+             !currentApp179.includes('applySourceIngredientErrataRc179')||
+             !corrections179.includes('rc93-kao-kate-4973167017135')||
+             !corrections179.includes('rc100-etude-d9f0ed300cb0')||
+             !page179.includes('メーカーサイト1,240ページを新たに全件取得したわけではありません')||
+             (page179.match(/<tr data-category=/g)||[]).length!==1240||
+             !fs.readFileSync('_site/index.html','utf8').includes('partial-source-exhaustive-audit-rc179.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-source-exhaustive-audit-rc179.html')||
+             fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
+             fs.existsSync('_site/data/rc179-etude-contour-component-heading-erratum-20261104.json'))
+             throw Error('rc179 1240 individual source audits, source correction, published counts or private boundary failed');
+          console.log('Verified rc179: 1240 static-source audits, 43 medicinal followups, 2 fixed extracts, full600 partial1240 unknown180.');
+
+
 
 
 
