@@ -216,7 +216,7 @@ jobs:
              partial173.records.filter(r=>r.brand==='ヘラ').length!==12||
              partial173.records.filter(r=>r.brand==='ビフェスタ').length!==9||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc173.json')||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc178.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc183.js')||
              !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc173.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc173.html')||
@@ -263,7 +263,7 @@ jobs:
              overall174.sourceAudit.partialSourceFiles!==34||
              overall174.sourceAudit.sourceDeclaredPartialRecordCount!==1448||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc174.json')||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc178.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc183.js')||
              !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc174.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc174.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc174.html')||
@@ -302,7 +302,7 @@ jobs:
              audit177.scope.withoutVerifiedJapaneseIngredientNames!==201||
              audit177.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
              audit177.sourceAudit.quasiDrugFullListAwaitingActiveOtherSeparation!==0||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc178.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc183.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc177.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc177.json')||
              !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc177.html')||
@@ -348,7 +348,7 @@ jobs:
              t178.compositeKitExcludedFromSingleFormulaResearch!==1||
              t178.withoutPublicJapaneseIngredientEvidenceConfirmed!==0||
              t178.decisions[0].productId!=='rc102-baum-2fecba95c35b'||
-             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc178.js')||
+             !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc183.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc178.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc178.json')||
              !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc178.html')||
@@ -462,7 +462,7 @@ jobs:
              !html181.includes('id="sharedCompletionFullList"')||
              !html181.includes('id="sharedCompletionClipboard"')||
              !pwa181.includes('partial-formula-completion.js')||
-             !html181.includes('github-pages-102-rc182')||
+             !html181.includes('github-pages-102-rc183')||
              fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
              fs.existsSync('_site/docs/rc181-user-assisted-complete-formula-flow-20261104.md'))
             throw Error('rc181 user-confirmed Japanese partial-to-complete workflow or private-file boundary failed');
@@ -476,6 +476,25 @@ jobs:
              !completion181.includes('verifiedFullFormula:false'))
             throw Error('rc182 candidate prefill safety gate failed');
           console.log('Verified rc182: source-backed candidate ranking and explicit-confirmation-only flower generation.');
+          // rc183: six independent Japanese manufacturer product pages, never full formula republication.
+          const partial183=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc183.json','utf8'));
+          const audit183=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc183.json','utf8'));
+          const queue183=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc183.json','utf8'));
+          if(partial183.records.length!==6||new Set(partial183.records.map(r=>r.productId)).size!==6||
+             partial183.records.some(r=>r.coverage!=='partial-only'||r.ingredients.length!==3||
+               r.sourceType!=='japanese-manufacturer-website'||r.sourceHost!=='www.shiseido.co.jp'||
+               r.labelCompared!==false||r.currentFormulaCompared!==false||r.notFullFormulaArchive!==true)||
+             audit183.scope.completeJapaneseFormulas!==600||
+             audit183.scope.partialJapaneseIngredientEvidence!==1246||
+             audit183.scope.withoutVerifiedJapaneseIngredientNames!==174||
+             queue183.products.length!==174||queue183.activeResearchCount!==173||
+             !app181.includes('/partial-ingredient-evidence-rc183.json')||
+             !app181.includes('partial-reference-index-rc183.js')||
+             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc183.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc183.json')||
+             fs.existsSync('_site/data/rc183-aqualabel-six-official-product-sku-sources-20261104.json'))
+             throw Error('rc183 manufacturer identity, partial-only publication or private evidence boundary failed');
+          console.log('Verified rc183: six new AQUALABEL Japanese partial references, full600 partial1246 unknown174.');
 
 
 
