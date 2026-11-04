@@ -576,8 +576,9 @@ jobs:
           const archivedIds=new Set(archived.records.map(r=>r.productId));
           const catalogUnresolved=new Set(catalog.brands.flatMap(b=>b.products).filter(p=>!archivedIds.has(p.productId)).map(p=>p.productId));
           const decisionIds=new Set(decisions.map(p=>p.productId));
-          if(decisions.length!==1754||decisionIds.size!==1754||catalogUnresolved.size!==1754||
-             [...decisionIds].some(id=>!catalogUnresolved.has(id))||
+          if(decisions.length!==1754||decisionIds.size!==1754||catalogUnresolved.size!==1688||
+             [...catalogUnresolved].some(id=>!decisionIds.has(id))||
+             [...decisionIds].filter(id=>archivedIds.has(id)).length!==66||
              caseReview.summary.unresolvedAtFreeze!==1754||
              Object.values(caseReview.summary.statusCounts).reduce((sum,n)=>sum+n,0)!==1754||
              caseReview.summary.fullJapaneseIngredientRecordsAdded!==0||
