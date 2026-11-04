@@ -43,7 +43,7 @@ import {summarizeFormulaIntent} from './formula-intent.js';
 import {describeFormulaSignature,formatFormulaSignature} from './formula-signature-v60.js';
 import {provenance,provenanceText} from './provenance.js';
 import {checkProductIdentity} from './product-identity.js';
-import {recordForProduct,validateFormulaRecords,compareFormulaRecord} from './formula-archive.js';
+import {recordForProduct,validateFormulaRecords,compareFormulaRecord,mergeFormulaArchives} from './formula-archive.js';
 import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
 import {prepareSharedFormula,extractIngredientCandidates,sharedSource} from './shared-source.js';
@@ -122,7 +122,7 @@ function englishInciEvidence(){
 }
 let formulaArchivePromise=null;
 function formulaArchive(){
- if(!formulaArchivePromise)formulaArchivePromise=getJSON('/formula-records.json').then(validateFormulaRecords).catch(()=>null);
+ if(!formulaArchivePromise)formulaArchivePromise=Promise.all([getJSON('/formula-records.json'),getJSON('/formula-records-rc167.json')]).then(([base,delta])=>mergeFormulaArchives(base,[delta])).catch(()=>null);
  return formulaArchivePromise;
 }
 async function storedFormulaFor(expected){return recordForProduct(await formulaArchive(),expected);}
@@ -160,9 +160,9 @@ async function showArchivedRegisteredFormula(item,ctx=null){
  useStoredFormula(archive);
  const area=$('searchResults');area.replaceChildren();
  const label=document.createElement('p');label.className='selected-product-name';
- label.textContent=item.brand+' '+item.name+(item.volume?' · '+item.volume:'')+(item.jan?' ／ JAN '+item.jan:'');
+ label.textContent=item.brand+' '+item.name+((archive.volume||item.volume)?' · '+(archive.volume||item.volume):'')+((archive.sku||item.jan)?' ／ JAN '+(archive.sku||item.jan):'')+(archive.variant?' ／ '+archive.variant:'');
  const note=document.createElement('p');note.className='muted';
- note.textContent='メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。最新ロット・現物ラベルとの一致は未確認です。';
+ note.textContent='メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。'+(archive.sourceReview?.sharedManufacturerItemPage?'詰替用は本体と共通掲載の目的別表を使用（配合順ではありません）。':'')+'最新ロット・現物ラベルとの一致は未確認です。';
  area.append(label,note);
  sourceLink(area,archive.sourceUrl,'全成分の出典');
  if(item.url!==archive.sourceUrl)sourceLink(area,item.url,'商品ページ');
@@ -981,7 +981,7 @@ function showPartialChoices(container,item){
 function selectRegisteredFormula(item,context=''){
   if(!isMajorMakerProduct(item)){showScopeExcluded(item?.brand);return;}
   $('query').value=item.brand+' '+item.name;
-  if(item.registrationStatus==='name-only'){
+  if(item.registrationStatus==='name-only'&&!itemHasArchiveInCatalog(item)){
     beginLookup();invalidate();remoteProduct=null;official=false;
     const container=$('searchResults');container.replaceChildren();
     const imported=item.sourceScope==='japan-facing-korean-crossborder-personal-import-only';

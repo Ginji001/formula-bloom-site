@@ -44,6 +44,28 @@ export function validateFormulaRecords(catalog){
  }
  return catalog;
 }
+// The initial 409 records remain a historical base; each reviewed SKU batch is
+// additive. GitHub Pages may ship a premerged copy, so identical duplicates are
+// accepted only when source, identity and original ingredient text are identical.
+export function mergeFormulaArchives(base,updates=[]){
+ validateFormulaRecords(base);
+ const all=[...base.records],ids=new Map(all.map(x=>[x.productId,x]));
+ for(const batch of updates){
+  validateFormulaRecords(batch);
+  for(const candidate of batch.records){
+   const previous=ids.get(candidate.productId);
+   if(previous){
+    if(previous.ingredients!==candidate.ingredients||previous.sourceUrl!==candidate.sourceUrl||
+       previous.productName!==candidate.productName||previous.kind!==candidate.kind||
+       previous.ingredientCount!==candidate.ingredientCount)
+     throw Error('保存版の同一商品IDに異なる成分表があります：'+candidate.productId);
+    continue;
+   }
+   ids.set(candidate.productId,candidate);all.push(candidate);
+  }
+ }
+ return validateFormulaRecords({schemaVersion:1,records:all});
+}
 export function compareFormulaRecord(record,current){
  if(!record)return {status:'not-saved',text:'保存版なし',added:[],removed:[],reordered:false};
  if(!current?.ingredients)return {status:'unavailable',text:'現在の全成分を確認できません',added:[],removed:[],reordered:false};

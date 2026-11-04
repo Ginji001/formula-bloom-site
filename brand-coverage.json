@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T00:45:31.301Z",
+  "generatedAt": "2026-11-04T01:31:52.214Z",
   "brandCount": 147,
   "brandsWithSavedFormulas": 74,
   "brandsWithoutSavedFormulas": 73,
@@ -10,9 +10,9 @@
   "englishInciReferenceCount": 26,
   "brandsWithEnglishReferences": 26,
   "brandsWithNoEvidenceInAnyLanguage": 3,
-  "savedFormulaCount": 409,
+  "savedFormulaCount": 420,
   "registeredCandidateCount": 2163,
-  "unresolvedFullIngredientCandidateCount": 1754,
+  "unresolvedFullIngredientCandidateCount": 1743,
   "singleProductCandidateBrandCount": 32,
   "allPhysicalJapanLabelsMatched": false,
   "allRetailLotsMatched": false,
@@ -665,7 +665,7 @@
       "brand": "ビオレ",
       "maker": "花王・カネボウ",
       "country": "JP",
-      "savedFormulaCount": 1,
+      "savedFormulaCount": 7,
       "registeredCandidateCount": 7,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -685,6 +685,66 @@
           "verifiedAt": "2026-10-31T16:19:21+09:00",
           "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301463890/",
           "ingredientCount": 16
+        },
+        {
+          "productId": "rc61-catalog-064",
+          "productName": "ザフェイス 泡洗顔料 ディープモイスト",
+          "variant": "本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301408372/",
+          "ingredientCount": 20
+        },
+        {
+          "productId": "rc61-catalog-065",
+          "productName": "ザフェイス 泡洗顔料 モイスト",
+          "variant": "本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301408389/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc61-catalog-066",
+          "productName": "ザフェイス 泡洗顔料 オイルコントロール",
+          "variant": "本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301408402/",
+          "ingredientCount": 19
+        },
+        {
+          "productId": "rc61-catalog-067",
+          "productName": "ザフェイス 泡洗顔料 スムースクリア",
+          "variant": "本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301414380/",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "rc61-catalog-068",
+          "productName": "マシュマロホイップ モイスチャー",
+          "variant": "本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301250162/",
+          "ingredientCount": 18
+        },
+        {
+          "productId": "rc61-catalog-069",
+          "productName": "ザフェイス 泡洗顔料 スムースモイスチャー（チェーン限定・本体）",
+          "variant": "チェーン限定・本体",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-11-04T01:30:19.425Z",
+          "sourceUrl": "https://www.kao-kirei.com/ja/item/khg/biore/4901301474407/",
+          "ingredientCount": 18
         }
       ]
     },
@@ -2081,7 +2141,7 @@
       "brand": "ちふれ",
       "maker": "ちふれ",
       "country": "JP",
-      "savedFormulaCount": 6,
+      "savedFormulaCount": 11,
       "registeredCandidateCount": 11,
       "knownIngredientExcerptCount": 0,
       "englishInciReferenceCount": 0,
@@ -2151,6 +2211,56 @@
           "verifiedAt": "2026-10-30T06:45:53.922Z",
           "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2871",
           "ingredientCount": 16
+        },
+        {
+          "productId": "rc67-chifure-deep-refill",
+          "productName": "保湿化粧水 とてもしっとりタイプ",
+          "variant": "詰替用",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-30T06:45:53.922Z",
+          "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2871",
+          "ingredientCount": 16
+        },
+        {
+          "productId": "rc67-chifure-light-refill",
+          "productName": "保湿化粧水 さっぱりタイプ",
+          "variant": "詰替用",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-30T06:45:53.922Z",
+          "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2875",
+          "ingredientCount": 11
+        },
+        {
+          "productId": "rc67-chifure-rich-refill",
+          "productName": "保湿化粧水 しっとりタイプ",
+          "variant": "詰替用",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-30T06:45:53.922Z",
+          "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2873",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc67-chifure-base-refill",
+          "productName": "保湿化粧水",
+          "variant": "詰替用",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-30T06:45:53.922Z",
+          "sourceUrl": "https://www.chifure.co.jp/products/skinlotion/2920",
+          "ingredientCount": 15
+        },
+        {
+          "productId": "rc67-chifure-milk-refill",
+          "productName": "保湿乳液",
+          "variant": "詰替用",
+          "sourcePageId": null,
+          "kind": "cosmetic",
+          "verifiedAt": "2026-10-30T06:45:53.922Z",
+          "sourceUrl": "https://www.chifure.co.jp/products/milkylotion/2877",
+          "ingredientCount": 22
         }
       ]
     },

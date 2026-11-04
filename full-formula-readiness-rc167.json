@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.167",
+  "checkedOn": "2026-11-04",
+  "activeBrands": 102,
+  "activeRegisteredProducts": 2020,
+  "fullFormulaArchiveTotal": 420,
+  "readyProductsInNormalSearch": 413,
+  "readyBrands": 68,
+  "fullFormulaArchiveExcludedFromNormalSearch": 7,
+  "fullFormulaCoveragePercent": 20.4,
+  "noFullFormulaCount": 1607,
+  "partialIngredientReferencesOnly": 1275,
+  "noIngredientNameReference": 332,
+  "previouslyNameUnknownNowFull": [
+    "rc61-catalog-068",
+    "rc61-catalog-069"
+  ],
+  "previousReadyProducts": 402,
+  "newlyCoveredProductSkus": 11,
+  "newlyVerifiedDistinctMakerFormulaPages": 6,
+  "newlyCoveredRefillPackSkusFromSharedProductPages": 5,
+  "addedProductIds": [
+    "rc61-catalog-064",
+    "rc61-catalog-065",
+    "rc61-catalog-066",
+    "rc61-catalog-067",
+    "rc61-catalog-068",
+    "rc61-catalog-069",
+    "rc67-chifure-deep-refill",
+    "rc67-chifure-light-refill",
+    "rc67-chifure-rich-refill",
+    "rc67-chifure-base-refill",
+    "rc67-chifure-milk-refill"
+  ],
+  "nextGoal": 600,
+  "remainingToGoal": 187,
+  "newRecordsIncludeNeverInferredIngredients": true,
+  "warning": "ここでいう全成分はメーカー日本公式の掲載時点の保存資料で、現物ラベル・最新ロットの確認ではありません。ちふれ詰替用5SKUは同じ商品ページの共通目的別表を使用し、独立した5処方を発見したわけではありません。"
+}

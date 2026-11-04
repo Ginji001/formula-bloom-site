@@ -233,6 +233,11 @@ export async function staticGetJSON(path,{signal}={}){
   if(!response.ok)throw Error('判明成分の資料を読み込めませんでした。');
   return response.json();
  }
+ if(u.pathname.endsWith('/formula-records-rc167.json')){
+  const response=await fetch('./formula-records-rc167.json',{signal});
+  if(!response.ok)throw Error('追加保存版のデータを読み込めませんでした。');
+  return response.json();
+ }
  if(u.pathname.endsWith('/formula-records.json')){
   const response=await fetch('./formula-records.json',{signal});
   if(!response.ok)throw Error('収録データを読み込めません。');

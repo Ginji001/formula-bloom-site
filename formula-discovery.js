@@ -1,5 +1,6 @@
 // 掲載時点の日本向け全成分保存版にあるSKUだけを探す。名前やブランドの一致では代用しない。
 import {productFold} from './registered-products.js';
+import {isRc167FullIngredientProductId} from './formula-expansion-rc167.js';
 
 export function archivedProductIds(archive) {
  if(!archive || !Array.isArray(archive.records)) return new Set();
@@ -14,7 +15,7 @@ export function productsWithVerifiedArchive(products,archive,allowed=()=>true) {
 export function itemHasArchiveInCatalog(item) {
  // 登録台帳の区分は現行409件の保存版IDと毎回テストで全件照合する。
  // 実際の花の生成は必ず保存版原文の recordForProduct() を再検証してから。
- return Boolean(item&&item.registrationStatus!=='name-only');
+ return Boolean(item&&(item.registrationStatus!=='name-only'||isRc167FullIngredientProductId(item.id)));
 }
 
 export function familyMatchingText(family,query) {
