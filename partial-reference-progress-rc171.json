@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.171",
+  "checkedOn": "2026-11-04",
+  "brandsActive": 102,
+  "productsActive": 2020,
+  "fullJapaneseFormulaProducts": 600,
+  "fullJapaneseFormulaRate": 29.7,
+  "partialOnlyBefore": 1107,
+  "partialOnlyAfter": 1120,
+  "withoutIngredientNamesBefore": 313,
+  "withoutIngredientNamesAfter": 300,
+  "newJapaneseIngredientReferenceProducts": 13,
+  "newOriginalManufacturerNameAssociations": 134,
+  "directManufacturerProductPagesReviewed": 16,
+  "heldForUncertainIdentityOrSource": 3,
+  "byBrand": {
+    "ミノン": 5,
+    "クレ・ド・ポー ボーテ": 2,
+    "プレディア": 4,
+    "ONE BY KOSE": 2
+  },
+  "byKind": {
+    "quasi": 11,
+    "cosmetic": 2
+  },
+  "overseasInciAsJapanese": false,
+  "marketedIngredientsAsAllIngredients": false,
+  "ingredientsGuessed": 0,
+  "physicalLabelChecked": false,
+  "formulaOrderVerified": false,
+  "warning": "ミノン・コーセー・クレ・ド・ポー ボーテの日本メーカー商品別ページから、原文の実名が明確な一部成分だけを採用。薬用11商品はメーカー自身が明示した有効成分・その他の成分を区別。商品ごとの容量や詰替版は公式の個別説明で照合し、異なる種類のセット成分は混合しない。現物ラベル、最新ロット、実際の全成分の完結性、配合順・濃度は未確認。"
+}

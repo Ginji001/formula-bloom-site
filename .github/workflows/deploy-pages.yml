@@ -109,6 +109,43 @@ jobs:
              fs.existsSync('_site/data/rc170-source-specific-partial-ingredient-checkpoint-20261104.json'))
             throw Error('rc170 Japanese maker partial ingredient references or full/partial split failed');
           console.log('Verified rc170: 19 source-backed partial reference products; 600 full formulas unchanged');
+          // rc171 remains partial-only: literal Japanese source names, quasi-drugs grouped by maker.
+          const partial171=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc171.json','utf8'));
+          const reference171=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc171.json','utf8'));
+          const partial171Ids=new Set(partial171.records.map(r=>r.productId));
+          const maker171Hosts=new Set(['www.daiichisankyo-hc.co.jp','maison.kose.co.jp','www.cledepeau-beaute.com']);
+          if(partial171.records.length!==13||partial171.productCount!==13||partial171Ids.size!==13||
+             partial171.originalJapaneseNameAssociations!==134||
+             partial171.records.reduce((sum,r)=>sum+r.ingredientCount,0)!==134||
+             partial171.records.some(r=>archivedProductIdSet.has(r.productId)||partial170Ids.has(r.productId)||
+               !maker171Hosts.has(new URL(r.sourceUrl).hostname)||
+               r.sourceType!=='japanese-manufacturer-website'||r.sourceMarket!=='japan-official'||
+               r.coverage!=='partial-only'||r.order!=='not-confirmed'||r.labelCompared!==false||
+               r.currentFormulaCompared!==false||r.notFullFormulaArchive!==true||
+               r.sourceOriginalNamesNotTranslated!==true||r.sourceOriginalNamesArePartial!==true||
+               r.ingredientCount!==r.ingredients.length||r.ingredientCount!==r.sourceOriginalJapaneseNames.length||
+               r.ingredientCount<3||!['quasi','cosmetic'].includes(r.kind)||
+               !/^[a-f0-9]{64}$/.test(r.sourceEvidenceSha256)||!/^[a-f0-9]{64}$/.test(r.sourceSectionSha256))||
+             partial171.records.filter(r=>r.kind==='quasi').length!==11||
+             partial171.records.filter(r=>r.kind==='cosmetic').length!==2||
+             partial171.records.filter(r=>r.kind==='quasi').some(r=>
+               r.sourceActiveIngredientNames?.length!==(r.brand==='ミノン'?2:1)||
+               r.sourceOtherIngredientNames?.length!==10)||
+             reference171.release!=='1.0.0-rc.171'||
+             reference171.fullJapaneseFormulaProducts!==600||
+             reference171.partialOnlyBefore!==1107||reference171.partialOnlyAfter!==1120||
+             reference171.withoutIngredientNamesBefore!==313||reference171.withoutIngredientNamesAfter!==300||
+             reference171.newOriginalManufacturerNameAssociations!==134||
+             reference171.newJapaneseIngredientReferenceProducts!==13||
+             reference171.heldForUncertainIdentityOrSource!==3||
+             !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
+             !fs.readFileSync('_site/static-api.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
+             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc171.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc171.json')||
+             fs.existsSync('_site/data/rc171-japanese-maker-medicinal-and-cpb-partial-checkpoint-20261104.json'))
+              throw Error('rc171 source-backed Japanese partial references or medicine separation failed');
+          console.log('Verified rc171: 13 source-backed partial references, 134 Japanese names, 11 medicated products, full 600 unchanged');
+
 
 
           if(catalog.brandCount!==147||catalog.productNameRecords!==2163||
