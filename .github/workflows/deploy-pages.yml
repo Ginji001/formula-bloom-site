@@ -398,8 +398,8 @@ jobs:
              !corrections179.includes('rc100-etude-d9f0ed300cb0')||
              !page179.includes('メーカーサイト1,240ページを新たに全件取得したわけではありません')||
              (page179.match(/<tr data-category=/g)||[]).length!==1240||
-             !fs.readFileSync('_site/index.html','utf8').includes('partial-source-exhaustive-audit-rc179.html')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-source-exhaustive-audit-rc179.html')||
+             !fs.existsSync('_site/partial-source-exhaustive-audit-rc179.html')||
+             !fs.existsSync('_site/partial-source-exhaustive-audit-rc179-summary.json')||
              fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
              fs.existsSync('_site/data/rc179-etude-contour-component-heading-erratum-20261104.json'))
              throw Error('rc179 1240 individual source audits, source correction, published counts or private boundary failed');
