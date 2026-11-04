@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.170",
+  "checkedOn": "2026-11-04",
+  "brandsActive": 102,
+  "productsActive": 2020,
+  "fullJapaneseFormulaProducts": 600,
+  "fullJapaneseFormulaRate": 29.7,
+  "partialOnlyBefore": 1088,
+  "partialOnlyAfter": 1107,
+  "withoutIngredientNamesBefore": 332,
+  "withoutIngredientNamesAfter": 313,
+  "newJapaneseIngredientReferenceProducts": 19,
+  "newOriginalManufacturerNameAssociations": 196,
+  "directManufacturerProductPagesReviewed": 27,
+  "heldForUncertainIdentityOrSource": 8,
+  "byBrand": {
+    "ヴィセ": 4,
+    "プレディア": 6,
+    "アテニア": 5,
+    "HIKARIMIRAI": 4
+  },
+  "byKind": {
+    "cosmetic": 17,
+    "quasi": 2
+  },
+  "overseasInciAsJapanese": false,
+  "marketedIngredientsAsAllIngredients": false,
+  "ingredientsGuessed": 0,
+  "physicalLabelChecked": false,
+  "formulaOrderVerified": false,
+  "warning": "商品別の日本公式成分欄／アテニア目的別成分表から実名の一部だけを独立採用。元メーカーの商品別製品名・型番URLとの照合は行ったが、現物ラベル、現在の製造ロット、配合順、濃度、すべての成分は確認していません。薬用では掲載の有効成分・その他の成分を区分し、医薬部外品を化粧品としません。"
+}

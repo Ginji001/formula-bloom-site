@@ -53,6 +53,11 @@ export async function staticGetJSON(path,{signal}={}){
    return response.json();
   }
  }
+ if(u.pathname.endsWith('/partial-ingredient-evidence-rc170.json')){
+  const response=await fetch('./partial-ingredient-evidence-rc170.json',{signal});
+  if(!response.ok)throw Error('新しいメーカーの参考成分名資料を読み込めません');
+  return response.json();
+ }
  if(u.pathname.endsWith('/partial-ingredient-evidence-rc163.json')){
   const response=await fetch('./partial-ingredient-evidence-rc163.json',{signal});
   if(!response.ok)throw Error('新しい国内公式参考原文が読み込めません');

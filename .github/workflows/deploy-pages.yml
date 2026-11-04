@@ -79,6 +79,37 @@ jobs:
                  r.activeIngredients.split('、').length+r.otherIngredients.split('、').length))
              throw Error('rc169 original manufacturer quasi-drug correction missing or malformed');
           console.log('Verified rc169 checked '+new169.records.length+' additional individual Japanese maker formula records');
+          // rc170: genuine Japanese maker ingredient-name references are NOT full formulas.
+          const partial170=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc170.json','utf8'));
+          const reference170=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc170.json','utf8'));
+          const archivedProductIdSet=new Set(archived.records.map(r=>r.productId));
+          const partial170Ids=new Set(partial170.records.map(r=>r.productId));
+          const rawNameCount=partial170.records.reduce((sum,r)=>sum+r.sourceOriginalJapaneseNames.length,0);
+          if(partial170.records.length!==19||partial170.productCount!==19||partial170Ids.size!==19||
+             rawNameCount!==196||partial170.originalJapaneseNameAssociations!==196||
+             partial170.records.some(r=>archivedProductIdSet.has(r.productId)||
+               !['cosmetic','quasi'].includes(r.kind)||r.coverage!=='partial-only'||
+               r.order!=='not-confirmed'||r.labelCompared!==false||
+               r.currentFormulaCompared!==false||r.notFullFormulaArchive!==true||
+               r.sourceOriginalNamesNotTranslated!==true||
+               r.sourceOriginalNamesArePartial!==true||
+               r.ingredientCount!==r.ingredients.length||
+               r.ingredientCount!==r.sourceOriginalJapaneseNames.length||
+               !/^https:\/\/(?:maison\.kose\.co\.jp|www\.attenir\.co\.jp|www\.hikarimirai\.jp)\//.test(r.sourceUrl.replace('attenir','attenir')))||
+             partial170.records.filter(r=>r.kind==='quasi').length!==2||
+             partial170.records.filter(r=>r.kind==='quasi').some(r=>
+               r.sourceActiveIngredientNames?.length!==2||r.sourceOtherIngredientNames?.length!==10)||
+             reference170.release!=='1.0.0-rc.170'||
+             reference170.fullJapaneseFormulaProducts!==600||
+             reference170.partialOnlyAfter!==1107||reference170.withoutIngredientNamesAfter!==313||
+             reference170.newJapaneseIngredientReferenceProducts!==19||
+             reference170.heldForUncertainIdentityOrSource!==8||
+             !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc170.json')||
+             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc170.html')||
+             fs.existsSync('_site/data/rc170-source-specific-partial-ingredient-checkpoint-20261104.json'))
+            throw Error('rc170 Japanese maker partial ingredient references or full/partial split failed');
+          console.log('Verified rc170: 19 source-backed partial reference products; 600 full formulas unchanged');
+
 
           if(catalog.brandCount!==147||catalog.productNameRecords!==2163||
               catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==expectedTotalArchive)
