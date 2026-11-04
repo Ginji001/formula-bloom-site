@@ -39,6 +39,7 @@ jobs:
           test ! -e _site/.git
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
+          const archivedPublicLinks=fs.readFileSync('_site/resources.html','utf8');
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
           const coverage169=JSON.parse(fs.readFileSync('_site/full-formula-readiness-rc169.json','utf8'));
@@ -53,7 +54,7 @@ jobs:
              coverage169.remainingToGoal!==Math.max(0,600-coverage169.readyProducts)||
              coverage169.exactMakerJanPages!==new169.records.length||
              new169.records.length<1||
-             !fs.readFileSync('_site/index.html','utf8').includes('full-formula-readiness-rc169.html')||
+             !archivedPublicLinks.includes('full-formula-readiness-rc169.html')||
              fs.existsSync('_site/data/rc169-resumable-japanese-maker-formulas-checkpoint-20261104.json')||
              fs.existsSync('_site/data/rc169-exact-japan-kao-full-formulas-20261104.json'))
              throw Error('rc169 original source-backed additions, readiness goals or private boundary invalid');
@@ -105,7 +106,7 @@ jobs:
              reference170.newJapaneseIngredientReferenceProducts!==19||
              reference170.heldForUncertainIdentityOrSource!==8||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc170.json')||
-             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc170.html')||
+             !archivedPublicLinks.includes('partial-reference-progress-rc170.html')||
              fs.existsSync('_site/data/rc170-source-specific-partial-ingredient-checkpoint-20261104.json'))
             throw Error('rc170 Japanese maker partial ingredient references or full/partial split failed');
           console.log('Verified rc170: 19 source-backed partial reference products; 600 full formulas unchanged');
@@ -140,7 +141,7 @@ jobs:
              reference171.heldForUncertainIdentityOrSource!==3||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
-             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc171.html')||
+             !archivedPublicLinks.includes('partial-reference-progress-rc171.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc171.json')||
              fs.existsSync('_site/data/rc171-japanese-maker-medicinal-and-cpb-partial-checkpoint-20261104.json'))
               throw Error('rc171 source-backed Japanese partial references or medicine separation failed');
@@ -170,7 +171,7 @@ jobs:
              allCurel.length!==5||allCurel.some(r=>r.activeIngredients!=='アラントイン'||
               r.sourceReview?.activeOtherSeparatedFromManufacturerStarLegend!==true)||
              !builtIndex.includes('rc93-kao-kate-4973167006009')||
-             !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc172.html')||
+             !archivedPublicLinks.includes('overall-evidence-audit-rc172.html')||
              !fs.readFileSync('_site/app.js','utf8').includes('hasSourceBackedPartial')||
              !fs.readFileSync('_site/sw.js','utf8').includes('overall-evidence-audit-rc172.html')||
              fs.existsSync('_site/data/rc172-curel-five-exact-manufacturer-active-group-corrections-20261104.json'))
@@ -217,7 +218,7 @@ jobs:
              partial173.records.filter(r=>r.brand==='ビフェスタ').length!==9||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
-             !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc173.html')||
+             !archivedPublicLinks.includes('overall-evidence-audit-rc173.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc173.html')||
              fs.existsSync('_site/data/rc173-anua-japan-product-individual-ingredient-checkpoint-20261104.json')||
@@ -264,7 +265,7 @@ jobs:
              overall174.sourceAudit.sourceDeclaredPartialRecordCount!==1448||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc174.json')||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
-             !fs.readFileSync('_site/index.html','utf8').includes('overall-evidence-audit-rc174.html')||
+             !archivedPublicLinks.includes('overall-evidence-audit-rc174.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc174.json')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc174.html')||
              fs.existsSync('_site/data/rc174-kracie-and-decorte-official-japanese-ingredient-checkpoint-20261104.json')||
@@ -305,7 +306,7 @@ jobs:
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc177.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc177.json')||
-             !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc177.html')||
+             !archivedPublicLinks.includes('unverified-ingredient-research-rc177.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc177.html')||
              fs.existsSync('_site/data/rc177-baum-five-official-japanese-full-list-section-audit-20261104.json'))
             throw Error('rc177 verified Japanese BAUM partial sources, current coverage or private-data boundary failed');
@@ -351,7 +352,7 @@ jobs:
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc178.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc178.json')||
-             !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc178.html')||
+             !archivedPublicLinks.includes('unverified-ingredient-research-rc178.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc178.html')||
              fs.existsSync('_site/data/rc178-baum-lucido-21-official-japanese-ingredient-evidence-20261104.json'))
               throw Error('rc178 source-backed 21 Japanese cosmetics/quasi, triage, audit or private-data boundaries failed');
@@ -432,7 +433,7 @@ jobs:
              !roles180.includes('rc94-jp-official-transino-181')||
              !app180.includes('applyVerifiedMedicinalRoleRc180')||
              (html180.match(/<tr data-category=/g)||[]).length!==1240||
-             !fs.readFileSync('_site/index.html','utf8').includes('partial-source-exhaustive-audit-rc180.html')||
+             !archivedPublicLinks.includes('partial-source-exhaustive-audit-rc180.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-source-exhaustive-audit-rc180.html')||
              fs.existsSync('_site/data/rc180-transino-two-medicinal-source-roles-20261104.json'))
             throw Error('rc180 source-specific medicinal role verification or public privacy boundary failed');
@@ -490,7 +491,7 @@ jobs:
              queue183.products.length!==174||queue183.activeResearchCount!==173||
              !app181.includes('/partial-ingredient-evidence-rc183.json')||
              !app181.includes('partial-reference-index-rc184.js')||
-             !fs.readFileSync('_site/index.html','utf8').includes('partial-reference-progress-rc183.html')||
+             !archivedPublicLinks.includes('partial-reference-progress-rc183.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc183.json')||
              fs.existsSync('_site/data/rc183-aqualabel-six-official-product-sku-sources-20261104.json'))
              throw Error('rc183 manufacturer identity, partial-only publication or private evidence boundary failed');
@@ -541,7 +542,7 @@ jobs:
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc184.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc184.json')||
-             !fs.readFileSync('_site/index.html','utf8').includes('unverified-ingredient-research-rc184.html')||
+             !archivedPublicLinks.includes('unverified-ingredient-research-rc184.html')||
              !published184.includes('140mL')||!published184.includes('28枚入り')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc184.html')||
              fs.existsSync('_site/data/rc184-aqualabel-two-maker-product-japanese-evidence-20261104.json')||
@@ -584,7 +585,7 @@ jobs:
              !stableGuide.includes('v1.0.0 正式版')||
              !stableGuide.includes('172商品')||
              !stableGuide.includes('v1.0.1で')||
-             !stableHome.includes('href="release-v1.0.0.html"')||
+             !archivedPublicLinks.includes('href="release-v1.0.0.html"')||
              !stableHome.includes('app.js?v=github-pages-102-v1.0.1')||
              !stableSW.includes('release-v1.0.0.html')||
              !stableSW.includes('release-v1.0.0.json')||
@@ -624,6 +625,44 @@ jobs:
             throw Error('v1.0.1 public feedback privacy, Issue templates or Pages boundary invalid');
           console.log('Verified v1.0.1: public issue contact, two Japanese templates and no private data requests; 600/1248/172 unchanged.');
 
+          // UI-only footer: exactly three rows, while all historical links remain in a separate archive.
+          const footerIndex=fs.readFileSync('_site/index.html','utf8');
+          const compactFooter=footerIndex.match(/<footer class="site-footer"[^>]*>[\s\S]*?<\/footer>/)?.[0];
+          const compactCSS=fs.readFileSync('_site/footer-compact.css','utf8');
+          const oldArchiveSection=archivedPublicLinks.match(/<details>[\s\S]*?<\/details>/)?.[0];
+          const historicalLinks=[...(oldArchiveSection||'').matchAll(/<li><a href="([^"]+)"/g)].map(x=>x[1]);
+          if(!compactFooter||compactFooter.length>700||
+             (footerIndex.match(/<footer\b/g)||[]).length!==1||
+             (compactFooter.match(/<nav\b/g)||[]).length!==1||
+             (compactFooter.match(/<p class="site-footer__/g)||[]).length!==2||
+             (compactFooter.match(/<a href=/g)||[]).length!==4||
+             !compactFooter.includes('href="resources.html"')||
+             !compactFooter.includes('href="support.html"')||
+             !compactFooter.includes('href="privacy.html"')||
+             !compactFooter.includes('href="terms.html"')||
+             !compactFooter.includes('全成分 600')||
+             !compactFooter.includes('一部 1,248')||
+             !compactFooter.includes('未確認 172')||
+             !compactFooter.includes('医療判断・安全性評価')||
+             compactFooter.includes('rc184.html')||
+             !footerIndex.includes('href="footer-compact.css"')||
+             !compactCSS.includes('grid-template-columns: minmax(0, 1fr)')||
+             !compactCSS.includes('flex-wrap: nowrap')||
+             !compactCSS.includes('white-space: nowrap')||
+             !compactCSS.includes(':focus-visible')||
+             historicalLinks.length!==78||
+             new Set(historicalLinks).size!==78||
+             !archivedPublicLinks.includes('過去の調査・公開記録（78件）')||
+             !archivedPublicLinks.includes('href="unresolved-review-rc124.html"')||
+             !archivedPublicLinks.includes('href="partial-reference-progress-rc184.html"')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('resources.html')||
+             !fs.readFileSync('_site/sw.js','utf8').includes('footer-compact.css')||
+             fs.existsSync('_site/docs/v1.0.1-three-line-footer-and-source-archive-20261105.md')||
+             fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
+            throw Error('Three-line compact homepage footer or separate archive routing failed');
+          console.log('Verified compact UI: 3 rows / 4 links / 78 old references archived / all evidence numbers unchanged.');
+
+
 
 
 
@@ -659,7 +698,7 @@ jobs:
              newStatus.productsWithOnlyPartialIngredientReferences!==1220||
              newStatus.productsWithoutKnownIngredientNames!==332||
              newStatus.remainingToGoal!==132||
-             !fs.readFileSync('_site/index.html','utf8').includes('full-formula-readiness-rc168.html')||
+             !archivedPublicLinks.includes('full-formula-readiness-rc168.html')||
              fs.existsSync('_site/data/rc168-exact-japan-kao-full-formulas-20261104.json'))
             throw Error('rc168 55 exact Japanese JAN/full ingredient record and public-private boundary failed');
           console.log('Verified rc168: 55 Japan-maker individual SKU ingredient records and 468 flower-ready products');
@@ -1184,7 +1223,7 @@ jobs:
                !x.sourceUrl.startsWith('https://')||!x.nextAction||!x.decisionReason)||
              !caseCsv.startsWith('\uFEFF')||caseCsv.split('\n').length!==1756||
              !caseViewer.includes('全成分が無いと断定したものではありません')||
-             !fs.readFileSync('_site/index.html','utf8').includes('unresolved-review-rc124.html'))
+             !archivedPublicLinks.includes('unresolved-review-rc124.html'))
              throw Error('rc124 fixed 1754-case evidence decision register failed');
           if(fs.existsSync('_site/data/rc124-fixed-unresolved-1754-decision-checksum-20261102.json')||
              fs.existsSync('_site/scripts/finalize-unresolved-rc124.mjs')||
@@ -1192,7 +1231,7 @@ jobs:
              throw Error('rc124 private evidence or offline researcher leaked to public static files');
           console.log('Verified fixed rc124 evidence register: 1754 exhaustive case outcomes, zero unverified formula promotions, CSV and searchable HTML present');
           const sourceOnlyUI=fs.readFileSync('_site/app.js','utf8');
-          const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8');
+          const sourceOnlyHome=fs.readFileSync('_site/index.html','utf8')+archivedPublicLinks;
           if(!sourceOnlyHome.includes('app.js?v=github-pages-102')||
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||

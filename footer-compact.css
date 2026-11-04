@@ -1,0 +1,58 @@
+/* Exactly three compact visual rows. Historical references live on resources.html. */
+.site-footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 22px auto 0;
+  padding: 11px 14px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+  border-top: 1px solid #e5d8d9;
+  background: transparent;
+  text-align: center;
+  line-height: 1.4;
+  color: #796b6d;
+}
+.site-footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: clamp(7px, 1.9vw, 20px);
+  min-width: 0;
+  white-space: nowrap;
+}
+.site-footer__nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  color: #77536b;
+  font-size: clamp(10px, 2.7vw, 13px);
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.site-footer__nav a:hover { border-bottom-color: currentColor; }
+.site-footer__nav a:focus-visible {
+  outline: 2px solid #83536e;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.site-footer__stats,
+.site-footer__note {
+  display: block;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  line-height: 1.35;
+  font-weight: 400;
+}
+.site-footer__stats { font-size: clamp(10px, 2.8vw, 12px); letter-spacing: 0; }
+.site-footer__note { font-size: clamp(9px, 2.5vw, 11px); color: #7f7476; }
+@media (max-width: 360px) {
+  .site-footer { padding-inline: 10px; gap: 3px; }
+  .site-footer__nav { gap: 6px; }
+  .site-footer__nav a { font-size: 10px; }
+}
