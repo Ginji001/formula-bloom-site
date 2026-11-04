@@ -707,12 +707,12 @@
       "sourceTitle": "ＤＥＷ ブライトオーラローション | 花王公式通販 【My Kao Mall】",
       "sourceType": "official",
       "region": "jp",
-      "kind": "cosmetic",
+      "kind": "quasi",
       "verifiedAt": "2026-11-04T01:52:25.062Z",
       "formulaUpdatedAt": null,
-      "order": "日本公式の商品別「成分・素材」原文順。掲載時点の表示であり、現物・今のロット・濃度・品質評価ではない。別容量・色・詰替の一致は未確認",
+      "order": "日本公式の医薬部外品原文で「＊は有効成分・無表示はその他の成分」と明記された区分を保持。区分内の配合順・濃度は不明。現物は未確認",
       "ingredientCount": 27,
-      "ingredients": "Ｌ-アスコルビン酸　２-グルコシド＊、グリチルリチン酸ジカリウム＊、水、ＤＰＧ、濃グリセリン、ＰＯＥメチルグルコシド、ソルビット液、フェノキシエタノール、海藻エキス-１、ＰＥＧ４０００、水酸化Ｋ、チョウジ抽出液、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、エデト酸塩、ＰＯＥ水添ヒマシ油、エタノール、ＤＬ-ＰＣＡ・Ｎａ液、クエン酸Ｎａ、酢酸キトサミン、Ｎ-メチル-Ｌ-セリン、ＢＧ、ＰＯＥ（２０）ヤシ油脂肪酸ソルビタン、クエン酸、セイヨウニワトコエキス、デヒドロジクレオソール、加水分解ヒアルロン酸、香料　＊は「有効成分」無表示は「その他の成分」",
+      "ingredients": "Ｌ-アスコルビン酸　２-グルコシド、グリチルリチン酸ジカリウム、水、ＤＰＧ、濃グリセリン、ＰＯＥメチルグルコシド、ソルビット液、フェノキシエタノール、海藻エキス-１、ＰＥＧ４０００、水酸化Ｋ、チョウジ抽出液、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、エデト酸塩、ＰＯＥ水添ヒマシ油、エタノール、ＤＬ-ＰＣＡ・Ｎａ液、クエン酸Ｎａ、酢酸キトサミン、Ｎ-メチル-Ｌ-セリン、ＢＧ、ＰＯＥ（２０）ヤシ油脂肪酸ソルビタン、クエン酸、セイヨウニワトコエキス、デヒドロジクレオソール、加水分解ヒアルロン酸、香料",
       "sha256": "1ae06f904abd9115c6f8fb2e0fc3c29b396f724e563dde91c7c62150e0e8003e",
       "sourceReview": {
         "sourceRegion": "ja",
@@ -724,9 +724,17 @@
         "sourceField": "成分・素材",
         "rightsStatus": "republication-permission-not-verified",
         "observedHtmlSha256": "1ae06f904abd9115c6f8fb2e0fc3c29b396f724e563dde91c7c62150e0e8003e",
-        "actualPhysicalLabelChecked": false
+        "actualPhysicalLabelChecked": false,
+        "officialMetaExplicitQuasiDrug": true,
+        "medicalClassificationCheckedViaOfficialMeta": true,
+        "activeOtherSeparatedFromExplicitManufacturerStarFootnote": true,
+        "correctedClassificationOn": "2026-11-04",
+        "previouslyMisclassifiedAsCosmetic": true,
+        "originalIngredientNamesWithFootnoteSha256": "2564a2281ea1b8539e4331c77875055230d4cecbd4fa32dc44ff7e89ed27c36b"
       },
-      "history": []
+      "history": [],
+      "activeIngredients": "Ｌ-アスコルビン酸　２-グルコシド、グリチルリチン酸ジカリウム",
+      "otherIngredients": "水、ＤＰＧ、濃グリセリン、ＰＯＥメチルグルコシド、ソルビット液、フェノキシエタノール、海藻エキス-１、ＰＥＧ４０００、水酸化Ｋ、チョウジ抽出液、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、エデト酸塩、ＰＯＥ水添ヒマシ油、エタノール、ＤＬ-ＰＣＡ・Ｎａ液、クエン酸Ｎａ、酢酸キトサミン、Ｎ-メチル-Ｌ-セリン、ＢＧ、ＰＯＥ（２０）ヤシ油脂肪酸ソルビタン、クエン酸、セイヨウニワトコエキス、デヒドロジクレオソール、加水分解ヒアルロン酸、香料"
     },
     {
       "id": "jp-official-rc168-rc93-kao-dew-4973167251911",
@@ -1367,12 +1375,12 @@
       "sourceTitle": "エスト ザ ローション ＥＸ Ｓ | 花王公式通販 【My Kao Mall】",
       "sourceType": "official",
       "region": "jp",
-      "kind": "cosmetic",
+      "kind": "quasi",
       "verifiedAt": "2026-11-04T01:54:18.664Z",
       "formulaUpdatedAt": null,
-      "order": "日本公式の商品別「成分・素材」原文順。掲載時点の表示であり、現物・今のロット・濃度・品質評価ではない。別容量・色・詰替の一致は未確認",
+      "order": "日本公式の医薬部外品原文で「＊は有効成分・無表示はその他の成分」と明記された区分を保持。区分内の配合順・濃度は不明。現物は未確認",
       "ingredientCount": 33,
-      "ingredients": "Ｌ-アスコルビン酸　２-グルコシド＊、水、ＤＰＧ、ＢＧ、ローマカミツレエキス、グリセリン、エタノール、キキョウ根エキス、チョウジ抽出液、ＰＥＧ４０００、エクトイン、コハク酸２-（２-ヒドロキシエトキシ）エチルグアニジン、トレハロース、セージエキス、オランダカラシエキス、アルカリゲネス産生多糖体、マルチトール液、ジグリセリン、プルラン、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、ＰＥＧ２００００、アクリル酸・メタクリル酸アルキル共重合体、カルボキシビニルポリマー、キサンタンガム、ＰＯＥイソセチルエーテル、ＰＯＥ・ジメチコン共重合体、アミノヒドロキシメチルプロパンジオール、クエン酸Ｎａ、水酸化カリウム液（Ａ）、クエン酸、フェノキシエタノール、エデト酸塩、香料　＊は「有効成分」無表示は「その他の成分」",
+      "ingredients": "Ｌ-アスコルビン酸　２-グルコシド、水、ＤＰＧ、ＢＧ、ローマカミツレエキス、グリセリン、エタノール、キキョウ根エキス、チョウジ抽出液、ＰＥＧ４０００、エクトイン、コハク酸２-（２-ヒドロキシエトキシ）エチルグアニジン、トレハロース、セージエキス、オランダカラシエキス、アルカリゲネス産生多糖体、マルチトール液、ジグリセリン、プルラン、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、ＰＥＧ２００００、アクリル酸・メタクリル酸アルキル共重合体、カルボキシビニルポリマー、キサンタンガム、ＰＯＥイソセチルエーテル、ＰＯＥ・ジメチコン共重合体、アミノヒドロキシメチルプロパンジオール、クエン酸Ｎａ、水酸化カリウム液（Ａ）、クエン酸、フェノキシエタノール、エデト酸塩、香料",
       "sha256": "9696a8ec84fda48af9401be46ecdfabffd3bce711fd8acab8e312cdad6aecc56",
       "sourceReview": {
         "sourceRegion": "ja",
@@ -1384,9 +1392,17 @@
         "sourceField": "成分・素材",
         "rightsStatus": "republication-permission-not-verified",
         "observedHtmlSha256": "9696a8ec84fda48af9401be46ecdfabffd3bce711fd8acab8e312cdad6aecc56",
-        "actualPhysicalLabelChecked": false
+        "actualPhysicalLabelChecked": false,
+        "officialMetaExplicitQuasiDrug": true,
+        "medicalClassificationCheckedViaOfficialMeta": true,
+        "activeOtherSeparatedFromExplicitManufacturerStarFootnote": true,
+        "correctedClassificationOn": "2026-11-04",
+        "previouslyMisclassifiedAsCosmetic": true,
+        "originalIngredientNamesWithFootnoteSha256": "260878bf0180ee6340f537ae2d988241ddd132608866db92d0389882b5da8f67"
       },
-      "history": []
+      "history": [],
+      "activeIngredients": "Ｌ-アスコルビン酸　２-グルコシド",
+      "otherIngredients": "水、ＤＰＧ、ＢＧ、ローマカミツレエキス、グリセリン、エタノール、キキョウ根エキス、チョウジ抽出液、ＰＥＧ４０００、エクトイン、コハク酸２-（２-ヒドロキシエトキシ）エチルグアニジン、トレハロース、セージエキス、オランダカラシエキス、アルカリゲネス産生多糖体、マルチトール液、ジグリセリン、プルラン、２-メタクリロイルオキシエチルホスホリルコリン・メタクリル酸ブチル共重合体液、ＰＥＧ２００００、アクリル酸・メタクリル酸アルキル共重合体、カルボキシビニルポリマー、キサンタンガム、ＰＯＥイソセチルエーテル、ＰＯＥ・ジメチコン共重合体、アミノヒドロキシメチルプロパンジオール、クエン酸Ｎａ、水酸化カリウム液（Ａ）、クエン酸、フェノキシエタノール、エデト酸塩、香料"
     },
     {
       "id": "jp-official-rc168-rc93-kao-est-4901301339775",
@@ -1763,12 +1779,12 @@
       "sourceTitle": "ソフィーナ ｉＰ ブライトニング美容液 | 花王公式通販 【My Kao Mall】",
       "sourceType": "official",
       "region": "jp",
-      "kind": "cosmetic",
+      "kind": "quasi",
       "verifiedAt": "2026-11-04T01:55:23.408Z",
       "formulaUpdatedAt": null,
-      "order": "日本公式の商品別「成分・素材」原文順。掲載時点の表示であり、現物・今のロット・濃度・品質評価ではない。別容量・色・詰替の一致は未確認",
+      "order": "日本公式の医薬部外品原文で「＊は有効成分・無表示はその他の成分」と明記された区分を保持。区分内の配合順・濃度は不明。現物は未確認",
       "ingredientCount": 31,
-      "ingredients": "カモミラＥＴ＊、グリチルレチン酸ステアリル＊、水、グリセリン、オリブ油、ＢＧ、キキョウ根エキス、アスナロ抽出液、ローズマリーエキス、ローマカミツレエキス、ヘキサデシロキシＰＧヒドロキシエチルヘキサデカナミド、高融点パラフィン-１、エタノール、パラフィン、ジメチコン、ＰＯＥメチルグルコシド、Ｎ，Ｎ-ジメチルアミノエチルメタクリル酸ジエチル硫酸塩・Ｎ，Ｎ-ジメチルアクリルアミド・ジメタクリル酸ポリエチレングリコール共重合体／ＰＥＧ混合物、フィトスフィンゴシン、シュガースクワラン、高融点マイクロクリスタリンワックス、マイクロクリスタリンワックス、ステアリン酸ＰＯＥソルビタン、リン酸２Ｎａ、リン酸１Ｎａ、イソプロパノール、無水エタノール、フェノキシエタノール、ジステアリルジモニウムクロリド、セタノール、ステアリルアルコール、香料　＊は「有効成分」無表示は「その他の成分」",
+      "ingredients": "カモミラＥＴ、グリチルレチン酸ステアリル、水、グリセリン、オリブ油、ＢＧ、キキョウ根エキス、アスナロ抽出液、ローズマリーエキス、ローマカミツレエキス、ヘキサデシロキシＰＧヒドロキシエチルヘキサデカナミド、高融点パラフィン-１、エタノール、パラフィン、ジメチコン、ＰＯＥメチルグルコシド、Ｎ，Ｎ-ジメチルアミノエチルメタクリル酸ジエチル硫酸塩・Ｎ，Ｎ-ジメチルアクリルアミド・ジメタクリル酸ポリエチレングリコール共重合体／ＰＥＧ混合物、フィトスフィンゴシン、シュガースクワラン、高融点マイクロクリスタリンワックス、マイクロクリスタリンワックス、ステアリン酸ＰＯＥソルビタン、リン酸２Ｎａ、リン酸１Ｎａ、イソプロパノール、無水エタノール、フェノキシエタノール、ジステアリルジモニウムクロリド、セタノール、ステアリルアルコール、香料",
       "sha256": "2bc6221da0cc001012209801350d27d0b450e9edabd8ea53f10bd421eeddc6db",
       "sourceReview": {
         "sourceRegion": "ja",
@@ -1780,9 +1796,17 @@
         "sourceField": "成分・素材",
         "rightsStatus": "republication-permission-not-verified",
         "observedHtmlSha256": "2bc6221da0cc001012209801350d27d0b450e9edabd8ea53f10bd421eeddc6db",
-        "actualPhysicalLabelChecked": false
+        "actualPhysicalLabelChecked": false,
+        "officialMetaExplicitQuasiDrug": true,
+        "medicalClassificationCheckedViaOfficialMeta": true,
+        "activeOtherSeparatedFromExplicitManufacturerStarFootnote": true,
+        "correctedClassificationOn": "2026-11-04",
+        "previouslyMisclassifiedAsCosmetic": true,
+        "originalIngredientNamesWithFootnoteSha256": "178432c3efb08a02cabd57db013d8840de6b73a569d745bc555cd1690ffb19db"
       },
-      "history": []
+      "history": [],
+      "activeIngredients": "カモミラＥＴ、グリチルレチン酸ステアリル",
+      "otherIngredients": "水、グリセリン、オリブ油、ＢＧ、キキョウ根エキス、アスナロ抽出液、ローズマリーエキス、ローマカミツレエキス、ヘキサデシロキシＰＧヒドロキシエチルヘキサデカナミド、高融点パラフィン-１、エタノール、パラフィン、ジメチコン、ＰＯＥメチルグルコシド、Ｎ，Ｎ-ジメチルアミノエチルメタクリル酸ジエチル硫酸塩・Ｎ，Ｎ-ジメチルアクリルアミド・ジメタクリル酸ポリエチレングリコール共重合体／ＰＥＧ混合物、フィトスフィンゴシン、シュガースクワラン、高融点マイクロクリスタリンワックス、マイクロクリスタリンワックス、ステアリン酸ＰＯＥソルビタン、リン酸２Ｎａ、リン酸１Ｎａ、イソプロパノール、無水エタノール、フェノキシエタノール、ジステアリルジモニウムクロリド、セタノール、ステアリルアルコール、香料"
     },
     {
       "id": "jp-official-rc168-rc93-kao-sofina-ip-4901301403070",
@@ -1796,12 +1820,12 @@
       "sourceTitle": "ソフィーナ ｉＰ ブライトニング美容スティック | 花王公式通販 【My Kao Mall】",
       "sourceType": "official",
       "region": "jp",
-      "kind": "cosmetic",
+      "kind": "quasi",
       "verifiedAt": "2026-11-04T01:55:23.890Z",
       "formulaUpdatedAt": null,
-      "order": "日本公式の商品別「成分・素材」原文順。掲載時点の表示であり、現物・今のロット・濃度・品質評価ではない。別容量・色・詰替の一致は未確認",
+      "order": "日本公式の医薬部外品原文で「＊は有効成分・無表示はその他の成分」と明記された区分を保持。区分内の配合順・濃度は不明。現物は未確認",
       "ingredientCount": 30,
-      "ingredients": "カモミラＥＴ＊、グリチルレチン酸ステアリル＊、ジカプリン酸ネオペンチルグリコール、メチルシロキサン網状重合体、アルキル-１，３-ジメチルブチルエーテル、オリブ油、ワセリン、ヘキサメチレンジイソシアネート／トリメチロールヘキシルラクトン架橋ポリマー、マイクロクリスタリンワックス、高融点パラフィン-１、ＰＯＥ水添ヒマシ油、パラフィン、ポリエチレンワックス、アスナロ抽出液、ポリオレフィンワックス、水、ローズマリーエキス、酸化Ｔｉ、雲母Ｔｉ、高融点マイクロクリスタリンワックス、フィトスフィンゴシン、キキョウ根エキス、ローマカミツレエキス、スクワラン、ＢＧ、無水ケイ酸、無水エタノール、エタノール、ＢＨＴ、香料　＊は「有効成分」無表示は「その他の成分」",
+      "ingredients": "カモミラＥＴ、グリチルレチン酸ステアリル、ジカプリン酸ネオペンチルグリコール、メチルシロキサン網状重合体、アルキル-１，３-ジメチルブチルエーテル、オリブ油、ワセリン、ヘキサメチレンジイソシアネート／トリメチロールヘキシルラクトン架橋ポリマー、マイクロクリスタリンワックス、高融点パラフィン-１、ＰＯＥ水添ヒマシ油、パラフィン、ポリエチレンワックス、アスナロ抽出液、ポリオレフィンワックス、水、ローズマリーエキス、酸化Ｔｉ、雲母Ｔｉ、高融点マイクロクリスタリンワックス、フィトスフィンゴシン、キキョウ根エキス、ローマカミツレエキス、スクワラン、ＢＧ、無水ケイ酸、無水エタノール、エタノール、ＢＨＴ、香料",
       "sha256": "a9c4c2504e4c2f53fffc30fcf9b20efe8dcb3224841cb78af4c48c67ef4ebac1",
       "sourceReview": {
         "sourceRegion": "ja",
@@ -1813,9 +1837,17 @@
         "sourceField": "成分・素材",
         "rightsStatus": "republication-permission-not-verified",
         "observedHtmlSha256": "a9c4c2504e4c2f53fffc30fcf9b20efe8dcb3224841cb78af4c48c67ef4ebac1",
-        "actualPhysicalLabelChecked": false
+        "actualPhysicalLabelChecked": false,
+        "officialMetaExplicitQuasiDrug": true,
+        "medicalClassificationCheckedViaOfficialMeta": true,
+        "activeOtherSeparatedFromExplicitManufacturerStarFootnote": true,
+        "correctedClassificationOn": "2026-11-04",
+        "previouslyMisclassifiedAsCosmetic": true,
+        "originalIngredientNamesWithFootnoteSha256": "b3dea61c2bc1ca05a22e4fd3724ac3792dcb35b1a537a697d4fb1d5fb6ee7f03"
       },
-      "history": []
+      "history": [],
+      "activeIngredients": "カモミラＥＴ、グリチルレチン酸ステアリル",
+      "otherIngredients": "ジカプリン酸ネオペンチルグリコール、メチルシロキサン網状重合体、アルキル-１，３-ジメチルブチルエーテル、オリブ油、ワセリン、ヘキサメチレンジイソシアネート／トリメチロールヘキシルラクトン架橋ポリマー、マイクロクリスタリンワックス、高融点パラフィン-１、ＰＯＥ水添ヒマシ油、パラフィン、ポリエチレンワックス、アスナロ抽出液、ポリオレフィンワックス、水、ローズマリーエキス、酸化Ｔｉ、雲母Ｔｉ、高融点マイクロクリスタリンワックス、フィトスフィンゴシン、キキョウ根エキス、ローマカミツレエキス、スクワラン、ＢＧ、無水ケイ酸、無水エタノール、エタノール、ＢＨＴ、香料"
     }
   ]
 }

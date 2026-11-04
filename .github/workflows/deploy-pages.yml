@@ -41,8 +41,47 @@ jobs:
           import fs from 'node:fs';
           const catalog=JSON.parse(fs.readFileSync('_site/brand-product-registration.json','utf8'));
           const archived=JSON.parse(fs.readFileSync('_site/formula-records.json','utf8'));
+          const coverage169=JSON.parse(fs.readFileSync('_site/full-formula-readiness-rc169.json','utf8'));
+          const new169=JSON.parse(fs.readFileSync('_site/formula-records-rc169.json','utf8'));
+          const expectedTotalArchive=coverage169.archivedAll;
+          const unverifiedCurrently=2163-expectedTotalArchive;
+          const previouslyUnknownNowConfirmed=expectedTotalArchive-409;
+          if(coverage169.release!=='1.0.0-rc.169'||coverage169.priorReady!==468||
+             coverage169.readyProducts!==468+new169.records.length||
+             coverage169.excludedPriorArchive!==7||
+             coverage169.activeProducts!==2020||
+             coverage169.remainingToGoal!==Math.max(0,600-coverage169.readyProducts)||
+             coverage169.exactMakerJanPages!==new169.records.length||
+             new169.records.length<1||
+             !fs.readFileSync('_site/index.html','utf8').includes('full-formula-readiness-rc169.html')||
+             fs.existsSync('_site/data/rc169-resumable-japanese-maker-formulas-checkpoint-20261104.json')||
+             fs.existsSync('_site/data/rc169-exact-japan-kao-full-formulas-20261104.json'))
+             throw Error('rc169 original source-backed additions, readiness goals or private boundary invalid');
+          const added169Ids=new Set(new169.records.map(r=>r.productId));
+          if(added169Ids.size!==new169.records.length||
+             new169.records.some(r=>!r.productId||!r.sku||!r.sourceUrl.endsWith(r.sku+'/')||
+               !/^49\d{11}$/.test(r.sku)||r.ingredientCount!==r.ingredients.split('、').length||
+               r.ingredientCount<12||r.formulaUpdatedAt!==null||
+               r.sourceReview?.actualPhysicalLabelChecked!==false||
+               r.sourceReview?.medicalClassificationCheckedViaOfficialMeta!==true||
+               r.sourceReview?.officialMetaExplicitQuasiDrug!==false||
+               r.sourceReview?.manufacturerPageExactlyMatchesJan!==true||
+               r.sourceReview?.productNameMatched!==true||
+               r.sourceReview?.fullIngredientsChecked!==true||
+               r.sourceReview?.rightsStatus!=='republication-permission-not-verified')||
+             !fs.readFileSync('_site/app.js','utf8').includes('/formula-records-rc169.json')||
+             !fs.readFileSync('_site/static-api.js','utf8').includes('/formula-records-rc169.json'))
+             throw Error('rc169 exact JAN and original manufacturer Japanese ingredient proof failed');
+          const correctedQuasi=archived.records.filter(r=>r.sourceReview?.previouslyMisclassifiedAsCosmetic===true);
+          if(correctedQuasi.length!==4||correctedQuasi.some(r=>r.kind!=='quasi'||
+              !r.sourceReview?.activeOtherSeparatedFromExplicitManufacturerStarFootnote||
+              !r.activeIngredients||!r.otherIngredients||r.ingredientCount!==
+                 r.activeIngredients.split('、').length+r.otherIngredients.split('、').length))
+             throw Error('rc169 original manufacturer quasi-drug correction missing or malformed');
+          console.log('Verified rc169 checked '+new169.records.length+' additional individual Japanese maker formula records');
+
           if(catalog.brandCount!==147||catalog.productNameRecords!==2163||
-              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==475)
+              catalog.brandsWithRegisteredProductNames!==146||archived.records.length!==expectedTotalArchive)
             throw Error('rc123 Japanese product name count or verified formula count mismatch');
           // rc168: fixed product/JAN Japanese ingredient records are additive, never inferred.
           const rc168=JSON.parse(fs.readFileSync('_site/formula-records-rc168.json','utf8'));
@@ -401,9 +440,9 @@ jobs:
              archived.records.filter(x=>x.productId==='nov-iii-lotion-r').length!==1||
              archived.records.some(x=>x.productId==='rc103-nov-1ffc746a39bc'))
              throw Error('rc118 NOV original R must still be one unique archived product');
-          if(catalog.unverifiedFullIngredientCandidateCount!==1688||
+          if(catalog.unverifiedFullIngredientCandidateCount!==unverifiedCurrently||
              catalog.singleProductCandidateBrandCount!==32||
-             coverage118.unresolvedFullIngredientCandidateCount!==1688||
+             coverage118.unresolvedFullIngredientCandidateCount!==unverifiedCurrently||
              coverage118.brandsWithSavedFormulas!==74||
              coverage118.brandsWithoutSavedFormulas!==73||
              coverage118.singleProductCandidateBrandCount!==32||
@@ -576,9 +615,9 @@ jobs:
           const archivedIds=new Set(archived.records.map(r=>r.productId));
           const catalogUnresolved=new Set(catalog.brands.flatMap(b=>b.products).filter(p=>!archivedIds.has(p.productId)).map(p=>p.productId));
           const decisionIds=new Set(decisions.map(p=>p.productId));
-          if(decisions.length!==1754||decisionIds.size!==1754||catalogUnresolved.size!==1688||
+          if(decisions.length!==1754||decisionIds.size!==1754||catalogUnresolved.size!==unverifiedCurrently||
              [...catalogUnresolved].some(id=>!decisionIds.has(id))||
-             [...decisionIds].filter(id=>archivedIds.has(id)).length!==66||
+             [...decisionIds].filter(id=>archivedIds.has(id)).length!==previouslyUnknownNowConfirmed||
              caseReview.summary.unresolvedAtFreeze!==1754||
              Object.values(caseReview.summary.statusCounts).reduce((sum,n)=>sum+n,0)!==1754||
              caseReview.summary.fullJapaneseIngredientRecordsAdded!==0||
@@ -603,7 +642,7 @@ jobs:
              !sourceOnlyUI.includes('抜粋や表示順不明の成分を「全成分」とは扱いません')||
              !sourceOnlyUI.includes('入力は送信・自動保存されません')||
              !sourceOnlyUI.includes('利用者が原文確認')||
-             archived.records.length!==475||caseReview.records.length!==1754)
+             archived.records.length!==expectedTotalArchive||caseReview.records.length!==1754)
             throw Error('rc125 explicitly listed Japanese names reference-only UI or full-formula safeguard missing');
           console.log('Verified rc.125: Japanese published-name-only reference flower shortcut, no false full formula promotions');
           const groupedRC126=JSON.parse(fs.readFileSync('_site/source-url-groups-rc126.json','utf8'));
