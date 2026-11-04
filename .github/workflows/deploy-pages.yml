@@ -462,7 +462,7 @@ jobs:
              !html181.includes('id="sharedCompletionFullList"')||
              !html181.includes('id="sharedCompletionClipboard"')||
              !pwa181.includes('partial-formula-completion.js')||
-             !html181.includes('github-pages-102-rc184')||
+             !html181.includes('github-pages-102-v1.0.0')||
              fs.existsSync('_site/data/rc179-kate-ex1-transcription-erratum-source-checkpoint-20261104.json')||
              fs.existsSync('_site/docs/rc181-user-assisted-complete-formula-flow-20261104.md'))
             throw Error('rc181 user-confirmed Japanese partial-to-complete workflow or private-file boundary failed');
