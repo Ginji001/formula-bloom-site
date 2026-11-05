@@ -310,7 +310,7 @@ function completionStatus(){
 function startPartialCompletion(item,record){
  pendingMedicatedGroups=null;
  pendingPartialCompletion={record,productId:item.id,expectedName:record.brand+' '+record.productName};
- $('shareImport').open=true;
+ $('extraTools').open=true;$('shareImport').open=true;
  $('sharedPageDetails').open=true;
  $('sharedCompletionReview').hidden=false;
  $('sharedUrl').value=record.sourceUrl;
@@ -486,7 +486,7 @@ async function fetchRetailProduct(url,ctx=null){
       $('officialStatus').textContent=e.message;
       if(/^https:\/\//.test(url)){
         sourceLink($('officialStatus'),url,'掲載元のページを開く');
-        $('shareImport').open=true;
+        $('extraTools').open=true;$('shareImport').open=true;
         $('sharedUrl').value=url;
         if(lookup.expected?.name)$('sharedName').value=lookup.expected.name;
         $('sharedConfirmed').checked=false;
@@ -509,7 +509,7 @@ function appendRetailLinks(container,data){
 }
 function openSourceInput(url,name=''){
  clearPartialCompletion();
- $('shareImport').open=true;
+ $('extraTools').open=true;$('shareImport').open=true;
  $('sharedUrl').value=url;
  if(name)$('sharedName').value=name;
  $('sharedConfirmed').checked=false;
@@ -552,7 +552,7 @@ function openIngredientReview(item=null){
  if(item?.url&&sharedSource(item.url))$('sharedUrl').value=item.url;
  if(name)$('sharedName').value=(item?.brand?item.brand+' ':'')+name;
  $('sharedConfirmed').checked=false;
- $('shareImport').open=true;
+ $('extraTools').open=true;$('shareImport').open=true;
  $('sharedPageDetails').open=true;
  $('sharedImportStatus').textContent='商品・シリーズ・タイプを確認し、掲載元の「全成分」または「成分表示」をコピーしてください。旧処方は参考として選べます。';
  $('shareImport').scrollIntoView({behavior:'smooth',block:'start'});
@@ -691,6 +691,7 @@ function showInferredFlower(model,comparison=null){
  $('japanConfirmed').checked=false;
  const panel=$('inferencePanel');panel.replaceChildren();panel.hidden=false;
  document.querySelector('.result-card').classList.add('is-inference');
+ revealBloom();
  const label=document.createElement('p');label.className='inference-eyebrow';label.textContent='推論の花　／　実際の配合成分ではありません';
  const title=document.createElement('h2');title.textContent='剤型から考える、一輪の仮説。';
  const product=document.createElement('p');product.className='inference-product';product.textContent=model.productTitle+' ／ '+model.archetypeName;
@@ -1527,15 +1528,24 @@ $('query').onpaste=e=>{
 };
 $('query').oninput=()=>{clearTimeout(typingTimer);lookupAbort?.abort();++lookupVersion;busy(false);invalidate();remoteProduct=null;$('japanConfirmed').checked=false;$('searchResults').replaceChildren();$('officialStatus').textContent='';if($('query').value.trim().length>=2)typingTimer=setTimeout(()=>search({instant:true}),500);};
 document.querySelectorAll('[data-example]').forEach(b=>b.onclick=()=>{$('query').value=b.dataset.example;search();});
-function invalidate(){const inferred=$('inferencePanel');if(inferred){inferred.hidden=true;inferred.replaceChildren();}document.querySelector('.result-card')?.classList.remove('is-inference');historyTools?.reset();$('ingredientRows').replaceChildren();$('sourceInfo').replaceChildren();$('officialStatus').replaceChildren();$('summary').textContent='';$('coverage').textContent='';posterState=null;$('exportImage').disabled=true;$('shareImage').disabled=true;$('sourceQuality').textContent='解析前：出典・処方を確認してください。';$('shareStatus').textContent='';current=[];bloomRecommendation=null;report=reportCore='';$('flowerTypeTag').textContent='解析後に自動決定';$('flowerTypeReason').textContent='全成分の役割から花の種類を自動で決めます。';resetFlower($('flower'));$('flowerCaptionName').textContent='野の花';$('flowerCaptionNote').textContent='全成分から花を選びます。';$('formulaAim').textContent='';$('formulaAim').hidden=true;$('formulaSignatureText').textContent='';$('formulaSignature').hidden=true;$('uncertainty').textContent='';$('analysisDetails').hidden=true;$('flowerTitle').textContent='入力後に、花にしてみましょう。';$('flowerSubtitle').textContent='内容を確認して解析ボタンを押してください。';$('resultBadge').textContent='未解析';buttons();}
+function invalidate(){const inferred=$('inferencePanel');document.body.classList.remove('has-bloom');if(inferred){inferred.hidden=true;inferred.replaceChildren();}document.querySelector('.result-card')?.classList.remove('is-inference');historyTools?.reset();$('ingredientRows').replaceChildren();$('sourceInfo').replaceChildren();$('officialStatus').replaceChildren();$('summary').textContent='';$('coverage').textContent='';posterState=null;$('exportImage').disabled=true;$('shareImage').disabled=true;$('sourceQuality').textContent='解析前：出典・処方を確認してください。';$('shareStatus').textContent='';current=[];bloomRecommendation=null;report=reportCore='';$('flowerTypeTag').textContent='解析後に自動決定';$('flowerTypeReason').textContent='全成分の役割から花の種類を自動で決めます。';resetFlower($('flower'));$('flowerCaptionName').textContent='野の花';$('flowerCaptionNote').textContent='全成分から花を選びます。';$('formulaAim').textContent='';$('formulaAim').hidden=true;$('formulaSignatureText').textContent='';$('formulaSignature').hidden=true;$('uncertainty').textContent='';$('analysisDetails').hidden=true;$('flowerTitle').textContent='入力後に、花にしてみましょう。';$('flowerSubtitle').textContent='内容を確認して解析ボタンを押してください。';$('resultBadge').textContent='未解析';buttons();}
 $('japanConfirmed').onchange=invalidate;
 $('kind').onchange=invalidate;$('claim').oninput=invalidate;
 $('ingredients').oninput=()=>{invalidate();$('japanConfirmed').checked=false;remoteProduct=null;$('sourceInfo').replaceChildren();official=false;$('origin').textContent='利用者入力・配合量は未確認';if(inputMode!=='image')ocrRequired=false;if(ocrRequired)$('ocrChecked').checked=false;if(inputMode==='image'&&ocrRequired){$('origin').textContent='写真の文字読み取り・確認中';refreshOCRReview();}else hideOCRReview();};
 function part(id){selected=id;const g=groups.find(g=>g[0]===id),list=current.filter(x=>x.group===id);$('partDetail').replaceChildren();const title=document.createElement('strong');title.textContent=`${g[1]}｜${g[2]}`;$('partDetail').append(title);const p=document.createElement('p');p.textContent=current.length?(list.length?list.map(x=>`${japaneseName(x)}（${x.role}）`).join('、'):'該当する成分を辞書では確認できません。未収録成分が担う可能性はあります。'):g[3];$('partDetail').append(p);document.querySelectorAll('[data-part]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.part===id)));$('visualPetal').style.opacity='1';}
 function buttons(){ $('partButtons').replaceChildren();for(const [id,name] of groups){const b=document.createElement('button');b.dataset.part=id;b.textContent=name;const small=document.createElement('small');small.textContent=current.length?`${current.filter(x=>x.group===id).length}成分`:'—';b.append(small);b.onclick=()=>part(id);$('partButtons').append(b);}part(selected);}
+function revealBloom(){
+ document.body.classList.add('has-bloom');
+ // The earlier mobile scroll can run before the result card becomes visible.
+ // After layout: reveal the actual flower, not the hidden SVG placeholder.
+ if(matchMedia('(max-width: 899px)').matches){
+  requestAnimationFrame(()=>document.querySelector('.result-card')?.scrollIntoView({behavior:'auto',block:'start'}));
+ }
+}
 // 花の種類は解析した成分の既知分類から自動決定し、画面・レポートへ反映する。
 function showAutomaticFlower(){
   if(!current.length)return;
+  revealBloom();
   const choice=bloomRecommendation||recommendFlower(current);
   const flower=flowerTypes.find(f=>f.id===choice.id)||flowerTypes.at(-1);
   renderFlower($('flower'),flower.id);

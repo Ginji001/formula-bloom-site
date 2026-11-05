@@ -662,6 +662,41 @@ jobs:
             throw Error('Three-line compact homepage footer or separate archive routing failed');
           console.log('Verified compact UI: 3 rows / 4 links / 78 old references archived / all evidence numbers unchanged.');
 
+          // Search-first public surface, without dropping the underlying source evidence or advanced workflows.
+          const essentialHtml=fs.readFileSync('_site/index.html','utf8');
+          const essentialCss=fs.readFileSync('_site/minimal-ui.css','utf8');
+          const essentialApp=fs.readFileSync('_site/app.js','utf8');
+          const firstSearchResults=essentialHtml.indexOf('id="searchResults"');
+          const advancedStart=essentialHtml.indexOf('id="extraTools"');
+          const advancedEnd=essentialHtml.indexOf('id="error"',advancedStart);
+          const advancedContent=essentialHtml.slice(advancedStart,advancedEnd);
+          if(!essentialHtml.includes('<h1>成分から、<em>一輪の花へ。</em></h1>')||
+             !essentialHtml.includes('href="minimal-ui.css"')||
+             !essentialHtml.includes('app.js?v=github-pages-102-v1.0.1-minimal-ui1')||
+             !essentialHtml.includes('id="query"')||
+             !essentialHtml.includes('id="searchBtn"')||
+             !essentialHtml.includes('data-tab="search"')||
+             !essentialHtml.includes('data-tab="text"')||
+             !essentialHtml.includes('data-tab="image"')||
+             firstSearchResults<=0||advancedStart<=firstSearchResults||advancedEnd<=advancedStart||
+             !advancedContent.includes('<summary>もっと使う</summary>')||
+             !['catalogTools','moreInput','shareImport','myFormulas','historyDetails','sample'].every(id=>advancedContent.includes('id="'+id+'"'))||
+             !essentialHtml.includes('<summary>出典・確認日</summary>')||
+             !essentialCss.includes('body:not(.has-bloom) .result-card { display: none; }')||
+             !essentialCss.includes('body.has-bloom .workspace')||
+             !essentialCss.includes('flex-direction: row;')||
+             !essentialCss.includes(':focus-visible')||
+             !essentialApp.includes('function revealBloom()')||
+             !essentialApp.includes("document.body.classList.remove('has-bloom')")||
+             !essentialApp.includes("document.body.classList.add('has-bloom')")||
+             !essentialApp.includes("$('extraTools').open=true;$('shareImport').open=true;")||
+             !fs.readFileSync('_site/sw.js','utf8').includes('minimal-ui.css')||
+             fs.existsSync('_site/docs/v1.0.1-search-first-minimal-ui-20261105.md')||
+             fs.existsSync('_site/chatgpt-project/02_開発状況と引き継ぎ.md'))
+             throw Error('Minimal public search-first UI, source disclosure, advanced workflows or private-file boundary invalid');
+          console.log('Verified minimal UI: search-first, bloom-on-demand, all 5 advanced workflows, mobile, source disclosure and no private files.');
+
+
 
 
 
