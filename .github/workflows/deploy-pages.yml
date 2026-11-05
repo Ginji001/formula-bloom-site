@@ -672,7 +672,7 @@ jobs:
           const advancedContent=essentialHtml.slice(advancedStart,advancedEnd);
           if(!essentialHtml.includes('<h1>成分から、<em>一輪の花へ。</em></h1>')||
              !essentialHtml.includes('href="minimal-ui.css"')||
-             !essentialHtml.includes('app.js?v=github-pages-102-v1.0.1-minimal-ui1')||
+             !essentialHtml.includes('app.js?v=github-pages-102-v1.0.1-skin1004-rc185')||
              !essentialHtml.includes('id="query"')||
              !essentialHtml.includes('id="searchBtn"')||
              !essentialHtml.includes('data-tab="search"')||
@@ -695,6 +695,27 @@ jobs:
              fs.existsSync('_site/chatgpt-project/02_開発状況と引き継ぎ.md'))
              throw Error('Minimal public search-first UI, source disclosure, advanced workflows or private-file boundary invalid');
           console.log('Verified minimal UI: search-first, bloom-on-demand, all 5 advanced workflows, mobile, source disclosure and no private files.');
+
+          // Japan-facing SKIN1004 name-only supplemental search (not a false full-ingredient release).
+          const skinIndex=fs.readFileSync('_site/skin1004-jp-names-rc185.js','utf8');
+          const skinApp=fs.readFileSync('_site/app.js','utf8');
+          const skinIndexHtml=fs.readFileSync('_site/index.html','utf8');
+          const skinSW=fs.readFileSync('_site/sw.js','utf8');
+          if((skinIndex.match(/\n item\('/g)||[]).length!==24||
+             !skinIndex.includes("registrationStatus:'name-only'")||
+             !skinIndex.includes("sourceScope")||
+             !skinIndex.includes('法定日本語成分表示')||
+             !skinApp.includes("from './skin1004-jp-names-rc185.js'")||
+             !skinApp.includes('skin1004JapanSearchMatches(q)')||
+             !skinApp.includes("productsForBrand('SKIN1004')")||
+             !skinIndexHtml.includes('app.js?v=github-pages-102-v1.0.1-skin1004-rc185')||
+             !skinSW.includes('skin1004-jp-names-rc185.js')||
+             !fs.readFileSync('_site/README.md','utf8').includes('SKIN1004')||
+             fs.existsSync('_site/docs/rc185-skin1004-domestic-name-catalog-20261105.md')||
+             fs.existsSync('_site/handoff/STATE.json'))
+           throw Error('rc185 Japan-facing SKIN1004 24-name supplement or no-ingredient safety checks failed');
+          console.log('Verified rc185 SKIN1004: 24 name-only supplemental products, 25 total search candidates, unchanged 600/1248/172 evidence.');
+
 
 
 

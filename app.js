@@ -28,6 +28,7 @@ import {isJapaneseIngredientsList,isJapaneseMarketURL} from './japan-market-poli
 import {cleanPastedProductName} from './product-query.js';
 import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,manufacturerQuery,chooseExactRegisteredProduct,productFold} from './registered-products.js';
 import {isMajorMakerBrand,isMajorMakerProduct,activeMajorMakerNames,majorMakerCounts,excludedFromMajorMakerBrands} from './major-maker-scope.js';
+import {skin1004JapanSearchAdditions,skin1004JapanSearchMatches} from './skin1004-jp-names-rc185.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
@@ -1258,6 +1259,11 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
  if(!products.length){showScopeExcluded(heading);return;}
   const holder=$('searchResults');holder.replaceChildren();
   const families=productFamilies(products);
+  if(products.some(p=>p.id.startsWith('rc185-skin1004-'))){
+   const message=document.createElement('p');message.className='muted skin1004-listing-note';
+   message.textContent='SKIN1004の日本向け掲載商品を追加しました。追加分は商品名・確認できた容量のみで、日本国内向け法定全成分と現物表示は未確認です。';
+   holder.append(message);
+  }
   const lead=document.createElement('p');lead.className='product-choice-count';
   const totalReady=products.filter(itemHasArchiveInCatalog).length;
   lead.textContent='商品候補 '+families.length+'組（'+products.length+'商品）／掲載全成分あり '+totalReady+'商品';
@@ -1400,8 +1406,12 @@ function openBrandOrManufacturer(brand){
  if(findManufacturerProducts(brand).length)search();
  else openBrandProducts(brand);
 }
+function productsForBrandWithSupplements(brand){
+  const core=productsForBrand(brand);
+  return productFold(brand)==='skin1004'?[...core,...skin1004JapanSearchAdditions]:core;
+}
 function presentRegisteredBrand(brand){
-  const entries=productsForBrand(brand);
+  const entries=productsForBrandWithSupplements(brand);
   if(!entries.length)return false;
   presentRegisteredProducts(entries,brand);
   return true;
@@ -1415,7 +1425,7 @@ function quickRegisteredBrands(){
   const matches=all.filter(b=>isMajorMakerBrand(b.name)&&(!q||brandQueryMatches(b,q)));
   let productBrands=0;
   for(const brand of matches){
-    const count=productFamilies(productsForBrand(brand.name)).length;
+    const count=productFamilies(productsForBrandWithSupplements(brand.name)).length;
     const manufacturerCount=findManufacturerProducts(brand.name).length;
     if(count)productBrands++;
     const b=document.createElement('button');b.className='registered-chip'+(count||manufacturerCount?'':' brand-pending');
@@ -1428,8 +1438,8 @@ function quickRegisteredBrands(){
     zone.append(b);
   }
   $('registeredBrandCounts').textContent=provisionalBrands?
-    '通常表示は主要メーカー対象 '+majorMakerCounts.registeredBrandsActive+'ブランド（旧147ブランド台帳は履歴保持） ／ 商品候補あり '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrand(b.name).length>0).length+
-    'ブランド ／ 商品名未登録 '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrand(b.name).length===0).length+
+    '通常表示は主要メーカー対象 '+majorMakerCounts.registeredBrandsActive+'ブランド（旧147ブランド台帳は履歴保持） ／ 商品候補あり '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrandWithSupplements(b.name).length>0).length+
+    'ブランド ／ 商品名未登録 '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrandWithSupplements(b.name).length===0).length+
     'ブランド。全商品を収録した意味ではありません。':
     '商品候補のあるブランドを表示中。開くと全147ブランドの仮登録を読み込みます。';
   if(!matches.length)zone.textContent='該当するブランドはありません。';
@@ -1459,6 +1469,15 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
+if(!forceOfficial&&!/^https:\/\//.test(q)){
+ const extra=skin1004JapanSearchMatches(q);
+ if(extra.length){
+  const brandOnly=['skin1004','スキン1004','スキンワンオーオーフォー'].includes(productFold(q));
+  const existing=brandOnly?productsForBrand('SKIN1004'):findRegisteredProducts(q).map(x=>x.product).filter(x=>x.brand==='SKIN1004');
+  presentRegisteredProducts([...existing,...extra],'SKIN1004 日本向け掲載名');
+  return;
+ }
+}
 if(!forceOfficial&&!/^https:\/\//.test(q)){
  const makerProducts=findManufacturerProducts(q);
  if(makerProducts.length){
