@@ -29,6 +29,7 @@ import {cleanPastedProductName} from './product-query.js';
 import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,manufacturerQuery,chooseExactRegisteredProduct,productFold} from './registered-products.js';
 import {isMajorMakerBrand,isMajorMakerProduct,activeMajorMakerNames,activeMajorMakerBrands,majorMakerCounts,excludedFromMajorMakerBrands} from './major-maker-scope.js';
 import {allBrandNameSupplementsRC186,supplementalProductsForBrandRC186,supplementalMatchesRC186} from './brand-catalog-supplements-rc186.js';
+import {officialNameOnlyRC187,nameOnlyProductsForBrandRC187,nameOnlyMatchesRC187} from './brand-catalog-supplements-rc187.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
@@ -1414,7 +1415,7 @@ function openBrandOrManufacturer(brand){
  search();
 }
 function productsForBrandWithSupplements(brand){
-  return [...productsForBrand(brand),...supplementalProductsForBrandRC186(brand)];
+  return [...productsForBrand(brand),...supplementalProductsForBrandRC186(brand),...nameOnlyProductsForBrandRC187(brand)];
 }
 function presentRegisteredBrand(brand){
   const entries=productsForBrandWithSupplements(brand);
@@ -1479,7 +1480,7 @@ if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).len
  const heading=document.createElement('p');heading.className='selected-product-state';
  heading.textContent=q+'：検索対象ブランドですが、現時点で商品名を確認して登録した候補がありません。未掲載・販売終了の証明ではありません。';
  holder.append(heading);
- const link=document.createElement('a');link.href='brand-catalog-coverage-rc186.html';
+ const link=document.createElement('a');link.href='brand-catalog-coverage-rc187.html';
  link.textContent='全ブランドの登録状況を見る';holder.append(link);
  appendDomesticResearchLink(holder,q);
  const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='日本語全成分を自分で入力';
@@ -1488,6 +1489,7 @@ if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).len
 }
 if(!forceOfficial&&!/^https:\/\//.test(q)){
  const extra=supplementalMatchesRC186(q);
+ extra.push(...nameOnlyMatchesRC187(q));
  if(extra.length){
   const majorMatches=activeMajorMakerBrands.filter(b=>productFold(b)===productFold(q));
   const existing=majorMatches.length?

@@ -1,0 +1,2863 @@
+{
+  "version": "rc187",
+  "generatedAt": "2026-11-06",
+  "scope": "201-brands-searchable-Japanese-official-names-only-no-ingredient-invention",
+  "disclaimer": "登録商品名は日本流通商品の網羅率ではありません。名称補完は日本向け法定全成分の確認ではなく、未登録は未販売・販売終了の証拠でもありません。",
+  "summary": {
+    "eligibleBrandNames": 201,
+    "registeredBrandNames": 102,
+    "noRegisteredBrandNames": 99,
+    "brandsWithSearchableCandidates": 114,
+    "brandsWithoutSearchableCandidates": 87,
+    "originalRegisteredProducts": 2163,
+    "previousSupplementalNameOnly": 73,
+    "newOfficialNames": 53,
+    "newOfficialBrands": 5,
+    "supplementalNameOnlyTotal": 126,
+    "unchangedPriorityScope": 2020,
+    "unchangedCompleteFormulas": 600,
+    "unchangedPartialIngredientEvidence": 1248,
+    "unchangedUnverified": 172
+  },
+  "rows": [
+    {
+      "name": "50の恵",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "コラーゲン養潤液",
+        "コラーゲン養潤クリーム"
+      ]
+    },
+    {
+      "name": "ADDICTION",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ アイシャドウ パール 029P ドロップアウト",
+        "UVプロテクター ファンデーション 012 Sand サンド"
+      ]
+    },
+    {
+      "name": "ALBLANC",
+      "registered": 41,
+      "supplemental": 0,
+      "searchable": 41,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ ローション I",
+        "クレンジングオイル",
+        "クラリファイイング リリーサー"
+      ]
+    },
+    {
+      "name": "ALLIE",
+      "registered": 17,
+      "supplemental": 0,
+      "searchable": 17,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "クロノビューティ ジェルUV EX",
+        "クロノビューティ スムースミルクUV",
+        "クロノビューティ スムースジェルUV"
+      ]
+    },
+    {
+      "name": "AUBE",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "AUPRES",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "B.A",
+      "registered": 4,
+      "supplemental": 0,
+      "searchable": 4,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.pola.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ローション 7",
+        "B.A ローション",
+        "B.A ミルク"
+      ]
+    },
+    {
+      "name": "BAUM",
+      "registered": 37,
+      "supplemental": 0,
+      "searchable": 37,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ハイドロ エッセンスローション n（つけかえ用）",
+        "オードトワレ ヒノキ フォレスト",
+        "オードトワレ オーク フォレスト"
+      ]
+    },
+    {
+      "name": "BEAUTY UP TOOL",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "Beauty Works",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "boscia",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "BRANCHIC",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "CNP",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "プロP セラム"
+      ]
+    },
+    {
+      "name": "COFFRET D’OR",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "COSRX",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.cosrx.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ・６ペプチドスキンブースターセラム",
+        "フルフィットプロポリスライトアンプル"
+      ]
+    },
+    {
+      "name": "DEW",
+      "registered": 58,
+      "supplemental": 0,
+      "searchable": 58,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ローション さっぱり",
+        "ハニーバームクレンジング",
+        "ハニーバームクレンジング クリア"
+      ]
+    },
+    {
+      "name": "DEW SUPERIOR",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "DHC",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.dhc.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用ディープクレンジングオイル リニューブライト",
+        "DHCクリームクレンジング"
+      ]
+    },
+    {
+      "name": "do natural",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "do organic",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "Dr. Dennis Gross Skincare",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "Dr.Jart+",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "シカペア インテンシブ S リペア クリーム",
+        "バイタル ハイドラ ソリューション ウォータークリーム",
+        "セラマイディン スキンバリア モイスチャライジング クリーム"
+      ]
+    },
+    {
+      "name": "DRUNK ELEPHANT",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "dプログラム",
+      "registered": 10,
+      "supplemental": 0,
+      "searchable": 10,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "モイストケア ローション EX",
+        "バイタライジング＆クリア ローション EX",
+        "モイストケア ローション MB"
+      ]
+    },
+    {
+      "name": "EFFECTIM",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "EVITA",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "excellence",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "FINE FIT",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "freeplus",
+      "registered": 9,
+      "supplemental": 0,
+      "searchable": 9,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "マイルドソープa",
+        "オイルセラムクレンジング",
+        "マイルドフォームソープN"
+      ]
+    },
+    {
+      "name": "Gallinée",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "HAKU",
+      "registered": 9,
+      "supplemental": 0,
+      "searchable": 9,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "メラノフォーカス IV",
+        "ブライトニング クリームM",
+        "デイブライトニングUV"
+      ]
+    },
+    {
+      "name": "HIKARIMIRAI",
+      "registered": 30,
+      "supplemental": 0,
+      "searchable": 30,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.chifure.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "バランシング ローション",
+        "バイフェーズ フォグ バランサー",
+        "クレンジング オイル"
+      ]
+    },
+    {
+      "name": "IC.U",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "INRYU",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "IOPE",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ・ビタミンC23",
+        "スーパー バイタル ソフナー"
+      ]
+    },
+    {
+      "name": "IPSA",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ・タイムR アクア e",
+        "スキンフレグランスジェル 02 澄んだ陽の光"
+      ]
+    },
+    {
+      "name": "ISSEY MIYAKE PARFUMS",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "KATE",
+      "registered": 134,
+      "supplemental": 0,
+      "searchable": 134,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リップモンスター",
+        "ルイシンノイチゲキリムーバー",
+        "クレンジンググルー"
+      ]
+    },
+    {
+      "name": "L'EQUIL",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "LISSAGE",
+      "registered": 87,
+      "supplemental": 0,
+      "searchable": 87,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキンメインテナイザー（S）",
+        "エクストラクレンジングオイル",
+        "クリアクレンジングオイル"
+      ]
+    },
+    {
+      "name": "LISSAGE MEN",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "LUNASOL",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アイカラーレーションN",
+        "ポリッシングクリア ジェルウォッシュ"
+      ]
+    },
+    {
+      "name": "Max Mara Le Parfum",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "media",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "MEDIHEAL",
+      "registered": 24,
+      "supplemental": 0,
+      "searchable": 24,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://mediheal.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "マデカッソシド エッセンシャルマスク ブレミッシュリペア",
+        "PDRN カプセルパッチ ペプチド [マルチソリューション]",
+        "PDRN ダーマセラム"
+      ]
+    },
+    {
+      "name": "Milano Collection",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "narciso rodriguez",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "NARS",
+      "registered": 0,
+      "supplemental": 6,
+      "searchable": 6,
+      "rc187Added": 0,
+      "officialListingUrl": "https://www.narscosmetics.jp/light-reflecting-collection/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ライトリフレクティングセッティングパウダー プレスト N",
+        "ライトリフレクティングセッティングパウダー ルース N",
+        "ライトリフレクティング セラムクッションファンデーション（レフィル）"
+      ]
+    },
+    {
+      "name": "NATURE&CO",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ONE BY KOSE",
+      "registered": 10,
+      "supplemental": 0,
+      "searchable": 10,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "セラムヴェール ディープリペア",
+        "メラノショット P",
+        "ザ リンクレス ローション"
+      ]
+    },
+    {
+      "name": "Perfect Cover",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "PrediaBLUE",
+      "registered": 0,
+      "supplemental": 11,
+      "searchable": 11,
+      "rc187Added": 11,
+      "officialListingUrl": "https://maison.kose.co.jp/site/prediablue/c/c89_dL/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リペア ヘッドクレンズ クレイ",
+        "リペア ヘッドクレンズ クレイ（つめかえ用）",
+        "クレンジング クレイ"
+      ]
+    },
+    {
+      "name": "Primavista",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキンプロテクトベース 皮脂くずれ防止 UV50 EX",
+        "角層保水プライマー シアーベージュ"
+      ]
+    },
+    {
+      "name": "Primavista Dea",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SENSAI",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "Serge Lutens",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SHISEIDO BEAUTY WELLNESS",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SKIN1004",
+      "registered": 1,
+      "supplemental": 24,
+      "searchable": 25,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.skin1004.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "センテラ TECA アンプル",
+        "マダガスカルセンテラ セラム",
+        "ヒアルーテカ セラム"
+      ]
+    },
+    {
+      "name": "SKIO",
+      "registered": 0,
+      "supplemental": 7,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": "https://www.shop.rohto.co.jp/category/skincare/skio",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "VC ホワイトピールセラム",
+        "VC ホワイトピールゲル",
+        "VC ホワイトピールゲル つけかえ用レフィル"
+      ]
+    },
+    {
+      "name": "SOFINA BASIC＋",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SOFINA beaute",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SOFINA GRACE",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "SOFINA SYNC＋",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "THE GINZA",
+      "registered": 0,
+      "supplemental": 4,
+      "searchable": 4,
+      "rc187Added": 0,
+      "officialListingUrl": "https://corp.shiseido.com/jp/news/detail.html?n=00000000003924",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ・ギンザ ハイブリッドジェルオイル n",
+        "ザ・ギンザ ハイブリッドジェルオイル n（レフィル）",
+        "ザ・ギンザ エッセンスローション n"
+      ]
+    },
+    {
+      "name": "Torriden",
+      "registered": 14,
+      "supplemental": 0,
+      "searchable": 14,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://torriden.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ダイブイン トナー",
+        "セルメイジング ビタC ブライトニング ブースト アンプル",
+        "ダイブイン インテンシブ セラム"
+      ]
+    },
+    {
+      "name": "TORY BURCH BEAUTY",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "TWANY",
+      "registered": 121,
+      "supplemental": 0,
+      "searchable": 121,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ローションN I",
+        "マイルドクレンジングオイル",
+        "マッサージクレンジングクリーム"
+      ]
+    },
+    {
+      "name": "TWANY&me",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "UNLICS",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "URARA",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "VDL",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "カラーコレクティングプライマー"
+      ]
+    },
+    {
+      "name": "VT",
+      "registered": 23,
+      "supplemental": 0,
+      "searchable": 23,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.vtcosmetics.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "シカデイリースージングマスク",
+        "CICA デイリースージングマスク (30枚入)",
+        "PDRN+ カプセルクリーム 100"
+      ]
+    },
+    {
+      "name": "ZADIG&VOLTAIRE",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "アクアレーベル",
+      "registered": 25,
+      "supplemental": 0,
+      "searchable": 25,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "トリートメントローション（オイルイン） しっとり",
+        "トリートメントローション（オイルイン） とてもしっとり",
+        "スペシャルジェルクリームEX（モイストスムース）"
+      ]
+    },
+    {
+      "name": "アクネス",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "アスタリフト",
+      "registered": 35,
+      "supplemental": 0,
+      "searchable": 35,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.fujifilm.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "メン モイストローション",
+        "アドバンスドローション",
+        "アドバンスドクリーム"
+      ]
+    },
+    {
+      "name": "アテニア",
+      "registered": 7,
+      "supplemental": 0,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキンクリア クレンズ オイル 無香タイプ 〈175mLボトル〉（レギュラーボトル）",
+        "スキンクリア クレンズ オイル スムースブラック",
+        "スキンクリア クレンズ クリーム アロマタイプ"
+      ]
+    },
+    {
+      "name": "アトレージュ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "アヌア",
+      "registered": 40,
+      "supplemental": 0,
+      "searchable": 40,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.anuashop.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ドクダミ シルキーモイスチャーサンクリーム",
+        "PDRNヒアルロン酸 カプセル100セラム (全2種)",
+        "アゼライン酸15 インテンスカーミングセラム 30ml"
+      ]
+    },
+    {
+      "name": "アネッサ",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "パーフェクトUV スキンケアミルク NA",
+        "パーフェクトUV スキンケアジェル NB",
+        "パーフェクトUV スキンケアジェル NB"
+      ]
+    },
+    {
+      "name": "いち髪",
+      "registered": 44,
+      "supplemental": 0,
+      "searchable": 44,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kracie.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "なめらかスムースケア シャンプー",
+        "なめらかスムースケア コンディショナー",
+        "なめらかスムースケア トリートメント"
+      ]
+    },
+    {
+      "name": "イニスフリー",
+      "registered": 15,
+      "supplemental": 0,
+      "searchable": 15,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.innisfree.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "グリーンティー セラミド ミルク エッセンストナー",
+        "グリーンティーシード ヒアルロン セラム",
+        "グリーンティー ヒアルロン スキン"
+      ]
+    },
+    {
+      "name": "イハダ",
+      "registered": 5,
+      "supplemental": 0,
+      "searchable": 5,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用うるおいローション（しっとり）",
+        "薬用うるおいローション（とてもしっとり）",
+        "薬用うるおいエマルジョン"
+      ]
+    },
+    {
+      "name": "イリユン",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "セラミド アト フェイス＆ボディミルク",
+        "セラミド アト フェイス＆ボディクリーム",
+        "セラミド アト トップトゥトー ウォッシュ"
+      ]
+    },
+    {
+      "name": "インウイ",
+      "registered": 15,
+      "supplemental": 0,
+      "searchable": 15,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "フィックスプライマー",
+        "リキッド ファンデーション",
+        "クリーム ファンデーション"
+      ]
+    },
+    {
+      "name": "インテグレート",
+      "registered": 6,
+      "supplemental": 0,
+      "searchable": 6,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "すっぴんメイカー トーンアップUV",
+        "プロフィニッシュ クッション",
+        "プロフィニッシュ リキッド N"
+      ]
+    },
+    {
+      "name": "インフィニティ",
+      "registered": 0,
+      "supplemental": 8,
+      "searchable": 8,
+      "rc187Added": 8,
+      "officialListingUrl": "https://maison.kose.co.jp/site/infinity/c/c041020/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ リペア ローション",
+        "ザ リペア ローション",
+        "ザ リペア ローション（つめかえ用）"
+      ]
+    },
+    {
+      "name": "ヴィセ",
+      "registered": 21,
+      "supplemental": 0,
+      "searchable": 21,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ネンマクフェイク ルージュ BE351",
+        "ネンマクフェイク プランピング リップライナー",
+        "ネンマクフェイク リッププランパー"
+      ]
+    },
+    {
+      "name": "ウルミナプラス",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "エクスバリア",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "エクセル",
+      "registered": 40,
+      "supplemental": 0,
+      "searchable": 40,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://noevirgroup.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキニーリッチシャドウ N SK08 カシミヤブラウン",
+        "エクストラリッチ セラムインパウダー ミニ",
+        "インプレッシブ ムードシェイド"
+      ]
+    },
+    {
+      "name": "エスカラット",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "エスト",
+      "registered": 76,
+      "supplemental": 0,
+      "searchable": 76,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ ローション EX K レフィル",
+        "ナーチャリング クレンジングセラム",
+        "クラリファイイング クレンジング ミルク"
+      ]
+    },
+    {
+      "name": "エストラ",
+      "registered": 18,
+      "supplemental": 0,
+      "searchable": 18,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アトバリア365 クリーム",
+        "アトバリア365 エマルジョン",
+        "アトバリア365 カプセルトナー"
+      ]
+    },
+    {
+      "name": "エスプリーク",
+      "registered": 16,
+      "supplemental": 0,
+      "searchable": 16,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "トリプル ラスティング プライマー",
+        "【レフィル】アクアリー スキンウェア",
+        "【レフィル】アクアリー スキンウェア カバー"
+      ]
+    },
+    {
+      "name": "エスプリーク エクラ",
+      "registered": 0,
+      "supplemental": 4,
+      "searchable": 4,
+      "rc187Added": 4,
+      "officialListingUrl": "https://maison.kose.co.jp/site/espriqueeclat/c/c06/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リフト BB クリーム",
+        "明るさ持続 パクト EX（レフィル）",
+        "明るさ持続 美容液下地 EX"
+      ]
+    },
+    {
+      "name": "エスポア",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ウォータースプラッシュサンクリーム シカ"
+      ]
+    },
+    {
+      "name": "エチュード",
+      "registered": 12,
+      "supplemental": 0,
+      "searchable": 12,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://etude.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "クラウドフィルタークッション",
+        "カールフィックスマスカラ ロングラッシュ",
+        "カールフィックスマスカラ"
+      ]
+    },
+    {
+      "name": "エピステーム",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "エリクシール",
+      "registered": 7,
+      "supplemental": 0,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リフトモイスト ローション みずみずしいタイプ ba",
+        "リフトモイスト ローション しっとりタイプ ba",
+        "リフトモイスト エマルジョン みずみずしいタイプ ba"
+      ]
+    },
+    {
+      "name": "オキシー",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "オバジ",
+      "registered": 21,
+      "supplemental": 0,
+      "searchable": 21,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アクティブベース クリアローション",
+        "C25セラム ネオ",
+        "C20セラム"
+      ]
+    },
+    {
+      "name": "オルビス",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.orbis.co.jp/small/1201010/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アクアニスト ローション LM（さっぱり高保湿タイプ）",
+        "アクアニスト ローション RM（しっとり高保湿タイプ）",
+        "オルビスユー アンコール ローション"
+      ]
+    },
+    {
+      "name": "オレゾ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "カールキープマジック",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "カネボウ",
+      "registered": 75,
+      "supplemental": 0,
+      "searchable": 75,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スクラビング マッド ウォッシュ",
+        "メロウ オフ ヴェイル",
+        "インスタント オフ オイル"
+      ]
+    },
+    {
+      "name": "カラミー",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "カルテHD",
+      "registered": 0,
+      "supplemental": 8,
+      "searchable": 8,
+      "rc187Added": 0,
+      "officialListingUrl": "https://carte-beauty.com/site/e/etop01/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "モイスチュア クレンジング オイルジェル",
+        "モイスチュア ウォッシングフォーム",
+        "モイスチュア ローション"
+      ]
+    },
+    {
+      "name": "ギャツビー",
+      "registered": 10,
+      "supplemental": 0,
+      "searchable": 10,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.mandom.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "フェイシャルペーパー アイスタイプ 徳用タイプ",
+        "EXパーフェクトマスク",
+        "オールインワン"
+      ]
+    },
+    {
+      "name": "キャンメイク",
+      "registered": 11,
+      "supplemental": 0,
+      "searchable": 11,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "むちぷるティント～シアーバーム～ [S01]アプリコットソルベ",
+        "メロウデューリップマスク [01]クリアピンク",
+        "エアリーエクステンションライナー [01]メイプルパンケーキ"
+      ]
+    },
+    {
+      "name": "ギュット",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "キュレル",
+      "registered": 49,
+      "supplemental": 0,
+      "searchable": 49,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/ja/official/curel/products/skincare_moisturizers/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "潤浸保湿 化粧水 Ⅰ ややしっとり",
+        "潤浸保湿 化粧水 Ⅱ しっとり",
+        "潤浸保湿 化粧水 Ⅲ とてもしっとり"
+      ]
+    },
+    {
+      "name": "キラージュ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "クリアターン",
+      "registered": 0,
+      "supplemental": 8,
+      "searchable": 8,
+      "rc187Added": 0,
+      "officialListingUrl": "https://www.kosecosmeport.co.jp/clearturn/shokunin/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "美肌職人 はちみつマスク",
+        "美肌職人 米ぬかマスク",
+        "美肌職人 はとむぎマスク"
+      ]
+    },
+    {
+      "name": "クレ・ド・ポー ボーテ",
+      "registered": 50,
+      "supplemental": 0,
+      "searchable": 50,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ローションエサンシエルA",
+        "サボンｎ",
+        "ランジェットデマキアントヴィサージュ"
+      ]
+    },
+    {
+      "name": "クレ・ド・ポー ボーテ シナクティフ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "グレイシィ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ケアセラ",
+      "registered": 9,
+      "supplemental": 0,
+      "searchable": 9,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "APフェイス＆ボディ乳液",
+        "泡の高保湿ボディウォッシュ",
+        "泡の高保湿ボディウォッシュ フルーティローズの香り"
+      ]
+    },
+    {
+      "name": "コエンリッチ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "コーセー",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "メイク キープ ミスト EX ＋",
+        "メイク キープ ミスト EX ＋ 無香料",
+        "メイク キープ ミスト EX ＋ モイスト Y"
+      ]
+    },
+    {
+      "name": "コスメデコルテ",
+      "registered": 28,
+      "supplemental": 0,
+      "searchable": 28,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リポソーム アドバンスト リペアセラム",
+        "ＡQ ミリオリティダブル コンセントレイション n",
+        "ユース パワーエッセンス ローション"
+      ]
+    },
+    {
+      "name": "ザ・コラーゲン",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ザ・フー",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "秘貼 循環エッセンス",
+        "秘貼 循環エッセンス"
+      ]
+    },
+    {
+      "name": "ザ・フェイスショップ",
+      "registered": 23,
+      "supplemental": 0,
+      "searchable": 23,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "イェファダム オールインワンケアシート DX",
+        "イェファダム オールインワンケアシート DX",
+        "イェファダム モイスチャーゲル EX"
+      ]
+    },
+    {
+      "name": "サナ",
+      "registered": 11,
+      "supplemental": 0,
+      "searchable": 11,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://noevirgroup.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "なめらか本舗 化粧水 ND",
+        "なめらか本舗 化粧水 ND（つめかえ用）",
+        "なめらか本舗 しっとり化粧水 ND"
+      ]
+    },
+    {
+      "name": "サンカット",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "サンプレイ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ジルスチュアート",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リップブロッサム グロウ 07",
+        "モイスチュア ローション"
+      ]
+    },
+    {
+      "name": "スイサイ",
+      "registered": 43,
+      "supplemental": 0,
+      "searchable": 43,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ビューティクリア パウダーウォッシュN",
+        "ビューティクリア ゴールド クレンジングバター",
+        "ビューティクリア メルティハンターバーム"
+      ]
+    },
+    {
+      "name": "スキンアクア",
+      "registered": 15,
+      "supplemental": 0,
+      "searchable": 15,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スーパーモイスチャーUVライトアップエッセンス",
+        "スーパーモイスチャーバリアUVジェル",
+        "スーパーモイスチャーバリアUVエッセンス"
+      ]
+    },
+    {
+      "name": "スティーブンノル",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "セザンヌ",
+      "registered": 131,
+      "supplemental": 0,
+      "searchable": 131,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキンコンディショナー",
+        "スキンコンディショナー高保湿",
+        "濃密スキンコンディショナー ミルク"
+      ]
+    },
+    {
+      "name": "セラミエイド",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "セラムヴェール",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ONE BY KOSE セラムヴェール ディープリペア",
+        "ONE BY KOSE セラムヴェール ディープリペア（付けかえ用）"
+      ]
+    },
+    {
+      "name": "ソフィーナ iP",
+      "registered": 52,
+      "supplemental": 0,
+      "searchable": 52,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ベースケア セラム（土台美容液）",
+        "薬用 角層トリートメント 深層化粧液",
+        "薬用 角層トリートメント 深層化粧液 レフィル"
+      ]
+    },
+    {
+      "name": "ソフティモ",
+      "registered": 0,
+      "supplemental": 8,
+      "searchable": 8,
+      "rc187Added": 0,
+      "officialListingUrl": "https://www.kose-softymo.com/lineup/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "クリアプロ クッションクレンジング オイル",
+        "クリアプロ 酵素クレンジング オイル",
+        "スピーディ クレンジングオイル"
+      ]
+    },
+    {
+      "name": "ソルファス",
+      "registered": 10,
+      "supplemental": 0,
+      "searchable": 10,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "潤燥ファーストケア アクティブセラムVI",
+        "滋陰生コンセントレート GRセラムAP",
+        "滋陰生コンセントレートGRクリーム"
+      ]
+    },
+    {
+      "name": "ダーマセプトRX",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ちふれ",
+      "registered": 11,
+      "supplemental": 0,
+      "searchable": 11,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.chifure.co.jp/products/skinlotion/2871",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "保湿化粧水 とてもしっとりタイプ",
+        "保湿化粧水 さっぱりタイプ",
+        "保湿化粧水 しっとりタイプ"
+      ]
+    },
+    {
+      "name": "デ・オウ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "デオカラット",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "デオコ",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スカルプケアシャンプー",
+        "スカルプケアコンディショナー"
+      ]
+    },
+    {
+      "name": "ドクターフィル コスメティクス",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "トランシーノ",
+      "registered": 14,
+      "supplemental": 0,
+      "searchable": 14,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.daiichisankyo-hc.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用ブライトニングクリアローション",
+        "薬用UVプロテクター",
+        "薬用トーンアップCCクリーム マルチベージュ"
+      ]
+    },
+    {
+      "name": "ナイーブ",
+      "registered": 12,
+      "supplemental": 0,
+      "searchable": 12,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kracie.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ボディソープ（桃の葉エキス配合）",
+        "ボディソープ（アロエエキス配合）",
+        "リフレッシュボディソープ（海泥配合）"
+      ]
+    },
+    {
+      "name": "なめらか本舗",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://noevirgroup.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "水クレンジング",
+        "マイルド化粧水 NC",
+        "マイクロミスト化粧水"
+      ]
+    },
+    {
+      "name": "ネイルホリック",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ノブ",
+      "registered": 40,
+      "supplemental": 0,
+      "searchable": 40,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://noevirgroup.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "Ⅲ フェイスローション R（しっとりタイプ）",
+        "ノブ III クレンジングクリーム",
+        "ノブ III ウォッシングクリーム"
+      ]
+    },
+    {
+      "name": "ハンユル",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ヨモギ スージングトナーパッド"
+      ]
+    },
+    {
+      "name": "ビオリス",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ビオレ",
+      "registered": 7,
+      "supplemental": 0,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "おうちdeエステ ジェル洗顔 肌なめらかクリア",
+        "ザフェイス 泡洗顔料 ディープモイスト",
+        "ザフェイス 泡洗顔料 モイスト"
+      ]
+    },
+    {
+      "name": "ビタプル",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ビフェスタ",
+      "registered": 10,
+      "supplemental": 0,
+      "searchable": 10,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.mandom.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ミセラークレンジングウォーター ブライトアップ",
+        "セラム クレンジングオイル",
+        "ミセラー クレンジングウォーター"
+      ]
+    },
+    {
+      "name": "ビヨンド",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ビヨンド エンジェルアクア 水分クリーム",
+        "ビヨンド エンジェルアクア デイリービッグトナー"
+      ]
+    },
+    {
+      "name": "ビリーフ",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ザ トゥルー クリーム アクアボム"
+      ]
+    },
+    {
+      "name": "ファシオ",
+      "registered": 0,
+      "supplemental": 8,
+      "searchable": 8,
+      "rc187Added": 0,
+      "officialListingUrl": "https://maison.kose.co.jp/site/fasio/c/c40/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "BB ティント UV カバー キット",
+        "うるおい整う クリーム下地（しっかりカバー）",
+        "眉尻消えない リキッド アイブロウ"
+      ]
+    },
+    {
+      "name": "ファンケル",
+      "registered": 7,
+      "supplemental": 0,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.fancl.co.jp/beauty/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "BC 化粧液",
+        "マイルドクレンジング オイル",
+        "マイルドクレンジング オイル"
+      ]
+    },
+    {
+      "name": "フィルナチュラント",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "フォルミュール",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "プリオール",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用 高保湿化粧水（さらっとしっとり）",
+        "薬用 高保湿化粧水（しっとり）",
+        "薬用 高保湿化粧水（とてもしっとり）"
+      ]
+    },
+    {
+      "name": "プリメラ",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ビタチノール バウンシー リフト セラム",
+        "ビタチノール バウンシー リフト セラム"
+      ]
+    },
+    {
+      "name": "ブルーミオ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "プレディア",
+      "registered": 27,
+      "supplemental": 0,
+      "searchable": 27,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スパ・エ・メール ファンゴ W クレンズ",
+        "ファンゴ ヘッドクレンズ SPA+ <250g>",
+        "スパ・エ・メール ブラン コンフォール クリア ジェルウォッシュ"
+      ]
+    },
+    {
+      "name": "フローラノーティス ジルスチュアート",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "プロメディアル",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "プロリー",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ベネフィーク",
+      "registered": 37,
+      "supplemental": 0,
+      "searchable": 37,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "リセットクリア N",
+        "セラム",
+        "ローション"
+      ]
+    },
+    {
+      "name": "ヘラ",
+      "registered": 19,
+      "supplemental": 0,
+      "searchable": 19,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://jp.hera.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ハイドロ リフレクティング トナー",
+        "ブラック クッション ファンデーション",
+        "ブラック クッションメッシュパウダー"
+      ]
+    },
+    {
+      "name": "ポーラ",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.pola.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アロマエッセゴールド シャンプー N"
+      ]
+    },
+    {
+      "name": "マキアージュ",
+      "registered": 15,
+      "supplemental": 0,
+      "searchable": 15,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ドラマティックエッセンスルージュ PK301 未来予想",
+        "カスタマイズアイカラー アソート",
+        "カスタマイズアイカラー シングル"
+      ]
+    },
+    {
+      "name": "マジョリカ マジョルカ",
+      "registered": 19,
+      "supplemental": 0,
+      "searchable": 19,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "マジカルカラーベース",
+        "ラッシュエキスパンダー ネオラッシュ",
+        "ラッシュエキスパンダー 孔雀ロング"
+      ]
+    },
+    {
+      "name": "マニフィーク",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "マモンド",
+      "registered": 1,
+      "supplemental": 0,
+      "searchable": 1,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.apgroup.com/jp/ja/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ポアシュリンカー バクチオールセラム"
+      ]
+    },
+    {
+      "name": "ミノン",
+      "registered": 24,
+      "supplemental": 0,
+      "searchable": 24,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.daiichisankyo-hc.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "アミノモイスト モイストチャージ ミルク",
+        "アミノモイスト エッセンスクレンジングオイル",
+        "アミノモイスト モイストミルキィクレンジング"
+      ]
+    },
+    {
+      "name": "メイクキープミスト",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "メラノCC",
+      "registered": 2,
+      "supplemental": 0,
+      "searchable": 2,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用しみ対策 美白化粧水",
+        "薬用しみ対策 美白化粧水しっとりタイプ"
+      ]
+    },
+    {
+      "name": "メルティクリームリップ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ラッシュリッチ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ラネージュ",
+      "registered": 17,
+      "supplemental": 0,
+      "searchable": 17,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://jp.laneige.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "クリームスキン ローション",
+        "ジェルクリームスキンローション",
+        "ウォーターバンク モイスチャークリーム"
+      ]
+    },
+    {
+      "name": "ラビオーム",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "リップフォンデュ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "リップベビー",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "リバイタル",
+      "registered": 13,
+      "supplemental": 0,
+      "searchable": 13,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "スキンハイドレーター",
+        "リバイタル アイゾーンブースター",
+        "リバイタル ナイトアイコルセット"
+      ]
+    },
+    {
+      "name": "リフレア",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "リペアワン",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "リンクルショット",
+      "registered": 5,
+      "supplemental": 0,
+      "searchable": 5,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.pola.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "メディカル セラム N",
+        "リンクルショット メディカル セラム デュオ",
+        "リンクルショット ローション"
+      ]
+    },
+    {
+      "name": "ルシード",
+      "registered": 21,
+      "supplemental": 0,
+      "searchable": 21,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.mandom.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用トータルケア化粧水",
+        "EXオイルクリア泡洗顔",
+        "EXオイルクリア洗顔フォーム"
+      ]
+    },
+    {
+      "name": "ルシェリ",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "ルナメア",
+      "registered": 9,
+      "supplemental": 0,
+      "searchable": 9,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.fujifilm.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "AC スキンコンディショナー しっとりタイプ",
+        "AC クレンジングオイル",
+        "AC ファイバーフォーム"
+      ]
+    },
+    {
+      "name": "ロート製薬",
+      "registered": 3,
+      "supplemental": 0,
+      "searchable": 3,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ブルーミオ ディープモイストローション",
+        "ブルーミオ ディープブーストセラム",
+        "ブルーミオ モイストリペアクリーム"
+      ]
+    },
+    {
+      "name": "綾花",
+      "registered": 7,
+      "supplemental": 0,
+      "searchable": 7,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.chifure.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "潤肌実 化粧水",
+        "ブライト エンパワリング アミュレット セラム",
+        "ブライトニング アミュレット ローション [モイスト]"
+      ]
+    },
+    {
+      "name": "花王",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kao-kirei.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "資生堂",
+      "registered": 9,
+      "supplemental": 0,
+      "searchable": 9,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shiseido.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "SHISEIDO バイタルパーフェクション ブライトリバイタル ローション",
+        "SHISEIDO ベネフィアンス リンクル スムージング コントア セラム",
+        "SHISEIDO ベネフィアンス リンクル スムージングデーエマルジョン"
+      ]
+    },
+    {
+      "name": "雪肌精",
+      "registered": 14,
+      "supplemental": 0,
+      "searchable": 14,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kose.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "薬用雪肌精 ブライトニング エッセンス ローション",
+        "薬用雪肌精 ブライトニング クレンジング オイル",
+        "薬用雪肌精 ブライトニング クリーム ウォッシュ"
+      ]
+    },
+    {
+      "name": "雪肌精BLUE",
+      "registered": 0,
+      "supplemental": 17,
+      "searchable": 17,
+      "rc187Added": 17,
+      "officialListingUrl": "https://maison.kose.co.jp/site/sekkiseiblue/c/c88/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "ディープ ハイドレイティング エッセンス リキッド Ⅰ",
+        "ディープ ハイドレイティング エッセンス リキッド Ⅱ",
+        "バウンス バランシング オイル"
+      ]
+    },
+    {
+      "name": "白茶爽",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    },
+    {
+      "name": "肌ラボ",
+      "registered": 16,
+      "supplemental": 0,
+      "searchable": 16,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.shop.rohto.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "極潤UVホワイトゲル",
+        "極潤ヒアルロン液",
+        "極潤ヒアルロン液（大容量ポンプ）"
+      ]
+    },
+    {
+      "name": "肌美精",
+      "registered": 33,
+      "supplemental": 0,
+      "searchable": 33,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.kracie.co.jp/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "CHOI薬用マスク 肌・毛穴ケア",
+        "CHOI薬用フェイスウォッシュ ニキビケア",
+        "CHOI薬用泡洗顔 ニキビケア"
+      ]
+    },
+    {
+      "name": "米肌",
+      "registered": 0,
+      "supplemental": 13,
+      "searchable": 13,
+      "rc187Added": 13,
+      "officialListingUrl": "https://maison.kose.co.jp/site/mk_maihada/c/c4710/",
+      "brandSiteUrl": null,
+      "sourceKind": "individual-reviewed-japanese-brand-lineup",
+      "status": "name-registered",
+      "sampleProducts": [
+        "肌潤化粧水",
+        "肌潤化粧水（つめかえ用）",
+        "肌潤美白化粧水"
+      ]
+    },
+    {
+      "name": "無印良品",
+      "registered": 24,
+      "supplemental": 0,
+      "searchable": 24,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": "https://www.muji.com/",
+      "sourceKind": "brand-or-maker-homepage-not-product-list-verified",
+      "status": "name-registered",
+      "sampleProducts": [
+        "敏感肌用化粧水 高保湿",
+        "敏感肌用化粧水 高保湿（携帯用）",
+        "敏感肌用化粧水 高保湿（詰替用）"
+      ]
+    },
+    {
+      "name": "糀肌",
+      "registered": 0,
+      "supplemental": 0,
+      "searchable": 0,
+      "rc187Added": 0,
+      "officialListingUrl": null,
+      "brandSiteUrl": null,
+      "sourceKind": "not-reviewed",
+      "status": "no-product-names",
+      "sampleProducts": []
+    }
+  ]
+}
