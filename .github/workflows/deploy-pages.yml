@@ -672,7 +672,7 @@ jobs:
           const advancedContent=essentialHtml.slice(advancedStart,advancedEnd);
           if(!essentialHtml.includes('<h1>成分から、<em>一輪の花へ。</em></h1>')||
              !essentialHtml.includes('href="minimal-ui.css"')||
-             !essentialHtml.includes('app.js?v=github-pages-102-v1.0.1-skin1004-rc185')||
+             !essentialHtml.includes('app.js?v=github-pages-102-v1.0.1-brand-catalog-rc186')||
              !essentialHtml.includes('id="query"')||
              !essentialHtml.includes('id="searchBtn"')||
              !essentialHtml.includes('data-tab="search"')||
@@ -705,16 +705,57 @@ jobs:
              !skinIndex.includes("registrationStatus:'name-only'")||
              !skinIndex.includes("sourceScope")||
              !skinIndex.includes('法定日本語成分表示')||
-             !skinApp.includes("from './skin1004-jp-names-rc185.js'")||
-             !skinApp.includes('skin1004JapanSearchMatches(q)')||
-             !skinApp.includes("productsForBrand('SKIN1004')")||
-             !skinIndexHtml.includes('app.js?v=github-pages-102-v1.0.1-skin1004-rc185')||
+             !skinApp.includes("from './brand-catalog-supplements-rc186.js'")||
+             !skinApp.includes('supplementalMatchesRC186(q)')||
+             !skinApp.includes('supplementalProductsForBrandRC186(brand)')||
+             !skinIndexHtml.includes('app.js?v=github-pages-102-v1.0.1-brand-catalog-rc186')||
              !skinSW.includes('skin1004-jp-names-rc185.js')||
              !fs.readFileSync('_site/README.md','utf8').includes('SKIN1004')||
              fs.existsSync('_site/docs/rc185-skin1004-domestic-name-catalog-20261105.md')||
              fs.existsSync('_site/handoff/STATE.json'))
            throw Error('rc185 Japan-facing SKIN1004 24-name supplement or no-ingredient safety checks failed');
           console.log('Verified rc185 SKIN1004: 24 name-only supplemental products, 25 total search candidates, unchanged 600/1248/172 evidence.');
+
+          // rc186: whole-scope coverage from actual source identities, not invented SKU/INCI.
+          const brandCoverage=JSON.parse(fs.readFileSync('_site/brand-catalog-coverage-rc186.json','utf8'));
+          const brandReport=fs.readFileSync('_site/brand-catalog-coverage-rc186.html','utf8');
+          const newNames=fs.readFileSync('_site/brand-catalog-supplements-rc186.js','utf8');
+          const majorScope=fs.readFileSync('_site/major-maker-scope.js','utf8');
+          const overview=fs.readFileSync('_site/resources.html','utf8');
+          const brandTotals=brandCoverage.summary;
+          if(brandCoverage.rows?.length!==201||
+             brandTotals.eligibleBrandNames!==201||
+             brandTotals.registeredBrandNames!==102||
+             brandTotals.noRegisteredBrandNames!==99||
+             brandTotals.brandsWithSearchableCandidates!==109||
+             brandTotals.brandsWithoutSearchableCandidates!==92||
+             brandTotals.officialNewNames!==49||
+             brandTotals.skin1004PreviouslyAddedNames!==24||
+             brandTotals.supplementalNameOnlyTotal!==73||
+             brandTotals.originalRegisteredProducts!==2163||
+             brandTotals.unchangedPriorityScope!==2020||
+             brandTotals.unchangedCompleteFormulas!==600||
+             brandTotals.unchangedPartialIngredientEvidence!==1248||
+             brandTotals.unchangedUnverified!==172||
+             new Set(brandCoverage.rows.map(x=>x.name)).size!==201||
+             brandCoverage.rows.filter(x=>x.searchable===0).length!==92||
+             !newNames.includes("registrationStatus:'name-only'")||
+             (newNames.match(/\n \['/g)||[]).length<7||
+             !majorScope.includes('activeMajorMakerBrands.map(brandKey)')||
+             !skinApp.includes('productsForBrandWithSupplements')||
+             !skinApp.includes('現時点で商品名を確認して登録した候補がありません')||
+             !skinIndexHtml.includes('href="brand-catalog-coverage-rc186.html"')||
+             !overview.includes('href="brand-catalog-coverage-rc186.html"')||
+             !brandReport.includes('encodeURIComponent(x.name)')||
+             !brandReport.includes('商品名未登録')||
+             !skinSW.includes('brand-catalog-supplements-rc186.js')||
+             !skinSW.includes('brand-catalog-coverage-rc186.html')||
+             !skinSW.includes('brand-catalog-coverage-rc186.json')||
+             fs.existsSync('_site/docs/rc186-brand-wide-catalog-review-20261106.md')||
+             fs.existsSync('_site/handoff/STATE.json'))
+            throw Error('rc186 201-brand coverage, new 49 name-only candidates or public/private boundary invalid');
+          console.log('Verified rc186: 201 eligible brands, 109 with candidates / 92 unregistered, 49 new official names; formulas unchanged.');
+
 
 
 

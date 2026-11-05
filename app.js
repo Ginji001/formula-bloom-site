@@ -27,8 +27,8 @@ import {japaneseIngredientLabel} from './japan-market.js';
 import {isJapaneseIngredientsList,isJapaneseMarketURL} from './japan-market-policy.js';
 import {cleanPastedProductName} from './product-query.js';
 import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProducts,findManufacturerProducts,manufacturerQuery,chooseExactRegisteredProduct,productFold} from './registered-products.js';
-import {isMajorMakerBrand,isMajorMakerProduct,activeMajorMakerNames,majorMakerCounts,excludedFromMajorMakerBrands} from './major-maker-scope.js';
-import {skin1004JapanSearchAdditions,skin1004JapanSearchMatches} from './skin1004-jp-names-rc185.js';
+import {isMajorMakerBrand,isMajorMakerProduct,activeMajorMakerNames,activeMajorMakerBrands,majorMakerCounts,excludedFromMajorMakerBrands} from './major-maker-scope.js';
+import {allBrandNameSupplementsRC186,supplementalProductsForBrandRC186,supplementalMatchesRC186} from './brand-catalog-supplements-rc186.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
@@ -1264,6 +1264,11 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
    message.textContent='SKIN1004の日本向け掲載商品を追加しました。追加分は商品名・確認できた容量のみで、日本国内向け法定全成分と現物表示は未確認です。';
    holder.append(message);
   }
+  if(products.some(p=>p.id.startsWith('rc186-'))){
+   const notice=document.createElement('p');notice.className='muted brand-listing-note';
+   notice.textContent='新規の公式商品一覧から名称を確認した参考候補です。個別SKUの全成分・JAN・現在の製品処方は未確認です。';
+   holder.append(notice);
+  }
   const lead=document.createElement('p');lead.className='product-choice-count';
   const totalReady=products.filter(itemHasArchiveInCatalog).length;
   lead.textContent='商品候補 '+families.length+'組（'+products.length+'商品）／掲載全成分あり '+totalReady+'商品';
@@ -1403,12 +1408,13 @@ async function openBrandProducts(brand){
 }
 function openBrandOrManufacturer(brand){
  if(!isMajorMakerBrand(brand)&&!activeMajorMakerNames.includes(brand)){showScopeExcluded(brand);return;}
- if(findManufacturerProducts(brand).length)search();
- else openBrandProducts(brand);
+ const entries=productsForBrandWithSupplements(brand);
+ if(entries.length){presentRegisteredProducts(entries,brand);return;}
+ $('query').value=brand;
+ search();
 }
 function productsForBrandWithSupplements(brand){
-  const core=productsForBrand(brand);
-  return productFold(brand)==='skin1004'?[...core,...skin1004JapanSearchAdditions]:core;
+  return [...productsForBrand(brand),...supplementalProductsForBrandRC186(brand)];
 }
 function presentRegisteredBrand(brand){
   const entries=productsForBrandWithSupplements(brand);
@@ -1420,7 +1426,9 @@ let provisionalBrands=null,provisionalLoading=false;
 function quickRegisteredBrands(){
   const zone=$('registeredQuick');if(!zone)return;
   zone.replaceChildren();
-  const all=provisionalBrands||registeredBrands.map(name=>({name,aliases:[name]}));
+  const verified=provisionalBrands||registeredBrands.map(name=>({name,aliases:[name]}));
+  const known=new Map(verified.map(b=>[b.name,b]));
+  const all=activeMajorMakerBrands.map(name=>known.get(name)||({name,aliases:[name]}));
   const q=$('registeredBrandFilter').value.trim();
   const matches=all.filter(b=>isMajorMakerBrand(b.name)&&(!q||brandQueryMatches(b,q)));
   let productBrands=0;
@@ -1437,11 +1445,8 @@ function quickRegisteredBrands(){
     };
     zone.append(b);
   }
-  $('registeredBrandCounts').textContent=provisionalBrands?
-    '通常表示は主要メーカー対象 '+majorMakerCounts.registeredBrandsActive+'ブランド（旧147ブランド台帳は履歴保持） ／ 商品候補あり '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrandWithSupplements(b.name).length>0).length+
-    'ブランド ／ 商品名未登録 '+all.filter(b=>isMajorMakerBrand(b.name)&&productsForBrandWithSupplements(b.name).length===0).length+
-    'ブランド。全商品を収録した意味ではありません。':
-    '商品候補のあるブランドを表示中。開くと全147ブランドの仮登録を読み込みます。';
+  const withNames=all.filter(b=>productsForBrandWithSupplements(b.name).length>0).length;
+  $('registeredBrandCounts').textContent='検索対象 '+all.length+'ブランド ／ 商品候補あり '+withNames+'ブランド ／ 商品名未登録 '+(all.length-withNames)+'ブランド。収録状況は全商品の網羅を意味しません。';
   if(!matches.length)zone.textContent='該当するブランドはありません。';
 }
 quickRegisteredBrands();
@@ -1469,12 +1474,27 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
+if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).length){
+ const holder=$('searchResults');holder.replaceChildren();
+ const heading=document.createElement('p');heading.className='selected-product-state';
+ heading.textContent=q+'：検索対象ブランドですが、現時点で商品名を確認して登録した候補がありません。未掲載・販売終了の証明ではありません。';
+ holder.append(heading);
+ const link=document.createElement('a');link.href='brand-catalog-coverage-rc186.html';
+ link.textContent='全ブランドの登録状況を見る';holder.append(link);
+ appendDomesticResearchLink(holder,q);
+ const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='日本語全成分を自分で入力';
+ b.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(b);
+ return;
+}
 if(!forceOfficial&&!/^https:\/\//.test(q)){
- const extra=skin1004JapanSearchMatches(q);
+ const extra=supplementalMatchesRC186(q);
  if(extra.length){
-  const brandOnly=['skin1004','スキン1004','スキンワンオーオーフォー'].includes(productFold(q));
-  const existing=brandOnly?productsForBrand('SKIN1004'):findRegisteredProducts(q).map(x=>x.product).filter(x=>x.brand==='SKIN1004');
-  presentRegisteredProducts([...existing,...extra],'SKIN1004 日本向け掲載名');
+  const majorMatches=activeMajorMakerBrands.filter(b=>productFold(b)===productFold(q));
+  const existing=majorMatches.length?
+    majorMatches.flatMap(productsForBrand):
+    findRegisteredProducts(q).map(x=>x.product).filter(isMajorMakerProduct);
+  const combined=[...new Map([...existing,...extra].map(p=>[p.id,p])).values()];
+  presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');
   return;
  }
 }
@@ -1826,6 +1846,13 @@ $('shareImage').onclick=async()=>{
  catch(e){$('shareStatus').textContent='共有できませんでした：'+e.message;}
 };
 
+// Brand coverage index opens the main app with a local name-only query. No URL fetch.
+const requestedBrandQuery=new URLSearchParams(location.search).get('q');
+if(requestedBrandQuery&&!new URLSearchParams(location.search).has('productId')&&
+ requestedBrandQuery.length>=2&&requestedBrandQuery.length<=100&&!/^https?:/i.test(requestedBrandQuery)){
+ $('query').value=requestedBrandQuery;
+ search();
+}
 // Internal fixed-catalog deep link from the case-status table. Never read or transmit an arbitrary URL.
 const requestedCaseId=new URLSearchParams(location.search).get('productId');
 if(requestedCaseId){

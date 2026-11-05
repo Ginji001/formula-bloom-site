@@ -568,3 +568,5 @@ main > .site-footer { margin-top: 22px; }
   font-weight: 630;
   box-shadow: none;
 }
+
+.input-card .extra-tools__body > .catalog-coverage-link {display:block;padding:8px 12px;margin:0;border-radius:9px;background:#edf4ee;color:#3a6549;text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:600;}
