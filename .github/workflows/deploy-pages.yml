@@ -592,7 +592,7 @@ jobs:
              !stablePrivacy.includes('最終更新：2026年11月5日')||
              !stableTerms.includes('v1.0.1')||
              !stableReadme.includes('公開版 v1.0.1')||
-             !stableReadme.includes('無期限の商品収集は正式版の完成条件にしません')||
+             !stableReadme.includes('商品網羅を優先します')||
              fs.existsSync('_site/PRODUCT_POLICY.md')||
              fs.existsSync('_site/docs/history')||
              /公開前ドラフト|一般公開しません/.test(stablePrivacy+stableTerms)||
@@ -600,6 +600,23 @@ jobs:
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
             throw Error('v1.0.0 stable release scope, policies or private-file boundaries failed');
           console.log('Verified stable v1.0.0: 600 complete / 1248 partial / 172 unverified, versioned static runtime and no fake 100% coverage.');
+          // Coverage-first 2026-11-10: preserve historical stable 1.0.0 data, verify incremental references separately.
+          const coverageFirst=JSON.parse(fs.readFileSync('_site/coverage-first-status-20261110.json','utf8'));
+          const additionsFirst=JSON.parse(fs.readFileSync('_site/ingredient-listing-expansions-20261110.json','utf8'));
+          const coverageApp=fs.readFileSync('_site/app.js','utf8');
+          if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
+             coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
+             coverageFirst.remainingUnverified.length!==163||coverageFirst.previouslyUnknownNowReferenced!==9||
+             additionsFirst.records.length!==11||new Set(additionsFirst.records.map(x=>x.productId)).size!==11||
+             !coverageApp.includes('/ingredient-listing-expansions-20261110.json')||
+             !coverageApp.includes('breadthBrandNames')||
+             !stableHome.includes('coverage-first-status-20261110.json')||
+             !stableReadme.includes('商品網羅を優先します')||
+             coverageFirst.fullJapaneseFormulas+coverageFirst.partialIngredientReferences+
+             coverageFirst.withoutIngredientNames!==2020)
+             throw Error('Coverage-first 2026-11-10 facts, UI, or baseline reconciliation invalid');
+          console.log('Verified coverage-first: 2163 searchable products, 201 brand candidates; 600 full / 1257 reference / 163 unknown.');
+
 
           // v1.0.1: public support channel; never ask for personal data on public Issues.
           const feedbackPage=fs.readFileSync('_site/support.html','utf8');
