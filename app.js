@@ -151,8 +151,10 @@ function partialEvidence(){
     sourceActiveIngredientNames:record.sourceActiveIngredientNames||[],
     sourceOtherIngredientNames:record.ingredients.filter(name=>!(record.sourceActiveIngredientNames||[]).includes(name)),
     ingredients:record.ingredients,ingredientCount:record.ingredients.length,
-    sourceSectionHeading:'メーカーの商品ページの掲載成分',
-    sourceScopeCaution:'掲載ページの成分名を参考収録。現物・最新処方は未照合。'};
+    sourceSectionHeading:record.sourceObservedTitle||'メーカーの商品ページの掲載成分',
+    sourceScopeCaution:record.sourceScope==='manufacturer-outlet-discontinued-or-historical'?
+     'メーカーのアウトレット掲載時の成分。販売終了・旧処方の可能性があり、現行商品への一致は未照合。':
+     '掲載ページの成分名を参考収録。現物・最新処方は未照合。'};
   });
   return [...upgraded,...added];
  }).catch(e=>{partialEvidencePromise=null;throw e;});
