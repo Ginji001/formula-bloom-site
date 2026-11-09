@@ -93,7 +93,7 @@ $('readyFormulas').onclick=async()=>{
   const archive=await formulaArchive();
   if(ctx.version!==lookupVersion)return;
   if(!archive)throw Error('全成分の保存版を読み込めませんでした。再度お試しください。');
-  const ready=productsWithVerifiedArchive(registeredProducts,archive,isMajorMakerProduct);
+  const ready=productsWithVerifiedArchive(registeredProducts,archive,()=>true);
   if(!ready.length)throw Error('日本語全成分を表示できる商品がありません。');
   presentRegisteredProducts(ready,'日本語全成分の保存版がある商品');
   const intro=document.createElement('p');intro.className='muted formula-ready-intro';
@@ -213,7 +213,7 @@ function useStoredFormula(record){
  // product search → source-backed Japanese ingredient snapshot → educational flower.
  // A saved manufacturer's listing is NEVER claimed to match today's physical batch.
 async function showArchivedRegisteredFormula(item,ctx=null){
- if(!isMajorMakerProduct(item)){showScopeExcluded(item?.brand);return;}
+
  ctx=ctx||beginLookup();
  $('searchResults').textContent='日本語全成分の確認済み保存版を読み込んでいます…';
  const archive=await storedFormulaFor(item);
@@ -1196,7 +1196,7 @@ function showPartialChoices(container,item){
  };
 }
 function selectRegisteredFormula(item,context=''){
-  if(!isMajorMakerProduct(item)){showScopeExcluded(item?.brand);return;}
+
   $('query').value=item.brand+' '+item.name;
   if(item.registrationStatus==='name-only'&&!itemHasArchiveInCatalog(item)){
     beginLookup();invalidate();remoteProduct=null;official=false;
@@ -1313,8 +1313,7 @@ function addProductFamily(container,family,query='',before=null){
   }
 }
 function presentRegisteredProducts(products,heading='日本向け商品'){
- products=products.filter(isMajorMakerProduct);
- if(!products.length){showScopeExcluded(heading);return;}
+ if(!products.length){$('searchResults').textContent='登録商品が見つかりません。';return;}
   const holder=$('searchResults');holder.replaceChildren();
   const families=productFamilies(products);
   if(products.some(p=>p.id.startsWith('rc185-skin1004-'))){
@@ -1392,8 +1391,7 @@ function presentRegisteredProducts(products,heading='日本向け商品'){
   holder.append(fallback);
 }
 function showBrandProducts(data){
- if(data.brand&&!isMajorMakerBrand(data.brand.name)){showScopeExcluded(data.brand.name);return;}
- if(data.products)data={...data,products:data.products.filter(p=>!p.brand||isMajorMakerBrand(p.brand))};
+
   if(data.products?.length&&data.products.every(item=>item.id&&registeredProducts.some(p=>p.id===item.id))){
    presentRegisteredProducts(data.products,data.brand?.name||'ブランド');
    return;
@@ -1448,7 +1446,7 @@ function showBrandProducts(data){
   appendRetailLinks(fallback,data);holder.append(fallback);
 }
 async function openBrandProducts(brand){
- if(!isMajorMakerBrand(brand)){showScopeExcluded(brand);return;}
+
   const ctx=beginLookup();
   $('searchResults').textContent='商品を探しています…';
   busy(true);
@@ -1465,7 +1463,7 @@ async function openBrandProducts(brand){
   }finally{if(ctx.version===lookupVersion)busy(false);}
 }
 function openBrandOrManufacturer(brand){
- if(!isMajorMakerBrand(brand)&&!activeMajorMakerNames.includes(brand)){showScopeExcluded(brand);return;}
+
  const entries=productsForBrandWithSupplements(brand);
  if(entries.length){presentRegisteredProducts(entries,brand);return;}
  $('query').value=brand;
@@ -1481,14 +1479,15 @@ function presentRegisteredBrand(brand){
   return true;
 }
 let provisionalBrands=null,provisionalLoading=false;
+let breadthBrandNames=[];
 function quickRegisteredBrands(){
   const zone=$('registeredQuick');if(!zone)return;
   zone.replaceChildren();
   const verified=provisionalBrands||registeredBrands.map(name=>({name,aliases:[name]}));
   const known=new Map(verified.map(b=>[b.name,b]));
-  const all=activeMajorMakerBrands.map(name=>known.get(name)||({name,aliases:[name]}));
+  const all=[...new Set([...activeMajorMakerBrands,...registeredBrands,...breadthBrandNames])].map(name=>known.get(name)||({name,aliases:[name]}));
   const q=$('registeredBrandFilter').value.trim();
-  const matches=all.filter(b=>isMajorMakerBrand(b.name)&&(!q||brandQueryMatches(b,q)));
+  const matches=all.filter(b=>!q||brandQueryMatches(b,q));
   let productBrands=0;
   for(const brand of matches){
     const count=productFamilies(productsForBrandWithSupplements(brand.name)).length;
@@ -1508,6 +1507,10 @@ function quickRegisteredBrands(){
   if(!matches.length)zone.textContent='該当するブランドはありません。';
 }
 quickRegisteredBrands();
+getJSON('/brand-catalog-coverage-rc188.json').then(data=>{
+ breadthBrandNames=Array.isArray(data?.rows)?data.rows.map(row=>row.name).filter(Boolean):[];
+ quickRegisteredBrands();
+}).catch(()=>{});
 $('registeredBrandFilter').oninput=quickRegisteredBrands;
 $('registeredBrandDirectory').ontoggle=async()=>{
   if(!$('registeredBrandDirectory').open||provisionalBrands||provisionalLoading)return;
@@ -1532,7 +1535,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
-if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).length){
+if(!forceOfficial&&(registeredBrands.includes(q)||breadthBrandNames.includes(q))&&!productsForBrandWithSupplements(q).length){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('p');heading.className='selected-product-state';
  heading.textContent=q+'：検索対象ブランドですが、現時点で商品名を確認して登録した候補がありません。未掲載・販売終了の証明ではありません。';
@@ -1549,10 +1552,10 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  extra.push(...nameOnlyMatchesRC187(q));
  extra.push(...nameOnlyMatchesRC188(q));
  if(extra.length){
-  const majorMatches=activeMajorMakerBrands.filter(b=>productFold(b)===productFold(q));
+  const majorMatches=registeredBrands.filter(b=>productFold(b)===productFold(q));
   const existing=majorMatches.length?
     majorMatches.flatMap(productsForBrand):
-    findRegisteredProducts(q).map(x=>x.product).filter(isMajorMakerProduct);
+    findRegisteredProducts(q).map(x=>x.product);
   const existingAliasIds=new Set(extra.map(p=>p.existingCatalogProductId).filter(Boolean));
   const combined=[...new Map([...existing.filter(p=>!existingAliasIds.has(p.id)),...extra].map(p=>[p.id,p])).values()];
   presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');
@@ -1583,11 +1586,11 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   }catch(e){if(e.name==='AbortError'||ctx.version!==lookupVersion)return;}
 }
 const allRegisteredMatches=findRegisteredProducts(q);
-const matches=allRegisteredMatches.filter(x=>isMajorMakerProduct(x.product));
+const matches=allRegisteredMatches;
 if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   if(!instant){
     const candidate=chooseExactRegisteredProduct(q);
-    const matched=isMajorMakerProduct(candidate)?candidate:null;
+    const matched=candidate;
     if(matched){
       if(matched.registrationStatus==='name-only'){selectRegisteredFormula(matched);return;}
       $('searchResults').textContent='日本公式の商品情報を確認しています：'+matched.brand+' '+matched.name;
@@ -1598,7 +1601,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   presentRegisteredProducts(matches.map(x=>x.product));
   return;
 }
-if(!forceOfficial&&(allRegisteredMatches.length&&!matches.length||excludedFromMajorMakerBrands.some(b=>productFold(b)===productFold(q)))){showScopeExcluded(allRegisteredMatches[0]?.product.brand||q);return;}
+
 busy(true);$('searchResults').textContent='候補を探しています…';$('officialStatus').textContent='';try{if(/^https:\/\//.test(q)){
  if(!instant){
   const known=registeredProducts.some(p=>p.url===q);
@@ -1607,7 +1610,7 @@ busy(true);$('searchResults').textContent='候補を探しています…';$('of
   else $('officialStatus').textContent='安全なHTTPSの掲載元URLを確認してください。';
  }
  $('searchResults').textContent='';return;
-}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;if(data.brand&&!isMajorMakerBrand(data.brand.name)){showScopeExcluded(data.brand.name);return;}$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='商品が見つかりません。';
+}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='商品が見つかりません。';
  const fallback=document.createElement('details');fallback.className='search-extra-actions';
  const summary=document.createElement('summary');summary.textContent='掲載元を探す';fallback.append(summary);
  if(data.brand?.japanSiteVerified&&data.brand.site)sourceLink(fallback,data.brand.site,data.brand.name+'の掲載元候補（要確認）');
@@ -1815,7 +1818,7 @@ function showBrands(){
   if(!brandCatalog)return;
   const query=$('brandFilter').value.trim();
   const foldQuery=productFold(query);
-  const matches=brandCatalog.brands.filter(b=>b.id!==null&&isMajorMakerBrand(b.name)&&(!query||brandQueryMatches(b,query)||
+  const matches=brandCatalog.brands.filter(b=>b.id!==null&&(!query||brandQueryMatches(b,query)||
     productFold(b.maker).includes(foldQuery)||
     productsForBrand(b.name).some(p=>productFold(p.series||'').includes(foldQuery)&&!!p.series)));
   $('brandList').replaceChildren();
@@ -1859,13 +1862,13 @@ function showBrands(){
   const verifiedFormulas=[...verifiedBrandCounts.values()].reduce((sum,count)=>sum+count,0);
   const partialOnly=[...partialBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)).length;
   const englishOnly=[...englishInciBrandCounts].filter(([brand,n])=>n>0&&!verifiedBrandCounts.get(brand)&&!partialBrandCounts.get(brand)).length;
-  $('brandCounts').textContent='通常検索は主要メーカー '+majorMakerCounts.registeredBrandsActive+'ブランド・'+majorMakerCounts.registeredActive+'商品名。以前の台帳（147ブランド）は保存しています。　／ 旧台帳内：登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド ／ 英語INCI参考 '+englishOnly+'ブランド（国内未収録に含む） ／ 言語を問わず成分記録なし '+(registeredBrandCount-verifiedBrands-partialOnly-englishOnly)+'ブランド。全商品の網羅ではありません。';
+  $('brandCounts').textContent='通常検索は登録済み '+registeredBrandCount+'ブランド・'+registeredProducts.length+'商品名。　／ 登録 '+registeredBrandCount+'ブランド ／ 全成分 '+verifiedBrands+'ブランド・'+verifiedFormulas+'処方 ／ 判明成分のみ '+partialOnly+'ブランド ／ 成分未収録 '+(registeredBrandCount-verifiedBrands-partialOnly)+'ブランド ／ 英語INCI参考 '+englishOnly+'ブランド（国内未収録に含む） ／ 言語を問わず成分記録なし '+(registeredBrandCount-verifiedBrands-partialOnly-englishOnly)+'ブランド。全商品の網羅ではありません。';
   if(!matches.length)$('brandList').textContent='該当ブランドは未登録です。国内販売店の掲載元でも商品名を調べられます。';
 }
-const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧（主要メーカーのみ表示）</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
+const makerPanel=document.createElement('details');makerPanel.id='makerDirectory';makerPanel.innerHTML='<summary>メーカー別ブランド一覧</summary><input id="makerFilter" type="search" placeholder="メーカー・ブランド名で検索"><div id="makerList"></div>';
 $('brandDirectory').insertAdjacentElement('afterend',makerPanel);
 let makerData=null;
-function renderMakers(){const box=$('makerList');box.replaceChildren();if(!makerData)return;const q=$('makerFilter').value.toLowerCase();for(const m of makerData.makers){const names=m.brands.filter(b=>isMajorMakerBrand(b.name)&&(m.maker+' '+b.name+' '+b.aliases.join(' ')).toLowerCase().includes(q));if(!names.length)continue;const h=document.createElement('p');h.textContent=m.maker+'（'+names.length+'）';box.append(h);for(const b of names){const x=document.createElement('button');x.type='button';x.className='product-option';x.textContent=b.name+(b.catalogType==='subbrand'?' ／ サブブランド':b.catalogType==='series'||b.catalogType==='product-series'?' ／ シリーズ':b.brandId===null?' ／ 商品未登録':'');x.onclick=()=>{$('query').value=b.name;$('query').focus();};box.append(x);}}}
+function renderMakers(){const box=$('makerList');box.replaceChildren();if(!makerData)return;const q=$('makerFilter').value.toLowerCase();for(const m of makerData.makers){const names=m.brands.filter(b=>(m.maker+' '+b.name+' '+b.aliases.join(' ')).toLowerCase().includes(q));if(!names.length)continue;const h=document.createElement('p');h.textContent=m.maker+'（'+names.length+'）';box.append(h);for(const b of names){const x=document.createElement('button');x.type='button';x.className='product-option';x.textContent=b.name+(b.catalogType==='subbrand'?' ／ サブブランド':b.catalogType==='series'||b.catalogType==='product-series'?' ／ シリーズ':b.brandId===null?' ／ 商品未登録':'');x.onclick=()=>{$('query').value=b.name;$('query').focus();};box.append(x);}}}
 $('makerFilter').oninput=renderMakers;
 makerPanel.ontoggle=async()=>{if(!makerPanel.open||makerData)return;try{makerData=await getJSON('/maker-brand-directory.json');renderMakers();}catch(e){$('makerList').textContent='一覧を読み込めません：'+e.message;}};
 $('brandFilter').oninput=showBrands;
