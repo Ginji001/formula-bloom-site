@@ -20,6 +20,14 @@ const mapped=p=>({...p,registered:factProductIds.has(p.id),officialVerified:fals
 export async function staticGetJSON(path,{signal}={}){
  if(signal?.aborted)throw new DOMException('検索を中止しました。','AbortError');
  const u=new URL(path,location.href),q=(u.searchParams.get('q')||'').trim();
+ // 2026-11-10 breadth-first additions: explicit site-relative data endpoints.
+ for(const name of ['ingredient-listing-expansions-20261110.json','brand-catalog-coverage-rc188.json']){
+  if(u.pathname.endsWith('/'+name)){
+   const response=await fetch('./'+name,{signal});
+   if(!response.ok)throw Error('最新の商品・成分データを読み込めません。');
+   return response.json();
+  }
+ }
  if(u.pathname.endsWith('/sku-evidence.json')){
   const response=await fetch('./sku-evidence.json',{signal});
   if(!response.ok)throw Error('商品特定の比較資料を読み込めませんでした。');
