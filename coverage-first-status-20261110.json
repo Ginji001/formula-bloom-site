@@ -9,6 +9,10 @@
   "partialIngredientReferences": 1257,
   "withoutIngredientNames": 163,
   "aiHypothesisOnlyProducts": 163,
+  "referenceCoverageFilled": 2020,
+  "referenceCoverageUnfilled": 0,
+  "referenceCoverageDefinition": "出典付き成分か、AIが剤型から推測した候補を最低1件もつ（配合確認を意味しない）",
+  "ingredientIdentityUnverifiedProducts": 163,
   "aiHypothesisIds": [
     "rc102-baum-2fecba95c35b",
     "rc39-cosrx",

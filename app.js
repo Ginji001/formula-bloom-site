@@ -1051,8 +1051,12 @@ function showHypothesisChoices(container,item,actions,version){
   names.textContent=row.hypotheses.map(h=>h.name+'［推測・'+h.confidence+'］').join('、');
   const reason=document.createElement('p');reason.className='muted';reason.textContent=row.reason+' '+row.caution;
   detail.append(warning,names,reason);container.append(detail);
+  // Expose candidates immediately, without requiring the user to expand the details.
+  const preview=document.createElement('p');preview.className='muted hypothesis-candidate-preview';
+  preview.textContent='AI推測で補完済（実配合未確認）：'+row.hypotheses.map(h=>h.name).join('、');
+  container.append(preview);
   const status=container.querySelector('.selected-product-state');
-  if(status&&!status.dataset.referenceNamesCount)status.textContent='成分の公式確認なし／AI推測候補 '+row.hypotheses.length+'件（全て未確認）';
+  if(status&&!status.dataset.referenceNamesCount)status.textContent='AI推測で補完済（'+row.hypotheses.length+'候補）／配合成分の公式確認なし';
  }).catch(()=>{
   if(version===lookupVersion){
    const note=document.createElement('p');note.className='muted';
