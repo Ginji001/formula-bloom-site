@@ -592,6 +592,9 @@ jobs:
              !stablePrivacy.includes('最終更新：2026年11月5日')||
              !stableTerms.includes('v1.0.1')||
              !stableReadme.includes('公開版 v1.0.1')||
+             !stableReadme.includes('無期限の商品収集は正式版の完成条件にしません')||
+             fs.existsSync('_site/PRODUCT_POLICY.md')||
+             fs.existsSync('_site/docs/history')||
              /公開前ドラフト|一般公開しません/.test(stablePrivacy+stableTerms)||
              fs.existsSync('_site/docs/v1.0.0-stable-release-20261105.md')||
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
@@ -710,7 +713,6 @@ jobs:
              !skinApp.includes('supplementalProductsForBrandRC186(brand)')||
              !skinIndexHtml.includes('app.js?v=github-pages-102-v1.0.1-brand-catalog-rc188')||
              !skinSW.includes('skin1004-jp-names-rc185.js')||
-             !fs.readFileSync('_site/README.md','utf8').includes('SKIN1004')||
              fs.existsSync('_site/docs/rc185-skin1004-domestic-name-catalog-20261105.md')||
              fs.existsSync('_site/handoff/STATE.json'))
            throw Error('rc185 Japan-facing SKIN1004 24-name supplement or no-ingredient safety checks failed');

@@ -1480,7 +1480,7 @@ $('registeredBrandDirectory').ontoggle=async()=>{
     provisionalBrands=catalog.brands;
     quickRegisteredBrands();
   }catch{
-    $('registeredBrandCounts').textContent='全ブランド一覧を読み込めませんでした。「147ブランドから選ぶ」もお試しください。';
+    $('registeredBrandCounts').textContent='ブランド一覧を読み込めませんでした。商品名検索または全成分入力をお試しください。';
   }finally{provisionalLoading=false;}
 };
 
