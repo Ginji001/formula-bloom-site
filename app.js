@@ -70,9 +70,9 @@ const $=id=>document.getElementById(id);let remoteProduct=null;let current=[],se
 function showScopeExcluded(name='このメーカー'){
  $('searchResults').replaceChildren();
  const p=document.createElement('p');p.className='muted';
- p.textContent=name+'の商品は、現在の主要メーカー優先方針により通常検索・新規調査の対象外です。収録済みの過去データは削除していません。全成分をお持ちなら「全成分」タブから個別に解析できます。';
+ p.textContent='「'+name+'」は、このアプリの商品検索に未対応です。日本語の全成分をお持ちなら「全成分」タブから解析できます。';
  $('searchResults').append(p);
- const a=document.createElement('a');a.href='major-maker-scope-rc161.html';a.textContent='現在の対象メーカーと除外一覧を確認';
+ const a=document.createElement('a');a.href='resources.html';a.textContent='収録範囲・出典を見る';
  $('searchResults').append(a);
  $('officialStatus').textContent='';
 }
@@ -1569,7 +1569,7 @@ busy(true);$('searchResults').textContent='候補を探しています…';$('of
   else $('officialStatus').textContent='安全なHTTPSの掲載元URLを確認してください。';
  }
  $('searchResults').textContent='';return;
-}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;if(!isMajorMakerBrand(data.brand?.name)){showScopeExcluded(data.brand?.name||q);return;}$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='商品が見つかりません。';
+}const data=await getJSON('/api/search?q='+encodeURIComponent(q)+($('searchSite').value.trim()?'&site='+encodeURIComponent($('searchSite').value.trim())+($('searchSiteConfirmed').checked?'&confirmed=1':''):''),ctx.signal);if(ctx.version!==lookupVersion)return;if(data.brand&&!isMajorMakerBrand(data.brand.name)){showScopeExcluded(data.brand.name);return;}$('searchResults').replaceChildren();if(!data.results.length){$('searchResults').textContent='商品が見つかりません。';
  const fallback=document.createElement('details');fallback.className='search-extra-actions';
  const summary=document.createElement('summary');summary.textContent='掲載元を探す';fallback.append(summary);
  if(data.brand?.japanSiteVerified&&data.brand.site)sourceLink(fallback,data.brand.site,data.brand.name+'の掲載元候補（要確認）');
