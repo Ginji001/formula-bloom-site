@@ -119,7 +119,28 @@ function majorNameEvidence(){
 }
 let partialEvidencePromise=null;
 function partialEvidence(){
- if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json'),getJSON('/partial-ingredient-evidence-rc139.json'),getJSON('/partial-ingredient-evidence-rc140.json'),getJSON('/partial-ingredient-evidence-rc141.json'),getJSON('/partial-ingredient-evidence-rc143.json'),getJSON('/partial-ingredient-evidence-rc144.json'),getJSON('/partial-ingredient-evidence-rc145.json'),getJSON('/partial-ingredient-evidence-rc146.json'),getJSON('/partial-ingredient-evidence-rc147.json'),getJSON('/partial-ingredient-evidence-rc148.json'),getJSON('/partial-ingredient-evidence-rc149.json'),getJSON('/partial-ingredient-evidence-rc150.json'),getJSON('/partial-ingredient-evidence-rc151.json'),getJSON('/partial-ingredient-evidence-rc152.json'),getJSON('/partial-ingredient-evidence-rc153.json'),getJSON('/partial-ingredient-evidence-rc154.json'),getJSON('/partial-ingredient-evidence-rc155.json'),getJSON('/partial-ingredient-evidence-rc156.json'),getJSON('/partial-ingredient-evidence-rc157.json'),getJSON('/partial-ingredient-evidence-rc158.json'),getJSON('/partial-ingredient-evidence-rc159.json'),getJSON('/partial-ingredient-evidence-rc160.json'),getJSON('/partial-ingredient-evidence-rc162.json'),getJSON('/partial-ingredient-evidence-rc163.json'),getJSON('/partial-ingredient-evidence-rc170.json'),getJSON('/partial-ingredient-evidence-rc171.json'),getJSON('/partial-ingredient-evidence-rc173.json'),getJSON('/partial-ingredient-evidence-rc174.json'),getJSON('/partial-ingredient-evidence-rc177.json'),getJSON('/partial-ingredient-evidence-rc178.json'),getJSON('/partial-ingredient-evidence-rc183.json'),getJSON('/partial-ingredient-evidence-rc184.json')]).then(all=>applyVerifiedMedicinalRoleRc180(applySourceIngredientErrataRc179(all.flatMap(validatePartialEvidence)))).catch(e=>{partialEvidencePromise=null;throw e;});
+ if(!partialEvidencePromise)partialEvidencePromise=Promise.all([getJSON('/partial-ingredient-evidence.json'),getJSON('/partial-ingredient-evidence-rc131.json'),getJSON('/partial-ingredient-evidence-rc133.json'),getJSON('/partial-ingredient-evidence-rc134.json'),getJSON('/partial-ingredient-evidence-rc135.json'),getJSON('/partial-ingredient-evidence-rc136.json'),getJSON('/partial-ingredient-evidence-rc137.json'),getJSON('/partial-ingredient-evidence-rc139.json'),getJSON('/partial-ingredient-evidence-rc140.json'),getJSON('/partial-ingredient-evidence-rc141.json'),getJSON('/partial-ingredient-evidence-rc143.json'),getJSON('/partial-ingredient-evidence-rc144.json'),getJSON('/partial-ingredient-evidence-rc145.json'),getJSON('/partial-ingredient-evidence-rc146.json'),getJSON('/partial-ingredient-evidence-rc147.json'),getJSON('/partial-ingredient-evidence-rc148.json'),getJSON('/partial-ingredient-evidence-rc149.json'),getJSON('/partial-ingredient-evidence-rc150.json'),getJSON('/partial-ingredient-evidence-rc151.json'),getJSON('/partial-ingredient-evidence-rc152.json'),getJSON('/partial-ingredient-evidence-rc153.json'),getJSON('/partial-ingredient-evidence-rc154.json'),getJSON('/partial-ingredient-evidence-rc155.json'),getJSON('/partial-ingredient-evidence-rc156.json'),getJSON('/partial-ingredient-evidence-rc157.json'),getJSON('/partial-ingredient-evidence-rc158.json'),getJSON('/partial-ingredient-evidence-rc159.json'),getJSON('/partial-ingredient-evidence-rc160.json'),getJSON('/partial-ingredient-evidence-rc162.json'),getJSON('/partial-ingredient-evidence-rc163.json'),getJSON('/partial-ingredient-evidence-rc170.json'),getJSON('/partial-ingredient-evidence-rc171.json'),getJSON('/partial-ingredient-evidence-rc173.json'),getJSON('/partial-ingredient-evidence-rc174.json'),getJSON('/partial-ingredient-evidence-rc177.json'),getJSON('/partial-ingredient-evidence-rc178.json'),getJSON('/partial-ingredient-evidence-rc183.json'),getJSON('/partial-ingredient-evidence-rc184.json') ]).then(async all=>{
+  const historical=applyVerifiedMedicinalRoleRc180(applySourceIngredientErrataRc179(all.flatMap(validatePartialEvidence)));
+  const data=await getJSON('/ingredient-listing-expansions-20261110.json');
+  if(data?.schemaVersion!==1||!Array.isArray(data.records))throw Error('拡充成分資料の形式が不正です');
+  const byId=new Map(historical.map(record=>[record.productId,record]));
+  const overrides=new Map();
+  for(const record of data.records){
+   const existing=byId.get(record.productId);
+   if(!existing||existing.sourceUrl!==record.sourceUrl||overrides.has(record.productId)||
+      !Array.isArray(record.ingredients)||record.ingredients.length<1||record.ingredients.length>200||
+      record.ingredients.some(name=>typeof name!=='string'||!name.trim()))
+      throw Error('拡充成分資料の商品・掲載元照合が不正: '+record.productId);
+   overrides.set(record.productId,record);
+  }
+  return historical.map(record=>{
+   const update=overrides.get(record.productId);
+   return update?{...record,ingredients:update.ingredients,ingredientCount:update.ingredients.length,
+    checkedOn:update.checkedOn,sourceReviewBatch:'coverage-20261110',
+    sourceSectionHeading:'公式商品ページに記載の成分名称',
+    sourceScopeCaution:'公式の商品ページに掲載された名称を収録。現物・現行ロットは未照合。'}:record;
+  });
+ }).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
 }
 let sourceDisclosedFactsPromise=null;
