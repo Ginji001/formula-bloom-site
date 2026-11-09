@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-10",
+  "description": "網羅優先方針の累計進捗。過去のrc184監査資料と区別し、新しいメーカー掲載成分を含めた参考収録を表示する。",
+  "registeredProducts": 2163,
+  "brandCandidates": 201,
+  "priorityProducts": 2020,
+  "fullJapaneseFormulas": 600,
+  "partialIngredientReferences": 1257,
+  "withoutIngredientNames": 163,
+  "publishedIngredientExpansions": 11,
+  "previouslyUnknownNowReferenced": 9,
+  "addedReferenceProductIds": [
+    "rc61-catalog-051",
+    "rc61-catalog-052",
+    "rc61-catalog-063",
+    "rc61-catalog-045",
+    "rc61-catalog-046",
+    "rc61-catalog-047",
+    "rc61-catalog-048",
+    "rc61-catalog-049",
+    "rc61-catalog-050"
+  ],
+  "partialExpansionNotNewProduct": 2,
+  "cautions": [
+    "メーカーの掲載情報を採用。現物・現行ロットとの一致は未保証。",
+    "旧dプログラムMB 6商品はメーカーアウトレットの過去掲載成分。",
+    "追加データは参考成分であり、全成分保存版の600件に含めない。",
+    "網羅を目指すが未確認の商品成分は推測しない。"
+  ],
+  "remainingUnverified": [
+    {
+      "productId": "rc102-baum-2fecba95c35b",
+      "brand": "BAUM",
+      "productName": "スキンケア トライアルキット",
+      "researchStatus": "deferred-composite-kit"
+    },
+    {
+      "productId": "rc39-cosrx",
+      "brand": "COSRX",
+      "productName": "ザ・６ペプチドスキンブースターセラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-drjart-7edf7427d414",
+      "brand": "Dr.Jart+",
+      "productName": "セラマイディン スキンバリア モイスチャライジング クリーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-drjart-bc51abfcc812",
+      "brand": "Dr.Jart+",
+      "productName": "バイタル ハイドラ ソリューション ウォータークリーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-haku-005",
+      "brand": "HAKU",
+      "productName": "エッセンスF",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-haku-004",
+      "brand": "HAKU",
+      "productName": "ブライトニング ファンデーション",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc64-iope-vitamin-c23",
+      "brand": "IOPE",
+      "productName": "ザ・ビタミンC23",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc90-iope-super-vital-softener-150",
+      "brand": "IOPE",
+      "productName": "スーパー バイタル ソフナー",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc37-kate",
+      "brand": "KATE",
+      "productName": "リップモンスター",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc37-lunasol",
+      "brand": "LUNASOL",
+      "productName": "アイカラーレーションN",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-062",
+      "brand": "ONE BY KOSE",
+      "productName": "クリアピール セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-060",
+      "brand": "ONE BY KOSE",
+      "productName": "ザ リンクレス W",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-061",
+      "brand": "ONE BY KOSE",
+      "productName": "セラム シールド",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-torriden-127",
+      "brand": "Torriden",
+      "productName": "セルメイジング ビタC ブライトニング ブースト アンプル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc103-vt-64952b52b6be",
+      "brand": "VT",
+      "productName": "CICA マイルドトナーパッド(60枚入り)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-015",
+      "brand": "アクアレーベル",
+      "productName": "アクアローション さっぱり・しっとり",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-016",
+      "brand": "アクアレーベル",
+      "productName": "アクアローション さっぱり・しっとり（つめかえ用）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-005",
+      "brand": "アクアレーベル",
+      "productName": "スペシャルジェルクリームEX（オイルイン）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-006",
+      "brand": "アクアレーベル",
+      "productName": "スペシャルジェルクリームEX（オイルイン）つめかえ用",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-004",
+      "brand": "アクアレーベル",
+      "productName": "スペシャルジェルクリームEX（ブライトニング）つめかえ用",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-013",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントミルク（オイルイン）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-011",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントミルク（ブライトニング）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-012",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントローション（オイルイン）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-008",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントローション（ブライトニング）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-009",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントローション（ブライトニング）つめかえ用",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-010",
+      "brand": "アクアレーベル",
+      "productName": "トリートメントローション（モイストスムース）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-aqualabel-021",
+      "brand": "アクアレーベル",
+      "productName": "モイストパウダリー（レフィル）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-attennir-91b001e383b1",
+      "brand": "アテニア",
+      "productName": "スキンクリア クレンズ オイル スムースブラック",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-2056b0ae1ae3",
+      "brand": "アヌア",
+      "productName": "7ライスセラミド グロウセラム 50ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-56eb52a735b4",
+      "brand": "アヌア",
+      "productName": "BHA2% マイルドピーリングトナー 150ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-78fe2bb3ea49",
+      "brand": "アヌア",
+      "productName": "PDRN100ヒアルロン酸セラム マスクパック(7枚入り)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-ca75d5afe869",
+      "brand": "アヌア",
+      "productName": "PDRNヒアルロン酸 カプセル100セラム (全2種)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-3cd621dc5114",
+      "brand": "アヌア",
+      "productName": "PDRNヒアルロン酸 ハイドレイティングミスト 100ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-359b07f6e252",
+      "brand": "アヌア",
+      "productName": "PDRNヒアルロン酸 ハイドレイティングミスト 30ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-238dbaa040a4",
+      "brand": "アヌア",
+      "productName": "PDRNヒアルロン酸セラム デイリーマスクパック 30枚",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-3eff2ada4ce8",
+      "brand": "アヌア",
+      "productName": "アゼライン酸3CICA スキンクリアトナー 250ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-254f46fefabd",
+      "brand": "アヌア",
+      "productName": "アゼライン酸CICA スキンスージング モイスチャライザー 100ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-49a8b96f536b",
+      "brand": "アヌア",
+      "productName": "アゼライン酸シカセラム デイリーマスクパック 30枚",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-f9a42cfd103b",
+      "brand": "アヌア",
+      "productName": "アヌアレチノール 3ペプチド ナイトリペアクリーム 50g",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-016ac93e8e35",
+      "brand": "アヌア",
+      "productName": "シラカバ70 水分ブースティングクリーム 50ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-b6fad2ef033f",
+      "brand": "アヌア",
+      "productName": "シラカバ70 水分ブースティングセラム 30ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-12e9d05ecd50",
+      "brand": "アヌア",
+      "productName": "シラカバ70 水分ブースティングトナー 250ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-d24f1ccfd640",
+      "brand": "アヌア",
+      "productName": "セミグロウベール クッション 15g (SPF50+ PA+++)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-7d63872cdf68",
+      "brand": "アヌア",
+      "productName": "ダークスポットセラム 30ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-29dc6964c5be",
+      "brand": "アヌア",
+      "productName": "ドクダミ シルキーモイスチャーサンクリーム 50ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-38952bf021f9",
+      "brand": "アヌア",
+      "productName": "ドクダミ ポアコントロール クレンジングオイル 200ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-89cef382e253",
+      "brand": "アヌア",
+      "productName": "ドクダミ ポアディープ クレンジングフォーム 150ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-d04fbd4e24c6",
+      "brand": "アヌア",
+      "productName": "ドクダミ 弱酸性モイスチャー クレンジングフォーム 150ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-faf20e5bebd5",
+      "brand": "アヌア",
+      "productName": "ドクダミ77 B3ZINCTMスージングクリーム 80ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-f005acfc854f",
+      "brand": "アヌア",
+      "productName": "ドクダミ77 B3ZINCTMスージングセラム 30ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-381a6d222a39",
+      "brand": "アヌア",
+      "productName": "ドクダミLHA モイスチャーピーリングジェル 120ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-cfc0cd017312",
+      "brand": "アヌア",
+      "productName": "ライス ブライトニング 酵素洗顔パウダー 40g",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-ff0439aeedc7",
+      "brand": "アヌア",
+      "productName": "ライス70 インテンスモイスチャーミルク 150ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-8e24f0634381",
+      "brand": "アヌア",
+      "productName": "ライス70 グロウミルキートナー 250ml",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc104-anua-b7dca80b86a6",
+      "brand": "アヌア",
+      "productName": "桃70ナイアシン マスクパック 10枚",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-053",
+      "brand": "アネッサ",
+      "productName": "パーフェクトUV スキンケアジェル NB",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-054",
+      "brand": "アネッサ",
+      "productName": "パーフェクトUV スキンケアジェル NB",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc119-premier-smooth-limited-3days",
+      "brand": "いち髪",
+      "productName": "PREMIER 3daysキット（シルキースムース）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc119-premier-moist-limited-3days",
+      "brand": "いち髪",
+      "productName": "PREMIER 3daysキット（リペアモイスト）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc119-premier-smooth-limited-pair",
+      "brand": "いち髪",
+      "productName": "PREMIER ブースターシャンプー＆セラムトリートメント ペアセット（シルキースムース）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc119-premier-moist-limited-pair",
+      "brand": "いち髪",
+      "productName": "PREMIER ブースターシャンプー＆セラムトリートメント ペアセット（リペアモイスト）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-ichikami-048",
+      "brand": "いち髪",
+      "productName": "純・和草油",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc63-illiyoon-03",
+      "brand": "イリユン",
+      "productName": "セラミド アト トップトゥトー ウォッシュ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc63-illiyoon-02",
+      "brand": "イリユン",
+      "productName": "セラミド アト フェイス＆ボディクリーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc63-illiyoon-01",
+      "brand": "イリユン",
+      "productName": "セラミド アト フェイス＆ボディミルク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-inoui-3478c4fdd419",
+      "brand": "インウイ",
+      "productName": "アイライナーリキッド",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc103-integrate-d96c7c356e7d",
+      "brand": "インテグレート",
+      "productName": "プロフィニッシュ リキッド",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301354617",
+      "brand": "エスト",
+      "productName": "SFエスト エッセンス ウォッシュ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301354600",
+      "brand": "エスト",
+      "productName": "SFエスト クレンジングエッセンス オイル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301275035",
+      "brand": "エスト",
+      "productName": "アイブロウパウダーチップ 01",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301275028",
+      "brand": "エスト",
+      "productName": "アイブロウペンシル 01",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301359407",
+      "brand": "エスト",
+      "productName": "ザ クリーム TR",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc93-kao-est-4901301227003",
+      "brand": "エスト",
+      "productName": "リキッドアイライナー",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-2778e984c6ac",
+      "brand": "エチュード",
+      "productName": "ウォータードロップフィルタークッション",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-735b8ae8f399",
+      "brand": "エチュード",
+      "productName": "カールフィックスマスカラ リムーバーＮ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-7b7768027861",
+      "brand": "エチュード",
+      "productName": "カールフィックスマスカラ ロングラッシュ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-fdde737465ab",
+      "brand": "エチュード",
+      "productName": "こんこんチーク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-5b34041fa004",
+      "brand": "エチュード",
+      "productName": "ニンフデューイベースプレップ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-etude-92e6772df8e7",
+      "brand": "エチュード",
+      "productName": "マイスイートパレット",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-079",
+      "brand": "エリクシール",
+      "productName": "エリクシール ザ セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-73a293f2ae83",
+      "brand": "ギャツビー",
+      "productName": "オールインワン",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-8f5e8c9a5f70",
+      "brand": "ギャツビー",
+      "productName": "チューブ洗顔",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-df93aca92730",
+      "brand": "ギャツビー",
+      "productName": "炭酸泡洗顔(ニキビケア)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-bae864202387",
+      "brand": "ギャツビー",
+      "productName": "炭酸泡洗顔(毛穴ケア)",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-5039ab9462a6",
+      "brand": "ギャツビー",
+      "productName": "肌トラブルケア",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc101-gatsby-2ea5624ad6f5",
+      "brand": "ギャツビー",
+      "productName": "泡洗顔",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-curel-039",
+      "brand": "キュレル",
+      "productName": "お手入れ底上げ かかとケアマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-curel-040",
+      "brand": "キュレル",
+      "productName": "お手入れ底上げ ハンドケアマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-cpb-e257440d48b2",
+      "brand": "クレ・ド・ポー ボーテ",
+      "productName": "ジェルネトワイアンプールレマン",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-decorte-646cf60eeb52",
+      "brand": "コスメデコルテ",
+      "productName": "ＡQ ミリオリティダブル コンセントレイション n",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc100-decorte-48ce6ddfb832",
+      "brand": "コスメデコルテ",
+      "productName": "アイピー ショットプルリポテント ユース コンセントレイト［医薬部外品］＊",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc91-whoo-bicheop-circulation-50",
+      "brand": "ザ・フー",
+      "productName": "秘貼 循環エッセンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc91-whoo-bicheop-circulation-90",
+      "brand": "ザ・フー",
+      "productName": "秘貼 循環エッセンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc69-faceshop-ultimate-mp8-30",
+      "brand": "ザ・フェイスショップ",
+      "productName": "TFS オルティメイト MP8 セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc69-faceshop-ultimate-n10-30",
+      "brand": "ザ・フェイスショップ",
+      "productName": "TFS オルティメイト N10 セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc69-faceshop-ultimate-p1-30",
+      "brand": "ザ・フェイスショップ",
+      "productName": "TFS オルティメイト P1 セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-05",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム Yカメリア ファースト エッセンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-13",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム Yカメリア ファースト エッセンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-17",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム オイル イン クレンジングシート",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-18",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム オイル イン クレンジングシート",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-10",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム オールインワンケアシート EX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-11",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム オールインワンケアシート EX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-09",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム ゴールデン ロイヤル クリーム EX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-06",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム サンキッド",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-12",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム セラム イン ミスト リッチ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-16",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム セラム イン ミスト リッチ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-20",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム プログラミング リッチ エッセンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-19",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム プログラミング リッチ エッセンス EX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-07",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム マスクリームシート",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-08",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム マスクリームシート",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-14",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム モイスチャー ゲル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc65-faceshop-15",
+      "brand": "ザ・フェイスショップ",
+      "productName": "イェファダム ロイヤルリッチ ソープ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc56-serum-veil-deep-repair-refill-60",
+      "brand": "セラムヴェール",
+      "productName": "ONE BY KOSE セラムヴェール ディープリペア（付けかえ用）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc63-hanyul-01",
+      "brand": "ハンユル",
+      "productName": "ヨモギ スージングトナーパッド",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc51-belif-aqua-bomb-50g",
+      "brand": "ビリーフ",
+      "productName": "ザ トゥルー クリーム アクアボム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-043",
+      "brand": "ファンケル",
+      "productName": "マイルドクレンジング オイル＜ブラック＆スムース＞",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc57-primera-vitatinol-bouncy-15",
+      "brand": "プリメラ",
+      "productName": "ビタチノール バウンシー リフト セラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-predia-9e275cfe421b",
+      "brand": "プレディア",
+      "productName": "アロマティックシー ファブリック ミスト シマリング アフタヌーン <195mL>",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-predia-09bf0663a06d",
+      "brand": "プレディア",
+      "productName": "アロマティックシー ファブリック ミスト ブリージー モーニング <195mL>",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-predia-69ff39297790",
+      "brand": "プレディア",
+      "productName": "アロマティックシー ファブリック ミスト ムーンリット ナイト <195mL>",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-benefique-003",
+      "brand": "ベネフィーク",
+      "productName": "エマルジョン",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-benefique-005",
+      "brand": "ベネフィーク",
+      "productName": "エマルジョンEX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-benefique-020",
+      "brand": "ベネフィーク",
+      "productName": "リュクスリフトモイスチャーライザー",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-benefique-002",
+      "brand": "ベネフィーク",
+      "productName": "ローション",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc92-official-family-benefique-004",
+      "brand": "ベネフィーク",
+      "productName": "ローションEX",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc103-hera-9e27065e6400",
+      "brand": "ヘラ",
+      "productName": "UVプロテクター",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-maquillage-134",
+      "brand": "マキアージュ",
+      "productName": "カスタマイズアイカラー アソート",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-maquillage-139",
+      "brand": "マキアージュ",
+      "productName": "スムース＆ステイリップライナー N",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-majolicamajorca-088",
+      "brand": "マジョリカ マジョルカ",
+      "productName": "マジョロマンティカ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc90-mamonde-pore-shrinker-serum-50",
+      "brand": "マモンド",
+      "productName": "ポアシュリンカー バクチオールセラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-minon-176",
+      "brand": "ミノン",
+      "productName": "アミノモイスト 薬用うるうる美白ミルクマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-laneige-098",
+      "brand": "ラネージュ",
+      "productName": "バウンシー アイ スリーピングマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-laneige-099",
+      "brand": "ラネージュ",
+      "productName": "バウンシースリーピングマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-laneige-097",
+      "brand": "ラネージュ",
+      "productName": "バウンシーセラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-laneige-104",
+      "brand": "ラネージュ",
+      "productName": "リップグロウィバーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-80db565f2fc9",
+      "brand": "リバイタル",
+      "productName": "リバイタル エマルジョン I a・II a・III a",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-914a00d6c2d3",
+      "brand": "リバイタル",
+      "productName": "リバイタル クリーミーホイップ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-4146d9072f44",
+      "brand": "リバイタル",
+      "productName": "リバイタル デイエマルジョン a",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-da56238c2f0e",
+      "brand": "リバイタル",
+      "productName": "リバイタル ナイトアイコルセット",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-b168e4e6c487",
+      "brand": "リバイタル",
+      "productName": "リバイタル レチノサイエンス フェイシャルマスク a",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-54a42646af4a",
+      "brand": "リバイタル",
+      "productName": "リバイタル ローション I a・II a・III a",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc102-revital-92fc0de702a0",
+      "brand": "リバイタル",
+      "productName": "リバイタル ローションセラム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-198",
+      "brand": "雪肌精",
+      "productName": "雪肌精 BLUE チャコール スクラブ ウォッシュ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-196",
+      "brand": "雪肌精",
+      "productName": "雪肌精 BLUE ディープ ハイドレイティング エッセンス リキッド II",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-197",
+      "brand": "雪肌精",
+      "productName": "雪肌精 BLUE バウンス バランシング オイル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-195",
+      "brand": "雪肌精",
+      "productName": "雪肌精 BLUE ブライト リファイナー",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-199",
+      "brand": "雪肌精",
+      "productName": "雪肌精 スキンケア UV エッセンス ミスト",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-193",
+      "brand": "雪肌精",
+      "productName": "薬用雪肌精 ブライトニング エマルジョン",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-192",
+      "brand": "雪肌精",
+      "productName": "薬用雪肌精 ブライトニング クリーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-191",
+      "brand": "雪肌精",
+      "productName": "薬用雪肌精 ブライトニング クリーム ウォッシュ",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-190",
+      "brand": "雪肌精",
+      "productName": "薬用雪肌精 ブライトニング クレンジング オイル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-sekkisei-194",
+      "brand": "雪肌精",
+      "productName": "薬用雪肌精 ブライトニング デイケア アドバンス",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-021",
+      "brand": "肌美精",
+      "productName": "アイバッグ ニードルショット",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-030",
+      "brand": "肌美精",
+      "productName": "うるおい浸透マスク（アクネ）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-015",
+      "brand": "肌美精",
+      "productName": "うるおい浸透マスク（深層美白）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-032",
+      "brand": "肌美精",
+      "productName": "カラーエッセンスマスク パープル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-031",
+      "brand": "肌美精",
+      "productName": "カラーエッセンスマスク ピンク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-016",
+      "brand": "肌美精",
+      "productName": "超浸透3Dマスク エイジングケア（美白）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-022",
+      "brand": "肌美精",
+      "productName": "肌美精ONE リンクルケア 密着濃厚アイクリーム",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc94-jp-official-hadabisei-024",
+      "brand": "肌美精",
+      "productName": "肌美精ONE リンクルケア 目もと集中うるおいマスク",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-022",
+      "brand": "無印良品",
+      "productName": "敏感肌用オールインワンジェル",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-010",
+      "brand": "無印良品",
+      "productName": "敏感肌用乳液 高保湿（携帯用）",
+      "researchStatus": "awaiting-source-confirmation"
+    },
+    {
+      "productId": "rc61-catalog-021",
+      "brand": "無印良品",
+      "productName": "敏感肌用薬用美容液",
+      "researchStatus": "awaiting-source-confirmation"
+    }
+  ]
+}
