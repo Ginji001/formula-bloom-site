@@ -53,6 +53,7 @@ import {describeFormulaSignature,formatFormulaSignature} from './formula-signatu
 import {provenance,provenanceText} from './provenance.js';
 import {checkProductIdentity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord,mergeFormulaArchives} from './formula-archive.js';
+import {needsMultipartFormulaReview} from './multipart-formula-safety.js';
 import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
 import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredientCandidates,sharedSource} from './shared-source.js';
@@ -96,7 +97,7 @@ $('readyFormulas').onclick=async()=>{
   if(!ready.length)throw Error('日本語全成分を表示できる商品がありません。');
   presentRegisteredProducts(ready,'日本語全成分の保存版がある商品');
   const intro=document.createElement('p');intro.className='muted formula-ready-intro';
-  intro.textContent='掲載時点の日本語全成分の保存版 '+ready.length+'商品。製品を選ぶと花を生成します。配合順・最新ロット・現物ラベルの一致は出典ごとにご確認ください。';
+  intro.textContent='掲載時点の日本語全成分の保存版 '+ready.length+'商品。複数の成分欄がある商品は、欄を確認して入力してください。配合順・最新ロット・現物ラベルの一致は出典ごとにご確認ください。';
   $('searchResults').prepend(intro);
  }catch(e){
   if(ctx.version===lookupVersion){
@@ -139,6 +140,17 @@ function formulaArchive(){
 async function storedFormulaFor(expected){return recordForProduct(await formulaArchive(),expected);}
 function useStoredFormula(record){
  invalidate();official=false;ocrRequired=false;
+ if(needsMultipartFormulaReview(record)){
+  remoteProduct=null; $('query').value=record.brand+' '+record.productName;
+  $('ingredients').value='';$('kind').value=record.kind;$('japanConfirmed').checked=false;
+  $('origin').textContent='日本向け表示の記載順を保持';$('error').textContent='';
+  const msg=document.createElement('p');msg.className='muted';
+  msg.textContent='この商品はパレット内の色ごとに成分欄が分かれています。掲載元で対象の色番と欄を確認し、解析したい一つの欄だけを下に入力してください。';
+  $('sourceInfo').append(msg);
+  sourceLink($('sourceInfo'),record.sourceUrl+(record.sourcePageId?'#'+record.sourcePageId:''),'商品別の成分欄');
+  $('sourceDetails').open=true;tab('text');
+  return false;
+ }
  remoteProduct={
   name:record.productName+(record.formulaStatus==='historical-reference'?'（旧処方・参考）':'（掲載時点）'),url:record.sourceUrl,region:'jp',sourceType:'archive',sourceOrigin:record.sourceType,formulaStatus:record.formulaStatus||'listed',
   kind:record.kind,rows:[],ingredients:record.ingredients,order:record.order,activeIngredients:record.activeIngredients,otherIngredients:record.otherIngredients,
@@ -157,6 +169,7 @@ function useStoredFormula(record){
  showMedicatedCategories(remoteProduct);
  run();
  $('officialStatus').textContent=$('error').textContent?'保存版を解析できませんでした。':'保存版から花を生成しました（最新処方は未確認）。';
+ return true;
 }
 // Registered products with an exact reviewed archive must work offline:
  // product search → source-backed Japanese ingredient snapshot → educational flower.
@@ -168,12 +181,12 @@ async function showArchivedRegisteredFormula(item,ctx=null){
  const archive=await storedFormulaFor(item);
  if(ctx.version!==lookupVersion)return;
  if(!archive){await fetchProduct(item.url,false,true,0,ctx,item.variant,item);return;}
- useStoredFormula(archive);
+ const analyzed=useStoredFormula(archive);
  const area=$('searchResults');area.replaceChildren();
  const label=document.createElement('p');label.className='selected-product-name';
  label.textContent=item.brand+' '+item.name+((archive.volume||item.volume)?' · '+(archive.volume||item.volume):'')+((archive.sku||item.jan)?' ／ JAN '+(archive.sku||item.jan):'')+(archive.variant?' ／ '+archive.variant:'');
  const note=document.createElement('p');note.className='muted';
- note.textContent='メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。'+(archive.sourceReview?.sharedManufacturerItemPage?'詰替用は本体と共通掲載の目的別表を使用（配合順ではありません）。':'')+'最新ロット・現物ラベルとの一致は未確認です。';
+ note.textContent=analyzed?'メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。'+(archive.sourceReview?.sharedManufacturerItemPage?'詰替用は本体と共通掲載の目的別表を使用（配合順ではありません）。':'')+'最新ロット・現物ラベルとの一致は未確認です。':'パレットの色ごとに成分欄を確認し、一つの欄を入力してください。';
  area.append(label,note);
  sourceLink(area,archive.sourceUrl,'全成分の出典');
  if(item.url!==archive.sourceUrl)sourceLink(area,item.url,'商品ページ');
@@ -181,7 +194,7 @@ async function showArchivedRegisteredFormula(item,ctx=null){
 function offerStoredFormula(record){
  if(!record)return;
  const b=document.createElement('button');b.className='secondary';b.type='button';
- b.textContent=(record.formulaStatus==='historical-reference'?'旧処方を参考表示':'掲載全成分で花にする')+'（'+record.verifiedAt.slice(0,10)+'）';
+ b.textContent=(needsMultipartFormulaReview(record)?'成分欄の確認へ':record.formulaStatus==='historical-reference'?'旧処方を参考表示':'掲載全成分で花にする')+'（'+record.verifiedAt.slice(0,10)+'）';
  b.onclick=()=>useStoredFormula(record);
  $('officialStatus').append(b);
 }
@@ -215,7 +228,7 @@ $('savedFormulas').ontoggle=async()=>{
  for(const record of archive.records){
   const b=document.createElement('button');
   b.className='product-option';b.type='button';
-  b.textContent=record.brand+' '+record.productName+(record.formulaStatus==='historical-reference'?' ／ 旧処方・参考':'')+' ／ '+record.verifiedAt.slice(0,10);
+  b.textContent=record.brand+' '+record.productName+(needsMultipartFormulaReview(record)?' ／ 成分欄を確認':record.formulaStatus==='historical-reference'?' ／ 旧処方・参考':'')+' ／ '+record.verifiedAt.slice(0,10);
   b.onclick=()=>useStoredFormula(record);
   container.append(b);
  }
