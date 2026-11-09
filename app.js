@@ -30,6 +30,7 @@ import {registeredProducts,registeredBrands,productsForBrand,findRegisteredProdu
 import {isMajorMakerBrand,isMajorMakerProduct,activeMajorMakerNames,activeMajorMakerBrands,majorMakerCounts,excludedFromMajorMakerBrands} from './major-maker-scope.js';
 import {allBrandNameSupplementsRC186,supplementalProductsForBrandRC186,supplementalMatchesRC186} from './brand-catalog-supplements-rc186.js';
 import {officialNameOnlyRC187,nameOnlyProductsForBrandRC187,nameOnlyMatchesRC187} from './brand-catalog-supplements-rc187.js';
+import {officialNameOnlyRC188,nameOnlyProductsForBrandRC188,nameOnlyMatchesRC188} from './brand-catalog-supplements-rc188.js';
 import {productFamilies,chooseFamilyFormula,exactFamilyMember} from './product-families.js';
 import {reviewGuidanceForProduct} from './unresolved-ingredients.js';
 import {validatePartialEvidence,partialForProduct,reviewPartialInput} from './partial-ingredient-evidence.js';
@@ -1160,6 +1161,7 @@ function selectRegisteredFormula(item,context=''){
     state.textContent=item.manufacturingEndedOn?'製造終了（'+item.manufacturingEndedOn+'）／全成分：未収録（在庫・販売終了日は未確認）':
       item.scheduledReleaseDate?'発売予定（'+item.scheduledReleaseDate+'）／全成分：未収録':
       item.sourceScope==='japan-manufacturer-item-link-referenced-only'?'全成分：未収録（メーカー掲載名・現在の販売状況は未確認）':
+      item.id?.startsWith('rc188-')?'全成分：未収録（商品名のみ確認／販売状況・現物ラベルは未確認）':
       item.sourceScope?.startsWith('japan-official-')?'全成分：未収録（公式掲載名・販売状況と現物ラベルは未確認）':
       imported?'国内向け全成分：未確認（韓国直送）':'全成分：未収録';
     container.append(state);
@@ -1192,6 +1194,10 @@ function selectRegisteredFormula(item,context=''){
       const notice=document.createElement('p');notice.className='muted';
       notice.textContent=item.productIdentityNote;
       extra.append(notice);
+    }
+    if(item.sourceListingNote){
+      const notice=document.createElement('p');notice.className='muted';
+      notice.textContent=item.sourceListingNote;extra.append(notice);
     }
     const review=reviewGuidanceForProduct(item);
     if(review){
@@ -1415,7 +1421,7 @@ function openBrandOrManufacturer(brand){
  search();
 }
 function productsForBrandWithSupplements(brand){
-  return [...productsForBrand(brand),...supplementalProductsForBrandRC186(brand),...nameOnlyProductsForBrandRC187(brand)];
+  return [...productsForBrand(brand),...supplementalProductsForBrandRC186(brand),...nameOnlyProductsForBrandRC187(brand),...nameOnlyProductsForBrandRC188(brand)];
 }
 function presentRegisteredBrand(brand){
   const entries=productsForBrandWithSupplements(brand);
@@ -1480,7 +1486,7 @@ if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).len
  const heading=document.createElement('p');heading.className='selected-product-state';
  heading.textContent=q+'：検索対象ブランドですが、現時点で商品名を確認して登録した候補がありません。未掲載・販売終了の証明ではありません。';
  holder.append(heading);
- const link=document.createElement('a');link.href='brand-catalog-coverage-rc187.html';
+ const link=document.createElement('a');link.href='brand-catalog-coverage-rc188.html';
  link.textContent='全ブランドの登録状況を見る';holder.append(link);
  appendDomesticResearchLink(holder,q);
  const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='日本語全成分を自分で入力';
@@ -1490,12 +1496,14 @@ if(!forceOfficial&&isMajorMakerBrand(q)&&!productsForBrandWithSupplements(q).len
 if(!forceOfficial&&!/^https:\/\//.test(q)){
  const extra=supplementalMatchesRC186(q);
  extra.push(...nameOnlyMatchesRC187(q));
+ extra.push(...nameOnlyMatchesRC188(q));
  if(extra.length){
   const majorMatches=activeMajorMakerBrands.filter(b=>productFold(b)===productFold(q));
   const existing=majorMatches.length?
     majorMatches.flatMap(productsForBrand):
     findRegisteredProducts(q).map(x=>x.product).filter(isMajorMakerProduct);
-  const combined=[...new Map([...existing,...extra].map(p=>[p.id,p])).values()];
+  const existingAliasIds=new Set(extra.map(p=>p.existingCatalogProductId).filter(Boolean));
+  const combined=[...new Map([...existing.filter(p=>!existingAliasIds.has(p.id)),...extra].map(p=>[p.id,p])).values()];
   presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');
   return;
  }
@@ -1567,7 +1575,11 @@ $('query').onpaste=e=>{
   $('searchHint').textContent='貼り付けた製品名から、日本向け公式商品を探しています…';
   typingTimer=setTimeout(()=>search({instant:false}),80);
 };
-$('query').oninput=()=>{clearTimeout(typingTimer);lookupAbort?.abort();++lookupVersion;busy(false);invalidate();remoteProduct=null;$('japanConfirmed').checked=false;$('searchResults').replaceChildren();$('officialStatus').textContent='';if($('query').value.trim().length>=2)typingTimer=setTimeout(()=>search({instant:true}),500);};
+let queryComposing=false;
+function queryInputChanged(event){clearTimeout(typingTimer);lookupAbort?.abort();++lookupVersion;busy(false);invalidate();remoteProduct=null;$('japanConfirmed').checked=false;$('searchResults').replaceChildren();$('officialStatus').textContent='';if(!queryComposing&&!event?.isComposing){if($('query').value.trim().length>=2)typingTimer=setTimeout(()=>search({instant:true}),500);}}
+$('query').oninput=queryInputChanged;
+$('query').addEventListener('compositionstart',()=>{queryComposing=true;queryInputChanged();});
+$('query').addEventListener('compositionend',()=>{queryComposing=false;queryInputChanged();});
 document.querySelectorAll('[data-example]').forEach(b=>b.onclick=()=>{$('query').value=b.dataset.example;search();});
 function invalidate(){const inferred=$('inferencePanel');document.body.classList.remove('has-bloom');if(inferred){inferred.hidden=true;inferred.replaceChildren();}document.querySelector('.result-card')?.classList.remove('is-inference');historyTools?.reset();$('ingredientRows').replaceChildren();$('sourceInfo').replaceChildren();$('officialStatus').replaceChildren();$('summary').textContent='';$('coverage').textContent='';posterState=null;$('exportImage').disabled=true;$('shareImage').disabled=true;$('sourceQuality').textContent='解析前：出典・処方を確認してください。';$('shareStatus').textContent='';current=[];bloomRecommendation=null;report=reportCore='';$('flowerTypeTag').textContent='解析後に自動決定';$('flowerTypeReason').textContent='全成分の役割から花の種類を自動で決めます。';resetFlower($('flower'));$('flowerCaptionName').textContent='野の花';$('flowerCaptionNote').textContent='全成分から花を選びます。';$('formulaAim').textContent='';$('formulaAim').hidden=true;$('formulaSignatureText').textContent='';$('formulaSignature').hidden=true;$('uncertainty').textContent='';$('analysisDetails').hidden=true;$('flowerTitle').textContent='入力後に、花にしてみましょう。';$('flowerSubtitle').textContent='内容を確認して解析ボタンを押してください。';$('resultBadge').textContent='未解析';buttons();}
 $('japanConfirmed').onchange=invalidate;

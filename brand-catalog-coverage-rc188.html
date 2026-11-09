@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>全ブランドの登録状況｜処方の花</title>
+<style>
+:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:#26372e;background:#fafbf9}
+*{box-sizing:border-box}
+body{margin:0}
+header{background:#fff;border-bottom:1px solid #e5ebe6;padding:18px max(16px,calc((100vw - 1050px)/2));display:flex;align-items:center;gap:16px;justify-content:space-between}
+header a{color:#365b42;font-size:13px;font-weight:650;text-decoration:none}
+main{max-width:1050px;margin:auto;padding:32px 16px 65px}
+h1{font-size:clamp(23px,4vw,30px);margin:0 0 12px;letter-spacing:-.035em}
+p{color:#69756e;font-size:13px;line-height:1.85}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0}
+.stat{background:white;border:1px solid #e7ece8;border-radius:12px;padding:15px 10px;text-align:center}
+.stat strong{display:block;font-size:clamp(21px,5vw,29px);color:#365a44}
+.stat span{display:block;font-size:11px;color:#77867b}
+.controls{display:flex;align-items:stretch;gap:10px;margin:18px 0}
+input,select{min-width:0;min-height:44px;padding:10px;border:1px solid #d5dfd8;border-radius:9px;background:white;color:#2d3f33;font-size:16px}
+input{flex:1}
+select{flex:0 0 auto;font-size:13px}
+.row{background:white;border:1px solid #e5ece6;border-radius:11px;margin:8px 0;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.row b{font-size:14px}
+.meta{display:block;color:#7d8780;font-size:11px;margin-top:5px;line-height:1.65;overflow-wrap:anywhere}
+.status{font-size:12px;white-space:nowrap;color:#446650}
+.status.zero{color:#966b51}
+.actions{display:flex;flex-direction:column;align-items:end;gap:7px;flex:0 0 auto}
+.actions a{font-size:12px;color:#426c4e;white-space:nowrap}
+.note{margin:12px 0;font-size:12px}
+#result-count{margin:20px 0 12px}
+a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #648e70;outline-offset:3px}
+@media(max-width:540px){main{padding:25px 12px 55px}.controls{flex-wrap:wrap}.controls input{flex:1 1 100%}.controls select{width:100%}.row{align-items:flex-start;padding:12px}.actions{align-items:end}.meta{font-size:10px}}
+</style></head><body>
+<header><a href="./">✿ 処方の花</a><a href="./">商品検索へ戻る</a></header>
+<main><h1>ブランド別の商品登録状況</h1>
+<p>検索対象の全201ブランドを同じ基準で整理しました。商品名が未登録でも、製品自体が存在しないことを意味しません。成分の確認状況と商品名の確認状況は別です。</p>
+<div class="stats" aria-label="ブランドの登録状況">
+ <div class="stat"><strong id="total">—</strong><span>検索対象ブランド</span></div>
+ <div class="stat"><strong id="present">—</strong><span>商品名候補あり</span></div>
+ <div class="stat"><strong id="absent">—</strong><span>商品名候補未登録</span></div>
+</div>
+<p class="note">新たな商品名候補は出典付きの「名前のみ」です。日本国内版の法定全成分・色番・JAN・現物ロットは、個別に確認できた場合だけ表示します。</p>
+<p class="note">rc188の35名称候補は、新規32件と既存のロート製薬名義3商品のブランド別検索参照です。同じ商品を新規SKUとして二重計上せず、成分の収録件数は変更していません。</p>
+<div class="controls">
+ <input id="filter" type="search" aria-label="ブランド名で絞り込む" placeholder="ブランド名で絞り込む" autocomplete="off">
+ <select id="state" aria-label="登録状態で絞り込む"><option value="all">すべて表示</option><option value="none">商品名未登録</option><option value="names">商品名候補あり</option><option value="supplement">今回追加したブランド</option></select>
+</div>
+<p id="result-count" aria-live="polite"></p><div id="list"></div>
+<p class="note">ブランドごとの「公式一覧」は、個別に確認した一覧へのリンクです。一般的なブランドサイトは「公式・企業サイト」と表示し、一覧の掲載内容を確認したものとは区別します。</p>
+<p><a href="./">商品検索へ戻る</a> ／ <a href="resources.html">資料・出典</a></p>
+</main>
+<script type="module">
+const $=id=>document.getElementById(id);
+let rows=[];
+const formatter=new Intl.NumberFormat('ja-JP');
+function render(){
+ const q=$('filter').value.normalize('NFKC').toLowerCase().replace(/[\s　・-]+/g,'');
+ const kind=$('state').value;
+ const filtered=rows.filter(x=>{
+  const n=x.name.normalize('NFKC').toLowerCase().replace(/[\s　・-]+/g,'');
+  return (!q||n.includes(q))&&(kind==='all'||kind==='none'&&x.searchable===0||kind==='names'&&x.searchable>0||kind==='supplement'&&x.rc188Added>0);
+ });
+ $('result-count').textContent='表示 '+filtered.length+'ブランド／全 '+rows.length+'ブランド';
+ const zone=$('list');zone.replaceChildren();
+ for(const x of filtered){
+  const card=document.createElement('article');card.className='row';
+  const info=document.createElement('div');
+  const title=document.createElement('b');title.textContent=x.name;
+  const meta=document.createElement('span');meta.className='meta';
+  meta.textContent='商品名候補 '+formatter.format(x.searchable)+'件（従来登録 '+x.registered+'／出典付き補完 '+x.supplemental+'）';
+  info.append(title,meta);
+  const actions=document.createElement('div');actions.className='actions';
+  const st=document.createElement('span');st.className='status'+(x.searchable?'':' zero');
+  st.textContent=x.searchable?'商品名の候補あり':'商品名未登録';actions.append(st);
+  const link=document.createElement('a');link.href='./?q='+encodeURIComponent(x.name);link.textContent='アプリで探す';actions.append(link);
+  if(x.officialListingUrl||x.brandSiteUrl){
+   const official=document.createElement('a');official.href=x.officialListingUrl||x.brandSiteUrl;
+   official.target='_blank';official.rel='noopener noreferrer';
+   official.textContent=x.officialListingUrl?'確認した公式一覧':'公式・企業サイト';
+   actions.append(official);
+  }
+  card.append(info,actions);zone.append(card);
+ }
+ if(!filtered.length){const msg=document.createElement('p');msg.textContent='条件に合うブランドはありません。';zone.append(msg);}
+}
+async function init(){
+ try{
+  const r=await fetch('./brand-catalog-coverage-rc188.json',{cache:'no-store'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const data=await r.json();
+  if(data.summary?.eligibleBrandNames!==201||data.rows?.length!==201)throw Error('集計の整合性を確認できません');
+  rows=data.rows;$('total').textContent=data.summary.eligibleBrandNames;
+  $('present').textContent=data.summary.brandsWithSearchableCandidates;
+  $('absent').textContent=data.summary.brandsWithoutSearchableCandidates;
+  render();
+  const params=new URLSearchParams(location.search);
+  if(params.has('brand')){$('filter').value=params.get('brand');render();}
+ }catch(e){$('result-count').textContent='登録状況を読み込めません。ページを再読み込みしてください。';}
+}
+$('filter').addEventListener('input',render);$('state').addEventListener('change',render);
+init();
+</script></body></html>
