@@ -127,19 +127,34 @@ function partialEvidence(){
   const overrides=new Map();
   for(const record of data.records){
    const existing=byId.get(record.productId);
-   if(!existing||existing.sourceUrl!==record.sourceUrl||overrides.has(record.productId)||
+   const product=registeredProducts.find(p=>p.id===record.productId);
+   if(!product||(existing&&existing.sourceUrl!==record.sourceUrl)||overrides.has(record.productId)||
+      !/^https:\/\/(?:www\.shiseido\.co\.jp|maison\.kose\.co\.jp)\//.test(record.sourceUrl)||
       !Array.isArray(record.ingredients)||record.ingredients.length<1||record.ingredients.length>200||
       record.ingredients.some(name=>typeof name!=='string'||!name.trim()))
       throw Error('拡充成分資料の商品・掲載元照合が不正: '+record.productId);
    overrides.set(record.productId,record);
   }
-  return historical.map(record=>{
+  const upgraded=historical.map(record=>{
    const update=overrides.get(record.productId);
    return update?{...record,ingredients:update.ingredients,ingredientCount:update.ingredients.length,
     checkedOn:update.checkedOn,sourceReviewBatch:'coverage-20261110',
     sourceSectionHeading:'公式商品ページに記載の成分名称',
     sourceScopeCaution:'公式の商品ページに掲載された名称を収録。現物・現行ロットは未照合。'}:record;
   });
+  const added=data.records.filter(record=>!byId.has(record.productId)).map(record=>{
+   const item=registeredProducts.find(p=>p.id===record.productId);
+   return {productId:item.id,brand:item.brand,productName:item.name,volume:item.volume||null,
+    sourceUrl:record.sourceUrl,sourceType:record.sourceType,checkedOn:record.checkedOn,
+    kind:record.kind||item.kind||'cosmetic',coverage:'partial-only',order:'not-confirmed',labelCompared:false,
+    currentFormulaCompared:false,sourceReviewBatch:'coverage-20261110',
+    sourceActiveIngredientNames:record.sourceActiveIngredientNames||[],
+    sourceOtherIngredientNames:record.ingredients.filter(name=>!(record.sourceActiveIngredientNames||[]).includes(name)),
+    ingredients:record.ingredients,ingredientCount:record.ingredients.length,
+    sourceSectionHeading:'メーカーの商品ページの掲載成分',
+    sourceScopeCaution:'掲載ページの成分名を参考収録。現物・最新処方は未照合。'};
+  });
+  return [...upgraded,...added];
  }).catch(e=>{partialEvidencePromise=null;throw e;});
  return partialEvidencePromise;
 }
