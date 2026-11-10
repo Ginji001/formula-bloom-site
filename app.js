@@ -1623,7 +1623,7 @@ function showMarketplaceProducts(rows,query){
    caution.textContent='【商品名のみ収録】'+row.source+(row.productPeriod?'（'+row.productPeriod+'月間ランキング）':'')+'の公開ページで商品名・リンクを確認。日本語全成分、配合、現行販売、製造販売業者の確認は未実施。';
    holder.append(caution);
    sourceLink(holder,row.productPageUrl,row.source+'の商品掲載ページ');
-   sourceLink(holder,row.sourceBrandUrl,row.source+'のブランド掲載ページ');
+   sourceLink(holder,row.sourceBrandUrl,row.source==='Qoo10'?'Qoo10運営元のランキング発表':row.source+'のブランド掲載ページ');
    const button=document.createElement('button');button.type='button';button.className='secondary';
    button.textContent='手元の日本語全成分を入力する';
    button.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(button);
@@ -1683,7 +1683,7 @@ function showAddedBrand(row){
  holder.append(caution);
  // Product-name listings are additional third-party evidence, not formulas.
  const slot=document.createElement('div');slot.className='marketplace-brand-products';holder.append(slot);
- if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-candidates-20261110.json').catch(e=>{
+ if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-search-lite-20261110.json').catch(e=>{
   marketplaceProductsPromise=null;throw e;
  });
  const keys=new Set([row.name,...(row.aliases||[])].map(productFold).filter(Boolean));
@@ -1733,6 +1733,11 @@ function quickRegisteredBrands(){
 quickRegisteredBrands();
 getJSON('/manufacturer-group-reconciliation-20261110.json').then(data=>{
  manufacturerGroupRows=Array.isArray(data?.groups)?data.groups:[];
+}).catch(()=>{});
+getJSON('/public-collection-progress-20261110.json').then(data=>{
+ const indicator=$('publicProductIndexCount');
+ if(indicator&&Number.isInteger(data?.totalExternalProductNameReferences))
+  indicator.textContent=data.totalExternalProductNameReferences.toLocaleString('ja-JP')+'件';
 }).catch(()=>{});
 getJSON('/brand-directory-additions-20261110.json').then(data=>{
  addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&row.aliases.length&&row.listingStatus):[];
@@ -1871,7 +1876,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
 // Public LIPS and @cosme product names are distinct from verified ingredient records.
 if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=2){
  try{
-  if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-candidates-20261110.json').catch(e=>{
+  if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-search-lite-20261110.json').catch(e=>{
    marketplaceProductsPromise=null;throw e;
   });
   const data=await marketplaceProductsPromise;
