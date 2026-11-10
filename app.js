@@ -1552,6 +1552,7 @@ let addedBrandRecords=[];
 let marketplaceBrandRecords=[];
 let cosmeetBrandRecords=[];
 let cosmeetMakerRecords=[];
+let cosmeetAllBrandRecords=[];
 let marketplaceProductsPromise=null;
 let manufacturerGroupRows=[];
 function addedManufacturerMatches(q){
@@ -1589,7 +1590,7 @@ function showCosmeetMaker(row){
  holder.append(caution);
  if(row.makerUrl)sourceLink(holder,row.makerUrl,'@cosmeのメーカー掲載元');
  for(const brandId of row.brandIds.slice(0,60)){
-  const b=cosmeetBrandRecords.find(x=>x.brandId===brandId);
+  const b=cosmeetAllBrandRecords.find(x=>x.brandId===brandId);
   if(!b)continue;
   const btn=document.createElement('button');btn.className='secondary';btn.type='button';
   btn.textContent=b.name+'（@cosme掲載ブランド）';
@@ -1744,7 +1745,8 @@ getJSON('/marketplace-brand-candidates-20261110.json').then(data=>{
 getJSON('/cosmeet-maker-brand-candidates-20261110.json').then(data=>{
  if(Array.isArray(data?.brands)&&Array.isArray(data?.makers)){
   const newIds=new Set(data.unmatchedBrandIds||[]);
-  cosmeetBrandRecords=data.brands.filter(row=>newIds.has(row.brandId)&&typeof row.name==='string');
+  cosmeetAllBrandRecords=data.brands.filter(row=>typeof row.name==='string');
+  cosmeetBrandRecords=cosmeetAllBrandRecords.filter(row=>newIds.has(row.brandId));
   cosmeetMakerRecords=data.makers;
   quickRegisteredBrands();
  }
@@ -1789,7 +1791,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&(!addedBrandRecords.length||!manufact
   if(brandData?.brands)addedBrandRecords=brandData.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases));
   if(companyData?.groups)manufacturerGroupRows=companyData.groups;
   if(marketData?.rows)marketplaceBrandRecords=marketData.rows.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&Array.isArray(row.sources));
-  if(cosmeetData?.makers&&cosmeetData?.brands){const ids=new Set(cosmeetData.unmatchedBrandIds||[]);cosmeetMakerRecords=cosmeetData.makers;cosmeetBrandRecords=cosmeetData.brands.filter(row=>ids.has(row.brandId));}
+  if(cosmeetData?.makers&&cosmeetData?.brands){const ids=new Set(cosmeetData.unmatchedBrandIds||[]);cosmeetMakerRecords=cosmeetData.makers;cosmeetAllBrandRecords=cosmeetData.brands;cosmeetBrandRecords=cosmeetAllBrandRecords.filter(row=>ids.has(row.brandId));}
   quickRegisteredBrands();
  }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
 }

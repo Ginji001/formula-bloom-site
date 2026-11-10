@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-10",
+  "scope": "public-web-index-names-and-links-separate-from-verified-ingredient-records",
+  "totalBrandNameCandidates": 19241,
+  "totalExternalProductNameReferences": 38617,
+  "priorIngredientsRegisteredProducts": 2163,
+  "completeCoverage": false,
+  "sites": {
+    "lips": {
+      "brandDirectoryListed": 11984,
+      "brandPagesInspected": 750,
+      "productNameReferences": 37628,
+      "nextBrandIndex": 750,
+      "note": "Brand landing pages only; remaining brands and paginated product results not exhaustively inspected."
+    },
+    "atcosme": {
+      "publicMakerBrandSearchResultCountAsListed": 78946,
+      "searchPagesInspected": 900,
+      "listedMakerIds": 5943,
+      "listedBrandIds": 8607,
+      "newBrandDisplayNames": 6747,
+      "nextMakerBrandPage": 900,
+      "brandProductFirstPagesInspected": 350,
+      "productNameReferences": 900,
+      "nextBrandProductIndex": 350,
+      "note": "Search result count is source-reported and does not equal all independent manufacturer/brand owners; SKU, current maker and full product lists unverified."
+    },
+    "qoo10": {
+      "beautyBrandDirectoryNames": 111,
+      "operatorMonthlyRankingsReviewed": 9,
+      "productNameReferences": 89,
+      "note": "Operator monthly-rankings only, not all Qoo10 listings or active stock."
+    }
+  },
+  "dataFiles": [
+    "marketplace-brand-candidates-20261110.json",
+    "cosmeet-maker-brand-candidates-20261110.json",
+    "marketplace-product-candidates-20261110.json"
+  ],
+  "caveats": [
+    "Brand and product candidate indexes are sourced to public sites but not necessarily official brand or manufacturer announcements.",
+    "Only 2,163 original product registrations have ingredient evidence or explicitly labelled hypotheses; external name references do not.",
+    "Completeness across the open Internet, all three marketplaces, every SKU or every formulation is not established."
+  ]
+}
