@@ -1549,34 +1549,73 @@ function presentRegisteredBrand(brand){
 let provisionalBrands=null,provisionalLoading=false;
 let breadthBrandNames=[];
 let addedBrandRecords=[];
+let manufacturerGroupRows=[];
+function addedManufacturerMatches(q){
+ const key=String(q||'').trim().toLowerCase().replace(/\s/g,'');
+ return manufacturerGroupRows.filter(row=>row.groupNameAsListed.toLowerCase().replace(/\s/g,'')===key);
+}
+function showManufacturerGroups(rows){
+ const holder=$('searchResults');holder.replaceChildren();
+ const caution=document.createElement('p');caution.className='muted';
+ caution.textContent='以下は外部市場一覧が示す企業グループとブランドの関係です。法的な製造販売業者や製造工場を確認したものではありません。';
+ holder.append(caution);
+ for(const row of rows){
+  const h=document.createElement('h3');h.textContent=row.groupNameAsListed+'（外部掲載の企業グループ）';holder.append(h);
+  sourceLink(holder,row.sourceUrl,'企業グループの掲載元');
+  for(const brand of row.brands){
+   const b=document.createElement('button');b.className='secondary';b.type='button';
+   b.textContent=brand.name+(brand.japaneseName?'（'+brand.japaneseName+'）':'')+(brand.newlyAdded?'・追加候補':'・既存候補');
+   b.onclick=()=>{const added=addedBrandRecords.find(x=>x.name===brand.name);
+    if(added)showAddedBrand(added);
+    else { $('query').value=brand.name;search(); }
+   };holder.append(b);
+  }
+ }
+}
 function addedBrandMatch(q){
  const key=String(q||'').trim().toLowerCase();
  return addedBrandRecords.find(row=>row.aliases.some(alias=>alias.toLowerCase()===key));
 }
 function showAddedBrand(row){
  const holder=$('searchResults');holder.replaceChildren();
- const heading=document.createElement('h3');
- heading.textContent=row.name+'（'+row.japaneseName+'）｜メーカー：'+row.maker;
- holder.append(heading);
- const maker=document.createElement('p');maker.className='muted';
- maker.textContent='ブランド展開元：'+row.maker+'（'+row.makerCountry+'）／日本総代理店：'+row.japanDistributor;
- holder.append(maker);
- sourceLink(holder,row.makerEvidenceUrl,'メーカー発表を確認');
- sourceLink(holder,row.japanDistributorEvidenceUrl,'国内総代理店の発表を確認');
- sourceLink(holder,row.officialJapaneseStore,'UIQ 日本公式販売ショップを開く');
- const intro=document.createElement('p');intro.className='muted';
- intro.textContent='商品名を確認できた例（成分や個別SKU・JANは未収録）';
- holder.append(intro);
- for(const product of row.products){
-  const info=document.createElement('p');info.className='muted';
-  info.textContent=product.name+' ／ 成分は未収録';
-  holder.append(info);
-  sourceLink(holder,product.evidenceUrl,product.name+'の掲載元');
+ const title=document.createElement('h3');
+ title.textContent=row.name+(row.japaneseName&&row.japaneseName!==row.name?'（'+row.japaneseName+'）':'');
+ holder.append(title);
+ const detail=document.createElement('p');detail.className='muted';
+ if(row.maker){
+  detail.textContent='ブランド展開元：'+row.maker+'（'+row.makerCountry+'）／日本総代理店：'+row.japanDistributor;
+  holder.append(detail);
+  if(row.makerEvidenceUrl)sourceLink(holder,row.makerEvidenceUrl,'ブランド展開元の公表情報');
+  if(row.japanDistributorEvidenceUrl)sourceLink(holder,row.japanDistributorEvidenceUrl,'国内総代理店の公表情報');
+  if(row.officialJapaneseStore)sourceLink(holder,row.officialJapaneseStore,'日本向けの公式販売先');
+ }else{
+  detail.textContent='外部市場一覧に掲載されたブランド候補です。メーカーの法人名・商品名・成分・日本での販売状況は未確認です。';
+  holder.append(detail);
+  if(row.corporateGroupReportedByDirectory){
+   const group=document.createElement('p');group.className='muted';
+   group.textContent='外部一覧に記載された企業グループ：'+row.corporateGroupReportedByDirectory+'（法定の製造業者・販売元と同一とは限りません）';
+   holder.append(group);
+  }
+  if(row.groupEvidenceUrl)sourceLink(holder,row.groupEvidenceUrl,'候補の掲載元（メーカー公式とは限りません）');
+ }
+ if(row.products?.length){
+  const intro=document.createElement('p');intro.className='muted';
+  intro.textContent='商品名の掲載例（成分や個別SKU・JANは未収録）';holder.append(intro);
+  for(const product of row.products){
+   const info=document.createElement('p');info.className='muted';
+   info.textContent=product.name+' ／ 成分は未収録';holder.append(info);
+   if(product.evidenceUrl)sourceLink(holder,product.evidenceUrl,product.name+'の掲載元');
+  }
+ }else{
+  const pending=document.createElement('p');pending.className='muted';
+  pending.textContent='商品名の個別登録は未実施。商品未販売やブランド終了の証拠ではありません。';
+  holder.append(pending);
  }
  const caution=document.createElement('p');caution.className='muted';
- caution.textContent='旧201ブランド収録範囲外から追加。商品名とメーカーを先行登録したもので、2,163件の商品・成分登録数には含みません。';
+ caution.textContent='旧201ブランドの範囲外で追加した候補です。登録済み2,163商品とは別集計で、確認できない成分をこのブランドに流用していません。';
  holder.append(caution);
 }
+
 function quickRegisteredBrands(){
   const zone=$('registeredQuick');if(!zone)return;
   zone.replaceChildren();
@@ -1593,7 +1632,7 @@ function quickRegisteredBrands(){
     if(count)productBrands++;
     const b=document.createElement('button');b.className='registered-chip'+(count||manufacturerCount?'':' brand-pending');
     b.type='button';
-    b.textContent=brand.name+(newBrand?'（'+newBrand.japaneseName+'・メーカー情報と商品例）':manufacturerCount?'（メーカー系列 '+manufacturerCount+'商品候補）':count?'（商品候補 '+count+'件）':'（仮登録・商品名未確認）');
+    b.textContent=brand.name+(newBrand?(newBrand.maker?'（'+newBrand.japaneseName+'・メーカー確認済み）':'（'+newBrand.japaneseName+'・外部掲載候補）'):manufacturerCount?'（メーカー系列 '+manufacturerCount+'商品候補）':count?'（商品候補 '+count+'件）':'（仮登録・商品名未確認）');
     b.onclick=()=>{
       tab('search');$('query').value=brand.name;
       invalidate();if(newBrand)showAddedBrand(newBrand);else openBrandOrManufacturer(brand.name);
@@ -1605,8 +1644,11 @@ function quickRegisteredBrands(){
   if(!matches.length)zone.textContent='該当するブランドはありません。';
 }
 quickRegisteredBrands();
+getJSON('/manufacturer-group-reconciliation-20261110.json').then(data=>{
+ manufacturerGroupRows=Array.isArray(data?.groups)?data.groups:[];
+}).catch(()=>{});
 getJSON('/brand-directory-additions-20261110.json').then(data=>{
- addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>row.name==='UIQ'&&Array.isArray(row.aliases)&&row.maker):[];
+ addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&row.aliases.length&&row.listingStatus):[];
  quickRegisteredBrands();
 }).catch(()=>{});
 getJSON('/brand-catalog-coverage-rc188.json').then(data=>{
@@ -1637,15 +1679,20 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
-if(!forceOfficial&&/^(uiq|ユイク|유이크)$/i.test(q)&&!addedBrandRecords.length){
+if(!forceOfficial&&!/^https:\/\//.test(q)&&(!addedBrandRecords.length||!manufacturerGroupRows.length)){
  try{
-  const data=await getJSON('/brand-directory-additions-20261110.json',ctx.signal);
+  const [brandData,companyData]=await Promise.all([
+   addedBrandRecords.length?Promise.resolve(null):getJSON('/brand-directory-additions-20261110.json',ctx.signal),
+   manufacturerGroupRows.length?Promise.resolve(null):getJSON('/manufacturer-group-reconciliation-20261110.json',ctx.signal)
+  ]);
   if(ctx.version!==lookupVersion)return;
-  addedBrandRecords=Array.isArray(data?.brands)?data.brands:[];
+  if(brandData?.brands)addedBrandRecords=brandData.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases));
+  if(companyData?.groups)manufacturerGroupRows=companyData.groups;
   quickRegisteredBrands();
  }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
 }
 if(!forceOfficial&&addedBrandMatch(q)){showAddedBrand(addedBrandMatch(q));return;}
+if(!forceOfficial&&addedManufacturerMatches(q).length){showManufacturerGroups(addedManufacturerMatches(q));return;}
 if(!forceOfficial&&(registeredBrands.includes(q)||breadthBrandNames.includes(q))&&!productsForBrandWithSupplements(q).length){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('p');heading.className='selected-product-state';

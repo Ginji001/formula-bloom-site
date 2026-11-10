@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-10",
+  "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+  "allSourceBrands": 122,
+  "independentlyListedGroups": 77,
+  "verifiedIndividualMakerLinks": 1,
+  "verifiedIndividualMakerBrand": "UIQ",
+  "verifiedIndividualMaker": "GENOME & COMPANY, INC.",
+  "sourceForVerifiedMaker": "https://prtimes.jp/main/html/rd/p/000000004.000182157.html",
+  "industryMemberReference": "https://www.jcia.org/admin/memberlist/detail/",
+  "caveats": [
+    "企業グループは外部市場一覧の表記。法的な製造販売業者・製造工場・国内輸入者と同一とは限らない。",
+    "日本化粧品工業会の会員名簿は企業調査の参考資料で、全ブランド・全企業・製造工場の網羅を保証しない。",
+    "世界全メーカー・全ブランドの完全網羅は検証できない。"
+  ],
+  "groups": [
+    {
+      "groupNameAsListed": "BENOW",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "numbuzin",
+          "japaneseName": "ナンバーズイン",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "Dr.ウィラード・ウォーター",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Dr.ウィラード・ウォーター",
+          "japaneseName": "ﾄﾞｸﾀｰｳｨﾗｰﾄﾞｳｫｰﾀｰ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "Dr.ルルルン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ルルルン",
+          "japaneseName": "ルルルン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "I-ne",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "SKN REMED",
+          "japaneseName": "スキンリメド",
+          "newlyAdded": true
+        },
+        {
+          "name": "TOUT VERT",
+          "japaneseName": "トゥヴェール",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "KAIAN",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "EVOLURE",
+          "japaneseName": "エボリュー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "LIENA",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Herz skin",
+          "japaneseName": "ヘルツスキン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "LVMH モエ ヘネシー・ルイ ヴィトン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "GUERLAIN",
+          "japaneseName": "ゲラン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "MIMC",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MiMC",
+          "japaneseName": "エムアイエムシー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "OSAJI",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "OSAJI",
+          "japaneseName": "オサジ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "TBS",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Saborino",
+          "japaneseName": "サボリーノ",
+          "newlyAdded": true
+        },
+        {
+          "name": "乾燥さん",
+          "japaneseName": "カンソウサン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "VT",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "VT COSMETICS",
+          "japaneseName": "ブイティーコスメティックス",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "アジュバンHD",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MELECT",
+          "japaneseName": "ミレクト",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "アモーレパシフィック",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "雪花秀",
+          "japaneseName": "ソルファス",
+          "newlyAdded": false
+        },
+        {
+          "name": "COSRX",
+          "japaneseName": "コスアールエックス",
+          "newlyAdded": false
+        },
+        {
+          "name": "innisfree",
+          "japaneseName": "イニスフリー",
+          "newlyAdded": false
+        },
+        {
+          "name": "LANEIGE",
+          "japaneseName": "ラネージュ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ヴェルジェ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "シェルクルール",
+          "japaneseName": "シェルクルール",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "エーピーアール",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "medicube",
+          "japaneseName": "メディキューブ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "エスティ ローダー",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "La Mer",
+          "japaneseName": "ラメール",
+          "newlyAdded": true
+        },
+        {
+          "name": "Clinique",
+          "japaneseName": "クリニーク",
+          "newlyAdded": true
+        },
+        {
+          "name": "Estée Lauder",
+          "japaneseName": "エスティローダー",
+          "newlyAdded": true
+        },
+        {
+          "name": "Dr.Jart+",
+          "japaneseName": "ドクタージャルト",
+          "newlyAdded": false
+        },
+        {
+          "name": "The Ordinary",
+          "japaneseName": "オーディナリー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "エルアンドピーコスメティック",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MEDIHEAL",
+          "japaneseName": "メディヒール",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "オリックス",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "DHC",
+          "japaneseName": "ディーエイチシー",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ガルデルマ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Cetaphil",
+          "japaneseName": "セタフィル",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "カロン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Bifesta",
+          "japaneseName": "ビフェスタ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "キリン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Attenir",
+          "japaneseName": "アテニア",
+          "newlyAdded": false
+        },
+        {
+          "name": "FANCL",
+          "japaneseName": "ファンケル",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "クオレ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "AXI",
+          "japaneseName": "アキシ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "クラシエ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Hadabisei",
+          "japaneseName": "ハダビセイ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "クラランス",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "CLARINS",
+          "japaneseName": "クラランス",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "クレイバー",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "SKIN1004",
+          "japaneseName": "スキンテンオーフォー",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ケンビュー",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Dr.Ci:Labo",
+          "japaneseName": "ドクターシーラボ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "コーセー",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ALBION",
+          "japaneseName": "アルビオン",
+          "newlyAdded": true
+        },
+        {
+          "name": "DECORTÉ",
+          "japaneseName": "コスメデコルテ",
+          "newlyAdded": false
+        },
+        {
+          "name": "Carté HD",
+          "japaneseName": "カルテエイチディー",
+          "newlyAdded": true
+        },
+        {
+          "name": "ONE BY KOSÉ",
+          "japaneseName": "ワンバイコーセー",
+          "newlyAdded": false
+        },
+        {
+          "name": "雪肌精",
+          "japaneseName": "セッキセイ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ザ・ファウンダーズ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Anua",
+          "japaneseName": "アヌア",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "サンギ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "HAP+R",
+          "japaneseName": "ハップアール",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "シーエフイービー シスレー",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Sisley Paris",
+          "japaneseName": "シスレー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "シャネル",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "CHANEL",
+          "japaneseName": "シャネル",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "シロ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "SHIRO",
+          "japaneseName": "シロ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "シロク",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "FAS",
+          "japaneseName": "ファス",
+          "newlyAdded": true
+        },
+        {
+          "name": "N organic",
+          "japaneseName": "エヌオーガニック",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ちふれ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ちふれ",
+          "japaneseName": "チフレ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "トリデン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Torriden",
+          "japaneseName": "トリデン",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ナチュラルサイエンス",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ママ＆キッズ",
+          "japaneseName": "ママアンドキッズ",
+          "newlyAdded": true
+        },
+        {
+          "name": "レドナ",
+          "japaneseName": "レドナ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ナリス化粧品",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "NARIS UP",
+          "japaneseName": "ナリスアップ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ナルックスHD",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "カメリナライフビューティー",
+          "japaneseName": "カメリナライフビューティー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ネイチャーズウェイ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "chant a charm",
+          "japaneseName": "チャントアチャーム",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ネオナチュラル",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Natures for",
+          "japaneseName": "ネイチャーズフォー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ノエビア",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "NOV",
+          "japaneseName": "ノブ",
+          "newlyAdded": false
+        },
+        {
+          "name": "なめらか本舗",
+          "japaneseName": "ナメラカホンポ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ハーバー研究所",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "HABA",
+          "japaneseName": "ハーバー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ハイサイド",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "AMPLEUR",
+          "japaneseName": "アンプルール",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "バイヤスドルフ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "La Prairie",
+          "japaneseName": "ラプレリー",
+          "newlyAdded": true
+        },
+        {
+          "name": "NIVEA",
+          "japaneseName": "ニベア",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ハリウッド",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Hollywood",
+          "japaneseName": "ハリウッド",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ピアス",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ACSEINE",
+          "japaneseName": "アクセーヌ",
+          "newlyAdded": true
+        },
+        {
+          "name": "naturie",
+          "japaneseName": "ナチュリエ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ピエール ファーブル",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Avène",
+          "japaneseName": "アベンヌ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ビバリーグレンラボラトリーズ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "b.glen",
+          "japaneseName": "ビーグレン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "プレミアアンチエイジング",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "CANADEL",
+          "japaneseName": "カナデル",
+          "newlyAdded": true
+        },
+        {
+          "name": "DUO",
+          "japaneseName": "デュオ",
+          "newlyAdded": true
+        },
+        {
+          "name": "Lalaskin",
+          "japaneseName": "ララスキン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "プロクター・アンド・ギャンブル",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "SK-II",
+          "japaneseName": "エスケーツー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ポーラ・オルビス",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "POLA",
+          "japaneseName": "ポーラ",
+          "newlyAdded": false
+        },
+        {
+          "name": "DECENCIA",
+          "japaneseName": "ディセンシア",
+          "newlyAdded": true
+        },
+        {
+          "name": "Jurlique",
+          "japaneseName": "ジュリーク",
+          "newlyAdded": true
+        },
+        {
+          "name": "ORBIS",
+          "japaneseName": "オルビス",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "マークスアンドウェブ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MARKS&WEB",
+          "japaneseName": "マークスアンドウェブ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "マッシュビューティーラボ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "F organics",
+          "japaneseName": "エッフェオーガニック",
+          "newlyAdded": true
+        },
+        {
+          "name": "Mitea ORGANIC",
+          "japaneseName": "ミティアオーガニック",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "マニーニ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ベーシックケアAZ",
+          "japaneseName": "ベーシックケアエーゼット",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ヤーマン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MAKANAI",
+          "japaneseName": "マカナイ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ユーグレナ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "epo",
+          "japaneseName": "エポ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ユニリーバ・ジャパン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "RAFRA",
+          "japaneseName": "ラフラ",
+          "newlyAdded": true
+        },
+        {
+          "name": "TUNEMAKERS",
+          "japaneseName": "チューンメーカーズ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ラッシュ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "LUSH",
+          "japaneseName": "ラッシュ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ランクアップ",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MANARA",
+          "japaneseName": "マナラ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ロート製薬",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Obagi",
+          "japaneseName": "オバジ",
+          "newlyAdded": false
+        },
+        {
+          "name": "CareCera",
+          "japaneseName": "ケアセラ",
+          "newlyAdded": false
+        },
+        {
+          "name": "メラノCC",
+          "japaneseName": "メラノシーシー",
+          "newlyAdded": false
+        },
+        {
+          "name": "肌ラボ",
+          "japaneseName": "ハダラボ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ロクシタン",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "L'OCCITANE",
+          "japaneseName": "ロクシタン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "ロレアル",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Lancôme",
+          "japaneseName": "ランコム",
+          "newlyAdded": true
+        },
+        {
+          "name": "Kiehl's",
+          "japaneseName": "キールズ",
+          "newlyAdded": true
+        },
+        {
+          "name": "TAKAMI",
+          "japaneseName": "タカミ",
+          "newlyAdded": true
+        },
+        {
+          "name": "La Roche-Posay",
+          "japaneseName": "ラロッシュポゼ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "花王",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Curél",
+          "japaneseName": "キュレル",
+          "newlyAdded": false
+        },
+        {
+          "name": "DEW",
+          "japaneseName": "デュウ",
+          "newlyAdded": false
+        },
+        {
+          "name": "freeplus",
+          "japaneseName": "フリープラス",
+          "newlyAdded": false
+        },
+        {
+          "name": "SOFINA iP",
+          "japaneseName": "ソフィーナアイピー",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "丸紅",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ETVOS",
+          "japaneseName": "エトヴォス",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "牛乳石鹸共進社",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "COW BRAND Mutenka",
+          "japaneseName": "カウブランドムテンカ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "再春館製薬所",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "DOMOHORN WRINKLE",
+          "japaneseName": "ドモホルンリンクル",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "山田養蜂場",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "pdc",
+          "japaneseName": "ピーディーシー",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "資生堂",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Clé de Peau Beauté",
+          "japaneseName": "クレ・ド・ポー ボーテ",
+          "newlyAdded": false
+        },
+        {
+          "name": "BAUM",
+          "japaneseName": "バウム",
+          "newlyAdded": false
+        },
+        {
+          "name": "BENEFIQUE",
+          "japaneseName": "ベネフィーク",
+          "newlyAdded": false
+        },
+        {
+          "name": "HAKU",
+          "japaneseName": "ハク",
+          "newlyAdded": false
+        },
+        {
+          "name": "IPSA",
+          "japaneseName": "イプサ",
+          "newlyAdded": false
+        },
+        {
+          "name": "SHISEIDO",
+          "japaneseName": "シセイドウ",
+          "newlyAdded": false
+        },
+        {
+          "name": "d program",
+          "japaneseName": "ディープログラム",
+          "newlyAdded": false
+        },
+        {
+          "name": "ELIXIR",
+          "japaneseName": "エリクシール",
+          "newlyAdded": false
+        },
+        {
+          "name": "IHADA",
+          "japaneseName": "イハダ",
+          "newlyAdded": false
+        },
+        {
+          "name": "AQUALABEL",
+          "japaneseName": "アクアレーベル",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "小林製薬",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ケシミン",
+          "japaneseName": "ケシミン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "松山油脂",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "肌をうるおす保湿スキンケア",
+          "japaneseName": "ﾊﾀﾞｦｳﾙｵｽﾎｼﾂｽｷﾝｹｱ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "新日本製薬",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "PERFECT ONE",
+          "japaneseName": "パーフェクトワン",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "石澤研究所",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "毛穴撫子",
+          "japaneseName": "ケアナナデシコ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "全薬",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "Arouge",
+          "japaneseName": "アルージェ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "大正製薬",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "AdryS",
+          "japaneseName": "アドライズ",
+          "newlyAdded": true
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "第一三共",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "MINON",
+          "japaneseName": "ミノン",
+          "newlyAdded": false
+        },
+        {
+          "name": "TRANSINO",
+          "japaneseName": "トランシーノ",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "富士フイルム",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "ASTALIFT",
+          "japaneseName": "アスタリフト",
+          "newlyAdded": false
+        }
+      ]
+    },
+    {
+      "groupNameAsListed": "良品計画",
+      "sourceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "listingType": "independent-directory-corporate-group-not-verified-legal-manufacturer",
+      "brands": [
+        {
+          "name": "無印良品",
+          "japaneseName": "ムジルシリョウヒン",
+          "newlyAdded": false
+        }
+      ]
+    }
+  ]
+}

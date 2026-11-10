@@ -604,10 +604,22 @@ jobs:
           const coverageFirst=JSON.parse(fs.readFileSync('_site/coverage-first-status-20261110.json','utf8'));
           const additionsFirst=JSON.parse(fs.readFileSync('_site/ingredient-listing-expansions-20261110.json','utf8'));
           const coverageApp=fs.readFileSync('_site/app.js','utf8');
+          const directoryExtra=JSON.parse(fs.readFileSync('_site/brand-directory-additions-20261110.json','utf8'));
+          const groupAudit=JSON.parse(fs.readFileSync('_site/manufacturer-group-reconciliation-20261110.json','utf8'));
           const allRegisteredHypotheses=JSON.parse(fs.readFileSync('_site/ingredient-hypotheses-20261110.json','utf8'));
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
              coverageFirst.remainingUnverified.length!==163||coverageFirst.previouslyUnknownNowReferenced!==9||
+             directoryExtra.audit.allDirectoryNamesAfterExtension!==313||
+             directoryExtra.brands.length!==112||
+             directoryExtra.audit.externalNewCandidates!==74||
+             directoryExtra.audit.marketplaceNewCandidates!==37||
+             directoryExtra.audit.marketplaceUnclassified!==4||
+             groupAudit.allSourceBrands!==122||
+             groupAudit.independentlyListedGroups!==77||
+             !coverageApp.includes('brand-directory-additions-20261110.json')||
+             !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
+             !stableHome.includes('計313件')||
              coverageFirst.registeredProducts!==2163||
              coverageFirst.allRegisteredFullJapaneseFormulas!==607||
              coverageFirst.allRegisteredPartialReferences!==1305||

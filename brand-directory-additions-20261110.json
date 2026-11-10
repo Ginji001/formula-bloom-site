@@ -1,7 +1,19 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "reviewedOn": "2026-11-10",
-  "scope": "new-brand-directory-extension-not-registered-SKU",
+  "scope": "one-confirmed-missing-brand-and-cross-referenced-third-party-market-brand-candidates; historical-201-unchanged",
+  "audit": {
+    "baselineRegisteredBrands": 201,
+    "externalCompared": 122,
+    "existingMatches": 48,
+    "externalNewCandidates": 74,
+    "marketplaceReviewed": 50,
+    "marketplaceUnclassified": 4,
+    "marketplaceNewCandidates": 37,
+    "independentlyVerifiedNew": 1,
+    "allDirectoryNamesAfterExtension": 313,
+    "disclaimer": "外部市場一覧のブランド候補を登録したもので、公式の商品名・個別SKU・全成分・製造業者の確認は別途必要。世界中の全ブランドの網羅を保証しない。"
+  },
   "brands": [
     {
       "name": "UIQ",
@@ -16,7 +28,7 @@
       "maker": "GENOME & COMPANY, INC.",
       "makerCountry": "韓国",
       "japanDistributor": "株式会社アイケイ（2025年3月発表の日本国内総代理店契約）",
-      "makerEvidenceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000182157.html",
+      "makerEvidenceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000182157.html",
       "japanDistributorEvidenceUrl": "https://prtimes.jp/main/html/rd/p/000000358.000016153.html",
       "officialJapaneseStore": "https://www.qoo10.jp/shop/uiq-japan",
       "officialKoreanStore": "https://theuiq.com/",
@@ -33,6 +45,2189 @@
           "ingredientsStatus": "not-collected"
         }
       ]
+    },
+    {
+      "name": "La Mer",
+      "japaneseName": "ラメール",
+      "aliases": [
+        "La Mer",
+        "ラメール"
+      ],
+      "corporateGroupReportedByDirectory": "エスティ ローダー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "CHANEL",
+      "japaneseName": "シャネル",
+      "aliases": [
+        "CHANEL",
+        "シャネル"
+      ],
+      "corporateGroupReportedByDirectory": "シャネル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Sisley Paris",
+      "japaneseName": "シスレー",
+      "aliases": [
+        "Sisley Paris",
+        "シスレー"
+      ],
+      "corporateGroupReportedByDirectory": "シーエフイービー シスレー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "La Prairie",
+      "japaneseName": "ラプレリー",
+      "aliases": [
+        "La Prairie",
+        "ラプレリー"
+      ],
+      "corporateGroupReportedByDirectory": "バイヤスドルフ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "SK-II",
+      "japaneseName": "エスケーツー",
+      "aliases": [
+        "SK-II",
+        "エスケーツー"
+      ],
+      "corporateGroupReportedByDirectory": "プロクター・アンド・ギャンブル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Lancôme",
+      "japaneseName": "ランコム",
+      "aliases": [
+        "Lancôme",
+        "ランコム"
+      ],
+      "corporateGroupReportedByDirectory": "ロレアル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "EVOLURE",
+      "japaneseName": "エボリュー",
+      "aliases": [
+        "EVOLURE",
+        "エボリュー"
+      ],
+      "corporateGroupReportedByDirectory": "KAIAN",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Herz skin",
+      "japaneseName": "ヘルツスキン",
+      "aliases": [
+        "Herz skin",
+        "ヘルツスキン"
+      ],
+      "corporateGroupReportedByDirectory": "LIENA",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "GUERLAIN",
+      "japaneseName": "ゲラン",
+      "aliases": [
+        "GUERLAIN",
+        "ゲラン"
+      ],
+      "corporateGroupReportedByDirectory": "LVMH モエ ヘネシー・ルイ ヴィトン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "MELECT",
+      "japaneseName": "ミレクト",
+      "aliases": [
+        "MELECT",
+        "ミレクト"
+      ],
+      "corporateGroupReportedByDirectory": "アジュバンHD",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Clinique",
+      "japaneseName": "クリニーク",
+      "aliases": [
+        "Clinique",
+        "クリニーク"
+      ],
+      "corporateGroupReportedByDirectory": "エスティ ローダー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Estée Lauder",
+      "japaneseName": "エスティローダー",
+      "aliases": [
+        "Estée Lauder",
+        "エスティローダー"
+      ],
+      "corporateGroupReportedByDirectory": "エスティ ローダー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "AXI",
+      "japaneseName": "アキシ",
+      "aliases": [
+        "AXI",
+        "アキシ"
+      ],
+      "corporateGroupReportedByDirectory": "クオレ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "CLARINS",
+      "japaneseName": "クラランス",
+      "aliases": [
+        "CLARINS",
+        "クラランス"
+      ],
+      "corporateGroupReportedByDirectory": "クラランス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Dr.Ci:Labo",
+      "japaneseName": "ドクターシーラボ",
+      "aliases": [
+        "Dr.Ci:Labo",
+        "ドクターシーラボ"
+      ],
+      "corporateGroupReportedByDirectory": "ケンビュー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ALBION",
+      "japaneseName": "アルビオン",
+      "aliases": [
+        "ALBION",
+        "アルビオン"
+      ],
+      "corporateGroupReportedByDirectory": "コーセー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "SHIRO",
+      "japaneseName": "シロ",
+      "aliases": [
+        "SHIRO",
+        "シロ"
+      ],
+      "corporateGroupReportedByDirectory": "シロ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "FAS",
+      "japaneseName": "ファス",
+      "aliases": [
+        "FAS",
+        "ファス"
+      ],
+      "corporateGroupReportedByDirectory": "シロク",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "AMPLEUR",
+      "japaneseName": "アンプルール",
+      "aliases": [
+        "AMPLEUR",
+        "アンプルール"
+      ],
+      "corporateGroupReportedByDirectory": "ハイサイド",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "b.glen",
+      "japaneseName": "ビーグレン",
+      "aliases": [
+        "b.glen",
+        "ビーグレン"
+      ],
+      "corporateGroupReportedByDirectory": "ビバリーグレンラボラトリーズ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ACSEINE",
+      "japaneseName": "アクセーヌ",
+      "aliases": [
+        "ACSEINE",
+        "アクセーヌ"
+      ],
+      "corporateGroupReportedByDirectory": "ピアス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "DECENCIA",
+      "japaneseName": "ディセンシア",
+      "aliases": [
+        "DECENCIA",
+        "ディセンシア"
+      ],
+      "corporateGroupReportedByDirectory": "ポーラ・オルビス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Jurlique",
+      "japaneseName": "ジュリーク",
+      "aliases": [
+        "Jurlique",
+        "ジュリーク"
+      ],
+      "corporateGroupReportedByDirectory": "ポーラ・オルビス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "L'OCCITANE",
+      "japaneseName": "ロクシタン",
+      "aliases": [
+        "L'OCCITANE",
+        "ロクシタン"
+      ],
+      "corporateGroupReportedByDirectory": "ロクシタン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Kiehl's",
+      "japaneseName": "キールズ",
+      "aliases": [
+        "Kiehl's",
+        "キールズ"
+      ],
+      "corporateGroupReportedByDirectory": "ロレアル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "TAKAMI",
+      "japaneseName": "タカミ",
+      "aliases": [
+        "TAKAMI",
+        "タカミ"
+      ],
+      "corporateGroupReportedByDirectory": "ロレアル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "DOMOHORN WRINKLE",
+      "japaneseName": "ドモホルンリンクル",
+      "aliases": [
+        "DOMOHORN WRINKLE",
+        "ドモホルンリンクル"
+      ],
+      "corporateGroupReportedByDirectory": "再春館製薬所",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Dr.ウィラード・ウォーター",
+      "japaneseName": "ﾄﾞｸﾀｰｳｨﾗｰﾄﾞｳｫｰﾀｰ",
+      "aliases": [
+        "Dr.ウィラード・ウォーター",
+        "ﾄﾞｸﾀｰｳｨﾗｰﾄﾞｳｫｰﾀｰ"
+      ],
+      "corporateGroupReportedByDirectory": "Dr.ウィラード・ウォーター",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ルルルン",
+      "japaneseName": "ルルルン",
+      "aliases": [
+        "ルルルン",
+        "ルルルン"
+      ],
+      "corporateGroupReportedByDirectory": "Dr.ルルルン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "SKN REMED",
+      "japaneseName": "スキンリメド",
+      "aliases": [
+        "SKN REMED",
+        "スキンリメド"
+      ],
+      "corporateGroupReportedByDirectory": "I-ne",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "MiMC",
+      "japaneseName": "エムアイエムシー",
+      "aliases": [
+        "MiMC",
+        "エムアイエムシー"
+      ],
+      "corporateGroupReportedByDirectory": "MIMC",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "OSAJI",
+      "japaneseName": "オサジ",
+      "aliases": [
+        "OSAJI",
+        "オサジ"
+      ],
+      "corporateGroupReportedByDirectory": "OSAJI",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Saborino",
+      "japaneseName": "サボリーノ",
+      "aliases": [
+        "Saborino",
+        "サボリーノ"
+      ],
+      "corporateGroupReportedByDirectory": "TBS",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "乾燥さん",
+      "japaneseName": "カンソウサン",
+      "aliases": [
+        "乾燥さん",
+        "カンソウサン"
+      ],
+      "corporateGroupReportedByDirectory": "TBS",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "The Ordinary",
+      "japaneseName": "オーディナリー",
+      "aliases": [
+        "The Ordinary",
+        "オーディナリー"
+      ],
+      "corporateGroupReportedByDirectory": "エスティ ローダー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Cetaphil",
+      "japaneseName": "セタフィル",
+      "aliases": [
+        "Cetaphil",
+        "セタフィル"
+      ],
+      "corporateGroupReportedByDirectory": "ガルデルマ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Carté HD",
+      "japaneseName": "カルテエイチディー",
+      "aliases": [
+        "Carté HD",
+        "カルテエイチディー"
+      ],
+      "corporateGroupReportedByDirectory": "コーセー",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "HAP+R",
+      "japaneseName": "ハップアール",
+      "aliases": [
+        "HAP+R",
+        "ハップアール"
+      ],
+      "corporateGroupReportedByDirectory": "サンギ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "N organic",
+      "japaneseName": "エヌオーガニック",
+      "aliases": [
+        "N organic",
+        "エヌオーガニック"
+      ],
+      "corporateGroupReportedByDirectory": "シロク",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ママ＆キッズ",
+      "japaneseName": "ママアンドキッズ",
+      "aliases": [
+        "ママ＆キッズ",
+        "ママアンドキッズ"
+      ],
+      "corporateGroupReportedByDirectory": "ナチュラルサイエンス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "レドナ",
+      "japaneseName": "レドナ",
+      "aliases": [
+        "レドナ",
+        "レドナ"
+      ],
+      "corporateGroupReportedByDirectory": "ナチュラルサイエンス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "カメリナライフビューティー",
+      "japaneseName": "カメリナライフビューティー",
+      "aliases": [
+        "カメリナライフビューティー",
+        "カメリナライフビューティー"
+      ],
+      "corporateGroupReportedByDirectory": "ナルックスHD",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "chant a charm",
+      "japaneseName": "チャントアチャーム",
+      "aliases": [
+        "chant a charm",
+        "チャントアチャーム"
+      ],
+      "corporateGroupReportedByDirectory": "ネイチャーズウェイ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Natures for",
+      "japaneseName": "ネイチャーズフォー",
+      "aliases": [
+        "Natures for",
+        "ネイチャーズフォー"
+      ],
+      "corporateGroupReportedByDirectory": "ネオナチュラル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Hollywood",
+      "japaneseName": "ハリウッド",
+      "aliases": [
+        "Hollywood",
+        "ハリウッド"
+      ],
+      "corporateGroupReportedByDirectory": "ハリウッド",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "HABA",
+      "japaneseName": "ハーバー",
+      "aliases": [
+        "HABA",
+        "ハーバー"
+      ],
+      "corporateGroupReportedByDirectory": "ハーバー研究所",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Avène",
+      "japaneseName": "アベンヌ",
+      "aliases": [
+        "Avène",
+        "アベンヌ"
+      ],
+      "corporateGroupReportedByDirectory": "ピエール ファーブル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "CANADEL",
+      "japaneseName": "カナデル",
+      "aliases": [
+        "CANADEL",
+        "カナデル"
+      ],
+      "corporateGroupReportedByDirectory": "プレミアアンチエイジング",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "DUO",
+      "japaneseName": "デュオ",
+      "aliases": [
+        "DUO",
+        "デュオ"
+      ],
+      "corporateGroupReportedByDirectory": "プレミアアンチエイジング",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Lalaskin",
+      "japaneseName": "ララスキン",
+      "aliases": [
+        "Lalaskin",
+        "ララスキン"
+      ],
+      "corporateGroupReportedByDirectory": "プレミアアンチエイジング",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "F organics",
+      "japaneseName": "エッフェオーガニック",
+      "aliases": [
+        "F organics",
+        "エッフェオーガニック"
+      ],
+      "corporateGroupReportedByDirectory": "マッシュビューティーラボ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Mitea ORGANIC",
+      "japaneseName": "ミティアオーガニック",
+      "aliases": [
+        "Mitea ORGANIC",
+        "ミティアオーガニック"
+      ],
+      "corporateGroupReportedByDirectory": "マッシュビューティーラボ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ベーシックケアAZ",
+      "japaneseName": "ベーシックケアエーゼット",
+      "aliases": [
+        "ベーシックケアAZ",
+        "ベーシックケアエーゼット"
+      ],
+      "corporateGroupReportedByDirectory": "マニーニ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "MARKS&WEB",
+      "japaneseName": "マークスアンドウェブ",
+      "aliases": [
+        "MARKS&WEB",
+        "マークスアンドウェブ"
+      ],
+      "corporateGroupReportedByDirectory": "マークスアンドウェブ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "MAKANAI",
+      "japaneseName": "マカナイ",
+      "aliases": [
+        "MAKANAI",
+        "マカナイ"
+      ],
+      "corporateGroupReportedByDirectory": "ヤーマン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "RAFRA",
+      "japaneseName": "ラフラ",
+      "aliases": [
+        "RAFRA",
+        "ラフラ"
+      ],
+      "corporateGroupReportedByDirectory": "ユニリーバ・ジャパン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "TUNEMAKERS",
+      "japaneseName": "チューンメーカーズ",
+      "aliases": [
+        "TUNEMAKERS",
+        "チューンメーカーズ"
+      ],
+      "corporateGroupReportedByDirectory": "ユニリーバ・ジャパン",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "epo",
+      "japaneseName": "エポ",
+      "aliases": [
+        "epo",
+        "エポ"
+      ],
+      "corporateGroupReportedByDirectory": "ユーグレナ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "LUSH",
+      "japaneseName": "ラッシュ",
+      "aliases": [
+        "LUSH",
+        "ラッシュ"
+      ],
+      "corporateGroupReportedByDirectory": "ラッシュ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "MANARA",
+      "japaneseName": "マナラ",
+      "aliases": [
+        "MANARA",
+        "マナラ"
+      ],
+      "corporateGroupReportedByDirectory": "ランクアップ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "La Roche-Posay",
+      "japaneseName": "ラロッシュポゼ",
+      "aliases": [
+        "La Roche-Posay",
+        "ラロッシュポゼ"
+      ],
+      "corporateGroupReportedByDirectory": "ロレアル",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "シェルクルール",
+      "japaneseName": "シェルクルール",
+      "aliases": [
+        "シェルクルール",
+        "シェルクルール"
+      ],
+      "corporateGroupReportedByDirectory": "ヴェルジェ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ETVOS",
+      "japaneseName": "エトヴォス",
+      "aliases": [
+        "ETVOS",
+        "エトヴォス"
+      ],
+      "corporateGroupReportedByDirectory": "丸紅",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Arouge",
+      "japaneseName": "アルージェ",
+      "aliases": [
+        "Arouge",
+        "アルージェ"
+      ],
+      "corporateGroupReportedByDirectory": "全薬",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "AdryS",
+      "japaneseName": "アドライズ",
+      "aliases": [
+        "AdryS",
+        "アドライズ"
+      ],
+      "corporateGroupReportedByDirectory": "大正製薬",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "PERFECT ONE",
+      "japaneseName": "パーフェクトワン",
+      "aliases": [
+        "PERFECT ONE",
+        "パーフェクトワン"
+      ],
+      "corporateGroupReportedByDirectory": "新日本製薬",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "肌をうるおす保湿スキンケア",
+      "japaneseName": "ﾊﾀﾞｦｳﾙｵｽﾎｼﾂｽｷﾝｹｱ",
+      "aliases": [
+        "肌をうるおす保湿スキンケア",
+        "ﾊﾀﾞｦｳﾙｵｽﾎｼﾂｽｷﾝｹｱ"
+      ],
+      "corporateGroupReportedByDirectory": "松山油脂",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "毛穴撫子",
+      "japaneseName": "ケアナナデシコ",
+      "aliases": [
+        "毛穴撫子",
+        "ケアナナデシコ"
+      ],
+      "corporateGroupReportedByDirectory": "石澤研究所",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "NARIS UP",
+      "japaneseName": "ナリスアップ",
+      "aliases": [
+        "NARIS UP",
+        "ナリスアップ"
+      ],
+      "corporateGroupReportedByDirectory": "ナリス化粧品",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "NIVEA",
+      "japaneseName": "ニベア",
+      "aliases": [
+        "NIVEA",
+        "ニベア"
+      ],
+      "corporateGroupReportedByDirectory": "バイヤスドルフ",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "naturie",
+      "japaneseName": "ナチュリエ",
+      "aliases": [
+        "naturie",
+        "ナチュリエ"
+      ],
+      "corporateGroupReportedByDirectory": "ピアス",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ケシミン",
+      "japaneseName": "ケシミン",
+      "aliases": [
+        "ケシミン",
+        "ケシミン"
+      ],
+      "corporateGroupReportedByDirectory": "小林製薬",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "pdc",
+      "japaneseName": "ピーディーシー",
+      "aliases": [
+        "pdc",
+        "ピーディーシー"
+      ],
+      "corporateGroupReportedByDirectory": "山田養蜂場",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "COW BRAND Mutenka",
+      "japaneseName": "カウブランドムテンカ",
+      "aliases": [
+        "COW BRAND Mutenka",
+        "カウブランドムテンカ"
+      ],
+      "corporateGroupReportedByDirectory": "牛乳石鹸共進社",
+      "groupEvidenceUrl": "https://typeatlas.jp/markets/japan/skincare/brands",
+      "sourceType": "independent-market-brand-directory",
+      "listingStatus": "external-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ByUR",
+      "japaneseName": "バイユア",
+      "aliases": [
+        "ByUR",
+        "バイユア"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "APRILSKIN",
+      "japaneseName": "エイプリルスキン",
+      "aliases": [
+        "APRILSKIN",
+        "エイプリルスキン"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Blanc Nature",
+      "japaneseName": "ブランネイチャー",
+      "aliases": [
+        "Blanc Nature",
+        "ブランネイチャー"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Dr.Reju-All",
+      "japaneseName": "ドクターリジュオール",
+      "aliases": [
+        "Dr.Reju-All",
+        "ドクターリジュオール"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "BnD",
+      "japaneseName": "BnD",
+      "aliases": [
+        "BnD",
+        "BnD"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Dr.Melaxin",
+      "japaneseName": "ドクターメラクシン",
+      "aliases": [
+        "Dr.Melaxin",
+        "ドクターメラクシン"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "celq:ne",
+      "japaneseName": "セルクネ",
+      "aliases": [
+        "celq:ne",
+        "セルクネ"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Leaders cosmetics",
+      "japaneseName": "リーダース",
+      "aliases": [
+        "Leaders cosmetics",
+        "リーダース"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Lanbelle",
+      "japaneseName": "ランベル",
+      "aliases": [
+        "Lanbelle",
+        "ランベル"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "プチフェ",
+      "japaneseName": "プチフェ",
+      "aliases": [
+        "プチフェ",
+        "プチフェ"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "KERB ALIVE",
+      "japaneseName": "KERB ALIVE",
+      "aliases": [
+        "KERB ALIVE",
+        "KERB ALIVE"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "slowment",
+      "japaneseName": "slowment",
+      "aliases": [
+        "slowment",
+        "slowment"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Kayla Garden",
+      "japaneseName": "Kayla Garden",
+      "aliases": [
+        "Kayla Garden",
+        "Kayla Garden"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "GOONGBE",
+      "japaneseName": "GOONGBE",
+      "aliases": [
+        "GOONGBE",
+        "GOONGBE"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Naturemedy",
+      "japaneseName": "Naturemedy",
+      "aliases": [
+        "Naturemedy",
+        "Naturemedy"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "celare",
+      "japaneseName": "celare",
+      "aliases": [
+        "celare",
+        "celare"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ELIBYTH",
+      "japaneseName": "ELIBYTH",
+      "aliases": [
+        "ELIBYTH",
+        "ELIBYTH"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "DABONGSS",
+      "japaneseName": "DABONGSS",
+      "aliases": [
+        "DABONGSS",
+        "DABONGSS"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "KOPUMU",
+      "japaneseName": "KOPUMU",
+      "aliases": [
+        "KOPUMU",
+        "KOPUMU"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "LamuCell",
+      "japaneseName": "LamuCell",
+      "aliases": [
+        "LamuCell",
+        "LamuCell"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Dermarelle",
+      "japaneseName": "Dermarelle",
+      "aliases": [
+        "Dermarelle",
+        "Dermarelle"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "PhaseLog",
+      "japaneseName": "PhaseLog",
+      "aliases": [
+        "PhaseLog",
+        "PhaseLog"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "KLALAB",
+      "japaneseName": "KLALAB",
+      "aliases": [
+        "KLALAB",
+        "KLALAB"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "HINOA",
+      "japaneseName": "HINOA",
+      "aliases": [
+        "HINOA",
+        "HINOA"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "PURIPIA",
+      "japaneseName": "PURIPIA",
+      "aliases": [
+        "PURIPIA",
+        "PURIPIA"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "enca",
+      "japaneseName": "enca",
+      "aliases": [
+        "enca",
+        "enca"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "セラムカインド",
+      "japaneseName": "セラムカインド",
+      "aliases": [
+        "セラムカインド",
+        "セラムカインド"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Freshian",
+      "japaneseName": "Freshian",
+      "aliases": [
+        "Freshian",
+        "Freshian"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "JMELLA",
+      "japaneseName": "JMELLA",
+      "aliases": [
+        "JMELLA",
+        "JMELLA"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "LUOKI",
+      "japaneseName": "ルオキ",
+      "aliases": [
+        "LUOKI",
+        "ルオキ"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "ilso",
+      "japaneseName": "ilso",
+      "aliases": [
+        "ilso",
+        "ilso"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "8Beauty",
+      "japaneseName": "8Beauty",
+      "aliases": [
+        "8Beauty",
+        "8Beauty"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "Lagom",
+      "japaneseName": "ラゴム",
+      "aliases": [
+        "Lagom",
+        "ラゴム"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "oubbly",
+      "japaneseName": "oubbly",
+      "aliases": [
+        "oubbly",
+        "oubbly"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "nutseline",
+      "japaneseName": "nutseline",
+      "aliases": [
+        "nutseline",
+        "nutseline"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "A'SOME",
+      "japaneseName": "A'SOME",
+      "aliases": [
+        "A'SOME",
+        "A'SOME"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
+    },
+    {
+      "name": "TWO SLASH FOUR",
+      "japaneseName": "TWO SLASH FOUR",
+      "aliases": [
+        "TWO SLASH FOUR",
+        "TWO SLASH FOUR"
+      ],
+      "sourceType": "marketplace-brand-directory-candidate",
+      "groupEvidenceUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Kandash/Default.aspx",
+      "listingStatus": "marketplace-brand-candidate-official-product-and-legal-maker-unverified",
+      "maker": null,
+      "makerCountry": null,
+      "japanDistributor": null,
+      "makerEvidenceUrl": null,
+      "japanDistributorEvidenceUrl": null,
+      "officialJapaneseStore": null,
+      "officialKoreanStore": null,
+      "products": []
     }
   ]
 }
