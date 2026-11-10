@@ -1831,15 +1831,15 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
 function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('h3');
- heading.textContent='ドンキ・美容雑誌｜収録済み商品情報';
+ heading.textContent='メーカー公式・ドンキ・美容雑誌｜収録済み商品情報';
  holder.append(heading);
  const info=document.createElement('p');info.className='muted';
- info.textContent='ドンキ公式の全成分を確認できた'+catalog.donkiExplicitFullProductRecords+'商品をアプリ内に保存。ほかの掲載商品は「全成分未確認」として区別しています。';
+ info.textContent='全成分を掲載元で確認した'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）をアプリ内に保存。ほかは「全成分未確認」として区別しています。';
  holder.append(info);
  const amazon=document.createElement('p');amazon.className='muted';
  amazon.textContent='Amazonは商品情報の確認にのみ使います。規約上の制限を考慮し、Amazonの商品データの自動抽出・複製は実施していません。';
  holder.append(amazon);
- const options=['すべて','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
+ const options=['すべて','MEGLY公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
  const row=document.createElement('div');row.className='ready-formulas-access';
  for(const choice of options){
   const button=document.createElement('button');button.className='secondary';button.type='button';
