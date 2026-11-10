@@ -60,7 +60,7 @@ export function isJapaneseMarketBrand(brand){
 export const recognizedJapaneseCodes=/^(?:BG|DPG|PG|BHT|TEA|LPG|AMP|PCA|PVP|PCA-Na|DNA-Na|RNA-Na|EDTA-2Na|EDTA-3Na|EDTA-4Na|PEG(?:-?\d+M?|\(\d+\))|PPG-?\d+|CI\s*\d{5})$/i;
 export const isJapaneseIngredientText=name=>{
  const s=String(name||'').normalize('NFKC').trim();
- return Boolean(s)&&(/[ぁ-んァ-ヶ一-龥々]/.test(s)||recognizedJapaneseCodes.test(s.replace(/^PCA[ー－−]Na$/i,'PCA-Na').replace(/[−－ー]/g,'-')));
+ return Boolean(s)&&(/[ぁ-んァ-ヶ一-龥々]/.test(s)||recognizedJapaneseCodes.test(s.replace(/^PCA[ー－−]Na$/i,'PCA-Na').replace(/[−－ー]/g,'-').replace(/^(PEG|PPG)-\s+(\d+M?)$/i,'$1-$2')));
 };
 export function isJapaneseIngredientsList(ingredients){
  const values=String(ingredients||'').normalize('NFKC').replace(/(\d),(\d)/g,'$1\u0001$2').replace(/N,N-/g,'N\u0002N-')
