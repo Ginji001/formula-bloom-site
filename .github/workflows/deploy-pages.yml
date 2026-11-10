@@ -626,11 +626,13 @@ jobs:
              marketplaceIndex.newCandidateCount!==11817||
              marketplaceIndex.displayedDirectoryCount!==12494||
              marketplaceIndex.sources.length!==3||
-             cosmeetMakerIndex.collectedPageCount!==160||
-             cosmeetMakerIndex.uniqueListedMakers!==1167||
-             cosmeetMakerIndex.uniqueListedBrands!==1522||
-             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==1329||
+             cosmeetMakerIndex.collectedPageCount!==200||
+             cosmeetMakerIndex.uniqueListedMakers!==1663||
+             cosmeetMakerIndex.uniqueListedBrands!==2014||
+             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==1695||
              cosmeetMakerIndex.completeSourceCoverage!==false||
+             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==200||
+             cosmeetMakerIndex.listedSoloBrandRows!==572||
              !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
              !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 
