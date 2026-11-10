@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-10",
+  "scope": "new-brand-directory-extension-not-registered-SKU",
+  "brands": [
+    {
+      "name": "UIQ",
+      "japaneseName": "ユイク",
+      "aliases": [
+        "UIQ",
+        "ユイク",
+        "유이크",
+        "Genome & Company",
+        "GENOME & COMPANY"
+      ],
+      "maker": "GENOME & COMPANY, INC.",
+      "makerCountry": "韓国",
+      "japanDistributor": "株式会社アイケイ（2025年3月発表の日本国内総代理店契約）",
+      "makerEvidenceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000182157.html",
+      "japanDistributorEvidenceUrl": "https://prtimes.jp/main/html/rd/p/000000358.000016153.html",
+      "officialJapaneseStore": "https://www.qoo10.jp/shop/uiq-japan",
+      "officialKoreanStore": "https://theuiq.com/",
+      "listingStatus": "brand-and-selected-product-names-only-not-registered-SKU",
+      "products": [
+        {
+          "name": "バイオーム バリア クリームミスト",
+          "evidenceUrl": "https://prtimes.jp/main/html/rd/p/000000358.000016153.html",
+          "ingredientsStatus": "not-collected"
+        },
+        {
+          "name": "バイオーム ビタC セラムミスト",
+          "evidenceUrl": "https://prtimes.jp/main/html/rd/p/000000358.000016153.html",
+          "ingredientsStatus": "not-collected"
+        }
+      ]
+    }
+  ]
+}
