@@ -58,6 +58,7 @@ import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamili
 import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-review.js';
 import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredientCandidates,sharedSource} from './shared-source.js';
 import {comparePartialCompletion,ingredientMatchKey,rankCopiedCandidates} from './partial-formula-completion.js';
+import {listingNameKey,listingNameCollisionCounts,sourceListingId} from './marketplace-name-identity.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
@@ -1881,6 +1882,7 @@ function showMarketplaceProducts(rows,query){
  heading.textContent='公開掲載の商品名 '+rows.length+'件（成分未確認）。先頭30件を表示。';
  holder.append(heading);
  const queryKey=productFold(query);
+ const collisionCounts=listingNameCollisionCounts(rows);
  const sorted=rows.slice().sort((a,b)=>{
   const ak=productFold(a.name),bk=productFold(b.name);
   return Number(bk===queryKey)-Number(ak===queryKey)||
@@ -1889,13 +1891,21 @@ function showMarketplaceProducts(rows,query){
  });
  for(const row of sorted.slice(0,30)){
   const btn=document.createElement('button');btn.className='product-option';btn.type='button';
-  btn.textContent=row.brandName+'｜'+row.name+'（'+row.source+'掲載・成分未確認）';
+  const duplicateCount=collisionCounts.get(listingNameKey(row))||1;
+  const listingId=sourceListingId(row);
+  const disambiguation=duplicateCount>1?'／同名の掲載候補'+duplicateCount+'件'+(listingId?'・掲載ID '+listingId:''):'';
+  btn.textContent=row.brandName+'｜'+row.name+'（'+row.source+'掲載・成分未確認'+disambiguation+'）';
   btn.onclick=()=>{
    holder.replaceChildren();
    const h=document.createElement('h3');h.textContent=row.brandName+'｜'+row.name;holder.append(h);
    const caution=document.createElement('p');caution.className='muted';
    caution.textContent='【商品名のみ収録】'+row.source+(row.productPeriod?'（'+row.productPeriod+'月間ランキング）':'')+'の公開ページで商品名・リンクを確認。日本語全成分、配合、現行販売、製造販売業者の確認は未実施。';
    holder.append(caution);
+   if(duplicateCount>1){
+    const ambiguous=document.createElement('p');ambiguous.className='muted';
+    ambiguous.textContent='同名・同ブランドの掲載候補が'+duplicateCount+'件あります。'+(listingId?'この掲載IDは'+listingId+'。':'')+'色・容量・処方の違いは未照合のため、自動統合しません。';
+    holder.append(ambiguous);
+   }
    // row.productPageUrl is retained only as internal source provenance, not as an external navigation control.
    const unverified=document.createElement('p');unverified.className='muted';
    unverified.textContent='全成分はまだ確認できていません。商品リンクに移動せず、アプリ内での収録を進めます。';
@@ -1910,7 +1920,7 @@ function showMarketplaceProducts(rows,query){
     if(!btn.isConnected||!Array.isArray(data?.records))return;
     const match=data.records.find(item=>item.source==='@cosme'&&item.sourceUrl===row.productPageUrl);
     if(match){
-     btn.textContent=row.brandName+'｜'+row.name+'（@cosmeの全成分をアプリ内に収録済み）';
+     btn.textContent=row.brandName+'｜'+row.name+'（@cosmeの全成分をアプリ内に収録済み'+disambiguation+'）';
      btn.onclick=()=>showSourcedRetailerFormula(match,query);
     }
    }).catch(()=>{});
