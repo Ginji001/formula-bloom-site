@@ -3,10 +3,10 @@
   "reviewedOn": "2026-11-10",
   "scope": "public-@cosme-and-rakuten-ingredient-fields-no-SKU-split",
   "completeCoverage": false,
-  "sourcePagesInspected": 1506,
+  "sourcePagesInspected": 1547,
   "sourceStats": {
     "atcosme": {
-      "no-listed-full-ingredients": 1334,
+      "no-listed-full-ingredients": 1375,
       "full-disclosure": 99,
       "ambiguous": 5
     },

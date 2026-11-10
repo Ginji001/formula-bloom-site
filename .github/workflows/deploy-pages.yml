@@ -631,24 +631,24 @@ jobs:
              marketplaceIndex.newCandidateCount!==11817||
              marketplaceIndex.displayedDirectoryCount!==12494||
              marketplaceIndex.sources.length!==3||
-             cosmeetMakerIndex.collectedPageCount!==1700||
-             cosmeetMakerIndex.uniqueListedMakers!==10153||
-             cosmeetMakerIndex.uniqueListedBrands!==15546||
-             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==12154||
-             cosmeetMakerIndex.brandIdsOutsideExistingIndexes!==12198||
+             cosmeetMakerIndex.collectedPageCount!==1780||
+             cosmeetMakerIndex.uniqueListedMakers!==10632||
+             cosmeetMakerIndex.uniqueListedBrands!==16300||
+             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==12777||
+             cosmeetMakerIndex.brandIdsOutsideExistingIndexes!==12821||
              cosmeetMakerIndex.completeSourceCoverage!==false||
-             publicProducts.productNameCount!==60772||
-             productLite.productNameCount!==60772||
-             productLite.rows.length!==60772||
+             publicProducts.productNameCount!==62691||
+             productLite.productNameCount!==62691||
+             productLite.rows.length!==62691||
              productLite.kind!=='public-products-search-lite-unverified-ingredients'||
-             collectionProgress.totalBrandNameCandidates!==24648||
-             collectionProgress.totalExternalProductNameReferences!==60772||
+             collectionProgress.totalBrandNameCandidates!==25271||
+             collectionProgress.totalExternalProductNameReferences!==62691||
              collectionProgress.completeCoverage!==false||
              retailerFacts.completeCoverage!==false||
              retailerFacts.recordsWithSourcedIngredientLists!==128||
              retailerFacts.distinctListedFormulaVersions!==133||
              retailerFacts.listedIngredientNameOccurrences!==4135||
-             retailerFacts.sourcePagesInspected!==1506||
+             retailerFacts.sourcePagesInspected!==1547||
              collectionProgress.additionalFullIngredientCollection.sourcedProductIdentityEntries!==128||
              collectionProgress.additionalFullIngredientCollection.sourceListedFormulaVersions!==133||
              collectionProgress.additionalFullIngredientCollection.unverifiedCompositionForOtherExternalNames!==true||
@@ -664,28 +664,28 @@ jobs:
              oliveYoung.products.some(r=>!r.ingredientListSource||r.ingredients.length<19)||
              !coverageApp.includes('showOliveYoungIngredients')||
              !coverageApp.includes('oliveyoung-ingredient-snapshots-20261110.json')||
-             collectionProgress.sites.lips.nextBrandIndex!==1713||
+             collectionProgress.sites.lips.nextBrandIndex!==1813||
              collectionProgress.sites.lips.brandLandingPagesWithNoProductCards!==2||
-             collectionProgress.sites.atcosme.nextMakerBrandPage!==1700||
-             collectionProgress.sites.atcosme.nextBrandProductIndex!==1050||
+             collectionProgress.sites.atcosme.nextMakerBrandPage!==1780||
+             collectionProgress.sites.atcosme.nextBrandProductIndex!==1130||
              !stableHome.includes('public-collection-progress-20261110.json')||
              publicProducts.sources.length!==3||
-             publicProducts.sources.find(s=>s.name==='LIPS')?.inspectedBrandPages!==1713||
-             publicProducts.sources.find(s=>s.name==='@cosme')?.inspectedBrandPages!==1050||
+             publicProducts.sources.find(s=>s.name==='LIPS')?.inspectedBrandPages!==1813||
+             publicProducts.sources.find(s=>s.name==='@cosme')?.inspectedBrandPages!==1130||
              publicProducts.sources.find(s=>s.name==='Qoo10')?.rankedMonths!==9||
              publicProducts.sources.find(s=>s.name==='Qoo10')?.megaDebutRankedMonths!==2||
              collectionProgress.sites.qoo10.megaDebutRankingsReviewed!==2||
-             publicProducts.sources.find(s=>s.name==='LIPS')?.publicProductLinks!==57891||
-             publicProducts.sources.find(s=>s.name==='@cosme')?.publicProductLinks!==2782||
+             publicProducts.sources.find(s=>s.name==='LIPS')?.publicProductLinks!==59638||
+             publicProducts.sources.find(s=>s.name==='@cosme')?.publicProductLinks!==2954||
              publicProducts.sources.find(s=>s.name==='Qoo10')?.publicProductLinks!==99||
              publicProducts.rows.some(r=>r.ingredientEvidence!=='none')||
              !publicProducts.rows.some(r=>r.source==='Qoo10'&&r.name.includes('UIQ'))||
              publicProducts.rows.some(r=>r.source==='Qoo10'&&/^[\d,.]+\u5186$/.test(r.name))||
-             new Set(publicProducts.rows.map(r=>r.id)).size!==60772||
+             new Set(publicProducts.rows.map(r=>r.id)).size!==62691||
              !fs.existsSync('_site/marketplace-product-candidates-20261110.json')||
              !coverageApp.includes('marketplace-product-search-lite-20261110.json')||
-             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1700||
-             cosmeetMakerIndex.listedSoloBrandRows!==9741||
+             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1780||
+             cosmeetMakerIndex.listedSoloBrandRows!==10137||
              !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
              !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 
