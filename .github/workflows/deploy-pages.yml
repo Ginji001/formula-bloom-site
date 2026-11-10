@@ -659,7 +659,7 @@ jobs:
              !publicProducts.rows.some(r=>r.source==='Qoo10'&&r.name.includes('UIQ'))||
              publicProducts.rows.some(r=>r.source==='Qoo10'&&/^[\d,.]+\u5186$/.test(r.name))||
              new Set(publicProducts.rows.map(r=>r.id)).size!==46720||
-             !coverageApp.includes('marketplace-product-candidates-20261110.json')||
+             !fs.existsSync('_site/marketplace-product-candidates-20261110.json')||
              !coverageApp.includes('marketplace-product-search-lite-20261110.json')||
              cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1200||
              cosmeetMakerIndex.listedSoloBrandRows!==6657||
