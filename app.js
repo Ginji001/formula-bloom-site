@@ -1680,6 +1680,21 @@ function showAddedBrand(row){
  const caution=document.createElement('p');caution.className='muted';
  caution.textContent='旧201ブランドの範囲外で追加した候補です。登録済み2,163商品とは別集計で、確認できない成分をこのブランドに流用していません。';
  holder.append(caution);
+ // Product-name listings are additional third-party evidence, not formulas.
+ const slot=document.createElement('div');slot.className='marketplace-brand-products';holder.append(slot);
+ if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-candidates-20261110.json').catch(e=>{
+  marketplaceProductsPromise=null;throw e;
+ });
+ const keys=new Set([row.name,...(row.aliases||[])].map(productFold).filter(Boolean));
+ marketplaceProductsPromise.then(data=>{
+  if(!slot.isConnected||!Array.isArray(data?.rows))return;
+  const found=data.rows.filter(item=>keys.has(productFold(item.brandName)));
+  if(!found.length)return;
+  const action=document.createElement('button');action.type='button';action.className='secondary';
+  action.textContent='外部掲載の商品名 '+found.length+'件を見る（成分は未確認）';
+  action.onclick=()=>showMarketplaceProducts(found,row.name);
+  slot.append(action);
+ }).catch(()=>{});
 }
 
 function quickRegisteredBrands(){
@@ -1852,7 +1867,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
 }
 
 // Public LIPS and @cosme product names are distinct from verified ingredient records.
-if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=3){
+if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=2){
  try{
   if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-candidates-20261110.json').catch(e=>{
    marketplaceProductsPromise=null;throw e;
