@@ -604,9 +604,23 @@ jobs:
           const coverageFirst=JSON.parse(fs.readFileSync('_site/coverage-first-status-20261110.json','utf8'));
           const additionsFirst=JSON.parse(fs.readFileSync('_site/ingredient-listing-expansions-20261110.json','utf8'));
           const coverageApp=fs.readFileSync('_site/app.js','utf8');
+          const allRegisteredHypotheses=JSON.parse(fs.readFileSync('_site/ingredient-hypotheses-20261110.json','utf8'));
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
              coverageFirst.remainingUnverified.length!==163||coverageFirst.previouslyUnknownNowReferenced!==9||
+             coverageFirst.registeredProducts!==2163||
+             coverageFirst.allRegisteredFullJapaneseFormulas!==607||
+             coverageFirst.allRegisteredPartialReferences!==1305||
+             coverageFirst.allRegisteredAIHypotheses!==251||
+             coverageFirst.allRegisteredReferenceFilled!==2163||
+             coverageFirst.allRegisteredReferenceUnfilled!==0||
+             coverageFirst.allRegisteredIngredientIdentityUnverifiedProducts!==251||
+             allRegisteredHypotheses.count!==251||
+             allRegisteredHypotheses.priorityCount!==163||
+             allRegisteredHypotheses.supplementalCount!==88||
+             new Set(allRegisteredHypotheses.records.map(x=>x.productId)).size!==251||
+             !coverageApp.includes('（推測）')||
+
              additionsFirst.records.length!==11||new Set(additionsFirst.records.map(x=>x.productId)).size!==11||
              !coverageApp.includes('/ingredient-listing-expansions-20261110.json')||
              !coverageApp.includes('breadthBrandNames')||
@@ -615,7 +629,7 @@ jobs:
              coverageFirst.fullJapaneseFormulas+coverageFirst.partialIngredientReferences+
              coverageFirst.withoutIngredientNames!==2020)
              throw Error('Coverage-first 2026-11-10 facts, UI, or baseline reconciliation invalid');
-          console.log('Verified coverage-first: 2163 searchable products, 201 brand candidates; 600 full / 1257 reference / 163 unknown.');
+          console.log('Verified 2,163 registered products: 607 full / 1,305 source-backed partial / 251 explicitly labelled AI guesses. Historical 2,020 priority preserved.');
 
 
           // v1.0.1: public support channel; never ask for personal data on public Issues.

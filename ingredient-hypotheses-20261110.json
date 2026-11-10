@@ -2,7 +2,9 @@
   "schemaVersion": 1,
   "generatedOn": "2026-11-10",
   "kind": "AI-hypotheses-only",
-  "count": 163,
+  "count": 251,
+  "priorityCount": 163,
+  "supplementalCount": 88,
   "warning": "これらは公式確認済み成分ではない。メーカー公表成分の収録数に加算しない。薬用有効成分・濃度・安全性・効能を推定しない。",
   "records": [
     {
@@ -10,6 +12,7 @@
       "brand": "BAUM",
       "productName": "スキンケア トライアルキット",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -30,6 +33,7 @@
       "brand": "COSRX",
       "productName": "ザ・６ペプチドスキンブースターセラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -55,6 +59,7 @@
       "brand": "Dr.Jart+",
       "productName": "セラマイディン スキンバリア モイスチャライジング クリーム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -80,6 +85,7 @@
       "brand": "Dr.Jart+",
       "productName": "バイタル ハイドラ ソリューション ウォータークリーム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -105,6 +111,7 @@
       "brand": "HAKU",
       "productName": "エッセンスF",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -130,6 +137,7 @@
       "brand": "HAKU",
       "productName": "ブライトニング ファンデーション",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -160,6 +168,7 @@
       "brand": "IOPE",
       "productName": "ザ・ビタミンC23",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -185,6 +194,7 @@
       "brand": "IOPE",
       "productName": "スーパー バイタル ソフナー",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -215,6 +225,7 @@
       "brand": "KATE",
       "productName": "リップモンスター",
       "archetype": "lip-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -240,6 +251,7 @@
       "brand": "LUNASOL",
       "productName": "アイカラーレーションN",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -270,6 +282,7 @@
       "brand": "ONE BY KOSE",
       "productName": "クリアピール セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -295,6 +308,7 @@
       "brand": "ONE BY KOSE",
       "productName": "ザ リンクレス W",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -315,6 +329,7 @@
       "brand": "ONE BY KOSE",
       "productName": "セラム シールド",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -340,6 +355,7 @@
       "brand": "Torriden",
       "productName": "セルメイジング ビタC ブライトニング ブースト アンプル",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -365,6 +381,7 @@
       "brand": "VT",
       "productName": "CICA マイルドトナーパッド(60枚入り)",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -390,6 +407,7 @@
       "brand": "アクアレーベル",
       "productName": "アクアローション さっぱり・しっとり",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -420,6 +438,7 @@
       "brand": "アクアレーベル",
       "productName": "アクアローション さっぱり・しっとり（つめかえ用）",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -450,6 +469,7 @@
       "brand": "アクアレーベル",
       "productName": "スペシャルジェルクリームEX（オイルイン）",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -475,6 +495,7 @@
       "brand": "アクアレーベル",
       "productName": "スペシャルジェルクリームEX（オイルイン）つめかえ用",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -500,6 +521,7 @@
       "brand": "アクアレーベル",
       "productName": "スペシャルジェルクリームEX（ブライトニング）つめかえ用",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -525,6 +547,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントミルク（オイルイン）",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -550,6 +573,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントミルク（ブライトニング）",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -575,6 +599,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントローション（オイルイン）",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -600,6 +625,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントローション（ブライトニング）",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -630,6 +656,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントローション（ブライトニング）つめかえ用",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -660,6 +687,7 @@
       "brand": "アクアレーベル",
       "productName": "トリートメントローション（モイストスムース）",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -690,6 +718,7 @@
       "brand": "アクアレーベル",
       "productName": "モイストパウダリー（レフィル）",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -720,6 +749,7 @@
       "brand": "アテニア",
       "productName": "スキンクリア クレンズ オイル スムースブラック",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -745,6 +775,7 @@
       "brand": "アヌア",
       "productName": "7ライスセラミド グロウセラム 50ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -770,6 +801,7 @@
       "brand": "アヌア",
       "productName": "BHA2% マイルドピーリングトナー 150ml",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -800,6 +832,7 @@
       "brand": "アヌア",
       "productName": "PDRN100ヒアルロン酸セラム マスクパック(7枚入り)",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -825,6 +858,7 @@
       "brand": "アヌア",
       "productName": "PDRNヒアルロン酸 カプセル100セラム (全2種)",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -850,6 +884,7 @@
       "brand": "アヌア",
       "productName": "PDRNヒアルロン酸 ハイドレイティングミスト 100ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -875,6 +910,7 @@
       "brand": "アヌア",
       "productName": "PDRNヒアルロン酸 ハイドレイティングミスト 30ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -900,6 +936,7 @@
       "brand": "アヌア",
       "productName": "PDRNヒアルロン酸セラム デイリーマスクパック 30枚",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -925,6 +962,7 @@
       "brand": "アヌア",
       "productName": "アゼライン酸3CICA スキンクリアトナー 250ml",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -955,6 +993,7 @@
       "brand": "アヌア",
       "productName": "アゼライン酸CICA スキンスージング モイスチャライザー 100ml",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -980,6 +1019,7 @@
       "brand": "アヌア",
       "productName": "アゼライン酸シカセラム デイリーマスクパック 30枚",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1005,6 +1045,7 @@
       "brand": "アヌア",
       "productName": "アヌアレチノール 3ペプチド ナイトリペアクリーム 50g",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1030,6 +1071,7 @@
       "brand": "アヌア",
       "productName": "シラカバ70 水分ブースティングクリーム 50ml",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1055,6 +1097,7 @@
       "brand": "アヌア",
       "productName": "シラカバ70 水分ブースティングセラム 30ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1080,6 +1123,7 @@
       "brand": "アヌア",
       "productName": "シラカバ70 水分ブースティングトナー 250ml",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1110,6 +1154,7 @@
       "brand": "アヌア",
       "productName": "セミグロウベール クッション 15g (SPF50+ PA+++)",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1130,6 +1175,7 @@
       "brand": "アヌア",
       "productName": "ダークスポットセラム 30ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1155,6 +1201,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ シルキーモイスチャーサンクリーム 50ml",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1180,6 +1227,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ ポアコントロール クレンジングオイル 200ml",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1205,6 +1253,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ ポアディープ クレンジングフォーム 150ml",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1230,6 +1279,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ 弱酸性モイスチャー クレンジングフォーム 150ml",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1255,6 +1305,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ77 B3ZINCTMスージングクリーム 80ml",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1280,6 +1331,7 @@
       "brand": "アヌア",
       "productName": "ドクダミ77 B3ZINCTMスージングセラム 30ml",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1305,6 +1357,7 @@
       "brand": "アヌア",
       "productName": "ドクダミLHA モイスチャーピーリングジェル 120ml",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1325,6 +1378,7 @@
       "brand": "アヌア",
       "productName": "ライス ブライトニング 酵素洗顔パウダー 40g",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1350,6 +1404,7 @@
       "brand": "アヌア",
       "productName": "ライス70 インテンスモイスチャーミルク 150ml",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1375,6 +1430,7 @@
       "brand": "アヌア",
       "productName": "ライス70 グロウミルキートナー 250ml",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1405,6 +1461,7 @@
       "brand": "アヌア",
       "productName": "桃70ナイアシン マスクパック 10枚",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1430,6 +1487,7 @@
       "brand": "アネッサ",
       "productName": "パーフェクトUV スキンケアジェル NB",
       "archetype": "sunscreen",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1455,6 +1513,7 @@
       "brand": "アネッサ",
       "productName": "パーフェクトUV スキンケアジェル NB",
       "archetype": "sunscreen",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1480,6 +1539,7 @@
       "brand": "いち髪",
       "productName": "PREMIER 3daysキット（シルキースムース）",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1500,6 +1560,7 @@
       "brand": "いち髪",
       "productName": "PREMIER 3daysキット（リペアモイスト）",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1520,6 +1581,7 @@
       "brand": "いち髪",
       "productName": "PREMIER ブースターシャンプー＆セラムトリートメント ペアセット（シルキースムース）",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1540,6 +1602,7 @@
       "brand": "いち髪",
       "productName": "PREMIER ブースターシャンプー＆セラムトリートメント ペアセット（リペアモイスト）",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1560,6 +1623,7 @@
       "brand": "いち髪",
       "productName": "純・和草油",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1580,6 +1644,7 @@
       "brand": "イリユン",
       "productName": "セラミド アト トップトゥトー ウォッシュ",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1605,6 +1670,7 @@
       "brand": "イリユン",
       "productName": "セラミド アト フェイス＆ボディクリーム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1630,6 +1696,7 @@
       "brand": "イリユン",
       "productName": "セラミド アト フェイス＆ボディミルク",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1655,6 +1722,7 @@
       "brand": "インウイ",
       "productName": "アイライナーリキッド",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1685,6 +1753,7 @@
       "brand": "インテグレート",
       "productName": "プロフィニッシュ リキッド",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1705,6 +1774,7 @@
       "brand": "エスト",
       "productName": "SFエスト エッセンス ウォッシュ",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1730,6 +1800,7 @@
       "brand": "エスト",
       "productName": "SFエスト クレンジングエッセンス オイル",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1755,6 +1826,7 @@
       "brand": "エスト",
       "productName": "アイブロウパウダーチップ 01",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1785,6 +1857,7 @@
       "brand": "エスト",
       "productName": "アイブロウペンシル 01",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1815,6 +1888,7 @@
       "brand": "エスト",
       "productName": "ザ クリーム TR",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1840,6 +1914,7 @@
       "brand": "エスト",
       "productName": "リキッドアイライナー",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1870,6 +1945,7 @@
       "brand": "エチュード",
       "productName": "ウォータードロップフィルタークッション",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1900,6 +1976,7 @@
       "brand": "エチュード",
       "productName": "カールフィックスマスカラ リムーバーＮ",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1930,6 +2007,7 @@
       "brand": "エチュード",
       "productName": "カールフィックスマスカラ ロングラッシュ",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1960,6 +2038,7 @@
       "brand": "エチュード",
       "productName": "こんこんチーク",
       "archetype": "eye-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -1990,6 +2069,7 @@
       "brand": "エチュード",
       "productName": "ニンフデューイベースプレップ",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2010,6 +2090,7 @@
       "brand": "エチュード",
       "productName": "マイスイートパレット",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2030,6 +2111,7 @@
       "brand": "エリクシール",
       "productName": "エリクシール ザ セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2055,6 +2137,7 @@
       "brand": "ギャツビー",
       "productName": "オールインワン",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2075,6 +2158,7 @@
       "brand": "ギャツビー",
       "productName": "チューブ洗顔",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2100,6 +2184,7 @@
       "brand": "ギャツビー",
       "productName": "炭酸泡洗顔(ニキビケア)",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2125,6 +2210,7 @@
       "brand": "ギャツビー",
       "productName": "炭酸泡洗顔(毛穴ケア)",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2150,6 +2236,7 @@
       "brand": "ギャツビー",
       "productName": "肌トラブルケア",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2170,6 +2257,7 @@
       "brand": "ギャツビー",
       "productName": "泡洗顔",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2195,6 +2283,7 @@
       "brand": "キュレル",
       "productName": "お手入れ底上げ かかとケアマスク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2220,6 +2309,7 @@
       "brand": "キュレル",
       "productName": "お手入れ底上げ ハンドケアマスク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2245,6 +2335,7 @@
       "brand": "クレ・ド・ポー ボーテ",
       "productName": "ジェルネトワイアンプールレマン",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2265,6 +2356,7 @@
       "brand": "コスメデコルテ",
       "productName": "ＡQ ミリオリティダブル コンセントレイション n",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2285,6 +2377,7 @@
       "brand": "コスメデコルテ",
       "productName": "アイピー ショットプルリポテント ユース コンセントレイト［医薬部外品］＊",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2305,6 +2398,7 @@
       "brand": "ザ・フー",
       "productName": "秘貼 循環エッセンス",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2330,6 +2424,7 @@
       "brand": "ザ・フー",
       "productName": "秘貼 循環エッセンス",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2355,6 +2450,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "TFS オルティメイト MP8 セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2380,6 +2476,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "TFS オルティメイト N10 セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2405,6 +2502,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "TFS オルティメイト P1 セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2430,6 +2528,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム Yカメリア ファースト エッセンス",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2455,6 +2554,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム Yカメリア ファースト エッセンス",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2480,6 +2580,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム オイル イン クレンジングシート",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2505,6 +2606,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム オイル イン クレンジングシート",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2530,6 +2632,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム オールインワンケアシート EX",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2550,6 +2653,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム オールインワンケアシート EX",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2570,6 +2674,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム ゴールデン ロイヤル クリーム EX",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2595,6 +2700,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム サンキッド",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2615,6 +2721,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム セラム イン ミスト リッチ",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2640,6 +2747,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム セラム イン ミスト リッチ",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2665,6 +2773,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム プログラミング リッチ エッセンス",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2690,6 +2799,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム プログラミング リッチ エッセンス EX",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2715,6 +2825,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム マスクリームシート",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2740,6 +2851,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム マスクリームシート",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2765,6 +2877,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム モイスチャー ゲル",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2785,6 +2898,7 @@
       "brand": "ザ・フェイスショップ",
       "productName": "イェファダム ロイヤルリッチ ソープ",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2805,6 +2919,7 @@
       "brand": "セラムヴェール",
       "productName": "ONE BY KOSE セラムヴェール ディープリペア（付けかえ用）",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2830,6 +2945,7 @@
       "brand": "ハンユル",
       "productName": "ヨモギ スージングトナーパッド",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2855,6 +2971,7 @@
       "brand": "ビリーフ",
       "productName": "ザ トゥルー クリーム アクアボム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2880,6 +2997,7 @@
       "brand": "ファンケル",
       "productName": "マイルドクレンジング オイル＜ブラック＆スムース＞",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2905,6 +3023,7 @@
       "brand": "プリメラ",
       "productName": "ビタチノール バウンシー リフト セラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2930,6 +3049,7 @@
       "brand": "プレディア",
       "productName": "アロマティックシー ファブリック ミスト シマリング アフタヌーン <195mL>",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2960,6 +3080,7 @@
       "brand": "プレディア",
       "productName": "アロマティックシー ファブリック ミスト ブリージー モーニング <195mL>",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -2990,6 +3111,7 @@
       "brand": "プレディア",
       "productName": "アロマティックシー ファブリック ミスト ムーンリット ナイト <195mL>",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3020,6 +3142,7 @@
       "brand": "ベネフィーク",
       "productName": "エマルジョン",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3045,6 +3168,7 @@
       "brand": "ベネフィーク",
       "productName": "エマルジョンEX",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3070,6 +3194,7 @@
       "brand": "ベネフィーク",
       "productName": "リュクスリフトモイスチャーライザー",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3090,6 +3215,7 @@
       "brand": "ベネフィーク",
       "productName": "ローション",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3120,6 +3246,7 @@
       "brand": "ベネフィーク",
       "productName": "ローションEX",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3150,6 +3277,7 @@
       "brand": "ヘラ",
       "productName": "UVプロテクター",
       "archetype": "sunscreen",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3175,6 +3303,7 @@
       "brand": "マキアージュ",
       "productName": "カスタマイズアイカラー アソート",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3195,6 +3324,7 @@
       "brand": "マキアージュ",
       "productName": "スムース＆ステイリップライナー N",
       "archetype": "lip-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3220,6 +3350,7 @@
       "brand": "マジョリカ マジョルカ",
       "productName": "マジョロマンティカ",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3240,6 +3371,7 @@
       "brand": "マモンド",
       "productName": "ポアシュリンカー バクチオールセラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3265,6 +3397,7 @@
       "brand": "ミノン",
       "productName": "アミノモイスト 薬用うるうる美白ミルクマスク",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3290,6 +3423,7 @@
       "brand": "ラネージュ",
       "productName": "バウンシー アイ スリーピングマスク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3315,6 +3449,7 @@
       "brand": "ラネージュ",
       "productName": "バウンシースリーピングマスク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3340,6 +3475,7 @@
       "brand": "ラネージュ",
       "productName": "バウンシーセラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3365,6 +3501,7 @@
       "brand": "ラネージュ",
       "productName": "リップグロウィバーム",
       "archetype": "lip-makeup",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3390,6 +3527,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル エマルジョン I a・II a・III a",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3415,6 +3553,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル クリーミーホイップ",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3435,6 +3574,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル デイエマルジョン a",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3460,6 +3600,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル ナイトアイコルセット",
       "archetype": "kit",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3480,6 +3621,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル レチノサイエンス フェイシャルマスク a",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3505,6 +3647,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル ローション I a・II a・III a",
       "archetype": "toner",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3535,6 +3678,7 @@
       "brand": "リバイタル",
       "productName": "リバイタル ローションセラム",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3560,6 +3704,7 @@
       "brand": "雪肌精",
       "productName": "雪肌精 BLUE チャコール スクラブ ウォッシュ",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3585,6 +3730,7 @@
       "brand": "雪肌精",
       "productName": "雪肌精 BLUE ディープ ハイドレイティング エッセンス リキッド II",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3610,6 +3756,7 @@
       "brand": "雪肌精",
       "productName": "雪肌精 BLUE バウンス バランシング オイル",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3635,6 +3782,7 @@
       "brand": "雪肌精",
       "productName": "雪肌精 BLUE ブライト リファイナー",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3655,6 +3803,7 @@
       "brand": "雪肌精",
       "productName": "雪肌精 スキンケア UV エッセンス ミスト",
       "archetype": "sunscreen",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3680,6 +3829,7 @@
       "brand": "雪肌精",
       "productName": "薬用雪肌精 ブライトニング エマルジョン",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3705,6 +3855,7 @@
       "brand": "雪肌精",
       "productName": "薬用雪肌精 ブライトニング クリーム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3730,6 +3881,7 @@
       "brand": "雪肌精",
       "productName": "薬用雪肌精 ブライトニング クリーム ウォッシュ",
       "archetype": "wash",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3755,6 +3907,7 @@
       "brand": "雪肌精",
       "productName": "薬用雪肌精 ブライトニング クレンジング オイル",
       "archetype": "oil",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3780,6 +3933,7 @@
       "brand": "雪肌精",
       "productName": "薬用雪肌精 ブライトニング デイケア アドバンス",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3800,6 +3954,7 @@
       "brand": "肌美精",
       "productName": "アイバッグ ニードルショット",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3820,6 +3975,7 @@
       "brand": "肌美精",
       "productName": "うるおい浸透マスク（アクネ）",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3845,6 +4001,7 @@
       "brand": "肌美精",
       "productName": "うるおい浸透マスク（深層美白）",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3870,6 +4027,7 @@
       "brand": "肌美精",
       "productName": "カラーエッセンスマスク パープル",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3895,6 +4053,7 @@
       "brand": "肌美精",
       "productName": "カラーエッセンスマスク ピンク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3920,6 +4079,7 @@
       "brand": "肌美精",
       "productName": "超浸透3Dマスク エイジングケア（美白）",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3945,6 +4105,7 @@
       "brand": "肌美精",
       "productName": "肌美精ONE リンクルケア 密着濃厚アイクリーム",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3970,6 +4131,7 @@
       "brand": "肌美精",
       "productName": "肌美精ONE リンクルケア 目もと集中うるおいマスク",
       "archetype": "sheet-mask",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -3995,6 +4157,7 @@
       "brand": "無印良品",
       "productName": "敏感肌用オールインワンジェル",
       "archetype": "generic",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -4015,6 +4178,7 @@
       "brand": "無印良品",
       "productName": "敏感肌用乳液 高保湿（携帯用）",
       "archetype": "cream",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -4040,6 +4204,7 @@
       "brand": "無印良品",
       "productName": "敏感肌用薬用美容液",
       "archetype": "serum",
+      "cohort": "priority",
       "ingredientEvidence": "none",
       "evidenceDate": "2026-11-10",
       "sourceBasis": "product-name-and-general-formulation-archetype-only",
@@ -4058,6 +4223,2214 @@
         }
       ],
       "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc37-apieu",
+      "brand": "A’pieu",
+      "productName": "アピューミントスカルプヘアビネガートリートメント",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.missha.co.jp/product/apieu_hairvinegar_ms/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc37-celimax",
+      "brand": "celimax",
+      "productName": "ノニエネルギーアンプル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://celimax.jp/products/noniampoule2-0",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc37-tirtir",
+      "brand": "TIRTIR",
+      "productName": "MASK FIT AI FILTER CUSHION",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://tirtir.co.jp/products/mask-fit-ai-filter-cushion",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc52-tirtir-makeup-fixer-80",
+      "brand": "TIRTIR",
+      "productName": "MASK FIT MAKE-UP FIXER",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://tirtir.co.jp/products/mask-fit-make-up-fixer",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc39-clio",
+      "brand": "CLIO",
+      "productName": "キル カバー ファンウェア クッション ザ オリジナル",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://cliocosmetic.jp/product/%E3%82%AD%E3%83%AB-%E3%82%AB%E3%83%90%E3%83%BC-%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A6%E3%82%A7%E3%82%A2-%E3%82%AF%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B6-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/253/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc39-3ce",
+      "brand": "3CE",
+      "productName": "マルチアイカラーパレット TA テイクオーバー",
+      "archetype": "eye-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/6902395984375",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "マイカ",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "酸化チタン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "シリカ",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "粉体・メイクアップ製品に一般的な基材や顔料の可能性を挙げたもの。色番・剤型により異なる。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc53-beautyofjoseon-rice-sunscreen-50",
+      "brand": "Beauty of Joseon",
+      "productName": "ライス サンクリーム アクアフレッシュ",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://zozo.jp/shop/tirtir/goods-sale/105140897/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc53-goodal-green-tangerine-40",
+      "brand": "goodal",
+      "productName": "グリーンタンジェリン ビタC ダークスポットケアセラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.net/products/10193953/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc54-biodance-collagen-mask-34",
+      "brand": "BIODANCE",
+      "productName": "バイオコラーゲン リアルディープマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.seims.co.jp/shop/g/g8809937361022/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc54-amuse-dew-tint-tokyo",
+      "brand": "AMUSE",
+      "productName": "NEW デューティント 東京モモ",
+      "archetype": "lip-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://amusemakeup.jp/product/new-%E3%83%87%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/486/category/45/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "リップ製品の油性基材・感触調整成分の一般例を挙げた仮説。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-075",
+      "brand": "peripera",
+      "productName": "インク ムード グロイ ティント",
+      "archetype": "lip-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.peripera.jp/product/%E3%82%A4%E3%83%B3%E3%82%AF-%E3%83%A0%E3%83%BC%E3%83%89-%E3%82%B0%E3%83%AD%E3%82%A4-%E3%83%86%E3%82%A3%E3%83%B3%E3%83%88/149/category/1/display/2/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "リップ製品の油性基材・感触調整成分の一般例を挙げた仮説。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-076",
+      "brand": "peripera",
+      "productName": "ウォーター ベアー ティント",
+      "archetype": "lip-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://peripera.jp/category/peritage/128/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "リップ製品の油性基材・感触調整成分の一般例を挙げた仮説。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-077",
+      "brand": "peripera",
+      "productName": "オール テイク ムード ライク パレット",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://peripera.jp/category/peritage/128/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-080",
+      "brand": "beplain",
+      "productName": "緑豆弱酸性 洗顔フォーム",
+      "archetype": "wash",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ココイルグルタミン酸Na",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "洗浄製品の保湿剤・界面活性剤の一般例。処方・界面活性剤系統は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-081",
+      "brand": "beplain",
+      "productName": "緑豆弱酸性 洗顔フォーム",
+      "archetype": "wash",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ココイルグルタミン酸Na",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "洗浄製品の保湿剤・界面活性剤の一般例。処方・界面活性剤系統は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-082",
+      "brand": "beplain",
+      "productName": "緑豆毛穴クレイパック",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-083",
+      "brand": "beplain",
+      "productName": "緑豆クレンジングミルクバーム",
+      "archetype": "wash",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ココイルグルタミン酸Na",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "洗浄製品の保湿剤・界面活性剤の一般例。処方・界面活性剤系統は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-084",
+      "brand": "beplain",
+      "productName": "シカテロル トナー",
+      "archetype": "toner",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "水",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "水系化粧水・ミストに一般的な溶媒・保湿剤の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-085",
+      "brand": "beplain",
+      "productName": "シカテロル アンプル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.beplain.info/jp",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-086",
+      "brand": "SOME BY MI",
+      "productName": "AHA-BHA-PHA 30 DAYS MIRACLE TONER",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://shop.somebymi.jp/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-087",
+      "brand": "SOME BY MI",
+      "productName": "RETINOL INTENSE ADVANCED TRIPLE ACTION EYE CREAM",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://shop.somebymi.jp/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-088",
+      "brand": "SOME BY MI",
+      "productName": "GALACTOMYCES PURE VITAMIN C GLOW SERUM",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://shop.somebymi.jp/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-090",
+      "brand": "SOME BY MI",
+      "productName": "レチノール デイリーマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://shop.somebymi.jp/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-092",
+      "brand": "BANILA CO",
+      "productName": "クリーンイットゼロ クレンジングバーム CL",
+      "archetype": "oil",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.net/products/10178026/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "油性製品で一般的なエモリエント・感触調整成分の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc61-catalog-093",
+      "brand": "Dr.Althea",
+      "productName": "345フェイスクリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=423441",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-dasique-01",
+      "brand": "dasique",
+      "productName": "シャドウパレット 35 ラブエンジェル",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=412407",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-dasique-02",
+      "brand": "dasique",
+      "productName": "シャドウパレット 37 スウィートブロッサム",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=412433",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-dasique-03",
+      "brand": "dasique",
+      "productName": "シャドウパレット 38 コーラルコテージ",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=412425",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-dasique-04",
+      "brand": "dasique",
+      "productName": "シャドウパレット 39 ローズコテージ",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=412431",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-isntree-02",
+      "brand": "Isntree",
+      "productName": "超低分子ヒアルロン酸セラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=414125",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-isntree-03",
+      "brand": "Isntree",
+      "productName": "超低分子ヒアルロン酸ジンク水分クリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=414123",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-isntree-04",
+      "brand": "Isntree",
+      "productName": "超低分子ヒアルロン酸シートマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=414121",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-01",
+      "brand": "REJURAN",
+      "productName": "アンプル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=321106",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-02",
+      "brand": "REJURAN",
+      "productName": "デュアル エフェクト アンプル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=335016",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-03",
+      "brand": "REJURAN",
+      "productName": "モイスチャートリートメントアンプル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=321102",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-05",
+      "brand": "REJURAN",
+      "productName": "ポアタイトニングトナーパッド",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=425369",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-06",
+      "brand": "REJURAN",
+      "productName": "アクティブクリーム エンハンスド",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=391465",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-rejuran-07",
+      "brand": "REJURAN",
+      "productName": "ポアタイトニングゲルマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=425371",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc62-ahc-02",
+      "brand": "AHC",
+      "productName": "マスターズアクアリッチサンクリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=413619",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-wellage-02",
+      "brand": "WELLAGE",
+      "productName": "HYPER PDRN REPAIR AMPOULE",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=396055",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-wellage-03",
+      "brand": "WELLAGE",
+      "productName": "PEP COLゲルシートマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=400684",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-wellage-04",
+      "brand": "WELLAGE",
+      "productName": "PEPセラムマスク",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=400682",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-wellage-05",
+      "brand": "WELLAGE",
+      "productName": "HAブルーセラム100 ハローキティ エディション",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=421543",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-wellage-06",
+      "brand": "WELLAGE",
+      "productName": "HAブルーセラムマスク ハローキティ エディション",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.com/products/detail.php?product_id=421541",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-haruharu-01",
+      "brand": "haruharu wonder",
+      "productName": "ブラックライスセラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-haruharu-02",
+      "brand": "haruharu wonder",
+      "productName": "ブラックライストナー",
+      "archetype": "toner",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "水",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "水系化粧水・ミストに一般的な溶媒・保湿剤の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-haruharu-03",
+      "brand": "haruharu wonder",
+      "productName": "ブラックライスヒアルロニッククリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc63-haruharu-04",
+      "brand": "haruharu wonder",
+      "productName": "ブラックライスヒアルロニッククリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000016.000022550.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc64-heimish-clean-balm",
+      "brand": "heimish",
+      "productName": "ヘイミッシュ オールクリーンバーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000007.000058726.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc64-benton-guava-pad",
+      "brand": "Benton",
+      "productName": "ベントン 70スキントナーフェイスマスクパッド",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://prtimes.jp/main/html/rd/p/000000149.000077777.html",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc82-roundlab-birch-80",
+      "brand": "ラウンドラボ",
+      "productName": "ラウンド ラボ バーチジュース モイスチャライジングクリーム",
+      "archetype": "cream",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.biccamera.com/bc/item/15277443/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "スクワラン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "乳化・保湿製品で一般的な保湿剤・油性エモリエントの候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc82-drceuracle-kombucha-150",
+      "brand": "Dr.Ceuracle",
+      "productName": "ヴィーガンコンブチャティーエッセンス",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.cosme.net/products/10239837/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc89-purito-centella-60-original",
+      "brand": "PURITO",
+      "productName": "ワンダーリリーフ センテラセラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.qoo10.jp/gmkt.inc/Mobile/Goods/goods.aspx?goodscode=1153043100",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc83-axisy-glow-50",
+      "brand": "AXIS-Y",
+      "productName": "ダークスポットコレクティンググローセラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://coreelle.jp/products/ax-darkserum-01",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc90-iunik-teatree-relief-serum-50",
+      "brand": "iUNIK",
+      "productName": "ティーツリーリリーフセラム",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.qoo10.jp/gmkt.inc/Goods/Goods.aspx?goodscode=850011475",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-missha-2f3e38db5c57",
+      "brand": "MISSHA",
+      "productName": "ミシャタイムレボリューションレチ1000ショットゲルマスク[1.5ml+32g]",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.missha.co.jp/product/missha_tr_reti1000mask/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-missha-e87d7cf3633c",
+      "brand": "MISSHA",
+      "productName": "ミシャグロウUVトーンアッププライマー[30ml]SPF50+/PA+++",
+      "archetype": "sunscreen",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.missha.co.jp/product/glow_toneup_primer/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "酸化チタン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "紫外線防御製品で用いられる可能性のある基材・保湿剤の例。紫外線防御成分の実配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-missha-f64c4e193b63",
+      "brand": "MISSHA",
+      "productName": "ミシャグロウパウダー(ルミナスカバー)",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.missha.co.jp/product/glow_powder_luminous/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-fwee-bafa07d13052",
+      "brand": "fwee",
+      "productName": "スパグロウUVトーンアップベース",
+      "archetype": "sunscreen",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://fwee.jp/product/newスパグロウuvトーンアップベース/253/category/1/display/6/?icid=MAIN.product_listmain_5",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "酸化チタン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "紫外線防御製品で用いられる可能性のある基材・保湿剤の例。紫外線防御成分の実配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-fwee-885d899d9d8c",
+      "brand": "fwee",
+      "productName": "クッションガラスオリジナル",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://fwee.jp/product/クッションガラスオリジナル/250/category/1/display/6/?icid=MAIN.product_listmain_5",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-fwee-7522307e847e",
+      "brand": "fwee",
+      "productName": "3Dボリューミングティント",
+      "archetype": "lip-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://fwee.jp/product/3dボリューミングティント/251/category/1/display/6/?icid=MAIN.product_listmain_5",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "リップ製品の油性基材・感触調整成分の一般例を挙げた仮説。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-fwee-39c016dadb34",
+      "brand": "fwee",
+      "productName": "3Dボリューミンググロス",
+      "archetype": "lip-makeup",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://fwee.jp/product/3dボリューミンググロス/226/category/1/display/6/?icid=MAIN.product_listmain_5",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "リップ製品の油性基材・感触調整成分の一般例を挙げた仮説。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-a92ff930ea7c",
+      "brand": "SKINFOOD",
+      "productName": "ブラックシュガーセラムリニューアル",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75459",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-2e537f40b406",
+      "brand": "SKINFOOD",
+      "productName": "シャインマスカット",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75633",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-8ddeb5ab4cc5",
+      "brand": "SKINFOOD",
+      "productName": "ポテト マデカソ スージングパッド 250g/60枚",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75661",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-6bff2e5a9631",
+      "brand": "SKINFOOD",
+      "productName": "アロエ",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/1821",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-0e9ac4d5fab3",
+      "brand": "SKINFOOD",
+      "productName": "ゆずシャーベット",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/20025",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-781cbda9f67d",
+      "brand": "SKINFOOD",
+      "productName": "ハニー モイスチャージェル90",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/1960",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-c91bd7c18b1b",
+      "brand": "SKINFOOD",
+      "productName": "シカ クリア スポットパッチ",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/74101",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-f2e40ed33ead",
+      "brand": "SKINFOOD",
+      "productName": "ローズヒップオイル",
+      "archetype": "oil",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/21026",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "油性製品で一般的なエモリエント・感触調整成分の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-afd332ed8d75",
+      "brand": "SKINFOOD",
+      "productName": "ブラックシュガー2Xスクラブ",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75454",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-df155358c8dc",
+      "brand": "SKINFOOD",
+      "productName": "ブラックシュガー",
+      "archetype": "generic",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75459",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "very-low"
+        }
+      ],
+      "reason": "剤型特定が不十分なため一般的な保湿剤の一例のみ。実配合を示す根拠ではない。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-4106c8775064",
+      "brand": "SKINFOOD",
+      "productName": "シャインマスカット シカ BHA トナーパッド 200g/70枚",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75633",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-85b5b9b28a5d",
+      "brand": "SKINFOOD",
+      "productName": "ブラックシュガー パーフェクトファーストセラム ザ・エッセンシャル 120mL",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/70801",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-6c0e1a8631ec",
+      "brand": "SKINFOOD",
+      "productName": "ローズヒップマルチオイル115mL",
+      "archetype": "oil",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/21026",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "油性製品で一般的なエモリエント・感触調整成分の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc103-skinfood-5c25c244f9a8",
+      "brand": "SKINFOOD",
+      "productName": "アルガン オイル シルク プラス ヘアー マスクパック 200mL",
+      "archetype": "oil",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://www.skinfood.co.jp/fs/skin/75601",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "トリエチルヘキサノイン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ジメチコン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "油性製品で一般的なエモリエント・感触調整成分の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-7088e5c7737a",
+      "brand": "numbuzin",
+      "productName": "9番 NMNバイオリフトラッピングマスク (10枚)",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/9番-nmnバイオリフトラッピングマスク-10枚/214/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-dd4c1b991265",
+      "brand": "numbuzin",
+      "productName": "9番 弾力ブースター時短バブルパック",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/9番-弾力ブースター時短バブルパック/213/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-c0620eab94b2",
+      "brand": "numbuzin",
+      "productName": "5番 白玉グルタチオン100×TXA10集中トーニング美容液",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/5番-白玉グルタチオン100×txa10集中トーニング美容液/212/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-7e3c4bc0d4e1",
+      "brand": "numbuzin",
+      "productName": "5番 白玉ブースター時短バブルパック",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/5番-白玉ブースター時短バブルパック/211/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-441d4601014f",
+      "brand": "numbuzin",
+      "productName": "3番 ノーファンデ陶器肌トーンアップUVクリーム EX",
+      "archetype": "sunscreen",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-ノーファンデ陶器肌トーンアップuvクリーム-ex/210/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "酸化チタン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "紫外線防御製品で用いられる可能性のある基材・保湿剤の例。紫外線防御成分の実配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-08b5c85376e5",
+      "brand": "numbuzin",
+      "productName": "3番 ノーファンデ陶器肌トーンアップUVエッセンス",
+      "archetype": "sunscreen",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-ノーファンデ陶器肌トーンアップuvエッセンス/209/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "酸化チタン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "紫外線防御製品で用いられる可能性のある基材・保湿剤の例。紫外線防御成分の実配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-436c4568b4e7",
+      "brand": "numbuzin",
+      "productName": "3番 もちすべキメケアトナーパッド",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-もちすべキメケアトナーパッド/208/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-cc2da5bae5bd",
+      "brand": "numbuzin",
+      "productName": "3番 うるツヤ発酵トナー EX",
+      "archetype": "toner",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-うるツヤ発酵トナー-ex/207/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "水",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "水系化粧水・ミストに一般的な溶媒・保湿剤の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-497860ffef66",
+      "brand": "numbuzin",
+      "productName": "3番 すべすべ発酵トナー",
+      "archetype": "toner",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-すべすべ発酵トナー/206/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "水",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "水系化粧水・ミストに一般的な溶媒・保湿剤の候補。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-cf421cdaf72d",
+      "brand": "numbuzin",
+      "productName": "3番 もちすべ毛穴ケアセラムクレンジング",
+      "archetype": "wash",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-もちすべ毛穴ケアセラムクレンジング/205/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "ココイルグルタミン酸Na",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "洗浄製品の保湿剤・界面活性剤の一般例。処方・界面活性剤系統は未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-e0a6c7c4ab19",
+      "brand": "numbuzin",
+      "productName": "3番 すべすべキメケアセラム EX",
+      "archetype": "serum",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-すべすべキメケアセラム-ex/204/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "美容液で一般的な保湿溶媒の候補。商品名に書かれた訴求成分の配合は別途未確認。",
+      "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
+    },
+    {
+      "productId": "rc104-numbuzin-615de462d84e",
+      "brand": "numbuzin",
+      "productName": "3番 キメブースター時短バブルパック",
+      "archetype": "sheet-mask",
+      "cohort": "supplemental",
+      "ingredientEvidence": "none",
+      "evidenceDate": "2026-11-10",
+      "sourceBasis": "product-name-and-general-formulation-archetype-only",
+      "productListingUrl": "https://numbuzin.jp/product/3番-キメブースター時短バブルパック/203/category/24/display/1/",
+      "ingredientSourceUrl": null,
+      "hypotheses": [
+        {
+          "name": "グリセリン",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        },
+        {
+          "name": "BG",
+          "classification": "AI推測・未確認",
+          "confidence": "low"
+        }
+      ],
+      "reason": "含浸液のあるシート・パッドに一般的な保湿溶媒の例。形状と配合は未確認。",
       "caution": "この商品に実際に配合されていることは確認していません。掲載元URLは商品名の手掛かりであり、成分の出典ではありません。"
     }
   ]
