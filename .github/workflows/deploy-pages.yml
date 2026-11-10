@@ -642,6 +642,8 @@ jobs:
              publicProducts.sources.find(s=>s.name==='@cosme')?.publicProductLinks!==535||
              publicProducts.sources.find(s=>s.name==='Qoo10')?.publicProductLinks!==89||
              publicProducts.rows.some(r=>r.ingredientEvidence!=='none')||
+             !publicProducts.rows.some(r=>r.source==='Qoo10'&&r.name.includes('UIQ'))||
+             publicProducts.rows.some(r=>r.source==='Qoo10'&&/^[\d,.]+\u5186$/.test(r.name))||
              new Set(publicProducts.rows.map(r=>r.id)).size!==24516||
              !coverageApp.includes('marketplace-product-candidates-20261110.json')||
              cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==670||
