@@ -610,16 +610,20 @@ jobs:
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
              coverageFirst.remainingUnverified.length!==163||coverageFirst.previouslyUnknownNowReferenced!==9||
-             directoryExtra.audit.allDirectoryNamesAfterExtension!==313||
-             directoryExtra.brands.length!==112||
+             directoryExtra.audit.allDirectoryNamesAfterExtension!==633||
+             directoryExtra.brands.length!==432||
              directoryExtra.audit.externalNewCandidates!==74||
              directoryExtra.audit.marketplaceNewCandidates!==37||
              directoryExtra.audit.marketplaceUnclassified!==4||
+             directoryExtra.audit.iroReviewed!==287||
+             directoryExtra.audit.iroNewCandidates!==160||
+             directoryExtra.audit.fitcosmeReviewed!==335||
+             directoryExtra.audit.fitcosmeNewCandidates!==160||
              groupAudit.allSourceBrands!==122||
              groupAudit.independentlyListedGroups!==77||
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
-             !stableHome.includes('計313件')||
+             !stableHome.includes('計633件')||
              coverageFirst.registeredProducts!==2163||
              coverageFirst.allRegisteredFullJapaneseFormulas!==607||
              coverageFirst.allRegisteredPartialReferences!==1305||
