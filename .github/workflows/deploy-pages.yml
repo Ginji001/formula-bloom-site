@@ -608,6 +608,7 @@ jobs:
           const groupAudit=JSON.parse(fs.readFileSync('_site/manufacturer-group-reconciliation-20261110.json','utf8'));
           const marketplaceIndex=JSON.parse(fs.readFileSync('_site/marketplace-brand-candidates-20261110.json','utf8'));
           const cosmeetMakerIndex=JSON.parse(fs.readFileSync('_site/cosmeet-maker-brand-candidates-20261110.json','utf8'));
+          const publicProducts=JSON.parse(fs.readFileSync('_site/marketplace-product-candidates-20261110.json','utf8'));
           const allRegisteredHypotheses=JSON.parse(fs.readFileSync('_site/ingredient-hypotheses-20261110.json','utf8'));
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
@@ -626,13 +627,21 @@ jobs:
              marketplaceIndex.newCandidateCount!==11817||
              marketplaceIndex.displayedDirectoryCount!==12494||
              marketplaceIndex.sources.length!==3||
-             cosmeetMakerIndex.collectedPageCount!==200||
-             cosmeetMakerIndex.uniqueListedMakers!==1663||
-             cosmeetMakerIndex.uniqueListedBrands!==2014||
-             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==1695||
+             cosmeetMakerIndex.collectedPageCount!==520||
+             cosmeetMakerIndex.uniqueListedMakers!==3723||
+             cosmeetMakerIndex.uniqueListedBrands!==4998||
+             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==4033||
              cosmeetMakerIndex.completeSourceCoverage!==false||
-             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==200||
-             cosmeetMakerIndex.listedSoloBrandRows!==572||
+             publicProducts.productNameCount!==12049||
+             publicProducts.sources.length!==3||
+             publicProducts.sources.find(s=>s.name==='LIPS')?.publicProductLinks!==11658||
+             publicProducts.sources.find(s=>s.name==='@cosme')?.publicProductLinks!==322||
+             publicProducts.sources.find(s=>s.name==='Qoo10')?.publicProductLinks!==69||
+             publicProducts.rows.some(r=>r.ingredientEvidence!=='none')||
+             new Set(publicProducts.rows.map(r=>r.id)).size!==12049||
+             !coverageApp.includes('marketplace-product-candidates-20261110.json')||
+             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==520||
+             cosmeetMakerIndex.listedSoloBrandRows!==2548||
              !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
              !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 

@@ -1552,6 +1552,7 @@ let addedBrandRecords=[];
 let marketplaceBrandRecords=[];
 let cosmeetBrandRecords=[];
 let cosmeetMakerRecords=[];
+let marketplaceProductsPromise=null;
 let manufacturerGroupRows=[];
 function addedManufacturerMatches(q){
  const key=String(q||'').trim().toLowerCase().replace(/\s/g,'');
@@ -1597,6 +1598,36 @@ function showCosmeetMaker(row){
  if(row.brandIds.length>60){
   const note=document.createElement('p');note.className='muted';
   note.textContent='ブランド'+row.brandIds.length+'件のうち60件を表示しています。';holder.append(note);
+ }
+}
+function showMarketplaceProducts(rows,query){
+ const holder=$('searchResults');holder.replaceChildren();
+ const heading=document.createElement('p');heading.className='muted';
+ heading.textContent='公開掲載の商品名 '+rows.length+'件（成分未確認）。先頭30件を表示。';
+ holder.append(heading);
+ const queryKey=productFold(query);
+ const sorted=rows.slice().sort((a,b)=>{
+  const ak=productFold(a.name),bk=productFold(b.name);
+  return Number(bk===queryKey)-Number(ak===queryKey)||
+   Number(bk.startsWith(queryKey))-Number(ak.startsWith(queryKey))||
+   a.name.localeCompare(b.name,'ja');
+ });
+ for(const row of sorted.slice(0,30)){
+  const btn=document.createElement('button');btn.className='product-option';btn.type='button';
+  btn.textContent=row.brandName+'｜'+row.name+'（'+row.source+'掲載・成分未確認）';
+  btn.onclick=()=>{
+   holder.replaceChildren();
+   const h=document.createElement('h3');h.textContent=row.brandName+'｜'+row.name;holder.append(h);
+   const caution=document.createElement('p');caution.className='muted';
+   caution.textContent='【商品名のみ収録】'+row.source+(row.productPeriod?'（'+row.productPeriod+'月間ランキング）':'')+'の公開ページで商品名・リンクを確認。日本語全成分、配合、現行販売、製造販売業者の確認は未実施。';
+   holder.append(caution);
+   sourceLink(holder,row.productPageUrl,row.source+'の商品掲載ページ');
+   sourceLink(holder,row.sourceBrandUrl,row.source+'のブランド掲載ページ');
+   const button=document.createElement('button');button.type='button';button.className='secondary';
+   button.textContent='手元の日本語全成分を入力する';
+   button.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(button);
+  };
+  holder.append(btn);
  }
 }
 function showAddedBrand(row){
@@ -1820,6 +1851,22 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   return;
 }
 
+// Public LIPS and @cosme product names are distinct from verified ingredient records.
+if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=3){
+ try{
+  if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-candidates-20261110.json').catch(e=>{
+   marketplaceProductsPromise=null;throw e;
+  });
+  const data=await marketplaceProductsPromise;
+  if(ctx.version!==lookupVersion)return;
+  if(Array.isArray(data?.rows)){
+   const queryKey=productFold(q);
+   const found=data.rows.filter(row=>productFold(row.name).includes(queryKey)||
+    productFold(row.brandName+' '+row.name).includes(queryKey));
+   if(found.length){showMarketplaceProducts(found,q);return;}
+  }
+ }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
+}
 // Public brand directories have brand names and links, but product ingredients are not verified.
 if(!forceOfficial&&!/^https:\/\//.test(q)&&marketplaceBrandRecords.length){
  const folded=productFold(q);
