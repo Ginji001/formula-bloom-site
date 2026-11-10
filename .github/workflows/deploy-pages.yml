@@ -606,6 +606,8 @@ jobs:
           const coverageApp=fs.readFileSync('_site/app.js','utf8');
           const directoryExtra=JSON.parse(fs.readFileSync('_site/brand-directory-additions-20261110.json','utf8'));
           const groupAudit=JSON.parse(fs.readFileSync('_site/manufacturer-group-reconciliation-20261110.json','utf8'));
+          const marketplaceIndex=JSON.parse(fs.readFileSync('_site/marketplace-brand-candidates-20261110.json','utf8'));
+          const cosmeetMakerIndex=JSON.parse(fs.readFileSync('_site/cosmeet-maker-brand-candidates-20261110.json','utf8'));
           const allRegisteredHypotheses=JSON.parse(fs.readFileSync('_site/ingredient-hypotheses-20261110.json','utf8'));
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
@@ -621,6 +623,17 @@ jobs:
              directoryExtra.audit.fitcosmeNewCandidates!==160||
              groupAudit.allSourceBrands!==122||
              groupAudit.independentlyListedGroups!==77||
+             marketplaceIndex.newCandidateCount!==11817||
+             marketplaceIndex.displayedDirectoryCount!==12494||
+             marketplaceIndex.sources.length!==3||
+             cosmeetMakerIndex.collectedPageCount!==160||
+             cosmeetMakerIndex.uniqueListedMakers!==1167||
+             cosmeetMakerIndex.uniqueListedBrands!==1522||
+             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==1329||
+             cosmeetMakerIndex.completeSourceCoverage!==false||
+             !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
+             !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
+
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
              !stableHome.includes('計633件')||
