@@ -86,6 +86,16 @@ $('sample').onclick=loadProduct;
 // Build an exact source-verified product list; names alone never trigger a flower.
 $('readyFormulas').onclick=async()=>{
  const ctx=beginLookup();
+if(!forceOfficial&&!/^https:\/\//.test(q)&&/^(?:楽天|楽天市場|rakuten|@cosme|アットコスメ)(?:\s*全成分)?$/i.test(q)){
+ try{
+  const list=await retailerIngredientFacts();
+  if(ctx.version!==lookupVersion)return;
+  const isRakuten=/楽天|rakuten/i.test(q);
+  showSourcedRetailerList(list,'',isRakuten?'楽天':'@cosme');
+  return;
+ }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
+}
+
  $('query').value='';
  $('searchResults').textContent='掲載時点の日本語全成分を確認した商品を探しています…';
  busy(true);
@@ -1659,6 +1669,96 @@ function showOliveYoungOverview(data,query){
  caveat.textContent='他サイトの商品名だけの55,599件とは別集計です。SKU・JAN表示や外部サイトへの移動は不要です。';
  holder.append(caveat);
 }
+let retailerIngredientFactsPromise=null;
+function retailerIngredientFacts(){
+ if(!retailerIngredientFactsPromise)retailerIngredientFactsPromise=getJSON('/retailer-full-ingredient-facts-20261110.json')
+  .catch(error=>{retailerIngredientFactsPromise=null;throw error;});
+ return retailerIngredientFactsPromise;
+}
+function showSourcedRetailerFormula(record,listQuery=''){
+ const holder=$('searchResults');holder.replaceChildren();
+ const heading=document.createElement('h3');
+ heading.textContent=record.brandName+'｜'+record.productName;holder.append(heading);
+ const proof=document.createElement('p');proof.className='muted';
+ proof.textContent=record.source+'の「全成分」掲載内容をアプリ内に保存。'+record.qualifier+' 外部サイトへの移動は不要です。';
+ holder.append(proof);
+ const target=document.createElement('div');target.className='retailer-sourced-ingredients';
+ const versions=document.createElement('div');
+ holder.append(versions,target);
+ const drawVersion=variant=>{
+  target.replaceChildren();
+  const note=document.createElement('p');note.className='muted';
+  note.textContent=variant.formulaLabel+'：掲載成分 '+variant.ingredients.length+'件。'+(variant.ingredientOrderStatus==='site-listed'?'販売店掲載順（現物ラベルとの一致は未確認）。':'@cosmeの掲載順（現物ラベルとの一致は未確認）。');
+  target.append(note);
+  const list=document.createElement('ol');list.className='retailer-ingredient-list';
+  for(const ingredient of variant.ingredients){
+   const li=document.createElement('li');li.textContent=ingredient;list.append(li);
+  }
+  target.append(list);
+  const analyze=document.createElement('button');analyze.type='button';analyze.className='secondary';
+  analyze.textContent='この全成分で解析する';
+  analyze.onclick=()=>{
+   tab('text');
+   remoteProduct=null;
+   $('ingredients').value=variant.ingredients.join('、');
+   $('kind').value='cosmetic';
+   $('japanConfirmed').checked=false;
+   run();
+  };
+  target.append(analyze);
+ };
+ if(record.variants.length>1){
+  const heading=document.createElement('p');heading.className='muted';
+  heading.textContent='掲載されている処方の区分。別の処方を混ぜず、個別に表示します。';versions.append(heading);
+  for(const v of record.variants){
+   const button=document.createElement('button');button.type='button';button.className='secondary';
+   button.textContent=v.formulaLabel;button.onclick=()=>drawVersion(v);versions.append(button);
+  }
+ }
+ drawVersion(record.variants[0]);
+ const back=document.createElement('button');back.type='button';back.className='secondary';
+ back.textContent='収録済み全成分の一覧に戻る';
+ back.onclick=async()=>{
+  const data=await retailerIngredientFacts();
+  showSourcedRetailerList(data,listQuery);
+ };
+ holder.append(back);
+}
+function showSourcedRetailerList(data,query='',filterSource=''){
+ const holder=$('searchResults');holder.replaceChildren();
+ const h=document.createElement('h3');h.textContent='@cosme・楽天｜アプリ内の全成分一覧';holder.append(h);
+ const explain=document.createElement('p');explain.className='muted';
+ explain.textContent='公開ページに「全成分」として掲載された記録：'+data.records.length+'商品掲載／'+data.distinctListedFormulaVersions+'処方。出典別に確認済み・未収録を区別し、旧処方も混在させません。掲載情報は現物ラベルの保証ではありません。';
+ holder.append(explain);
+ const q=productFold(query);
+ const list=data.records.filter(row=>(!filterSource||row.source.includes(filterSource))&&
+  (!q||productFold(row.brandName+' '+row.productName).includes(q)));
+ const summary=document.createElement('p');summary.className='muted';
+ summary.textContent='一致 '+list.length+'件。80件ずつ追加表示できます。';holder.append(summary);
+ if(!list.length){
+  const no=document.createElement('p');no.textContent='検索条件に一致する収録済みの全成分はありません。';holder.append(no);
+ }
+ const entries=document.createElement('div');holder.append(entries);
+ let displayed=0;
+ const more=document.createElement('button');more.type='button';more.className='secondary';
+ more.textContent='次の80商品を表示';
+ const showMore=()=>{
+  const page=list.slice(displayed,displayed+80);
+  for(const record of page){
+   const button=document.createElement('button');button.type='button';button.className='product-option';
+   const count=record.variants.reduce((n,v)=>n+v.ingredients.length,0);
+   button.textContent=record.brandName+'｜'+record.productName+'（'+record.source+'・'+record.variants.length+'処方／'+count+'成分名）';
+   button.onclick=()=>showSourcedRetailerFormula(record,query);entries.append(button);
+  }
+  displayed+=page.length;
+  more.hidden=displayed>=list.length;
+ };
+ more.onclick=showMore;
+ showMore();holder.append(more);
+ const audit=document.createElement('p');audit.className='muted';
+ audit.textContent='未掲載の全成分は推測で埋めていません。出典ページのURLは内部監査データに保持しますが、商品閲覧時に別サイトへ移動しません。';
+ holder.append(audit);
+}
 function showMarketplaceProducts(rows,query){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('p');heading.className='muted';
@@ -1689,6 +1789,16 @@ function showMarketplaceProducts(rows,query){
    button.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(button);
   };
   holder.append(btn);
+  if(row.source==='@cosme'){
+   retailerIngredientFacts().then(data=>{
+    if(!btn.isConnected||!Array.isArray(data?.records))return;
+    const match=data.records.find(item=>item.source==='@cosme'&&item.sourceUrl===row.productPageUrl);
+    if(match){
+     btn.textContent=row.brandName+'｜'+row.name+'（@cosmeの全成分をアプリ内に収録済み）';
+     btn.onclick=()=>showSourcedRetailerFormula(match,query);
+    }
+   }).catch(()=>{});
+  }
  }
 }
 function showAddedBrand(row){
@@ -1798,7 +1908,13 @@ getJSON('/public-collection-progress-20261110.json').then(data=>{
  const indicator=$('publicProductIndexCount');
  if(indicator&&Number.isInteger(data?.totalExternalProductNameReferences))
   indicator.textContent=data.totalExternalProductNameReferences.toLocaleString('ja-JP')+'件';
+ const evidence=$('sourceListedIngredientCount');
+ if(evidence&&Number.isInteger(data?.additionalFullIngredientCollection?.sourcedProductIdentityEntries))
+  evidence.textContent='@cosme・楽天の掲載全成分 '+data.additionalFullIngredientCollection.sourcedProductIdentityEntries.toLocaleString('ja-JP')+
+  '商品・'+data.additionalFullIngredientCollection.sourceListedFormulaVersions.toLocaleString('ja-JP')+'処方（元の2,163商品とは別集計）';
 }).catch(()=>{});
+$('showAtCosmeIngredientLibrary').onclick=()=>{$('query').value='@cosme';search({instant:true});};
+$('showRakutenIngredientLibrary').onclick=()=>{$('query').value='楽天';search({instant:true});};
 getJSON('/brand-directory-additions-20261110.json').then(data=>{
  addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&row.aliases.length&&row.listingStatus):[];
  quickRegisteredBrands();
@@ -1942,6 +2058,17 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   return;
 }
 
+// Source-backed full ingredient records are offered before any name-only marketplace cards.
+if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=3){
+ try{
+  const data=await retailerIngredientFacts();
+  if(ctx.version!==lookupVersion)return;
+  const key=productFold(q);
+  const facts=data.records.filter(row=>productFold(row.brandName+' '+row.productName).includes(key)||
+    productFold(row.productName).includes(key));
+  if(facts.length){showSourcedRetailerList(data,q);return;}
+ }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
+}
 // Public LIPS and @cosme product names are distinct from verified ingredient records.
 if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=2){
  try{
