@@ -611,6 +611,7 @@ jobs:
           const publicProducts=JSON.parse(fs.readFileSync('_site/marketplace-product-candidates-20261110.json','utf8'));
           const productLite=JSON.parse(fs.readFileSync('_site/marketplace-product-search-lite-20261110.json','utf8'));
           const collectionProgress=JSON.parse(fs.readFileSync('_site/public-collection-progress-20261110.json','utf8'));
+          const oliveYoung=JSON.parse(fs.readFileSync('_site/oliveyoung-ingredient-snapshots-20261110.json','utf8'));
           const allRegisteredHypotheses=JSON.parse(fs.readFileSync('_site/ingredient-hypotheses-20261110.json','utf8'));
           if(coverageFirst.priorityProducts!==2020||coverageFirst.fullJapaneseFormulas!==600||
              coverageFirst.partialIngredientReferences!==1257||coverageFirst.withoutIngredientNames!==163||
@@ -642,6 +643,12 @@ jobs:
              collectionProgress.totalBrandNameCandidates!==23046||
              collectionProgress.totalExternalProductNameReferences!==55599||
              collectionProgress.completeCoverage!==false||
+             oliveYoung.retailerOwnedBrands.length!==12||
+             oliveYoung.verifiedProductIngredientSections!==6||
+             oliveYoung.listedIngredientNames!==192||
+             oliveYoung.products.some(r=>!r.ingredientListSource||r.ingredients.length<19)||
+             !coverageApp.includes('showOliveYoungIngredients')||
+             !coverageApp.includes('oliveyoung-ingredient-snapshots-20261110.json')||
              collectionProgress.sites.lips.nextBrandIndex!==1463||
              collectionProgress.sites.lips.brandLandingPagesWithNoProductCards!==2||
              collectionProgress.sites.atcosme.nextMakerBrandPage!==1450||

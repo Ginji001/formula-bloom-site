@@ -201,7 +201,7 @@ function useStoredFormula(record){
  $('japanConfirmed').checked=true;
  $('sourceInfo').replaceChildren();
  const msg=document.createElement('p');msg.className='muted';
- msg.textContent=(record.formulaStatus==='historical-reference'?'旧処方の参考情報':record.sourceType==='official'?'メーカー掲載の全成分':'国内販売店・美容情報サイトの全成分')+'（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sku?'／商品コード '+record.sku:'')+(record.sourcePageId?'／一覧ID '+record.sourcePageId:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
+ msg.textContent=(record.formulaStatus==='historical-reference'?'旧処方の参考情報':record.sourceType==='official'?'メーカー掲載の全成分':'国内販売店・美容情報サイトの全成分')+'（'+record.verifiedAt.slice(0,10)+'確認）'+(record.sourcePageId?'／一覧ID '+record.sourcePageId:'')+(record.volume?'／'+record.volume:'')+'。最新処方・現物との一致は未確認です。';
  $('sourceInfo').append(msg);
  sourceLink($('sourceInfo'),record.sourceUrl+(record.sourcePageId?'#'+record.sourcePageId:''),'全成分の掲載元');
  showMedicatedCategories(remoteProduct);
@@ -222,13 +222,14 @@ async function showArchivedRegisteredFormula(item,ctx=null){
  const analyzed=useStoredFormula(archive);
  const area=$('searchResults');area.replaceChildren();
  const label=document.createElement('p');label.className='selected-product-name';
- label.textContent=item.brand+' '+item.name+((archive.volume||item.volume)?' · '+(archive.volume||item.volume):'')+((archive.sku||item.jan)?' ／ JAN '+(archive.sku||item.jan):'')+(archive.variant?' ／ '+archive.variant:'');
+ label.textContent=item.brand+' '+item.name+((archive.volume||item.volume)?' · '+(archive.volume||item.volume):'')+(archive.variant?' ／ '+archive.variant:'');
  const note=document.createElement('p');note.className='muted';
  note.textContent=analyzed?'メーカー・国内出典の掲載時点の日本語全成分で花を生成しました。'+(archive.sourceReview?.sharedManufacturerItemPage?'詰替用は本体と共通掲載の目的別表を使用（配合順ではありません）。':'')+'最新ロット・現物ラベルとの一致は未確認です。':'パレットの色ごとに成分欄を確認し、一つの欄を入力してください。';
  area.append(label,note);
  sourceLink(area,archive.sourceUrl,'全成分の出典');
  if(item.url!==archive.sourceUrl)sourceLink(area,item.url,'商品ページ');
 }
+// Audit-only identifiers such as record.sku remain in saved provenance, never in user-facing ingredient labels.
 function offerStoredFormula(record){
  if(!record)return;
  const b=document.createElement('button');b.className='secondary';b.type='button';
@@ -1601,6 +1602,63 @@ function showCosmeetMaker(row){
   note.textContent='ブランド'+row.brandIds.length+'件のうち60件を表示しています。';holder.append(note);
  }
 }
+let oliveYoungIngredientsPromise=null;
+function oliveYoungData(){
+ if(!oliveYoungIngredientsPromise)oliveYoungIngredientsPromise=getJSON('/oliveyoung-ingredient-snapshots-20261110.json').catch(e=>{
+  oliveYoungIngredientsPromise=null;throw e;
+ });
+ return oliveYoungIngredientsPromise;
+}
+function showOliveYoungIngredients(product,data){
+ const holder=$('searchResults');holder.replaceChildren();
+ const h=document.createElement('h3');h.textContent=product.brand+'｜'+product.name;holder.append(h);
+ const notice=document.createElement('p');notice.className='muted';
+ notice.textContent='オリーブヤングの商品情報に掲載された全成分を、アプリ内に保存しています。原文は英語表記です。改良・付属品の成分一致は保証しません。';
+ holder.append(notice);
+ if(product.ingredientOrderStatus!=='listed-order-as-presented'){
+  const order=document.createElement('p');order.className='muted';
+  order.textContent='掲載元は用途別に成分を分類しており、配合順は確認できません。英語原文に不明瞭な語もあります。';
+  holder.append(order);
+ }
+ const n=document.createElement('p');n.className='muted';
+ n.textContent='保存成分 '+product.ingredients.length+'件／掲載元 OLIVE YOUNG Global／確認日 '+product.verifiedAgainstProductSnapshotOn;
+ holder.append(n);
+ const list=document.createElement('ol');list.className='oliveyoung-ingredient-list';
+ for(const ingredient of product.ingredients){
+  const item=document.createElement('li');
+  const localized=japaneseIngredientLabel(ingredient,{kind:'cosmetic'});
+  item.textContent=localized&&localized!==ingredient?localized+'（'+ingredient+'）':ingredient;
+  list.append(item);
+ }
+ holder.append(list);
+ const back=document.createElement('button');back.type='button';back.className='secondary';
+ back.textContent='オリーブヤング収録商品一覧';
+ back.onclick=()=>showOliveYoungOverview(data,'');
+ holder.append(back);
+}
+function showOliveYoungOverview(data,query){
+ const holder=$('searchResults');holder.replaceChildren();
+ const h=document.createElement('h3');h.textContent='オリーブヤング｜アプリ内の全成分一覧';holder.append(h);
+ const intro=document.createElement('p');intro.className='muted';
+ intro.textContent='CJ OLIVE YOUNGは小売企業です。自社ブランド'+data.retailerOwnedBrands.length+'件と、成分表を確認した'+data.products.length+'商品を区別して保存。全販売商品の収集ではありません。';
+ holder.append(intro);
+ const names=document.createElement('p');names.className='muted';
+ names.textContent='CJ系の自社ブランド：'+data.retailerOwnedBrands.map(r=>r.name).join('、');
+ holder.append(names);
+ const shown=data.products.filter(p=>!query||productFold(p.name+' '+p.brand).includes(productFold(query)));
+ if(!shown.length){
+  const empty=document.createElement('p');empty.textContent='保存済みの全成分表に該当する商品はありません。';holder.append(empty);
+ }
+ for(const product of shown){
+  const b=document.createElement('button');b.type='button';b.className='product-option';
+  b.textContent=product.brand+'｜'+product.name+'（全成分 '+product.ingredients.length+'件・アプリ内表示）';
+  b.onclick=()=>showOliveYoungIngredients(product,data);
+  holder.append(b);
+ }
+ const caveat=document.createElement('p');caveat.className='muted';
+ caveat.textContent='他サイトの商品名だけの55,599件とは別集計です。SKU・JAN表示や外部サイトへの移動は不要です。';
+ holder.append(caveat);
+}
 function showMarketplaceProducts(rows,query){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('p');heading.className='muted';
@@ -1622,8 +1680,10 @@ function showMarketplaceProducts(rows,query){
    const caution=document.createElement('p');caution.className='muted';
    caution.textContent='【商品名のみ収録】'+row.source+(row.productPeriod?'（'+row.productPeriod+'月間ランキング）':'')+'の公開ページで商品名・リンクを確認。日本語全成分、配合、現行販売、製造販売業者の確認は未実施。';
    holder.append(caution);
-   sourceLink(holder,row.productPageUrl,row.source+'の商品掲載ページ');
-   sourceLink(holder,row.sourceBrandUrl,row.source==='Qoo10'?'Qoo10運営元のランキング発表':row.source+'のブランド掲載ページ');
+   // row.productPageUrl is retained only as internal source provenance, not as an external navigation control.
+   const unverified=document.createElement('p');unverified.className='muted';
+   unverified.textContent='全成分はまだ確認できていません。商品リンクに移動せず、アプリ内での収録を進めます。';
+   holder.append(unverified);
    const button=document.createElement('button');button.type='button';button.className='secondary';
    button.textContent='手元の日本語全成分を入力する';
    button.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(button);
@@ -1667,7 +1727,7 @@ function showAddedBrand(row){
  }
  if(row.products?.length){
   const intro=document.createElement('p');intro.className='muted';
-  intro.textContent='商品名の掲載例（成分や個別SKU・JANは未収録）';holder.append(intro);
+  intro.textContent='商品名の掲載例（全成分は未収録）';holder.append(intro);
   for(const product of row.products){
    const info=document.createElement('p');info.className='muted';
    info.textContent=product.name+' ／ 成分は未収録';holder.append(info);
@@ -1784,6 +1844,15 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
+if(!forceOfficial&&!/^https:\/\//.test(q)&&(/オリーブ.?ヤング|オリヤン|olive\s*young/i.test(q)||/torriden|bringgreen/i.test(q))){
+ try{
+  const olive=await oliveYoungData();
+  if(ctx.version!==lookupVersion)return;
+  const all=/オリーブ.?ヤング|オリヤン|olive\s*young/i.test(q);
+  const found=olive.products.filter(p=>productFold(p.brand+' '+p.name).includes(productFold(q)));
+  if(all||found.length){showOliveYoungOverview(olive,all?'':q);return;}
+ }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
+}
 if(!forceOfficial&&!/^https:\/\//.test(q)&&(!addedBrandRecords.length||!manufacturerGroupRows.length||!marketplaceBrandRecords.length||!cosmeetMakerRecords.length)){
  try{
   const [brandData,companyData,marketData,cosmeetData]=await Promise.all([
