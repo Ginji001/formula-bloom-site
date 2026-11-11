@@ -89,36 +89,6 @@ $('sample').onclick=loadProduct;
 // Build an exact source-verified product list; names alone never trigger a flower.
 $('readyFormulas').onclick=async()=>{
  const ctx=beginLookup();
-if(!forceOfficial&&!/^https:\/\//.test(q)){
- const namedSource=(
-  /^(ドン.?キ|ドン・キホーテ|情熱価格)$/i.test(q)?'ドンキ公式':
-  /^(VOCE|ヴォーチェ)$/i.test(q)?'VOCE':
-  /^(MAQUIA|マキア)$/i.test(q)?'MAQUIA':
-  /^(Torriden日本公式|トリデン公式)$/i.test(q)?'Torriden日本公式':
-  /^(美的|BITEKI)$/i.test(q)?'美的':
-  /^(Amazon|アマゾン)$/i.test(q)?'Amazon':'');
- if(namedSource||q.length>=4){
-  try{
-   const supplements=await supplementalSourceCatalog();
-   if(ctx.version!==lookupVersion)return;
-   const matches=supplements.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
-   if(namedSource||matches.length){
-    showSupplementalSourceOverview(supplements,namedSource?'':q,namedSource);
-    return;
-   }
-  }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
- }
-}
-if(!forceOfficial&&!/^https:\/\//.test(q)&&/^(?:楽天|楽天市場|rakuten|@cosme|アットコスメ)(?:\s*全成分)?$/i.test(q)){
- try{
-  const list=await retailerIngredientFacts();
-  if(ctx.version!==lookupVersion)return;
-  const isRakuten=/楽天|rakuten/i.test(q);
-  showSourcedRetailerList(list,'',isRakuten?'楽天':'@cosme');
-  return;
- }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
-}
-
  $('query').value='';
  $('searchResults').textContent='掲載時点の日本語全成分を確認した商品を探しています…';
  busy(true);
@@ -2189,6 +2159,36 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
  }
 }
 const ctx=beginLookup();
+if(!forceOfficial&&!/^https:\/\//.test(q)){
+ const namedSource=(
+  /^(ドン.?キ|ドン・キホーテ|情熱価格)$/i.test(q)?'ドンキ公式':
+  /^(VOCE|ヴォーチェ)$/i.test(q)?'VOCE':
+  /^(MAQUIA|マキア)$/i.test(q)?'MAQUIA':
+  /^(Torriden日本公式|トリデン公式)$/i.test(q)?'Torriden日本公式':
+  /^(美的|BITEKI)$/i.test(q)?'美的':
+  /^(Amazon|アマゾン)$/i.test(q)?'Amazon':'');
+ if(namedSource||q.length>=4){
+  try{
+   const supplements=await supplementalSourceCatalog();
+   if(ctx.version!==lookupVersion)return;
+   const matches=supplements.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
+   if(namedSource||matches.length){
+    showSupplementalSourceOverview(supplements,namedSource?'':q,namedSource);
+    return;
+   }
+  }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
+ }
+}
+if(!forceOfficial&&!/^https:\/\//.test(q)&&/^(?:楽天|楽天市場|rakuten|@cosme|アットコスメ)(?:\s*全成分)?$/i.test(q)){
+ try{
+  const list=await retailerIngredientFacts();
+  if(ctx.version!==lookupVersion)return;
+  const isRakuten=/楽天|rakuten/i.test(q);
+  showSourcedRetailerList(list,'',isRakuten?'楽天':'@cosme');
+  return;
+ }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
+}
+
 if(!forceOfficial&&!/^https:\/\//.test(q)&&(/オリーブ.?ヤング|オリヤン|olive\s*young/i.test(q)||/torriden|bringgreen/i.test(q))){
  try{
   const olive=await oliveYoungData();
