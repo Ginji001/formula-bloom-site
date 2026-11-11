@@ -60,6 +60,7 @@ import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredi
 import {comparePartialCompletion,ingredientMatchKey,rankCopiedCandidates} from './partial-formula-completion.js';
 import {listingNameKey,listingNameCollisionCounts,sourceListingId} from './marketplace-name-identity.js';
 import {generateProvisionalNameOnlyPreview} from './marketplace-provisional-inference.js';
+import {compareListedFormulaVersions,listingVersionIsHistorical} from './retailer-formula-version-review.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
@@ -93,6 +94,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   /^(ドン.?キ|ドン・キホーテ|情熱価格)$/i.test(q)?'ドンキ公式':
   /^(VOCE|ヴォーチェ)$/i.test(q)?'VOCE':
   /^(MAQUIA|マキア)$/i.test(q)?'MAQUIA':
+  /^(Torriden日本公式|トリデン公式)$/i.test(q)?'Torriden日本公式':
   /^(美的|BITEKI)$/i.test(q)?'美的':
   /^(Amazon|アマゾン)$/i.test(q)?'Amazon':'');
  if(namedSource||q.length>=4){
@@ -1703,13 +1705,21 @@ function showSourcedRetailerFormula(record,listQuery=''){
  const proof=document.createElement('p');proof.className='muted';
  proof.textContent=record.source+'の「全成分」掲載内容をアプリ内に保存。'+record.qualifier+' 外部サイトへの移動は不要です。';
  holder.append(proof);
+ const provenanceDetails=document.createElement('details');provenanceDetails.className='retailer-source-provenance';
+ const provenanceSummary=document.createElement('summary');provenanceSummary.textContent='掲載元・成分の版を確認する';
+ provenanceDetails.append(provenanceSummary);
+ const sourceNote=document.createElement('p');sourceNote.className='muted';
+ sourceNote.textContent='掲載確認日：'+(record.siteListedDate||'未記録')+'／保存版。日本国内向け現物ラベル・ロット・処方変更日は未確認。商品コードや販売店の管理IDをJANとみなしません。';
+ provenanceDetails.append(sourceNote);
+ if(record.sourceUrl)sourceLink(provenanceDetails,record.sourceUrl,'成分が掲載された商品ページ');
+ holder.append(provenanceDetails);
  const target=document.createElement('div');target.className='retailer-sourced-ingredients';
  const versions=document.createElement('div');
  holder.append(versions,target);
  const drawVersion=variant=>{
   target.replaceChildren();
   const note=document.createElement('p');note.className='muted';
-  note.textContent=variant.formulaLabel+'：掲載成分 '+variant.ingredients.length+'件。'+(variant.ingredientOrderStatus==='site-listed'?'販売店掲載順（現物ラベルとの一致は未確認）。':'@cosmeの掲載順（現物ラベルとの一致は未確認）。');
+  note.textContent=variant.formulaLabel+'：掲載成分 '+variant.ingredients.length+'件。'+(variant.ingredientOrderStatus==='site-listed'?'販売店掲載順（現物ラベルとの一致は未確認）。':'@cosmeの掲載順（現物ラベルとの一致は未確認）。')+(listingVersionIsHistorical(variant)?'【旧品として掲載された参考処方】':'' );
   target.append(note);
   const list=document.createElement('ol');list.className='retailer-ingredient-list';
   for(const ingredient of variant.ingredients){
@@ -1720,17 +1730,52 @@ function showSourcedRetailerFormula(record,listQuery=''){
   analyze.textContent='この全成分で解析する';
   analyze.onclick=()=>{
    tab('text');
-   remoteProduct=null;
-   $('ingredients').value=variant.ingredients.join('、');
+   remoteProduct={
+    name:record.brandName+' '+record.productName,
+    ingredients:variant.ingredients.join('、'),rows:[],
+    sourceType:'archive',
+    sourceOrigin:/楽天|公式店/.test(record.source)?'shop':'beauty',
+    region:'jp',japanMarketConfirmed:true,documentedPartial:false,
+    archiveVerifiedAt:record.siteListedDate||'未確認',fetchedAt:record.siteListedDate||'',
+    formulaStatus:listingVersionIsHistorical(variant)?'historical-reference':'source-listed-physical-label-not-verified',
+    order:'掲載元の「全成分」欄の記載順。現行処方と現物ラベルは未確認。',
+    label:variant.formulaLabel,url:record.sourceUrl
+   };
+   $('ingredients').value=remoteProduct.ingredients;
    $('kind').value='cosmetic';
    $('japanConfirmed').checked=false;
+   $('origin').textContent=record.source+'掲載：'+variant.formulaLabel+'（現物未確認）';
+   $('sourceInfo').replaceChildren();
+   const sourceWarning=document.createElement('p');sourceWarning.className='muted';
+   sourceWarning.textContent='【版の区別】'+variant.formulaLabel+'／掲載確認日：'+(record.siteListedDate||'未記録')+'／現物ラベル・新旧の販売状況は未確認。';
+   $('sourceInfo').append(sourceWarning);
+   if(record.sourceUrl)sourceLink($('sourceInfo'),record.sourceUrl,'掲載元の全成分');
    run();
   };
   target.append(analyze);
  };
  if(record.variants.length>1){
   const heading=document.createElement('p');heading.className='muted';
-  heading.textContent='掲載されている処方の区分。別の処方を混ぜず、個別に表示します。';versions.append(heading);
+  heading.textContent='掲載されている処方の区分。別の処方を混ぜず、個別に表示します。旧品・リニューアルの掲載区分は出典表記であり、現行販売や改良日を保証しません。';versions.append(heading);
+  const compared=compareListedFormulaVersions(record.variants);
+  if(compared){
+   const difference=document.createElement('details');difference.className='retailer-version-difference';
+   const differenceTitle=document.createElement('summary');
+   differenceTitle.textContent='掲載2処方の成分名の差を確認';
+   difference.append(differenceTitle);
+   const explanation=document.createElement('p');explanation.className='inference-warning';
+   explanation.textContent=compared.firstLabel+'（'+compared.firstCount+'件）と'+compared.secondLabel+'（'+compared.secondCount+'件）を個別に比較。差分は掲載名の集合比較であり、濃度差・効能差・現物ロット・処方改良日を意味しません。';
+   difference.append(explanation);
+   for(const [label,names] of [['前者のみ',compared.onlyFirst],['後者のみ',compared.onlySecond]]){
+    const p=document.createElement('p');p.className='muted';
+    p.textContent=label+'：'+(names.length?names.join('、'):'なし（掲載名の比較）');difference.append(p);
+   }
+   if(compared.sameListInSameOrder){
+    const same=document.createElement('p');same.className='muted';
+    same.textContent='掲載順も一致。新旧の実物・処方の同一性は証明できません。';difference.append(same);
+   }
+   versions.append(difference);
+  }
   for(const v of record.variants){
    const button=document.createElement('button');button.type='button';button.className='secondary';
    button.textContent=v.formulaLabel;button.onclick=()=>drawVersion(v);versions.append(button);
@@ -1799,6 +1844,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
     :record.ingredientStatus==='listed-ingredients-completeness-unverified'
      ?'「成分」として記載された名前のみを保存。全成分かどうかは確認できません。'
      :'商品名のみの記録です。全成分は未収録で、記載のない成分を推測していません。')+
+   (record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【原ページ直接確認不可】検索掲載時点の保存版です。原ページはHTTP 429のため、現在の掲載内容・実物ラベル未確認。':'')+
    ' 外部販売サイトへ移動せずに表示します。';
  holder.append(caption);
  const sourceDetails=document.createElement('details');sourceDetails.className='supplemental-provenance';
@@ -1807,6 +1853,11 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
  const verified=document.createElement('p');verified.className='muted';
  verified.textContent='掲載確認日：'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'／掲載確認時点の保存版／現在の掲載内容・現物ラベル・処方改良日は未確認。';
  sourceDetails.append(verified);
+ if(record.sourceVersionNote){
+  const versionNote=document.createElement('p');versionNote.className='muted';
+  versionNote.textContent=record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【索引保存版】メーカーの原ページへ直接アクセスできず、最新の掲載状況は未確認。':record.sourceVersionNote;
+  sourceDetails.append(versionNote);
+ }
  if(record.productCodeAsListed){
   const code=document.createElement('p');code.className='muted';
   code.textContent='メーカー掲載品番：'+record.productCodeAsListed+'（JANコードではありません）';
@@ -1832,7 +1883,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
     remoteProduct={
      name:(record.brandName?record.brandName+' ':'')+record.productName,
      ingredients:record.ingredients.join('、'),rows:[],
-     sourceType:'archive',sourceOrigin:record.source==='MEGLY公式'?'official':'shop',
+     sourceType:'archive',sourceOrigin:['MEGLY公式','Torriden日本公式'].includes(record.source)?'official':'shop',
      region:'jp',japanMarketConfirmed:true,documentedPartial:false,
      archiveVerifiedAt:record.sourceCheckedOn||catalog.checkedOn||'未記録',
      fetchedAt:record.sourceCheckedOn||catalog.checkedOn||'',
@@ -1846,7 +1897,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
     $('origin').textContent='掲載元の全成分保存版。現物・最新処方は未確認';
     $('sourceInfo').replaceChildren();
     const proof=document.createElement('p');proof.className='muted';
-    proof.textContent=record.source+'・'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'時点の保存版。現物ラベル・現行ロット未確認。';
+    proof.textContent=record.source+'・'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'時点の保存版。'+(record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'検索索引からの保存で原ページ直接確認はHTTP 429のため未実施。':'')+'現物ラベル・現行ロット未確認。';
     $('sourceInfo').append(proof);
     if(record.sourceUrl)sourceLink($('sourceInfo'),record.sourceUrl,'掲載元を開く');
     run();
@@ -1865,12 +1916,13 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  heading.textContent='メーカー公式・ドンキ・美容雑誌｜収録済み商品情報';
  holder.append(heading);
  const info=document.createElement('p');info.className='muted';
- info.textContent='全成分を掲載元で確認した'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）をアプリ内に保存。ほかは「全成分未確認」として区別しています。';
+ const onlyIndexed=catalog.records.filter(r=>r.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified').length;
+ info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'ほかは「全成分未確認」として区別しています。';
  holder.append(info);
  const amazon=document.createElement('p');amazon.className='muted';
  amazon.textContent='Amazonは商品情報の確認にのみ使います。規約上の制限を考慮し、Amazonの商品データの自動抽出・複製は実施していません。';
  holder.append(amazon);
- const options=['すべて','MEGLY公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
+ const options=['すべて','MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
  const row=document.createElement('div');row.className='ready-formulas-access';
  for(const choice of options){
   const button=document.createElement('button');button.className='secondary';button.type='button';
