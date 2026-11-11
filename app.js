@@ -1801,6 +1801,19 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
      :'商品名のみの記録です。全成分は未収録で、記載のない成分を推測していません。')+
    ' 外部販売サイトへ移動せずに表示します。';
  holder.append(caption);
+ const sourceDetails=document.createElement('details');sourceDetails.className='supplemental-provenance';
+ const sourceSummary=document.createElement('summary');sourceSummary.textContent='掲載元・確認日・商品識別を見る';
+ sourceDetails.append(sourceSummary);
+ const verified=document.createElement('p');verified.className='muted';
+ verified.textContent='掲載確認日：'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'／掲載確認時点の保存版／現在の掲載内容・現物ラベル・処方改良日は未確認。';
+ sourceDetails.append(verified);
+ if(record.productCodeAsListed){
+  const code=document.createElement('p');code.className='muted';
+  code.textContent='メーカー掲載品番：'+record.productCodeAsListed+'（JANコードではありません）';
+  sourceDetails.append(code);
+ }
+ if(record.sourceUrl)sourceLink(sourceDetails,record.sourceUrl,'掲載元のページを開く');
+ holder.append(sourceDetails);
  if(Array.isArray(record.ingredients)&&record.ingredients.length){
   const count=document.createElement('p');count.className='muted';
   count.textContent='掲載成分 '+record.ingredients.length+'件';
@@ -1816,10 +1829,26 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
    analyze.className='secondary';analyze.textContent='この全成分で解析する';
    analyze.onclick=()=>{
     tab('text');
-    remoteProduct=null;
-    $('ingredients').value=record.ingredients.join('、');
+    remoteProduct={
+     name:(record.brandName?record.brandName+' ':'')+record.productName,
+     ingredients:record.ingredients.join('、'),rows:[],
+     sourceType:'archive',sourceOrigin:record.source==='MEGLY公式'?'official':'shop',
+     region:'jp',japanMarketConfirmed:true,documentedPartial:false,
+     archiveVerifiedAt:record.sourceCheckedOn||catalog.checkedOn||'未記録',
+     fetchedAt:record.sourceCheckedOn||catalog.checkedOn||'',
+     formulaStatus:'source-listed-physical-label-not-verified',
+     order:'掲載元「全成分」欄の記載順。最新処方・現物ラベルとの一致は未確認。',
+     label:record.productName,url:record.sourceUrl
+    };
+    $('ingredients').value=remoteProduct.ingredients;
     $('kind').value='cosmetic';
     $('japanConfirmed').checked=false;
+    $('origin').textContent='掲載元の全成分保存版。現物・最新処方は未確認';
+    $('sourceInfo').replaceChildren();
+    const proof=document.createElement('p');proof.className='muted';
+    proof.textContent=record.source+'・'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'時点の保存版。現物ラベル・現行ロット未確認。';
+    $('sourceInfo').append(proof);
+    if(record.sourceUrl)sourceLink($('sourceInfo'),record.sourceUrl,'掲載元を開く');
     run();
    };
    holder.append(analyze);
