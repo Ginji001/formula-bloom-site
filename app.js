@@ -1814,7 +1814,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
     :record.ingredientStatus==='listed-ingredients-completeness-unverified'
      ?'「成分」として記載された名前のみを保存。全成分かどうかは確認できません。'
      :'商品名のみの記録です。全成分は未収録で、記載のない成分を推測していません。')+
-   (record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【原ページ直接確認不可】検索掲載時点の保存版です。原ページはHTTP 429のため、現在の掲載内容・実物ラベル未確認。':'')+
+   (record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【原ページ直接確認不可】検索掲載時点の保存版です。原ページはHTTP 429のため、現在の掲載内容・実物ラベル未確認。':record.sourceSnapshotType==='official-site-web-index-snapshot'?'【索引保存版】検索索引で確認した保存版です。原ページの現在の掲載内容・実物ラベル未確認。':'')+
    ' 外部販売サイトへ移動せずに表示します。';
  holder.append(caption);
  const sourceDetails=document.createElement('details');sourceDetails.className='supplemental-provenance';
@@ -1825,7 +1825,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
  sourceDetails.append(verified);
  if(record.sourceVersionNote){
   const versionNote=document.createElement('p');versionNote.className='muted';
-  versionNote.textContent=record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【索引保存版】メーカーの原ページへ直接アクセスできず、最新の掲載状況は未確認。':record.sourceVersionNote;
+  versionNote.textContent=record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'【索引保存版】メーカーの原ページへ直接アクセスできず、最新の掲載状況は未確認。':record.sourceSnapshotType==='official-site-web-index-snapshot'?'【索引保存版】検索索引で確認した保存版です。メーカーの原ページの最新の掲載状況は未確認。':record.sourceVersionNote;
   sourceDetails.append(versionNote);
  }
  if(record.productCodeAsListed){
@@ -1867,7 +1867,7 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
     $('origin').textContent='掲載元の全成分保存版。現物・最新処方は未確認';
     $('sourceInfo').replaceChildren();
     const proof=document.createElement('p');proof.className='muted';
-    proof.textContent=record.source+'・'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'時点の保存版。'+(record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'検索索引からの保存で原ページ直接確認はHTTP 429のため未実施。':'')+'現物ラベル・現行ロット未確認。';
+    proof.textContent=record.source+'・'+(record.sourceCheckedOn||catalog.checkedOn||'未記録')+'時点の保存版。'+(record.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified'?'検索索引からの保存で原ページ直接確認はHTTP 429のため未実施。':record.sourceSnapshotType==='official-site-web-index-snapshot'?'検索索引からの保存で原ページ直接確認は未実施。':'')+'現物ラベル・現行ロット未確認。';
     $('sourceInfo').append(proof);
     if(record.sourceUrl)sourceLink($('sourceInfo'),record.sourceUrl,'掲載元を開く');
     run();
@@ -1886,7 +1886,7 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  heading.textContent='メーカー公式・ドンキ・美容雑誌｜収録済み商品情報';
  holder.append(heading);
  const info=document.createElement('p');info.className='muted';
- const onlyIndexed=catalog.records.filter(r=>r.sourceSnapshotType==='official-site-web-index-snapshot-direct-live-unverified').length;
+ const onlyIndexed=catalog.records.filter(r=>['official-site-web-index-snapshot-direct-live-unverified','official-site-web-index-snapshot'].includes(r.sourceSnapshotType)).length;
  info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'ほかは「全成分未確認」として区別しています。';
  holder.append(info);
  const amazon=document.createElement('p');amazon.className='muted';
