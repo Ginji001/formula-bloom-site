@@ -51,7 +51,7 @@ import {flowerTypes,recommendFlower,renderFlower,resetFlower} from './flower-typ
 import {summarizeFormulaIntent} from './formula-intent.js';
 import {describeFormulaSignature,formatFormulaSignature} from './formula-signature-v60.js';
 import {provenance,provenanceText} from './provenance.js';
-import {checkProductIdentity} from './product-identity.js';
+import {checkProductIdentity,productCapacity} from './product-identity.js';
 import {recordForProduct,validateFormulaRecords,compareFormulaRecord,mergeFormulaArchives} from './formula-archive.js';
 import {needsMultipartFormulaReview} from './multipart-formula-safety.js';
 import {productsWithVerifiedArchive,itemHasArchiveInCatalog,visibleFormulaFamilies} from './formula-discovery.js';
@@ -1903,7 +1903,8 @@ function showMarketplaceProducts(rows,query){
    holder.append(caution);
    if(duplicateCount>1){
     const ambiguous=document.createElement('p');ambiguous.className='muted';
-    ambiguous.textContent='同名・同ブランドの掲載候補が'+duplicateCount+'件あります。'+(listingId?'この掲載IDは'+listingId+'。':'')+'色・容量・処方の違いは未照合のため、自動統合しません。';
+    const sizeFromName=productCapacity({name:row.name});
+    ambiguous.textContent='同名・同ブランドの掲載候補が'+duplicateCount+'件あります。'+(listingId?'この掲載IDは'+listingId+'（JANではありません）。':'')+(sizeFromName?'商品名上の容量候補：'+sizeFromName+'（現物未確認）。':'')+'JAN未確認。色・容量・処方の違いは未照合のため、自動統合しません。';
     holder.append(ambiguous);
    }
    // row.productPageUrl is retained only as internal source provenance, not as an external navigation control.
