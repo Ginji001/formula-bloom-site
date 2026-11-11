@@ -59,6 +59,7 @@ import {createOCRLexicon,findOCRCorrections,applyOCRCorrection} from './ocr-revi
 import {prepareSharedFormula,extractIngredientCandidates,extractMedicatedIngredientCandidates,sharedSource} from './shared-source.js';
 import {comparePartialCompletion,ingredientMatchKey,rankCopiedCandidates} from './partial-formula-completion.js';
 import {listingNameKey,listingNameCollisionCounts,sourceListingId} from './marketplace-name-identity.js';
+import {generateProvisionalNameOnlyPreview} from './marketplace-provisional-inference.js';
 import {makeSnapshot} from './history.js';
 import {setupHistoryTools} from './history-ui.js';
 import {readMyFormulas,saveMyFormula,deleteMyFormula,searchMyFormulas,exactMyFormula} from './my-formulas.js';
@@ -1914,6 +1915,22 @@ function showMarketplaceProducts(rows,query){
    const button=document.createElement('button');button.type='button';button.className='secondary';
    button.textContent='手元の日本語全成分を入力する';
    button.onclick=()=>{tab('text');$('ingredients').focus();};holder.append(button);
+   const provisional=generateProvisionalNameOnlyPreview(row);
+   if(provisional){
+    const preview=document.createElement('p');preview.className='inference-warning';
+    preview.textContent='【暫定登録・AI推測・実配合未確認】SKU・JANが不明のため、商品名から推測した一般的な剤型候補を別枠で扱います。実際の成分・濃度・処方は不明です。';
+    holder.append(preview);
+    const names=document.createElement('details');names.className='hypothesis-source-details';
+    const summary=document.createElement('summary');summary.textContent='仮説成分 '+provisional.hypotheses.length+'件（すべて推測）';
+    const contents=document.createElement('p');contents.className='muted';
+    contents.textContent=provisional.hypotheses.map(h=>h.name+'（推測・実配合未確認）').join('、');
+    names.append(summary,contents);holder.append(names);
+    const infer=document.createElement('button');infer.type='button';infer.className='secondary provisional-hypothesis-action';
+    infer.textContent='AI推測で参考の花を表示（未確認）';
+    infer.onclick=()=>useHypothesisPreview({brand:row.brandName,name:row.name,url:''},provisional);
+    holder.append(infer);
+   }
+
   };
   holder.append(btn);
   if(row.source==='@cosme'){
