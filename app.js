@@ -1927,7 +1927,7 @@ function showMarketplaceProducts(rows,query){
     names.append(summary,contents);holder.append(names);
     const infer=document.createElement('button');infer.type='button';infer.className='secondary provisional-hypothesis-action';
     infer.textContent='AI推測で参考の花を表示（未確認）';
-    infer.onclick=()=>useHypothesisPreview({brand:row.brandName,name:row.name,url:''},provisional);
+    infer.onclick=()=>{tab('text');useHypothesisPreview({brand:row.brandName,name:row.name,url:''},provisional);};
     holder.append(infer);
    }
 
