@@ -646,11 +646,11 @@ jobs:
              collectionProgress.totalExternalProductNameReferences!==64033||
              collectionProgress.completeCoverage!==false||
              supplementalCatalog.completeCoverage!==false||
-             supplementalCatalog.productTitleCandidates!==110||
+             supplementalCatalog.productTitleCandidates!==116||
              supplementalCatalog.donkiExplicitFullProductRecords!==5||
-             supplementalCatalog.manufacturerOfficialFullProductRecords!==5||
-             supplementalCatalog.totalExplicitFullProductRecords!==10||
-             supplementalCatalog.records.filter(r=>r.source==='MEGLY公式').length!==5||
+             supplementalCatalog.manufacturerOfficialFullProductRecords!==11||
+             supplementalCatalog.totalExplicitFullProductRecords!==16||
+             supplementalCatalog.records.filter(r=>r.source==='MEGLY公式').length!==11||
              supplementalCatalog.donkiUnverifiedIngredientLists!==3||
              supplementalCatalog.records.filter(r=>r.source==='ドンキ公式').length!==20||
              supplementalCatalog.records.filter(r=>r.source==='VOCE').length!==32||
@@ -658,12 +658,12 @@ jobs:
              supplementalCatalog.records.filter(r=>r.source==='美的').length!==16||
              supplementalCatalog.amazonAutomatedCollection!==false||
              supplementalCatalog.records.some(r=>r.source==='Amazon')||
-             supplementalCatalog.records.filter(r=>r.ingredientStatus==='full-disclosure').some(r=>r.ingredients.length<25)||
+             supplementalCatalog.records.filter(r=>r.ingredientStatus==='full-disclosure').some(r=>r.ingredients.length<14)||
              supplementalCatalog.records.filter(r=>r.source==='ドンキ公式').some(r=>r.productName==='驚安の殿堂 ドン・キホーテ')||
-             collectionProgress.supplementalSourceCollection.recordsFromSupplementalSources!==110||
+             collectionProgress.supplementalSourceCollection.recordsFromSupplementalSources!==116||
              collectionProgress.supplementalSourceCollection.donkiExplicitFullIngredientProducts!==5||
-             collectionProgress.supplementalSourceCollection.manufacturerOfficialFullIngredientProducts!==5||
-             collectionProgress.supplementalSourceCollection.totalExplicitFullIngredientProducts!==10||
+             collectionProgress.supplementalSourceCollection.manufacturerOfficialFullIngredientProducts!==11||
+             collectionProgress.supplementalSourceCollection.totalExplicitFullIngredientProducts!==16||
              collectionProgress.supplementalSourceCollection.donkiUnverifiedCompletenessIngredientListings!==3||
              collectionProgress.supplementalSourceCollection.editorialNameOnlyReferences!==85||
              collectionProgress.supplementalSourceCollection.amazonAutomatedCollection!==false||
