@@ -1890,7 +1890,7 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'ほかは「全成分未確認」として区別しています。';
  holder.append(info);
  const amazon=document.createElement('p');amazon.className='muted';
- amazon.textContent='Amazonは商品情報の確認にのみ使います。規約上の制限を考慮し、Amazonの商品データの自動抽出・複製は実施していません。';
+ amazon.textContent='Amazonは、個別に開いて確認した商品ページの掲載内容のみを収録しています。商品データの自動抽出は実施していません。';
  holder.append(amazon);
  const options=['すべて','MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
  const row=document.createElement('div');row.className='ready-formulas-access';

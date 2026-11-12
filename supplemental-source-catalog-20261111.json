@@ -15,7 +15,7 @@
     "VOCE": "Beauty magazine product titles: discovery only; full formulations not validated.",
     "MAQUIA": "Beauty magazine product titles: discovery only; full formulations not validated.",
     "美的": "Editorial cosmetics item titles found through a specific ingredient-focused article; not a comprehensive publication product index.",
-    "Amazon": "Manual cross-reference only; no automated fetching, reuse, or bulk replication of Amazon product data.",
+    "Amazon": "Product pages individually opened and checked by a person; no automated fetching or bulk replication of Amazon product data.",
     "MEGLY公式": "Manufacturer official, explicitly titled full ingredient lists. Formula version and on-shelf product label have not been independently verified.",
     "Torriden日本公式": "Publicly indexed official Japanese product page full-ingredient snapshots; not live-verified (the first two products: original page returned HTTP 429). No physical label, JAN, or current packaging assertion."
   },
