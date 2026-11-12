@@ -671,7 +671,7 @@ jobs:
              collectionProgress.supplementalSourceCollection.amazonAutomatedCollection!==false||
              !coverageApp.includes('showSupplementalSourceOverview')||
              !coverageApp.includes('supplemental-source-catalog-20261111.json')||
-             !stableHome.includes('showSupplementalCatalog')||
+             // Home shortcut buttons were removed 2026-11-12; the library functions remain in app.js and are reachable via search.
              retailerFacts.completeCoverage!==false||
              retailerFacts.recordsWithSourcedIngredientLists!==145||
              retailerFacts.distinctListedFormulaVersions!==150||
@@ -684,8 +684,8 @@ jobs:
              !coverageApp.includes('function showSourcedRetailerList')||
              !coverageApp.includes('retailer-full-ingredient-facts-20261110.json')||
              coverageApp.includes('sourceLink(holder,row.productPageUrl')||
-             !stableHome.includes('showAtCosmeIngredientLibrary')||
-             !stableHome.includes('showRakutenIngredientLibrary')||
+             // (shortcut button removed 2026-11-12)
+             // (shortcut button removed 2026-11-12)
              oliveYoung.retailerOwnedBrands.length!==12||
              oliveYoung.verifiedProductIngredientSections!==6||
              oliveYoung.listedIngredientNames!==192||
