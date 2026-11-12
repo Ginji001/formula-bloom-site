@@ -87,7 +87,7 @@ document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.t
 function loadProduct(){invalidate();$('japanConfirmed').checked=true;remoteProduct=null;$('sourceInfo').replaceChildren();official=true;ocrRequired=false;$('ingredients').value=product.ingredients;$('kind').value='cosmetic';$('origin').textContent=product.order;$('error').textContent='';tab('search');run();}
 $('sample').onclick=loadProduct;
 // Build an exact source-verified product list; names alone never trigger a flower.
-$('readyFormulas').onclick=async()=>{
+if($('readyFormulas'))$('readyFormulas').onclick=async()=>{
  const ctx=beginLookup();
  $('query').value='';
  $('searchResults').textContent='掲載時点の日本語全成分を確認した商品を探しています…';
@@ -2108,12 +2108,12 @@ getJSON('/public-collection-progress-20261110.json').then(data=>{
   evidence.textContent='@cosme・楽天の掲載全成分 '+data.additionalFullIngredientCollection.sourcedProductIdentityEntries.toLocaleString('ja-JP')+
   '商品・'+data.additionalFullIngredientCollection.sourceListedFormulaVersions.toLocaleString('ja-JP')+'処方（元の2,163商品とは別集計）';
 }).catch(()=>{});
-$('showSupplementalCatalog').onclick=async()=>{
+if($('showSupplementalCatalog'))$('showSupplementalCatalog').onclick=async()=>{
  try{const catalog=await supplementalSourceCatalog();showSupplementalSourceOverview(catalog);}
  catch(error){$('searchResults').textContent='追加商品データを読み込めませんでした。';}
 };
-$('showAtCosmeIngredientLibrary').onclick=()=>{$('query').value='@cosme';search({instant:true});};
-$('showRakutenIngredientLibrary').onclick=()=>{$('query').value='楽天';search({instant:true});};
+if($('showAtCosmeIngredientLibrary'))$('showAtCosmeIngredientLibrary').onclick=()=>{$('query').value='@cosme';search({instant:true});};
+if($('showRakutenIngredientLibrary'))$('showRakutenIngredientLibrary').onclick=()=>{$('query').value='楽天';search({instant:true});};
 getJSON('/brand-directory-additions-20261110.json').then(data=>{
  addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&row.aliases.length&&row.listingStatus):[];
  quickRegisteredBrands();
