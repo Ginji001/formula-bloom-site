@@ -25,7 +25,15 @@ export function validatePartialEvidence(data){
   return Object.freeze({...record,ingredients:Object.freeze([...new Set(record.ingredients)])});
  }));
 }
-export function partialForProduct(records,item){return records.find(r=>r.productId===item?.id)||null;}
+// 「全成分は商品パッケージをご確認ください」等の案内文が成分名として保存されている場合、
+// 成分として表示しない。データ自体は出典記録として残し、表示層だけで除外する。
+const disclosureNoticePattern=/(ご使用前|商品パッケージ|パッケージにて|お問い合わせ|ご確認をお願い|ご連絡ください|全成分のご確認|記載はありません|表示しておりません)/;
+export function isIngredientDisclosureNotice(record){
+ const names=record?.ingredients;
+ if(!Array.isArray(names)||!names.length)return false;
+ return names.every(name=>disclosureNoticePattern.test(String(name??'')));
+}
+export function partialForProduct(records,item){return records.find(r=>r.productId===item?.id&&!isIngredientDisclosureNotice(r))||null;}
 export function reviewPartialInput(value){
  const names=splitIngredients(String(value||'').replace(/\r/g,'')).map(s=>s.trim()).filter(Boolean);
  if(!names.length||names.length>40||names.some(name=>!isJapaneseIngredientText(name)))throw Error('確認できた日本語の成分表示名称を1～40個入力してください。海外INCIや広告の総称は使えません。');
