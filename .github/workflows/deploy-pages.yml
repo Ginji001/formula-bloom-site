@@ -785,9 +785,10 @@ jobs:
              !compactFooter.includes('href="support.html"')||
              !compactFooter.includes('href="privacy.html"')||
              !compactFooter.includes('href="terms.html"')||
-             !compactFooter.includes('全成分 600')||
-             !compactFooter.includes('一部 1,248')||
-             !compactFooter.includes('未確認 172')||
+             !compactFooter.includes('登録2,163商品')||
+             !compactFooter.includes('全成分 607')||
+             !compactFooter.includes('一部 1,305')||
+             !compactFooter.includes('未確認 251')||
              !compactFooter.includes('医療判断・安全性評価')||
              compactFooter.includes('rc184.html')||
              !footerIndex.includes('href="footer-compact.css"')||
@@ -805,7 +806,7 @@ jobs:
              fs.existsSync('_site/docs/v1.0.1-three-line-footer-and-source-archive-20261105.md')||
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
             throw Error('Three-line compact homepage footer or separate archive routing failed');
-          console.log('Verified compact UI: 3 rows / 4 links / 78 old references archived / all evidence numbers unchanged.');
+          console.log('Verified compact UI: 3 rows / 4 links / 78 old references archived / footer shows the current 2,163-product scope; underlying evidence files unchanged.');
 
           // Search-first public surface, without dropping the underlying source evidence or advanced workflows.
           const essentialHtml=fs.readFileSync('_site/index.html','utf8');
