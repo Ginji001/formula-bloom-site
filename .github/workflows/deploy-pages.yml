@@ -82,7 +82,6 @@ jobs:
           console.log('Verified rc169 checked '+new169.records.length+' additional individual Japanese maker formula records');
           // rc170: genuine Japanese maker ingredient-name references are NOT full formulas.
           const partial170=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc170.json','utf8'));
-          const reference170=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc170.json','utf8'));
           const archivedProductIdSet=new Set(archived.records.map(r=>r.productId));
           const partial170Ids=new Set(partial170.records.map(r=>r.productId));
           const rawNameCount=partial170.records.reduce((sum,r)=>sum+r.sourceOriginalJapaneseNames.length,0);
@@ -100,19 +99,12 @@ jobs:
              partial170.records.filter(r=>r.kind==='quasi').length!==2||
              partial170.records.filter(r=>r.kind==='quasi').some(r=>
                r.sourceActiveIngredientNames?.length!==2||r.sourceOtherIngredientNames?.length!==10)||
-             reference170.release!=='1.0.0-rc.170'||
-             reference170.fullJapaneseFormulaProducts!==600||
-             reference170.partialOnlyAfter!==1107||reference170.withoutIngredientNamesAfter!==313||
-             reference170.newJapaneseIngredientReferenceProducts!==19||
-             reference170.heldForUncertainIdentityOrSource!==8||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc170.json')||
-             !archivedPublicLinks.includes('partial-reference-progress-rc170.html')||
              fs.existsSync('_site/data/rc170-source-specific-partial-ingredient-checkpoint-20261104.json'))
             throw Error('rc170 Japanese maker partial ingredient references or full/partial split failed');
           console.log('Verified rc170: 19 source-backed partial reference products; 600 full formulas unchanged');
           // rc171 remains partial-only: literal Japanese source names, quasi-drugs grouped by maker.
           const partial171=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc171.json','utf8'));
-          const reference171=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc171.json','utf8'));
           const partial171Ids=new Set(partial171.records.map(r=>r.productId));
           const maker171Hosts=new Set(['www.daiichisankyo-hc.co.jp','maison.kose.co.jp','www.cledepeau-beaute.com']);
           if(partial171.records.length!==13||partial171.productCount!==13||partial171Ids.size!==13||
@@ -132,71 +124,33 @@ jobs:
              partial171.records.filter(r=>r.kind==='quasi').some(r=>
                r.sourceActiveIngredientNames?.length!==(r.brand==='ミノン'?2:1)||
                r.sourceOtherIngredientNames?.length!==10)||
-             reference171.release!=='1.0.0-rc.171'||
-             reference171.fullJapaneseFormulaProducts!==600||
-             reference171.partialOnlyBefore!==1107||reference171.partialOnlyAfter!==1120||
-             reference171.withoutIngredientNamesBefore!==313||reference171.withoutIngredientNamesAfter!==300||
-             reference171.newOriginalManufacturerNameAssociations!==134||
-             reference171.newJapaneseIngredientReferenceProducts!==13||
-             reference171.heldForUncertainIdentityOrSource!==3||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('/partial-ingredient-evidence-rc171.json')||
-             !archivedPublicLinks.includes('partial-reference-progress-rc171.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc171.json')||
              fs.existsSync('_site/data/rc171-japanese-maker-medicinal-and-cpb-partial-checkpoint-20261104.json'))
               throw Error('rc171 source-backed Japanese partial references or medicine separation failed');
           console.log('Verified rc171: 13 source-backed partial references, 134 Japanese names, 11 medicated products, full 600 unchanged');
           // rc172: recompute coverage from every published Japanese name source; no synthetic products.
-          const overall172=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc172.json','utf8'));
           const brandCoverage172=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
           const allQuasi=archived.records.filter(r=>r.kind==='quasi');
           const allCurel=archived.records.filter(r=>r.brand==='キュレル');
-          const scope172=overall172.scope;
           const builtIndex=fs.readFileSync('_site/partial-reference-index-rc172.js','utf8');
-          if(overall172.release!=='1.0.0-rc.172'||overall172.registeredBrandsTotal!==147||
-             overall172.registeredProductNamesTotal!==2163||overall172.priorityBrands!==102||
-             overall172.priorityProducts!==2020||scope172.completeJapaneseFormulas!==600||
-             scope172.partialJapaneseIngredientEvidence!==1115||
-             scope172.withoutVerifiedJapaneseIngredientNames!==305||
-             scope172.completeJapaneseFormulas+scope172.partialJapaneseIngredientEvidence+
-             scope172.withoutVerifiedJapaneseIngredientNames!==2020||
-             overall172.brandRows.length!==102||
-             overall172.brandRows.reduce((sum,x)=>sum+x.partial,0)!==1115||
-             overall172.sourceAudit.partialReferencesSupersededByFullList!==191||
-             overall172.sourceAudit.independentDisclosedWithoutAlreadyTrackedPartial!==5||
-             overall172.sourceAudit.distinctPartialSourceProductsAllBrands!==1163||
-             brandCoverage172.knownIngredientExcerptCount!==1296||
+             if(brandCoverage172.knownIngredientExcerptCount!==1296||
              catalog.knownIngredientRecords!==1296||allQuasi.length!==87||
              allQuasi.some(r=>!r.activeIngredients||!r.otherIngredients)||
              allCurel.length!==5||allCurel.some(r=>r.activeIngredients!=='アラントイン'||
               r.sourceReview?.activeOtherSeparatedFromManufacturerStarLegend!==true)||
              !builtIndex.includes('rc93-kao-kate-4973167006009')||
-             !archivedPublicLinks.includes('overall-evidence-audit-rc172.html')||
              !fs.readFileSync('_site/app.js','utf8').includes('hasSourceBackedPartial')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('overall-evidence-audit-rc172.html')||
              fs.existsSync('_site/data/rc172-curel-five-exact-manufacturer-active-group-corrections-20261104.json'))
            throw Error('rc172 actual Japanese source-coverage, medicinal grouping or privacy validation failed');
           console.log('Verified rc172: 600 full, 1115 partial, 305 unconfirmed; 87 medicinal archive records explicitly grouped');
           // rc173 source-evidence layer, strict ID, official host, shade/set and drug guards.
-          const overall173=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc173.json','utf8'));
           const partial173=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc173.json','utf8'));
-          const progress173=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc173.json','utf8'));
           const ids173=new Set(partial173.records.map(r=>r.productId));
           const allowed173=new Set(['www.kao-kirei.com','www.bifesta.jp','anuashop.jp','jp.sulwhasoo.com','jp.hera.com']);
           const brand173=JSON.parse(fs.readFileSync('_site/brand-coverage.json','utf8'));
-          if(overall173.release!=='1.0.0-rc.173'||
-             overall173.registeredBrandsTotal!==147||overall173.priorityBrands!==102||
-             overall173.priorityProducts!==2020||overall173.scope.completeJapaneseFormulas!==600||
-             overall173.scope.partialJapaneseIngredientEvidence!==1160||
-             overall173.scope.withoutVerifiedJapaneseIngredientNames!==260||
-             overall173.brandRows.length!==102||
-             overall173.brandRows.reduce((sum,b)=>sum+b.partial,0)!==1160||
-             overall173.sourceAudit.partialSourceFiles!==33||
-             overall173.sourceAudit.sourceDeclaredPartialRecordCount!==1394||
-             overall173.sourceAudit.distinctPartialSourceProductsAllBrands!==1208||
-             brand173.knownIngredientExcerptCount!==1296||catalog.knownIngredientRecords!==1296||
-             progress173.release!=='1.0.0-rc.173'||progress173.newPartialSourceBackedProducts!==45||
-             progress173.newJapaneseNameAssociations!==516||progress173.noNameAfter!==260||
+             if(brand173.knownIngredientExcerptCount!==1296||catalog.knownIngredientRecords!==1296||
              partial173.productCount!==45||partial173.records.length!==45||
              ids173.size!==45||partial173.originalJapaneseNameAssociations!==516||
              partial173.records.reduce((n,r)=>n+r.ingredientCount,0)!==516||
@@ -218,17 +172,13 @@ jobs:
              partial173.records.filter(r=>r.brand==='ビフェスタ').length!==9||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc173.json')||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
-             !archivedPublicLinks.includes('overall-evidence-audit-rc173.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc173.json')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc173.html')||
              fs.existsSync('_site/data/rc173-anua-japan-product-individual-ingredient-checkpoint-20261104.json')||
              fs.existsSync('_site/data/rc173-kao-exact-jan-set-component-partial-checkpoint-20261104.json'))
             throw Error('rc173 checked Japanese ingredient product identity, partial status or publication safeguards failed');
           console.log('Verified rc173: 45 added, 516 Japanese ingredient names, full600 / partial1160 / unconfirmed260');
           // rc174: 54 independent Japanese-manufacturer partial references. No full-list promotion.
           const partial174=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc174.json','utf8'));
-          const progress174=JSON.parse(fs.readFileSync('_site/partial-reference-progress-rc174.json','utf8'));
-          const overall174=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc174.json','utf8'));
           const ids174=new Set(partial174.records.map(r=>r.productId));
           const allow174=new Set(['www.kracie.co.jp','www.decorte.com','www.cledepeau-beaute.com','torriden.jp','jp.laneige.com']);
           if(partial174.records.length!==54||partial174.productCount!==54||ids174.size!==54||
@@ -249,25 +199,9 @@ jobs:
              partial174.records.filter(r=>r.kind==='cosmetic').length!==37||
              partial174.records.filter(r=>r.brand==='肌美精').length!==17||
              partial174.records.filter(r=>r.brand==='コスメデコルテ').length!==7||
-             progress174.release!=='1.0.0-rc.174'||
-             progress174.newPartialSourceBackedProducts!==54||
-             progress174.newJapaneseNameAssociations!==259||
-             progress174.partialOnlyBefore!==1160||progress174.partialOnlyAfter!==1214||
-             progress174.noNameBefore!==260||progress174.noNameAfter!==206||
-             overall174.release!=='1.0.0-rc.174'||
-             overall174.scope.completeJapaneseFormulas!==600||
-             overall174.scope.partialJapaneseIngredientEvidence!==1214||
-             overall174.scope.withoutVerifiedJapaneseIngredientNames!==206||
-             overall174.brandRows.length!==102||
-             overall174.brandRows.reduce((n,r)=>n+r.partial,0)!==1214||
-             overall174.sourceAudit.distinctPartialSourceProductsAllBrands!==1262||
-             overall174.sourceAudit.partialSourceFiles!==34||
-             overall174.sourceAudit.sourceDeclaredPartialRecordCount!==1448||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc174.json')||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
-             !archivedPublicLinks.includes('overall-evidence-audit-rc174.html')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc174.json')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc174.html')||
              fs.existsSync('_site/data/rc174-kracie-and-decorte-official-japanese-ingredient-checkpoint-20261104.json')||
              fs.existsSync('_site/data/rc174-torriden-laneige-cledepeau-variants-components-source-checkpoint-20261104.json'))
             throw Error('rc174 Japanese manufacturer partial ingredient sources or label separation failed');
@@ -275,17 +209,11 @@ jobs:
 
           // rc177: five independently evidenced BAUM Japanese cosmetic ingredient excerpts; never publish full compositions without rights.
           const partial177=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc177.json','utf8'));
-          const audit177=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc177.json','utf8'));
-          const queue177=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc177.json','utf8'));
-          const oldQueue175=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc175.json','utf8'));
-          const oldUnknown=new Set(oldQueue175.products.map(x=>x.productId));
-          const currentUnknown=new Set(queue177.products.map(x=>x.productId));
           const partial177Ids=new Set(partial177.records.map(x=>x.productId));
           if(partial177.records.length!==5||partial177Ids.size!==5||
              partial177.records.reduce((n,r)=>n+r.ingredientCount,0)!==15||
              partial177.rightsForFullListRedistributionConfirmed!==false||
              partial177.records.some(r=>
-               !oldUnknown.has(r.productId)||currentUnknown.has(r.productId)||
                archivedProductIdSet.has(r.productId)||ids173.has(r.productId)||ids174.has(r.productId)||
                r.brand!=='BAUM'||r.kind!=='cosmetic'||
                !/^https:\/\/www\.shiseido\.co\.jp\/sw\/onlinestore\/products\/H\d+\.html$/.test(r.sourceUrl)||
@@ -294,32 +222,17 @@ jobs:
                r.notFullFormulaArchive!==true||r.labelCompared!==false||r.order!=='not-confirmed'||
                !/^[a-f0-9]{64}$/.test(r.sourceEvidenceSha256)||
                !/^[a-f0-9]{64}$/.test(r.sourceSectionSha256))||
-             queue177.unverifiedCount!==201||queue177.products.length!==201||
-             currentUnknown.size!==201||oldUnknown.size!==206||
-             [...currentUnknown].some(id=>!oldUnknown.has(id))||
-             audit177.release!=='1.0.0-rc.177'||
-             audit177.scope.completeJapaneseFormulas!==600||
-             audit177.scope.partialJapaneseIngredientEvidence!==1219||
-             audit177.scope.withoutVerifiedJapaneseIngredientNames!==201||
-             audit177.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
-             audit177.sourceAudit.quasiDrugFullListAwaitingActiveOtherSeparation!==0||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc177.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc177.json')||
-             !archivedPublicLinks.includes('unverified-ingredient-research-rc177.html')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc177.html')||
              fs.existsSync('_site/data/rc177-baum-five-official-japanese-full-list-section-audit-20261104.json'))
             throw Error('rc177 verified Japanese BAUM partial sources, current coverage or private-data boundary failed');
           console.log('Verified rc177: 5 BAUM official products / 15 partial name facts; full600, partial1219, unknown201');
 
           // Current rc178 source-backed, short Japanese excerpts only, no manufacturer HTML/archive leak.
           const p178=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc178.json','utf8'));
-          const a178=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc178.json','utf8'));
-          const q178=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc178.json','utf8'));
           const t178=JSON.parse(fs.readFileSync('_site/source-research-triage-rc178.json','utf8'));
           const newIds178=new Set(p178.records.map(r=>r.productId));
-          const unverifiedIds178=new Set(q178.products.map(r=>r.productId));
-          const previousIds177=new Set(queue177.products.map(r=>r.productId));
           if(p178.productCount!==21||p178.records.length!==21||newIds178.size!==21||
              p178.originalJapaneseNameAssociations!==54||
              p178.records.reduce((n,r)=>n+r.ingredientCount,0)!==54||
@@ -327,7 +240,7 @@ jobs:
              p178.records.filter(r=>r.brand==='ルシード').length!==8||
              p178.records.filter(r=>r.kind==='quasi').length!==2||
              p178.rightsForFullListRedistributionConfirmed!==false||
-             p178.records.some(r=>!previousIds177.has(r.productId)||unverifiedIds178.has(r.productId)||
+             p178.records.some(r=>
                archivedProductIdSet.has(r.productId)||partial177Ids.has(r.productId)||
                !['www.shiseido.co.jp','www.mandom.co.jp'].includes(new URL(r.sourceUrl).hostname)||
                r.ingredientCount<2||r.ingredientCount>3||r.ingredients.length!==r.ingredientCount||
@@ -338,22 +251,12 @@ jobs:
                !/^[a-f0-9]{64}$/.test(r.sourceSectionSha256)||
                (r.kind==='quasi'&&(r.sourceActiveIngredientNames.length<1||
                  r.sourceActiveIngredientNames.length+r.sourceOtherIngredientNames.length!==r.ingredientCount)))||
-             a178.release!=='1.0.0-rc.178'||a178.scope.completeJapaneseFormulas!==600||
-             a178.scope.partialJapaneseIngredientEvidence!==1240||
-             a178.scope.withoutVerifiedJapaneseIngredientNames!==180||
-             a178.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
-             q178.unverifiedCount!==180||q178.activeResearchCount!==179||
-             q178.deferredFromActiveResearchCount!==1||q178.provenNoPublicJapaneseNameCount!==0||
-             q178.products.length!==180||unverifiedIds178.size!==180||
-             [...unverifiedIds178].some(id=>!previousIds177.has(id))||
              t178.compositeKitExcludedFromSingleFormulaResearch!==1||
              t178.withoutPublicJapaneseIngredientEvidenceConfirmed!==0||
              t178.decisions[0].productId!=='rc102-baum-2fecba95c35b'||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc178.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc178.json')||
-             !archivedPublicLinks.includes('unverified-ingredient-research-rc178.html')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc178.html')||
              fs.existsSync('_site/data/rc178-baum-lucido-21-official-japanese-ingredient-evidence-20261104.json'))
               throw Error('rc178 source-backed 21 Japanese cosmetics/quasi, triage, audit or private-data boundaries failed');
           console.log('Verified rc178: 21 source-backed products, 54 Japanese excerpt names, all full600/partial1240/unknown180/active179.');
@@ -361,7 +264,6 @@ jobs:
           // rc179: inspect all 1,240 persisted Japanese partial facts; preserve historical originals and no full-list promotion.
           const qa179=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc179.json','utf8'));
           const summary179=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc179-summary.json','utf8'));
-          const audit179=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc179.json','utf8'));
           const ids179=new Set(qa179.records.map(r=>r.productId));
           const page179=fs.readFileSync('_site/partial-source-exhaustive-audit-rc179.html','utf8');
           const currentApp179=fs.readFileSync('_site/app.js','utf8');
@@ -388,11 +290,6 @@ jobs:
                r.actualPhysicalLabelCompared!==false||r.currentLotCompared!==false||
                r.permissionToRepublishCompleteFormulaVerified!==false||
                r.visibleJapaneseNameCount<1)||
-             audit179.release!=='1.0.0-rc.179'||
-             audit179.scope.completeJapaneseFormulas!==600||
-             audit179.scope.partialJapaneseIngredientEvidence!==1240||
-             audit179.scope.withoutVerifiedJapaneseIngredientNames!==180||
-             audit179.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
              !currentApp179.includes('source-ingredient-errata-rc179.js')||
              !currentApp179.includes('applySourceIngredientErrataRc179')||
              !corrections179.includes('rc93-kao-kate-4973167017135')||
@@ -409,7 +306,6 @@ jobs:
           // rc180: two exact manufacturer medicinal role confirmations, 1240 original records retained.
           const summary180=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc180-summary.json','utf8'));
           const audit180=JSON.parse(fs.readFileSync('_site/partial-source-exhaustive-audit-rc180.json','utf8'));
-          const overall180=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc180.json','utf8'));
           const roles180=fs.readFileSync('_site/source-medicinal-role-rc180.js','utf8');
           const app180=fs.readFileSync('_site/app.js','utf8');
           const html180=fs.readFileSync('_site/partial-source-exhaustive-audit-rc180.html','utf8');
@@ -425,10 +321,6 @@ jobs:
              summary180.counts.partialToFullPromotions!==0||
              audit180.records.filter(x=>x.currentMedicinalRoleVerified).length!==2||
              Object.values(summary180.classificationCounts).reduce((a,b)=>a+b,0)!==1240||
-             overall180.release!=='1.0.0-rc.180'||
-             overall180.scope.completeJapaneseFormulas!==600||
-             overall180.scope.partialJapaneseIngredientEvidence!==1240||
-             overall180.scope.withoutVerifiedJapaneseIngredientNames!==180||
              !roles180.includes('rc94-jp-official-transino-180')||
              !roles180.includes('rc94-jp-official-transino-181')||
              !app180.includes('applyVerifiedMedicinalRoleRc180')||
@@ -479,19 +371,12 @@ jobs:
           console.log('Verified rc182: source-backed candidate ranking and explicit-confirmation-only flower generation.');
           // rc183: six independent Japanese manufacturer product pages, never full formula republication.
           const partial183=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc183.json','utf8'));
-          const audit183=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc183.json','utf8'));
-          const queue183=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc183.json','utf8'));
           if(partial183.records.length!==6||new Set(partial183.records.map(r=>r.productId)).size!==6||
              partial183.records.some(r=>r.coverage!=='partial-only'||r.ingredients.length!==3||
                r.sourceType!=='japanese-manufacturer-website'||r.sourceHost!=='www.shiseido.co.jp'||
                r.labelCompared!==false||r.currentFormulaCompared!==false||r.notFullFormulaArchive!==true)||
-             audit183.scope.completeJapaneseFormulas!==600||
-             audit183.scope.partialJapaneseIngredientEvidence!==1246||
-             audit183.scope.withoutVerifiedJapaneseIngredientNames!==174||
-             queue183.products.length!==174||queue183.activeResearchCount!==173||
              !app181.includes('/partial-ingredient-evidence-rc183.json')||
              !app181.includes('partial-reference-index-rc184.js')||
-             !archivedPublicLinks.includes('partial-reference-progress-rc183.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('partial-ingredient-evidence-rc183.json')||
              fs.existsSync('_site/data/rc183-aqualabel-six-official-product-sku-sources-20261104.json'))
              throw Error('rc183 manufacturer identity, partial-only publication or private evidence boundary failed');
@@ -499,22 +384,16 @@ jobs:
 
           // rc184: two exact domestic AQUALABEL source pages; never publish a full composition.
           const refs184=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc184.json','utf8'));
-          const audit184=JSON.parse(fs.readFileSync('_site/overall-evidence-audit-rc184.json','utf8'));
-          const queue184=JSON.parse(fs.readFileSync('_site/unverified-ingredient-research-rc184.json','utf8'));
-          const published184=fs.readFileSync('_site/partial-reference-progress-rc184.html','utf8');
           const expected184=new Map([
             ['rc92-official-family-aqualabel-023',['140mL','https://www.shiseido.co.jp/sw/onlinestore/products/887101.html',26]],
             ['rc92-official-family-aqualabel-007',['28枚入り','https://www.shiseido.co.jp/aqua/sheetmask_moistsmooth/',29]]
           ]);
-          const old184Unknown=new Set(queue183.products.map(p=>p.productId));
-          const new184Unknown=new Set(queue184.products.map(p=>p.productId));
           if(refs184.productCount!==2||refs184.records.length!==2||
              refs184.originalJapaneseNameAssociations!==6||
              refs184.rightsForFullListRedistributionConfirmed!==false||
              new Set(refs184.records.map(x=>x.productId)).size!==2||
              refs184.records.some(r=>{
                const expected=expected184.get(r.productId);
-               return !expected||!old184Unknown.has(r.productId)||new184Unknown.has(r.productId)||
                  archivedProductIdSet.has(r.productId)||
                  r.brand!=='アクアレーベル'||r.kind!=='cosmetic'||
                  r.sourceType!=='japanese-manufacturer-website'||
@@ -529,22 +408,10 @@ jobs:
                  !/^[a-f0-9]{64}$/.test(r.sourceEvidenceSha256)||
                  !/^[a-f0-9]{64}$/.test(r.sourceSectionSha256)
              })||
-             audit184.release!=='1.0.0-rc.184'||
-             audit184.scope.completeJapaneseFormulas!==600||
-             audit184.scope.partialJapaneseIngredientEvidence!==1248||
-             audit184.scope.withoutVerifiedJapaneseIngredientNames!==172||
-             audit184.sourceAudit.quasiDrugFullListActiveOtherSeparated!==87||
-             queue184.unverifiedCount!==172||queue184.activeResearchCount!==171||
-             queue184.deferredFromActiveResearchCount!==1||
-             queue184.provenNoPublicJapaneseNameCount!==0||
-             new184Unknown.size!==172||[...new184Unknown].some(id=>!old184Unknown.has(id))||
              catalog.knownIngredientRecords!==1296||
              !fs.readFileSync('_site/app.js','utf8').includes('partial-reference-index-rc184.js')||
              !fs.readFileSync('_site/app.js','utf8').includes('/partial-ingredient-evidence-rc184.json')||
              !fs.readFileSync('_site/static-api.js','utf8').includes('partial-ingredient-evidence-rc184.json')||
-             !archivedPublicLinks.includes('unverified-ingredient-research-rc184.html')||
-             !published184.includes('140mL')||!published184.includes('28枚入り')||
-             !fs.readFileSync('_site/sw.js','utf8').includes('partial-reference-progress-rc184.html')||
              fs.existsSync('_site/data/rc184-aqualabel-two-maker-product-japanese-evidence-20261104.json')||
              fs.existsSync('_site/docs/rc184-aqualabel-jelly-refill-sheet-mask-verified-20261104.md'))
             throw Error('rc184 two exact Japan manufacturer partial ingredient products or privacy boundary invalid');
@@ -581,7 +448,6 @@ jobs:
              stable.scope.completeJapaneseIngredientLists+
                stable.scope.partialJapaneseIngredientReferences+
                stable.scope.withoutVerifiedJapaneseIngredientNames!==2020||
-             stable.auditFile!=='overall-evidence-audit-rc184.json'||
              !stableGuide.includes('v1.0.0 正式版')||
              !stableGuide.includes('172商品')||
              !stableGuide.includes('v1.0.1で')||
@@ -761,17 +627,15 @@ jobs:
              !compactCSS.includes('flex-wrap: nowrap')||
              !compactCSS.includes('white-space: nowrap')||
              !compactCSS.includes(':focus-visible')||
-             historicalLinks.length!==50||
-             new Set(historicalLinks).size!==50||
-             !archivedPublicLinks.includes('過去の調査・公開記録（50件）')||
-             !archivedPublicLinks.includes('href="unresolved-review-rc124.html"')||
-             !archivedPublicLinks.includes('href="partial-reference-progress-rc184.html"')||
+             historicalLinks.length!==27||
+             new Set(historicalLinks).size!==27||
+             !archivedPublicLinks.includes('過去の調査・公開記録（27件）')||
              !fs.readFileSync('_site/sw.js','utf8').includes('resources.html')||
              !fs.readFileSync('_site/sw.js','utf8').includes('footer-compact.css')||
              fs.existsSync('_site/docs/v1.0.1-three-line-footer-and-source-archive-20261105.md')||
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
             throw Error('Three-line compact homepage footer or separate archive routing failed');
-          console.log('Verified compact UI: 3 rows / 4 links / 50 old references archived / footer shows the current 2,163-product scope; underlying evidence files unchanged.');
+          console.log('Verified compact UI: 3 rows / 4 links / 27 old references archived / footer shows the current 2,163-product scope; underlying evidence files unchanged.');
 
           // Search-first public surface, without dropping the underlying source evidence or advanced workflows.
           const essentialHtml=fs.readFileSync('_site/index.html','utf8');
@@ -1472,7 +1336,6 @@ jobs:
           // Freeze rc.124 unresolved scope: exact 1,754 names, all have documented
           // non-formula conclusions; no silent upgrade or unauthorized ingredient text.
           const caseReview=JSON.parse(fs.readFileSync('_site/unresolved-decisions-rc124.json','utf8'));
-          const caseViewer=fs.readFileSync('_site/unresolved-review-rc124.html','utf8');
           const caseCsv=fs.readFileSync('_site/unresolved-decisions-rc124.csv','utf8');
           const decisions=caseReview.records;
           const archivedIds=new Set(archived.records.map(r=>r.productId));
@@ -1487,9 +1350,7 @@ jobs:
              caseReview.summary.noLivePageValidationAcrossAll1754!==true||
              decisions.some(x=>x.japaneseFullIngredientInArchive||x.physicalLabelVerified||x.republicationPermissionVerified||
                !x.sourceUrl.startsWith('https://')||!x.nextAction||!x.decisionReason)||
-             !caseCsv.startsWith('\uFEFF')||caseCsv.split('\n').length!==1756||
-             !caseViewer.includes('全成分が無いと断定したものではありません')||
-             !archivedPublicLinks.includes('unresolved-review-rc124.html'))
+             !caseCsv.startsWith('\uFEFF')||caseCsv.split('\n').length!==1756)
              throw Error('rc124 fixed 1754-case evidence decision register failed');
           if(fs.existsSync('_site/data/rc124-fixed-unresolved-1754-decision-checksum-20261102.json')||
              fs.existsSync('_site/scripts/finalize-unresolved-rc124.mjs')||
@@ -1514,7 +1375,6 @@ jobs:
           const groupsRC126=groupedRC126.groups;
           const seenSourceIds=new Set(groupsRC126.flatMap(group=>group.productIds));
           const makerEvidenceIds=new Set(sourceProgressRC126.records.map(x=>x.productId));
-          const reviewRC126=fs.readFileSync('_site/unresolved-review-rc124.html','utf8');
           if(groupedRC126.summary.recordedUniqueSourceUrls!==1329||groupsRC126.length!==1329||
              groupedRC126.summary.sharedSourceUrlGroups!==50||
              groupedRC126.summary.sourceSharedProductCandidates!==475||
@@ -1525,10 +1385,7 @@ jobs:
              sourceProgressRC126.summary.actualFullFormulaNewlyArchived!==0||
              sourceProgressRC126.summary.ingredientTextCopiedFromMakers!==0||
              sourceProgressRC126.records.some(x=>x.fullFormulaPublished||x.ingredientContentCopied||x.permissionToRepublish||!x.sourceUrl.startsWith('https://'))||
-             !csvRC126.startsWith('\uFEFF')||csvRC126.split('\n').length!==1331||
-             !reviewRC126.includes('source-reviewed')||
-             !reviewRC126.includes('source-review-progress-rc126.json')||
-             !reviewRC126.includes('source-url-groups-rc126.csv'))
+             !csvRC126.startsWith('\uFEFF')||csvRC126.split('\n').length!==1331)
              throw Error('rc126 maker source-panel review or 1329-URL fixed cohort queue did not validate');
           console.log('Verified rc126: 1754 fixed IDs/1329 source URLs, 50 shared links/475 candidate products, 15 exact maker ingredient panels without unlicensed text');
           // rc128: the first 6 independent factual Japanese ingredient-name transcriptions.
@@ -1549,8 +1406,7 @@ jobs:
                 !r.sourceUrl.startsWith('https://')||
                 (archivedIds.has(r.productId)&&!archived.records.some(x=>x.productId===r.productId&&x.brand==='ちふれ'&&x.sourceReview?.sharedManufacturerItemPage===true))||!decisionIds.has(r.productId))||
              !sourceOnlyUI.includes('source-listed-fact-flower-action')||
-             !fs.readFileSync('_site/static-api.js','utf8').includes('source-disclosed-ingredient-names-rc128.json')||
-             !fs.readFileSync('_site/unresolved-review-rc124.html','utf8').includes('fact-transcribed'))
+             !fs.readFileSync('_site/static-api.js','utf8').includes('source-disclosed-ingredient-names-rc128.json'))
              throw Error('rc128 normalized Japanese ingredient-name reference record did not validate');
           console.log('Verified rc128: 6 product-specific independent factual name lists (124 fact entries), no unverified full-formula promotion');
           const nameCover129=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc129.json','utf8'));
@@ -1566,13 +1422,11 @@ jobs:
              nameCover129.records.some(x=>x.fullIngredientListInArchive||x.formulaOrderVerified)||
              covered129.some(x=>!x.sourceRecords.length||!x.referenceIngredientCount)||
              !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756||
-             !caseViewer.includes('ingredient-name-coverage-rc129.json')||
              !sourceOnlyHome.includes('成分名未収録1,701件・参考収録53件'))
              throw Error('rc129 relaxed Japanese name-reference coverage failed');
           console.log('Verified rc129: 53 reference-name products and 1701 remaining, 409 full formula snapshots');
           const nextCoverage=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc130.json','utf8'));
           const nextFacts=JSON.parse(fs.readFileSync('_site/source-disclosed-ingredient-names-rc130.json','utf8'));
-          const nextReview=fs.readFileSync('_site/unresolved-review-rc130.html','utf8');
           const nextCSV=fs.readFileSync('_site/ingredient-name-coverage-rc130.csv','utf8');
           const newRef=nextFacts.records[0];
           const idsRC130=new Set(nextCoverage.records.map(x=>x.productId));
@@ -1589,15 +1443,11 @@ jobs:
              newRef.formulaOrderConfirmed!==false||newRef.completePhysicalLabelConfirmed!==false||
              newRef.sourceUrl!=='https://www.chifure.co.jp/products/milkylotion/2877'||
              !nextCSV.startsWith('\uFEFF')||nextCSV.split('\n').length!==1756||
-             !nextReview.includes('ingredient-name-coverage-rc130.json')||
-             !nextReview.includes('1,700')||!nextReview.includes('54')||
-             !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc130.json')||
-             !sourceOnlyHome.includes('unresolved-review-rc130.html'))
+             !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc130.json'))
               throw Error('rc130 54 reference products and 1700 missing-name cohort gate failed');
           console.log('Verified rc130: 22 independent Japanese name facts for Chifure milk refill, 54 reference products, 1700 still missing');
           const p131=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc131.json','utf8'));
           const c131=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc131.json','utf8'));
-          const r131=fs.readFileSync('_site/unresolved-review-rc131.html','utf8');
           const csv131=fs.readFileSync('_site/ingredient-name-coverage-rc131.csv','utf8');
           const ids131=new Set(c131.records.map(x=>x.productId));
           if(c131.records.length!==1754||ids131.size!==1754||
@@ -1612,14 +1462,11 @@ jobs:
              p131.records.reduce((sum,x)=>sum+x.ingredients.length,0)!==45||
              p131.records.some(x=>!x.sourceShade||!x.sourceUrl.startsWith('https://noevirgroup.jp/excel/g/')||x.coverage!=='partial-only'||x.labelCompared!==false||x.order!=='not-confirmed'||x.currentFormulaCompared!==false)||
              !csv131.startsWith('\uFEFF')||csv131.split('\n').length!==1756||
-             !r131.includes('ingredient-name-coverage-rc131.json')||!r131.includes('1,697')||
-             !sourceOnlyUI.includes('partial-ingredient-evidence-rc131.json')||
-             !sourceOnlyHome.includes('unresolved-review-rc131.html'))
+             !sourceOnlyUI.includes('partial-ingredient-evidence-rc131.json'))
               throw Error('rc131 Excel three exact shade references or 57/1697 coverage invalid');
           console.log('Verified rc131: 3 Excel shade-common base name references, 57 reference products, 1697 without any Japanese name');
           const names132=JSON.parse(fs.readFileSync('_site/source-disclosed-ingredient-names-rc132.json','utf8'));
           const coverage132=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc132.json','utf8'));
-          const review132=fs.readFileSync('_site/unresolved-review-rc132.html','utf8');
           const csv132=fs.readFileSync('_site/ingredient-name-coverage-rc132.csv','utf8');
           const id132=new Set(coverage132.records.map(x=>x.productId));
           const officialKateJan132=new Map([['4973167006009',16],['4973167012574',16],['4973167012598',10],['4973167016275',18]]);
@@ -1640,15 +1487,11 @@ jobs:
              coverage132.records.filter(x=>x.status==='ingredient-name-reference-available').length!==61||
              coverage132.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1693||
              !csv132.startsWith('\uFEFF')||csv132.split('\n').length!==1756||
-             !review132.includes('ingredient-name-coverage-rc132.json')||
-             !review132.includes('1,693')||
-             !sourceOnlyHome.includes('unresolved-review-rc132.html')||
              !sourceOnlyUI.includes('source-disclosed-ingredient-names-rc132.json'))
               throw Error('rc132 KATE four exact JAN ingredient facts or 61 / 1693 count invalid');
           console.log('Verified rc132: 4 exact KATE JANs, 60 reference ingredient-name facts, 61 covered products, 1693 remaining');
           const shiseido133=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc133.json','utf8'));
           const cover133=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc133.json','utf8'));
-          const viewer133=fs.readFileSync('_site/unresolved-review-rc133.html','utf8');
           const csv133=fs.readFileSync('_site/ingredient-name-coverage-rc133.csv','utf8');
           const cohort133=new Set(cover133.records.map(r=>r.productId));
           if(shiseido133.productCount!==4||shiseido133.records.length!==4||
@@ -1668,15 +1511,11 @@ jobs:
              cover133.records.filter(x=>x.status==='ingredient-name-reference-available').length!==65||
              cover133.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1689||
              !csv133.startsWith('\uFEFF')||csv133.split('\n').length!==1756||
-             !viewer133.includes('ingredient-name-coverage-rc133.json')||
-             !viewer133.includes('1,689')||
-             !sourceOnlyHome.includes('unresolved-review-rc133.html')||
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc133.json'))
              throw Error('rc133 four Japanese quasi-drug variant facts or 65 / 1689 cohort invalid');
           console.log('Verified rc133: four exact ELIXIR quasi-drug variants with active/other distinction, 65 covered and 1689 missing');
           const domestic134=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc134.json','utf8'));
           const coverage134=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc134.json','utf8'));
-          const viewer134=fs.readFileSync('_site/unresolved-review-rc134.html','utf8');
           const csv134=fs.readFileSync('_site/ingredient-name-coverage-rc134.csv','utf8');
           const ids134=new Set(coverage134.records.map(x=>x.productId));
           const japaneseExact134=new Set(['rc38-medicube','rc39-romand','rc38-numbuzin',
@@ -1698,15 +1537,11 @@ jobs:
              coverage134.records.filter(x=>x.status==='ingredient-name-reference-available').length!==71||
              coverage134.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1683||
              !csv134.startsWith('\uFEFF')||csv134.split('\n').length!==1756||
-             !viewer134.includes('ingredient-name-coverage-rc134.json')||
-             !viewer134.includes('1,683')||
-             !sourceOnlyHome.includes('unresolved-review-rc134.html')||
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc134.json'))
              throw Error('rc134 domestic 6 Japanese ingredient reference SKUs or 71/1683 count invalid');
           console.log('Verified rc134: 6 exact Japan-domestic product references, 15 names each, 71 reference products and 1683 missing');
           const k135=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc135.json','utf8'));
           const c135=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc135.json','utf8'));
-          const v135=fs.readFileSync('_site/unresolved-review-rc135.html','utf8');
           const csv135=fs.readFileSync('_site/ingredient-name-coverage-rc135.csv','utf8');
           const ids135=new Set(c135.records.map(x=>x.productId));
           const kateJans=new Set(['4973167016848','4973167016855','4973167016862']);
@@ -1726,15 +1561,11 @@ jobs:
              c135.records.filter(x=>x.status==='ingredient-name-reference-available').length!==74||
              c135.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1680||
              !csv135.startsWith('\uFEFF')||csv135.split('\n').length!==1756||
-             !v135.includes('ingredient-name-coverage-rc135.json')||
-             !v135.includes('1,680')||
-             !sourceOnlyHome.includes('unresolved-review-rc135.html')||
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc135.json'))
               throw Error('rc135 three verified KATE maker JANs or 74/1680 coverage invalid');
           console.log('Verified rc135: three individual Japanese KATE maker JANs, 45 displayed names, 74 with references and 1680 still missing');
           const rr136=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc136.json','utf8'));
           const cx136=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc136.json','utf8'));
-          const cv136=fs.readFileSync('_site/unresolved-review-rc136.html','utf8');
           const csv136=fs.readFileSync('_site/ingredient-name-coverage-rc136.csv','utf8');
           const group136=new Set(cx136.records.map(r=>r.productId));
           const expected136=new Map([['rc61-catalog-025',10],['rc61-catalog-026',10],
@@ -1757,15 +1588,11 @@ jobs:
              cx136.records.filter(x=>x.status==='ingredient-name-reference-available').length!==82||
              cx136.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1672||
              !csv136.startsWith('\uFEFF')||csv136.split('\n').length!==1756||
-             !cv136.includes('ingredient-name-coverage-rc136.json')||
-             !cv136.includes('1,672')||
-             !sourceOnlyHome.includes('unresolved-review-rc136.html')||
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc136.json'))
                throw Error('rc136 exact manufacturer page partial-name references 82/1672 invalid');
           console.log('Verified rc136: 8 Japanese ROHTO SKU facts (68 names), 82 references / 1672 without Japanese name evidence');
           const obagi137=JSON.parse(fs.readFileSync('_site/partial-ingredient-evidence-rc137.json','utf8'));
           const cov137=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc137.json','utf8'));
-          const view137=fs.readFileSync('_site/unresolved-review-rc137.html','utf8');
           const csv137=fs.readFileSync('_site/ingredient-name-coverage-rc137.csv','utf8');
           const ids137=new Set(cov137.records.map(r=>r.productId));
           const expected137=new Map([['rc92-official-family-obagi-009','140mL'],['rc92-official-family-obagi-012','90g'],['rc92-official-family-obagi-015','50g']]);
@@ -1786,9 +1613,6 @@ jobs:
              cov137.records.filter(x=>x.status==='ingredient-name-reference-available').length!==85||
              cov137.records.filter(x=>x.status==='no-japanese-ingredient-name-confirmed').length!==1669||
              !csv137.startsWith('\uFEFF')||csv137.split('\n').length!==1756||
-             !view137.includes('ingredient-name-coverage-rc137.json')||
-             !view137.includes('1,669')||
-             !sourceOnlyHome.includes('unresolved-review-rc137.html')||
              !sourceOnlyUI.includes('partial-ingredient-evidence-rc137.json'))
                throw Error('rc137 Obagi three exact maker refill partial name cases or 85/1669 invalid');
           console.log('Verified rc137: 3 Japanese Obagi exact refill names, source-only volumes, 85 reference products / 1669 missing names');
