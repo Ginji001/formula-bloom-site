@@ -713,6 +713,7 @@ jobs:
              cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1855||
              cosmeetMakerIndex.listedSoloBrandRows!==10605||
              !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
+             !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
