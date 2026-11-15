@@ -1385,6 +1385,8 @@ function addProductFamily(container,family,query='',before=null){
   }
 }
 function presentRegisteredProducts(products,heading='日本向け商品'){
+ // 表示方針（2026-11-15）: 全成分の保存版がある商品だけを表示する。商品名のみ・一部成分のみの商品は表示しない。
+ products=products.filter(itemHasArchiveInCatalog);
  if(!products.length){$('searchResults').textContent='登録商品が見つかりません。';return;}
   const holder=$('searchResults');holder.replaceChildren();
   const families=productFamilies(products);
@@ -1887,12 +1889,12 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  holder.append(heading);
  const info=document.createElement('p');info.className='muted';
  const onlyIndexed=catalog.records.filter(r=>['official-site-web-index-snapshot-direct-live-unverified','official-site-web-index-snapshot'].includes(r.sourceSnapshotType)).length;
- info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'ほかは「全成分未確認」として区別しています。';
+ info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'全成分が未確認の商品は表示していません。';
  holder.append(info);
  const amazon=document.createElement('p');amazon.className='muted';
  amazon.textContent='Amazonは、個別に開いて確認した商品ページの掲載内容のみを収録しています。商品データの自動抽出は実施していません。';
  holder.append(amazon);
- const options=['すべて','MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon'];
+ const options=['すべて','MEGLY公式','Torriden日本公式','ドンキ公式','Amazon'];
  const row=document.createElement('div');row.className='ready-formulas-access';
  for(const choice of options){
   const button=document.createElement('button');button.className='secondary';button.type='button';
@@ -1903,10 +1905,10 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  }
  holder.append(row);
  const key=productFold(query);
- const entries=catalog.records.filter(r=>(!sourceFilter||r.source===sourceFilter)&&
+ const entries=catalog.records.filter(r=>r.ingredientStatus==='full-disclosure'&&(!sourceFilter||r.source===sourceFilter)&&
   (!key||productFold((r.brandName||'')+' '+r.productName).includes(key)));
  const status=document.createElement('p');status.className='muted';
- status.textContent='一致 '+entries.length+'商品。商品名のみの掲載は実際の全成分が未確認です。';
+ status.textContent='一致 '+entries.length+'商品。全成分の保存版がある商品だけを表示しています。';
  holder.append(status);
  const area=document.createElement('div');holder.append(area);
  let limit=0;
@@ -2030,37 +2032,12 @@ function showAddedBrand(row){
    }
   }
  }
- if(row.products?.length){
-  const intro=document.createElement('p');intro.className='muted';
-  intro.textContent='商品名の掲載例（全成分は未収録）';holder.append(intro);
-  for(const product of row.products){
-   const info=document.createElement('p');info.className='muted';
-   info.textContent=product.name+' ／ 成分は未収録';holder.append(info);
-   if(product.evidenceUrl)sourceLink(holder,product.evidenceUrl,product.name+'の掲載元');
-  }
- }else{
-  const pending=document.createElement('p');pending.className='muted';
-  pending.textContent='商品名の個別登録は未実施。商品未販売やブランド終了の証拠ではありません。';
-  holder.append(pending);
- }
+ const pending=document.createElement('p');pending.className='muted';
+ pending.textContent='商品名の個別登録は未実施。商品未販売やブランド終了の証拠ではありません。';
+ holder.append(pending);
  const caution=document.createElement('p');caution.className='muted';
  caution.textContent='旧201ブランドの範囲外で追加した候補です。登録済み2,163商品とは別集計で、確認できない成分をこのブランドに流用していません。';
  holder.append(caution);
- // Product-name listings are additional third-party evidence, not formulas.
- const slot=document.createElement('div');slot.className='marketplace-brand-products';holder.append(slot);
- if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-search-lite-20261110.json').catch(e=>{
-  marketplaceProductsPromise=null;throw e;
- });
- const keys=new Set([row.name,...(row.aliases||[])].map(productFold).filter(Boolean));
- marketplaceProductsPromise.then(data=>{
-  if(!slot.isConnected||!Array.isArray(data?.rows))return;
-  const found=data.rows.filter(item=>keys.has(productFold(item.brandName)));
-  if(!found.length)return;
-  const action=document.createElement('button');action.type='button';action.className='secondary';
-  action.textContent='外部掲載の商品名 '+found.length+'件を見る（成分は未確認）';
-  action.onclick=()=>showMarketplaceProducts(found,row.name);
-  slot.append(action);
- }).catch(()=>{});
 }
 
 function quickRegisteredBrands(){
@@ -2171,7 +2148,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   try{
    const supplements=await supplementalSourceCatalog();
    if(ctx.version!==lookupVersion)return;
-   const matches=supplements.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
+   const matches=supplements.records.filter(r=>r.ingredientStatus==='full-disclosure'&&productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
    if(namedSource||matches.length){
     showSupplementalSourceOverview(supplements,namedSource?'':q,namedSource);
     return;
@@ -2243,8 +2220,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
     findRegisteredProducts(q).map(x=>x.product);
   const existingAliasIds=new Set(extra.map(p=>p.existingCatalogProductId).filter(Boolean));
   const combined=[...new Map([...existing.filter(p=>!existingAliasIds.has(p.id)),...extra].map(p=>[p.id,p])).values()];
-  presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');
-  return;
+  if(combined.some(itemHasArchiveInCatalog)){presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');return;}
  }
 }
 if(!forceOfficial&&!/^https:\/\//.test(q)){
@@ -2271,11 +2247,11 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   }catch(e){if(e.name==='AbortError'||ctx.version!==lookupVersion)return;}
 }
 const allRegisteredMatches=findRegisteredProducts(q);
-const matches=allRegisteredMatches;
+const matches=allRegisteredMatches.filter(x=>itemHasArchiveInCatalog(x.product));
 if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   if(!instant){
     const candidate=chooseExactRegisteredProduct(q);
-    const matched=candidate;
+    const matched=candidate&&itemHasArchiveInCatalog(candidate)?candidate:null;
     if(matched){
       if(matched.registrationStatus==='name-only'){selectRegisteredFormula(matched);return;}
       $('searchResults').textContent='日本公式の商品情報を確認しています：'+matched.brand+' '+matched.name;
@@ -2297,41 +2273,6 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=3){
     productFold(row.productName).includes(key));
   if(facts.length){showSourcedRetailerList(data,q);return;}
  }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
-}
-// Public LIPS and @cosme product names are distinct from verified ingredient records.
-if(!forceOfficial&&!/^https:\/\//.test(q)&&q.length>=2){
- try{
-  if(!marketplaceProductsPromise)marketplaceProductsPromise=getJSON('/marketplace-product-search-lite-20261110.json').catch(e=>{
-   marketplaceProductsPromise=null;throw e;
-  });
-  const data=await marketplaceProductsPromise;
-  if(ctx.version!==lookupVersion)return;
-  if(Array.isArray(data?.rows)){
-   const queryKey=productFold(q);
-   const found=data.rows.filter(row=>productFold(row.name).includes(queryKey)||
-    productFold(row.brandName+' '+row.name).includes(queryKey));
-   if(found.length){showMarketplaceProducts(found,q);return;}
-  }
- }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
-}
-// Public brand directories have brand names and links, but product ingredients are not verified.
-if(!forceOfficial&&!/^https:\/\//.test(q)&&marketplaceBrandRecords.length){
- const folded=productFold(q);
- if(folded){
-  const found=marketplaceBrandRecords.filter(row=>row.aliases.some(alias=>productFold(alias).includes(folded)));
-  if(found.length){
-   const holder=$('searchResults');holder.replaceChildren();
-   const title=document.createElement('p');title.className='muted';
-   title.textContent='公開ブランド一覧の候補 '+found.length+'件（商品・成分は未確認）。最大25件を表示。';
-   holder.append(title);
-   for(const row of found.slice(0,25)){
-    const btn=document.createElement('button');btn.className='product-option';btn.type='button';
-    btn.textContent=row.name+'（ブランド掲載元を開く）';
-    btn.onclick=()=>showAddedBrand(row);holder.append(btn);
-   }
-   return;
-  }
- }
 }
 busy(true);$('searchResults').textContent='候補を探しています…';$('officialStatus').textContent='';try{if(/^https:\/\//.test(q)){
  if(!instant){
@@ -2575,15 +2516,8 @@ function showBrands(){
     meta.textContent=(brand.maker?'メーカー：'+brand.maker+' ／ ':'')+(manufacturerCount?'メーカー検索：系列 '+manufacturerCount+'商品候補 ／ ブランド自身の保存版 '+savedCount+'処方':savedCount?'全成分の掲載記録 '+savedCount+'処方／商品候補 '+productCount+'件':
       productCount?'商品候補 '+productCount+'件／全成分未確認':
       manufacturerCount?'メーカー名／傘下ブランドの商品候補 '+manufacturerCount+'件':'ブランド仮登録済み／商品名未登録');
-    if(partialCount)meta.textContent+=' ／ 判明成分のみ '+partialCount+'商品（参考の花）';
     if(englishCount)meta.textContent+=' ／ 英語INCI参考 '+englishCount+'商品（日本国内向け処方は未確認）';
     cell.append(select,meta);
-    if(!savedCount&&!partialCount&&!englishCount&&!productCount){
-      const hypothesis=document.createElement('button');hypothesis.type='button';hypothesis.className='secondary';
-      hypothesis.textContent='剤型から推論の花を試す';
-      hypothesis.onclick=()=>{tab('search');$('query').value=brand.name;$('brandDirectory').open=false;$('searchResults').replaceChildren();showInferredFlowerChoice($('searchResults'),null,brand);$('searchResults').scrollIntoView({behavior:'auto',block:'start'});};
-      cell.append(hypothesis);
-    }
     if(brand.japanSiteVerified&&brand.site){const link=document.createElement('a');link.href=brand.site;link.target='_blank';link.rel='noopener noreferrer';link.textContent='サイト';link.setAttribute('aria-label',brand.name+'の関連公式サイト');cell.append(link);}
     $('brandList').append(cell);
   }
