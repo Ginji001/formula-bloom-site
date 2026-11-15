@@ -761,9 +761,9 @@ jobs:
              !compactCSS.includes('flex-wrap: nowrap')||
              !compactCSS.includes('white-space: nowrap')||
              !compactCSS.includes(':focus-visible')||
-             historicalLinks.length!==78||
-             new Set(historicalLinks).size!==78||
-             !archivedPublicLinks.includes('過去の調査・公開記録（78件）')||
+             historicalLinks.length!==50||
+             new Set(historicalLinks).size!==50||
+             !archivedPublicLinks.includes('過去の調査・公開記録（50件）')||
              !archivedPublicLinks.includes('href="unresolved-review-rc124.html"')||
              !archivedPublicLinks.includes('href="partial-reference-progress-rc184.html"')||
              !fs.readFileSync('_site/sw.js','utf8').includes('resources.html')||
@@ -771,7 +771,7 @@ jobs:
              fs.existsSync('_site/docs/v1.0.1-three-line-footer-and-source-archive-20261105.md')||
              fs.existsSync('_site/chatgpt-project/01_プロジェクト指示.md'))
             throw Error('Three-line compact homepage footer or separate archive routing failed');
-          console.log('Verified compact UI: 3 rows / 4 links / 78 old references archived / footer shows the current 2,163-product scope; underlying evidence files unchanged.');
+          console.log('Verified compact UI: 3 rows / 4 links / 50 old references archived / footer shows the current 2,163-product scope; underlying evidence files unchanged.');
 
           // Search-first public surface, without dropping the underlying source evidence or advanced workflows.
           const essentialHtml=fs.readFileSync('_site/index.html','utf8');
