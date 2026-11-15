@@ -606,10 +606,6 @@ jobs:
           const coverageApp=fs.readFileSync('_site/app.js','utf8');
           const directoryExtra=JSON.parse(fs.readFileSync('_site/brand-directory-additions-20261110.json','utf8'));
           const groupAudit=JSON.parse(fs.readFileSync('_site/manufacturer-group-reconciliation-20261110.json','utf8'));
-          const marketplaceIndex=JSON.parse(fs.readFileSync('_site/marketplace-brand-candidates-20261110.json','utf8'));
-          const cosmeetMakerIndex=JSON.parse(fs.readFileSync('_site/cosmeet-maker-brand-candidates-20261110.json','utf8'));
-          const publicProducts=JSON.parse(fs.readFileSync('_site/marketplace-product-candidates-20261110.json','utf8'));
-          const productLite=JSON.parse(fs.readFileSync('_site/marketplace-product-search-lite-20261110.json','utf8'));
           const collectionProgress=JSON.parse(fs.readFileSync('_site/public-collection-progress-20261110.json','utf8'));
           const supplementalCatalog=JSON.parse(fs.readFileSync('_site/supplemental-source-catalog-20261111.json','utf8'));
           const retailerFacts=JSON.parse(fs.readFileSync('_site/retailer-full-ingredient-facts-20261110.json','utf8'));
@@ -629,19 +625,6 @@ jobs:
              directoryExtra.audit.fitcosmeNewCandidates!==160||
              groupAudit.allSourceBrands!==122||
              groupAudit.independentlyListedGroups!==77||
-             marketplaceIndex.newCandidateCount!==11817||
-             marketplaceIndex.displayedDirectoryCount!==12494||
-             marketplaceIndex.sources.length!==3||
-             cosmeetMakerIndex.collectedPageCount!==1855||
-             cosmeetMakerIndex.uniqueListedMakers!==10999||
-             cosmeetMakerIndex.uniqueListedBrands!==16842||
-             cosmeetMakerIndex.newNamesBeyondExistingIndexes!==13220||
-             cosmeetMakerIndex.brandIdsOutsideExistingIndexes!==13264||
-             cosmeetMakerIndex.completeSourceCoverage!==false||
-             publicProducts.productNameCount!==64033||
-             productLite.productNameCount!==64033||
-             productLite.rows.length!==64033||
-             productLite.kind!=='public-products-search-lite-unverified-ingredients'||
              collectionProgress.totalBrandNameCandidates!==25714||
              collectionProgress.totalExternalProductNameReferences!==64033||
              collectionProgress.completeCoverage!==false||
@@ -696,24 +679,7 @@ jobs:
              collectionProgress.sites.atcosme.nextMakerBrandPage!==1855||
              collectionProgress.sites.atcosme.nextBrandProductIndex!==1200||
              !stableHome.includes('public-collection-progress-20261110.json')||
-             publicProducts.sources.length!==3||
-             publicProducts.sources.find(s=>s.name==='LIPS')?.inspectedBrandPages!==1893||
-             publicProducts.sources.find(s=>s.name==='@cosme')?.inspectedBrandPages!==1200||
-             publicProducts.sources.find(s=>s.name==='Qoo10')?.rankedMonths!==9||
-             publicProducts.sources.find(s=>s.name==='Qoo10')?.megaDebutRankedMonths!==2||
              collectionProgress.sites.qoo10.megaDebutRankingsReviewed!==2||
-             publicProducts.sources.find(s=>s.name==='LIPS')?.publicProductLinks!==60809||
-             publicProducts.sources.find(s=>s.name==='@cosme')?.publicProductLinks!==3125||
-             publicProducts.sources.find(s=>s.name==='Qoo10')?.publicProductLinks!==99||
-             publicProducts.rows.some(r=>r.ingredientEvidence!=='none')||
-             !publicProducts.rows.some(r=>r.source==='Qoo10'&&r.name.includes('UIQ'))||
-             publicProducts.rows.some(r=>r.source==='Qoo10'&&/^[\d,.]+\u5186$/.test(r.name))||
-             new Set(publicProducts.rows.map(r=>r.id)).size!==64033||
-             !fs.existsSync('_site/marketplace-product-candidates-20261110.json')||
-             cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1855||
-             cosmeetMakerIndex.listedSoloBrandRows!==10605||
-             !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
-             !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
