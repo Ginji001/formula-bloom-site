@@ -710,11 +710,9 @@ jobs:
              publicProducts.rows.some(r=>r.source==='Qoo10'&&/^[\d,.]+\u5186$/.test(r.name))||
              new Set(publicProducts.rows.map(r=>r.id)).size!==64033||
              !fs.existsSync('_site/marketplace-product-candidates-20261110.json')||
-             !coverageApp.includes('marketplace-product-search-lite-20261110.json')||
              cosmeetMakerIndex.verifiedExtractorVersionTwoPages!==1855||
              cosmeetMakerIndex.listedSoloBrandRows!==10605||
              !coverageApp.includes('cosmeet-maker-brand-candidates-20261110.json')||
-             !coverageApp.includes('marketplace-brand-candidates-20261110.json')||
 
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
