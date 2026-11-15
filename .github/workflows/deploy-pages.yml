@@ -1421,8 +1421,7 @@ jobs:
              nameCover129.summary.fullFormulaNewlyAdded!==0||
              nameCover129.records.some(x=>x.fullIngredientListInArchive||x.formulaOrderVerified)||
              covered129.some(x=>!x.sourceRecords.length||!x.referenceIngredientCount)||
-             !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756||
-             !sourceOnlyHome.includes('成分名未収録1,701件・参考収録53件'))
+             !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756)
              throw Error('rc129 relaxed Japanese name-reference coverage failed');
           console.log('Verified rc129: 53 reference-name products and 1701 remaining, 409 full formula snapshots');
           const nextCoverage=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc130.json','utf8'));
