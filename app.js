@@ -1555,11 +1555,6 @@ function presentRegisteredBrand(brand){
 let provisionalBrands=null,provisionalLoading=false;
 let breadthBrandNames=[];
 let addedBrandRecords=[];
-let marketplaceBrandRecords=[];
-let cosmeetBrandRecords=[];
-let cosmeetMakerRecords=[];
-let cosmeetAllBrandRecords=[];
-let marketplaceProductsPromise=null;
 let manufacturerGroupRows=[];
 function addedManufacturerMatches(q){
  const key=String(q||'').trim().toLowerCase().replace(/\s/g,'');
@@ -1586,26 +1581,7 @@ function showManufacturerGroups(rows){
 function addedBrandMatch(q){
  const key=productFold(String(q||'').trim());
  if(!key)return null;
- return [...addedBrandRecords,...marketplaceBrandRecords,...cosmeetBrandRecords].find(row=>row.aliases.some(alias=>productFold(alias)===key))||null;
-}
-function showCosmeetMaker(row){
- const holder=$('searchResults');holder.replaceChildren();
- const h=document.createElement('h3');h.textContent=row.makerNameAsListed+'（@cosme掲載のメーカー名）';holder.append(h);
- const caution=document.createElement('p');caution.className='muted';
- caution.textContent='@cosmeの公開検索結果でメーカー名として掲載されています。現行の法的製造販売業者・製造工場と同一とは限りません。';
- holder.append(caution);
- if(row.makerUrl)sourceLink(holder,row.makerUrl,'@cosmeのメーカー掲載元');
- for(const brandId of row.brandIds.slice(0,60)){
-  const b=cosmeetAllBrandRecords.find(x=>x.brandId===brandId);
-  if(!b)continue;
-  const btn=document.createElement('button');btn.className='secondary';btn.type='button';
-  btn.textContent=b.name+'（@cosme掲載ブランド）';
-  btn.onclick=()=>showAddedBrand(b);holder.append(btn);
- }
- if(row.brandIds.length>60){
-  const note=document.createElement('p');note.className='muted';
-  note.textContent='ブランド'+row.brandIds.length+'件のうち60件を表示しています。';holder.append(note);
- }
+ return addedBrandRecords.find(row=>row.aliases.some(alias=>productFold(alias)===key))||null;
 }
 let oliveYoungIngredientsPromise=null;
 function oliveYoungData(){
@@ -2045,9 +2021,9 @@ function quickRegisteredBrands(){
  zone.replaceChildren();
  const verified=provisionalBrands||registeredBrands.map(name=>({name,aliases:[name]}));
  const known=new Map(verified.map(b=>[b.name,b]));
- const extensionByName=new Map([...addedBrandRecords,...marketplaceBrandRecords,...cosmeetBrandRecords].map(row=>[row.name,row]));
+ const extensionByName=new Map(addedBrandRecords.map(row=>[row.name,row]));
  const baselineNames=[...new Set([...activeMajorMakerBrands,...registeredBrands,...breadthBrandNames,...addedBrandRecords.map(row=>row.name)])];
- const all=[...new Set([...baselineNames,...marketplaceBrandRecords.map(row=>row.name),...cosmeetBrandRecords.map(row=>row.name)])].map(name=>known.get(name)||({name,aliases:extensionByName.get(name)?.aliases||[name]}));
+ const all=[...new Set(baselineNames)].map(name=>known.get(name)||({name,aliases:extensionByName.get(name)?.aliases||[name]}));
  const q=$('registeredBrandFilter').value.trim();
  const matches=all.filter(b=>!q||brandQueryMatches(b,q));
  // Limit only the visible chips: all brands remain searchable by name and aliases.
@@ -2094,19 +2070,6 @@ if($('showRakutenIngredientLibrary'))$('showRakutenIngredientLibrary').onclick=(
 getJSON('/brand-directory-additions-20261110.json').then(data=>{
  addedBrandRecords=Array.isArray(data?.brands)?data.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&row.aliases.length&&row.listingStatus):[];
  quickRegisteredBrands();
-}).catch(()=>{});
-getJSON('/marketplace-brand-candidates-20261110.json').then(data=>{
- marketplaceBrandRecords=Array.isArray(data?.rows)?data.rows.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&Array.isArray(row.sources)):[];
- quickRegisteredBrands();
-}).catch(()=>{});
-getJSON('/cosmeet-maker-brand-candidates-20261110.json').then(data=>{
- if(Array.isArray(data?.brands)&&Array.isArray(data?.makers)){
-  const newIds=new Set(data.unmatchedBrandIds||[]);
-  cosmeetAllBrandRecords=data.brands.filter(row=>typeof row.name==='string');
-  cosmeetBrandRecords=cosmeetAllBrandRecords.filter(row=>newIds.has(row.brandId));
-  cosmeetMakerRecords=data.makers;
-  quickRegisteredBrands();
- }
 }).catch(()=>{});
 getJSON('/brand-catalog-coverage-rc188.json').then(data=>{
  breadthBrandNames=Array.isArray(data?.rows)?data.rows.map(row=>row.name).filter(Boolean):[];
@@ -2175,27 +2138,19 @@ if(!forceOfficial&&!/^https:\/\//.test(q)&&(/オリーブ.?ヤング|オリヤ�
   if(all||found.length){showOliveYoungOverview(olive,all?'':q);return;}
  }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
 }
-if(!forceOfficial&&!/^https:\/\//.test(q)&&(!addedBrandRecords.length||!manufacturerGroupRows.length||!marketplaceBrandRecords.length||!cosmeetMakerRecords.length)){
+if(!forceOfficial&&!/^https:\/\//.test(q)&&(!addedBrandRecords.length||!manufacturerGroupRows.length)){
  try{
-  const [brandData,companyData,marketData,cosmeetData]=await Promise.all([
+  const [brandData,companyData]=await Promise.all([
    addedBrandRecords.length?Promise.resolve(null):getJSON('/brand-directory-additions-20261110.json',ctx.signal),
    manufacturerGroupRows.length?Promise.resolve(null):getJSON('/manufacturer-group-reconciliation-20261110.json',ctx.signal),
-   marketplaceBrandRecords.length?Promise.resolve(null):getJSON('/marketplace-brand-candidates-20261110.json',ctx.signal),
-   cosmeetMakerRecords.length?Promise.resolve(null):getJSON('/cosmeet-maker-brand-candidates-20261110.json',ctx.signal)
   ]);
   if(ctx.version!==lookupVersion)return;
   if(brandData?.brands)addedBrandRecords=brandData.brands.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases));
   if(companyData?.groups)manufacturerGroupRows=companyData.groups;
-  if(marketData?.rows)marketplaceBrandRecords=marketData.rows.filter(row=>typeof row.name==='string'&&Array.isArray(row.aliases)&&Array.isArray(row.sources));
-  if(cosmeetData?.makers&&cosmeetData?.brands){const ids=new Set(cosmeetData.unmatchedBrandIds||[]);cosmeetMakerRecords=cosmeetData.makers;cosmeetAllBrandRecords=cosmeetData.brands;cosmeetBrandRecords=cosmeetAllBrandRecords.filter(row=>ids.has(row.brandId));}
   quickRegisteredBrands();
  }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
 }
 if(!forceOfficial&&addedBrandMatch(q)){showAddedBrand(addedBrandMatch(q));return;}
-if(!forceOfficial&&cosmeetMakerRecords.length){
- const matches=cosmeetMakerRecords.filter(row=>productFold(row.makerNameAsListed)===productFold(q));
- if(matches.length){showCosmeetMaker(matches[0]);return;}
-}
 if(!forceOfficial&&addedManufacturerMatches(q).length){showManufacturerGroups(addedManufacturerMatches(q));return;}
 if(!forceOfficial&&(registeredBrands.includes(q)||breadthBrandNames.includes(q))&&!productsForBrandWithSupplements(q).length){
  const holder=$('searchResults');holder.replaceChildren();
