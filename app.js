@@ -1780,6 +1780,81 @@ function supplementalSourceCatalog(){
    .catch(error=>{supplementalSourceCatalogPromise=null;throw error;});
  return supplementalSourceCatalogPromise;
 }
+let koreaMarketPromise=null;
+function koreaMarketRecords(){
+ if(!koreaMarketPromise)
+  koreaMarketPromise=getJSON('/korea-market-records-20261117.json')
+   .catch(error=>{koreaMarketPromise=null;throw error;});
+ return koreaMarketPromise;
+}
+async function showKoreaMarket(){
+ const body=$('koreaMarketBody');if(!body)return;
+ body.textContent='読み込んでいます…';
+ try{
+  const data=await koreaMarketRecords();
+  body.replaceChildren();
+  const warn=document.createElement('div');warn.className='boundary';
+  const warnTitle=document.createElement('strong');warnTitle.textContent=data.warning.heading;warn.append(warnTitle);
+  const warnBody=document.createElement('p');warnBody.textContent=data.warning.body;warn.append(warnBody);
+  body.append(warn);
+  for(const record of data.records){
+   const button=document.createElement('button');button.type='button';button.className='secondary';
+   button.textContent=record.brandName+'｜'+record.productName+'（'+record.ingredientCount+'成分）';
+   button.onclick=()=>showKoreaMarketProduct(record,data);
+   body.append(button);
+  }
+  const note=document.createElement('p');note.className='muted';
+  note.textContent='出典: OLIVE YOUNG公式（USストア）／確認日: 2026-11-17／現物ラベルは未確認です。国内向けの収録とは別の枠で、件数には混ぜていません。';
+  body.append(note);
+ }catch(error){body.textContent='読み込めませんでした。';}
+}
+function showKoreaMarketProduct(record,data){
+ const body=$('koreaMarketBody');if(!body)return;
+ body.replaceChildren();
+ const back=document.createElement('button');back.type='button';back.className='secondary';
+ back.textContent='一覧へ戻る';back.onclick=()=>showKoreaMarket();body.append(back);
+ const title=document.createElement('h3');title.textContent=record.productName;body.append(title);
+ const meta=document.createElement('p');meta.className='muted';
+ meta.textContent=record.brandName+'／'+record.volumeText+'／韓国市場向け（別枠・花は作りません）';
+ body.append(meta);
+ const warn=document.createElement('div');warn.className='boundary';
+ const warnTitle=document.createElement('strong');warnTitle.textContent=data.warning.heading;warn.append(warnTitle);
+ const warnBody=document.createElement('p');warnBody.textContent=data.warning.body;warn.append(warnBody);
+ body.append(warn);
+ const listTitle=document.createElement('h4');
+ listTitle.textContent='全成分（'+record.ingredientCount+'件・掲載順）';body.append(listTitle);
+ const list=document.createElement('p');
+ list.textContent=record.ingredients.join(record.separator===';'?'; ':', ');body.append(list);
+ for(const note of record.notes||[]){
+  const p=document.createElement('p');p.className='muted';p.textContent=note;body.append(p);
+ }
+ for(const sp of record.pageSpellings||[]){
+  const p=document.createElement('p');p.className='muted';
+  p.textContent='ページ表記: '+sp.asListed+' — '+sp.note;body.append(p);
+ }
+ for(const sp of record.standardSpellingNotes||[]){
+  const p=document.createElement('p');p.className='muted';
+  p.textContent='表記について: '+sp.asListed+' — '+sp.note;body.append(p);
+ }
+ if((record.cautionNotes||[]).length){
+  const cautionTitle=document.createElement('h4');
+  cautionTitle.textContent='公的機関の情報がある成分';body.append(cautionTitle);
+  for(const cn of record.cautionNotes){
+   const p=document.createElement('p');p.textContent=cn.ingredient+': '+cn.text;body.append(p);
+   const sourceP=document.createElement('p');
+   const a=document.createElement('a');a.href=cn.sourceUrl;a.target='_blank';a.rel='noopener';
+   a.textContent='出典: '+cn.sourceName;sourceP.append(a);body.append(sourceP);
+  }
+ }
+ const sourceP=document.createElement('p');
+ const a=document.createElement('a');a.href=record.sourceUrl;a.target='_blank';a.rel='noopener';
+ a.textContent='出典: OLIVE YOUNG公式（USストア）商品ページ';sourceP.append(a);
+ const tail=document.createElement('span');
+ tail.textContent='／確認日: '+record.sourceCheckedOn+'／現物ラベルは未確認です';
+ sourceP.append(tail);body.append(sourceP);
+}
+const koreaMarketLoadButton=$('koreaMarketLoad');
+if(koreaMarketLoadButton)koreaMarketLoadButton.addEventListener('click',showKoreaMarket);
 function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
  const holder=$('searchResults');holder.replaceChildren();
  const title=document.createElement('h3');

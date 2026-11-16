@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-17",
+  "market": "KR",
+  "note": "韓国市場向け製品の成分表示を、韓国側の販売ページの表示のまま収録した別枠です。国内カタログ（253件）の件数には混ぜません。日本の成分表示名称への対応づけは行わず、花も作りません。",
+  "warning": {
+    "heading": "韓国市場向けの成分表示です",
+    "body": "この成分リストは、韓国市場向けに販売されている製品の表示を、そのまま載せたものです。日本の成分表示名とは異なる名称が含まれている場合があります。日本国内向けの製品と同じものとしてはおすすめしません。"
+  },
+  "records": [
+    {
+      "id": "kr-oliveyoung-ua35435218",
+      "brandName": "BIOHEAL BOH",
+      "productName": "BIOHEAL BOH Probioderm 3D Lifting Cream",
+      "volumeText": "1.69 fl. oz.(50ml)",
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA35435218",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "separator": ";",
+      "ingredientCount": 79,
+      "ingredients": [
+        "Water",
+        "Lactobacillus Ferment Lysate",
+        "Glycerin",
+        "Dipropylene Glycol",
+        "CaprylicCapric Triglyceride",
+        "Cetearyl Alcohol",
+        "Limnanthes Alba (Meadowfoam) Seed Oil",
+        "Glycereth-26",
+        "Vinyl Dimethicone",
+        "Hydrogenated Poly(C6-14 Olefin)",
+        "Hydrogenated Polydecene",
+        "Polyglyceryl-3 Methylglucose Distearate",
+        "Glyceryl Stearate",
+        "Betaine",
+        "Polyglycerin-3",
+        "1,2-Hexanediol",
+        "Cetearyl Olivate",
+        "Pentylene Glycol",
+        "PhytosterylBehenylOctyldodecyl Lauroyl Glutamate",
+        "Lactobacillus Ferment",
+        "Fructooligosaccharides",
+        "Fructan",
+        "Inulin",
+        "Panthenol",
+        "Beta-Glucan",
+        "Adenosine",
+        "Saponin",
+        "Soluble Proteoglycan",
+        "Nonapeptide-1",
+        "Acetyl Tetrapeptide-9",
+        "Acetyl Tetrapeptide-5",
+        "Acetyl Hexapeptide-1",
+        "Acetyl Hexapeptide-8",
+        "Palmitoyl Tripeptide-8",
+        "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+        "Copper Tripeptide-1",
+        "Tripeptide-1",
+        "Palmitoyl Tetrapeptide-7",
+        "Palmitoyl Tripeptide-1",
+        "Palmitoyl Tripeptide-5",
+        "Palmitoyl Pentapeptide-4",
+        "Palmitoyl Hexapeptide-12",
+        "Pentapeptide-3",
+        "Hexapeptide-9",
+        "Oligopeptide-2",
+        "Malt Extract",
+        "Dioscorea Japonica Root Extract",
+        "Elaeis Guineensis (Palm) Oil",
+        "Behenyl Alcohol",
+        "Sorbitan Olivate",
+        "Butyrospermum Parkii (Shea) Butter",
+        "Dipentaerythrityl HexahydroxystearateHexastearateHexarosinate",
+        "Hydrogenated Rapeseed Oil",
+        "Hydroxyacetophenone",
+        "Sodium Polyacrylate",
+        "Hydrolyzed Jojoba Esters",
+        "PEG-100 Stearate",
+        "Ethylhexylglycerin",
+        "AcrylatesC10-30 Alkyl Acrylate Crosspolymer",
+        "Xanthan Gum",
+        "Tromethamine",
+        "Butylene Glycol",
+        "Maltodextrin",
+        "Cyanocobalamin",
+        "Cetyl Ethylhexanoate",
+        "Propanediol",
+        "Cetearyl Glucoside",
+        "Algin",
+        "Sodium Stearoyl Glutamate",
+        "Tocopherol",
+        "Biosaccharide Gum-4",
+        "Mineral Salts",
+        "Hydrolyzed Corn Starch",
+        "Sodium Phosphate",
+        "Caprylyl Glycol",
+        "Sucrose",
+        "Dextran",
+        "Disodium Phosphate",
+        "Fragrance"
+      ],
+      "notes": [
+        "他チャネルには並び順の異なる版が載っています。このページの版だけを使います。",
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。"
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "CaprylicCapric Triglyceride",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "PhytosterylBehenylOctyldodecyl Lauroyl Glutamate",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "Dipentaerythrityl HexahydroxystearateHexastearateHexarosinate",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "AcrylatesC10-30 Alkyl Acrylate Crosspolymer",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "cautionNotes": []
+    },
+    {
+      "id": "kr-oliveyoung-ua93363102",
+      "brandName": "medicube",
+      "productName": "medicube Zero Pore Pad",
+      "volumeText": "70 Pads 5.46 oz.(155g)",
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA93363102",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "separator": ", ",
+      "ingredientCount": 47,
+      "ingredients": [
+        "Water",
+        "Methylpropanediol",
+        "Trometamin",
+        "Lactic Acid",
+        "Alcohol Denat.",
+        "1,2-Hexanediol",
+        "Panthenol",
+        "Glycereth-26",
+        "Salicylic Acid",
+        "Ammonium AcryloyldimethyltaurateVP Copolymer",
+        "Betaine",
+        "Trehalose",
+        "Polyglyceryl-10 Laurate",
+        "Ethylhexylglycerin",
+        "Glycerin",
+        "Allantoin",
+        "Polyglyceryl-10 Myristate",
+        "Disodium EDTA",
+        "Butylene Glycol",
+        "Sodium Hyaluronate",
+        "Betaine Salicylate",
+        "Citrus Aurantium Dulcis (Orange) Peel Oil",
+        "Citrus Limon (Lemon) Peel Oil",
+        "Citrus Grandis (Grapefruit) Peel Oil",
+        "Citrus Aurantium Bergamia (Bergamot) Fruit Oil",
+        "Rosmarinus Officinalis (Rosemary) Leaf Oil",
+        "Eucalyptus Globulus Leaf Oil",
+        "Lavandula Angustifolia (Lavender) Oil",
+        "Vitis Vinifera (Grape) Fruit Extract",
+        "Citrus Aurantifolia (Lime) Fruit Extract",
+        "Citrus Limon (Lemon) Fruit Extract",
+        "Pyrus Malus (Apple) Fruit Extract",
+        "Citrus Aurantium Dulcis (Orange) Fruit Extract",
+        "Ethyl Hexanediol",
+        "Centella Asiatica Extract",
+        "Slix Alba (Willow) Bark Extract",
+        "Origanum Vulgare Leaf Extract",
+        "Chamaecyparis Obtusa Leaf Extract",
+        "LactobacillusSoybean Ferment Extract",
+        "Cinnamomum Cassia Bark Extract",
+        "Scutellaria Baicalensis Root Extract",
+        "Portulaca Oleracea Extract",
+        "Oenothera Biennis (Evening Primrose) Flower Extract",
+        "Pinus Palustris Leaf Extract",
+        "Ulmus Davidiana Root Extract",
+        "Pueraria Lobata Root Extract",
+        "Limonene"
+      ],
+      "notes": [
+        "ページの Safety information に Sunburn Alert（AHAに関する注意書き）が載っています。",
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。",
+        "Betaine Salicylate は Salicylic Acid とは別の成分として扱います。"
+      ],
+      "pageSpellings": [
+        {
+          "asListed": "Trometamin",
+          "note": "ページの表記のまま。他チャネルでは Tromethamine と表記されています。どちらが正かは断定しません。"
+        },
+        {
+          "asListed": "Slix Alba (Willow) Bark Extract",
+          "note": "ページの表記のまま。他チャネルでは Salix Alba と表記されています。どちらが正かは断定しません。"
+        }
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "Ammonium AcryloyldimethyltaurateVP Copolymer",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "LactobacillusSoybean Ferment Extract",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "cautionNotes": [
+        {
+          "ingredient": "Salicylic Acid",
+          "text": "EUでは、化粧品への配合に上限が定められています（洗い流すヘア製品で3.0%、その他の製品で2.0%など、用途によって異なります）。この製品の配合量は公表されていません。",
+          "sourceName": "欧州委員会規則 (EU) 2019/1966（化粧品規則 (EC) No 1223/2009 附属書III 項目98）",
+          "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R1966"
+        },
+        {
+          "ingredient": "Lactic Acid",
+          "text": "乳酸はAHA（アルファヒドロキシ酸）の一種です。米FDAは、AHAを含む化粧品は肌の紫外線への感受性を高める可能性があるとして、日焼けへの注意を促す表示（Sunburn Alert）を推奨しています。この製品の販売ページにも同様の注意書きが載っています。",
+          "sourceName": "米FDA「Alpha Hydroxy Acids」",
+          "sourceUrl": "https://www.fda.gov/cosmetics/cosmetic-ingredients/alpha-hydroxy-acids"
+        },
+        {
+          "ingredient": "Limonene",
+          "text": "EUでは香料アレルゲンとして、一定の濃度を超えると成分名を個別に表示することが義務づけられています（付けたままの製品で0.001%、洗い流す製品で0.01%を超えた場合）。",
+          "sourceName": "化粧品規則 (EC) No 1223/2009 附属書III 項目88（規則 (EU) 2023/1545 の本文で確認）",
+          "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
+        }
+      ]
+    },
+    {
+      "id": "kr-oliveyoung-ua53025014",
+      "brandName": "Anua",
+      "productName": "Anua Heartleaf 77 Soothing Toner",
+      "volumeText": "8.45 fl. oz.(250ml)",
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA53025014",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "separator": ", ",
+      "ingredientCount": 24,
+      "ingredients": [
+        "Houttuynia Cordata FlowerLeafStem Water",
+        "Water",
+        "1,2-Hexanediol",
+        "Glycerin",
+        "Betaine",
+        "Butylene Glycol",
+        "Isopentyldiol",
+        "Panthenol",
+        "AcrylatesC10-30 Alkyl Acrylate Crosspolymer",
+        "Disodium EDTA",
+        "Tromethamine",
+        "Centella Asiatica Extract",
+        "Arctium Lappa Root Extract",
+        "Phellinus Linteus Extract",
+        "Portulaca Oleracea Extract",
+        "Chamomilla Recutita (Matricaria) Flower Extract",
+        "Vitex Agnus-Castus Extract",
+        "Sodium Hyaluronate",
+        "Hydroxypropyltrimonium Hyaluronate",
+        "Hydrolyzed Hyaluronic Acid",
+        "Sodium Acetylated Hyaluronate",
+        "Hyaluronic Acid",
+        "Sodium Hyaluronate Crosspolymer",
+        "Potassium Hyaluronate"
+      ],
+      "notes": [
+        "花・葉・茎水をベースにした現行版のリストです。旧版（Houttuynia Cordata Extract 77% が先頭、21件）とは別物で、混ぜていません。現行版への切り替え時期は未確認です。"
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "Houttuynia Cordata FlowerLeafStem Water",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "AcrylatesC10-30 Alkyl Acrylate Crosspolymer",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "cautionNotes": []
+    },
+    {
+      "id": "kr-oliveyoung-ua43792133",
+      "brandName": "SKIN1004",
+      "productName": "SKIN1004 Madagascar Centella Ampoule",
+      "volumeText": "1.85 fl. oz.(55ml)",
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA43792133",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "separator": ", ",
+      "ingredientCount": 7,
+      "ingredients": [
+        "Water",
+        "Glycerin",
+        "Butylene Glycol",
+        "Centella Asiatica Extract",
+        "1,2-Hexanediol",
+        "Cellulose Gum",
+        "Ethylhexylglycerin"
+      ],
+      "notes": [
+        "転記元は OLIVE YOUNG公式ページです。ブランド公式ページにも同じ7件の構成の案内がありますが、転記元としては扱いません。",
+        "濃度（他源にある 30,000ppm）はこのページに記載がないため、記録しません。",
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。"
+      ],
+      "standardSpellingNotes": [],
+      "cautionNotes": []
+    }
+  ]
+}
