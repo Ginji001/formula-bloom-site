@@ -497,10 +497,10 @@ jobs:
              supplementalCatalog.completeCoverage!==false||
              supplementalCatalog.productTitleCandidates!==supplementalCatalog.records.length||
              supplementalCatalog.donkiExplicitFullProductRecords!==supplementalCatalog.records.filter(r=>r.source==='ドンキ公式'&&r.ingredientStatus==='full-disclosure').length||
-             supplementalCatalog.manufacturerOfficialFullProductRecords!==supplementalCatalog.records.filter(r=>['MEGLY公式','Torriden日本公式','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式'].includes(r.source)&&r.ingredientStatus==='full-disclosure').length||
+             supplementalCatalog.manufacturerOfficialFullProductRecords!==supplementalCatalog.records.filter(r=>['MEGLY公式','Torriden日本公式','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式','インフィニティ公式','プレディア BLUE公式','雪肌精 BLUE公式','ジルスチュアート公式'].includes(r.source)&&r.ingredientStatus==='full-disclosure').length||
              supplementalCatalog.totalExplicitFullProductRecords!==supplementalCatalog.records.filter(r=>r.ingredientStatus==='full-disclosure').length||
              !['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的'].every(s=>supplementalCatalog.records.some(r=>r.source===s))||
-             supplementalCatalog.records.some(r=>!['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式'].includes(r.source))||
+             supplementalCatalog.records.some(r=>!['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式','インフィニティ公式','プレディア BLUE公式','雪肌精 BLUE公式','ジルスチュアート公式'].includes(r.source))||
              // Supplemental counts are computed from the catalog records themselves (automated 2026-11-11); no fixed per-source counts.
              supplementalCatalog.donkiUnverifiedIngredientLists!==supplementalCatalog.records.filter(r=>r.source==='ドンキ公式'&&r.ingredientStatus!=='full-disclosure'&&r.ingredients?.length).length||
              // (per-source counts computed above)
