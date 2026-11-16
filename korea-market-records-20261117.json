@@ -317,6 +317,174 @@
       ],
       "standardSpellingNotes": [],
       "cautionNotes": []
+    },
+    {
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "cautionNotes": [],
+      "id": "kr-oliveyoung-ua17259514",
+      "brandName": "BRING GREEN",
+      "productName": "BRING GREEN Tea Tree Cica Soothing Toner",
+      "volumeText": "8.45 fl. oz.(250ml)",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA17259514",
+      "separator": ";",
+      "ingredients": [
+        "Melaleuca Alternifolia (Tea Tree) Extract",
+        "Water",
+        "Dipropylene Glycol",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Extract",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Water",
+        "Centella Asiatica Extract",
+        "1,2-Hexanediol",
+        "Butylene Glycol",
+        "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+        "Betaine",
+        "Panthenol",
+        "Octyldodeceth-16",
+        "Sodium Citrate",
+        "Citric Acid",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "Betaine Salicylate",
+        "Xanthan Gum"
+      ],
+      "notes": [
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。",
+        "Betaine Salicylate は Salicylic Acid とは別の成分として扱います。"
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "ingredientCount": 17
+    },
+    {
+      "market": "KR",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceCheckedOn": "2026-11-17",
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "cautionNotes": [],
+      "id": "kr-oliveyoung-ua92482200",
+      "brandName": "BRING GREEN",
+      "productName": "BRING GREEN Zinc Teca Blemish Serum",
+      "volumeText": "0.84 fl. oz.(25ml)",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA92482200",
+      "separator": ";",
+      "ingredients": [
+        "Water",
+        "Ethoxydiglycol",
+        "Methylpropanediol",
+        "Methyl Gluceth-20",
+        "1,2-Hexanediol",
+        "Niacinamide",
+        "Centella Asiatica Extract",
+        "Melaleuca Alternifolia (Tea Tree) Extract",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Extract",
+        "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+        "Corchorus Olitorius Leaf Extract",
+        "Angelica Keiskei Extract",
+        "Nelumbo Nucifera Root Extract",
+        "Hibiscus Esculentus Fruit Extract",
+        "Dioscorea Japonica Root Extract",
+        "Hydrogenated Lecithin",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Water",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "Octyldodecanol",
+        "Octyldodeceth-16",
+        "Asiaticoside (4,800 ppm)",
+        "Madecassic Acid (3,600 ppm)",
+        "Glycolipids",
+        "Asiatic Acid (3,600 ppm)",
+        "C12-13 Alketh-9",
+        "Carbomer",
+        "Tromethamine",
+        "PVP",
+        "Sodium Polyacrylate",
+        "Disodium EDTA",
+        "4-Terpineol",
+        "Zinc PCA (1 ppm)",
+        "Ethylhexylglycerin"
+      ],
+      "notes": [
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。",
+        "配合量（ppm）の表記は、このページの成分リスト自体に含まれているため、そのまま記録しています。",
+        "トライアルキットのページに載っているセラムのリストは並びと内容が異なるため、単品ページのリストだけを使います。"
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "ingredientCount": 33
+    },
+    {
+      "id": "kr-oliveyoung-ua38047769",
+      "market": "KR",
+      "brandName": "BRING GREEN",
+      "productName": "BRING GREEN Tea Tree Cica Deep Cleansing Oil",
+      "volumeText": "6.76 fl. oz.(200ml)",
+      "source": "OLIVE YOUNG公式（USストア）",
+      "sourceUrl": "https://us.oliveyoung.com/products/UA38047769",
+      "sourceCheckedOn": "2026-11-17",
+      "separator": ",",
+      "ingredientCount": 27,
+      "ingredients": [
+        "Ethylhexyl Palmitate",
+        "Sorbeth-30 Tetraoleate",
+        "Isopropyl Myristate",
+        "Triethylhexanoin",
+        "Sorbitan Sesquioleate",
+        "Polyisobutene",
+        "CaprylicCapric Triglyceride",
+        "Candida BombicolaGlucoseMethyl Rapeseedate Ferment",
+        "Fragrance",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "Caprylyl Glycol",
+        "Ethylhexylglycerin",
+        "Water",
+        "Tocopherol",
+        "Allantoin",
+        "Betaine Salicylate",
+        "Niacinamide",
+        "Maltodextrin",
+        "Panthenol",
+        "1,2-Hexanediol",
+        "Centella Asiatica Extract",
+        "Melaleuca Alternifolia (Tea Tree) Extract",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Water",
+        "Melaleuca Alternifolia (Tea Tree) Leaf Extract",
+        "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+        "Protease",
+        "Superoxide Dismutase"
+      ],
+      "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+      "ingredientStatus": "full-disclosure-korea-market",
+      "notes": [
+        "ページに「Ingredient lists may change. Please refer to the packaging for the most current information.」の注意書きがあります。",
+        "ページのテキストでは最初の区切りの直後に「n」の文字が付いて見える箇所があります（Ethylhexyl Palmitate,nSorbeth-30 Tetraoleate）。項目としては Sorbeth-30 Tetraoleate として記録し、実画面でも27件の区切りを確認しました。",
+        "Betaine Salicylate は Salicylic Acid とは別の成分として扱います。"
+      ],
+      "standardSpellingNotes": [
+        {
+          "asListed": "CaprylicCapric Triglyceride",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "Candida BombicolaGlucoseMethyl Rapeseedate Ferment",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        },
+        {
+          "asListed": "Melaleuca Alternifolia (Tea Tree) FlowerLeafStem Extract",
+          "note": "一般的なINCI表記ではスラッシュを含む形が使われますが、このページの表示はスラッシュなしです（2026-11-17に実ページで確認）。"
+        }
+      ],
+      "cautionNotes": []
     }
   ]
 }
