@@ -497,10 +497,10 @@ jobs:
              supplementalCatalog.completeCoverage!==false||
              supplementalCatalog.productTitleCandidates!==supplementalCatalog.records.length||
              supplementalCatalog.donkiExplicitFullProductRecords!==supplementalCatalog.records.filter(r=>r.source==='ドンキ公式'&&r.ingredientStatus==='full-disclosure').length||
-             supplementalCatalog.manufacturerOfficialFullProductRecords!==supplementalCatalog.records.filter(r=>['MEGLY公式','Torriden日本公式','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式'].includes(r.source)&&r.ingredientStatus==='full-disclosure').length||
+             supplementalCatalog.manufacturerOfficialFullProductRecords!==supplementalCatalog.records.filter(r=>['MEGLY公式','Torriden日本公式','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式'].includes(r.source)&&r.ingredientStatus==='full-disclosure').length||
              supplementalCatalog.totalExplicitFullProductRecords!==supplementalCatalog.records.filter(r=>r.ingredientStatus==='full-disclosure').length||
              !['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的'].every(s=>supplementalCatalog.records.some(r=>r.source===s))||
-             supplementalCatalog.records.some(r=>!['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式'].includes(r.source))||
+             supplementalCatalog.records.some(r=>!['MEGLY公式','Torriden日本公式','ドンキ公式','VOCE','MAQUIA','美的','Amazon','innisfree日本公式','第一三共ヘルスケア公式','ラネージュ日本公式','ONE BY KOSE公式','コスメデコルテ公式','クレ・ド・ポー ボーテ公式','AESTURA公式','エスプリーク エクラ公式'].includes(r.source))||
              // Supplemental counts are computed from the catalog records themselves (automated 2026-11-11); no fixed per-source counts.
              supplementalCatalog.donkiUnverifiedIngredientLists!==supplementalCatalog.records.filter(r=>r.source==='ドンキ公式'&&r.ingredientStatus!=='full-disclosure'&&r.ingredients?.length).length||
              // (per-source counts computed above)
@@ -1421,7 +1421,8 @@ jobs:
              nameCover129.summary.fullFormulaNewlyAdded!==0||
              nameCover129.records.some(x=>x.fullIngredientListInArchive||x.formulaOrderVerified)||
              covered129.some(x=>!x.sourceRecords.length||!x.referenceIngredientCount)||
-             !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756)
+             !nameCoverCsv.startsWith('\uFEFF')||nameCoverCsv.split('\n').length!==1756||
+             !sourceOnlyHome.includes('成分名未収録1,701件・参考収録53件'))
              throw Error('rc129 relaxed Japanese name-reference coverage failed');
           console.log('Verified rc129: 53 reference-name products and 1701 remaining, 409 full formula snapshots');
           const nextCoverage=JSON.parse(fs.readFileSync('_site/ingredient-name-coverage-rc130.json','utf8'));
