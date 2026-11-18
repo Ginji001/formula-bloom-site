@@ -29,7 +29,8 @@
   "エクセル公式": "https://noevirgroup.jp/excel/",
   "ノブ公式": "https://noevirgroup.jp/nov/",
   "アスタリフト公式": "https://h-jp.fujifilm.com/contents/productslist/list-astalift.html",
-  "ベネフィーク公式": "https://www.shiseido.co.jp/benefique/product/"
+  "ベネフィーク公式": "https://www.shiseido.co.jp/benefique/product/",
+  "KANEBO公式": "https://global.kanebo.com/ja"
  },
  "sourceEvaluation": {
   "ドンキ公式": "Official product details: full ingredient panel only when explicitly labelled 全成分; otherwise ingredient completeness unknown.",
@@ -58,10 +59,11 @@
   "エクセル公式": "Manufacturer official Japanese online shop (excel online shop, Tokiwa Pharmaceutical Co., Ltd. / Noevir Group; noevirgroup.jp/excel) directly opened and checked on 2026-11-18; product pages publish the full ingredient list under the heading 全成分表示. 74 records are registered: color variants published on separate pages are separate records, color variants sharing one published list are one record, and eyebrow products with two components are split into one record per component. Six pages whose ingredient sections were not exposed to text extraction were read in the live browser. One product whose published list has fewer than 13 ingredients (Eye Planner G04, 12), one sold-out color (Glaze Balm Lip GB07), sets and tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
   "ノブ公式": "Manufacturer official Japanese brand site (NOV official brand site, Tokiwa Pharmaceutical Co., Ltd. / Noevir Group; noevirgroup.jp/nov) directly opened and checked on 2026-11-18; each series page publishes the full ingredient lists of its products under the heading 全成分表示, so a record's source URL is its series page. 81 records are registered (42 quasi-drugs whose lists separate the designated active ingredients under 有効成分 from その他の成分, stored separately). Twelve products whose published lists have fewer than 13 ingredients, sets and tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
   "アスタリフト公式": "Manufacturer official Japanese online shop (FUJIFILM Beauty & Healthcare Online, Fujifilm; h-jp.fujifilm.com) directly opened and checked on 2026-11-18; the ASTALIFT product list was enumerated and every single product page was checked; each product page publishes its full ingredient list under the heading 全成分. 37 records are registered (12 quasi-drugs whose lists separate the designated active ingredients under 有効成分 from the other ingredients, stored separately). Nine pages whose ingredient sections were not exposed to text extraction were read in the live browser. One product whose published list has fewer than 13 ingredients (Cleansing Oil, 12), sets, trial kits, inner-care foods and supplements, and tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
-  "ベネフィーク公式": "Manufacturer official Japanese brand site (BENEFIQUE official brand site, Shiseido; shiseido.co.jp/benefique) directly opened and checked in the live browser on 2026-11-18; the product list was enumerated (42 single products) and each product page publishes its full ingredient list under the heading 全成分 inside a collapsed section that was expanded in the live browser. 48 records are registered (21 quasi-drugs whose designated active ingredients are marked with * in the published list and stored separately). Type and color variants published with separate lists are separate records; variants sharing one published list are one record. Four supplement/food products, the hair color kit (a set product including tools), and two cotton tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked."
+  "ベネフィーク公式": "Manufacturer official Japanese brand site (BENEFIQUE official brand site, Shiseido; shiseido.co.jp/benefique) directly opened and checked in the live browser on 2026-11-18; the product list was enumerated (42 single products) and each product page publishes its full ingredient list under the heading 全成分 inside a collapsed section that was expanded in the live browser. 48 records are registered (21 quasi-drugs whose designated active ingredients are marked with * in the published list and stored separately). Type and color variants published with separate lists are separate records; variants sharing one published list are one record. Four supplement/food products, the hair color kit (a set product including tools), and two cotton tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
+  "KANEBO公式": "Manufacturer official shop product pages (global.kanebo.com/ja) directly opened and checked one by one on 2026-11-18. KANEBO publishes no full ingredient lists; the feature sections of each product page list the main ingredients only (designated active ingredients for quasi-drugs, plus the constituent ingredients of named complex ingredients). 43 products with such a listing are registered as main-ingredients-only records (no flower is generated); 27 products publish no ingredient listing at all and are not registered. Where a page paired a common name with the official display name, the display name was recorded. No JAN, physical label, or current lot checked."
  },
  "amazonAutomatedCollection": false,
- "productTitleCandidates": 1022,
+ "productTitleCandidates": 1065,
  "donkiExplicitFullProductRecords": 5,
  "donkiUnverifiedIngredientLists": 3,
  "records": [
@@ -47746,6 +47748,1090 @@
    "sourceCheckedOn": "2026-11-18",
    "sourceSnapshotType": "current-page",
    "note": "Full ingredient list published under the heading 全成分 on the product page of the BENEFIQUE official brand site (Shiseido) (checked 2026-11-18); stored exactly as listed. No JAN, sales name, physical label, or current lot checked."
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "メロウ オフ ヴェイル",
+   "listedVolume": "160g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167525173",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 8,
+   "ingredients": [
+    "ポリクオタニウム-51",
+    "PEG-400",
+    "ポリクオタニウム-7",
+    "グリセリン",
+    "トコフェロール",
+    "ヨーグルト液（牛乳）",
+    "アルテア根エキス",
+    "ブクリョウタケエキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。特長欄POINT3の複合保湿成分ハイドロSTの構成成分と単独配合成分を掲載順に統合し、重複（グリセリン）を除いた。通称併記（ビタミンE、ヨーグルトエキス等）は表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "インスタント オフ オイル",
+   "listedVolume": "180mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167632611",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 5,
+   "ingredients": [
+    "イソドデカン",
+    "オリーブ果実油",
+    "ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）",
+    "カニナバラ果実油",
+    "トリエチルヘキサノイン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。INGREDIENTS欄の複合洗浄成分リリーシングオイルコンプレックスと複合保湿成分の構成成分。通称併記（フェザリーライトオイル、オリーブオイル、ローズヒップオイル）は表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "エンリッチド オフ クリーム",
+   "listedVolume": "130g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167827406",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）",
+    "分岐脂肪酸（C10-40）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "ジプロピレングリコール（DPG）"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。配合洗浄成分と複合保湿成分ベビーソフトオイルコンプレックスの構成成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "スクラビング マッド ウォッシュ",
+   "listedVolume": "130g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167640234",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 3,
+   "ingredients": [
+    "モロッコ溶岩クレイ",
+    "グリセリン",
+    "カニナバラ果実油"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。POINT1の洗浄成分とPOINT3の複合保湿成分。ローズヒップオイルは表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "コンフォート ストレッチィ ウォッシュⅡ",
+   "listedVolume": "130g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167694459",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 10,
+   "ingredients": [
+    "ポリクオタニウム-51",
+    "PEG-400",
+    "ポリクオタニウム-7",
+    "PEG-180",
+    "ポリグリセリル-4ラウリルエーテル",
+    "分岐脂肪酸（C10-40）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "レモン果実エキス",
+    "ハマメリス葉エキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分コンフォートストレッチィハイドレーター、リン脂質類似複合体、硬水対策成分、ベビーソフトオイルコンプレックスの構成成分を掲載順に統合し、重複を除いた。レモンエキストラリキッドは表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "クラリファイング パウダー ウォッシュ",
+   "listedVolume": "0.4g×32個",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cleansing/p/4973167640210",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 6,
+   "ingredients": [
+    "プロテアーゼ",
+    "リパーゼ",
+    "ラウロイルグルタミン酸Na",
+    "カニナバラ果実エキス",
+    "アンズ果汁",
+    "カラギーナン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。ホワイトパウダーの酵素・洗浄成分とピンクパウダーの保湿成分。通称併記（ローズヒップエキス、アプリコットエキス）は表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "リプレニッシング チャームズ",
+   "listedVolume": "110mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167024904",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 18,
+   "ingredients": [
+    "分岐脂肪酸（Ｃ10-40）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "セチルＰＧヒドロキシエチルパルミタミド",
+    "BG",
+    "アシタバ葉／茎エキス",
+    "セイヨウサンザシ果実エキス",
+    "エチルグルコシド",
+    "オレンジ果汁",
+    "乳酸桿菌／セイヨウナシ果汁発酵液",
+    "アセチルグルコサミン",
+    "ビターオレンジ果皮エキス",
+    "ワレモコウエキス",
+    "メチルセリン",
+    "コメヌカエキス",
+    "酵母エキス",
+    "ハマメリス葉エキス",
+    "チョウジエキス",
+    "ヒメフウロエキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。胎脂着想成分と複合保湿成分（リプレニッシングCCコンプレックス、リプレニッシングHAコンプレックス、その他）の構成成分を掲載順に統合し、重複（BG）を除いた。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ジェネレイティング エッセンシャルズ",
+   "listedVolume": "168mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167019344",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 16,
+   "ingredients": [
+    "分岐脂肪酸（Ｃ１０-４０）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "セチルＰＧヒドロキシエチルパルミタミド",
+    "ＤＰG",
+    "ユーカリ葉エキス",
+    "アシタバ葉/茎エキス",
+    "ヒバマタエキス",
+    "ユキノシタエキス",
+    "オレンジ果汁",
+    "モモ葉エキス",
+    "アセチルグルコサミン",
+    "オランダガラシエキス",
+    "ビターオレンジ果皮エキス",
+    "グリセリン",
+    "ヒメフウロエキス",
+    "BG"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。胎脂着想成分TAISHI Micro-Lipo、厳選成分、複合保湿成分ジェネレイティングコンプレックス等の構成成分を掲載順に統合し、重複を除いた。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "スキン ハーモナイザー",
+   "listedVolume": "180mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167534847",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 12,
+   "ingredients": [
+    "コハク酸ジグリコールグアニジン",
+    "キシリトール",
+    "アミジノプロリン",
+    "ローマカミツレ花エキス",
+    "アスナロ枝エキス",
+    "ユーカリ葉エキス",
+    "グリセリン",
+    "ウォータークレス（オランダガラシエキス）",
+    "アクアグルコシド（エチルグルコシド）",
+    "ハウチワマメエキス（加水分解シロバナル―ピンタンパク）",
+    "ホホバ種子油",
+    "BG"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分ケラトモイスチャーコンプレックスとグリーンハーバルコンプレックス、その他の保湿成分。全3種（180mL、320mL、38mL）で同一掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "オン スキン エッセンス V",
+   "listedVolume": "100mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167936498",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 3,
+   "ingredients": [
+    "ビルベリー葉エキス",
+    "ハウチワマメエキス（加水分解シロバナルーピンタンパク）",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。INGREDIENTS欄の配合保湿成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "オン スキン エッセンス Ｆ",
+   "listedVolume": "125mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167936535",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 3,
+   "ingredients": [
+    "ビルベリー葉エキス",
+    "ウォータークレス（オランダガラシエキス）",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。配合保湿成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ラディアント スキン リファイナー",
+   "listedVolume": "200mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167090411",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 9,
+   "ingredients": [
+    "ジプロピレングリコール（DPG）",
+    "メチルグルセス-10",
+    "ヒアルロン酸Na",
+    "アクアグルコシド（エチルグルコシド）",
+    "ウォータークレス（オランダガラシエキス）",
+    "アルテア根エキス",
+    "ビターオレンジ果皮エキス",
+    "ヒメフウロエキス",
+    "ヒバマタエキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。保湿＆角質ふき取り成分とその他の保湿成分。高分子ヒアルロン酸、褐藻エキスは表示名称で記録。本体200mL／レフィル170mLで同一掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "モイスチャー フロウ ローション／モイスチャー フロウ リッチ ローション",
+   "listedVolume": "180mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167158845",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "ビワ葉エキス",
+    "アクアグルコシド(エチルグルコシド)",
+    "ウォータークレス(オランダカラシエキス)",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。ハイドラボタニカルコンプレックスの構成成分。2製品が同じページで同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "バウンシング エマルジョン／バウンシング リッチ エマルジョン",
+   "listedVolume": "100mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167158890",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "ビワ葉エキス",
+    "アクアグルコシド(エチルグルコシド)",
+    "ウォータークレス(オランダカラシエキス)",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。ハイドラボタニカルコンプレックスの構成成分。2製品が同じページで同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ ローション",
+   "listedVolume": "150mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167324714",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 7,
+   "ingredients": [
+    "塩化レボカルニチン",
+    "グリチルリチン酸ジカリウム",
+    "西洋ナシ果汁発酵液",
+    "ウォータークレス(オランダカラシエキス)",
+    "アクアグルコシド(エチルグルコシド)",
+    "ヒメフウロエキス",
+    "グリセリン(濃グリセリン)"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分欄とクリアボタニカルコンプレックスの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "塩化レボカルニチン",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ エマルジョン",
+   "listedVolume": "100mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/lotion/p/4973167324370",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 8,
+   "ingredients": [
+    "塩化レボカルニチン",
+    "グリチルリチン酸ジカリウム",
+    "西洋ナシ果汁発酵液",
+    "ウォータークレス(オランダカラシエキス)",
+    "アクアグルコシド(エチルグルコシド)",
+    "ヒメフウロエキス",
+    "グリセリン(濃グリセリン)",
+    "メチルセリン(N-メチル-L-セリン)"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分欄とボタニカルコンプレックスMCの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "塩化レボカルニチン",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "リペアリング エナジーズ",
+   "listedVolume": "50g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167024959",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 19,
+   "ingredients": [
+    "塩化レボカルニチン",
+    "L-アスコルビン酸 ２-グルコシド",
+    "グリチルリチン酸ジカリウム",
+    "長鎖分岐脂肪酸コレステリル",
+    "マカデミアナッツ油脂肪酸フィトステリル",
+    "ヘキサデシロキシＰＧヒドロキシエチルヘキサデカナミド",
+    "濃グリセリン",
+    "アーティチョークエキス",
+    "セイヨウニワトコエキス",
+    "チョウジ抽出液",
+    "セイヨウナシ果汁発酵液",
+    "ゲットウ葉エキス",
+    "ヒメフウロエキス",
+    "Ｎ-メチル-Ｌ-セリン",
+    "ワレモコウエキス",
+    "ゲンノショウコエキス",
+    "水溶性ショウキョウエキス（K）",
+    "人参エキス",
+    "DPG"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分は「ビタミンC誘導体（L-アスコルビン酸 ２-グルコシド）」の併記から正式名称で記録。胎脂着想成分TAISHI Lipo a（基剤／保湿）と複合保湿成分リペアコンプレックスの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "塩化レボカルニチン",
+     "marker": "＊"
+    },
+    {
+     "name": "L-アスコルビン酸 ２-グルコシド",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "クリーム イン デイⅡ リミテッド サイズａ",
+   "listedVolume": "20g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167081778",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 6,
+   "ingredients": [
+    "ニコチン酸アミド",
+    "グリチルリチン酸ジカリウム",
+    "長鎖分岐脂肪酸コレステリル",
+    "マカデミアナッツ油脂肪酸フィトステリル",
+    "Ｎ-ステアロイルジヒドロスフィンゴシン",
+    "濃グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品（内容品はクリーム イン デイII）。限定サイズのページの掲載どおりで、複合保湿成分チャージインデイの掲載はこのページにはない。",
+   "designatedActiveIngredients": [
+    {
+     "name": "ニコチン酸アミド",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "クリーム イン デイⅡ",
+   "listedVolume": "40g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167710456",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 10,
+   "ingredients": [
+    "ニコチン酸アミド",
+    "グリチルリチン酸ジカリウム",
+    "長鎖分岐脂肪酸コレステリル",
+    "マカデミアナッツ油脂肪酸フィトステリル",
+    "Ｎ-ステアロイルジヒドロスフィンゴシン",
+    "濃グリセリン",
+    "海藻エキス-１",
+    "天然ビタミンE",
+    "アルテアエキス",
+    "BG"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。厳選成分欄の有効成分、擬似胎脂成分TAISHI Complex（基剤／保湿）、複合保湿成分チャージインデイの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "ニコチン酸アミド",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "クリーム イン ナイトⅡ",
+   "listedVolume": "50g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167710463",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 14,
+   "ingredients": [
+    "ナイアシンアミド",
+    "長鎖分岐脂肪酸コレステリル",
+    "マカデミアナッツ油脂肪酸フィトステリル",
+    "Ｎ-ステアロイルジヒドロスフィンゴシン",
+    "濃グリセリン",
+    "海藻エキス-１",
+    "天然ビタミンE",
+    "トウヒエキス",
+    "テンチャエキス",
+    "BG",
+    "N-メチル-L-セリン",
+    "ワレモコウエキス",
+    "水溶性ショウキョウエキス（K）",
+    "DPG"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。厳選成分欄の有効成分、擬似胎脂成分TAISHI Complex（基剤／保湿）、複合保湿成分チャージインナイトとHAモイスチャーリフトEXの構成成分。全2種（50g、30g）で同一掲載。",
+   "designatedActiveIngredients": [
+    {
+     "name": "ナイアシンアミド",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "スキン コンダクター",
+   "listedVolume": "40g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167024973",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 21,
+   "ingredients": [
+    "セチルＰＧヒドロキシエチルパルミタミド",
+    "ハウチワマメエキス（加水分解シロバナルーピンタンパク）",
+    "エチルグルコシド",
+    "スイカズラ花エキス",
+    "アセチルグルコサミン",
+    "アスナロ枝エキス",
+    "フィトステロールズ",
+    "コレステロール",
+    "ホホバ種子油",
+    "メチルセリン",
+    "BG",
+    "ペンチレングリコール",
+    "アンズ果汁",
+    "サトウキビエキス",
+    "モモ葉エキス",
+    "ビターオレンジ果皮エキス",
+    "ウォータークレス（オランダガラシエキス）",
+    "ワレモコウエキス",
+    "コメヌカエキス",
+    "ユキノシタエキス",
+    "セイヨウサンザシ果実エキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分バリアモイスチャーコンプレックス／擬似胎脂成分（基剤／保湿）とその他の複合保湿成分の構成成分を掲載順に統合し、重複（BG）を除いた。セラミド機能成分は実名で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "フレッシュ デイ クリーム",
+   "listedVolume": "40mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167158968",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "アルテア根エキス",
+    "クリサンテルムインジクムエキス",
+    "フカスセラツスエキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。モーニングボタニカルコンプレックスの構成成分。ゴールデンカモミールエキスは表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ナイト リピッド ウェア",
+   "listedVolume": "40mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167158944",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "テンチャエキス",
+    "グリチルリチン酸2K",
+    "ビターオレンジ果皮エキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。ナイトボタニカルコンプレックスの構成成分。甜茶エキス、グリチルリチン酸塩は表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ クリーム",
+   "listedVolume": "40mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/cream/p/4973167324356",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 12,
+   "ingredients": [
+    "塩化レボカルニチン",
+    "ニコチン酸dl-α-トコフェロール",
+    "グリチルリチン酸ジカリウム",
+    "西洋ナシ果汁発酵液",
+    "ウォータークレス(オランダカラシエキス)",
+    "アクアグルコシド(エチルグルコシド)",
+    "ヒメフウロエキス",
+    "グリセリン(濃グリセリン)",
+    "メチルセリン(N-メチル-L-セリン)",
+    "チョウジエキス(チョウジ抽出液)",
+    "月桃葉エキス",
+    "ゼニアオイ花エキス(ゼニアオイエキス)"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分欄とボタニカルコンプレックスECの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "塩化レボカルニチン",
+     "marker": "＊"
+    },
+    {
+     "name": "ニコチン酸dl-α-トコフェロール",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸ジカリウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "フュージョニング ソリューション ９０ｍＬ",
+   "listedVolume": "90mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167014929",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 13,
+   "ingredients": [
+    "セチルPGヒドロキシエチルパルミタミド",
+    "セリン",
+    "スクロース",
+    "塩化Na",
+    "ユーカリ葉エキス",
+    "モモ葉エキス",
+    "ローマカミツレ花エキス",
+    "チョウジエキス",
+    "ローズマリー葉エキス",
+    "フィトスフィンゴシン",
+    "ユキノシタエキス",
+    "ゲンノショウコ花/葉/茎エキス",
+    "オタネニンジン根エキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。POINT1のセラミド機能成分とPOINT2の複合保湿成分。図参照表記（※、図番号）は実名に置き換えて記録。60mLと同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ヴェイル オブ デイ",
+   "listedVolume": "40g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167029497",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 5,
+   "ingredients": [
+    "チャ葉エキス",
+    "ビルベリー葉エキス",
+    "ヒアルロン酸Na",
+    "アルテア根エキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。配合保湿成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "フュージョニング ソリューション",
+   "listedVolume": "60mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167550212",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 13,
+   "ingredients": [
+    "セチルPGヒドロキシエチルパルミタミド",
+    "セリン",
+    "スクロース",
+    "塩化Na",
+    "ユーカリ葉エキス",
+    "モモ葉エキス",
+    "ローマカミツレ花エキス",
+    "チョウジエキス",
+    "ローズマリー葉エキス",
+    "フィトスフィンゴシン",
+    "ユキノシタエキス",
+    "ゲンノショウコ花/葉/茎エキス",
+    "オタネニンジン根エキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。POINT1のセラミド機能成分とPOINT2の複合保湿成分。図参照表記は実名に置き換えて記録。９０ｍＬと同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ ファースト セラムａ",
+   "listedVolume": "60mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167090435",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "ビワ葉エキス",
+    "アクアグルコシド（エチルグルコシド）",
+    "ウォータークレス（オランダカラシエキス）",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分ハイドラボタニカルコンプレックスの構成成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ドロッピング オイル",
+   "listedVolume": "40mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167938089",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 6,
+   "ingredients": [
+    "スクワラン",
+    "マカデミア種子油",
+    "ホホバ種子油",
+    "オリーブ果実油",
+    "分岐脂肪酸（C10-40）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。エモリエント処方の液状油剤とペースト油剤。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "リフト セラムa",
+   "listedVolume": "50mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167827482",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 8,
+   "ingredients": [
+    "ガンマ-アミノ酪酸",
+    "ニコチン酸dl-α-トコフェロール",
+    "グリチルリチン酸モノアンモニウム",
+    "ゼニアオイ花エキス（ゼニアオイエキス）",
+    "月桃葉エキス（ゲットウ葉エキス）",
+    "米ヌカエキス",
+    "メチルセリン（N-メチル-L-セリン）",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分欄と複合保湿成分の構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "ガンマ-アミノ酪酸",
+     "marker": "＊"
+    },
+    {
+     "name": "ニコチン酸dl-α-トコフェロール",
+     "marker": "＊"
+    },
+    {
+     "name": "グリチルリチン酸モノアンモニウム",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "イルミネイティング セラムａ",
+   "listedVolume": "50mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167097007",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 6,
+   "ingredients": [
+    "カモミラET",
+    "塩化レボカルニチン",
+    "セイヨウニワトコエキス",
+    "チョウジ抽出液",
+    "海藻エキス-1",
+    "セージエキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分は「カモミラET」「カルニチン（塩化レボカルニチン）」の掲載から正式名称で記録。複合保湿成分バランスクリアCの構成成分（褐藻エキスは表示名称の海藻エキス-1で記録）。",
+   "designatedActiveIngredients": [
+    {
+     "name": "カモミラET",
+     "marker": "＊"
+    },
+    {
+     "name": "塩化レボカルニチン",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "リンクル リフト セラム",
+   "listedVolume": "20mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/serum/p/4973167865026",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 11,
+   "ingredients": [
+    "ナイアシンアミド",
+    "メチルセリン(N-メチル-L-セリン)",
+    "ワレモコウエキス",
+    "BG",
+    "コメヌカエキス",
+    "ゼニアオイ花エキス(ゼニアオイエキス)",
+    "月桃葉エキス",
+    "甜茶エキス",
+    "ヒメフウロエキス",
+    "ビターオレンジ果皮エキス(トウヒエキス)",
+    "アルテア根エキス(アルテアエキス)"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。医薬部外品。有効成分欄とボタニカルコンプレックスWLの構成成分。",
+   "designatedActiveIngredients": [
+    {
+     "name": "ナイアシンアミド",
+     "marker": "＊"
+    }
+   ]
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ラッピング ボディ ポリッシャー",
+   "listedVolume": "220g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/specialcare/p/4973167697818",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 13,
+   "ingredients": [
+    "モロッコ溶岩クレイ",
+    "結晶セルロース",
+    "ワセリン",
+    "セルロース",
+    "コーンスターチ",
+    "（フッ化／水酸化／酸化）／（Mg／K／ケイ素）",
+    "（マレイン酸／ビニルアルコール）コポリマーNa",
+    "分岐脂肪酸（C10-40）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "カニナバラ果実油",
+    "トコフェロール",
+    "レモン果実エキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合洗浄成分（スクラブ類）と複合保湿成分ベビーソフトオイルコンプレックス等の構成成分を掲載順に統合し、重複（セルロース）を除いた。通称併記（ローズヒップオイル、ビタミンE、レモンエキストラリキッド）は表示名称で記録。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "スマイル パフォーマー",
+   "listedVolume": "33mL×4枚入",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/specialcare/p/4973167839027",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 5,
+   "ingredients": [
+    "ゼニアオイ花エキス",
+    "月桃葉エキス（ゲットウ葉エキス）",
+    "コメヌカエキス",
+    "メチルセリン",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分の構成成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "グローバル スキン プロテクターａ",
+   "listedVolume": "60g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/specialcare/p/4973167662472",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 2,
+   "ingredients": [
+    "ナイアシンアミド",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。配合保湿成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ＡＷ マッサージ クリーム",
+   "listedVolume": "100mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/skincare/specialcare/p/4973167283813",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 3,
+   "ingredients": [
+    "アルテア根エキス",
+    "ブクリョウタケエキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。ボタニカルコンプレックスPAの構成成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "デザイニングカラーリクイド",
+   "listedVolume": "5.6g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/concealer/p/4973167009970",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 2,
+   "ingredients": [
+    "ヒアルロン酸Na",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。美容液成分（保湿）。全6色で同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ライブリースキン ウェアⅡ",
+   "listedVolume": "30g",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/basemake/foundation/p/4973167017234",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 4,
+   "ingredients": [
+    "分岐脂肪酸（Ｃ１０-４０）コレステロールエステルズ",
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "ナイアシンアミド",
+    "ヒアルロン酸Ｎａ"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分TAISHI HN Compoundsの構成成分。全10色で同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ プライマー",
+   "listedVolume": "27mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/basemake/primer/p/4973167860519",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 5,
+   "ingredients": [
+    "西洋ナシ果汁発酵液",
+    "ウォータークレス(オランダカラシエキス)",
+    "アクアグルコシド(エチルグルコシド)",
+    "ヒメフウロエキス",
+    "グリセリン"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。クリアボタニカルコンプレックスの構成成分。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ザ クリームファンデーション",
+   "listedVolume": "30mL",
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/basemake/foundation/p/4973167860991",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 5,
+   "ingredients": [
+    "西洋ナシ果汁発酵液",
+    "アクアグルコシド(エチルグルコシド)",
+    "グリセリン",
+    "ウォータークレス(オランダカラシエキス)",
+    "ヒメフウロエキス"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。クリアボタニカルコンプレックスの構成成分。全6色で同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ルージュスタードラマ",
+   "listedVolume": null,
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/colormake/lips/p/4973167068830",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 7,
+   "ingredients": [
+    "ヒアルロン酸Na",
+    "ホホバ種子油",
+    "水添ポリイソブテン",
+    "ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）",
+    "デカイソステアリン酸ポリグリセリル-10",
+    "トリポリヒドロキシステアリン酸ジペンタエリスリチル",
+    "ラウロイルグルタミン酸ジ（オクチルドデシル／フィトステリル／ベヘニル）"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分インテリジェントモイストコンパウンドHの構成成分。全9色で同一の掲載。ページ表記は「デカイソステアリン駿ポリグリセリル-1 0」となっているが、同ブランドの並行商品（ルージュスターブリーズ等）の掲載に基づき「デカイソステアリン酸ポリグリセリル-10」に復元した。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ルージュスターブリーズ",
+   "listedVolume": null,
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/colormake/lips/p/4973167051597",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 6,
+   "ingredients": [
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "水添ポリイソブテン",
+    "ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）",
+    "デカイソステアリン酸ポリグリセリル-10",
+    "トリポリヒドロキシステアリン酸ジペンタエリスリチル",
+    "ラウロイルグルタミン酸ジ（オクチルドデシル／フィトステリル／ベヘニル）"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分インテリジェントモイストコンパウンド（胎脂着想エッセンス、とろみオイル4種、半固形オイル）の構成成分。全11色で同一の掲載。"
+  },
+  {
+   "brandName": "KANEBO",
+   "productName": "ルージュスクラブメルティング",
+   "listedVolume": null,
+   "source": "KANEBO公式",
+   "sourceUrl": "https://global.kanebo.com/ja/categories/colormake/lips/p/4973167550076",
+   "sourceCheckedOn": "2026-11-18",
+   "ingredientEvidence": "manufacturer-official-main-ingredients-listed",
+   "ingredientStatus": "main-ingredients-only",
+   "separator": "、",
+   "ingredientCount": 7,
+   "ingredients": [
+    "マカデミアナッツ脂肪酸フィトステリル",
+    "水添ポリイソブテン",
+    "ラウロイルグルタミン酸ジ（フィトステリル／オクチルドデシル）",
+    "デカイソステアリン酸ポリグリセリル-10",
+    "トリポリヒドロキシステアリン酸ジペンタエリスリチル",
+    "ラウロイルグルタミン酸ジ（オクチルドデシル／フィトステリル／ベヘニル）",
+    "スクロース"
+   ],
+   "notes": "主な成分のみ（全成分ではありません）。KANEBO公式サイトの商品ページの特長欄に掲載された主な成分（有効成分・複合成分の構成成分など）のみを転記したもので、全成分リストは公式ページに掲載されていない。複合保湿成分インテリジェントモイストコンパウンドの構成成分とスクラブ剤。全3色で同一の掲載。"
   }
  ],
  "limitations": [
@@ -47787,7 +48873,8 @@
   "excel batch (2026-11-18): Eye Planner G04 is not registered because its published list has 12 ingredients; Glaze Balm Lip GB07 is not registered because store sales have ended and it is sold out online. For Extra Rich Serum in Powder, colors EX02-EX04 were not checked individually (EX01 and EX05 are registered); for Ethereal Serum Concealer, color ER02 was not checked individually (ER01 and ER03 are registered). Sets and tools are out of scope.",
   "NOV batch (2026-11-18): 12 products are not registered because their published lists have fewer than 13 ingredients: NOV II Face Lotion (10), NOV A Acne Soap (12), NOV A Acne Foam 70g (9-10), NOV A Acne Foam 140g (9-10), NOV A Acne Lotion (11), NOV Baby Foaming Soap (12), Soap D (12), Liquid Soap D (8), Foaming Soap D (9), Oligomarine Lotion (9-10), Hair Shampoo D (11), and NOV Plus Clear Lotion GA (10). Sets and tools are out of scope.",
   "ASTALIFT batch (2026-11-18): Cleansing Oil is not registered because its published list has 12 ingredients. Sets, trial kits, inner-care foods/supplements and tools are out of scope.",
-  "BENEFIQUE batch (2026-11-18): the four supplement/food products and the hair color kit (a set product that includes tools) are not registered; the two cotton products are tools and out of scope."
+  "BENEFIQUE batch (2026-11-18): the four supplement/food products and the hair color kit (a set product that includes tools) are not registered; the two cotton products are tools and out of scope.",
+  "KANEBO (checked 2026-11-18): the manufacturer official shop publishes no full ingredient lists. 43 products whose feature sections list main ingredients are registered as main-ingredients-only records; 27 products publish no ingredient listing (cleansing toner, creamy wash, mist UV, several base-make products, most colour makeup) and were not registered. Trial sets, kits, subscription deliveries and tools were excluded."
  ],
  "manufacturerOfficialFullProductRecords": 883,
  "totalExplicitFullProductRecords": 921,
