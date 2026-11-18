@@ -69,8 +69,8 @@
   "Anua日本公式": "Manufacturer's official Japan site (anuashop.jp, operated by The Founders JAPAN) directly opened and checked in the live browser on 2026-11-19; product pages publish the full Japanese ingredient list in an accordion headed 全成分 or 成分. 5 single products are registered as full-disclosure. The Rice 70 Glow Milky Toner page publishes no ingredient list text and the Azelaic Acid 10 Hyaluron Redness Soothing Serum is not sold on the Japan official channels checked, so neither is registered as a domestic record (both remain only in the Korea-market frame). No JAN, physical label, or current lot checked."
  },
  "amazonAutomatedCollection": false,
- "productTitleCandidates": 1153,
- "donkiExplicitFullProductRecords": 5,
+ "productTitleCandidates": 1154,
+ "donkiExplicitFullProductRecords": 8,
  "donkiUnverifiedIngredientLists": 3,
  "records": [
   {
@@ -699,26 +699,6 @@
    ],
    "ingredientCount": 29,
    "ingredientOrderStatus": "as-listed-by-donki-official"
-  },
-  {
-   "source": "ドンキ公式",
-   "brandName": "情熱価格",
-   "productName": "ワンデイリップ 03",
-   "sourceUrl": "https://www.donki.com/j-kakaku/product/detail.php?item=5184",
-   "ingredientEvidence": "none",
-   "ingredientStatus": "multi-component-ambiguous",
-   "productIdentityVerification": "source-page-title",
-   "reviewReason": "Multiple sales names or formulas on one product page; not merged"
-  },
-  {
-   "source": "ドンキ公式",
-   "brandName": "情熱価格",
-   "productName": "ワンデイリップ 02",
-   "sourceUrl": "https://www.donki.com/j-kakaku/product/detail.php?item=5183",
-   "ingredientEvidence": "none",
-   "ingredientStatus": "multi-component-ambiguous",
-   "productIdentityVerification": "source-page-title",
-   "reviewReason": "Multiple sales names or formulas on one product page; not merged"
   },
   {
    "source": "VOCE",
@@ -53126,6 +53106,94 @@
    "sourceCheckedOn": "2026-11-19",
    "sourceSnapshotType": "current-page",
    "note": "Full ingredient list as published in the 全成分 image on the medicube official shop (APR JAPAN, apr-japan) product page on Rakuten Ichiba, checked on 2026-11-19; transcribed from the image and stored in published order. The shop is the brand's official storefront on a retailer platform, not the manufacturer's own site. No JAN, physical label, or current lot checked. 楽天公式ショップ商品画像内の「全成分」より転記。43成分。容量は楽天・公式サイトのページ上で確認できなかった（韓国別枠では55ml）。韓国別枠の Triple Collagen Serum 4.0 に対応。"
+  },
+  {
+   "source": "ドンキ公式",
+   "brandName": "情熱価格",
+   "productName": "ワンデイリップ カラー ０２",
+   "sourceUrl": "https://www.donki.com/j-kakaku/product/detail.php?item=5183",
+   "ingredientEvidence": "brand-official-explicit-full-ingredients",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "source-page-title",
+   "ingredients": [
+    "イソドデカン",
+    "エチルカルバミン酸（ビスヒドロキシエトキシプロピルジメチコン／ＩＰＤＩコポリマー）",
+    "（ビニルジメチコン／メチコンシルセスキオキサン）クロスポリマー",
+    "合成フルオロフロゴパイト",
+    "ジステアルジモニウムヘクトライト",
+    "水酸化Ａｌ",
+    "炭酸プロピレン",
+    "トリエトキシカプリリルシラン",
+    "カプリリルグリコール",
+    "酢酸トコフェロール",
+    "エチルヘキシルグリセリン",
+    "酸化チタン",
+    "酸化鉄",
+    "赤２０２",
+    "赤２２６",
+    "青１"
+   ],
+   "ingredientCount": 16,
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "listedVolume": "2mL（カラー側）",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list published under the heading ■全成分 on the Don Quijote official (情熱価格) product page, checked in the live browser on 2026-11-19 and stored exactly as listed. The ワンデイリップ product is a two-part set (color + gloss); each part is registered separately and the parts are never merged. No physical label or current lot checked. Sales name: ド情熱ワンデイリップカラー ０２ (JAN 4549777717439). This record replaces the former multi-component-ambiguous entry for ワンデイリップ 02."
+  },
+  {
+   "source": "ドンキ公式",
+   "brandName": "情熱価格",
+   "productName": "ワンデイリップ カラー ０３",
+   "sourceUrl": "https://www.donki.com/j-kakaku/product/detail.php?item=5184",
+   "ingredientEvidence": "brand-official-explicit-full-ingredients",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "source-page-title",
+   "ingredients": [
+    "イソドデカン",
+    "エチルカルバミン酸（ビスヒドロキシエトキシプロピルジメチコン／ＩＰＤＩコポリマー）",
+    "（ビニルジメチコン／メチコンシルセスキオキサン）クロスポリマー",
+    "合成フルオロフロゴパイト",
+    "ジステアルジモニウムヘクトライト",
+    "水酸化Ａｌ",
+    "炭酸プロピレン",
+    "トリエトキシカプリリルシラン",
+    "カプリリルグリコール",
+    "酢酸トコフェロール",
+    "エチルヘキシルグリセリン",
+    "酸化チタン",
+    "酸化鉄",
+    "赤２０２",
+    "赤２２６",
+    "黄５"
+   ],
+   "ingredientCount": 16,
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "listedVolume": "2mL（カラー側）",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list published under the heading ■全成分 on the Don Quijote official (情熱価格) product page, checked in the live browser on 2026-11-19 and stored exactly as listed. The ワンデイリップ product is a two-part set (color + gloss); each part is registered separately and the parts are never merged. No physical label or current lot checked. Sales name: ド情熱ワンデイリップカラー ０３ (JAN 4549777717446). This record replaces the former multi-component-ambiguous entry for ワンデイリップ 03."
+  },
+  {
+   "source": "ドンキ公式",
+   "brandName": "情熱価格",
+   "productName": "ワンデイリップ グロス クリア",
+   "sourceUrl": "https://www.donki.com/j-kakaku/product/detail.php?item=5183",
+   "ingredientEvidence": "brand-official-explicit-full-ingredients",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "source-page-title",
+   "ingredients": [
+    "ジメチコン",
+    "フェニルトリメチコン",
+    "ジメチコノール",
+    "ジフェニルシロキシフェニルトリメチコン"
+   ],
+   "ingredientCount": 4,
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "listedVolume": "2mL（グロス側）",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list published under the heading ■全成分 on the Don Quijote official (情熱価格) product page, checked in the live browser on 2026-11-19 and stored exactly as listed. The ワンデイリップ product is a two-part set (color + gloss); each part is registered separately and the parts are never merged. No physical label or current lot checked. Sales name: ド情熱ワンデイリップグロス クリア. The gloss list is identical on the 02 and 03 product pages, so it is registered once for both. The published list has only 4 ingredients; the page expressly presents it as the complete ■全成分 list, so it is registered as a complete short list.",
+   "shortListVerifiedComplete": true
   }
  ],
  "limitations": [
@@ -53171,10 +53239,11 @@
   "KANEBO (checked 2026-11-18): the manufacturer official shop publishes no full ingredient lists. 43 products whose feature sections list main ingredients are registered as main-ingredients-only records; 27 products publish no ingredient listing (cleansing toner, creamy wash, mist UV, several base-make products, most colour makeup) and were not registered. Trial sets, kits, subscription deliveries and tools were excluded.",
   "est (checked 2026-11-18): 75 current single products are registered (68 from My Kao Mall product pages, 7 from the est official online shop for products with no usable My Kao Mall page). Not registered: SF est Essence Wash and The Cream TR main unit publish no ingredient list (the Cream TR refill list was not carried over to the main unit); Point Makeup Remover (9 ingredients) and Long Lasting Loose Powder Lucent (8 ingredients) fall below the 13-ingredient minimum for full-disclosure records. Discontinued and to-be-discontinued products, subscription duplicates, sets/kits and tools were excluded. For the limited-edition Transphere Eye Color EX and Liquid Rouge EX, only one shade list was checked and registered; other shades may differ.",
   "SKIN1004 (checked 2026-11-19): 3 single products are registered from the brand's official Rakuten storefront. The Hyalu-Cica First Ampoule publishes no full ingredient list on that storefront and is not registered as a domestic record (it remains only in the Korea-market frame). Domestic Japanese lists are registered separately from the Korea-market frame and are never merged with it.",
-  "Korea-market frame brands re-checked for domestic Japanese lists (2026-11-19): Anua 5 single products are registered from the manufacturer official Japan site and medicube 5 single products from the brand official Rakuten storefront. BIOHEAL BOH (5 Korea-frame products) publishes no full ingredient list on its Japan official site or Rakuten official shop (the Rakuten pages are overseas-order listings), and BRINGGREEN (6 Korea-frame products) has no current Japan official storefront selling them (the Qoo10 official shop has closed and the Rakuten OLIVE YOUNG official shop does not carry them), so both brands remain only in the Korea-market frame. Domestic Japanese lists are registered separately from the Korea-market frame and are never merged with it."
+  "Korea-market frame brands re-checked for domestic Japanese lists (2026-11-19): Anua 5 single products are registered from the manufacturer official Japan site and medicube 5 single products from the brand official Rakuten storefront. BIOHEAL BOH (5 Korea-frame products) publishes no full ingredient list on its Japan official site or Rakuten official shop (the Rakuten pages are overseas-order listings), and BRINGGREEN (6 Korea-frame products) has no current Japan official storefront selling them (the Qoo10 official shop has closed and the Rakuten OLIVE YOUNG official shop does not carry them), so both brands remain only in the Korea-market frame. Domestic Japanese lists are registered separately from the Korea-market frame and are never merged with it.",
+  "情熱価格 ワンデイリップ (re-checked 2026-11-19): the Don Quijote official product pages publish separate ■全成分 lists for the color and gloss parts, so the two former multi-component-ambiguous records were replaced by three full-disclosure records (カラー ０２, カラー ０３, and the shared グロス クリア, whose 4-ingredient list is expressly the complete list and carries shortListVerifiedComplete). The 徹底テカリコントロール 3 products were re-checked on the same day; their published lists match the stored ones, but the pages head the section ■成分 without an explicit full-list claim, so they remain listed-ingredients-completeness-unverified. The EYELASH series and eye tapes publish materials only (no ingredient list) and remain no-ingredient-list."
  ],
  "manufacturerOfficialFullProductRecords": 963,
- "totalExplicitFullProductRecords": 1009,
+ "totalExplicitFullProductRecords": 1012,
  "yodobashiExplicitFullProductRecords": 33,
  "rakutenExplicitFullProductRecords": 8
 }
