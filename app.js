@@ -1855,6 +1855,58 @@ function showKoreaMarketProduct(record,data){
 }
 const koreaMarketLoadButton=$('koreaMarketLoad');
 if(koreaMarketLoadButton)koreaMarketLoadButton.addEventListener('click',showKoreaMarket);
+async function showMainIngredients(){
+ const body=$('mainIngredientsBody');if(!body)return;
+ body.textContent='読み込んでいます…';
+ try{
+  const catalog=await supplementalSourceCatalog();
+  const records=catalog.records.filter(r=>r.ingredientStatus==='main-ingredients-only');
+  body.replaceChildren();
+  const warn=document.createElement('div');warn.className='boundary';
+  const warnTitle=document.createElement('strong');warnTitle.textContent='主な成分のみ（全成分ではありません）';warn.append(warnTitle);
+  const warnBody=document.createElement('p');warnBody.textContent='メーカー公式ページに「主な成分」として掲載された成分だけを載せています。掲載されていない成分があります。全成分が公開されていない商品のため、花は作りません。';warn.append(warnBody);
+  body.append(warn);
+  if(!records.length){
+   const none=document.createElement('p');none.className='muted';none.textContent='現在、収録している商品はありません。';body.append(none);return;
+  }
+  for(const record of records){
+   const button=document.createElement('button');button.type='button';button.className='secondary';
+   button.textContent=(record.brandName?record.brandName+'｜':'')+record.productName+'（主な成分 '+(record.ingredientCount||(record.ingredients||[]).length)+'件）';
+   button.onclick=()=>showMainIngredientsProduct(record);
+   body.append(button);
+  }
+  const note=document.createElement('p');note.className='muted';
+  note.textContent='出典は各商品の詳細に表示します。現物ラベルは未確認です。全成分の収録件数には混ぜていません。';
+  body.append(note);
+ }catch(error){body.textContent='読み込めませんでした。';}
+}
+function showMainIngredientsProduct(record){
+ const body=$('mainIngredientsBody');if(!body)return;
+ body.replaceChildren();
+ const back=document.createElement('button');back.type='button';back.className='secondary';
+ back.textContent='一覧へ戻る';back.onclick=()=>showMainIngredients();body.append(back);
+ const title=document.createElement('h3');title.textContent=record.productName;body.append(title);
+ const meta=document.createElement('p');meta.className='muted';
+ meta.textContent=(record.brandName?record.brandName+'／':'')+(record.listedVolume?record.listedVolume+'／':'')+'主な成分のみ（全成分ではありません・花は作りません）';
+ body.append(meta);
+ const listTitle=document.createElement('h4');
+ listTitle.textContent='主な成分（'+(record.ingredientCount||(record.ingredients||[]).length)+'件・掲載順）';body.append(listTitle);
+ const list=document.createElement('p');
+ list.textContent=(record.ingredients||[]).join('、');body.append(list);
+ if(record.note){
+  const p=document.createElement('p');p.className='muted';p.textContent=record.note;body.append(p);
+ }
+ if(record.sourceUrl){
+  const sourceP=document.createElement('p');
+  const a=document.createElement('a');a.href=record.sourceUrl;a.target='_blank';a.rel='noopener';
+  a.textContent='出典: '+(record.source||'メーカー公式');sourceP.append(a);
+  const tail=document.createElement('span');
+  tail.textContent='／確認日: '+(record.sourceCheckedOn||'未記録')+'／現物ラベルは未確認です';
+  sourceP.append(tail);body.append(sourceP);
+ }
+}
+const mainIngredientsLoadButton=$('mainIngredientsLoad');
+if(mainIngredientsLoadButton)mainIngredientsLoadButton.addEventListener('click',showMainIngredients);
 function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
  const holder=$('searchResults');holder.replaceChildren();
  const title=document.createElement('h3');
@@ -1864,6 +1916,8 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
  caption.textContent=record.source+'の公開商品情報から収録。'+(
    record.ingredientStatus==='full-disclosure'
     ?'「全成分」と明記された成分名を掲載順に保存しています。商品改良・現物ラベルとの一致は未確認です。'
+    :record.ingredientStatus==='main-ingredients-only'
+     ?'「主な成分」として掲載された成分のみを保存しています。全成分ではありません。'
     :record.ingredientStatus==='listed-ingredients-completeness-unverified'
      ?'「成分」として記載された名前のみを保存。全成分かどうかは確認できません。'
      :'商品名のみの記録です。全成分は未収録で、記載のない成分を推測していません。')+
