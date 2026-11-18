@@ -1853,6 +1853,27 @@ function showKoreaMarketProduct(record,data){
  tail.textContent='／確認日: '+record.sourceCheckedOn+'／現物ラベルは未確認です';
  sourceP.append(tail);body.append(sourceP);
 }
+function showKoreaMarketSearchResults(found,data){
+ const holder=$('searchResults');if(!holder)return;
+ holder.replaceChildren();
+ const heading=document.createElement('p');heading.className='selected-product-state';
+ heading.textContent='韓国市場向け（別枠）の商品が '+found.length+' 件見つかりました。花は作りません。';
+ holder.append(heading);
+ const warn=document.createElement('div');warn.className='boundary';
+ const warnTitle=document.createElement('strong');warnTitle.textContent=data.warning.heading;warn.append(warnTitle);
+ const warnBody=document.createElement('p');warnBody.textContent=data.warning.body;warn.append(warnBody);
+ holder.append(warn);
+ for(const record of found){
+  const button=document.createElement('button');button.type='button';button.className='secondary';
+  button.textContent=record.brandName+'｜'+record.productName+'（'+record.ingredientCount+'成分）';
+  button.onclick=()=>{
+   const section=$('koreaMarket');if(section)section.open=true;
+   showKoreaMarketProduct(record,data);
+   if(section)section.scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+  holder.append(button);
+ }
+}
 const koreaMarketLoadButton=$('koreaMarketLoad');
 if(koreaMarketLoadButton)koreaMarketLoadButton.addEventListener('click',showKoreaMarket);
 async function showMainIngredients(){
@@ -2247,6 +2268,14 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
    }
   }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
  }
+}
+if(!forceOfficial&&!/^https:\/\//.test(q)){
+ try{
+  const korea=await koreaMarketRecords();
+  if(ctx.version!==lookupVersion)return;
+  const found=korea.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
+  if(found.length){showKoreaMarketSearchResults(found,korea);return;}
+ }catch(e){if(ctx.version!==lookupVersion||e.name==='AbortError')return;}
 }
 if(!forceOfficial&&!/^https:\/\//.test(q)&&/^(?:楽天|楽天市場|rakuten|@cosme|アットコスメ)(?:\s*全成分)?$/i.test(q)){
  try{

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "checkedOn": "2026-11-18",
+ "checkedOn": "2026-11-19",
  "completeCoverage": false,
  "sourceIndexUrls": {
   "ドンキ公式": "https://www.donki.com/j-kakaku/product/list.php?cid=24",
@@ -31,7 +31,8 @@
   "アスタリフト公式": "https://h-jp.fujifilm.com/contents/productslist/list-astalift.html",
   "ベネフィーク公式": "https://www.shiseido.co.jp/benefique/product/",
   "KANEBO公式": "https://global.kanebo.com/ja",
-  "est公式": "https://onlineshop.est-online.com/"
+  "est公式": "https://onlineshop.est-online.com/",
+  "楽天公式ショップ": "https://www.rakuten.co.jp/skin1004-official/"
  },
  "sourceEvaluation": {
   "ドンキ公式": "Official product details: full ingredient panel only when explicitly labelled 全成分; otherwise ingredient completeness unknown.",
@@ -62,10 +63,11 @@
   "アスタリフト公式": "Manufacturer official Japanese online shop (FUJIFILM Beauty & Healthcare Online, Fujifilm; h-jp.fujifilm.com) directly opened and checked on 2026-11-18; the ASTALIFT product list was enumerated and every single product page was checked; each product page publishes its full ingredient list under the heading 全成分. 37 records are registered (12 quasi-drugs whose lists separate the designated active ingredients under 有効成分 from the other ingredients, stored separately). Nine pages whose ingredient sections were not exposed to text extraction were read in the live browser. One product whose published list has fewer than 13 ingredients (Cleansing Oil, 12), sets, trial kits, inner-care foods and supplements, and tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
   "ベネフィーク公式": "Manufacturer official Japanese brand site (BENEFIQUE official brand site, Shiseido; shiseido.co.jp/benefique) directly opened and checked in the live browser on 2026-11-18; the product list was enumerated (42 single products) and each product page publishes its full ingredient list under the heading 全成分 inside a collapsed section that was expanded in the live browser. 48 records are registered (21 quasi-drugs whose designated active ingredients are marked with * in the published list and stored separately). Type and color variants published with separate lists are separate records; variants sharing one published list are one record. Four supplement/food products, the hair color kit (a set product including tools), and two cotton tools are not registered. Ingredient names are stored exactly as published. No JAN, physical label, or current lot checked.",
   "KANEBO公式": "Manufacturer official shop product pages (global.kanebo.com/ja) directly opened and checked one by one on 2026-11-18. KANEBO publishes no full ingredient lists; the feature sections of each product page list the main ingredients only (designated active ingredients for quasi-drugs, plus the constituent ingredients of named complex ingredients). 43 products with such a listing are registered as main-ingredients-only records (no flower is generated); 27 products publish no ingredient listing at all and are not registered. Where a page paired a common name with the official display name, the display name was recorded. No JAN, physical label, or current lot checked.",
-  "est公式": "Brand official online shop (est official online shop, Kao; onlineshop.est-online.com) directly opened and checked on 2026-11-18. 7 current single products that have no usable page on My Kao Mall are registered from the ingredient tables published on their product pages (the limited-edition Lotion Jelly, Transphere Eye Color EX (list for EX03), Gel Eyeliner, Transphere Liquid Rouge EX (list for EX01), Noble Bright Eyeshadow (one list common to 01/02), and Transphere Lipstick EX in two lists). The eyebrow pencil N and powder chip N refills on this shop share JAN and ingredient lists with the My Kao Mall records and were not duplicated. No JAN, physical label, or current lot checked."
+  "est公式": "Brand official online shop (est official online shop, Kao; onlineshop.est-online.com) directly opened and checked on 2026-11-18. 7 current single products that have no usable page on My Kao Mall are registered from the ingredient tables published on their product pages (the limited-edition Lotion Jelly, Transphere Eye Color EX (list for EX03), Gel Eyeliner, Transphere Liquid Rouge EX (list for EX01), Noble Bright Eyeshadow (one list common to 01/02), and Transphere Lipstick EX in two lists). The eyebrow pencil N and powder chip N refills on this shop share JAN and ingredient lists with the My Kao Mall records and were not duplicated. No JAN, physical label, or current lot checked.",
+  "楽天公式ショップ": "Brand official storefront on a retailer platform (SKIN1004 OFFICIAL on Rakuten Ichiba, operated for the brand in Japan) directly opened and checked in the live browser on 2026-11-19; product pages publish the full Japanese ingredient list under the heading 全成分 in the PRODUCT INFORMATION table. 3 single products are registered as full-disclosure. The Centella Ampoule list has only 7 ingredients; the page expressly presents it as the complete list, so the record carries shortListVerifiedComplete. The Hyalu-Cica First Ampoule page publishes no ingredient list and is not registered from this source. This is a retailer-platform source, not the manufacturer's own site. No JAN, physical label, or current lot checked."
  },
  "amazonAutomatedCollection": false,
- "productTitleCandidates": 1140,
+ "productTitleCandidates": 1143,
  "donkiExplicitFullProductRecords": 5,
  "donkiUnverifiedIngredientLists": 3,
  "records": [
@@ -52430,6 +52432,105 @@
    "sourceCheckedOn": "2026-11-18",
    "sourceSnapshotType": "current-page",
    "note": "Full ingredient list published on the product page of the est official online shop (onlineshop.est-online.com, checked 2026-11-18); stored exactly as listed.  No JAN, sales name, physical label, or current lot checked. Limited edition, distinct from the regular Transphere Lipstick. EX02 publishes a different list from EX01/EX03."
+  },
+  {
+   "source": "楽天公式ショップ",
+   "brandName": "SKIN1004",
+   "productName": "センテラ アンプル",
+   "sourceUrl": "https://item.rakuten.co.jp/skin1004-official/1003093003/",
+   "ingredientEvidence": "retailer-published-full-ingredients-individually-checked",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "retailer-title-and-product-page",
+   "ingredients": [
+    "水",
+    "グリセリン",
+    "BG",
+    "ツボクサエキス",
+    "1,2-ヘキサンジオール",
+    "セルロースガム",
+    "エチルヘキシルグリセリン"
+   ],
+   "ingredientCount": 7,
+   "ingredientOrderStatus": "as-listed-by-rakuten-official-shop",
+   "listedVolume": "55ml／100ml",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list as published under the heading 全成分 in the PRODUCT INFORMATION table of the SKIN1004 official shop product page on Rakuten Ichiba, checked on 2026-11-19. The shop is the brand's official storefront on a retailer platform, not the manufacturer's own site; the list is stored in published order. No JAN, physical label, or current lot checked. The published list has only 7 ingredients; the page expressly presents it as the complete 全成分 list, so it is registered as a complete short list.",
+   "shortListVerifiedComplete": true
+  },
+  {
+   "source": "楽天公式ショップ",
+   "brandName": "SKIN1004",
+   "productName": "トーンブライトニング カプセルアンプル",
+   "sourceUrl": "https://item.rakuten.co.jp/skin1004-official/1003092996/",
+   "ingredientEvidence": "retailer-published-full-ingredients-individually-checked",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "retailer-title-and-product-page",
+   "ingredients": [
+    "水",
+    "BG",
+    "ナイアシンアミド",
+    "グリセリン",
+    "トラネキサム酸",
+    "1,2-ヘキサンジオール",
+    "ベタイン",
+    "ツボクサエキス",
+    "コーンスターチ",
+    "キサンタンガム",
+    "結晶セルロース",
+    "マンニトール",
+    "パンテノール",
+    "ペンチレングリコール",
+    "エチルヘキシルグリセリン",
+    "ヒドロキシエチルセルロース",
+    "マデカッソシド",
+    "(アクリレーツ/アクリル酸アルキル(C10-30))クロスポリマー",
+    "アルギニン",
+    "水添レシチン",
+    "キシリチルグルコシド",
+    "無水キシリトール",
+    "キシリトール",
+    "グルコース",
+    "3-O-エチルアスコルビン酸",
+    "乳酸桿菌発酵液"
+   ],
+   "ingredientCount": 26,
+   "ingredientOrderStatus": "as-listed-by-rakuten-official-shop",
+   "listedVolume": "50ml／100ml",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list as published under the heading 全成分 in the PRODUCT INFORMATION table of the SKIN1004 official shop product page on Rakuten Ichiba, checked on 2026-11-19. The shop is the brand's official storefront on a retailer platform, not the manufacturer's own site; the list is stored in published order. No JAN, physical label, or current lot checked."
+  },
+  {
+   "source": "楽天公式ショップ",
+   "brandName": "SKIN1004",
+   "productName": "センテラ ライト クレンジングオイル",
+   "sourceUrl": "https://item.rakuten.co.jp/skin1004-official/1003093002/",
+   "ingredientEvidence": "retailer-published-full-ingredients-individually-checked",
+   "ingredientStatus": "full-disclosure",
+   "productIdentityVerification": "retailer-title-and-product-page",
+   "ingredients": [
+    "ステアリン酸エチルヘキシル",
+    "エチルヘキサン酸セチル",
+    "テトラオレイン酸ソルベス-30",
+    "トリ(カプリル酸/カプリン酸)グリセリル",
+    "ベルガモット果実油",
+    "ツボクサエキス",
+    "ホホバ種子油",
+    "オリーブ果実油",
+    "ヒマワリ種子油",
+    "エチルヘキシルグリセリン",
+    "ニオイテンジクアオイ花油",
+    "ダマスクバラ花油",
+    "リモネン",
+    "リナロール"
+   ],
+   "ingredientCount": 14,
+   "ingredientOrderStatus": "as-listed-by-rakuten-official-shop",
+   "listedVolume": "200ml",
+   "sourceCheckedOn": "2026-11-19",
+   "sourceSnapshotType": "current-page",
+   "note": "Full ingredient list as published under the heading 全成分 in the PRODUCT INFORMATION table of the SKIN1004 official shop product page on Rakuten Ichiba, checked on 2026-11-19. The shop is the brand's official storefront on a retailer platform, not the manufacturer's own site; the list is stored in published order. No JAN, physical label, or current lot checked."
   }
  ],
  "limitations": [
@@ -52473,9 +52574,11 @@
   "ASTALIFT batch (2026-11-18): Cleansing Oil is not registered because its published list has 12 ingredients. Sets, trial kits, inner-care foods/supplements and tools are out of scope.",
   "BENEFIQUE batch (2026-11-18): the four supplement/food products and the hair color kit (a set product that includes tools) are not registered; the two cotton products are tools and out of scope.",
   "KANEBO (checked 2026-11-18): the manufacturer official shop publishes no full ingredient lists. 43 products whose feature sections list main ingredients are registered as main-ingredients-only records; 27 products publish no ingredient listing (cleansing toner, creamy wash, mist UV, several base-make products, most colour makeup) and were not registered. Trial sets, kits, subscription deliveries and tools were excluded.",
-  "est (checked 2026-11-18): 75 current single products are registered (68 from My Kao Mall product pages, 7 from the est official online shop for products with no usable My Kao Mall page). Not registered: SF est Essence Wash and The Cream TR main unit publish no ingredient list (the Cream TR refill list was not carried over to the main unit); Point Makeup Remover (9 ingredients) and Long Lasting Loose Powder Lucent (8 ingredients) fall below the 13-ingredient minimum for full-disclosure records. Discontinued and to-be-discontinued products, subscription duplicates, sets/kits and tools were excluded. For the limited-edition Transphere Eye Color EX and Liquid Rouge EX, only one shade list was checked and registered; other shades may differ."
+  "est (checked 2026-11-18): 75 current single products are registered (68 from My Kao Mall product pages, 7 from the est official online shop for products with no usable My Kao Mall page). Not registered: SF est Essence Wash and The Cream TR main unit publish no ingredient list (the Cream TR refill list was not carried over to the main unit); Point Makeup Remover (9 ingredients) and Long Lasting Loose Powder Lucent (8 ingredients) fall below the 13-ingredient minimum for full-disclosure records. Discontinued and to-be-discontinued products, subscription duplicates, sets/kits and tools were excluded. For the limited-edition Transphere Eye Color EX and Liquid Rouge EX, only one shade list was checked and registered; other shades may differ.",
+  "SKIN1004 (checked 2026-11-19): 3 single products are registered from the brand's official Rakuten storefront. The Hyalu-Cica First Ampoule publishes no full ingredient list on that storefront and is not registered as a domestic record (it remains only in the Korea-market frame). Domestic Japanese lists are registered separately from the Korea-market frame and are never merged with it."
  ],
  "manufacturerOfficialFullProductRecords": 958,
- "totalExplicitFullProductRecords": 996,
- "yodobashiExplicitFullProductRecords": 33
+ "totalExplicitFullProductRecords": 999,
+ "yodobashiExplicitFullProductRecords": 33,
+ "rakutenExplicitFullProductRecords": 3
 }
