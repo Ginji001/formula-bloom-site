@@ -81,7 +81,7 @@ function showScopeExcluded(name='このメーカー'){
 }
 const japaneseName=x=>remoteProduct?.englishInciReference?x.name:(japaneseIngredientLabel(x.name,{kind:$('kind').value})||'日本語表示名未確認');
 const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-$('guideParts').innerHTML=groups.map(([,name,title,desc])=>`<div><b>${name}</b><p>${title}<br>${desc}</p></div>`).join('');
+if($('guideParts'))$('guideParts').innerHTML=groups.map(([,name,title,desc])=>`<div><b>${name}</b><p>${title}<br>${desc}</p></div>`).join('');
 function tab(name){lookupAbort?.abort();++lookupVersion;clearTimeout(typingTimer);busy(false);inputMode=name;if(name!=='image')hideOCRReview();else if(ocrRequired)refreshOCRReview();document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===name)));document.querySelectorAll('.pane').forEach(p=>p.hidden=p.id!==name);$('editorDetails').open=name!=='search';}
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 function loadProduct(){invalidate();$('japanConfirmed').checked=true;remoteProduct=null;$('sourceInfo').replaceChildren();official=true;ocrRequired=false;$('ingredients').value=product.ingredients;$('kind').value='cosmetic';$('origin').textContent=product.order;$('error').textContent='';tab('search');run();}
