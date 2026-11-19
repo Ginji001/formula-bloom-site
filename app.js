@@ -1352,8 +1352,7 @@ function addProductFamily(container,family,query='',before=null){
   }
 }
 function presentRegisteredProducts(products,heading='日本向け商品'){
- // 表示方針（2026-11-15）: 全成分の保存版がある商品だけを表示する。商品名のみ・一部成分のみの商品は表示しない。
- products=products.filter(itemHasArchiveInCatalog);
+ // 表示方針（2026-11-19）: 収録している商品は全成分の有無にかかわらずすべて表示する。
  if(!products.length){$('searchResults').textContent='登録商品が見つかりません。';return;}
   const holder=$('searchResults');holder.replaceChildren();
   const families=productFamilies(products);
@@ -1975,7 +1974,7 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
 function showMarketplaceProducts(rows,query){
  const holder=$('searchResults');holder.replaceChildren();
  const heading=document.createElement('p');heading.className='muted';
- heading.textContent='公開掲載の商品名 '+rows.length+'件（成分未確認）。先頭30件を表示。';
+ heading.textContent='公開掲載の商品名 '+rows.length+'件（成分未確認）。';
  holder.append(heading);
  const queryKey=productFold(query);
  const collisionCounts=listingNameCollisionCounts(rows);
@@ -1985,7 +1984,7 @@ function showMarketplaceProducts(rows,query){
    Number(bk.startsWith(queryKey))-Number(ak.startsWith(queryKey))||
    a.name.localeCompare(b.name,'ja');
  });
- for(const row of sorted.slice(0,30)){
+ for(const row of sorted){
   const btn=document.createElement('button');btn.className='product-option';btn.type='button';
   const duplicateCount=collisionCounts.get(listingNameKey(row))||1;
   const listingId=sourceListingId(row);
@@ -2249,7 +2248,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
     findRegisteredProducts(q).map(x=>x.product);
   const existingAliasIds=new Set(extra.map(p=>p.existingCatalogProductId).filter(Boolean));
   const combined=[...new Map([...existing.filter(p=>!existingAliasIds.has(p.id)),...extra].map(p=>[p.id,p])).values()];
-  if(combined.some(itemHasArchiveInCatalog)){presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');return;}
+  if(combined.length){presentRegisteredProducts(combined,'日本国内向け掲載の名称候補');return;}
  }
 }
 if(!forceOfficial&&!/^https:\/\//.test(q)){
@@ -2276,7 +2275,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   }catch(e){if(e.name==='AbortError'||ctx.version!==lookupVersion)return;}
 }
 const allRegisteredMatches=findRegisteredProducts(q);
-const matches=allRegisteredMatches.filter(x=>itemHasArchiveInCatalog(x.product));
+const matches=allRegisteredMatches;
 if(!forceOfficial&&!/^https:\/\//.test(q)&&matches.length){
   if(!instant){
     const candidate=chooseExactRegisteredProduct(q);
