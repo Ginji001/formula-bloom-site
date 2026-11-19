@@ -2154,6 +2154,22 @@ $('registeredBrandDirectory').ontoggle=async()=>{
   }finally{provisionalLoading=false;}
 };
 
+function appendNameOnlyCandidates(q,catalogMatches){
+ const catalogNames=new Set(catalogMatches.map(r=>productFold((r.brandName||'')+' '+r.productName)));
+ const extra=[...supplementalMatchesRC186(q),...nameOnlyMatchesRC187(q),...nameOnlyMatchesRC188(q)]
+  .filter(item=>!catalogNames.has(productFold(item.brand+' '+item.name)));
+ if(!extra.length)return;
+ const holder=$('searchResults');
+ const heading=document.createElement('h3');
+ heading.textContent='名前のみの候補 '+extra.length+'商品（全成分は未収録）';
+ holder.append(heading);
+ for(const item of extra){
+  const b=document.createElement('button');b.type='button';b.className='product-option';
+  b.textContent=item.brand+' '+item.name+' ／ 全成分未収録';
+  b.onclick=()=>selectRegisteredFormula(item);
+  holder.append(b);
+ }
+}
 async function search({instant=false,forceOfficial=false}={}){clearTimeout(typingTimer);const raw=$('query').value.trim();const q=instant?raw:cleanPastedProductName(raw);if(!instant&&raw!==q)$('query').value=q;if(q.length<2)return;
 if(!forceOfficial&&!/^https:\/\//.test(q)){
  const mine=searchMyFormulas(myFormulaStore(),q);
@@ -2179,6 +2195,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
    const matches=supplements.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
    if(namedSource||matches.length){
     showSupplementalSourceOverview(supplements,namedSource?'':q,namedSource);
+    if(!namedSource)appendNameOnlyCandidates(q,matches);
     return;
    }
   }catch(error){if(ctx.version!==lookupVersion||error.name==='AbortError')return;}
