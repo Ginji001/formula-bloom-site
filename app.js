@@ -2010,31 +2010,11 @@ function showSupplementalProduct(record,catalog,query='',sourceFilter=''){
 }
 function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  const holder=$('searchResults');holder.replaceChildren();
- const heading=document.createElement('h3');
- heading.textContent='メーカー公式・ドンキ・美容雑誌｜収録済み商品情報';
- holder.append(heading);
- const info=document.createElement('p');info.className='muted';
- const onlyIndexed=catalog.records.filter(r=>['official-site-web-index-snapshot-direct-live-unverified','official-site-web-index-snapshot'].includes(r.sourceSnapshotType)).length;
- info.textContent='全成分として掲載された保存版'+(catalog.totalExplicitFullProductRecords||catalog.donkiExplicitFullProductRecords)+'商品（メーカー公式掲載'+(catalog.manufacturerOfficialFullProductRecords||0)+'件／ドンキ公式'+catalog.donkiExplicitFullProductRecords+'件）。'+(onlyIndexed?'うち'+onlyIndexed+'件は検索索引保存版で原ページ直接確認不可。':'')+'全成分が未確認の商品は表示していません。';
- holder.append(info);
- const amazon=document.createElement('p');amazon.className='muted';
- amazon.textContent='Amazonは、個別に開いて確認した商品ページの掲載内容のみを収録しています。商品データの自動抽出は実施していません。';
- holder.append(amazon);
- const options=['すべて','MEGLY公式','Torriden日本公式','ドンキ公式','Amazon'];
- const row=document.createElement('div');row.className='ready-formulas-access';
- for(const choice of options){
-  const button=document.createElement('button');button.className='secondary';button.type='button';
-  button.textContent=choice;
-  button.disabled=(choice===sourceFilter||choice==='すべて'&&!sourceFilter);
-  button.onclick=()=>showSupplementalSourceOverview(catalog,'',choice==='すべて'?'':choice);
-  row.append(button);
- }
- holder.append(row);
  const key=productFold(query);
- const entries=catalog.records.filter(r=>r.ingredientStatus==='full-disclosure'&&(!sourceFilter||r.source===sourceFilter)&&
+ const entries=catalog.records.filter(r=>(!sourceFilter||r.source===sourceFilter)&&
   (!key||productFold((r.brandName||'')+' '+r.productName).includes(key)));
  const status=document.createElement('p');status.className='muted';
- status.textContent='一致 '+entries.length+'商品。全成分の保存版がある商品だけを表示しています。';
+ status.textContent='一致 '+entries.length+'商品。';
  holder.append(status);
  const area=document.createElement('div');holder.append(area);
  let limit=0;
@@ -2045,8 +2025,10 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
    const button=document.createElement('button');button.className='product-option';button.type='button';
    const qualifier=record.ingredientStatus==='full-disclosure'
     ?'公式全成分 '+record.ingredientCount+'件'
-    :record.ingredientStatus==='listed-ingredients-completeness-unverified'
-     ?'一部／完結性未確認 '+record.ingredientCount+'件':'全成分未確認';
+    :record.ingredientStatus==='main-ingredients-only'
+     ?'主な成分のみ '+record.ingredientCount+'件'
+     :record.ingredientStatus==='listed-ingredients-completeness-unverified'
+      ?'一部／完結性未確認 '+record.ingredientCount+'件':'全成分未確認';
    button.textContent=(record.brandName?record.brandName+'｜':'')+record.productName+'（'+record.source+'・'+qualifier+'）';
    button.onclick=()=>showSupplementalProduct(record,catalog,query,sourceFilter);
    area.append(button);
@@ -2261,7 +2243,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   try{
    const supplements=await supplementalSourceCatalog();
    if(ctx.version!==lookupVersion)return;
-   const matches=supplements.records.filter(r=>r.ingredientStatus==='full-disclosure'&&productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
+   const matches=supplements.records.filter(r=>productFold((r.brandName||'')+' '+r.productName).includes(productFold(q)));
    if(namedSource||matches.length){
     showSupplementalSourceOverview(supplements,namedSource?'':q,namedSource);
     return;
