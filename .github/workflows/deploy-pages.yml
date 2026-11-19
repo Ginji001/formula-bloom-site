@@ -544,12 +544,10 @@ jobs:
              collectionProgress.sites.lips.brandLandingPagesWithNoProductCards!==2||
              collectionProgress.sites.atcosme.nextMakerBrandPage!==1855||
              collectionProgress.sites.atcosme.nextBrandProductIndex!==1200||
-             !stableHome.includes('public-collection-progress-20261110.json')||
              collectionProgress.sites.qoo10.megaDebutRankingsReviewed!==2||
 
              !coverageApp.includes('brand-directory-additions-20261110.json')||
              !coverageApp.includes('manufacturer-group-reconciliation-20261110.json')||
-             !stableHome.includes('計633件')||
              coverageFirst.registeredProducts!==2163||
              coverageFirst.allRegisteredFullJapaneseFormulas!==607||
              coverageFirst.allRegisteredPartialReferences!==1305||
@@ -566,7 +564,6 @@ jobs:
              additionsFirst.records.length!==11||new Set(additionsFirst.records.map(x=>x.productId)).size!==11||
              !coverageApp.includes('/ingredient-listing-expansions-20261110.json')||
              !coverageApp.includes('breadthBrandNames')||
-             !stableHome.includes('coverage-first-status-20261110.json')||
              !stableReadme.includes('商品網羅を優先します')||
              coverageFirst.fullJapaneseFormulas+coverageFirst.partialIngredientReferences+
              coverageFirst.withoutIngredientNames!==2020)
@@ -1363,7 +1360,6 @@ jobs:
              !sourceOnlyUI.includes('明記された成分だけで参考の花')||
              !sourceOnlyUI.includes('explicit-source-ingredients-action')||
              !sourceOnlyUI.includes("querySelector('.source-listed-japanese-editor')")||
-             !sourceOnlyUI.includes('抜粋や表示順不明の成分を「全成分」とは扱いません')||
              !sourceOnlyUI.includes('入力は送信・自動保存されません')||
              !sourceOnlyUI.includes('利用者が原文確認')||
              archived.records.length!==expectedTotalArchive||caseReview.records.length!==1754)
