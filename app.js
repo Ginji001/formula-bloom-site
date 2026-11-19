@@ -2146,7 +2146,7 @@ $('registeredBrandDirectory').ontoggle=async()=>{
   provisionalLoading=true;
   try{
     const catalog=await getJSON('/api/brands');
-    if(!Array.isArray(catalog.brands)||catalog.brands.length!==147)throw Error('ブランド台帳の件数を確認できません。');
+    if(!Array.isArray(catalog.brands)||catalog.brands.length<147)throw Error('ブランド台帳の件数を確認できません。');
     provisionalBrands=catalog.brands;
     quickRegisteredBrands();
   }catch{
