@@ -2127,7 +2127,7 @@ if(!forceOfficial&&!/^https:\/\//.test(q)){
   /^(Torriden日本公式|トリデン公式)$/i.test(q)?'Torriden日本公式':
   /^(美的|BITEKI)$/i.test(q)?'美的':
   /^(Amazon|アマゾン)$/i.test(q)?'Amazon':'');
- if(namedSource||q.length>=4){
+ if(namedSource||q.length>=3){
   try{
    const supplements=await supplementalSourceCatalog();
    if(ctx.version!==lookupVersion)return;
