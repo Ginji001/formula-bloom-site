@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-11",
+  "scope": "retailer-full-ingredient-facts + supplemental explicitly full ingredients only",
+  "method": "Exact NFKC-normalized brand and product names; compare full listed ingredient sequences. Equal names with different formulas require manual review. Similar names and package variants are not merged.",
+  "sourceEntries": 1270,
+  "distinctExactNameKeys": 1263,
+  "exactNameRepeatGroups": 7,
+  "identicalFormulaGroups": 1,
+  "documentedRevisionGroups": 5,
+  "unresolvedConflictGroups": 1,
+  "divergentFormulaGroups": 6,
+  "cannotAssertUniqueProducts": true,
+  "matches": [
+    {
+      "brandName": "Anua",
+      "productName": "PDRNヒアルロン酸カプセル100 セラム",
+      "status": "different-listed-ingredients-review-required",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Anua公式店",
+          "id": "rakuten-extended:anuajapan/anua00118:0#0",
+          "url": "https://item.rakuten.co.jp/anuajapan/anua00118/",
+          "formulaLabel": "掲載全成分",
+          "ingredientCount": 34
+        },
+        {
+          "source": "Anua日本公式",
+          "id": "supplemental:1145",
+          "url": "https://anuashop.jp/products/side0011",
+          "formulaLabel": "掲載全成分",
+          "ingredientCount": 34
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブインクリームN",
+      "status": "explicit-old-and-renewed-versions",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000004#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000004/",
+          "formulaLabel": "リニューアル",
+          "ingredientCount": 48
+        },
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000004#1",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000004/",
+          "formulaLabel": "旧品",
+          "ingredientCount": 48
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブインスキンブースターN",
+      "status": "explicit-old-and-renewed-versions",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000003#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000003/",
+          "formulaLabel": "リニューアル",
+          "ingredientCount": 34
+        },
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000003#1",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000003/",
+          "formulaLabel": "旧品",
+          "ingredientCount": 31
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブインセラム N",
+      "status": "explicit-old-and-renewed-versions",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:7100084#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/7100084/",
+          "formulaLabel": "商品ページ掲載",
+          "ingredientCount": 36
+        },
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:7100084#1",
+          "url": "https://item.rakuten.co.jp/torriden-official/7100084/",
+          "formulaLabel": "旧品",
+          "ingredientCount": 33
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブイントナーN",
+      "status": "explicit-old-and-renewed-versions",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000001#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000001/",
+          "formulaLabel": "リニューアル",
+          "ingredientCount": 23
+        },
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000001#1",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000001/",
+          "formulaLabel": "旧品",
+          "ingredientCount": 20
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブインマスクN",
+      "status": "explicit-old-and-renewed-versions",
+      "formulaVersions": 2,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000024#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000024/",
+          "formulaLabel": "リニューアル",
+          "ingredientCount": 31
+        },
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000024#1",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000024/",
+          "formulaLabel": "旧品",
+          "ingredientCount": 34
+        }
+      ]
+    },
+    {
+      "brandName": "Torriden",
+      "productName": "ダイブインセラム",
+      "status": "same-listed-ingredients",
+      "formulaVersions": 1,
+      "records": [
+        {
+          "source": "楽天市場・Torriden公式店",
+          "id": "rakuten:torriden:10000041#0",
+          "url": "https://item.rakuten.co.jp/torriden-official/10000041/",
+          "formulaLabel": "商品ページ掲載",
+          "ingredientCount": 33
+        },
+        {
+          "source": "Torriden日本公式",
+          "id": "supplemental:122",
+          "url": "https://torriden.jp/products/no0001",
+          "formulaLabel": "掲載全成分",
+          "ingredientCount": 33
+        }
+      ]
+    }
+  ]
+}
