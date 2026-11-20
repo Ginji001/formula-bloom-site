@@ -1932,13 +1932,7 @@ function showSupplementalSourceOverview(catalog,query='',sourceFilter=''){
  const add=()=>{
   for(const record of entries.slice(limit,limit+40)){
    const button=document.createElement('button');button.className='product-option';button.type='button';
-   const qualifier=record.ingredientStatus==='full-disclosure'
-    ?'公式全成分 '+record.ingredientCount+'件'
-    :record.ingredientStatus==='main-ingredients-only'
-     ?'主な成分のみ '+record.ingredientCount+'件'
-     :record.ingredientStatus==='listed-ingredients-completeness-unverified'
-      ?'一部／完結性未確認 '+record.ingredientCount+'件':'全成分未確認';
-   button.textContent=(record.brandName?record.brandName+'｜':'')+record.productName+'（'+record.source+'・'+qualifier+'）';
+   button.textContent=(record.brandName?record.brandName+'｜':'')+record.productName;
    button.onclick=()=>showSupplementalProduct(record,catalog,query,sourceFilter);
    area.append(button);
   }
