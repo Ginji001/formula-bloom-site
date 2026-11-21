@@ -7,10 +7,10 @@
  "priorIngredientsRegisteredProducts": 2163,
  "supplementalSourceCollection": {
   "scope": "manufacturer-and-donki-full-ingredients-plus-editorial-name-only-candidates",
-  "recordsFromSupplementalSources": 2468,
+  "recordsFromSupplementalSources": 2494,
   "donkiExplicitFullIngredientProducts": 8,
-  "manufacturerOfficialFullIngredientProducts": 2161,
-  "totalExplicitFullIngredientProducts": 2326,
+  "manufacturerOfficialFullIngredientProducts": 2178,
+  "totalExplicitFullIngredientProducts": 2352,
   "donkiUnverifiedCompletenessIngredientListings": 3,
   "editorialNameOnlyReferences": 85,
   "amazonAutomatedCollection": false,
