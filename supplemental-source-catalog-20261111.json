@@ -171,7 +171,7 @@
   "HABA公式": "HABA official online shop product pages publish a full ingredient list, verified in a live browser on 2026-11-21 (3 products). Quasi-drugs separate active and other ingredients. No physical label or current lot checked."
  },
  "amazonAutomatedCollection": false,
- "productTitleCandidates": 2634,
+ "productTitleCandidates": 2635,
  "donkiExplicitFullProductRecords": 8,
  "donkiUnverifiedIngredientLists": 3,
  "records": [
@@ -294,7 +294,8 @@
     "メチルパラベン"
    ],
    "ingredientCount": 108,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -356,7 +357,8 @@
     "グルコシルセラミド（保湿成分）"
    ],
    "ingredientCount": 49,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -480,7 +482,8 @@
     "PEG-60水添ヒマシ油"
    ],
    "ingredientCount": 111,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -540,7 +543,8 @@
     "トコフェロール"
    ],
    "ingredientCount": 47,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -550,7 +554,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -560,7 +565,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -570,7 +576,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -580,7 +587,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -590,7 +598,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -600,7 +609,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -610,7 +620,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -620,7 +631,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -630,7 +642,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -640,7 +653,8 @@
    "ingredientEvidence": "none",
    "ingredientStatus": "no-ingredient-list",
    "productIdentityVerification": "source-page-title",
-   "reviewReason": null
+   "reviewReason": null,
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -691,7 +705,8 @@
     "PEG-60水添ヒマシ油"
    ],
    "ingredientCount": 38,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -725,7 +740,8 @@
     "トコフェロール"
    ],
    "ingredientCount": 21,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -758,7 +774,8 @@
     "シメチコン"
    ],
    "ingredientCount": 20,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "ドンキ公式",
@@ -800,7 +817,8 @@
     "水酸化Ａｌ"
    ],
    "ingredientCount": 29,
-   "ingredientOrderStatus": "as-listed-by-donki-official"
+   "ingredientOrderStatus": "as-listed-by-donki-official",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -809,7 +827,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/2382/113337/241950/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -818,7 +837,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4082/113605/242531/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -827,7 +847,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4082/113606/242532/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -836,7 +857,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/695/113609/242539/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -845,7 +867,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/695/113610/242540/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -854,7 +877,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4018/113611/242541/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -863,7 +887,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/142/113684/242678/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -872,7 +897,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/142/113685/242679/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -881,7 +907,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/25/113386/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -890,7 +917,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/505/113285/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -899,7 +927,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/101/105518/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -908,7 +937,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/39/36078/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -917,7 +947,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/997/112494/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -926,7 +957,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/10/112485/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -935,7 +967,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/292/112927/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -944,7 +977,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/366/106047/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -953,7 +987,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4513/96600/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -962,7 +997,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4068/85236/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -971,7 +1007,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/654/109684/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -980,7 +1017,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/165/108281/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -989,7 +1027,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/3760/112520/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -998,7 +1037,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/3760/112518/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1007,7 +1047,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4776/113271/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1016,7 +1057,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/198/112962/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1025,7 +1067,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/514/109871/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1034,7 +1077,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/739/99648/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1043,7 +1087,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/3592/107142/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1052,7 +1097,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/607/112336/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1061,7 +1107,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/1/111315/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1070,7 +1117,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/514/113061/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1079,7 +1127,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/4667/105965/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "VOCE",
@@ -1088,7 +1137,8 @@
    "sourceUrl": "https://i-voce.jp/cosmetics/98/95772/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1097,7 +1147,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178425/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1119,7 +1170,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178159/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1154,7 +1206,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178701/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1163,7 +1216,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178020/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1172,7 +1226,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177905/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1181,7 +1236,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177904/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1190,7 +1246,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178747/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1199,7 +1256,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178405/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1208,7 +1266,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/175931/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1217,7 +1276,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/179025/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1226,7 +1286,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/163761/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1235,7 +1296,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/172446/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1244,7 +1306,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/167217/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1253,7 +1316,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/164833/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1262,7 +1326,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/162219/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1271,7 +1336,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178846/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1280,7 +1346,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178841/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1289,7 +1356,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177972/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1298,7 +1366,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178619/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1307,7 +1376,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177674/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1316,7 +1386,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/176518/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1325,7 +1396,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/176396/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1334,7 +1406,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/175338/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1343,7 +1416,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/171935/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1352,7 +1426,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177319/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1361,7 +1436,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/176662/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1370,7 +1446,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/176507/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1379,7 +1456,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/168659/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1388,7 +1466,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177894/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1397,7 +1476,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/177024/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1406,7 +1486,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178739/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MAQUIA",
@@ -1415,7 +1496,8 @@
    "sourceUrl": "https://maquia.hpplus.jp/cosme/178308/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1424,7 +1506,8 @@
    "sourceUrl": "https://www.biteki.com/item/1926192/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1433,7 +1516,8 @@
    "sourceUrl": "https://www.biteki.com/item/1791177/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1442,7 +1526,8 @@
    "sourceUrl": "https://www.biteki.com/item/1888234/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1451,7 +1536,8 @@
    "sourceUrl": "https://www.biteki.com/item/1926189/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1460,7 +1546,8 @@
    "sourceUrl": "https://www.biteki.com/item/1714544/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1469,7 +1556,8 @@
    "sourceUrl": "https://www.biteki.com/item/1770118/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1478,7 +1566,8 @@
    "sourceUrl": "https://www.biteki.com/item/1919946/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1487,7 +1576,8 @@
    "sourceUrl": "https://www.biteki.com/item/1729919/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1496,7 +1586,8 @@
    "sourceUrl": "https://www.biteki.com/item/1888289/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1505,7 +1596,8 @@
    "sourceUrl": "https://www.biteki.com/item/1914318/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1514,7 +1606,8 @@
    "sourceUrl": "https://www.biteki.com/item/1926156/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1523,7 +1616,8 @@
    "sourceUrl": "https://www.biteki.com/item/1937840/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1532,7 +1626,8 @@
    "sourceUrl": "https://www.biteki.com/item/1606114/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1541,7 +1636,8 @@
    "sourceUrl": "https://www.biteki.com/item/1926155/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1550,7 +1646,8 @@
    "sourceUrl": "https://www.biteki.com/item/1754594/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "美的",
@@ -1559,7 +1656,8 @@
    "sourceUrl": "https://www.biteki.com/item/1902095/",
    "ingredientEvidence": "none",
    "ingredientStatus": "not-verified-by-editorial-product-list",
-   "productIdentityVerification": "source-page-title"
+   "productIdentityVerification": "source-page-title",
+   "sourceCheckedOn": "2026-11-11"
   },
   {
    "source": "MEGLY公式",
@@ -64119,7 +64217,7 @@
    "sourceUrl": "https://www.kao-kirei.com/ja/item/kbb/lissage-men/4973167582015/",
    "listedVolume": "130ml",
    "ingredientStatus": "full-disclosure",
-   "ingredientEvidence": "manufacturer-official-quasi-drug-active-and-other-ingredients",
+   "ingredientEvidence": "manufacturer-official-full-ingredients-listed",
    "ingredients": [
     "水",
     "DPG",
@@ -82288,7 +82386,7 @@
    "sourceUrl": "https://www.yodobashi.com/product/100000001008633081/",
    "listedVolume": "80g",
    "ingredientStatus": "full-disclosure",
-   "ingredientEvidence": "retailer-published-quasi-drug-active-and-other-ingredients",
+   "ingredientEvidence": "retailer-published-full-ingredients-individually-checked",
    "ingredients": [
     "水",
     "BG",
@@ -83131,7 +83229,7 @@
    "sourceUrl": "https://maison.kose.co.jp/site/vitapuru/g/gWCYN/",
    "listedVolume": "130g",
    "ingredientStatus": "full-disclosure",
-   "ingredientEvidence": "manufacturer-official-quasi-drug-active-and-other-ingredients",
+   "ingredientEvidence": "manufacturer-official-full-ingredients-listed",
    "ingredients": [
     "水",
     "グリセリン",
@@ -83165,13 +83263,13 @@
    "sourceCheckedOn": "2026-11-20"
   },
   {
-   "productName": "ビタプル ダブルアクション リペアセラム 15",
+   "productName": "ビタプル ダブルアクション リペアセラム 15（W高濃度ビタミン美容液）",
    "brandName": "ビタプル",
    "source": "ビタプル公式",
    "sourceUrl": "https://maison.kose.co.jp/site/vitapuru/g/gWCWA/",
    "listedVolume": "40mL",
    "ingredientStatus": "full-disclosure",
-   "ingredientEvidence": "manufacturer-official-quasi-drug-active-and-other-ingredients",
+   "ingredientEvidence": "manufacturer-official-full-ingredients-listed",
    "ingredients": [
     "水",
     "BG",
@@ -83186,7 +83284,20 @@
     "リン酸2Na",
     "リン酸Na",
     "フェノキシエタノール",
-    "カラメル水",
+    "カラメル水"
+   ],
+   "ingredientCount": 14,
+   "sourceCheckedOn": "2026-11-20"
+  },
+  {
+   "productName": "ビタプル ダブルアクション リペアセラム 15（レチノ角質ケア美容液）",
+   "brandName": "ビタプル",
+   "source": "ビタプル公式",
+   "sourceUrl": "https://maison.kose.co.jp/site/vitapuru/g/gWCWA/",
+   "listedVolume": "40mL",
+   "ingredientStatus": "full-disclosure",
+   "ingredientEvidence": "manufacturer-official-full-ingredients-listed",
+   "ingredients": [
     "BG",
     "グリセリン",
     "ジメチコン",
@@ -83218,7 +83329,7 @@
     "水酸化Na",
     "フェノキシエタノール"
    ],
-   "ingredientCount": 44,
+   "ingredientCount": 30,
    "sourceCheckedOn": "2026-11-20"
   },
   {
@@ -120952,8 +121063,8 @@
   "Batch 70 (2026-11-21): judgement round for the unverified brands in the market ledger. 71 products were added across 17 new official sources: THREE 6 (5 from the official catalog PDFs, 1 from the official Rakuten Fashion shop), Rosette 6, Meishoku 6 (the quasi-drug lotion is a verified-complete 5-item list), Bifesta 3, BCL official shop 6 (Saborino 2, Momopuri 1, Cleansing Research 3), Celvoke 2, OSAJI 2, to/one 2, La Roche-Posay 2, Albion 3 (including FLARUNE 1), ADDICTION 3, ETVOS 3, SHIRO 3 (all verified-complete short lists), Naturaglace 3, ONLY MINERALS 3 (two verified-complete short lists), NIVEA 3 from My Kao Mall, Ginza Stefany 1, and retailer/official-shop records for Setagaya Cosme, Keana Pate Shokunin, Toumei Shirohada, OZIO, peripera, Sulwhasoo, IOPE, primera, ILLIYOON and Dr.G. DHC 4 came via Yodobashi (the mild soap is a verified-complete 10-item list). Judged out with reasons recorded in the ledger: IGNIS (no full list on official product pages), SK-II and Yakult (key ingredients only), Amplitude (sales ended in Japan), Menard (no lists), and the Korean brands with INCI-only, image-only or no Japanese official channel (CLIO, HERA, Dr.Althea, Klairs, APRILSKIN, Goodal, Isntree, SUNGBOON EDITOR, mixsoon, By Wishtrend, Mamonde, Biodance, Some By Mi). 3CE was held back because the colourant tail of its list could not be fetched.",
   "Batch 71 (2026-11-21): the remaining thin brands. 8 products were added: HABA 3 from the official shop in the live browser (White Lady is a verified-complete short list), ETUDE 2 from the Japan official site in the live browser (the Soft Fixing Tint shades were already registered), Beauty of Joseon Dynasty Cream 1 and d'Alba 2 from official Rakuten storefronts. The complete official-storefront list for the d'Alba White Truffle First Spray Serum was added alongside the earlier Amazon-sourced unverified record, which is kept for its verbatim-text and physical-label follow-up. Judged image-only and closed: TIRTIR (its Rakuten ingredient chart is a single image), SKIN1004 and BIOHEAL BOH on Qoo10 (image-led descriptions with no ingredient text)."
  ],
- "manufacturerOfficialFullProductRecords": 2293,
- "totalExplicitFullProductRecords": 2492,
+ "manufacturerOfficialFullProductRecords": 2294,
+ "totalExplicitFullProductRecords": 2493,
  "yodobashiExplicitFullProductRecords": 118,
  "rakutenExplicitFullProductRecords": 63,
  "sundrugExplicitFullProductRecords": 2,
