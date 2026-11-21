@@ -2159,7 +2159,14 @@
     "USストアの表示は他販売店の表示（Centella Asiatica Extract 6,000ppm、精油類なし）と異なり、精油類とCitronellol・Limonene・Linaloolを含む。USストア表示のまま転記した。"
    ],
    "standardSpellingNotes": [],
-   "cautionNotes": []
+   "cautionNotes": [
+    {
+     "ingredient": "Limonene",
+     "text": "EUでは香料アレルゲンとして、一定の濃度を超えると成分名を個別に表示することが義務づけられています（付けたままの製品で0.001%、洗い流す製品で0.01%を超えた場合）。",
+     "sourceName": "化粧品規則 (EC) No 1223/2009 附属書III 項目88（規則 (EU) 2023/1545 の本文で確認）",
+     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
+    }
+   ]
   },
   {
    "id": "kr-oliveyoung-ua97002132",
