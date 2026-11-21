@@ -104496,7 +104496,8 @@
    "ingredientCount": 12,
    "ingredientOrderStatus": "as-listed-by-rakuten-official-shop",
    "sourceCheckedOn": "2026-11-21",
-   "listedVolume": "100ml"
+   "listedVolume": "100ml",
+   "shortListVerifiedComplete": true
   },
   {
    "source": "楽天公式ショップ",
