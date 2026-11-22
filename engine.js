@@ -5115,6 +5115,7 @@ const catalogRoles=[
   ['AcrylatesC10-30 Alkyl AcrylateCrosspolymer','stem','増粘・皮膜'],
   ['Alpha-GlucanOligosaccharide','petal','整肌'],
   ['Sodium Hyaluronate(100ppm)','leaf','保湿'],
+  ['グルタミン酸Ｎａ','leaf','保湿'],
 ];
 for(const [name,group,role] of catalogRoles)dictionary.set(normalize(name),{group,role,evidence:'一般的な配合用途に基づく推定。個別文献の確認、当該製品中の配合目的・濃度・効果は未確認。',url:'https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-ingredient-database_en'});
 export const product={name:'ちふれ 保湿化粧水 とてもしっとりタイプ',date:'2026-10-28',source:SOURCE,order:'メーカーの目的別表・配合順ではありません',ingredients:rows.map(r=>r[0]).join('、')};
