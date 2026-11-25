@@ -7,10 +7,10 @@
  "priorIngredientsRegisteredProducts": 2163,
  "supplementalSourceCollection": {
   "scope": "manufacturer-and-donki-full-ingredients-plus-editorial-name-only-candidates",
-  "recordsFromSupplementalSources": 3213,
+  "recordsFromSupplementalSources": 3220,
   "donkiExplicitFullIngredientProducts": 8,
   "manufacturerOfficialFullIngredientProducts": 2423,
-  "totalExplicitFullIngredientProducts": 3071,
+  "totalExplicitFullIngredientProducts": 3078,
   "donkiUnverifiedCompletenessIngredientListings": 3,
   "editorialNameOnlyReferences": 85,
   "amazonAutomatedCollection": false,
@@ -18,7 +18,7 @@
   "fullIngredientRecordsNotMergedIntoOriginal2163": true,
   "sourceCatalogFile": "supplemental-source-catalog-20261111.json",
   "yodobashiExplicitFullIngredientProducts": 164,
-  "rakutenExplicitFullIngredientProducts": 168
+  "rakutenExplicitFullIngredientProducts": 169
  },
  "additionalFullIngredientCollection": {
   "separatelyAudited": true,
