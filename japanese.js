@@ -1009,7 +1009,7 @@ const pairs=[
  ['Brassica Oleracea Italica (Broccoli) Sprout Extract','ブロッコリースプラウトエキス'],
  ['Honokiol','ホノキオール'],
  ['Lotus Corniculatus Seed Extract','ミヤコグサ種子エキス']
-];
+,['CETYL-PG HYDROXYETHYL PALMITAMIDE','セチルPGヒドロキシエチルパルミタミド'],['ZINC CHLORIDE','塩化亜鉛'],['SPHINGOLIPIDS','スフィンゴ脂質'],['HYDROXYPROPYL METHYLCELLULOSE','ヒドロキシプロピルメチルセルロース'],['Ilex Paraguariensis Leaf Extract','マテチャ葉エキス'],['Hexapeptide-11','ヘキサペプチド-11'],['BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE','ジ（カプリル酸／カプリン酸）ＢＧ'],['PENTAERYTHRITYL TETRAISOSTEARATE','テトライソステアリン酸ペンタエリスリチル'],['DICAPRYLYL CARBONATE','炭酸ジカプリリル'],['HYDROXYPROPYL BISPALMITAMIDE MEA','ヒドロキシプロピルビスパルミタミドMEA'],['HYDROXYPROPYL BISLAURAMIDE MEA','ヒドロキシプロピルビスラウラミドMEA'],['ACRYLATES/AMMONIUM METHACRYLATE COPOLYMER','（アクリレーツ／メタクリル酸アンモニウム）コポリマー'],['Water(Aqua/Eau)','水'],['Dicaprylyl Ether','ジカプリリルエーテル'],['Alantoin','アラントイン'],['Leuconostoc/Radish Root Ferment Filtrate','ロイコノストック／ダイコン根発酵液']];
 const norm=s=>String(s||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const ingredientMap=new Map(pairs.map(([en,ja])=>[norm(en),ja]));
 export function ingredientJapanese(original){
