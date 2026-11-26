@@ -1,75 +1,76 @@
 {
- "schemaVersion": 1,
- "reviewDate": "2026-11-11",
- "scope": "public-web-index-names-and-links-separate-from-verified-ingredient-records",
- "totalBrandNameCandidates": 25714,
- "totalExternalProductNameReferences": 64033,
- "priorIngredientsRegisteredProducts": 2163,
- "supplementalSourceCollection": {
-  "scope": "manufacturer-and-donki-full-ingredients-plus-editorial-name-only-candidates",
-  "recordsFromSupplementalSources": 3509,
-  "donkiExplicitFullIngredientProducts": 8,
-  "manufacturerOfficialFullIngredientProducts": 2528,
-  "totalExplicitFullIngredientProducts": 3367,
-  "donkiUnverifiedCompletenessIngredientListings": 3,
-  "editorialNameOnlyReferences": 85,
-  "amazonAutomatedCollection": false,
-  "notDeduplicatedWithMarketplaceNameReferences": true,
-  "fullIngredientRecordsNotMergedIntoOriginal2163": true,
-  "sourceCatalogFile": "supplemental-source-catalog-20261111.json",
-  "yodobashiExplicitFullIngredientProducts": 209,
-  "rakutenExplicitFullIngredientProducts": 182
- },
- "additionalFullIngredientCollection": {
-  "separatelyAudited": true,
-  "scannedAtcosmeFirstProductPages": 1644,
-  "atcosmePagesWithFullListedIngredients": 116,
-  "sourcedRetailerPagesTotal": 1712,
-  "sourcedProductIdentityEntries": 145,
-  "sourceListedFormulaVersions": 150,
-  "publishedIngredientNameOccurrences": 4532,
-  "unverifiedCompositionForOtherExternalNames": true,
-  "notDeduplicatedWithOriginal2163": true
- },
- "completeCoverage": false,
- "sites": {
-  "lips": {
-   "brandDirectoryListed": 11984,
-   "brandPagesInspected": 1893,
-   "brandLandingPagesWithNoProductCards": 2,
-   "productNameReferences": 60809,
-   "nextBrandIndex": 1893,
-   "note": "Brand landing pages only; remaining brands and paginated product results not exhaustively inspected."
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "scope": "public-web-index-names-and-links-separate-from-verified-ingredient-records",
+  "totalBrandNameCandidates": 25714,
+  "totalExternalProductNameReferences": 64033,
+  "priorIngredientsRegisteredProducts": 2163,
+  "supplementalSourceCollection": {
+    "scope": "manufacturer-and-donki-full-ingredients-plus-editorial-name-only-candidates",
+    "recordsFromSupplementalSources": 3527,
+    "donkiExplicitFullIngredientProducts": 8,
+    "manufacturerOfficialFullIngredientProducts": 2531,
+    "totalExplicitFullIngredientProducts": 3385,
+    "donkiUnverifiedCompletenessIngredientListings": 3,
+    "editorialNameOnlyReferences": 85,
+    "amazonAutomatedCollection": false,
+    "notDeduplicatedWithMarketplaceNameReferences": true,
+    "fullIngredientRecordsNotMergedIntoOriginal2163": true,
+    "sourceCatalogFile": "supplemental-source-catalog-20261111.json",
+    "yodobashiExplicitFullIngredientProducts": 209,
+    "rakutenExplicitFullIngredientProducts": 182,
+    "checkedOn": "2026-11-26"
   },
-  "atcosme": {
-   "publicMakerBrandSearchResultCountAsListed": 78948,
-   "searchPagesInspected": 1855,
-   "listedMakerIds": 10999,
-   "listedBrandIds": 16842,
-   "newBrandDisplayNames": 13220,
-   "nextMakerBrandPage": 1855,
-   "brandProductFirstPagesInspected": 1200,
-   "productNameReferences": 3125,
-   "nextBrandProductIndex": 1200,
-   "note": "Search result count is source-reported and does not equal all independent manufacturer/brand owners; SKU, current maker and full product lists unverified."
+  "additionalFullIngredientCollection": {
+    "separatelyAudited": true,
+    "scannedAtcosmeFirstProductPages": 1644,
+    "atcosmePagesWithFullListedIngredients": 116,
+    "sourcedRetailerPagesTotal": 1712,
+    "sourcedProductIdentityEntries": 145,
+    "sourceListedFormulaVersions": 150,
+    "publishedIngredientNameOccurrences": 4532,
+    "unverifiedCompositionForOtherExternalNames": true,
+    "notDeduplicatedWithOriginal2163": true
   },
-  "qoo10": {
-   "beautyBrandDirectoryNames": 111,
-   "operatorMonthlyRankingsReviewed": 9,
-   "megaDebutRankingsReviewed": 2,
-   "productNameReferences": 99,
-   "note": "Operator monthly-rankings only, not all Qoo10 listings or active stock."
-  }
- },
- "dataFiles": [
-  "marketplace-brand-candidates-20261110.json",
-  "cosmeet-maker-brand-candidates-20261110.json",
-  "marketplace-product-candidates-20261110.json",
-  "supplemental-source-catalog-20261111.json"
- ],
- "caveats": [
-  "Brand and product candidate indexes are sourced to public sites but not necessarily official brand or manufacturer announcements.",
-  "Only 2,163 original product registrations have ingredient evidence or explicitly labelled hypotheses; external name references do not.",
-  "Completeness across the open Internet, all three marketplaces, every SKU or every formulation is not established."
- ]
+  "completeCoverage": false,
+  "sites": {
+    "lips": {
+      "brandDirectoryListed": 11984,
+      "brandPagesInspected": 1893,
+      "brandLandingPagesWithNoProductCards": 2,
+      "productNameReferences": 60809,
+      "nextBrandIndex": 1893,
+      "note": "Brand landing pages only; remaining brands and paginated product results not exhaustively inspected."
+    },
+    "atcosme": {
+      "publicMakerBrandSearchResultCountAsListed": 78948,
+      "searchPagesInspected": 1855,
+      "listedMakerIds": 10999,
+      "listedBrandIds": 16842,
+      "newBrandDisplayNames": 13220,
+      "nextMakerBrandPage": 1855,
+      "brandProductFirstPagesInspected": 1200,
+      "productNameReferences": 3125,
+      "nextBrandProductIndex": 1200,
+      "note": "Search result count is source-reported and does not equal all independent manufacturer/brand owners; SKU, current maker and full product lists unverified."
+    },
+    "qoo10": {
+      "beautyBrandDirectoryNames": 111,
+      "operatorMonthlyRankingsReviewed": 9,
+      "megaDebutRankingsReviewed": 2,
+      "productNameReferences": 99,
+      "note": "Operator monthly-rankings only, not all Qoo10 listings or active stock."
+    }
+  },
+  "dataFiles": [
+    "marketplace-brand-candidates-20261110.json",
+    "cosmeet-maker-brand-candidates-20261110.json",
+    "marketplace-product-candidates-20261110.json",
+    "supplemental-source-catalog-20261111.json"
+  ],
+  "caveats": [
+    "Brand and product candidate indexes are sourced to public sites but not necessarily official brand or manufacturer announcements.",
+    "Only 2,163 original product registrations have ingredient evidence or explicitly labelled hypotheses; external name references do not.",
+    "Completeness across the open Internet, all three marketplaces, every SKU or every formulation is not established."
+  ]
 }

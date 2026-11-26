@@ -6445,6 +6445,16 @@ const catalogRoles=[
 ['ニュウコウ','scent','着香'],
 ['群青','scent','感触・着色'],
 ['リパーゼ（２）','stem','製剤補助'],
+  ['ラウリン酸ヘキシルデシル','root','エモリエント'],
+  ['ヘキシルデカノール','root','エモリエント'],
+  ['メボウキ油','scent','着香'],
+  ['PEG-40','stem','乳化・可溶化'],
+  ['ローズウッド木油','scent','着香'],
+  ['イギスエキス','petal','整肌'],
+  ['ライム果皮エキス','petal','整肌'],
+  ['ツボクサエキス(55%)','petal','整肌'],
+  ['ヒノキ水','leaf','保湿'],
+  ['サルガッスムフシフォルムエキス','petal','整肌'],
 ];
 for(const [name,group,role] of catalogRoles)dictionary.set(normalize(name),{group,role,evidence:'一般的な配合用途に基づく推定。個別文献の確認、当該製品中の配合目的・濃度・効果は未確認。',url:'https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-ingredient-database_en'});
 export const product={name:'ちふれ 保湿化粧水 とてもしっとりタイプ',date:'2026-10-28',source:SOURCE,order:'メーカーの目的別表・配合順ではありません',ingredients:rows.map(r=>r[0]).join('、')};
