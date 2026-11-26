@@ -6494,6 +6494,21 @@ const catalogRoles=[
   ['トリイソステアリン酸ＰＥＧ－３０水添ヒマシ油','stem','乳化'],
   ['ラウレス硫酸TEA','root','洗浄'],
   ['パーム核脂肪酸アミドDEA','stem','製剤補助'],
+  ['トリイソステアリン酸ＰＥＧ－２０水添ヒマシ油','stem','乳化・可溶化'],
+  ['コリアンダー果実エキス','petal','整肌'],
+  ['ステビア葉／茎エキス','petal','整肌'],
+  ['赤２２５','scent','着色'],
+  ['（Ｃ１２-１４）ｓ-パレス-９','stem','乳化・可溶化'],
+  ['（C12-14）s-パレス-9','stem','乳化・可溶化'],
+  ['(C12-14)s-パレス-9','stem','乳化・可溶化'],
+  ['ポリシリコーン-28','stem','コンディショニング'],
+  ['ジヒドロキシインドール','stem','コンディショニング'],
+  ['セテス-２','stem','乳化・可溶化'],
+  ['(メタクリル酸エチルベタイン/アクリレーツ)コポリマー','stem','増粘・皮膜'],
+  ['酸化亜鉛混合物Ｖ','petal','紫外線防止'],
+  ['酸化亜鉛混合物V','petal','紫外線防止'],
+  ['クロルヒドロキシアルミニウム液','root','基剤'],
+  ['ＳＥステアリン酸グリセリン','stem','乳化'],
 ];
 for(const [name,group,role] of catalogRoles)dictionary.set(normalize(name),{group,role,evidence:'一般的な配合用途に基づく推定。個別文献の確認、当該製品中の配合目的・濃度・効果は未確認。',url:'https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-ingredient-database_en'});
 export const product={name:'ちふれ 保湿化粧水 とてもしっとりタイプ',date:'2026-10-28',source:SOURCE,order:'メーカーの目的別表・配合順ではありません',ingredients:rows.map(r=>r[0]).join('、')};
