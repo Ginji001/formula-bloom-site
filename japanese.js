@@ -1646,6 +1646,19 @@ const pairs=[
 ['Undecane','ウンデカン'],
 ['Viola Odorata Flower/Leaf Extract','ニオイスミレ花/葉エキス'],
 ['Zinc Stearate','ステアリン酸Zn'],
+  ['Aloe Vera Leaf Extract','アロエベラ葉エキス'],
+  ['Betula Platyphylla Japonica Bark Extract','シラカンバ樹皮エキス'],
+  ['Centella Asiatica Extract (5,150 ppm)','ツボクサエキス'],
+  ['Centella Asiatica Extract (9800ppm)','ツボクサエキス'],
+  ['Diethylhexyl Butamido Triazone','ジエチルヘキシルブタミドトリアゾン'],
+  ['Eruca Sativa Leaf Extract','キバナスズシロ葉エキス'],
+  ['Ginkgo Biloba Leaf Extract','イチョウ葉エキス'],
+  ['Hyaluronic Acid (0.01ppm)','ヒアルロン酸'],
+  ['Hydrolyzed Hyaluronic Acid (1ppm)','加水分解ヒアルロン酸'],
+  ['Inositol','イノシトール'],
+  ['Matricaria Flower Extract','カミツレ花エキス'],
+  ['Methylene Bis-Benzotriazolyl Tetramethylbutylphenol','メチレンビスベンゾトリアゾリルテトラメチルブチルフェノール'],
+  ['Sodium Hyaluronate (10ppm)','ヒアルロン酸Na'],
 ];
 const norm=s=>String(s||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const ingredientMap=new Map(pairs.map(([en,ja])=>[norm(en),ja]));
