@@ -122,6 +122,7 @@ for(const [name,group,role] of commonInciRoles)dictionary.set(normalize(name),{
 // 収録商品の全成分を辞書へ登録した追加分（2026-11-22）。役割は一般的な配合用途からの推定。
 const catalogRoles=[
  ['シゾサッカロミセスポンベエキス','petal','整肌用途の植物エキス'],
+ ['オレイン酸PEG-6','stem','乳化・可溶化'],
  ['トリュフエキス','petal','整肌用途の植物エキス'],
  ['ツノマタエキス','petal','整肌用途の植物エキス'],
  ['トリラウリン','root','エモリエント'],
