@@ -39297,8 +39297,400 @@
      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
     }
    ]
+  },
+  {
+   "id": "kr-oliveyoung-ga250731953",
+   "brandName": "moev",
+   "productName": "moev Anukatin Shampoo 300ml (RENEWAL)",
+   "volumeText": "300ml",
+   "market": "KR",
+   "source": "OLIVE YOUNG公式（グローバルストア）",
+   "sourceUrl": "https://global.oliveyoung.com/product/detail?prdtNo=GA250731953",
+   "sourceCheckedOn": "2026-11-27",
+   "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+   "ingredientStatus": "full-disclosure-korea-market",
+   "separator": ", ",
+   "ingredientCount": 63,
+   "ingredients": [
+    "Water",
+    "Disodium Laureth Sulfosuccinate",
+    "Sodium Cocoyl Isethionate",
+    "Cocamide MIPA",
+    "Lauryl Hydroxysultaine",
+    "Lauryl Glucoside",
+    "Lauryl Betaine",
+    "Butylene Glycol",
+    "1,2-Hexanediol",
+    "Caffeine",
+    "Fragrance",
+    "Sodium Chloride",
+    "Coconut Acid",
+    "Climbazole",
+    "Polyquaternium-10",
+    "Xylitylglucoside",
+    "Anhydroxylitol",
+    "Maltitol",
+    "Xylitol",
+    "Pelvetia Canaliculata Extract",
+    "Sodium Isethionate",
+    "Ethylhexylglycerin",
+    "Niacinamide",
+    "Glycerin",
+    "Malus Domestica Fruit Extract",
+    "Biotin",
+    "Glycine",
+    "Glutamic Acid",
+    "Glutamine",
+    "Lysine",
+    "Leucine",
+    "Methionine",
+    "Valine",
+    "Serine",
+    "Cysteine",
+    "Asparagine",
+    "Aspartic Acid",
+    "Isoleucine",
+    "Alanine",
+    "Arginine",
+    "Ornithine",
+    "Carnitine",
+    "Tyrosine",
+    "Threonine",
+    "Tryptophan",
+    "Phenylalanine",
+    "Proline",
+    "Histidine",
+    "Wheat Gluten",
+    "Caprylyl Glycol",
+    "Citric Acid",
+    "Methylpropanediol",
+    "Sodium Benzoate",
+    "Disodium EDTA",
+    "Sodium Citrate",
+    "Benzoic Acid",
+    "Linalool",
+    "Limonene",
+    "Citronellol",
+    "Alpha-Isomethyl Ionone",
+    "Geraniol",
+    "Coumarin",
+    "Hexyl Cinnamal"
+   ],
+   "notes": [],
+   "standardSpellingNotes": [],
+   "cautionNotes": [
+    {
+     "ingredient": "Limonene",
+     "text": "EUでは香料アレルゲンとして、一定の濃度を超えると成分名を個別に表示することが義務づけられています（付けたままの製品で0.001%、洗い流す製品で0.01%を超えた場合）。",
+     "sourceName": "化粧品規則 (EC) No 1223/2009 附属書III 項目88（規則 (EU) 2023/1545 の本文で確認）",
+     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
+    }
+   ]
+  },
+  {
+   "id": "kr-oliveyoung-ga250731913",
+   "brandName": "moev",
+   "productName": "moev Anukatin Treatment 200ml (RENEWAL)",
+   "volumeText": "200ml",
+   "market": "KR",
+   "source": "OLIVE YOUNG公式（グローバルストア）",
+   "sourceUrl": "https://global.oliveyoung.com/product/detail?prdtNo=GA250731913",
+   "sourceCheckedOn": "2026-11-27",
+   "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+   "ingredientStatus": "full-disclosure-korea-market",
+   "separator": ", ",
+   "ingredientCount": 69,
+   "ingredients": [
+    "Water",
+    "Glycerin",
+    "Myristyl Alcohol",
+    "Cetyl Ethylhexanoate",
+    "Behentrimonium Chloride",
+    "Fragrance",
+    "1,2-Hexanediol",
+    "Caffeine",
+    "Isopropyl Alcohol",
+    "Polyquaternium-7",
+    "Butylene Glycol",
+    "Niacinamide",
+    "Tocopheryl Acetate",
+    "Camellia Sinensis Seed Oil",
+    "Camellia Japonica Seed Oil",
+    "Macadamia Ternifolia Seed Oil",
+    "Argania Spinosa Kernel Oil",
+    "Olea Europaea (Olive) Fruit Oil",
+    "Vitis Vinifera (Grape) Seed Oil",
+    "Simmondsia Chinensis (Jojoba) Seed Oil",
+    "Wheat Gluten",
+    "Malus Domestica Fruit Extract",
+    "Biotin",
+    "Glycine",
+    "Glutamic Acid",
+    "Glutamine",
+    "Lysine",
+    "Leucine",
+    "Methionine",
+    "Valine",
+    "Serine",
+    "Cysteine",
+    "Asparagine",
+    "Aspartic Acid",
+    "Isoleucine",
+    "Alanine",
+    "Arginine",
+    "Ornithine",
+    "Carnitine",
+    "Tyrosine",
+    "Threonine",
+    "Tryptophan",
+    "Phenylalanine",
+    "Proline",
+    "Histidine",
+    "Caprylyl Glycol",
+    "Hydrogenated Lecithin",
+    "Ceramide NP",
+    "Hydrolyzed Silk",
+    "Hydrolyzed Keratin",
+    "Hydrolyzed Collagen",
+    "Hydrolyzed Soy Protein",
+    "Hydrolyzed Oat Protein",
+    "Hydrolyzed Wheat Protein",
+    "Ethylhexylglycerin",
+    "Disodium EDTA",
+    "Sodium Benzoate",
+    "Dipropylene Glycol",
+    "Benzoic Acid",
+    "Linalool",
+    "Limonene",
+    "Benzyl Benzoate",
+    "Benzyl Salicylate",
+    "Citral",
+    "Citronellol",
+    "Alpha-Isomethyl Ionone",
+    "Geraniol",
+    "Coumarin",
+    "Hexyl Cinnamal"
+   ],
+   "notes": [
+    "成分リストの末尾に「Anukatin 16,000」と表示されている（2026-11-27確認）。成分名ではないため成分リストには含めていない。"
+   ],
+   "standardSpellingNotes": [],
+   "cautionNotes": [
+    {
+     "ingredient": "Limonene",
+     "text": "EUでは香料アレルゲンとして、一定の濃度を超えると成分名を個別に表示することが義務づけられています（付けたままの製品で0.001%、洗い流す製品で0.01%を超えた場合）。",
+     "sourceName": "化粧品規則 (EC) No 1223/2009 附属書III 項目88（規則 (EU) 2023/1545 の本文で確認）",
+     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
+    }
+   ]
+  },
+  {
+   "id": "kr-oliveyoung-ga250933851",
+   "brandName": "moev",
+   "productName": "moev Anukatin Hair Oil Essence 80ml (RENEWAL)",
+   "volumeText": "80ml",
+   "market": "KR",
+   "source": "OLIVE YOUNG公式（グローバルストア）",
+   "sourceUrl": "https://global.oliveyoung.com/product/detail?prdtNo=GA250933851",
+   "sourceCheckedOn": "2026-11-27",
+   "ingredientEvidence": "official-retail-channel-full-ingredients-listed-checked-directly",
+   "ingredientStatus": "full-disclosure-korea-market",
+   "separator": ", ",
+   "ingredientCount": 71,
+   "ingredients": [
+    "Cyclopentasiloxane",
+    "Disiloxane",
+    "Dimethicone",
+    "Ethanol",
+    "Cyclohexasiloxane",
+    "Phenyl Trimethicone",
+    "Isopropyl Myristate",
+    "Cetyl Ethylhexanoate",
+    "Dimethiconol",
+    "Water*",
+    "Glycerin",
+    "Hippophae Rhamnoides Fruit Oil",
+    "Camellia Sinensis Seed Oil",
+    "Camellia Japonica Seed Oil",
+    "Rosmarinus Officinalis (Rosemary) Leaf Oil",
+    "Pyrus Malus (Apple) Seed Oil",
+    "Argania Spinosa Kernel Oil",
+    "Olea Europaea (Olive) Fruit Oil",
+    "Cocos Nucifera (Coconut) Oil",
+    "Vitis Vinifera (Grape) Seed Oil",
+    "Simmondsia Chinensis (Jojoba) Seed Oil",
+    "Butylene Glycol*",
+    "Wheat Gluten",
+    "Hydrogenated Lecithin",
+    "Ceramide NP",
+    "Caprylyl Glycol",
+    "Hydrolyzed Silk",
+    "Hydrolyzed Keratin",
+    "Hydrolyzed Collagen",
+    "Malus Domestica Fruit Extract*",
+    "Biotin*",
+    "Glycine*",
+    "Glutamic Acid*",
+    "Glutamine*",
+    "Lysine*",
+    "Leucine*",
+    "Methionine*",
+    "Valine*",
+    "Serine*",
+    "Cysteine*",
+    "Asparagine*",
+    "Aspartic Acid*",
+    "Isoleucine*",
+    "Alanine*",
+    "Arginine*",
+    "Ornithine*",
+    "Carnitine*",
+    "Tyrosine*",
+    "Threonine*",
+    "Tryptophan*",
+    "Phenylalanine*",
+    "Proline*",
+    "Histidine*",
+    "Hydrolyzed Soy Protein",
+    "Hydrolyzed Oat Protein",
+    "Hydrolyzed Wheat Protein",
+    "Dipropylene Glycol",
+    "1,2-Hexanediol*",
+    "Benzoic Acid",
+    "Fragrance",
+    "Linalool",
+    "Hexyl Cinnamal",
+    "Limonene",
+    "Citronellol",
+    "Benzyl Salicylate",
+    "Coumarin",
+    "Geraniol",
+    "Benzyl Benzoate",
+    "Citral",
+    "Cinnamal",
+    "Eugenol"
+   ],
+   "notes": [],
+   "standardSpellingNotes": [
+    {
+     "asListed": "Water*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Butylene Glycol*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Malus Domestica Fruit Extract*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Biotin*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Glycine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Glutamic Acid*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Glutamine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Lysine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Leucine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Methionine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Valine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Serine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Cysteine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Asparagine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Aspartic Acid*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Isoleucine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Alanine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Arginine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Ornithine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Carnitine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Tyrosine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Threonine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Tryptophan*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Phenylalanine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Proline*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "Histidine*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    },
+    {
+     "asListed": "1,2-Hexanediol*",
+     "note": "ページでは Anukatin™ の構成成分を示すアスタリスク付きで表示されている（脚注「*Anukatin™: 2,000ppb」、2026-11-27確認）。"
+    }
+   ],
+   "cautionNotes": [
+    {
+     "ingredient": "Limonene",
+     "text": "EUでは香料アレルゲンとして、一定の濃度を超えると成分名を個別に表示することが義務づけられています（付けたままの製品で0.001%、洗い流す製品で0.01%を超えた場合）。",
+     "sourceName": "化粧品規則 (EC) No 1223/2009 附属書III 項目88（規則 (EU) 2023/1545 の本文で確認）",
+     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1545"
+    }
+   ]
   }
  ],
  "updatedOn": "2026-11-27",
- "batchId": "batch-98-20261127"
+ "batchId": "batch-99-20261127"
 }
