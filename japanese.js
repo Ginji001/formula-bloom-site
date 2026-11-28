@@ -2606,6 +2606,19 @@ const pairs=[
  ['Pelvetia Canaliculata Extract','ペルベティアエキス'],
  ['Wheat Gluten','コムギグルテン'],
  ['Cinnamal','シンナマール'],
+ ['Morinda Citrifolia Fruit Extract','ノニ果実エキス'],
+ ['Morinda Citrifolia Fruit Extract(0.7%)','ノニ果実エキス'],
+ ['Morinda Citrifolia Fruit Extract(0.8%)','ノニ果実エキス'],
+ ['Morinda Citrifolia Seed Oil','ノニ種子油'],
+ ['Morinda Citrifolia Seed Oil(200ppm)','ノニ種子油'],
+ ['Morinda Citrifolia Seed Oil(0.1ppm)','ノニ種子油'],
+ ['Citrus Reticulata (Tangerine) Peel Extract','マンダリンオレンジ果皮エキス'],
+ ['Bambusa Vulgaris Water','タケ水'],
+ ['Prunus Amygdalus Dulcis (Sweet Almond) Seed Extract','アーモンド種子エキス'],
+ ['Prunus Serotina (Wild Cherry) Fruit Extract','ワイルドチェリー果実エキス'],
+ ['rh-Polypeptide-1','rh-ポリペプチド-1'],
+ ['rh-Polypeptide-2','rh-ポリペプチド-2'],
+ ['3-O-Ethyl Ascorbic Acid (30ppm)','3-O-エチルアスコルビン酸'],
 ];
 const norm=s=>String(s||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const ingredientMap=new Map(pairs.map(([en,ja])=>[norm(en),ja]));
