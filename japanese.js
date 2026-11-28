@@ -2619,6 +2619,17 @@ const pairs=[
  ['rh-Polypeptide-1','rh-ポリペプチド-1'],
  ['rh-Polypeptide-2','rh-ポリペプチド-2'],
  ['3-O-Ethyl Ascorbic Acid (30ppm)','3-O-エチルアスコルビン酸'],
+ ['Sorbitan Oleate','オレイン酸ソルビタン'],
+ ['Apium Graveolens (Celery) Extract','セロリエキス'],
+ ['DNA','DNA'],
+ ['Propolis Extract','プロポリスエキス'],
+ ['Sodium Hyaluronate (500ppm)','ヒアルロン酸Na'],
+ ['Ceteth-10','セテス-10'],
+ ['Saccharomyces/Barley Seed Ferment Filtrate','酵母／オオムギ種子発酵液'],
+ ['Lactobacillus/Pear Juice Ferment Filtrate','乳酸菌／セイヨウナシ果汁発酵液'],
+ ['Phyllostachys Pubescens Shoot Bark Extract','モウソウチク芽樹皮エキス'],
+ ['Lens Esculenta (Lentil) Seed Extract','レンズマメ種子エキス'],
+ ['Swiftlet Nest Extract','アナツバメ巣エキス'],
 ];
 const norm=s=>String(s||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const ingredientMap=new Map(pairs.map(([en,ja])=>[norm(en),ja]));
